@@ -1,0 +1,19 @@
+= CspaceDataConfig
+
+Currently this requires you to manually download the JSON config files from the following links in the `data/configs` directory:
+
+-  https://core.collectionspace.org/cspace/core/config
+-  https://anthro.collectionspace.org/cspace/anthro/config
+-  https://fcart.collectionspace.org/cspace/fcart/config
+-  https://lhmc.collectionspace.org/cspace/lhmc/config
+-  https://publicart.collectionspace.org/cspace/publicart/config
+-  https://materials.collectionspace.org/cspace/materials/config
+-  https://herbarium.collectionspace.org/cspace/herbarium/config (not applied? - dev is)
+-  https://botgarden.collectionspace.org/cspace/botgarden/config (not applied?)
+-  https://bonsai.collectionspace.org/cspace/bonsai/config
+-  https://cspace.ohiohistory.org/cspace/ohc/config
+
+
+If you need to add another config to the handling, edit the `CDC.const_set('PROFILES')` value in `lib/command_line.rb`.
+
+...more info about usage coming as the tool takes shape... 

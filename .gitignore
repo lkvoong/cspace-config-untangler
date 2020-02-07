@@ -1,0 +1,16 @@
+Gemfile.lock
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+*.log
+/tmp/
+
+# rspec failure tracking
+.rspec_status
+
+# data to ignore
+*.xlsx
