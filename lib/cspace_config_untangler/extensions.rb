@@ -1,11 +1,11 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class ProfileExtensions
     attr_reader :config
 
     def initialize(profile)
-      @config = CDC::Profile.new(profile).config['extensions']
+      @config = CCU::Profile.new(profile).config['extensions']
     end
   end
   
@@ -15,7 +15,7 @@ module CspaceDataConfig
 
     # profiles = array of profile name strings
     def initialize(profiles)
-      @rectypes = CDC::RecordTypes.new(profiles).list
+      @rectypes = CCU::RecordTypes.new(profiles).list
       populate_initial_hash(profiles)
       sort_out_details
     end
@@ -39,7 +39,7 @@ module CspaceDataConfig
     def populate_initial_hash(profiles)
       @hash = {}
       profiles.each{ |p|
-        profile = CDC::Profile.new(p)
+        profile = CCU::Profile.new(p)
         config = profile.config
         profile.extensions.each{ |ext|
           ext_keys = config['extensions'][ext].keys

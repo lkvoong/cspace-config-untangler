@@ -1,25 +1,25 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class CommandLine < Thor
     def initialize(*args)
       super(*args)
-      CDC.const_set('MAINPROFILE', 'core')
-      CDC.const_set('PROFILES', %w[anthro bonsai botgarden fcart herbarium lhmc materials ohc publicart])
-      CDC.const_set('CONFIGDIR', 'data/configs/5_2')
-      CDC.const_set('LOG', Logger.new('log.log'))
+      CCU.const_set('MAINPROFILE', 'core')
+      CCU.const_set('PROFILES', %w[anthro bonsai botgarden fcart herbarium lhmc materials ohc publicart])
+      CCU.const_set('CONFIGDIR', 'data/configs/5_2')
+      CCU.const_set('LOG', Logger.new('log.log'))
     end
 
     no_commands{
       def get_profiles
-        all_profiles = [CDC::MAINPROFILE, CDC::PROFILES].flatten
+        all_profiles = [CCU::MAINPROFILE, CCU::PROFILES].flatten
         if options[:profiles].empty?
-          return [CDC::MAINPROFILE]
+          return [CCU::MAINPROFILE]
         elsif options[:profiles] == 'all'
           return all_profiles
         else
           profiles = options[:profiles].split(',').map(&:strip)
-          profiles << CDC::MAINPROFILE
+          profiles << CCU::MAINPROFILE
           real_profiles = []
           profiles.each{ |p|
             if all_profiles.include?(p)
@@ -41,13 +41,13 @@ module CspaceDataConfig
     
     desc 'main_profile', 'print the name of the main profile'
     def main_profile
-      puts CDC::MAINPROFILE
+      puts CCU::MAINPROFILE
     end
 
     desc 'all_profiles', 'print the names of all known profiles'
     def all_profiles
-      puts CDC::MAINPROFILE
-      puts CDC::PROFILES
+      puts CCU::MAINPROFILE
+      puts CCU::PROFILES
     end
 
     desc 'check_profiles', 'print the names of profiles that will be processed'
@@ -60,15 +60,15 @@ module CspaceDataConfig
     def list_rec_types
       get_profiles.each{ |p|
         puts "\n#{p}:"
-        puts CDC::Profile.new(p).record_types.map{ |e| "  #{e}" }
+        puts CCU::Profile.new(p).record_types.map{ |e| "  #{e}" }
       }
     end
 
     desc 'pretty_print_profiles', 'create file containing JSON that is not all one line'
     def pretty_print_profiles
       get_profiles.each{ |p|
-        profile = CDC::Profile.new(p).config
-        File.open("#{CDC::CONFIGDIR}/#{p}_readable.txt", 'w'){ |f|
+        profile = CCU::Profile.new(p).config
+        File.open("#{CCU::CONFIGDIR}/#{p}_readable.txt", 'w'){ |f|
           f.puts JSON.pretty_generate(profile)
         }
       }
@@ -76,33 +76,33 @@ module CspaceDataConfig
     
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
-      CDC::Extensions.new(get_profiles).print
+      CCU::Extensions.new(get_profiles).print
     end
 
     desc 'get_form_fields', 'get field info from form definitions for a given record type in a given profile'
     option :profile, :desc => 'the single profile to get fields for', :default => 'core'
     option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
     def get_form_fields
-      CDC::FormFieldGetter.new(options[:profile], options[:rectype])
+      CCU::FormFieldGetter.new(options[:profile], options[:rectype])
     end
 
     desc 'get_fields', 'get field info from field definitions for a given record type in a given profile'
     option :profile, :desc => 'the single profile to get fields for', :default => 'core'
     option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
     def get_fields
-      CDC::FieldDefinitionGetter.new(options[:profile], options[:rectype])
+      CCU::FieldDefinitionGetter.new(options[:profile], options[:rectype])
     end
 
     desc 'compile_form_fields', 'combines form field info across profiles/record types'
     option :rectypes, :desc => 'comma-delimited list of record types to get fields for', :default => ''
     def compile_form_fields
-      CDC::FormFieldCompiler.new(get_profiles, options[:rectypes].split(',').map(&:strip).sort)
+      CCU::FormFieldCompiler.new(get_profiles, options[:rectypes].split(',').map(&:strip).sort)
     end
     
     desc 'testy', 'do things...'
     def testy
 
-#      fc = CDC::FieldCompiler.new(get_profiles)
+#      fc = CCU::FieldCompiler.new(get_profiles)
 #      fc.form_fields_csv
       
       profile = 'core'
@@ -110,13 +110,13 @@ module CspaceDataConfig
       form = 'default'
       #      sectionname = 'condition'
 
-#      CDC::ProfileAuthorities.new(profile)
+#      CCU::ProfileAuthorities.new(profile)
 
-      CDC::FieldDefinitionGetter.new(profile, rectype)
-#      pp(CDC::FormFieldGetter.new(profile, rectype).fields)
+      CCU::FieldDefinitionGetter.new(profile, rectype)
+#      pp(CCU::FormFieldGetter.new(profile, rectype).fields)
 
-#      pp(CDC::FieldData.new('namespace here').hash)
-      #config = CDC::Profile.new(profile).config
+#      pp(CCU::FieldData.new('namespace here').hash)
+      #config = CCU::Profile.new(profile).config
       #fields = config['recordTypes'][rectype]['fields']
       #pp(fields['document']['ns2:collectionobjects_anthro']['anthroOwnershipGroupList']['anthroOwnershipGroup']['anthroOwner'])
       

@@ -1,6 +1,6 @@
-RSpec.describe CspaceDataConfig do
+RSpec.describe CspaceConfigUntangler do
   it "has a version number" do
-    expect(CspaceDataConfig::VERSION).not_to be nil
+    expect(CspaceConfigUntangler::VERSION).not_to be nil
   end
 
   it "does something useful" do

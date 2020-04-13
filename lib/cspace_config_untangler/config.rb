@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class Config
     attr_reader :profile
     attr_reader :url_base

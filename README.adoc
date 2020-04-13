@@ -1,4 +1,4 @@
-= CspaceDataConfig
+= CspaceConfigUntangler
 
 Currently this requires you to manually download the JSON config files from the following links in the `data/configs` directory:
 

@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class ProfileAuthorities
     attr_reader :list
     attr_reader :profile
@@ -15,8 +15,8 @@ module CspaceDataConfig
     private
 
     def get_profile_authorities
-      CDC::RecordTypes.new([profile]).list.each{ |rectype|
-        config = CDC::RecordType.new(profile, rectype).config
+      CCU::RecordTypes.new([profile]).list.each{ |rectype|
+        config = CCU::RecordType.new(profile, rectype).config
         if config.dig('serviceConfig', 'serviceType') == 'authority'
           authtype = rectype
           config['vocabularies'].keys.reject{ |e| e == 'all' }.each{ |subtype|

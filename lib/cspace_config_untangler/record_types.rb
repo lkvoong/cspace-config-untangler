@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class RecordTypes
     attr_reader :list
     attr_reader :profiles
@@ -10,7 +10,7 @@ module CspaceDataConfig
       @profiles = profiles
       all = {}
       @profiles.each{ |p|
-        CDC::Profile.new(p).recordtypes.each{ |rectype| all[rectype] = '' }
+        CCU::Profile.new(p).recordtypes.each{ |rectype| all[rectype] = '' }
       }
       @list = all.keys.sort
     end
@@ -29,13 +29,13 @@ module CspaceDataConfig
       @profile = profile
       @name = rectype
       @id = "#{profile}/#{rectype}"
-      @config = CDC::Profile.new(profile).config['recordTypes'][rectype]
+      @config = CCU::Profile.new(profile).config['recordTypes'][rectype]
       @docname = @config['serviceConfig']['documentName']
       @default_ns = "ns2:#{@docname}_common"
     end
 
     def form_fields
-      CDC::FormFieldGetter.new(@profile, @name)
+      CCU::FormFieldGetter.new(@profile, @name)
     end
   end
 end

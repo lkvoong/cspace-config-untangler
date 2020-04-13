@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class FieldCompiler
     attr_reader :profiles
     attr_reader :rectypes
@@ -16,12 +16,12 @@ module CspaceDataConfig
       set_rectypes if @rectypes.empty?
       clean_rectypes
       
-      @profile_objs = @profiles.map{ |profile| CDC::Profile.new(profile) }
+      @profile_objs = @profiles.map{ |profile| CCU::Profile.new(profile) }
       @rectype_objs = []
       @profile_objs.each{ |profile|
         @rectypes.each{ |rectype|
           if profile.recordtypes.include?(rectype)
-            @rectype_objs << CDC::RecordType.new(profile.name, rectype)
+            @rectype_objs << CCU::RecordType.new(profile.name, rectype)
           else
             #puts "WARNING: #{profile} does not include record type: #{rectype}"
           end
@@ -34,7 +34,7 @@ module CspaceDataConfig
     def set_rectypes
         rts = {}
         @profiles.each{ |p|
-          CDC::Profile.new(p).recordtypes.each{ |rt| rts[rt] = '' }
+          CCU::Profile.new(p).recordtypes.each{ |rt| rts[rt] = '' }
         }
         @rectypes = rts.keys.sort
     end
@@ -86,7 +86,7 @@ module CspaceDataConfig
     end
     
     def form_fields_csv
-      headers = %w[fullname namespace field] + ["in_#{CDC::MAINPROFILE}?"] + CDC::PROFILES.map{ |e| "in_#{e}?" }
+      headers = %w[fullname namespace field] + ["in_#{CCU::MAINPROFILE}?"] + CCU::PROFILES.map{ |e| "in_#{e}?" }
       csvpath = 'data/form_field_summary.csv'
       CSV.open(csvpath, 'wb'){ |csv|
         csv << headers

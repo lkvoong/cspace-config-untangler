@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class FieldData
     attr_accessor :hash
     
@@ -27,7 +27,7 @@ module CspaceDataConfig
   class FieldGetter
     attr_reader :profile
     attr_reader :rectype
-    attr_reader :rto # CDC::RecordType object
+    attr_reader :rto # CCU::RecordType object
     attr_reader :config
     attr_reader :fields
     attr_reader :option_lists
@@ -37,12 +37,12 @@ module CspaceDataConfig
     def initialize(profile, rectype)
       @profile = profile
       @rectype = rectype
-      @rto = CDC::RecordType.new(@profile, @rectype)
+      @rto = CCU::RecordType.new(@profile, @rectype)
       @config = @rto.config
-      opt_lists = CDC::ProfileOptionLists.new(@profile)
+      opt_lists = CCU::ProfileOptionLists.new(@profile)
       @option_lists = opt_lists.list
       @option_list_config = opt_lists.config
-      @vocabularies = CDC::ProfileVocabularies.new(@profile).list
+      @vocabularies = CCU::ProfileVocabularies.new(@profile).list
       @fields = {}
     end
 
@@ -53,13 +53,13 @@ module CspaceDataConfig
   end
 
   # pull field definition data from:
-  #  CDC::Profile.config['recordTypes'][rectype]['fields']['document']
+  #  CCU::Profile.config['recordTypes'][rectype]['fields']['document']
   class FieldDefinitionGetter < FieldGetter
     attr_reader :authorities
     
     def initialize(profile, rectype)
       super
-      @authorities = CDC::ProfileAuthorities.new(profile).list
+      @authorities = CCU::ProfileAuthorities.new(profile).list
       extract_fields
       drop_unused_fields
       #f = @fields.select{ |field, hash| hash[:warn].length > 0 }
@@ -79,7 +79,7 @@ module CspaceDataConfig
     #  form definitions, meaning they are effectively NOT included in a profile.
     #  This method removes these fields from the field list. 
     def drop_unused_fields
-      form_fields = CDC::FormFieldGetter.new(@profile, @rectype).list
+      form_fields = CCU::FormFieldGetter.new(@profile, @rectype).list
       def_fields = @fields.keys
       def_fields.each{ |df|
         if @fields[df][:ns] == @fields[df][:field_source]
@@ -109,16 +109,16 @@ module CspaceDataConfig
 
     def process_ns(ns, hash)
       ns = ns.sub('ns2:', '')
-      bindle = CDC::FieldData.new(ns).hash
+      bindle = CCU::FieldData.new(ns).hash
       
       hash.each{ | key, data|
         unless key == '[config]'
           if is_group?(data)
-            grp_bindle = CDC::safe_copy(bindle)
+            grp_bindle = CCU::safe_copy(bindle)
             grp_bindle[:schemapath] << key
             process_field_group(grp_bindle, key, data)
           else
-            process_field_data(CDC::safe_copy(bindle), key, data['[config]'])
+            process_field_data(CCU::safe_copy(bindle), key, data['[config]'])
           end
         end
       }
@@ -129,11 +129,11 @@ module CspaceDataConfig
 
       data.keys.reject{ |e| e == '[config]' }.each{ |key|
         if is_group?(data[key])
-          fge_bindle = CDC::safe_copy(bindle)
+          fge_bindle = CCU::safe_copy(bindle)
           fge_bindle[:schemapath] << key
           process_field_group(fge_bindle, key, data[key])
         else	
-          process_field_data(CDC::safe_copy(bindle), key, data[key]['[config]'])
+          process_field_data(CCU::safe_copy(bindle), key, data[key]['[config]'])
         end
       }
     end
@@ -288,7 +288,7 @@ module CspaceDataConfig
         @config['messages']['panel'].keys.each{ |k| @panel_names << k }
       end
 
-      exts = CDC::ProfileExtensions.new(@profile).config
+      exts = CCU::ProfileExtensions.new(@profile).config
       
       exts.each{ |ext, data|
         if data.dig(@rectype, 'messages', 'inputTable')

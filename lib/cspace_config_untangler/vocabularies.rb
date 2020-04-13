@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class ProfileVocabularies
     attr_reader :list
     attr_reader :profile
@@ -15,7 +15,7 @@ module CspaceDataConfig
     private
 
     def get_profile_vocabularies
-      config = CDC::Config.new(profile)
+      config = CCU::Config.new(profile)
       doc = Nokogiri::XML(config.rest('/vocabularies?pgSz=0'))
       doc.xpath('//shortIdentifier').each{ |e| @list << e.text }
     end

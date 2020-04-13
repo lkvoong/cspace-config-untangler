@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class ProfileOptionLists
     attr_reader :list
     attr_reader :config
@@ -16,7 +16,7 @@ module CspaceDataConfig
     private
 
     def get_profile_option_lists
-      @config = CDC::Profile.new(@profile).config.dig('optionLists')
+      @config = CCU::Profile.new(@profile).config.dig('optionLists')
       @list = @config.keys
     end
   end #class ProfileAuthorities

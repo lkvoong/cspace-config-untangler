@@ -1,22 +1,22 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "cspace_data_config/version"
+require "cspace_config_untangler/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "cspace_data_config"
-  spec.version       = CspaceDataConfig::VERSION
+  spec.name          = "cspace_config_untangler"
+  spec.version       = CspaceConfigUntangler::VERSION
   spec.authors       = ["Kristina Spurgin"]
   spec.email         = ["kristina.spurgin@lyrasis.org"]
 
   spec.summary       = "Generate data dictionary info from CSpace configs"
-  spec.homepage      = "https://github.com/lyrasis/cspace_data_config"
+  spec.homepage      = "https://github.com/lyrasis/cspace_config_untangler"
   spec.license       = "MIT"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/lyrasis/cspace_data_config"
-  spec.metadata["changelog_uri"] = "https://github.com/lyrasis/cspace_data_config"
+  spec.metadata["source_code_uri"] = "https://github.com/lyrasis/cspace_config_untangler"
+  spec.metadata["changelog_uri"] = "https://github.com/lyrasis/cspace_config_untangler"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

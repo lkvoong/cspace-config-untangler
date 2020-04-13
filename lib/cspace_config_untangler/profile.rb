@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class Profile
     attr_reader :name
     attr_reader :config
@@ -9,7 +9,7 @@ module CspaceDataConfig
     
     def initialize(profile)
       @name = profile
-      @config = JSON.parse(File.read("#{CDC::CONFIGDIR}/#{@name}.json"))
+      @config = JSON.parse(File.read("#{CCU::CONFIGDIR}/#{@name}.json"))
       @recordtypes = @config['recordTypes'].keys
       @extensions = @config['extensions'].keys
     end

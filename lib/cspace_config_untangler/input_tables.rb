@@ -1,6 +1,6 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
+module CspaceConfigUntangler
   class InputTable
     attr_reader :profile
     attr_reader :rectype
@@ -25,7 +25,7 @@ module CspaceDataConfig
     def initialize(profile, rectype)
       @profile = profile
       @rectype = rectype
-      @config = CDC::Profile.new(@profile).config.dig('recordTypes', rectype, 'messages', 'inputTable')
+      @config = CCU::Profile.new(@profile).config.dig('recordTypes', rectype, 'messages', 'inputTable')
       @list = @config ? get_input_tables : nil
     end
 
@@ -33,7 +33,7 @@ module CspaceDataConfig
 
     def get_input_tables
       @config.keys.each{ |table|
-        CDC::InputTable.new(@profile, @rectype, @config[table])
+        CCU::InputTable.new(@profile, @rectype, @config[table])
       }
     end
   end #class InputTables

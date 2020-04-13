@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "cspace_data_config"
+require "cspace_config_untangler"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

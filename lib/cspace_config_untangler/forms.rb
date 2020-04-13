@@ -1,7 +1,7 @@
-require 'cspace_data_config'
+require 'cspace_config_untangler'
 
-module CspaceDataConfig
-  class Panel
+module CspaceConfigUntangler
+  class InputTable
     attr_reader :profile
     attr_reader :rectype
     attr_reader :id
@@ -14,28 +14,27 @@ module CspaceDataConfig
       @id = config['id']
       @name = config['defaultMessage']
     end
-    
-  end #class Panel
+  end #class InputTable
   
-  class Panels
+  class InputTables
     attr_reader :config
     attr_reader :profile
     attr_reader :rectype
-    attr_reader :panels
+    attr_reader :list
 
     def initialize(profile, rectype)
       @profile = profile
       @rectype = rectype
-      @config = CDC::Profile.new(@profile).config.dig('recordTypes', rectype, 'messages', 'panel')
-      @panels = @config ? get_panels : nil
+      @config = CCU::Profile.new(@profile).config.dig('recordTypes', rectype, 'messages', 'inputTable')
+      @list = @config ? get_input_tables : nil
     end
 
     private
 
-    def get_panels
-      @config.keys.each{ |panel|
-        CDC::Panel.new(@profile, @rectype, @config[panel])
+    def get_input_tables
+      @config.keys.each{ |table|
+        CCU::InputTable.new(@profile, @rectype, @config[table])
       }
     end
-  end #class Panels
+  end #class InputTables
 end #module

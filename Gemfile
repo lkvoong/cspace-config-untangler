@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in cspace_data_config.gemspec
+# Specify your gem's dependencies in cspace_config_untangler.gemspec
 gemspec
