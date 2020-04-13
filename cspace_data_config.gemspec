@@ -28,8 +28,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry", ">= 0.13.0"
+  spec.add_development_dependency "rake", ">= 13.0.1"
   spec.add_development_dependency "rspec", "~> 3.0"
 
+  spec.add_runtime_dependency "http", ">= 4.4.1"
+  spec.add_runtime_dependency "nokogiri", ">= 1.10.9"
   spec.add_runtime_dependency "thor", ">= 0.20.3"
 end

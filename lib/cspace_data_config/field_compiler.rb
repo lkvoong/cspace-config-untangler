@@ -4,30 +4,73 @@ module CspaceDataConfig
   class FieldCompiler
     attr_reader :profiles
     attr_reader :rectypes
-    attr_reader :form_fields
-    attr_reader :ff
+    attr_reader :profile_objs
+    attr_reader :rectype_objs
+
     # profiles = array of profile names
     # rectypes (optional) = Array. Default = empty, which will be replaced by *all* rectypes
     #   from the given profile
     def initialize(profiles, rectypes = [])
       @profiles = profiles
       @rectypes = rectypes
-      @form_fields = []
-      set_rectypes
+      set_rectypes if @rectypes.empty?
       clean_rectypes
-      @profiles.each{ |profile|
-        po = CDC::Profile.new(profile)
+      
+      @profile_objs = @profiles.map{ |profile| CDC::Profile.new(profile) }
+      @rectype_objs = []
+      @profile_objs.each{ |profile|
         @rectypes.each{ |rectype|
-          if po.recordtypes.include?(rectype)
-          rt = CDC::RecordType.new(profile, rectype)
-          @form_fields << rt.form_fields.fields unless rt.form_fields.empty?
+          if profile.recordtypes.include?(rectype)
+            @rectype_objs << CDC::RecordType.new(profile.name, rectype)
           else
             #puts "WARNING: #{profile} does not include record type: #{rectype}"
           end
         }
       }
+    end
+
+    private
+
+    def set_rectypes
+        rts = {}
+        @profiles.each{ |p|
+          CDC::Profile.new(p).recordtypes.each{ |rt| rts[rt] = '' }
+        }
+        @rectypes = rts.keys.sort
+    end
+
+    def clean_rectypes
+      ignore = %w[account authrole batch batchinvocation blob report vocabulary]
+      @rectypes = @rectypes - ignore
+    end
+  end #class FieldCompiler
+
+  class FieldDefinitionCompiler < FieldCompiler
+    attr_reader :fields
+    
+    def initialize(profiles, rectypes = [])
+      super
+      compile_field_definitions
+    end
+
+    private
+
+    def compile_field_definitions
+    end
+  end
+  
+  class FormFieldCompiler < FieldCompiler
+    attr_reader :form_fields
+    attr_reader :ff
+    def initialize(profiles, rectypes = [])
+      super
+      @form_fields = []
+      @rectype_objs.each{ |rectype|
+        @form_fields << rectype.form_fields.fields unless rectype.form_fields.empty?
+      }
       @ff = {}
       compile_form_fields
+      pp(@form_fields)
     end
 
     def rec_type_ct_chk
@@ -83,22 +126,7 @@ module CspaceDataConfig
         }
       }
     end
-    
-    def set_rectypes
-      if @rectypes.empty?
-        rts = {}
-        @profiles.each{ |p|
-          CDC::Profile.new(p).recordtypes.each{ |rt| rts[rt] = '' }
-        }
-        @rectypes = rts.keys.sort
-      end
-    end
-
-    def clean_rectypes
-      ignore = %w[account authrole batch batchinvocation blob report vocabulary]
-      @rectypes = @rectypes - ignore
-    end
-
+   
   end
 
 end

@@ -6,7 +6,8 @@ module CspaceDataConfig
       super(*args)
       CDC.const_set('MAINPROFILE', 'core')
       CDC.const_set('PROFILES', %w[anthro bonsai botgarden fcart herbarium lhmc materials ohc publicart])
-      CDC.const_set('CONFIGDIR', 'data/configs/')
+      CDC.const_set('CONFIGDIR', 'data/configs/5_2')
+      CDC.const_set('LOG', Logger.new('log.log'))
     end
 
     no_commands{
@@ -63,42 +64,63 @@ module CspaceDataConfig
       }
     end
 
+    desc 'pretty_print_profiles', 'create file containing JSON that is not all one line'
+    def pretty_print_profiles
+      get_profiles.each{ |p|
+        profile = CDC::Profile.new(p).config
+        File.open("#{CDC::CONFIGDIR}/#{p}_readable.txt", 'w'){ |f|
+          f.puts JSON.pretty_generate(profile)
+        }
+      }
+    end
+    
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
       CDC::Extensions.new(get_profiles).print
     end
 
-    desc 'get_fields', 'get field info for a given record type in a given profile'
+    desc 'get_form_fields', 'get field info from form definitions for a given record type in a given profile'
     option :profile, :desc => 'the single profile to get fields for', :default => 'core'
     option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
-    def get_fields
+    def get_form_fields
       CDC::FormFieldGetter.new(options[:profile], options[:rectype])
     end
 
-    desc 'compile_fields', 'combines field info across profiles/record types'
+    desc 'get_fields', 'get field info from field definitions for a given record type in a given profile'
+    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
+    option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
+    def get_fields
+      CDC::FieldDefinitionGetter.new(options[:profile], options[:rectype])
+    end
+
+    desc 'compile_form_fields', 'combines form field info across profiles/record types'
     option :rectypes, :desc => 'comma-delimited list of record types to get fields for', :default => ''
-    def compile_fields
-      CDC::FieldCompiler.new(get_profiles, options[:rectypes].split(',').map(&:strip).sort)
+    def compile_form_fields
+      CDC::FormFieldCompiler.new(get_profiles, options[:rectypes].split(',').map(&:strip).sort)
     end
     
     desc 'testy', 'do things...'
     def testy
 
-      fc = CDC::FieldCompiler.new(get_profiles)
-      fc.form_fields_csv
+#      fc = CDC::FieldCompiler.new(get_profiles)
+#      fc.form_fields_csv
       
       profile = 'core'
-      rectype = 'acquisition'
+      rectype = 'collectionobject'
       form = 'default'
-      sectionname = 'condition'
+      #      sectionname = 'condition'
 
-      
-      config = CDC::Profile.new(profile).config
+#      CDC::ProfileAuthorities.new(profile)
 
-      fields = config['recordTypes'][rectype]['fields']
-#      pp(fields)
+      CDC::FieldDefinitionGetter.new(profile, rectype)
+#      pp(CDC::FormFieldGetter.new(profile, rectype).fields)
+
+#      pp(CDC::FieldData.new('namespace here').hash)
+      #config = CDC::Profile.new(profile).config
+      #fields = config['recordTypes'][rectype]['fields']
+      #pp(fields['document']['ns2:collectionobjects_anthro']['anthroOwnershipGroupList']['anthroOwnershipGroup']['anthroOwner'])
       
-      form = config['recordTypes'][rectype]['forms'][form]['template']
+      #form = config['recordTypes'][rectype]['forms'][form]['template']
       #pp(form.keys)
       #pp(form['serviceConfig'])
       

@@ -1,6 +1,14 @@
 require 'cspace_data_config'
 
 module CspaceDataConfig
+  class ProfileExtensions
+    attr_reader :config
+
+    def initialize(profile)
+      @config = CDC::Profile.new(profile).config['extensions']
+    end
+  end
+  
   class Extensions
     attr_reader :hash
     attr_reader :rectypes

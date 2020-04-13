@@ -9,7 +9,7 @@ module CspaceDataConfig
     
     def initialize(profile)
       @name = profile
-      @config = JSON.parse(File.read("#{CDC::CONFIGDIR}#{@name}.json"))
+      @config = JSON.parse(File.read("#{CDC::CONFIGDIR}/#{@name}.json"))
       @recordtypes = @config['recordTypes'].keys
       @extensions = @config['extensions'].keys
     end
