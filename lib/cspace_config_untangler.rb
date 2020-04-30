@@ -14,30 +14,49 @@ require 'thor'
 
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
+  CCU.const_set('MAINPROFILE', 'core')
+  CCU.const_set('PROFILES', %w[anthro bonsai botgarden fcart herbarium lhmc materials ohc publicart])
+  CCU.const_set('CONFIGDIR', 'data/configs/5_2')
+  File.delete('log.log') if File::exist?('log.log')
+  CCU.const_set('LOG', Logger.new('log.log'))
+
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
 
-  autoload :Config, 'cspace_config_untangler/config'
   autoload :FormFieldCompiler, 'cspace_config_untangler/field_compiler'
+  autoload :Field, 'cspace_config_untangler/field'
   autoload :FieldData, 'cspace_config_untangler/field_getter'
   autoload :FieldGetter, 'cspace_config_untangler/field_getter'
-  autoload :FieldDefinitionGetter, 'cspace_config_untangler/field_getter'
+  autoload :FieldDefinitionParser, 'cspace_config_untangler/field_definition_parser'
   autoload :FormFieldGetter, 'cspace_config_untangler/field_getter'
-  autoload :InputTable, 'cspace_config_untangler/input_tables'
-  autoload :InputTables, 'cspace_config_untangler/input_tables'
-  autoload :Panel, 'cspace_config_untangler/panels'
-  autoload :Panels, 'cspace_config_untangler/panels'
+  autoload :Form, 'cspace_config_untangler/form'
+  autoload :FormProps, 'cspace_config_untangler/form'
   autoload :Profile, 'cspace_config_untangler/profile'
-  autoload :ProfileExtensions, 'cspace_config_untangler/extensions'
-  autoload :ProfileAuthorities, 'cspace_config_untangler/authorities'
-  autoload :ProfileOptionLists, 'cspace_config_untangler/option_lists'
-  autoload :ProfileVocabularies, 'cspace_config_untangler/vocabularies'
+  autoload :Extension, 'cspace_config_untangler/extensions'
   autoload :Extensions, 'cspace_config_untangler/extensions'
   autoload :RecordTypes, 'cspace_config_untangler/record_types'
   autoload :RecordType, 'cspace_config_untangler/record_types'
+  autoload :SiteConfig, 'cspace_config_untangler/site_config'
+  autoload :StructuredDateMessageGetter, 'cspace_config_untangler/structured_date_message_getter'
+  autoload :StructuredDateField, 'cspace_config_untangler/structured_date_field'
+  autoload :StructuredDateFieldMaker, 'cspace_config_untangler/structured_date_field_maker'
   
   def self.safe_copy(hash)
     Marshal.load(Marshal.dump(hash))
   end
+
+module TrackAttributes
+  def attr_readers
+    self.class.instance_variable_get('@attr_readers')
+  end
+
+  def self.included(klass)
+    klass.send :define_singleton_method, :attr_reader, ->(*params) do
+      @attr_readers ||= []
+      @attr_readers.concat params
+      super(*params)
+    end
+  end
+end
 
 end

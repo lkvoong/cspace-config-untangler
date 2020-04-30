@@ -4,10 +4,6 @@ module CspaceConfigUntangler
   class CommandLine < Thor
     def initialize(*args)
       super(*args)
-      CCU.const_set('MAINPROFILE', 'core')
-      CCU.const_set('PROFILES', %w[anthro bonsai botgarden fcart herbarium lhmc materials ohc publicart])
-      CCU.const_set('CONFIGDIR', 'data/configs/5_2')
-      CCU.const_set('LOG', Logger.new('log.log'))
     end
 
     no_commands{
@@ -19,7 +15,6 @@ module CspaceConfigUntangler
           return all_profiles
         else
           profiles = options[:profiles].split(',').map(&:strip)
-          profiles << CCU::MAINPROFILE
           real_profiles = []
           profiles.each{ |p|
             if all_profiles.include?(p)
@@ -28,7 +23,7 @@ module CspaceConfigUntangler
               puts "Unknown profile \"#{p}\" will be ignored..."
             end
           }
-          return real_profiles
+          return real_profiles.uniq
         end
       end
     }
@@ -60,7 +55,7 @@ module CspaceConfigUntangler
     def list_rec_types
       get_profiles.each{ |p|
         puts "\n#{p}:"
-        puts CCU::Profile.new(p).record_types.map{ |e| "  #{e}" }
+        puts CCU::Profile.new(p).rectypes.map{ |e| "  #{e}" }
       }
     end
 
@@ -76,7 +71,17 @@ module CspaceConfigUntangler
     
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
-      CCU::Extensions.new(get_profiles).print
+      exts = {}
+      get_profiles.each{ |p|
+        CCU::Profile.new(p).extensions.each{ |ext|
+          if exts.has_key?(ext)
+            exts[ext] << p
+          else
+            exts[ext] = [p]
+          end
+        }
+      }
+      pp(exts)
     end
 
     desc 'get_form_fields', 'get field info from form definitions for a given record type in a given profile'
@@ -84,6 +89,53 @@ module CspaceConfigUntangler
     option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
     def get_form_fields
       CCU::FormFieldGetter.new(options[:profile], options[:rectype])
+    end
+
+    desc 'field_def_csv', 'write CSV containing field definition data'
+    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
+    option :output, :desc => 'path to output file', :default => 'data/field_definitions.csv'
+    def field_def_csv
+      field_defs = []
+      get_profiles.each {|profile|
+        p = CCU::Profile.new(profile)
+        p.field_defs.each{ |id, arr|
+          arr.each{ |fd| field_defs << fd }
+        }
+      }
+      CSV.open(options[:output], 'wb'){ |csv|
+        csv << field_defs[0].csv_header
+        field_defs.each{ |fd| csv << fd.to_csv }
+      }
+    end
+
+    desc 'form_fields_csv', 'write CSV containing form field data'
+    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
+    option :output, :desc => 'path to output file', :default => 'data/form_fields.csv'
+    def form_fields_csv
+      ffs = []
+      get_profiles.each {|profile|
+        p = CCU::Profile.new(profile)
+        p.form_fields.each{ |ff| ffs << ff }
+      }
+      CSV.open(options[:output], 'wb'){ |csv|
+        csv << ffs[0].csv_header
+        ffs.each{ |ff| csv << ff.to_csv }
+      }
+    end
+
+    desc 'fields_csv', 'write CSV containing form field data'
+    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
+    option :output, :desc => 'path to output file', :default => 'data/fields.csv'
+    def fields_csv
+      fs = []
+      get_profiles.each {|profile|
+        p = CCU::Profile.new(profile)
+        p.fields.each{ |f| fs << f }
+      }
+      CSV.open(options[:output], 'wb'){ |csv|
+        csv << fs[0].csv_header
+        fs.each{ |f| csv << f.to_csv }
+      }
     end
 
     desc 'get_fields', 'get field info from field definitions for a given record type in a given profile'
@@ -102,40 +154,43 @@ module CspaceConfigUntangler
     desc 'testy', 'do things...'
     def testy
 
-#      fc = CCU::FieldCompiler.new(get_profiles)
-#      fc.form_fields_csv
-      
-      profile = 'core'
-      rectype = 'collectionobject'
-      form = 'default'
-      #      sectionname = 'condition'
+      get_profiles.each{ |profile|
+        p = CCU::Profile.new(profile)
+        #        f = p.field_defs
+        puts "\n#{profile}"
+        puts p.defined_fields_not_used
+      }
 
-#      CCU::ProfileAuthorities.new(profile)
+      # ## Compare fields between two profiles
+      # core = CCU::Profile.new('core')
+      # core_fields = core.form_fields
+      # cf = core_fields.map{ |f| f.id }
 
-      CCU::FieldDefinitionGetter.new(profile, rectype)
-#      pp(CCU::FormFieldGetter.new(profile, rectype).fields)
+      # lhmc = CCU::Profile.new('lhmc')
+      # lhmc_fields = lhmc.form_fields
+      # lf = lhmc_fields.map{ |f| f.id }
 
-#      pp(CCU::FieldData.new('namespace here').hash)
-      #config = CCU::Profile.new(profile).config
-      #fields = config['recordTypes'][rectype]['fields']
-      #pp(fields['document']['ns2:collectionobjects_anthro']['anthroOwnershipGroupList']['anthroOwnershipGroup']['anthroOwner'])
-      
-      #form = config['recordTypes'][rectype]['forms'][form]['template']
-      #pp(form.keys)
-      #pp(form['serviceConfig'])
-      
-      #sections = form['props']['children']
-      #pp(sections)
+      # puts lf - cf
 
-      #sections.each{ |section|
-      #  name = section['props'].keys.include?('name') ? section['props']['name'] : ''
-      #  pp(section['props']['children']) if name == sectionname
-      #}
+      # get_profiles.each{ |profile|
+      #   p = CCU::Profile.new(profile)
+      #   f = p.field_defs
+      #   h = {}
+      #   f.each{ |id, arr|
+      #      if id.include?('fieldLocVerbatim')
+      #       if arr.length > 1
+      #         if h.has_key?(arr.length)
+      #           h[arr.length] << id
+      #         else
+      #           h[arr.length] = [id]
+      #         end
+      #       end
+      #     end
+      #   }
+      #   puts "\n\n#{profile}"
+      #   pp(h)
+      #        fields.each{ |f| puts "#{profile} - #{f.id} - #{f.value_source}" if f.value_source && f.value_source.select{ |e| e.start_with?('other: ') }.count > 0 }
 
-#      s.each{ |sp|
-#        sprops = sp['props']
-#        pp(sprops) unless sprops.keys.include?('children')
-#      }
     end
 
   end

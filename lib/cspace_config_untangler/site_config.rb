@@ -1,7 +1,7 @@
 require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
-  class Config
+  class SiteConfig
     attr_reader :profile
     attr_reader :url_base
     attr_reader :user
@@ -27,8 +27,15 @@ module CspaceConfigUntangler
         user: @user,
         pass: @pw
       ).get(apiurl)
-      body = response.body
-      return body.to_s
+      case response.status
+      when 200
+        body = response.body
+        return body.to_s
+      else
+        CCU::LOG.warn("REST API error: #{response.status} for #{apiurl}")
+        puts "REST API error: #{response.status} for #{apiurl}. Returning nil."
+        return nil
+      end
     end
     
   end #class Config

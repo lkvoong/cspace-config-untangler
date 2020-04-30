@@ -1,9 +1,5 @@
-RSpec.describe CspaceConfigUntangler do
+RSpec.describe CCU do
   it "has a version number" do
-    expect(CspaceConfigUntangler::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    expect(CCU::VERSION).not_to be nil
   end
 end
