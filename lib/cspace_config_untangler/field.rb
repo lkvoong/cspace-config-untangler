@@ -85,6 +85,8 @@ module CspaceConfigUntangler
     def find_field_def_alt
       if @ns == 'ns2:conservation_livingplant'
         try_id = @id.sub('ext.', 'conservation_')
+      else
+        try_id = "#{@ns.sub('ns2:', '')}.#{@name}"
       end
 
       if @profile.field_defs[:single].has_key?(try_id)

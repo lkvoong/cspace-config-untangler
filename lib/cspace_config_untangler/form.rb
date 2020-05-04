@@ -48,7 +48,9 @@ module CspaceConfigUntangler
       # we only want top-level panels to be treated as such in the human-readable CSVs
       @panel = @parent.panel if @is_panel && @parent
 
-      if @hash.dig('children')
+      if @ns == 'ns2:collectionspace_core'
+        #skip
+      elsif @hash.dig('children')
         # this catches a form field whose child field is not defined as a field
         if @ns == 'ns2:works_common' && @name == 'workDateGroup'
           @form.fields << CCU::FormField.new(self)

@@ -32,15 +32,28 @@ module CspaceConfigUntangler
   
   class FieldNamespace
     # fdp = FieldDefinitionParser
-    attr_reader :fdp, :ns, :config
+    attr_reader :fdp, :ns, :ns_for_id, :config
 
     def initialize(fdpobj, ns, hash)
       @fdp = fdpobj
       @ns = ns
+      @ns_for_id = @ns
       if @ns == 'ns2:contacts_common'
         @config = @fdp.rectype.profile.config['recordTypes']['contact']['fields']['document'][@ns]
       elsif @ns == 'ns2:blobs_common'
         @config = @fdp.rectype.profile.config['recordTypes']['blob']['fields']['document'][@ns]
+      elsif @ns == 'ns2:collectionobjects_accessionuse'
+        @ns_for_id = 'ext.accessionuse'
+        @config = hash
+      elsif @ns == 'ns2:propagations_common'
+        @ns_for_id = 'ns2:propagation_common'
+        @config = hash
+      elsif @ns == 'ns2:conditionchecks_variablemedia'
+        @ns_for_id = 'ext.technicalChanges'
+        @config = hash
+      elsif @ns == 'ns2:acquisitions_commission'
+        @ns_for_id = 'ext.commission'
+        @config = hash
       else
         @config = hash
       end
@@ -60,14 +73,13 @@ module CspaceConfigUntangler
 
   class FieldVerifier
     def initialize(fdp, name, config, parent)
-      #binding.pry if name == 'accessionDateGroup'
       skip = %w[csid inAuthority refName shortIdentifier]
       fdp.field_defs << CCU::FieldDefinition.new(fdp, name, config, parent) unless skip.include?(name)
     end
   end
 
   class FieldConfigChild
-    attr_reader :name, :ns, :id,
+    attr_reader :name, :ns, :ns_for_id, :id,
       :schema_path,
       :repeats, :in_repeating_group
 
@@ -78,6 +90,9 @@ module CspaceConfigUntangler
       
       @name = name
       @ns = parent.ns
+      @ns_for_id = parent.ns_for_id
+      update_id_ns
+#      binding.pry if @name == 'visualPreferencesList'
       @id = get_id
       get_message('name') if @id
       get_message('fullName') if @id
@@ -93,6 +108,11 @@ module CspaceConfigUntangler
     end
     
     private
+
+    def update_id_ns
+      @ns_for_id = "ext.#{@config['extensionName']}" if @config.dig('extensionName')
+      @ns_for_id = "ext.#{@config['[config]']['extensionName']}" if @config.dig('[config]', 'extensionName')
+    end
     
     def set_schema_path
       if @parent.is_a?(CCU::FieldNamespace)
@@ -155,7 +175,7 @@ module CspaceConfigUntangler
 
   class FieldDefinition < FieldConfigChild
     include CCU::TrackAttributes
-    attr_reader :name, :ns, :id,
+    attr_reader :name, :ns, :ns_for_id, :id,
       :schema_path,
       :repeats, :in_repeating_group,
       :data_type, :value_source, :value_list,
@@ -171,6 +191,7 @@ module CspaceConfigUntangler
       @required = set_required
       set_fingerprint
       clean_up
+      
     end
 
     def to_h
@@ -285,6 +306,8 @@ module CspaceConfigUntangler
     def set_id
       if @parent.is_a?(CCU::FieldGrouping) && @parent.is_structured_date?
         @id = "ext.structuredDate.#{@name}"
+      elsif @parent.is_a?(CCU::FieldGrouping) && @parent.schema_path.include?('localityGroupList')
+        @id = "ext.locality.#{@name}"
       elsif @config.dig('[config]', 'extensionName')
         @id = "ext.structuredDate.#{@name}" if @config['[config]']['extensionName'] == 'structuredDate'
         @id = "ext.dimension.#{@name}" if @config['[config]']['extensionName'] == 'dimension'
@@ -295,7 +318,7 @@ module CspaceConfigUntangler
       elsif @id == 'approvalGroupField.approvalGroup'
         @id = "#{@ns.sub('ns2:', '')}.approvalGroup"
       else
-        @id = "#{@ns.sub('ns2:', '')}.#{@name}"
+        @id = "#{@ns_for_id.sub('ns2:', '')}.#{@name}"
       end
     end
 
@@ -329,30 +352,3 @@ module CspaceConfigUntangler
   end
   
 end #module
-
-      # fields = []
-      # fgroups = []
-      # other = []
-      # @config.each{ |k, h|
-      #   if h.keys.length == 1 && h.keys == ['[config]']
-      #     fields << k
-      #   elsif h.keys.length > 1
-      #     fgroups << k
-      #   else
-      #     other << k
-      #   end
-      # }
-
-      # puts "\nFIELDS"
-      # fields.each{ |f|
-      #   puts "#{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - #{f}"
-      # }
-      # puts "\nFIELD GROUPS"
-      # fgroups.each{ |f|
-      #   puts "#{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - #{f}"
-      # }
-      # puts "\nOTHER"
-      # other.each{ |f|
-      #   puts "#{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - #{f}"
-      # }
-

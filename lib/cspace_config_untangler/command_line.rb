@@ -63,7 +63,7 @@ module CspaceConfigUntangler
     def pretty_print_profiles
       get_profiles.each{ |p|
         profile = CCU::Profile.new(p).config
-        File.open("#{CCU::CONFIGDIR}/#{p}_readable.txt", 'w'){ |f|
+        File.open("#{CCU::CONFIGDIR}/#{p}_readable.json", 'w'){ |f|
           f.puts JSON.pretty_generate(profile)
         }
       }

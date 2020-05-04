@@ -27,12 +27,37 @@ module CspaceConfigUntangler
       @data_type = set_data_type(@name)
       @value_source = []
       @value_list = []
-      
+      populate_value_data(@name)
       @to_csv = format_csv
     end
 
     private
 
+    def populate_value_data(fieldname)
+      if @profile.config.dig('extensions', 'structuredDate', 'fields', fieldname, '[config]', 'view', 'props', 'source')
+        src = @profile.config.dig('extensions', 'structuredDate', 'fields', fieldname, '[config]', 'view', 'props', 'source')
+        src.split(',').each{ |source|
+          if @profile.option_lists.include?(source)
+            @value_source << "option list: #{source}"
+            list = @profile.config.dig('optionLists', source, 'values')
+            @value_list = list.sort if list
+          elsif @profile.authorities.include?(source)
+            @value_source << "authority: #{source}"
+          elsif @profile.vocabularies.include?(source)
+            @value_source << "vocabulary: #{source}"
+          elsif source['/']
+            # do nothing; authority not included in this profile is specified in field definition
+            #  reused by multiple profiles
+          elsif @name.end_with?('Number') && number_types.include?(source)
+            # do nothing; defines number pattern or object/procedure linkage
+          else
+            CCU::LOG.warn("DATA SOURCES: #{@profile.name} - #{@rectype.name} - #{@ns} - #{@id} - Source value '#{source}' is not an option list, authority, or vocabulary")
+            @value_source << "other: #{source}"
+          end
+        }
+      end
+    end
+    
     def set_data_type(fieldname)
       h = {
         'dateDisplayDate' => 'string',
