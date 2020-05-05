@@ -33,10 +33,52 @@ If you need to add another config to the handling, edit the `CDC.const_set('PROF
 == Usage
 
 * Clone this repo
+* `cd` into cloned directory
 * `bundle/install`
 * Download your configs into the appropriate `data/configs/{version}` directory or directories
 * Configure your constants https://github.com/lyrasis/cspace-config-untangler/blob/7dbf54bc5f6f8df4079aa9de8b4f8666af4b1fd8/lib/cspace_config_untangler.rb#L17-L19[here]
 ** CONFIGDIR should point to the directory for the default version of the configs you want to work with. A forthcoming command line function to allow the comparison of two versions of the same profile will allow you to specify what to compare your default version against.
+* Set up `profile_config.yaml`. See sub-section below for details on this.
+
+Once this is done, from the cloned directory, you should be able to type `exe/ccu` (or just `ccu` depending on your setup) at the command prompt to get the list of available functions with their brief descriptions.
+
+`main_profile`, `all_profiles`, and `check_profiles` help you verify your config and use of the --profiles option are ok.
+
+`readable_profiles` saves the specified JSON config(s) to new files as pretty-printed JSON you can meaningfully grep or deal with in Oxygen or other editors.
+
+`list_rec_types` and `extensions_by_profile` give some high-level info for each profile.
+
+`fields_csv` outputs CSV file of combined data from field_defs and form_fields for each profile indicated.
+
+===`profile_config.yaml` setup
+
+This YAML config supports using the CSpace services REST API to get the vocabularies used by a profile.
+
+It is parsed and used by `/lib/cspace_config_untangler/site_config.rb`.
+
+Use the following format:
+
+[source, yaml]
+----
+profiles:
+  core:
+    setup: 'standard'
+  anthro:
+    setup: 'standard'
+  clientname:
+    prod:
+      base: 'cspace.clientdomain.org'
+      user: 'admin@cspace.clientdomain.org'
+      pw: 'passwordstring'
+    dev:
+      base: 'client.lyrtech.org'
+      user: 'admin@cspace.clientdomain.org'
+      pw: 'passwordstring'
+----
+
+The behavior of `setup: standard` for authenticating to demo or dev is hard-coded for LYRASIS-hosting assumptions in `site_config.rb`.
+
+For different authentication patterns, follow the pattern shown for the `clientname` profile. `clientname` must match a profile listed in your constants. Setting up `prod` is required. Setting up `dev` is optional.
 
 
 == Known limitations/issues
