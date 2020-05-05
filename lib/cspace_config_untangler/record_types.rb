@@ -109,26 +109,4 @@ module CspaceConfigUntangler
     end
   end
 
-  # class RecordType
-  #   attr_reader :profile
-  #   attr_reader :name
-  #   attr_reader :id
-  #   attr_reader :config
-  #   attr_reader :docname
-  #   attr_reader :default_ns
-  #   attr_reader :form_fields
-
-  #   def initialize(profile, rectype)
-  #     @profile = profile
-  #     @name = rectype
-  #     @id = "#{profile}/#{rectype}"
-  #     @config = CCU::Profile.new(profile).config['recordTypes'][rectype]
-  #     @docname = @config['serviceConfig']['documentName']
-  #     @default_ns = "ns2:#{@docname}_common"
-  #   end
-
-  #   def form_fields
-  #     CCU::FormFieldGetter.new(@profile, @name)
-  #   end
-  # end
 end

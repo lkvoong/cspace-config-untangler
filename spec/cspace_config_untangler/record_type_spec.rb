@@ -16,18 +16,14 @@ RSpec.describe CCU::RecordType do
   end
 
   describe '.panels' do
-    it 'returns hash' do
-      expect(anthro_co.panels).to be_instance_of(Hash)
+    it 'returns array' do
+      expect(anthro_co.panels).to be_instance_of(Array)
     end
-    it 'keys are the panel names for rectype' do
+    it 'includes all panel names for rectype' do
       p = ['id', 'desc', 'content', 'textInscript', 'nonTextInscript', 'prod', 'hist', 'assoc', 'owner',
            'viewer', 'reference', 'collect', 'hierarchy', 'bio', 'commingledRemains', 'locality',
            'culturalCare', 'georefDetail', 'nagpraCompliance'].sort
-      expect(anthro_co.panels.keys.sort).to eq(p)
-    end
-    it 'gets panel message overrides from profile level' do
-      msg = anthro_co.panels['reference'][:label]
-      expect(msg).to eq('Bibliographic Reference Information')
+      expect(anthro_co.panels.sort).to eq(p)
     end
   end
 

@@ -22,8 +22,11 @@ module CspaceConfigUntangler
       when 'contact'
         @type = 'subrecord'
         @rectypes = @profile.config['recordTypes'].keys.select{ |rt| @profile.config['recordTypes'][rt].dig('subrecords', 'contact') }
+      when 'blob'
+        @type = 'subrecord'
+        @rectypes = @profile.config['recordTypes'].keys.select{ |rt| @profile.config['recordTypes'][rt].dig('subrecords', 'blob') }
       else
-        chk = @config.keys & @profile.rectypes
+        chk = @config.keys & @profile.rectypes.map{ |rt| rt.name }
         
         case chk.length
         when 0
