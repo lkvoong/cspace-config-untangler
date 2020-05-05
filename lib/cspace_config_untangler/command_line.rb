@@ -59,8 +59,8 @@ module CspaceConfigUntangler
       }
     end
 
-    desc 'pretty_print_profiles', 'create file containing JSON that is not all one line'
-    def pretty_print_profiles
+    desc 'readable_profiles', 'create file containing JSON that is not all one line'
+    def readable_profiles
       get_profiles.each{ |p|
         profile = CCU::Profile.new(p).config
         File.open("#{CCU::CONFIGDIR}/#{p}_readable.json", 'w'){ |f|
