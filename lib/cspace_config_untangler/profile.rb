@@ -60,9 +60,7 @@ module CspaceConfigUntangler
         end
       }
 
-      hc = {single: {}, multi: {}}
-      h.each{ |id, arr| arr.uniq{ |e| e.fingerprint }.length == 1 ? hc[:single][id] = arr[0] : hc[:multi][id] = arr }
-      @field_defs = hc
+      @field_defs = h
     end
 
     def get_form_fields

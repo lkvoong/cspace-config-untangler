@@ -23,12 +23,8 @@ module CspaceConfigUntangler
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
 
-  autoload :FormFieldCompiler, 'cspace_config_untangler/field_compiler'
   autoload :Field, 'cspace_config_untangler/field'
-  autoload :FieldData, 'cspace_config_untangler/field_getter'
-  autoload :FieldGetter, 'cspace_config_untangler/field_getter'
   autoload :FieldDefinitionParser, 'cspace_config_untangler/field_definition_parser'
-  autoload :FormFieldGetter, 'cspace_config_untangler/field_getter'
   autoload :Form, 'cspace_config_untangler/form'
   autoload :FormProps, 'cspace_config_untangler/form'
   autoload :Profile, 'cspace_config_untangler/profile'
@@ -45,18 +41,18 @@ module CspaceConfigUntangler
     Marshal.load(Marshal.dump(hash))
   end
 
-module TrackAttributes
-  def attr_readers
-    self.class.instance_variable_get('@attr_readers')
-  end
+  module TrackAttributes
+    def attr_readers
+      self.class.instance_variable_get('@attr_readers')
+    end
 
-  def self.included(klass)
-    klass.send :define_singleton_method, :attr_reader, ->(*params) do
-      @attr_readers ||= []
-      @attr_readers.concat params
-      super(*params)
+    def self.included(klass)
+      klass.send :define_singleton_method, :attr_reader, ->(*params) do
+        @attr_readers ||= []
+        @attr_readers.concat params
+        super(*params)
+      end
     end
   end
-end
 
 end

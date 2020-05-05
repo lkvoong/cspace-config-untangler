@@ -175,6 +175,7 @@ module CspaceConfigUntangler
   end
 
   class FormField
+    include CCU::TrackAttributes
     attr_reader :profile, :rectype, :name, :ns, :ns_for_id, :panel, :ui_path, :id, :to_csv
 
     def initialize(propsobj)
@@ -194,6 +195,14 @@ module CspaceConfigUntangler
 
     def csv_header
       return %w[profile record_type panel ui_path field_id field_name]
+    end
+
+    def to_h
+      attrs = self.attr_readers.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
+      h = {}
+      attrs.each{ |a| h[a] = self.instance_variable_get(a) }
+      h.delete(:@to_csv)
+      return h
     end
 
     private

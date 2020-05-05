@@ -55,7 +55,7 @@ module CspaceConfigUntangler
     def list_rec_types
       get_profiles.each{ |p|
         puts "\n#{p}:"
-        puts CCU::Profile.new(p).rectypes.map{ |e| "  #{e}" }
+        puts CCU::Profile.new(p).rectypes.map{ |e| "  #{e.name}" }
       }
     end
 
@@ -84,43 +84,66 @@ module CspaceConfigUntangler
       pp(exts)
     end
 
-    desc 'get_form_fields', 'get field info from form definitions for a given record type in a given profile'
-    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
-    option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
-    def get_form_fields
-      CCU::FormFieldGetter.new(options[:profile], options[:rectype])
-    end
-
-    desc 'field_def_csv', 'write CSV containing field definition data'
-    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
+    desc 'write_field_defs', 'write file containing field definition data'
+    option :profile, :desc => 'the profile(s) to get fields for', :default => 'core'
+    option :rectype, :desc => 'the record type(s) to get fields for', :default => 'all'
+    option :format, :desc => 'output format: csv or json', :default => 'csv'
     option :output, :desc => 'path to output file', :default => 'data/field_definitions.csv'
-    def field_def_csv
+    def write_field_defs
       field_defs = []
       get_profiles.each {|profile|
         p = CCU::Profile.new(profile)
+        if options[:rectype] == 'all'
+          rts = p.rectypes.map{ |rt| rt.name }
+        else
+          rts = options[:rectype].split(',').map{ |e| e.strip }  
+        end
         p.field_defs.each{ |id, arr|
-          arr.each{ |fd| field_defs << fd }
+          arr.each{ |fd| field_defs << fd if rts.include?(fd.rectype) }
         }
       }
-      CSV.open(options[:output], 'wb'){ |csv|
-        csv << field_defs[0].csv_header
-        field_defs.each{ |fd| csv << fd.to_csv }
-      }
+
+      case options[:format]
+      when 'csv'
+        CSV.open(options[:output], 'wb'){ |csv|
+          csv << field_defs[0].csv_header
+          field_defs.each{ |fd| csv << fd.to_csv }
+        }
+      when 'json'
+        File.open(options[:output], 'w'){ |file|
+          file.write(JSON.pretty_generate(field_defs.map{ |fd| fd.to_h }))
+        }
+      end
     end
 
-    desc 'form_fields_csv', 'write CSV containing form field data'
-    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
+    desc 'write_form_fields', 'write file containing form field data'
+    option :profile, :desc => 'the profile(s) to get fields for', :default => 'core'
+    option :rectype, :desc => 'the record type(s) to get fields for', :default => 'all'
+    option :format, :desc => 'output format: csv or json', :default => 'csv'
     option :output, :desc => 'path to output file', :default => 'data/form_fields.csv'
-    def form_fields_csv
-      ffs = []
+    def write_form_fields
+      form_fields = []
       get_profiles.each {|profile|
         p = CCU::Profile.new(profile)
-        p.form_fields.each{ |ff| ffs << ff }
+        if options[:rectype] == 'all'
+          rts = p.rectypes.map{ |rt| rt.name }
+        else
+          rts = options[:rectype].split(',').map{ |e| e.strip }  
+        end
+        p.form_fields.each{ |ff| form_fields << ff if rts.include?(ff.rectype) }
       }
-      CSV.open(options[:output], 'wb'){ |csv|
-        csv << ffs[0].csv_header
-        ffs.each{ |ff| csv << ff.to_csv }
-      }
+
+      case options[:format]
+      when 'csv'
+        CSV.open(options[:output], 'wb'){ |csv|
+          csv << form_fields[0].csv_header
+          form_fields.each{ |ff| csv << ff.to_csv }
+        }
+      when 'json'
+        File.open(options[:output], 'w'){ |file|
+          file.write(JSON.pretty_generate(form_fields.map{ |ff| ff.to_h }))
+        }
+      end
     end
 
     desc 'fields_csv', 'write CSV containing form field data'
@@ -137,61 +160,6 @@ module CspaceConfigUntangler
         fs.each{ |f| csv << f.to_csv }
       }
     end
-
-    desc 'get_fields', 'get field info from field definitions for a given record type in a given profile'
-    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
-    option :rectype, :desc => 'the record type to get fields for', :default => 'collectionobject'
-    def get_fields
-      CCU::FieldDefinitionGetter.new(options[:profile], options[:rectype])
-    end
-
-    desc 'compile_form_fields', 'combines form field info across profiles/record types'
-    option :rectypes, :desc => 'comma-delimited list of record types to get fields for', :default => ''
-    def compile_form_fields
-      CCU::FormFieldCompiler.new(get_profiles, options[:rectypes].split(',').map(&:strip).sort)
-    end
     
-    desc 'testy', 'do things...'
-    def testy
-
-      get_profiles.each{ |profile|
-        p = CCU::Profile.new(profile)
-        #        f = p.field_defs
-        puts "\n#{profile}"
-        puts p.defined_fields_not_used
-      }
-
-      # ## Compare fields between two profiles
-      # core = CCU::Profile.new('core')
-      # core_fields = core.form_fields
-      # cf = core_fields.map{ |f| f.id }
-
-      # lhmc = CCU::Profile.new('lhmc')
-      # lhmc_fields = lhmc.form_fields
-      # lf = lhmc_fields.map{ |f| f.id }
-
-      # puts lf - cf
-
-      # get_profiles.each{ |profile|
-      #   p = CCU::Profile.new(profile)
-      #   f = p.field_defs
-      #   h = {}
-      #   f.each{ |id, arr|
-      #      if id.include?('fieldLocVerbatim')
-      #       if arr.length > 1
-      #         if h.has_key?(arr.length)
-      #           h[arr.length] << id
-      #         else
-      #           h[arr.length] = [id]
-      #         end
-      #       end
-      #     end
-      #   }
-      #   puts "\n\n#{profile}"
-      #   pp(h)
-      #        fields.each{ |f| puts "#{profile} - #{f.id} - #{f.value_source}" if f.value_source && f.value_source.select{ |e| e.start_with?('other: ') }.count > 0 }
-
-    end
-
-  end
-end
+  end #class Thor::CommandLine
+end #module
