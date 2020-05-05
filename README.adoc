@@ -9,8 +9,9 @@ Gets fields as defined for use in forms (`form_fields`), including the panel in 
 
 Gets messages assigned to fields, panels, and input tables from field_defs and the messages hash under the profile and record types. *It is assumed messages set at profile level will override those at lower levels*
 
-For a given profile, matches each form_field to its corresponding field_def and creates a `field` object that combines all info for the field. 
+For a given profile, matches each form_field to its corresponding field_def and creates a `field` object that combines all info for the field. If a form_field represents a field group populated with structured date fields, the individual structured date fields are provided from the extension, and the original form_field is treated as the parent UI grouping.
 
+_Note: there may be field_defs in a profile which do not match any form_fields. Field objects are not created/reported for these, because if a field has not been made available for viewing/editing in a form, it is not considered included in the profile._
 
 == JSON config source files
 Since there is no way to programmatically grab the JSON config, this currently requires you to manually download the JSON config files from the following links. The JSON files should be saved with the as `{profilename}.json` in the `data/configs/{version}` directory:
@@ -29,4 +30,17 @@ Since there is no way to programmatically grab the JSON config, this currently r
 
 If you need to add another config to the handling, edit the `CDC.const_set('PROFILES')` value in `lib/command_line.rb`.
 
-...more info about usage coming as the tool takes shape... 
+== Usage
+
+* Clone this repo
+* `bundle/install`
+* Download your configs into the appropriate `data/configs/{version}` directory or directories
+* Configure your constants https://github.com/lyrasis/cspace-config-untangler/blob/7dbf54bc5f6f8df4079aa9de8b4f8666af4b1fd8/lib/cspace_config_untangler.rb#L17-L19[here]
+** CONFIGDIR should point to the directory for the default version of the configs you want to work with. A forthcoming command line function to allow the comparison of two versions of the same profile will allow you to specify what to compare your default version against.
+
+
+== Known limitations/issues
+
+- For 5.2 configs, data source values are not consistently supplied for structured date fields. This is because configuration of the structured date fields was not written out to the JSON config in a standard way until 6.0.
+- Does not currently report on fields in the `ns2:collectionspace_core` namespace 
+- Does not currently report on fields in the `rel:relations-common-list` namespace because the way this data is defined in the config is very different from the rest
