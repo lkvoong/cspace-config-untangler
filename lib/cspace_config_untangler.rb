@@ -28,6 +28,7 @@ module CspaceConfigUntangler
   autoload :Form, 'cspace_config_untangler/form'
   autoload :FormProps, 'cspace_config_untangler/form'
   autoload :Profile, 'cspace_config_untangler/profile'
+  autoload :ProfileComparison, 'cspace_config_untangler/profile_comparison'
   autoload :Extension, 'cspace_config_untangler/extensions'
   autoload :Extensions, 'cspace_config_untangler/extensions'
   autoload :RecordTypes, 'cspace_config_untangler/record_types'

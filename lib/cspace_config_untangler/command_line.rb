@@ -31,7 +31,7 @@ module CspaceConfigUntangler
     class_option :profiles,
       desc: 'Comma-separated list (NO SPACES) of non-main profiles you want to process. If not set, will run main profile only. If "all", will run all known profiles.',
       type: 'string',
-      default: '',
+      default: 'core',
       aliases: '-p'
     
     desc 'main_profile', 'print the name of the main profile'
@@ -85,7 +85,6 @@ module CspaceConfigUntangler
     end
 
     desc 'write_field_defs', 'write file containing field definition data'
-    option :profile, :desc => 'the profile(s) to get fields for', :default => 'core'
     option :rectype, :desc => 'the record type(s) to get fields for', :default => 'all'
     option :format, :desc => 'output format: csv or json', :default => 'csv'
     option :output, :desc => 'path to output file', :default => 'data/field_definitions.csv'
@@ -117,7 +116,6 @@ module CspaceConfigUntangler
     end
 
     desc 'write_form_fields', 'write file containing form field data'
-    option :profile, :desc => 'the profile(s) to get fields for', :default => 'core'
     option :rectype, :desc => 'the record type(s) to get fields for', :default => 'all'
     option :format, :desc => 'output format: csv or json', :default => 'csv'
     option :output, :desc => 'path to output file', :default => 'data/form_fields.csv'
@@ -147,7 +145,6 @@ module CspaceConfigUntangler
     end
 
     desc 'fields_csv', 'write CSV containing form field data'
-    option :profile, :desc => 'the single profile to get fields for', :default => 'core'
     option :output, :desc => 'path to output file', :default => 'data/fields.csv'
     def fields_csv
       fs = []
@@ -160,6 +157,41 @@ module CspaceConfigUntangler
         fs.each{ |f| csv << f.to_csv }
       }
     end
+
+    desc 'report_nonunique_fields', 'print list of non-unique fields per profile'
+    long_desc <<-LONGDESC
+Uniqueness is determined by the full XML schema, i.e. the schema_path plus the field name.
+
+The full schema_path should be unique within a record type. Non-unique fields are unexpected and the profile, record type, and schema path will be printed to the screen if any are found.
+  LONGDESC
+    def report_nonunique_fields
+      get_profiles.each {|profile|
+        p = CCU::Profile.new(profile)
+        h = {}
+        p.nonunique_fields.each{ |rt, fields| h[rt] = fields if fields.length > 0 }
+        h.each{ |rt, fields| fields.each{ |f| puts "#{@name} - #{rt} - #{f}" } }
+      }
+    end
     
+    desc 'compare_profiles', 'outputs a comparison of two profiles in CSV format'
+    option :output, :desc => 'path to directory in which to output file', :default => 'data'
+    def compare_profiles
+      if options[:profiles] == 'all'
+        profiles = get_profiles
+      else
+        profiles = options[:profiles].split(',').map{ |p| p.strip }
+      end
+      
+      if profiles.length > 2
+        puts "Can only compare two profiles at a time"
+        exit
+      elsif profiles.length == 1
+        puts "Needs two profiles to compare"
+        exit
+      else
+        CCU::ProfileComparison.new(profiles, options[:output]).write_csv
+      end
+    end
+
   end #class Thor::CommandLine
 end #module

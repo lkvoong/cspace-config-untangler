@@ -45,6 +45,18 @@ module CspaceConfigUntangler
       @rectypes.map{ |rt| rt.fields }.flatten
     end
 
+    def nonunique_fields
+      h = {}
+      @rectypes.each{ |rt|
+        if rt.nonunique_fields.nil?
+          h[rt.name] = []
+        else
+          h[rt.name] = rt.nonunique_fields
+        end
+      }
+      return h
+    end
+    
     private
 
     def get_field_defs
