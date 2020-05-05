@@ -1,6 +1,6 @@
 = CspaceConfigUntangler
 
-Currently this requires you to manually download the JSON config files from the following links in the `data/configs` directory:
+Since there is no way to programmatically grab the JSON config, this currently requires you to manually download the JSON config files from the following links. The JSON files should be saved with the as `{profilename}.json` in the `data/configs/{version}` directory:
 
 -  https://core.collectionspace.org/cspace/core/config
 -  https://anthro.collectionspace.org/cspace/anthro/config
