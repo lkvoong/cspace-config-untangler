@@ -180,8 +180,7 @@ module CspaceConfigUntangler
       :repeats, :in_repeating_group,
       :data_type, :value_source, :value_list,
       :required,
-      :profile, :rectype,
-      :fingerprint
+      :profile, :rectype
 
     def initialize(fdp, name, config, parent)
       super(fdp, name, config, parent)
@@ -189,7 +188,6 @@ module CspaceConfigUntangler
       @data_type = set_datatype
       set_value_sources
       @required = set_required
-      set_fingerprint
       clean_up
       
     end
@@ -219,12 +217,6 @@ module CspaceConfigUntangler
     end
     
     private
-
-    def set_fingerprint
-      @fingerprint = ''
-      [@repeats, @in_repeating_group, @data_type, @required].each{ |iv| @fingerprint << iv if iv }
-      [@schema_path, @value_source, @value_list].each{ |iv| @fingerprint << iv.join('/') if iv }
-    end
 
     def clean_up
       @profile = @fdp.rectype.profile.name

@@ -1,7 +1,6 @@
 require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
-  
   class Field
   attr_reader :profile, :rectype, :name, :ns, :ns_for_id, :panel, :ui_path, :id,
       :schema_path,
@@ -72,30 +71,30 @@ module CspaceConfigUntangler
     end
 
     def find_field_def
-      if @profile.field_defs[:single].has_key?(@id)
-        return @profile.field_defs[:single][@id]
-      elsif @profile.field_defs[:multi].has_key?(@id)
-        set = @profile.field_defs[:multi][@id]
-        return set.select{ |e| e.ns == @ns }.first
-      else
+      fd = @profile.field_defs.dig(@id)
+      if fd.nil?
         return find_field_def_alt
+      elsif fd.length == 1
+        return fd.first
+      else
+        return fd.select{ |f| f.ns == @ns }.first
       end
     end
 
     def find_field_def_alt
       if @ns == 'ns2:conservation_livingplant'
-        try_id = @id.sub('ext.', 'conservation_')
+       try_id = @id.sub('ext.', 'conservation_')
       else
         try_id = "#{@ns.sub('ns2:', '')}.#{@name}"
       end
 
-      if @profile.field_defs[:single].has_key?(try_id)
-        return @profile.field_defs[:single][try_id]
-      elsif @profile.field_defs[:multi].has_key?(try_id)
-        set = @profile.field_defs[:multi][try_id]
-        return set.select{ |e| e.ns == @ns }.first
-      else
+      fd = @profile.field_defs.dig(try_id)
+      if fd.nil?
         return nil
+      elsif fd.length == 1
+        return fd.first
+      else
+        return fd.select{ |f| f.ns == @ns }.first
       end
     end
 
