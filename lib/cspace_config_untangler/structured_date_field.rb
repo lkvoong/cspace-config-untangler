@@ -34,7 +34,7 @@ module CspaceConfigUntangler
     private
 
     def populate_value_data(fieldname)
-      if @profile.config.dig('extensions', 'structuredDate', 'fields', fieldname, '[config]', 'view', 'props', 'source')
+      unless @profile.config.dig('extensions', 'structuredDate', 'fields', fieldname, '[config]', 'view', 'props', 'source').nil?
         src = @profile.config.dig('extensions', 'structuredDate', 'fields', fieldname, '[config]', 'view', 'props', 'source')
         src.split(',').each{ |source|
           if @profile.option_lists.include?(source)

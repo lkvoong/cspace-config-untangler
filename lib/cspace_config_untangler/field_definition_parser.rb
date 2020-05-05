@@ -186,6 +186,8 @@ module CspaceConfigUntangler
       super(fdp, name, config, parent)
       set_id
       @data_type = set_datatype
+      @value_source = []
+      @value_list = []
       set_value_sources
       @required = set_required
       clean_up
@@ -244,8 +246,6 @@ module CspaceConfigUntangler
       end
 
       if data.has_key?('source')
-        @value_source = []
-        @value_list = []
 
         number_types = %[accession archives claim conditioncheck conservation evaluation exhibition intake inventory library loanin loanout location media movement objectexit propagation study uoc valuationcontrol voucher]
         

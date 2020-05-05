@@ -3,7 +3,7 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   class RecordType
     attr_reader :profile, :name, :id, :config, :ns, :panels, :input_tables,
-      :forms
+      :forms, :nonunique_fields
 
     def initialize(profileobj, rectypename)
       @profile = profileobj
@@ -41,7 +41,23 @@ module CspaceConfigUntangler
       sd_fields.each{ |f|
         sdfm = CCU::StructuredDateFieldMaker.new(f)
         fields << sdfm.fields(@profile) }
-      return fields.flatten
+      fields = fields.flatten
+      @nonunique_fields = get_nonunique_fields(fields)
+      return fields
+    end
+
+    def get_nonunique_fields(fields)
+      h = {}
+      fields.each{ |f|
+        path = [f.schema_path, f.name].flatten.join(' > ')
+        if h.has_key?(path)
+          h[path] << f
+        else
+          h[path] = [f]
+        end
+      }
+      multi = h.select{ |path, farr| farr.length > 1 }
+      return multi.keys
     end
     
     private
