@@ -1,5 +1,18 @@
 = CspaceConfigUntangler
 
+== Conceptual overview
+Reads JSON config file. 
+
+Gets field definitions (`field_defs`), including repeatability, data type, value source, XML field name and parents, etc.
+
+Gets fields as defined for use in forms (`form_fields`), including the panel in which the field is included, and UI hierarchy.
+
+Gets messages assigned to fields, panels, and input tables from field_defs and the messages hash under the profile and record types. *It is assumed messages set at profile level will override those at lower levels*
+
+For a given profile, matches each form_field to its corresponding field_def and creates a `field` object that combines all info for the field. 
+
+
+== JSON config source files
 Since there is no way to programmatically grab the JSON config, this currently requires you to manually download the JSON config files from the following links. The JSON files should be saved with the as `{profilename}.json` in the `data/configs/{version}` directory:
 
 -  https://core.collectionspace.org/cspace/core/config
