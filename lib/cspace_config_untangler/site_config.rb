@@ -37,6 +37,5 @@ module CspaceConfigUntangler
         return nil
       end
     end
-    
   end #class Config
 end #module
