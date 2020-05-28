@@ -31,7 +31,7 @@ module CspaceConfigUntangler
     class_option :profiles,
       desc: 'Comma-separated list (NO SPACES) of non-main profiles you want to process. If not set, will run main profile only. If "all", will run all known profiles.',
       type: 'string',
-      default: 'core',
+      default: CCU::MAINPROFILE,
       aliases: '-p'
     
     desc 'main_profile', 'print the name of the main profile'
@@ -41,8 +41,7 @@ module CspaceConfigUntangler
 
     desc 'all_profiles', 'print the names of all known profiles'
     def all_profiles
-      puts CCU::MAINPROFILE
-      puts CCU::PROFILES
+      puts [CCU::MAINPROFILE, CCU::PROFILES].flatten.uniq.sort
     end
 
     desc 'check_profiles', 'print the names of profiles that will be processed'
@@ -144,7 +143,7 @@ module CspaceConfigUntangler
       end
     end
 
-    desc 'fields_csv', 'write CSV containing form field data'
+    desc 'fields_csv', 'write CSV containing field data'
     option :output, :desc => 'path to output file', :default => 'data/fields.csv'
     def fields_csv
       fs = []

@@ -6,8 +6,8 @@ module CspaceConfigUntangler
       :schema_path,
       :repeats, :in_repeating_group,
       :data_type, :value_source, :value_list,
-      :required,
-      :to_csv
+      :required
+  attr_accessor :to_csv
 
     def initialize(rectype_obj, form_field)
       ff = form_field

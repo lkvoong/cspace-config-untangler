@@ -14,9 +14,12 @@ require 'thor'
 
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
-  CCU.const_set('MAINPROFILE', 'core')
-  CCU.const_set('PROFILES', %w[anthro bonsai botgarden fcart herbarium lhmc materials ohc publicart])
-  CCU.const_set('CONFIGDIR', 'data/configs/5_2')
+  CCU.const_set('MAINPROFILE', 'core_6_0_0')
+  CCU.const_set('CONFIGDIR', 'data/configs')
+  config_file_names = Dir.new(CCU::CONFIGDIR).children
+    .reject{ |e| e['readable'] }
+    .map{ |fn| File.basename(fn).sub('.json', '') }
+  CCU.const_set('PROFILES', config_file_names)
   File.delete('log.log') if File::exist?('log.log')
   CCU.const_set('LOG', Logger.new('log.log'))
 

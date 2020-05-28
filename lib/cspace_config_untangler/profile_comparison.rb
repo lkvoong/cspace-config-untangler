@@ -13,52 +13,54 @@ module CspaceConfigUntangler
     end
 
     def write_csv
-      headers = %w[record_type field diff_type details]
+      fields = diffed_fields
+      headers = fields.first.csv_header
+      headers << 'diff info'
+      
       CSV.open(@output, 'w', write_headers: true, headers: headers){ |csv|
-        rows = []
-        @diff.each{ |k, arr|
-          if k.start_with?('not in')
-            arr.each{ |f|
-              row = [f.rectype]
-              row << [f.schema_path, f.name].flatten.join(' < ')
-              row << k
-              row << ''
-              rows << row
-            }
-          elsif k == 'source differences'
-            arr.each{ |h|
-              row = [h[0].rectype]
-              row << [h[0].schema_path, h[0].name].flatten.join(' < ')
-              row << k
-
-              details = "#{@profiles[0].upcase}: #{h[0].value_source.join(',')}. #{@profiles[1].upcase}: #{h[1].value_source.join(',')}. "
-              row << details
-              rows << row
-            }
-          elsif k == 'ui path differences'
-            arr.each{ |h|
-              row = [h[0].rectype]
-              row << [h[0].schema_path, h[0].name].flatten.join(' < ')
-              row << k
-
-              details = "#{@profiles[0].upcase}: #{h[0].ui_path.join(' > ')}. #{@profiles[1].upcase}: #{h[1].ui_path.join(' > ')}. "
-              row << details
-              rows << row
-            }
-          end
-        }
-        rows.each{ |r| csv << r }
+        fields.each{ |f| csv << f.to_csv }
       }
     end
     
     private
+
+    def diffed_fields
+            diff_fields = []
+      
+      @diff.each do |type, val|
+        if type['not in']
+          # val is an array of field objects
+          val.each do |f|
+            f.to_csv << type
+            diff_fields << f
+          end
+        elsif type == 'same'
+          # val is array of hashes of two field objects { 0 => fieldobj, 1 => fieldobj }
+          val.each do |h|
+            h.each_value{ |f| diff_fields << f }
+          end
+        else
+          # val is array of hashes of two field objects { 0 => fieldobj, 1 => fieldobj }
+          val.each do |h|
+            h.each_value do |f|
+              f.to_csv << type
+              diff_fields << f
+            end
+          end
+        end
+      end
+
+      return diff_fields
+    end
+    
 
     def diff_combined
       diff = {
         "not in #{@profiles[0]}" => [],
         "not in #{@profiles[1]}" => [],
         'source differences' => [],
-        'ui path differences' => []
+        'ui path differences' => [],
+        'same' => []
       }
       
       @combined.each{ |id, hash|
@@ -70,8 +72,11 @@ module CspaceConfigUntangler
           diff['source differences'] << hash
         elsif hash[0].ui_path != hash[1].ui_path
           diff['ui path differences'] << hash
+        else
+          diff['same'] << hash
         end
       }
+      
       return diff
     end
     
