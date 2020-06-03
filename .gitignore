@@ -14,4 +14,6 @@ Gemfile.lock
 
 # data to ignore
 *.xlsx
-/data/
+/data/*.csv
+/data/profile_config.yaml
+/data/configs/*.json
