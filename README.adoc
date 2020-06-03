@@ -14,7 +14,7 @@ For a given profile, matches each form_field to its corresponding field_def and 
 _Note: there may be field_defs in a profile which do not match any form_fields. Field objects are not created/reported for these, because if a field has not been made available for viewing/editing in a form, it is not considered included in the profile._
 
 == JSON config source files
-Since there is no way to programmatically grab the JSON config, this currently requires you to manually download the JSON config files from the following links. The JSON files should be saved with the as `{profilename}.json` in the `data/configs/{version}` directory:
+Since there is no way to programmatically grab the JSON config, this currently requires you to manually download the JSON config files from the following links. The JSON files should be saved with the as `{profilename}.json` in the `data/configs` directory:
 
 -  https://core.collectionspace.org/cspace/core/config
 -  https://anthro.collectionspace.org/cspace/anthro/config
@@ -28,16 +28,15 @@ Since there is no way to programmatically grab the JSON config, this currently r
 -  https://cspace.ohiohistory.org/cspace/ohc/config
 
 
-If you need to add another config to the handling, edit the `CDC.const_set('PROFILES')` value in `lib/command_line.rb`.
+Set `CDC.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
 
 == Usage
 
 * Clone this repo
 * `cd` into cloned directory
 * `bundle/install`
-* Download your configs into the appropriate `data/configs/{version}` directory or directories
+* Download your configs into the appropriate `data/configs` directory or directories
 * Configure your constants https://github.com/lyrasis/cspace-config-untangler/blob/7dbf54bc5f6f8df4079aa9de8b4f8666af4b1fd8/lib/cspace_config_untangler.rb#L17-L19[here]
-** CONFIGDIR should point to the directory for the default version of the configs you want to work with. A forthcoming command line function to allow the comparison of two versions of the same profile will allow you to specify what to compare your default version against.
 * Set up `profile_config.yaml`. See sub-section below for details on this.
 
 Once this is done, from the cloned directory, you should be able to type `exe/ccu` (or just `ccu` depending on your setup) at the command prompt to get the list of available functions with their brief descriptions.
@@ -76,7 +75,7 @@ profiles:
       pw: 'passwordstring'
 ----
 
-The behavior of `setup: standard` for authenticating to demo or dev is hard-coded for LYRASIS-hosting assumptions in `site_config.rb`.
+The behavior of `setup: standard` for authenticating to demo or dev is hard-coded for LYRASIS-hosting assumptions in `site_config.rb`. (These authorization credentials are stated on the public landing pages for the demo and dev instances, so this is not secure info, but will eventually be refactored out.
 
 For different authentication patterns, follow the pattern shown for the `clientname` profile. `clientname` must match a profile listed in your constants. Setting up `prod` is required. Setting up `dev` is optional.
 
