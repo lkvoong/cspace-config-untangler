@@ -143,12 +143,22 @@ module CspaceConfigUntangler
       end
     end
 
-    desc 'fields_csv', 'write CSV containing field data'
+    desc 'write_fields_csv', 'write CSV containing field data'
     option :output, :desc => 'path to output file', :default => 'data/fields.csv'
-    def fields_csv
+    option :rectypes, :desc => 'Comma separated list of record types to include. Defaults to all.', :default => 'all'
+    option :structured_date,
+      :desc => 'explode: report all individual structured date fields; collapse: report the parent of individual structured date fields as the field',
+      :default => 'explode'
+    
+    def write_fields_csv
+      unless %w[explode collapse].include?(options[:structured_date])
+        puts '--structured_date parameter must be either "explode" or "collapse"'
+        exit
+      end
+      rt = options[:rectypes] == 'all' ? [] : options[:rectypes].split(',')
       fs = []
       get_profiles.each {|profile|
-        p = CCU::Profile.new(profile)
+        p = CCU::Profile.new(profile, rectypes: rt, structured_date_treatment: options[:structured_date].to_sym)
         p.fields.each{ |f| fs << f }
       }
       CSV.open(options[:output], 'wb'){ |csv|
