@@ -3,7 +3,7 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   class RecordType
     attr_reader :profile, :name, :id, :config, :ns, :panels, :input_tables,
-      :forms, :nonunique_fields
+      :forms, :nonunique_fields, :structured_date_treatment
 
     def initialize(profileobj, rectypename)
       @profile = profileobj
@@ -14,6 +14,7 @@ module CspaceConfigUntangler
       @panels = get_panels
       @input_tables = get_input_tables
       @forms = get_forms
+      @structured_date_treatment = @profile.structured_date_treatment
     end
 
     def field_defs
@@ -36,14 +37,17 @@ module CspaceConfigUntangler
 
     def fields
       fields = form_fields.map{ |ff| CCU::Field.new(self, ff) }
-      sd_fields = fields.select{ |f| f.structured_date? }
-      fields = fields - sd_fields
-      sd_fields.each{ |f|
-        sdfm = CCU::StructuredDateFieldMaker.new(f)
-        fields << sdfm.fields(@profile) }
+      fields = explode_structured_date_fields(fields) if @structured_date_treatment == :explode
       fields = fields.flatten
       @nonunique_fields = get_nonunique_fields(fields)
       return fields
+    end
+
+    def explode_structured_date_fields(fields)
+      sd_fields = fields.select{ |f| f.structured_date? }
+      fields = fields - sd_fields
+      sd_fields.each{ |f| fields << CCU::StructuredDateFieldMaker.new(f).fields(@profile) }
+      fields
     end
 
     def get_nonunique_fields(fields)
