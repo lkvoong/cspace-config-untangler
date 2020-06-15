@@ -235,7 +235,7 @@ module CspaceConfigUntangler
       @form = formobj
       @parent = parentprops
       @children = standardize_form_data(data)
-      @children.each{ |child| CCU::FormProps.new(@form, child['props'], @parent) }
+      @children.each{ |child| CCU::FormProps.new(@form, child['props'], @parent) } unless @children.nil?
     end
 
     # if there is only one child, it gets created as a hash
@@ -258,7 +258,7 @@ module CspaceConfigUntangler
     def report_non_nil_and_missing_keys(data)
       data.each{ |h|
         %w[key ref _owner].each{ |k| check_key(h, k) }
-      }
+      } unless data.nil?
     end
 
     def check_key(hash, key)
