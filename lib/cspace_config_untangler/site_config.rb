@@ -8,10 +8,10 @@ module CspaceConfigUntangler
     attr_reader :pw
     
     def initialize(profile, dev = 'false')
-      trunc_profile = /^(.*?)_[0-9]/.match(profile)[1]
-      config = YAML.load(File.read('data/profile_config.yaml'))['profiles'][trunc_profile]
+      profile = /^(.*?)_[0-9]/.match(profile)[1] if profile.match?(/_[0-9]/)
+      config = YAML.load(File.read('data/profile_config.yaml'))['profiles'][profile]
       if config['setup'] == 'standard'
-        @url_base = dev == 'true' ? "#{trunc_profile}.dev.collectionspace.org" : "#{trunc_profile}.collectionspace.org"
+        @url_base = dev == 'true' ? "#{profile}.dev.collectionspace.org" : "#{profile}.collectionspace.org"
         @pw = 'Administrator'
         @user = "admin@#{@url_base}"
       else
