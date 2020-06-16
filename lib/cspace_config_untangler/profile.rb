@@ -146,7 +146,7 @@ module CspaceConfigUntangler
     end
 
     def get_extensions
-      remove = %w[core]
+      remove = %w[core authItem]
       ext = @config['extensions'].keys - remove
       %w[contact blob].each{ |subrec| ext << subrec if @config['recordTypes'].keys.include?(subrec) }
       return ext
