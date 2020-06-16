@@ -44,7 +44,7 @@ RSpec.describe CCU::Profile do
       expect(core_profile.extensions).to be_instance_of(Array)
     end
 
-    it 'cleans rectype list' do
+    it 'cleans extension list' do
       expect(core_profile.extensions.sort).to eq(%w[address blob contact dimension structuredDate])
     end
   end
