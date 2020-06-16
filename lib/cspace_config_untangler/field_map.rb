@@ -35,8 +35,8 @@ module CspaceConfigUntangler
         sources = @field.value_source.empty? ? ['no source'] : @field.value_source
         sources.each do |vs|
           h[vs] = { column_name: '',
-                     transforms: {},
-                     sourcetype: '' }
+                   transforms: {},
+                   sourcetype: '' }
         end
         h
       end
@@ -59,14 +59,18 @@ module CspaceConfigUntangler
       
       def get_transforms
         @hash.each do |source, h|
+          xform = {}
           if source.start_with?('authority: ')
-            h[:transforms] = h[:transforms].merge({ 'authority' => AuthorityConfigLookup.new(profile: @field.profile,
-                                                                            authority: source).result })
+            xform['authority'] = AuthorityConfigLookup.new(profile: @field.profile,
+                                                           authority: source).result
           elsif source.start_with?('vocabulary: ')
-            h[:transforms] = h[:transforms].merge({ 'vocab' => source.sub('vocabulary: ', '') })
+            xform['vocab'] = source.sub('vocabulary: ', '')
           elsif @field.data_type == 'structured date group'
-            
+            xform['special'] = 'structured_date'
+          elsif @field.data_type == 'boolean'
+            xform['special'] = 'boolean'
           end
+          h[:transforms] = h[:transforms].merge(xform)
         end
       end
       

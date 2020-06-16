@@ -5,12 +5,14 @@ RSpec.describe CCU::FieldMap do
     stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/6_0')
   end
 
-  let(:core_profile) { CCU::Profile.new('core', rectypes: ['collectionobject']) }
-  let(:co_fields) { core_profile.fields }
-  let(:contentConcept) { co_fields.select{ |f| f.name == 'contentConcept' }[0] }
-  let(:assocActivity) { co_fields.select{ |f| f.name == 'assocActivity' }[0] }
-  let(:ageUnit) { co_fields.select{ |f| f.name == 'ageUnit' }[0] }
-  let(:ageQualifier) { co_fields.select{ |f| f.name == 'ageQualifier' }[0] }
+  let(:core_profile) { CCU::Profile.new('core', rectypes: ['collectionobject', 'concept'], structured_date_treatment: :collapse) }
+  let(:fields) { core_profile.fields }
+  let(:contentConcept) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'contentConcept' }[0] }
+  let(:assocActivity) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocActivity' }[0] }
+  let(:assocStructuredDateGroup) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocStructuredDateGroup' }[0] }
+  let(:ageUnit) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageUnit' }[0] }
+  let(:ageQualifier) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageQualifier' }[0] }
+  let(:termPrefForLang) { fields.select{ |f| f.rectype.name == 'concept' && f.name == 'termPrefForLang' }[0] }
   
   # ["authority: concept/associated", "authority: concept/material"]
   describe FieldMapper do
@@ -109,6 +111,47 @@ RSpec.describe CCU::FieldMap do
           it 'returns authority' do
             expect(result.source_type).to eq('authority')
           end
+        end
+      end
+    end
+
+    context 'when stuctured date field' do
+      let(:result) { FieldMapper.new(field: assocStructuredDateGroup) }
+      describe '#get_data_columns' do
+        it 'merges in column name hash as expected' do
+          expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[assocStructuredDateGroup])
+        end
+      end
+      describe '#mappings' do
+        it 'returns 1 mappings' do
+          expect(result.mappings.size).to eq(1)
+        end
+      end
+      describe '#get_transforms' do
+        it 'creates transform hashes as expected' do
+          rh = result.hash.map{ |src, h| h[:transforms] }
+          expected = [
+            { 'special' => 'structured_date' },
+          ]
+          expect(rh).to eq(expected)
+        end
+      end
+      describe '#source_type' do
+        it 'returns authority' do
+          expect(result.source_type).to eq('na')
+        end
+      end
+    end
+
+    context 'when boolean field' do
+      let(:result) { FieldMapper.new(field: termPrefForLang) }
+      describe '#get_transforms' do
+        it 'creates transform hashes as expected' do
+          rh = result.hash.map{ |src, h| h[:transforms] }
+          expected = [
+            { 'special' => 'boolean' },
+          ]
+          expect(rh).to eq(expected)
         end
       end
     end
