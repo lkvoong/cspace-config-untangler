@@ -26,8 +26,11 @@ module CspaceConfigUntangler
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
 
+  # extracting field data from JSON config
   autoload :Field, 'cspace_config_untangler/field'
   autoload :FieldDefinitionParser, 'cspace_config_untangler/field_definition_parser'
+  autoload :FieldDefinition, 'cspace_config_untangler/field_definition_parser'
+  autoload :FieldVerifier, 'cspace_config_untangler/field_definition_parser'
   autoload :Form, 'cspace_config_untangler/form'
   autoload :FormProps, 'cspace_config_untangler/form'
   autoload :Profile, 'cspace_config_untangler/profile'
@@ -40,6 +43,11 @@ module CspaceConfigUntangler
   autoload :StructuredDateMessageGetter, 'cspace_config_untangler/structured_date_message_getter'
   autoload :StructuredDateField, 'cspace_config_untangler/structured_date_field'
   autoload :StructuredDateFieldMaker, 'cspace_config_untangler/structured_date_field_maker'
+
+  # mapping CSV data to CSpace XML
+  autoload :FieldMap, 'cspace_config_untangler/field_map'
+  autoload :FieldMapper, 'cspace_config_untangler/field_map'
+  autoload :FieldMapping, 'cspace_config_untangler/field_map'
   
   def self.safe_copy(hash)
     Marshal.load(Marshal.dump(hash))
