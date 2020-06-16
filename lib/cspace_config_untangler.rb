@@ -48,6 +48,7 @@ module CspaceConfigUntangler
   autoload :FieldMap, 'cspace_config_untangler/field_map'
   autoload :FieldMapper, 'cspace_config_untangler/field_map'
   autoload :FieldMapping, 'cspace_config_untangler/field_map'
+  autoload :AuthorityConfigLookup, 'cspace_config_untangler/field_map'
   
   def self.safe_copy(hash)
     Marshal.load(Marshal.dump(hash))

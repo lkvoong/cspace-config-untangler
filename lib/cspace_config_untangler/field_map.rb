@@ -3,53 +3,110 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   module FieldMap
     class FieldMapping
-      attr_reader :fieldname, :datacolumn, :transforms, :namespace, :xpath, :required
-      def initialize(fieldname:, datacolumn:, transforms: [])
-        @fieldname = fieldname
+      attr_reader :fieldname, :datacolumn, :transforms, :sourcetype, :namespace, :xpath, :data_type, :required
+      def initialize(field:, datacolumn:, transforms: {}, sourcetype:)
+        @fieldname = field.name
+        @namespace = field.ns
+        @xpath = field.schema_path
+        @required = field.required
+        @data_type = field.data_type
         @datacolumn = datacolumn
+        @sourcetype = sourcetype
         @transforms = transforms
       end
     end
     
     class FieldMapper
       ::FieldMapper = CspaceConfigUntangler::FieldMap::FieldMapper
-      attr_reader :mappings, :columns
+      attr_reader :mappings, :hash, :source_type
       def initialize(field:)
         @field = field
-        @hash = {}
-        @mappings = []
-        get_data_columns(@field.value_source)
-        @columns = @hash.map{ |source, h| h[:column_name] }
-        create_mappings
+        @hash = structure_hash
+        get_data_columns
+        @source_type = get_source_type
+        get_transforms
+        @mappings = create_mappings
       end
 
       private
 
-      def create_mappings
+      def structure_hash
+        h = {}
+        sources = @field.value_source.empty? ? ['no source'] : @field.value_source
+        sources.each do |vs|
+          h[vs] = { column_name: '',
+                     transforms: {},
+                     sourcetype: '' }
+        end
+        h
+      end
+      
+      def get_source_type
+        types = []
         @hash.each do |source, h|
-          @mappings << FieldMapping.new(fieldname: @field.name,
-                                        datacolumn: h[:column_name],
-                                        transforms: h[:transforms])
+          if source.start_with?('authority: ')
+            types << 'authority'
+          elsif source.start_with?('vocabulary: ')
+            types << 'vocabulary'
+          elsif source.start_with?('option list: ')
+            types << 'optionlist'
+          else
+            types << 'na'
+          end
+        end
+        types[0]
+      end
+      
+      def get_transforms
+        @hash.each do |source, h|
+          if source.start_with?('authority: ')
+            h[:transforms] = h[:transforms].merge({ 'authority' => AuthorityConfigLookup.new(profile: @field.profile,
+                                                                            authority: source).result })
+          elsif source.start_with?('vocabulary: ')
+            h[:transforms] = h[:transforms].merge({ 'vocab' => source.sub('vocabulary: ', '') })
+          elsif @field.data_type == 'structured date group'
+            
+          end
         end
       end
       
-      def get_data_columns(value_source)
+      def create_mappings
+        mappings = []
+        @hash.each do |source, h|
+          mappings << FieldMapping.new(field: @field,
+                                       datacolumn: h[:column_name],
+                                       transforms: h[:transforms],
+                                       sourcetype: h[:source_type])
+        end
+        mappings
+      end
+      
+      def get_data_columns
+        value_source = @field.value_source
         if value_source.empty?
-          @hash['no source'] = { column_name: @field.name,
-                                transforms: []
-                               }
+          @hash['no source'] = { column_name: @field.name, transforms: {} }
         elsif value_source.size == 1
-          value_source.each do |vs|
-            @hash[vs] = { column_name: @field.name,
-                         transforms: []}
-            # todo: set transforms for this source
-          end
+          value_source.each{ |vs| @hash[vs] = { column_name: @field.name, transforms: {} } }
         else #multiple sources
-          @hash = @hash.merge(DataColumnNamer.new(fieldname: @field.name, sources: value_source).result)
+          DataColumnNamer.new(fieldname: @field.name, sources: value_source).result.each do |src, colname|
+            @hash[src][:column_name] = colname
+          end
         end
       end
+    end #class FieldMapper
 
-      def get_transforms
+    class AuthorityConfigLookup
+      ::AuthorityConfigLookup = CspaceConfigUntangler::FieldMap::AuthorityConfigLookup
+      attr_reader :result
+      def initialize(profile:, authority:)
+        source = authority.sub('authority: ', '').split('/')
+        authtype = source[0]
+        authsubtype = source[1]
+        path = profile.config.dig('recordTypes', authtype, 'serviceConfig', 'servicePath')
+        subpath = profile.config.dig('recordTypes', authtype, 'vocabularies', authsubtype,
+                                    'serviceConfig', 'servicePath')
+        subpath = subpath.match(/\((.*)\)$/)[1]
+        @result = [path, subpath]
       end
     end
 
@@ -69,14 +126,13 @@ module CspaceConfigUntangler
         srcs.each{ |s| h[s[0]] << s[1]}
         
         @sources.each do |s|
-         @result[s] = { transforms: [] }
-         name = @fieldname.clone
-         ssplit = s.sub('authority: ', '').split('/')
-         use_type = h.keys.size > 1 ? true : false
-         use_subtype = h[ssplit[0]].size > 1 ? true : false
-         name = use_type ? name << ssplit[0].capitalize : name
-         name = use_subtype ? name << ssplit[1].capitalize : name
-         @result[s][:column_name] = name
+          name = @fieldname.clone
+          ssplit = s.sub('authority: ', '').split('/')
+          use_type = h.keys.size > 1 ? true : false
+          use_subtype = h[ssplit[0]].size > 1 ? true : false
+          name = use_type ? name << ssplit[0].capitalize : name
+          name = use_subtype ? name << ssplit[1].capitalize : name
+          @result[s] = name
         end
       end
     end

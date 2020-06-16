@@ -23,7 +23,7 @@ module CspaceConfigUntangler
       merge_field_defs
       @to_csv = format_csv
 #      @mappings = get_field_mappings
-      clean_up
+#      clean_up
     end
 
     def csv_header
