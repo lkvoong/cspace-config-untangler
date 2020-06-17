@@ -4,12 +4,13 @@ module CspaceConfigUntangler
   module FieldMap
     class FieldMapping
       include CCU::TrackAttributes
-      attr_reader :fieldname, :datacolumn, :transforms, :sourcetype, :namespace, :xpath, :data_type, :required
+      attr_reader :fieldname, :datacolumn, :transforms, :sourcetype, :namespace, :xpath, :data_type, :required, :repeats
       def initialize(field:, datacolumn:, transforms: {}, sourcetype:)
         @fieldname = field.name
         @namespace = field.ns
         @xpath = field.schema_path
         @required = field.required
+        @repeats = field.repeats
         @data_type = field.data_type
         @datacolumn = datacolumn
         @sourcetype = sourcetype

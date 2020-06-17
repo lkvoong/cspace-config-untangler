@@ -59,7 +59,7 @@ module CspaceConfigUntangler
           path.prepend(m.namespace)
           path << :fieldmappings
           to_update = @hash.dig(*path)
-          to_update << m.to_h
+          to_update << m
         end
       end
     end #class RecordMapper

@@ -218,5 +218,16 @@ The full schema_path should be unique within a record type. Non-unique fields ar
       end
     end
 
+    desc 'test', 'temporary stuff for expediency'
+    def test
+      profile = 'anthro_4_0_0'
+      rt = 'collectionobject'
+      csv = 'data/csv/collectionobject_partial.csv'
+
+      mapper = CCU::CsvMapper.new(filename: csv, profile: profile, rectype: rt)
+      rowmap = CCU::RowMapper.new(row: mapper.rows.first, mapper: mapper.mapper)
+
+      puts rowmap.xml
+    end
   end #class Thor::CommandLine
 end #module
