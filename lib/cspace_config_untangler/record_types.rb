@@ -17,6 +17,10 @@ module CspaceConfigUntangler
       @structured_date_treatment = @profile.structured_date_treatment
     end
 
+    def mapping
+      RecordMapper.new(self.fields).hash
+    end
+    
     def field_defs
       if @config.dig('fields', 'document')
         defs = FieldDefinitionParser.new(self, @config['fields']['document'])

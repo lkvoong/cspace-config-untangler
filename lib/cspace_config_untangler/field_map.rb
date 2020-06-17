@@ -3,6 +3,7 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   module FieldMap
     class FieldMapping
+      include CCU::TrackAttributes
       attr_reader :fieldname, :datacolumn, :transforms, :sourcetype, :namespace, :xpath, :data_type, :required
       def initialize(field:, datacolumn:, transforms: {}, sourcetype:)
         @fieldname = field.name
@@ -14,6 +15,13 @@ module CspaceConfigUntangler
         @sourcetype = sourcetype
         @transforms = transforms
       end
+
+            def to_h
+        attrs = self.attr_readers.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
+        h = {}
+        attrs.each{ |a| h[a] = self.instance_variable_get(a) }
+        return h
+            end
     end
     
     class FieldMapper

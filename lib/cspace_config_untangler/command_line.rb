@@ -67,6 +67,22 @@ module CspaceConfigUntangler
         }
       }
     end
+
+    desc 'write_mapper', 'create file containing JSON representation of record mapper'
+    option :profile, :desc => 'ONE profile'
+    option :rectype, :desc => 'ONE rectype'
+    option :output, :desc => 'path to output file', :default => 'data/mapper.json'
+    def write_mapper
+      profile = CCU::Profile.new(options[:profile],
+                                 rectypes: [options[:rectype]],
+                                 structured_date_treatment: :collapse
+                                )
+      rec = profile.rectypes[0]
+      
+        File.open(options[:output], 'w'){ |f|
+          f.puts JSON.pretty_generate(rec.mapping)
+        }
+    end
     
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
