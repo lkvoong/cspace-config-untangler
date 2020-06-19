@@ -5,10 +5,22 @@ module CspaceConfigUntangler
       ::RecordMapper = CspaceConfigUntangler::RecordMapper
       attr_reader :hash, :mappings
 
-      def initialize(fields)
-        @mappings = fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+      # profile = string - name of profile
+      # rectype = string - name of rectype to generate mapper for
+      def initialize(profile:, rectype:)
+        @profile = profile
+        @rectype = rectype
+        p = CCU::Profile.new(@profile, rectypes: [@rectype], structured_date_treatment: :collapse)
+        @mappings = p.rectypes[0].fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
         @hash = {}
         get_mapping
+      end
+
+      # output = string = path to output json file
+      def to_json(output: "data/mappers/#{@profile}-#{@rectype}.json")
+        File.open(output, 'w') do |f|
+          f.puts JSON.pretty_generate(@hash)
+        end
       end
       
       private
@@ -59,7 +71,7 @@ module CspaceConfigUntangler
           path.prepend(m.namespace)
           path << :fieldmappings
           to_update = @hash.dig(*path)
-          to_update << m
+          to_update << m.to_h
         end
       end
     end #class RecordMapper

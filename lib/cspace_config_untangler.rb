@@ -18,6 +18,7 @@ module CspaceConfigUntangler
   CCU.const_set('CONFIGDIR', 'data/configs')
   config_file_names = Dir.new(CCU::CONFIGDIR).children
     .reject{ |e| e['readable'] }
+    .reject{ |e| e == '.keep' }
     .map{ |fn| File.basename(fn).sub('.json', '') }
   CCU.const_set('PROFILES', config_file_names)
   File.delete('log.log') if File::exist?('log.log')

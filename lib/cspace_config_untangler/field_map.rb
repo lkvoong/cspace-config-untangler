@@ -17,12 +17,13 @@ module CspaceConfigUntangler
         @transforms = transforms
       end
 
-            def to_h
-        attrs = self.attr_readers.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
+      def to_h
+        attrs = self.attr_readers
+        ivs = attrs.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
         h = {}
-        attrs.each{ |a| h[a] = self.instance_variable_get(a) }
+        attrs.each_with_index{ |a, i| h[a.to_sym] = self.instance_variable_get(ivs[i]) }
         return h
-            end
+      end
     end
     
     class FieldMapper
