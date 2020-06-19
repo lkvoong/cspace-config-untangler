@@ -6,7 +6,8 @@ module CspaceConfigUntangler
       :schema_path,
       :repeats, :in_repeating_group,
       :data_type, :value_source, :value_list,
-      :required
+      :required,
+      :mappings
   attr_accessor :to_csv
 
     def initialize(rectype_obj, form_field)
@@ -21,7 +22,8 @@ module CspaceConfigUntangler
       @id = ff.id
       merge_field_defs
       @to_csv = format_csv
-      clean_up
+#      @mappings = get_field_mappings
+#      clean_up
     end
 
     def csv_header

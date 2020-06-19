@@ -12,7 +12,9 @@ module CspaceConfigUntangler
       @option_lists = get_option_lists
       @vocabularies = get_vocabularies
       @structured_date_treatment = structured_date_treatment
-      @rectypes = get_rectypes(rectypes)
+      @rectypes = [] #rectype objects to be processed/reported
+      @rectypes_all = [] #all rectype names for profile
+      get_rectypes(rectypes)
       @authorities = get_authorities
       @panels = get_panels
       CCU::StructuredDateMessageGetter.new(self) if @structured_date_treatment == :explode
@@ -138,12 +140,13 @@ module CspaceConfigUntangler
     
     def get_rectypes(rectypes)
       remove = %w[account all authrole authority batch batchinvocation blob contact idgenerator object procedure relation report reportinvocation structureddates vocabulary]
-      keep = rectypes.empty? ? @config['recordTypes'].keys - remove : rectypes - remove
-      return keep.map{ |rt| CCU::RecordType.new(self, rt) }
+      @rectypes = rectypes.empty? ? @config['recordTypes'].keys - remove : rectypes - remove
+      @rectypes = @rectypes.map{ |rt| CCU::RecordType.new(self, rt) }
+      @rectypes_all = @config['recordTypes'].keys - remove
     end
 
     def get_extensions
-      remove = %w[core]
+      remove = %w[core authItem]
       ext = @config['extensions'].keys - remove
       %w[contact blob].each{ |subrec| ext << subrec if @config['recordTypes'].keys.include?(subrec) }
       return ext
@@ -151,11 +154,11 @@ module CspaceConfigUntangler
 
     def get_authorities
       authorities = []
-      @rectypes.each{ |rt|
-        c = @config['recordTypes'][rt.name]
+      @rectypes_all.each{ |rt|
+        c = @config['recordTypes'][rt]
         if c.dig('serviceConfig', 'serviceType') == 'authority'
           c['vocabularies'].keys.reject{ |e| e == 'all' }.each{ |subtype|
-            authorities << "#{rt.name}/#{subtype}" 
+            authorities << "#{rt}/#{subtype}" 
           }
         else
           next

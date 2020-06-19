@@ -67,6 +67,22 @@ module CspaceConfigUntangler
         }
       }
     end
+
+    desc 'write_mapper', 'create file containing JSON representation of record mapper'
+    option :profile, :desc => 'ONE profile'
+    option :rectype, :desc => 'ONE rectype'
+    option :output, :desc => 'path to output file', :default => 'data/mapper.json'
+    def write_mapper
+      profile = CCU::Profile.new(options[:profile],
+                                 rectypes: [options[:rectype]],
+                                 structured_date_treatment: :collapse
+                                )
+      rec = profile.rectypes[0]
+      
+        File.open(options[:output], 'w'){ |f|
+          f.puts JSON.pretty_generate(rec.mapping)
+        }
+    end
     
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
@@ -202,5 +218,16 @@ The full schema_path should be unique within a record type. Non-unique fields ar
       end
     end
 
+    desc 'test', 'temporary stuff for expediency'
+    def test
+      profile = 'anthro_4_0_0'
+      rt = 'collectionobject'
+      csv = 'data/csv/collectionobject_partial.csv'
+
+      mapper = CCU::CsvMapper.new(filename: csv, profile: profile, rectype: rt)
+      rowmap = CCU::RowMapper.new(row: mapper.rows.first, mapper: mapper.mapper)
+
+      puts rowmap.xml
+    end
   end #class Thor::CommandLine
 end #module
