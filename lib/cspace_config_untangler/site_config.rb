@@ -9,7 +9,7 @@ module CspaceConfigUntangler
     
     def initialize(profile, dev = 'false')
       profile = /^(.*?)_[0-9]/.match(profile)[1] if profile.match?(/_[0-9]/)
-      config = YAML.load(File.read('data/profile_config.yaml'))['profiles'][profile]
+      config = YAML.load(File.read(CCU::SITECONFIG))['profiles'][profile]
       if config['setup'] == 'standard'
         @url_base = dev == 'true' ? "#{profile}.dev.collectionspace.org" : "#{profile}.collectionspace.org"
         @pw = 'Administrator'

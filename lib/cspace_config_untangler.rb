@@ -15,7 +15,9 @@ require 'thor'
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
   CCU.const_set('MAINPROFILE', 'core_6_0_0')
-  CCU.const_set('CONFIGDIR', '/Users/kristina/code/cspace-config-untangler/data/configs')
+  CCU.const_set('DATADIR', '/Users/kristina/code/cspace-config-untangler/data')
+  CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
+  CCU.const_set('SITECONFIG', "#{CCU::DATADIR}/profile_config.yaml")
   config_file_names = Dir.new(CCU::CONFIGDIR).children
     .reject{ |e| e['readable'] }
     .reject{ |e| e == '.keep' }
