@@ -73,14 +73,12 @@ module CspaceConfigUntangler
     option :rectype, :desc => 'ONE rectype'
     option :output, :desc => 'path to output file', :default => 'data/mapper.json'
     def write_mapper
-      profile = CCU::Profile.new(options[:profile],
-                                 rectypes: [options[:rectype]],
-                                 structured_date_treatment: :collapse
-                                )
-      rec = profile.rectypes[0]
+      recmapper = CCU::RecordMapper.new(profile: options[:profile],
+                                      rectype: options[:rectype]
+                                     )
       
         File.open(options[:output], 'w'){ |f|
-          f.puts JSON.pretty_generate(rec.mapping)
+          f.puts JSON.pretty_generate(recmapper.to_json)
         }
     end
     
