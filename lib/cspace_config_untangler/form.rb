@@ -129,8 +129,8 @@ module CspaceConfigUntangler
         ns = @form.rectype.ns
       end
 
-      ns = @hash['subpath'] if @hash.dig('subpath') && !@parent.is_ext
-      ns = "ext.#{@name}" if @is_ext
+      ns = @hash.dig('subpath') ? @hash['subpath'] : ns
+#      ns = "ext.#{@name}" if @is_ext
       
       return ns        
     end
