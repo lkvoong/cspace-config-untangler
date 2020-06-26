@@ -73,7 +73,7 @@ module CspaceConfigUntangler
     option :rectype, :desc => 'ONE rectype'
     option :output, :desc => 'path to output file', :default => 'data/mapper.json'
     def write_mapper
-      recmapper = CCU::RecordMapper.new(profile: options[:profile],
+      recmapper = RecordMapping.new(profile: options[:profile],
                                       rectype: options[:rectype]
                                      )
       

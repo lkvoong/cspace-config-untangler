@@ -54,6 +54,8 @@ module CspaceConfigUntangler
   autoload :AuthorityConfigLookup, 'cspace_config_untangler/field_map'
   autoload :CsvMapper, 'cspace_config_untangler/csv_mapper'
   autoload :RecordMapper, 'cspace_config_untangler/record_mapper'
+  autoload :RecordMapping, 'cspace_config_untangler/record_mapper'
+  autoload :NamespaceUris, 'cspace_config_untangler/record_mapper'
   autoload :RowMapper, 'cspace_config_untangler/row_mapper'
   
   def self.safe_copy(hash)
