@@ -264,7 +264,8 @@
       ],
       "data_type": "string",
       "required": "y",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "numberOfObjects",
@@ -278,7 +279,8 @@
       ],
       "data_type": "integer",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "numberValue",
@@ -293,7 +295,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "numberType",
@@ -308,7 +311,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "responsibleDepartment",
@@ -322,7 +326,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "collection",
@@ -336,7 +341,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "recordStatus",
@@ -350,7 +356,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "briefDescription",
@@ -364,7 +371,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "computedCurrentLocation",
@@ -382,7 +390,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "computedCurrentLocation",
@@ -400,7 +409,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "computedCurrentLocation",
@@ -418,7 +428,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "ethnoFileCode",
@@ -436,7 +447,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "publishTo",
@@ -451,7 +463,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "inventoryStatus",
@@ -466,7 +479,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "objectName",
@@ -481,7 +495,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectNameCurrency",
@@ -496,7 +511,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectNameLevel",
@@ -511,7 +527,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectNameSystem",
@@ -526,7 +543,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectNameType",
@@ -541,7 +559,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectNameLanguage",
@@ -557,7 +576,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectNameNote",
@@ -572,7 +592,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPeople",
@@ -587,7 +608,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPeopleType",
@@ -602,7 +624,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPeopleNote",
@@ -617,7 +640,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "comment",
@@ -631,7 +655,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "annotationType",
@@ -647,7 +672,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "annotationNote",
@@ -662,7 +688,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "annotationDate",
@@ -677,7 +704,8 @@
       ],
       "data_type": "date",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "annotationAuthor",
@@ -696,7 +724,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "measuredPart",
@@ -711,7 +740,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "dimensionSummary",
@@ -726,7 +756,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "dimension",
@@ -743,7 +774,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "measuredBy",
@@ -764,7 +796,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "measuredBy",
@@ -785,7 +818,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "measurementMethod",
@@ -802,7 +836,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "value",
@@ -819,7 +854,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "measurementUnit",
@@ -836,7 +872,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "valueQualifier",
@@ -853,7 +890,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "valueDate",
@@ -870,7 +908,8 @@
       ],
       "data_type": "date",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "material",
@@ -885,7 +924,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "materialComponent",
@@ -900,7 +940,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "materialComponentNote",
@@ -915,7 +956,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "materialName",
@@ -930,7 +972,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "materialSource",
@@ -945,7 +988,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "title",
@@ -960,7 +1004,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "titleLanguage",
@@ -976,7 +1021,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "titleType",
@@ -991,7 +1037,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "titleTranslation",
@@ -1008,7 +1055,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "titleTranslationLanguage",
@@ -1026,7 +1074,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "usage",
@@ -1041,7 +1090,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "usageNote",
@@ -1056,7 +1106,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldCollectionDateGroup",
@@ -1071,7 +1122,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "fieldCollectionMethod",
@@ -1086,7 +1138,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "fieldCollectionPlace",
@@ -1104,7 +1157,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "fieldCollectionPlace",
@@ -1122,7 +1176,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "fieldLocVerbatim",
@@ -1136,7 +1191,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "fieldCollectionSource",
@@ -1154,7 +1210,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "fieldCollector",
@@ -1172,7 +1229,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "fieldCollector",
@@ -1190,7 +1248,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "fieldCollectionNumber",
@@ -1204,7 +1263,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "fieldColEventName",
@@ -1218,7 +1278,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "fieldCollectionFeature",
@@ -1232,7 +1293,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "fieldCollectionNote",
@@ -1246,7 +1308,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "objectProductionDateGroup",
@@ -1261,7 +1324,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "technique",
@@ -1276,7 +1340,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "techniqueType",
@@ -1292,7 +1357,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPlace",
@@ -1311,7 +1377,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPlace",
@@ -1330,7 +1397,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPlaceRole",
@@ -1346,7 +1414,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionReason",
@@ -1360,7 +1429,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "objectProductionPeople",
@@ -1379,7 +1449,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPeople",
@@ -1398,7 +1469,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPeopleRole",
@@ -1414,7 +1486,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPerson",
@@ -1433,7 +1506,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionPersonRole",
@@ -1449,7 +1523,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionOrganization",
@@ -1468,7 +1543,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionOrganizationRole",
@@ -1484,7 +1560,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectProductionNote",
@@ -1498,7 +1575,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "nagpraInventoryName",
@@ -1513,7 +1591,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "nagpraCategory",
@@ -1528,7 +1607,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "graveAssocCode",
@@ -1543,7 +1623,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "repatriationNote",
@@ -1557,7 +1638,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "nagpraDetermCulture",
@@ -1576,7 +1658,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "nagpraDetermType",
@@ -1592,7 +1675,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "nagpraDetermBy",
@@ -1611,7 +1695,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "nagpraDetermBy",
@@ -1630,7 +1715,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "nagpraDetermNote",
@@ -1645,7 +1731,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "nagpraReportFiled",
@@ -1660,7 +1747,8 @@
       ],
       "data_type": "boolean",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "nagpraReportFiledBy",
@@ -1678,7 +1766,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "nagpraReportFiledDate",
@@ -1693,7 +1782,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "culturalCareNote",
@@ -1707,7 +1797,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "limitationType",
@@ -1723,7 +1814,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "limitationLevel",
@@ -1739,7 +1831,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "limitationDetails",
@@ -1754,7 +1847,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "requester",
@@ -1773,7 +1867,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "requestOnBehalfOf",
@@ -1792,7 +1887,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "requestDate",
@@ -1807,7 +1903,8 @@
       ],
       "data_type": "date",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "form",
@@ -1821,7 +1918,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "copyNumber",
@@ -1835,7 +1933,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "editionNumber",
@@ -1849,7 +1948,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "style",
@@ -1863,7 +1963,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "color",
@@ -1877,7 +1978,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "physicalDescription",
@@ -1891,7 +1993,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "distinguishingFeatures",
@@ -1905,7 +2008,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "objectComponentName",
@@ -1920,7 +2024,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectComponentInformation",
@@ -1935,7 +2040,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "sex",
@@ -1949,7 +2055,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "phase",
@@ -1963,7 +2070,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "ageQualifier",
@@ -1978,7 +2086,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "age",
@@ -1992,7 +2101,8 @@
       ],
       "data_type": "integer",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "ageUnit",
@@ -2006,7 +2116,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "taxon",
@@ -2025,7 +2136,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "qualifier",
@@ -2041,7 +2153,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "identBy",
@@ -2060,7 +2173,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "identBy",
@@ -2079,7 +2193,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "identDateGroup",
@@ -2095,7 +2210,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "institution",
@@ -2114,7 +2230,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "identKind",
@@ -2130,7 +2247,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "reference",
@@ -2145,7 +2263,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "refPage",
@@ -2160,7 +2279,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "notes",
@@ -2175,7 +2295,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "minIndividuals",
@@ -2190,7 +2311,8 @@
       ],
       "data_type": "integer",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "bone",
@@ -2205,7 +2327,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "side",
@@ -2221,7 +2344,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "count",
@@ -2236,7 +2360,8 @@
       ],
       "data_type": "integer",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "dentition",
@@ -2252,7 +2377,8 @@
       ],
       "data_type": "boolean",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "sex",
@@ -2267,7 +2393,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "ageRange",
@@ -2283,7 +2410,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "mortuaryTreatment",
@@ -2301,7 +2429,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "mortuaryTreatmentNote",
@@ -2318,7 +2447,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "behrensmeyerSingleLower",
@@ -2334,7 +2464,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "behrensmeyerUpper",
@@ -2350,7 +2481,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "commingledRemainsNote",
@@ -2365,7 +2497,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentDescription",
@@ -2379,7 +2512,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "contentLanguage",
@@ -2394,7 +2528,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentActivity",
@@ -2408,7 +2543,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentConcept",
@@ -2426,7 +2562,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentConcept",
@@ -2444,7 +2581,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentDateGroup",
@@ -2459,7 +2597,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "contentPosition",
@@ -2473,7 +2612,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentObject",
@@ -2488,7 +2628,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentObjectType",
@@ -2503,7 +2644,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentPeople",
@@ -2517,7 +2659,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentPerson",
@@ -2535,7 +2678,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentPerson",
@@ -2553,7 +2697,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentPlace",
@@ -2567,7 +2712,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentScript",
@@ -2581,7 +2727,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentOrganization",
@@ -2599,7 +2746,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentOrganization",
@@ -2617,7 +2765,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "contentEventName",
@@ -2632,7 +2781,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentEventNameType",
@@ -2647,7 +2797,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentOther",
@@ -2662,7 +2813,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentOtherType",
@@ -2677,7 +2829,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "contentNote",
@@ -2691,7 +2844,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "inscriptionContent",
@@ -2706,7 +2860,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentInscriber",
@@ -2725,7 +2880,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentInscriber",
@@ -2744,7 +2900,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentLanguage",
@@ -2760,7 +2917,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentDateGroup",
@@ -2776,7 +2934,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentPosition",
@@ -2791,7 +2950,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentScript",
@@ -2806,7 +2966,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentType",
@@ -2821,7 +2982,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentMethod",
@@ -2836,7 +2998,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentInterpretation",
@@ -2851,7 +3014,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentTranslation",
@@ -2866,7 +3030,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionContentTransliteration",
@@ -2881,7 +3046,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescription",
@@ -2896,7 +3062,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionInscriber",
@@ -2915,7 +3082,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionInscriber",
@@ -2934,7 +3102,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionDateGroup",
@@ -2950,7 +3119,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionPosition",
@@ -2965,7 +3135,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionType",
@@ -2980,7 +3151,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionMethod",
@@ -2995,7 +3167,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "inscriptionDescriptionInterpretation",
@@ -3010,7 +3183,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocActivity",
@@ -3025,7 +3199,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocActivityType",
@@ -3040,7 +3215,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocActivityNote",
@@ -3055,7 +3231,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocObject",
@@ -3070,7 +3247,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocObjectType",
@@ -3085,7 +3263,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocObjectNote",
@@ -3100,7 +3279,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocConcept",
@@ -3119,7 +3299,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocConceptType",
@@ -3134,7 +3315,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocConceptNote",
@@ -3149,7 +3331,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocCulturalContext",
@@ -3164,7 +3347,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocCulturalContextType",
@@ -3179,7 +3363,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocCulturalContextNote",
@@ -3194,7 +3379,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocOrganization",
@@ -3213,7 +3399,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocOrganizationType",
@@ -3228,7 +3415,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocOrganizationNote",
@@ -3243,7 +3431,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPerson",
@@ -3262,7 +3451,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPersonType",
@@ -3277,7 +3467,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPersonNote",
@@ -3292,7 +3483,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPlace",
@@ -3307,7 +3499,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPlaceType",
@@ -3322,7 +3515,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocPlaceNote",
@@ -3337,7 +3531,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocEventName",
@@ -3351,7 +3546,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "assocEventNameType",
@@ -3365,7 +3561,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "assocEventOrganization",
@@ -3383,7 +3580,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "assocEventPeople",
@@ -3397,7 +3595,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "assocEventPerson",
@@ -3415,7 +3614,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "assocEventPlace",
@@ -3429,7 +3629,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "assocEventNote",
@@ -3443,7 +3644,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "assocStructuredDateGroup",
@@ -3459,7 +3661,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocDateType",
@@ -3474,7 +3677,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "assocDateNote",
@@ -3489,7 +3693,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "objectHistoryNote",
@@ -3503,7 +3708,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "anthroOwner",
@@ -3522,7 +3728,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwner",
@@ -3541,7 +3748,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipDateGroup",
@@ -3557,7 +3765,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipCategory",
@@ -3572,7 +3781,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipPlace",
@@ -3591,7 +3801,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipMethod",
@@ -3606,7 +3817,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipPriceCurrency",
@@ -3622,7 +3834,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipPriceAmount",
@@ -3637,7 +3850,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "anthroOwnershipNote",
@@ -3652,7 +3866,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "ownersPersonalExperience",
@@ -3666,7 +3881,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "ownersPersonalResponse",
@@ -3680,7 +3896,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "ownersReference",
@@ -3694,7 +3911,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "ownersContributionNote",
@@ -3708,7 +3926,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "viewersRole",
@@ -3722,7 +3941,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "viewersPersonalExperience",
@@ -3736,7 +3956,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "viewersPersonalResponse",
@@ -3750,7 +3971,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "viewersReference",
@@ -3764,7 +3986,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "y"
+      "repeats": "y",
+      "in_repeating_group": "n"
     },
     {
       "fieldname": "viewersContributionNote",
@@ -3778,7 +4001,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "n/a"
     },
     {
       "fieldname": "reference",
@@ -3797,7 +4021,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "reference",
@@ -3816,7 +4041,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "referenceNote",
@@ -3831,7 +4057,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldLocVerbatim",
@@ -3846,7 +4073,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldLocPlace",
@@ -3865,7 +4093,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "taxonomicRange",
@@ -3880,7 +4109,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldLocCounty",
@@ -3895,7 +4125,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldLocState",
@@ -3910,7 +4141,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldLocCountry",
@@ -3925,7 +4157,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "fieldLocHigherGeography",
@@ -3940,7 +4173,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vLatitude",
@@ -3955,7 +4189,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vLongitude",
@@ -3970,7 +4205,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vCoordinates",
@@ -3985,7 +4221,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vOtherCoords",
@@ -4000,7 +4237,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vCoordSys",
@@ -4016,7 +4254,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "decimalLatitude",
@@ -4031,7 +4270,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "decimalLongitude",
@@ -4046,7 +4286,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geodeticDatum",
@@ -4061,7 +4302,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "coordUncertainty",
@@ -4076,7 +4318,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "coordUncertaintyUnit",
@@ -4091,7 +4334,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vDepth",
@@ -4106,7 +4350,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "minDepth",
@@ -4121,7 +4366,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "maxDepth",
@@ -4136,7 +4382,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "depthUnit",
@@ -4151,7 +4398,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vElevation",
@@ -4166,7 +4414,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "minElevation",
@@ -4181,7 +4430,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "maxElevation",
@@ -4196,7 +4446,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "elevationUnit",
@@ -4211,7 +4462,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "vDistanceAboveSurface",
@@ -4226,7 +4478,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "minDistanceAboveSurface",
@@ -4241,7 +4494,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "maxDistanceAboveSurface",
@@ -4256,7 +4510,8 @@
       ],
       "data_type": "float",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "distanceAboveSurfaceUnit",
@@ -4271,7 +4526,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "localityNote",
@@ -4286,7 +4542,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "localitySource",
@@ -4301,7 +4558,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "localitySourceDetail",
@@ -4316,7 +4574,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "pointRadiusSpatialFit",
@@ -4331,7 +4590,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "footprintWKT",
@@ -4346,7 +4606,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "footprintSRS",
@@ -4361,7 +4622,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "footprintSpatialFit",
@@ -4376,7 +4638,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "coordPrecision",
@@ -4391,7 +4654,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefencedBy",
@@ -4406,7 +4670,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefDateGroup",
@@ -4422,7 +4687,8 @@
       ],
       "data_type": "structured date group",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefProtocol",
@@ -4437,7 +4703,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefSource",
@@ -4452,7 +4719,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefVerificationStatus",
@@ -4467,7 +4735,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefRemarks",
@@ -4482,7 +4751,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "geoRefPlaceName",
@@ -4497,7 +4767,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "technicalAttribute",
@@ -4512,7 +4783,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "technicalAttributeMeasurement",
@@ -4527,7 +4799,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     },
     {
       "fieldname": "technicalAttributeMeasurementUnit",
@@ -4542,7 +4815,8 @@
       ],
       "data_type": "string",
       "required": "n",
-      "repeats": "n"
+      "repeats": "n",
+      "in_repeating_group": "y"
     }
   ]
 }
