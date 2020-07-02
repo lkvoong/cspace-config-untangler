@@ -8,7 +8,7 @@ module CspaceConfigUntangler
         :required, :repeats, :in_repeating_group
       def initialize(field:, datacolumn:, transforms: {}, sourcetype:)
         @fieldname = field.name
-        @namespace = field.ns
+        @namespace = field.ns.sub('ns2:', '')
         @xpath = field.schema_path
         @required = field.required
         @repeats = field.repeats

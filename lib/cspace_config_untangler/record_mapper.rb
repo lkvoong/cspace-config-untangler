@@ -119,7 +119,7 @@ module CspaceConfigUntangler
               ext = ns.sub("ns2:#{@mconfig[:document_name]}_", '').sub('_extension', '')
               uri = @config.dig('extensions', ext, objname, 'fields', ns, '[config]', 'service', 'ns')
             end
-            @hash[ns] = uri
+            @hash[ns.sub('ns2:', '')] = uri
           end
       end
     end
