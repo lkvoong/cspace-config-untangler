@@ -13,6 +13,10 @@ RSpec.describe CCU::FieldMap do
   let(:ageUnit) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageUnit' }[0] }
   let(:ageQualifier) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageQualifier' }[0] }
   let(:termPrefForLang) { fields.select{ |f| f.rectype.name == 'concept' && f.name == 'termPrefForLang' }[0] }
+
+  let(:anthro_profile) { CCU::Profile.new('anthro', rectypes: ['collectionobject'], structured_date_treatment: :collapse) }
+  let(:afields) { anthro_profile.fields }
+  let(:bupper) { afields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'behrensmeyerUpper' }[0] }
   
   # ["authority: concept/associated", "authority: concept/material"]
   describe FieldMapper do
@@ -71,7 +75,7 @@ RSpec.describe CCU::FieldMap do
           it 'creates transform hash as expected' do
             rh = result.hash.map{ |src, h| h[:transforms] }
             expected = [
-              { 'vocab' => 'agequalifier' }
+              { 'vocabulary' => 'agequalifier' }
             ]
             expect(rh).to eq(expected)
           end
@@ -150,6 +154,20 @@ RSpec.describe CCU::FieldMap do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
             { 'special' => 'boolean' },
+          ]
+          expect(rh).to eq(expected)
+        end
+      end
+    end
+
+    context 'when behrensmeyer field' do
+      let(:result) { FieldMapper.new(field: bupper) }
+      describe '#get_transforms' do
+        it 'creates transform hashes as expected' do
+          rh = result.hash.map{ |src, h| h[:transforms] }
+          expected = [
+            { 'special' => 'behrensmeyer_translate',
+              'vocabulary' => 'behrensmeyer' },
           ]
           expect(rh).to eq(expected)
         end

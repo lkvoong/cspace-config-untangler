@@ -76,7 +76,8 @@ module CspaceConfigUntangler
             xform['authority'] = AuthorityConfigLookup.new(profile: @field.profile,
                                                            authority: source).result
           elsif source.start_with?('vocabulary: ')
-            xform['vocab'] = source.sub('vocabulary: ', '')
+            xform['vocabulary'] = source.sub('vocabulary: ', '')
+            xform['special'] = 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
           elsif @field.data_type == 'structured date group'
             xform['special'] = 'structured_date'
           elsif @field.data_type == 'boolean'

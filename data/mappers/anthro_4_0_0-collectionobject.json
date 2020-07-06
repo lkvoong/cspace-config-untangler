@@ -7,16 +7,16 @@
     "object_name": "CollectionObject",
     "profile_basename": "anthro",
     "ns_uri": {
-      "ns2:collectionobjects_common": "http://collectionspace.org/services/collectionobject",
-      "ns2:collectionobjects_anthro": "http://collectionspace.org/services/collectionobject/domain/anthro",
-      "ns2:collectionobjects_annotation": "http://collectionspace.org/services/collectionobject/domain/annotation",
-      "ns2:collectionobjects_culturalcare": "http://collectionspace.org/services/collectionobject/domain/collectionobject",
-      "ns2:collectionobjects_nagpra": "http://collectionspace.org/services/collectionobject/domain/nagpra",
-      "ns2:collectionobjects_naturalhistory_extension": "http://collectionspace.org/services/collectionobject/domain/naturalhistory_extension"
+      "collectionobjects_common": "http://collectionspace.org/services/collectionobject",
+      "collectionobjects_anthro": "http://collectionspace.org/services/collectionobject/domain/anthro",
+      "collectionobjects_annotation": "http://collectionspace.org/services/collectionobject/domain/annotation",
+      "collectionobjects_culturalcare": "http://collectionspace.org/services/collectionobject/domain/collectionobject",
+      "collectionobjects_nagpra": "http://collectionspace.org/services/collectionobject/domain/nagpra",
+      "collectionobjects_naturalhistory_extension": "http://collectionspace.org/services/collectionobject/domain/naturalhistory_extension"
     }
   },
   "docstructure": {
-    "ns2:collectionobjects_common": {
+    "collectionobjects_common": {
       "otherNumberList": {
         "otherNumber": {
         }
@@ -196,7 +196,7 @@
         }
       }
     },
-    "ns2:collectionobjects_anthro": {
+    "collectionobjects_anthro": {
       "ethnoFileCodes": {
       },
       "commingledRemainsGroupList": {
@@ -216,13 +216,13 @@
         }
       }
     },
-    "ns2:collectionobjects_annotation": {
+    "collectionobjects_annotation": {
       "annotationGroupList": {
         "annotationGroup": {
         }
       }
     },
-    "ns2:collectionobjects_nagpra": {
+    "collectionobjects_nagpra": {
       "nagpraInventoryNames": {
       },
       "nagpraCategories": {
@@ -236,7 +236,7 @@
         }
       }
     },
-    "ns2:collectionobjects_culturalcare": {
+    "collectionobjects_culturalcare": {
       "culturalCareNotes": {
       },
       "accessLimitationsGroupList": {
@@ -244,7 +244,7 @@
         }
       }
     },
-    "ns2:collectionobjects_naturalhistory_extension": {
+    "collectionobjects_naturalhistory_extension": {
       "taxonomicIdentGroupList": {
         "taxonomicIdentGroup": {
         }
@@ -258,7 +258,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -273,7 +273,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -288,7 +288,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "otherNumberList",
         "otherNumber"
@@ -304,7 +304,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "otherNumberList",
         "otherNumber"
@@ -320,7 +320,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "responsibleDepartments"
       ],
@@ -335,7 +335,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -350,7 +350,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -365,7 +365,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "briefDescriptions"
       ],
@@ -384,7 +384,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -403,7 +403,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -422,7 +422,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -441,7 +441,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "ethnoFileCodes"
       ],
@@ -457,7 +457,7 @@
         "vocab": "publishto"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "publishToList"
       ],
@@ -473,7 +473,7 @@
         "vocab": "inventorystatus"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "inventoryStatusList"
       ],
@@ -488,7 +488,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -504,7 +504,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -520,7 +520,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -536,7 +536,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -552,7 +552,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -569,7 +569,7 @@
         "vocab": "languages"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -585,7 +585,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
         "objectNameGroup"
@@ -601,7 +601,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPeopleGroupList",
         "assocPeopleGroup"
@@ -617,7 +617,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPeopleGroupList",
         "assocPeopleGroup"
@@ -633,7 +633,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPeopleGroupList",
         "assocPeopleGroup"
@@ -649,7 +649,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "comments"
       ],
@@ -665,7 +665,7 @@
         "vocab": "annotationtype"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_annotation",
+      "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
         "annotationGroup"
@@ -681,7 +681,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_annotation",
+      "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
         "annotationGroup"
@@ -697,7 +697,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_annotation",
+      "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
         "annotationGroup"
@@ -717,7 +717,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_annotation",
+      "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
         "annotationGroup"
@@ -733,7 +733,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup"
@@ -749,7 +749,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup"
@@ -765,7 +765,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -787,7 +787,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -809,7 +809,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -827,7 +827,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -845,7 +845,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -863,7 +863,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -881,7 +881,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -899,7 +899,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
         "measuredPartGroup",
@@ -917,7 +917,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
         "materialGroup"
@@ -933,7 +933,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
         "materialGroup"
@@ -949,7 +949,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
         "materialGroup"
@@ -965,7 +965,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
         "materialGroup"
@@ -981,7 +981,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
         "materialGroup"
@@ -997,7 +997,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
         "titleGroup"
@@ -1014,7 +1014,7 @@
         "vocab": "languages"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
         "titleGroup"
@@ -1030,7 +1030,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
         "titleGroup"
@@ -1046,7 +1046,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
         "titleGroup",
@@ -1065,7 +1065,7 @@
         "vocab": "languages"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
         "titleGroup",
@@ -1083,7 +1083,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "usageGroupList",
         "usageGroup"
@@ -1099,7 +1099,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "usageGroupList",
         "usageGroup"
@@ -1116,7 +1116,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1132,7 +1132,7 @@
         "vocab": "collectionmethod"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectionMethods"
       ],
@@ -1151,7 +1151,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1170,7 +1170,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1185,7 +1185,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
 
       ],
@@ -1204,7 +1204,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectionSources"
       ],
@@ -1223,7 +1223,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectors"
       ],
@@ -1242,7 +1242,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectors"
       ],
@@ -1257,7 +1257,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1272,7 +1272,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "fieldColEventNames"
       ],
@@ -1287,7 +1287,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1302,7 +1302,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1318,7 +1318,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionDateGroupList"
       ],
@@ -1333,7 +1333,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "techniqueGroupList",
         "techniqueGroup"
@@ -1350,7 +1350,7 @@
         "vocab": "prodtechniquetype"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "techniqueGroupList",
         "techniqueGroup"
@@ -1370,7 +1370,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPlaceGroupList",
         "objectProductionPlaceGroup"
@@ -1390,7 +1390,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPlaceGroupList",
         "objectProductionPlaceGroup"
@@ -1407,7 +1407,7 @@
         "vocab": "prodplacerole"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPlaceGroupList",
         "objectProductionPlaceGroup"
@@ -1423,7 +1423,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionReasons"
       ],
@@ -1442,7 +1442,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPeopleGroupList",
         "objectProductionPeopleGroup"
@@ -1462,7 +1462,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPeopleGroupList",
         "objectProductionPeopleGroup"
@@ -1479,7 +1479,7 @@
         "vocab": "prodpeoplerole"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPeopleGroupList",
         "objectProductionPeopleGroup"
@@ -1499,7 +1499,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPersonGroupList",
         "objectProductionPersonGroup"
@@ -1516,7 +1516,7 @@
         "vocab": "prodpersonrole"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPersonGroupList",
         "objectProductionPersonGroup"
@@ -1536,7 +1536,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionOrganizationGroupList",
         "objectProductionOrganizationGroup"
@@ -1553,7 +1553,7 @@
         "vocab": "prodorgrole"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionOrganizationGroupList",
         "objectProductionOrganizationGroup"
@@ -1569,7 +1569,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1585,7 +1585,7 @@
         "vocab": "nagprainventory"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraInventoryNames"
       ],
@@ -1601,7 +1601,7 @@
         "vocab": "nagpracategory"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraCategories"
       ],
@@ -1617,7 +1617,7 @@
         "vocab": "graveassoccode"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "graveAssocCodes"
       ],
@@ -1632,7 +1632,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "repatriationNotes"
       ],
@@ -1651,7 +1651,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
         "nagpraDetermGroup"
@@ -1668,7 +1668,7 @@
         "vocab": "nagpradetermtype"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
         "nagpraDetermGroup"
@@ -1688,7 +1688,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
         "nagpraDetermGroup"
@@ -1708,7 +1708,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
         "nagpraDetermGroup"
@@ -1724,7 +1724,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
         "nagpraDetermGroup"
@@ -1741,7 +1741,7 @@
         "special": "boolean"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
 
       ],
@@ -1760,7 +1760,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
 
       ],
@@ -1776,7 +1776,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_nagpra",
+      "namespace": "collectionobjects_nagpra",
       "xpath": [
 
       ],
@@ -1791,7 +1791,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "culturalCareNotes"
       ],
@@ -1807,7 +1807,7 @@
         "vocab": "limitationtype"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
         "accessLimitationsGroup"
@@ -1824,7 +1824,7 @@
         "vocab": "limitationlevel"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
         "accessLimitationsGroup"
@@ -1840,7 +1840,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
         "accessLimitationsGroup"
@@ -1860,7 +1860,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
         "accessLimitationsGroup"
@@ -1880,7 +1880,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
         "accessLimitationsGroup"
@@ -1896,7 +1896,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_culturalcare",
+      "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
         "accessLimitationsGroup"
@@ -1912,7 +1912,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "forms"
       ],
@@ -1927,7 +1927,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1942,7 +1942,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -1957,7 +1957,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "styles"
       ],
@@ -1972,7 +1972,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "colors"
       ],
@@ -1987,7 +1987,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2002,7 +2002,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2017,7 +2017,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectComponentGroupList",
         "objectComponentGroup"
@@ -2033,7 +2033,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "objectComponentGroupList",
         "objectComponentGroup"
@@ -2049,7 +2049,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2064,7 +2064,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2080,7 +2080,7 @@
         "vocab": "agequalifier"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2095,7 +2095,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2110,7 +2110,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2129,7 +2129,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2146,7 +2146,7 @@
         "vocab": "taxonqualifier"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2166,7 +2166,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2186,7 +2186,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2203,7 +2203,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2223,7 +2223,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2240,7 +2240,7 @@
         "vocab": "taxonkind"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2256,7 +2256,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2272,7 +2272,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2288,7 +2288,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_naturalhistory_extension",
+      "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
         "taxonomicIdentGroup"
@@ -2304,7 +2304,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2320,7 +2320,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2337,7 +2337,7 @@
         "vocab": "bodyside"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2353,7 +2353,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2370,7 +2370,7 @@
         "special": "boolean"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2386,7 +2386,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2403,7 +2403,7 @@
         "vocab": "agerange"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2420,7 +2420,7 @@
         "vocab": "mortuarytreatment"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup",
@@ -2438,7 +2438,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup",
@@ -2457,7 +2457,7 @@
         "vocab": "behrensmeyer"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2474,7 +2474,7 @@
         "vocab": "behrensmeyer"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2490,7 +2490,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
         "commingledRemainsGroup"
@@ -2506,7 +2506,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2522,7 +2522,7 @@
         "vocab": "languages"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentLanguages"
       ],
@@ -2537,7 +2537,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentActivities"
       ],
@@ -2556,7 +2556,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentConcepts"
       ],
@@ -2575,7 +2575,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentConcepts"
       ],
@@ -2591,7 +2591,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2606,7 +2606,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentPositions"
       ],
@@ -2621,7 +2621,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentObjectGroupList",
         "contentObjectGroup"
@@ -2637,7 +2637,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentObjectGroupList",
         "contentObjectGroup"
@@ -2653,7 +2653,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentPeoples"
       ],
@@ -2672,7 +2672,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentPersons"
       ],
@@ -2691,7 +2691,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentPersons"
       ],
@@ -2706,7 +2706,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentPlaces"
       ],
@@ -2721,7 +2721,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentScripts"
       ],
@@ -2740,7 +2740,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentOrganizations"
       ],
@@ -2759,7 +2759,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentOrganizations"
       ],
@@ -2774,7 +2774,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentEventNameGroupList",
         "contentEventNameGroup"
@@ -2790,7 +2790,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentEventNameGroupList",
         "contentEventNameGroup"
@@ -2806,7 +2806,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentOtherGroupList",
         "contentOtherGroup"
@@ -2822,7 +2822,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "contentOtherGroupList",
         "contentOtherGroup"
@@ -2838,7 +2838,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -2853,7 +2853,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2873,7 +2873,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2893,7 +2893,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2910,7 +2910,7 @@
         "vocab": "languages"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2927,7 +2927,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2943,7 +2943,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2959,7 +2959,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2975,7 +2975,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -2991,7 +2991,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -3007,7 +3007,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -3023,7 +3023,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -3039,7 +3039,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
         "textualInscriptionGroup"
@@ -3055,7 +3055,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3075,7 +3075,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3095,7 +3095,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3112,7 +3112,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3128,7 +3128,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3144,7 +3144,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3160,7 +3160,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3176,7 +3176,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
         "nonTextualInscriptionGroup"
@@ -3192,7 +3192,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocActivityGroupList",
         "assocActivityGroup"
@@ -3208,7 +3208,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocActivityGroupList",
         "assocActivityGroup"
@@ -3224,7 +3224,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocActivityGroupList",
         "assocActivityGroup"
@@ -3240,7 +3240,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocObjectGroupList",
         "assocObjectGroup"
@@ -3256,7 +3256,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocObjectGroupList",
         "assocObjectGroup"
@@ -3272,7 +3272,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocObjectGroupList",
         "assocObjectGroup"
@@ -3292,7 +3292,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocConceptGroupList",
         "assocConceptGroup"
@@ -3308,7 +3308,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocConceptGroupList",
         "assocConceptGroup"
@@ -3324,7 +3324,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocConceptGroupList",
         "assocConceptGroup"
@@ -3340,7 +3340,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocCulturalContextGroupList",
         "assocCulturalContextGroup"
@@ -3356,7 +3356,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocCulturalContextGroupList",
         "assocCulturalContextGroup"
@@ -3372,7 +3372,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocCulturalContextGroupList",
         "assocCulturalContextGroup"
@@ -3392,7 +3392,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocOrganizationGroupList",
         "assocOrganizationGroup"
@@ -3408,7 +3408,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocOrganizationGroupList",
         "assocOrganizationGroup"
@@ -3424,7 +3424,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocOrganizationGroupList",
         "assocOrganizationGroup"
@@ -3444,7 +3444,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPersonGroupList",
         "assocPersonGroup"
@@ -3460,7 +3460,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPersonGroupList",
         "assocPersonGroup"
@@ -3476,7 +3476,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPersonGroupList",
         "assocPersonGroup"
@@ -3492,7 +3492,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPlaceGroupList",
         "assocPlaceGroup"
@@ -3508,7 +3508,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPlaceGroupList",
         "assocPlaceGroup"
@@ -3524,7 +3524,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocPlaceGroupList",
         "assocPlaceGroup"
@@ -3540,7 +3540,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3555,7 +3555,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3574,7 +3574,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventOrganizations"
       ],
@@ -3589,7 +3589,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventPeoples"
       ],
@@ -3608,7 +3608,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventPersons"
       ],
@@ -3623,7 +3623,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventPlaces"
       ],
@@ -3638,7 +3638,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3654,7 +3654,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocDateGroupList",
         "assocDateGroup"
@@ -3670,7 +3670,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocDateGroupList",
         "assocDateGroup"
@@ -3686,7 +3686,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "assocDateGroupList",
         "assocDateGroup"
@@ -3702,7 +3702,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3721,7 +3721,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3741,7 +3741,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3758,7 +3758,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3774,7 +3774,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3794,7 +3794,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3810,7 +3810,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3827,7 +3827,7 @@
         "vocab": "currency"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3843,7 +3843,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3859,7 +3859,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
         "anthroOwnershipGroup"
@@ -3875,7 +3875,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3890,7 +3890,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3905,7 +3905,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "ownersReferences"
       ],
@@ -3920,7 +3920,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3935,7 +3935,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3950,7 +3950,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3965,7 +3965,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -3980,7 +3980,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "viewersReferences"
       ],
@@ -3995,7 +3995,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
 
       ],
@@ -4014,7 +4014,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "referenceGroupList",
         "referenceGroup"
@@ -4034,7 +4034,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "referenceGroupList",
         "referenceGroup"
@@ -4050,7 +4050,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "referenceGroupList",
         "referenceGroup"
@@ -4066,7 +4066,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4086,7 +4086,7 @@
         ]
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4102,7 +4102,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4118,7 +4118,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4134,7 +4134,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4150,7 +4150,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4166,7 +4166,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4182,7 +4182,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4198,7 +4198,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4214,7 +4214,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4230,7 +4230,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4247,7 +4247,7 @@
         "vocab": "vcoordsys"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4263,7 +4263,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4279,7 +4279,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4295,7 +4295,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4311,7 +4311,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4327,7 +4327,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4343,7 +4343,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4359,7 +4359,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4375,7 +4375,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4391,7 +4391,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4407,7 +4407,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4423,7 +4423,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4439,7 +4439,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4455,7 +4455,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4471,7 +4471,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4487,7 +4487,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4503,7 +4503,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4519,7 +4519,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4535,7 +4535,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4551,7 +4551,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4567,7 +4567,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4583,7 +4583,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4599,7 +4599,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4615,7 +4615,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4631,7 +4631,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4647,7 +4647,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4663,7 +4663,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4680,7 +4680,7 @@
         "special": "structured_date"
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4696,7 +4696,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4712,7 +4712,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4728,7 +4728,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4744,7 +4744,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4760,7 +4760,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_anthro",
+      "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -4776,7 +4776,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "technicalAttributeGroupList",
         "technicalAttributeGroup"
@@ -4792,7 +4792,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "technicalAttributeGroupList",
         "technicalAttributeGroup"
@@ -4808,7 +4808,7 @@
       "transforms": {
       },
       "sourcetype": null,
-      "namespace": "ns2:collectionobjects_common",
+      "namespace": "collectionobjects_common",
       "xpath": [
         "technicalAttributeGroupList",
         "technicalAttributeGroup"
