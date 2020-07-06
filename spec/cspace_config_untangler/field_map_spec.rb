@@ -75,7 +75,7 @@ RSpec.describe CCU::FieldMap do
           it 'creates transform hash as expected' do
             rh = result.hash.map{ |src, h| h[:transforms] }
             expected = [
-              { 'vocabulary' => 'agequalifier' }
+              { vocabulary: 'agequalifier' }
             ]
             expect(rh).to eq(expected)
           end
@@ -105,8 +105,8 @@ RSpec.describe CCU::FieldMap do
           it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
-            { 'authority' => %w[conceptauthorities concept] },
-            { 'authority' => %w[conceptauthorities material_ca] }
+            { authority:  %w[conceptauthorities concept] },
+            { authority:  %w[conceptauthorities material_ca] }
           ]
           expect(rh).to eq(expected)
           end
@@ -135,7 +135,7 @@ RSpec.describe CCU::FieldMap do
         it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
-            { 'special' => 'structured_date' },
+            { special: %w[structured_date] },
           ]
           expect(rh).to eq(expected)
         end
@@ -153,7 +153,7 @@ RSpec.describe CCU::FieldMap do
         it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
-            { 'special' => 'boolean' },
+            { special: %w[boolean] },
           ]
           expect(rh).to eq(expected)
         end
@@ -166,8 +166,8 @@ RSpec.describe CCU::FieldMap do
         it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
-            { 'special' => 'behrensmeyer_translate',
-              'vocabulary' => 'behrensmeyer' },
+            { special: %w[behrensmeyer_translate],
+              vocabulary: 'behrensmeyer' },
           ]
           expect(rh).to eq(expected)
         end

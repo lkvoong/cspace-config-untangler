@@ -71,18 +71,21 @@ module CspaceConfigUntangler
       
       def get_transforms
         @hash.each do |source, h|
-          xform = {}
+          xform = { special: []}
           if source.start_with?('authority: ')
-            xform['authority'] = AuthorityConfigLookup.new(profile: @field.profile,
+            xform[:authority] = AuthorityConfigLookup.new(profile: @field.profile,
                                                            authority: source).result
           elsif source.start_with?('vocabulary: ')
-            xform['vocabulary'] = source.sub('vocabulary: ', '')
-            xform['special'] = 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
+            xform[:vocabulary] = source.sub('vocabulary: ', '')
+            xform[:special] << 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
           elsif @field.data_type == 'structured date group'
-            xform['special'] = 'structured_date'
+            xform[:special] << 'structured_date'
           elsif @field.data_type == 'boolean'
-            xform['special'] = 'boolean'
+            xform[:special] << 'boolean'
           end
+
+          xform.delete(:special) if xform[:special].empty?
+          
           h[:transforms] = h[:transforms].merge(xform)
         end
       end

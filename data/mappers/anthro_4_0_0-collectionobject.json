@@ -454,7 +454,7 @@
       "fieldname": "publishTo",
       "datacolumn": "publishTo",
       "transforms": {
-        "vocab": "publishto"
+        "vocabulary": "publishto"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -470,7 +470,7 @@
       "fieldname": "inventoryStatus",
       "datacolumn": "inventoryStatus",
       "transforms": {
-        "vocab": "inventorystatus"
+        "vocabulary": "inventorystatus"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -566,7 +566,7 @@
       "fieldname": "objectNameLanguage",
       "datacolumn": "objectNameLanguage",
       "transforms": {
-        "vocab": "languages"
+        "vocabulary": "languages"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -662,7 +662,7 @@
       "fieldname": "annotationType",
       "datacolumn": "annotationType",
       "transforms": {
-        "vocab": "annotationtype"
+        "vocabulary": "annotationtype"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_annotation",
@@ -1011,7 +1011,7 @@
       "fieldname": "titleLanguage",
       "datacolumn": "titleLanguage",
       "transforms": {
-        "vocab": "languages"
+        "vocabulary": "languages"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1062,7 +1062,7 @@
       "fieldname": "titleTranslationLanguage",
       "datacolumn": "titleTranslationLanguage",
       "transforms": {
-        "vocab": "languages"
+        "vocabulary": "languages"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1113,7 +1113,9 @@
       "fieldname": "fieldCollectionDateGroup",
       "datacolumn": "fieldCollectionDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1129,7 +1131,7 @@
       "fieldname": "fieldCollectionMethod",
       "datacolumn": "fieldCollectionMethod",
       "transforms": {
-        "vocab": "collectionmethod"
+        "vocabulary": "collectionmethod"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1315,7 +1317,9 @@
       "fieldname": "objectProductionDateGroup",
       "datacolumn": "objectProductionDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1347,7 +1351,7 @@
       "fieldname": "techniqueType",
       "datacolumn": "techniqueType",
       "transforms": {
-        "vocab": "prodtechniquetype"
+        "vocabulary": "prodtechniquetype"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1404,7 +1408,7 @@
       "fieldname": "objectProductionPlaceRole",
       "datacolumn": "objectProductionPlaceRole",
       "transforms": {
-        "vocab": "prodplacerole"
+        "vocabulary": "prodplacerole"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1476,7 +1480,7 @@
       "fieldname": "objectProductionPeopleRole",
       "datacolumn": "objectProductionPeopleRole",
       "transforms": {
-        "vocab": "prodpeoplerole"
+        "vocabulary": "prodpeoplerole"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1513,7 +1517,7 @@
       "fieldname": "objectProductionPersonRole",
       "datacolumn": "objectProductionPersonRole",
       "transforms": {
-        "vocab": "prodpersonrole"
+        "vocabulary": "prodpersonrole"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1550,7 +1554,7 @@
       "fieldname": "objectProductionOrganizationRole",
       "datacolumn": "objectProductionOrganizationRole",
       "transforms": {
-        "vocab": "prodorgrole"
+        "vocabulary": "prodorgrole"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -1582,7 +1586,7 @@
       "fieldname": "nagpraInventoryName",
       "datacolumn": "nagpraInventoryName",
       "transforms": {
-        "vocab": "nagprainventory"
+        "vocabulary": "nagprainventory"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_nagpra",
@@ -1598,7 +1602,7 @@
       "fieldname": "nagpraCategory",
       "datacolumn": "nagpraCategory",
       "transforms": {
-        "vocab": "nagpracategory"
+        "vocabulary": "nagpracategory"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_nagpra",
@@ -1614,7 +1618,7 @@
       "fieldname": "graveAssocCode",
       "datacolumn": "graveAssocCode",
       "transforms": {
-        "vocab": "graveassoccode"
+        "vocabulary": "graveassoccode"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_nagpra",
@@ -1665,7 +1669,7 @@
       "fieldname": "nagpraDetermType",
       "datacolumn": "nagpraDetermType",
       "transforms": {
-        "vocab": "nagpradetermtype"
+        "vocabulary": "nagpradetermtype"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_nagpra",
@@ -1738,7 +1742,9 @@
       "fieldname": "nagpraReportFiled",
       "datacolumn": "nagpraReportFiled",
       "transforms": {
-        "special": "boolean"
+        "special": [
+          "boolean"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_nagpra",
@@ -1773,7 +1779,9 @@
       "fieldname": "nagpraReportFiledDate",
       "datacolumn": "nagpraReportFiledDate",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_nagpra",
@@ -1804,7 +1812,7 @@
       "fieldname": "limitationType",
       "datacolumn": "limitationType",
       "transforms": {
-        "vocab": "limitationtype"
+        "vocabulary": "limitationtype"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_culturalcare",
@@ -1821,7 +1829,7 @@
       "fieldname": "limitationLevel",
       "datacolumn": "limitationLevel",
       "transforms": {
-        "vocab": "limitationlevel"
+        "vocabulary": "limitationlevel"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_culturalcare",
@@ -2077,7 +2085,7 @@
       "fieldname": "ageQualifier",
       "datacolumn": "ageQualifier",
       "transforms": {
-        "vocab": "agequalifier"
+        "vocabulary": "agequalifier"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -2143,7 +2151,7 @@
       "fieldname": "qualifier",
       "datacolumn": "qualifier",
       "transforms": {
-        "vocab": "taxonqualifier"
+        "vocabulary": "taxonqualifier"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_naturalhistory_extension",
@@ -2200,7 +2208,9 @@
       "fieldname": "identDateGroup",
       "datacolumn": "identDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_naturalhistory_extension",
@@ -2237,7 +2247,7 @@
       "fieldname": "identKind",
       "datacolumn": "identKind",
       "transforms": {
-        "vocab": "taxonkind"
+        "vocabulary": "taxonkind"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_naturalhistory_extension",
@@ -2334,7 +2344,7 @@
       "fieldname": "side",
       "datacolumn": "side",
       "transforms": {
-        "vocab": "bodyside"
+        "vocabulary": "bodyside"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -2367,7 +2377,9 @@
       "fieldname": "dentition",
       "datacolumn": "dentition",
       "transforms": {
-        "special": "boolean"
+        "special": [
+          "boolean"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -2400,7 +2412,7 @@
       "fieldname": "ageRange",
       "datacolumn": "ageRange",
       "transforms": {
-        "vocab": "agerange"
+        "vocabulary": "agerange"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -2417,7 +2429,7 @@
       "fieldname": "mortuaryTreatment",
       "datacolumn": "mortuaryTreatment",
       "transforms": {
-        "vocab": "mortuarytreatment"
+        "vocabulary": "mortuarytreatment"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -2454,7 +2466,10 @@
       "fieldname": "behrensmeyerSingleLower",
       "datacolumn": "behrensmeyerSingleLower",
       "transforms": {
-        "vocab": "behrensmeyer"
+        "special": [
+          "behrensmeyer_translate"
+        ],
+        "vocabulary": "behrensmeyer"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -2471,7 +2486,10 @@
       "fieldname": "behrensmeyerUpper",
       "datacolumn": "behrensmeyerUpper",
       "transforms": {
-        "vocab": "behrensmeyer"
+        "special": [
+          "behrensmeyer_translate"
+        ],
+        "vocabulary": "behrensmeyer"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -2519,7 +2537,7 @@
       "fieldname": "contentLanguage",
       "datacolumn": "contentLanguage",
       "transforms": {
-        "vocab": "languages"
+        "vocabulary": "languages"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -2588,7 +2606,9 @@
       "fieldname": "contentDateGroup",
       "datacolumn": "contentDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -2907,7 +2927,7 @@
       "fieldname": "inscriptionContentLanguage",
       "datacolumn": "inscriptionContentLanguage",
       "transforms": {
-        "vocab": "languages"
+        "vocabulary": "languages"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -2924,7 +2944,9 @@
       "fieldname": "inscriptionContentDateGroup",
       "datacolumn": "inscriptionContentDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -3109,7 +3131,9 @@
       "fieldname": "inscriptionDescriptionDateGroup",
       "datacolumn": "inscriptionDescriptionDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -3651,7 +3675,9 @@
       "fieldname": "assocStructuredDateGroup",
       "datacolumn": "assocStructuredDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_common",
@@ -3755,7 +3781,9 @@
       "fieldname": "anthroOwnershipDateGroup",
       "datacolumn": "anthroOwnershipDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -3824,7 +3852,7 @@
       "fieldname": "anthroOwnershipPriceCurrency",
       "datacolumn": "anthroOwnershipPriceCurrency",
       "transforms": {
-        "vocab": "currency"
+        "vocabulary": "currency"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -4244,7 +4272,7 @@
       "fieldname": "vCoordSys",
       "datacolumn": "vCoordSys",
       "transforms": {
-        "vocab": "vcoordsys"
+        "vocabulary": "vcoordsys"
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
@@ -4677,7 +4705,9 @@
       "fieldname": "geoRefDateGroup",
       "datacolumn": "geoRefDateGroup",
       "transforms": {
-        "special": "structured_date"
+        "special": [
+          "structured_date"
+        ]
       },
       "sourcetype": null,
       "namespace": "collectionobjects_anthro",
