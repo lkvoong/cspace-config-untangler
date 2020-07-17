@@ -1,0 +1,5 @@
+*What's in the directories*
+
+configs:: JSON application config files for the latest versions of all CollectionSpace community profiles
+mappers:: JSON serialization of CCU::RecordMapper objects for all object, procedure, and authority record types for all community profiles
+templates:: CSV templates for all object, procedure, and authority record types for all community profiles. The templates include information on data source and data type for each column
