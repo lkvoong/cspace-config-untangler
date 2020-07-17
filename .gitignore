@@ -17,3 +17,4 @@ Gemfile.lock
 /data/*.csv
 /data/profile_config.yaml
 /data/configs/*.json
+/data/mappers/*.json

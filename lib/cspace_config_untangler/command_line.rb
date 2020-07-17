@@ -78,10 +78,36 @@ module CspaceConfigUntangler
                                      )
       
         File.open(options[:output], 'w'){ |f|
-          f.puts JSON.pretty_generate(recmapper.to_json)
+          f.write(JSON.pretty_generate(recmapper))
         }
     end
-    
+
+    desc 'write_mappers', 'create files containing JSON representation of all known record mappers'
+    option :outputdir, desc: 'path to output directory. File name will be: profile-rectype.json', default: 'data/mappers'
+    def write_mappers
+      get_profiles.each do |p|
+        puts "Writing mappers for #{p}..."        
+        CCU::Profile.new(p).rectypes.each do |rt|
+          puts "  ...#{rt.name}"
+          recmapper = RecordMapping.new(profile: p,
+                                        rectype: rt.name
+                                       )
+          path = "#{options[:outputdir]}/#{p}-#{rt.name}.json"
+          recmapper.to_json(output: path)
+        end
+      end
+    end
+
+    desc 'write_csv_template', 'write CSV template for batch data import'
+    option :profile, :desc => 'ONE profile'
+    option :rectype, :desc => 'ONE rectype'
+    option :outputdir, :desc => 'path to output directory. File name will be: profile-rectype_template.csv', :default => 'data/templates'
+    def write_csv_template
+      CsvTemplate.new(profile: options[:profile],
+                      rectype: options[:rectype]
+                     ).write(options[:outputdir])
+    end
+
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
       exts = {}
@@ -218,14 +244,10 @@ The full schema_path should be unique within a record type. Non-unique fields ar
 
     desc 'test', 'temporary stuff for expediency'
     def test
-      profile = 'anthro_4_0_0'
+      profile = 'botgarden_1_0_0'
       rt = 'collectionobject'
-      csv = 'data/csv/collectionobject_partial.csv'
-
-      mapper = CCU::CsvMapper.new(filename: csv, profile: profile, rectype: rt)
-      rowmap = CCU::RowMapper.new(row: mapper.rows.first, mapper: mapper.mapper)
-
-      puts rowmap.xml
+      rm = RecordMapping.new(profile: profile, rectype: rt)
+      
     end
   end #class Thor::CommandLine
 end #module

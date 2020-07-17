@@ -21,7 +21,7 @@ module CspaceConfigUntangler
       # output = string = path to output json file
       def to_json(output: "data/mappers/#{@profile}-#{@rectype}.json")
         File.open(output, 'w') do |f|
-          f.puts JSON.pretty_generate(@hash)
+          f.write(JSON.pretty_generate(@hash))
         end
       end
       
@@ -64,29 +64,6 @@ module CspaceConfigUntangler
           end
         end
       end
-
-      # def add_fieldmappings_holders
-      #   @mappings.each do |m|
-      #     path = m.xpath.clone
-      #     path.prepend(m.namespace)
-      #     to_update = @hash.dig(*path)
-      #     if to_update
-      #       to_update[:fieldmappings] = []
-      #     else
-      #       puts "Could not create holder for fieldmappings in #{m.namespace}/#{path.join('/')}"
-      #     end
-      #   end
-      # end
-      
-      # def assign_mappings
-      #   @mappings.each do |m|
-      #     path = m.xpath.clone
-      #     path.prepend(m.namespace)
-      #     path << :fieldmappings
-      #     to_update = @hash.dig(*path)
-      #     to_update << m.to_h
-      #   end
-      # end
     end #class RecordMapper
 
     # returns hash of namespaces in a document, and their namespace URIs

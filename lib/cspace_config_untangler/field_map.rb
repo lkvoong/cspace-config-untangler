@@ -3,10 +3,11 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   module FieldMap
     class FieldMapping
+      ::FieldMapping = CspaceConfigUntangler::FieldMap::FieldMapping
       include CCU::TrackAttributes
-      attr_reader :fieldname, :datacolumn, :transforms, :sourcetype, :namespace, :xpath, :data_type,
-        :required, :repeats, :in_repeating_group
-      def initialize(field:, datacolumn:, transforms: {}, sourcetype:)
+      attr_reader :fieldname, :datacolumn, :transforms, :source_type, :namespace, :xpath, :data_type,
+        :required, :repeats, :in_repeating_group, :opt_list_values
+      def initialize(field:, datacolumn:, transforms: {}, source_type:)
         @fieldname = field.name
         @namespace = field.ns.sub('ns2:', '')
         @xpath = field.schema_path
@@ -15,8 +16,9 @@ module CspaceConfigUntangler
         @in_repeating_group = field.in_repeating_group
         @data_type = field.data_type
         @datacolumn = datacolumn
-        @sourcetype = sourcetype
+        @source_type = source_type
         @transforms = transforms
+        @opt_list_values = field.value_list
       end
 
       def to_h
@@ -27,7 +29,8 @@ module CspaceConfigUntangler
         return h
       end
     end
-    
+
+    # given a CSpace field, will generate one or more FieldMapping objects (which relate to incoming data key/columns)
     class FieldMapper
       ::FieldMapper = CspaceConfigUntangler::FieldMap::FieldMapper
       attr_reader :mappings, :hash, :source_type
@@ -35,9 +38,10 @@ module CspaceConfigUntangler
         @field = field
         @hash = structure_hash
         get_data_columns
-        @source_type = get_source_type
+        get_source_type
         get_transforms
         @mappings = create_mappings
+        @field = @field.name
       end
 
       private
@@ -48,7 +52,7 @@ module CspaceConfigUntangler
         sources.each do |vs|
           h[vs] = { column_name: '',
                    transforms: {},
-                   sourcetype: '' }
+                   source_type: ''}
         end
         h
       end
@@ -57,16 +61,17 @@ module CspaceConfigUntangler
         types = []
         @hash.each do |source, h|
           if source.start_with?('authority: ')
-            types << 'authority'
+            h[:source_type] = 'authority'
           elsif source.start_with?('vocabulary: ')
-            types << 'vocabulary'
+            h[:source_type] = 'vocabulary'
           elsif source.start_with?('option list: ')
-            types << 'optionlist'
+            h[:source_type] = 'optionlist'
           else
-            types << 'na'
+            h[:source_type] = 'na'
           end
+        types << h[:source_type]
         end
-        types[0]
+        @source_type = types[0]
       end
       
       def get_transforms
@@ -78,8 +83,6 @@ module CspaceConfigUntangler
           elsif source.start_with?('vocabulary: ')
             xform[:vocabulary] = source.sub('vocabulary: ', '')
             xform[:special] << 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
-          elsif @field.data_type == 'structured date group'
-            xform[:special] << 'structured_date'
           elsif @field.data_type == 'boolean'
             xform[:special] << 'boolean'
           end
@@ -96,7 +99,7 @@ module CspaceConfigUntangler
           mappings << FieldMapping.new(field: @field,
                                        datacolumn: h[:column_name],
                                        transforms: h[:transforms],
-                                       sourcetype: h[:source_type])
+                                       source_type: h[:source_type])
         end
         mappings
       end

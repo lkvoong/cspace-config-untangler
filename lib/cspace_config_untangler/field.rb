@@ -2,13 +2,12 @@ require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
   class Field
-  attr_reader :profile, :rectype, :name, :ns, :ns_for_id, :panel, :ui_path, :id,
+  attr_reader :name, :ns, :ns_for_id, :panel, :ui_path, :id,
       :schema_path,
       :repeats, :in_repeating_group,
       :data_type, :value_source, :value_list,
-      :required,
-      :mappings
-  attr_accessor :to_csv
+      :required
+  attr_accessor :to_csv, :profile, :rectype
 
     def initialize(rectype_obj, form_field)
       ff = form_field
@@ -22,8 +21,6 @@ module CspaceConfigUntangler
       @id = ff.id
       merge_field_defs
       @to_csv = format_csv
-#      @mappings = get_field_mappings
-#      clean_up
     end
 
     def csv_header
@@ -36,6 +33,14 @@ module CspaceConfigUntangler
       else
         return false
       end
+    end
+
+    # returns copy of this Field object without all the profile and rectype data
+    def clean
+      c = self.dup
+      c.profile = @profile.name
+      c.rectype = @rectype.name
+      c
     end
 
     private
@@ -89,7 +94,7 @@ module CspaceConfigUntangler
       else
         try_id = "#{@ns.sub('ns2:', '')}.#{@name}"
       end
-
+      
       fd = @profile.field_defs.dig(try_id)
       if fd.nil?
         return nil
@@ -153,13 +158,7 @@ module CspaceConfigUntangler
         new = val
       end
       return new
-    end
-
-    def clean_up
-      @profile = @profile.name
-      @rectype = @rectype.name
-    end
-    
+    end    
   end #class Field
   
   
