@@ -257,7 +257,7 @@
       "datacolumn": "objectNumber",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -265,14 +265,17 @@
       "data_type": "string",
       "required": "y",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "numberOfObjects",
       "datacolumn": "numberOfObjects",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -280,14 +283,17 @@
       "data_type": "integer",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "numberValue",
       "datacolumn": "numberValue",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "otherNumberList",
@@ -296,14 +302,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "numberType",
       "datacolumn": "numberType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "otherNumberList",
@@ -312,14 +321,21 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "lender",
+        "obsolete",
+        "previous",
+        "serial",
+        "unknown"
+      ]
     },
     {
       "fieldname": "responsibleDepartment",
       "datacolumn": "responsibleDepartment",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "responsibleDepartments"
@@ -327,14 +343,26 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+        "antiquities",
+        "architecture-design",
+        "decorative-arts",
+        "ethnography",
+        "herpetology",
+        "media-performance-art",
+        "paintings-sculpture",
+        "paleobotany",
+        "photographs",
+        "prints-drawings"
+      ]
     },
     {
       "fieldname": "collection",
       "datacolumn": "collection",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -342,14 +370,20 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "library-collection",
+        "permanent-collection",
+        "study-collection",
+        "teaching-collection"
+      ]
     },
     {
       "fieldname": "recordStatus",
       "datacolumn": "recordStatus",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -357,14 +391,20 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "approved",
+        "in-process",
+        "new",
+        "temporary"
+      ]
     },
     {
       "fieldname": "briefDescription",
       "datacolumn": "briefDescription",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "briefDescriptions"
@@ -372,7 +412,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "computedCurrentLocation",
@@ -383,7 +426,7 @@
           "location"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -391,7 +434,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "computedCurrentLocation",
@@ -402,7 +448,7 @@
           "offsite_sla"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -410,7 +456,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "computedCurrentLocation",
@@ -421,7 +470,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -429,7 +478,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "ethnoFileCode",
@@ -440,7 +492,7 @@
           "ethfilecode"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "ethnoFileCodes"
@@ -448,7 +500,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "publishTo",
@@ -456,7 +511,7 @@
       "transforms": {
         "vocabulary": "publishto"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "publishToList"
@@ -464,7 +519,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inventoryStatus",
@@ -472,7 +530,7 @@
       "transforms": {
         "vocabulary": "inventorystatus"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "inventoryStatusList"
@@ -480,14 +538,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectName",
       "datacolumn": "objectName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -496,14 +557,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectNameCurrency",
       "datacolumn": "objectNameCurrency",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -512,14 +576,19 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "current",
+        "out of date",
+        "unknown"
+      ]
     },
     {
       "fieldname": "objectNameLevel",
       "datacolumn": "objectNameLevel",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -528,14 +597,18 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "group",
+        "subgroup"
+      ]
     },
     {
       "fieldname": "objectNameSystem",
       "datacolumn": "objectNameSystem",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -544,14 +617,26 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "AASLH Nomenclature",
+        "Bennyhoff Olivella bead typology",
+        "Getty Art & Architecture Thesaurus",
+        "Gifford worked bone typology",
+        "Gifford worked shell typology",
+        "Heizer projectile point typology",
+        "Justice projectile point typology",
+        "Meighan historic glass bead typology",
+        "Treganza clay artifact typology",
+        "no system"
+      ]
     },
     {
       "fieldname": "objectNameType",
       "datacolumn": "objectNameType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -560,7 +645,14 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "classified",
+        "denomination",
+        "simple",
+        "taxonomic",
+        "typological"
+      ]
     },
     {
       "fieldname": "objectNameLanguage",
@@ -568,7 +660,7 @@
       "transforms": {
         "vocabulary": "languages"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -577,14 +669,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectNameNote",
       "datacolumn": "objectNameNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectNameList",
@@ -593,14 +688,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPeople",
       "datacolumn": "assocPeople",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPeopleGroupList",
@@ -609,14 +707,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPeopleType",
       "datacolumn": "assocPeopleType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPeopleGroupList",
@@ -625,14 +726,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPeopleNote",
       "datacolumn": "assocPeopleNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPeopleGroupList",
@@ -641,14 +745,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "comment",
       "datacolumn": "comment",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "comments"
@@ -656,7 +763,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "annotationType",
@@ -664,7 +774,7 @@
       "transforms": {
         "vocabulary": "annotationtype"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
@@ -673,14 +783,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "annotationNote",
       "datacolumn": "annotationNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
@@ -689,14 +802,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "annotationDate",
       "datacolumn": "annotationDate",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
@@ -705,7 +821,10 @@
       "data_type": "date",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "annotationAuthor",
@@ -716,7 +835,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_annotation",
       "xpath": [
         "annotationGroupList",
@@ -725,14 +844,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "measuredPart",
       "datacolumn": "measuredPart",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -741,14 +863,24 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "base",
+        "frame",
+        "framed",
+        "image-size",
+        "mount",
+        "paper-size",
+        "plate-size",
+        "unframed"
+      ]
     },
     {
       "fieldname": "dimensionSummary",
       "datacolumn": "dimensionSummary",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -757,14 +889,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "dimension",
       "datacolumn": "dimension",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -775,7 +910,22 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "area",
+        "base",
+        "circumference",
+        "count",
+        "depth",
+        "diameter",
+        "height",
+        "length",
+        "running-time",
+        "target",
+        "volume",
+        "weight",
+        "width"
+      ]
     },
     {
       "fieldname": "measuredBy",
@@ -786,7 +936,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -797,7 +947,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "measuredBy",
@@ -808,7 +961,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -819,14 +972,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "measurementMethod",
       "datacolumn": "measurementMethod",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -837,14 +993,36 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "balance_beam_scale",
+        "electronic_distance_measurement",
+        "goniometer",
+        "hydraulic_or_pneumatic_scale",
+        "measuring_tape_cloth",
+        "measuring_tape_metal",
+        "microscopy_reticule",
+        "odometer",
+        "optical_range_finder",
+        "osteometric_board",
+        "pacing_pedometer",
+        "protractor",
+        "ruler",
+        "sliding_calipers",
+        "spreading_calipers",
+        "spring_scale",
+        "stadia_transit",
+        "standard_mesh_screen",
+        "taping_chaining",
+        "theodolite_total_station"
+      ]
     },
     {
       "fieldname": "value",
       "datacolumn": "value",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -855,14 +1033,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "measurementUnit",
       "datacolumn": "measurementUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -873,14 +1054,32 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "carats",
+        "centimeters",
+        "cubic-centimeters",
+        "feet",
+        "inches",
+        "kilograms",
+        "liters",
+        "meters",
+        "millimeters",
+        "minutes",
+        "ounces",
+        "pixels",
+        "pounds",
+        "square-feet",
+        "stories",
+        "tons"
+      ]
     },
     {
       "fieldname": "valueQualifier",
       "datacolumn": "valueQualifier",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -891,14 +1090,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "valueDate",
       "datacolumn": "valueDate",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "measuredPartGroupList",
@@ -909,14 +1111,17 @@
       "data_type": "date",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "material",
       "datacolumn": "material",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
@@ -925,14 +1130,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "materialComponent",
       "datacolumn": "materialComponent",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
@@ -941,14 +1149,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "materialComponentNote",
       "datacolumn": "materialComponentNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
@@ -957,14 +1168,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "materialName",
       "datacolumn": "materialName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
@@ -973,14 +1187,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "materialSource",
       "datacolumn": "materialSource",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "materialGroupList",
@@ -989,14 +1206,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "title",
       "datacolumn": "title",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
@@ -1005,7 +1225,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "titleLanguage",
@@ -1013,7 +1236,7 @@
       "transforms": {
         "vocabulary": "languages"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
@@ -1022,14 +1245,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "titleType",
       "datacolumn": "titleType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
@@ -1038,14 +1264,22 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "assigned-by-artist",
+        "collection",
+        "generic",
+        "popular",
+        "series",
+        "trade"
+      ]
     },
     {
       "fieldname": "titleTranslation",
       "datacolumn": "titleTranslation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
@@ -1056,7 +1290,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "titleTranslationLanguage",
@@ -1064,7 +1301,7 @@
       "transforms": {
         "vocabulary": "languages"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "titleGroupList",
@@ -1075,14 +1312,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "usage",
       "datacolumn": "usage",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "usageGroupList",
@@ -1091,14 +1331,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "usageNote",
       "datacolumn": "usageNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "usageGroupList",
@@ -1107,17 +1350,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionDateGroup",
       "datacolumn": "fieldCollectionDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1125,7 +1368,10 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionMethod",
@@ -1133,7 +1379,7 @@
       "transforms": {
         "vocabulary": "collectionmethod"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectionMethods"
@@ -1141,7 +1387,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionPlace",
@@ -1152,7 +1401,7 @@
           "place"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1160,7 +1409,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionPlace",
@@ -1171,7 +1423,7 @@
           "tgn_place"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1179,14 +1431,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldLocVerbatim",
       "datacolumn": "fieldLocVerbatim",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
 
@@ -1194,7 +1449,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionSource",
@@ -1205,7 +1463,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectionSources"
@@ -1213,7 +1471,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollector",
@@ -1224,7 +1485,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectors"
@@ -1232,7 +1493,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollector",
@@ -1243,7 +1507,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "fieldCollectors"
@@ -1251,14 +1515,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionNumber",
       "datacolumn": "fieldCollectionNumber",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1266,14 +1533,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldColEventName",
       "datacolumn": "fieldColEventName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "fieldColEventNames"
@@ -1281,14 +1551,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionFeature",
       "datacolumn": "fieldCollectionFeature",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1296,14 +1569,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldCollectionNote",
       "datacolumn": "fieldCollectionNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1311,17 +1587,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionDateGroup",
       "datacolumn": "objectProductionDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionDateGroupList"
@@ -1329,14 +1605,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "technique",
       "datacolumn": "technique",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "techniqueGroupList",
@@ -1345,7 +1624,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "techniqueType",
@@ -1353,7 +1635,7 @@
       "transforms": {
         "vocabulary": "prodtechniquetype"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "techniqueGroupList",
@@ -1362,7 +1644,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPlace",
@@ -1373,7 +1658,7 @@
           "place"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPlaceGroupList",
@@ -1382,7 +1667,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPlace",
@@ -1393,7 +1681,7 @@
           "tgn_place"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPlaceGroupList",
@@ -1402,7 +1690,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPlaceRole",
@@ -1410,7 +1701,7 @@
       "transforms": {
         "vocabulary": "prodplacerole"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPlaceGroupList",
@@ -1419,14 +1710,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionReason",
       "datacolumn": "objectProductionReason",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionReasons"
@@ -1434,7 +1728,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPeople",
@@ -1445,7 +1742,7 @@
           "archculture"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPeopleGroupList",
@@ -1454,7 +1751,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPeople",
@@ -1465,7 +1765,7 @@
           "ethculture"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPeopleGroupList",
@@ -1474,7 +1774,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPeopleRole",
@@ -1482,7 +1785,7 @@
       "transforms": {
         "vocabulary": "prodpeoplerole"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPeopleGroupList",
@@ -1491,7 +1794,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPerson",
@@ -1502,7 +1808,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPersonGroupList",
@@ -1511,7 +1817,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionPersonRole",
@@ -1519,7 +1828,7 @@
       "transforms": {
         "vocabulary": "prodpersonrole"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionPersonGroupList",
@@ -1528,7 +1837,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionOrganization",
@@ -1539,7 +1851,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionOrganizationGroupList",
@@ -1548,7 +1860,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionOrganizationRole",
@@ -1556,7 +1871,7 @@
       "transforms": {
         "vocabulary": "prodorgrole"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectProductionOrganizationGroupList",
@@ -1565,14 +1880,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectProductionNote",
       "datacolumn": "objectProductionNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1580,7 +1898,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraInventoryName",
@@ -1588,7 +1909,7 @@
       "transforms": {
         "vocabulary": "nagprainventory"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraInventoryNames"
@@ -1596,7 +1917,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraCategory",
@@ -1604,7 +1928,7 @@
       "transforms": {
         "vocabulary": "nagpracategory"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraCategories"
@@ -1612,7 +1936,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "graveAssocCode",
@@ -1620,7 +1947,7 @@
       "transforms": {
         "vocabulary": "graveassoccode"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "graveAssocCodes"
@@ -1628,14 +1955,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "repatriationNote",
       "datacolumn": "repatriationNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "repatriationNotes"
@@ -1643,7 +1973,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraDetermCulture",
@@ -1654,7 +1987,7 @@
           "archculture"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
@@ -1663,7 +1996,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraDetermType",
@@ -1671,7 +2007,7 @@
       "transforms": {
         "vocabulary": "nagpradetermtype"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
@@ -1680,7 +2016,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraDetermBy",
@@ -1691,7 +2030,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
@@ -1700,7 +2039,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraDetermBy",
@@ -1711,7 +2053,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
@@ -1720,14 +2062,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraDetermNote",
       "datacolumn": "nagpraDetermNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
         "nagpraDetermGroupList",
@@ -1736,7 +2081,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraReportFiled",
@@ -1746,7 +2094,7 @@
           "boolean"
         ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
 
@@ -1754,7 +2102,10 @@
       "data_type": "boolean",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraReportFiledBy",
@@ -1765,7 +2116,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
 
@@ -1773,17 +2124,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "nagpraReportFiledDate",
       "datacolumn": "nagpraReportFiledDate",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_nagpra",
       "xpath": [
 
@@ -1791,14 +2142,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "culturalCareNote",
       "datacolumn": "culturalCareNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "culturalCareNotes"
@@ -1806,7 +2160,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "limitationType",
@@ -1814,7 +2171,7 @@
       "transforms": {
         "vocabulary": "limitationtype"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
@@ -1823,7 +2180,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "limitationLevel",
@@ -1831,7 +2191,7 @@
       "transforms": {
         "vocabulary": "limitationlevel"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
@@ -1840,14 +2200,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "limitationDetails",
       "datacolumn": "limitationDetails",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
@@ -1856,7 +2219,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "requester",
@@ -1867,7 +2233,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
@@ -1876,7 +2242,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "requestOnBehalfOf",
@@ -1887,7 +2256,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
@@ -1896,14 +2265,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "requestDate",
       "datacolumn": "requestDate",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_culturalcare",
       "xpath": [
         "accessLimitationsGroupList",
@@ -1912,14 +2284,17 @@
       "data_type": "date",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "form",
       "datacolumn": "form",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "forms"
@@ -1927,14 +2302,29 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+        "bagged",
+        "bottled",
+        "boxed",
+        "dry",
+        "ground",
+        "in can or tin",
+        "in drum",
+        "mounted",
+        "pinned",
+        "thin section",
+        "unknown",
+        "wet",
+        "wrapped"
+      ]
     },
     {
       "fieldname": "copyNumber",
       "datacolumn": "copyNumber",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1942,14 +2332,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "editionNumber",
       "datacolumn": "editionNumber",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -1957,14 +2350,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "style",
       "datacolumn": "style",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "styles"
@@ -1972,14 +2368,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "color",
       "datacolumn": "color",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "colors"
@@ -1987,14 +2386,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "physicalDescription",
       "datacolumn": "physicalDescription",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2002,14 +2404,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "distinguishingFeatures",
       "datacolumn": "distinguishingFeatures",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2017,14 +2422,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectComponentName",
       "datacolumn": "objectComponentName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectComponentGroupList",
@@ -2033,14 +2441,20 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "blade",
+        "buttonhole",
+        "handle",
+        "sleeve"
+      ]
     },
     {
       "fieldname": "objectComponentInformation",
       "datacolumn": "objectComponentInformation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "objectComponentGroupList",
@@ -2049,14 +2463,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "sex",
       "datacolumn": "sex",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2064,14 +2481,18 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "female",
+        "male"
+      ]
     },
     {
       "fieldname": "phase",
       "datacolumn": "phase",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2079,7 +2500,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "adult/mature",
+        "egg",
+        "indeterminate",
+        "larva",
+        "multiple",
+        "seed",
+        "subadult/immature",
+        "unknown"
+      ]
     },
     {
       "fieldname": "ageQualifier",
@@ -2087,7 +2518,7 @@
       "transforms": {
         "vocabulary": "agequalifier"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2095,14 +2526,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "age",
       "datacolumn": "age",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2110,14 +2544,17 @@
       "data_type": "integer",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "ageUnit",
       "datacolumn": "ageUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2125,7 +2562,13 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "days",
+        "months",
+        "weeks",
+        "years"
+      ]
     },
     {
       "fieldname": "taxon",
@@ -2136,7 +2579,7 @@
           "taxon"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2145,7 +2588,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "qualifier",
@@ -2153,7 +2599,7 @@
       "transforms": {
         "vocabulary": "taxonqualifier"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2162,7 +2608,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "identBy",
@@ -2173,7 +2622,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2182,7 +2631,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "identBy",
@@ -2193,7 +2645,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2202,17 +2654,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "identDateGroup",
       "datacolumn": "identDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2221,7 +2673,10 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "institution",
@@ -2232,7 +2687,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2241,7 +2696,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "identKind",
@@ -2249,7 +2707,7 @@
       "transforms": {
         "vocabulary": "taxonkind"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2258,14 +2716,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "reference",
       "datacolumn": "reference",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2274,14 +2735,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "refPage",
       "datacolumn": "refPage",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2290,14 +2754,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "notes",
       "datacolumn": "notes",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_naturalhistory_extension",
       "xpath": [
         "taxonomicIdentGroupList",
@@ -2306,14 +2773,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "minIndividuals",
       "datacolumn": "minIndividuals",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2322,14 +2792,17 @@
       "data_type": "integer",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "bone",
       "datacolumn": "bone",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2338,7 +2811,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "side",
@@ -2346,7 +2822,7 @@
       "transforms": {
         "vocabulary": "bodyside"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2355,14 +2831,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "count",
       "datacolumn": "count",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2371,7 +2850,10 @@
       "data_type": "integer",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "dentition",
@@ -2381,7 +2863,7 @@
           "boolean"
         ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2390,14 +2872,17 @@
       "data_type": "boolean",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "sex",
       "datacolumn": "sex",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2406,7 +2891,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "Female",
+        "Indeterminate",
+        "Male",
+        "Possibly female",
+        "Possibly male",
+        "Probably female",
+        "Probably male",
+        "Unknown"
+      ]
     },
     {
       "fieldname": "ageRange",
@@ -2414,7 +2909,7 @@
       "transforms": {
         "vocabulary": "agerange"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2423,7 +2918,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "mortuaryTreatment",
@@ -2431,7 +2929,7 @@
       "transforms": {
         "vocabulary": "mortuarytreatment"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2442,14 +2940,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "mortuaryTreatmentNote",
       "datacolumn": "mortuaryTreatmentNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2460,7 +2961,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "behrensmeyerSingleLower",
@@ -2471,7 +2975,7 @@
         ],
         "vocabulary": "behrensmeyer"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2480,7 +2984,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "behrensmeyerUpper",
@@ -2491,7 +2998,7 @@
         ],
         "vocabulary": "behrensmeyer"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2500,14 +3007,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "commingledRemainsNote",
       "datacolumn": "commingledRemainsNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "commingledRemainsGroupList",
@@ -2516,14 +3026,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentDescription",
       "datacolumn": "contentDescription",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2531,7 +3044,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentLanguage",
@@ -2539,7 +3055,7 @@
       "transforms": {
         "vocabulary": "languages"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentLanguages"
@@ -2547,14 +3063,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentActivity",
       "datacolumn": "contentActivity",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentActivities"
@@ -2562,7 +3081,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentConcept",
@@ -2573,7 +3095,7 @@
           "concept"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentConcepts"
@@ -2581,7 +3103,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentConcept",
@@ -2592,7 +3117,7 @@
           "material_ca"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentConcepts"
@@ -2600,17 +3125,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentDateGroup",
       "datacolumn": "contentDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2618,14 +3143,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentPosition",
       "datacolumn": "contentPosition",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentPositions"
@@ -2633,14 +3161,28 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+        "back",
+        "base",
+        "bottom",
+        "front",
+        "inside",
+        "left",
+        "outside",
+        "recto",
+        "right",
+        "rim",
+        "top",
+        "verso"
+      ]
     },
     {
       "fieldname": "contentObject",
       "datacolumn": "contentObject",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentObjectGroupList",
@@ -2649,14 +3191,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentObjectType",
       "datacolumn": "contentObjectType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentObjectGroupList",
@@ -2665,14 +3210,18 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "food",
+        "furniture"
+      ]
     },
     {
       "fieldname": "contentPeople",
       "datacolumn": "contentPeople",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentPeoples"
@@ -2680,7 +3229,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentPerson",
@@ -2691,7 +3243,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentPersons"
@@ -2699,7 +3251,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentPerson",
@@ -2710,7 +3265,7 @@
           "ulan_pa"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentPersons"
@@ -2718,14 +3273,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentPlace",
       "datacolumn": "contentPlace",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentPlaces"
@@ -2733,14 +3291,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentScript",
       "datacolumn": "contentScript",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentScripts"
@@ -2748,7 +3309,16 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+        "carolingian-miniscule",
+        "gothic-script",
+        "palmer-method",
+        "roman-cursive",
+        "rustic-capitals",
+        "spencerian-method",
+        "square-capitals"
+      ]
     },
     {
       "fieldname": "contentOrganization",
@@ -2759,7 +3329,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentOrganizations"
@@ -2767,7 +3337,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentOrganization",
@@ -2778,7 +3351,7 @@
           "ulan_oa"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentOrganizations"
@@ -2786,14 +3359,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentEventName",
       "datacolumn": "contentEventName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentEventNameGroupList",
@@ -2802,14 +3378,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentEventNameType",
       "datacolumn": "contentEventNameType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentEventNameGroupList",
@@ -2818,14 +3397,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentOther",
       "datacolumn": "contentOther",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentOtherGroupList",
@@ -2834,14 +3416,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentOtherType",
       "datacolumn": "contentOtherType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "contentOtherGroupList",
@@ -2850,14 +3435,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "contentNote",
       "datacolumn": "contentNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -2865,14 +3453,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContent",
       "datacolumn": "inscriptionContent",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2881,7 +3472,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentInscriber",
@@ -2892,7 +3486,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2901,7 +3495,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentInscriber",
@@ -2912,7 +3509,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2921,7 +3518,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentLanguage",
@@ -2929,7 +3529,7 @@
       "transforms": {
         "vocabulary": "languages"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2938,17 +3538,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentDateGroup",
       "datacolumn": "inscriptionContentDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2957,14 +3557,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentPosition",
       "datacolumn": "inscriptionContentPosition",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2973,14 +3576,28 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "back",
+        "base",
+        "bottom",
+        "front",
+        "inside",
+        "left",
+        "outside",
+        "recto",
+        "right",
+        "rim",
+        "top",
+        "verso"
+      ]
     },
     {
       "fieldname": "inscriptionContentScript",
       "datacolumn": "inscriptionContentScript",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -2989,14 +3606,23 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "carolingian-miniscule",
+        "gothic-script",
+        "palmer-method",
+        "roman-cursive",
+        "rustic-capitals",
+        "spencerian-method",
+        "square-capitals"
+      ]
     },
     {
       "fieldname": "inscriptionContentType",
       "datacolumn": "inscriptionContentType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -3005,14 +3631,22 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "brand",
+        "decoration",
+        "estate-stamp",
+        "graffiti",
+        "label",
+        "maker's-mark"
+      ]
     },
     {
       "fieldname": "inscriptionContentMethod",
       "datacolumn": "inscriptionContentMethod",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -3021,14 +3655,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentInterpretation",
       "datacolumn": "inscriptionContentInterpretation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -3037,14 +3674,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentTranslation",
       "datacolumn": "inscriptionContentTranslation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -3053,14 +3693,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionContentTransliteration",
       "datacolumn": "inscriptionContentTransliteration",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "textualInscriptionGroupList",
@@ -3069,14 +3712,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionDescription",
       "datacolumn": "inscriptionDescription",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3085,7 +3731,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionInscriber",
@@ -3096,7 +3745,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3105,7 +3754,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionInscriber",
@@ -3116,7 +3768,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3125,17 +3777,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionDateGroup",
       "datacolumn": "inscriptionDescriptionDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3144,14 +3796,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionPosition",
       "datacolumn": "inscriptionDescriptionPosition",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3160,14 +3815,28 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "back",
+        "base",
+        "bottom",
+        "front",
+        "inside",
+        "left",
+        "outside",
+        "recto",
+        "right",
+        "rim",
+        "top",
+        "verso"
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionType",
       "datacolumn": "inscriptionDescriptionType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3176,14 +3845,22 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "brand",
+        "decoration",
+        "estate-stamp",
+        "graffiti",
+        "label",
+        "maker's-mark"
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionMethod",
       "datacolumn": "inscriptionDescriptionMethod",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3192,14 +3869,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "inscriptionDescriptionInterpretation",
       "datacolumn": "inscriptionDescriptionInterpretation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "nonTextualInscriptionGroupList",
@@ -3208,14 +3888,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocActivity",
       "datacolumn": "assocActivity",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocActivityGroupList",
@@ -3224,14 +3907,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocActivityType",
       "datacolumn": "assocActivityType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocActivityGroupList",
@@ -3240,14 +3926,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocActivityNote",
       "datacolumn": "assocActivityNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocActivityGroupList",
@@ -3256,14 +3945,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocObject",
       "datacolumn": "assocObject",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocObjectGroupList",
@@ -3272,14 +3964,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocObjectType",
       "datacolumn": "assocObjectType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocObjectGroupList",
@@ -3288,14 +3983,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocObjectNote",
       "datacolumn": "assocObjectNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocObjectGroupList",
@@ -3304,7 +4002,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocConcept",
@@ -3315,7 +4016,7 @@
           "concept"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocConceptGroupList",
@@ -3324,14 +4025,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocConceptType",
       "datacolumn": "assocConceptType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocConceptGroupList",
@@ -3340,14 +4044,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocConceptNote",
       "datacolumn": "assocConceptNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocConceptGroupList",
@@ -3356,14 +4063,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocCulturalContext",
       "datacolumn": "assocCulturalContext",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocCulturalContextGroupList",
@@ -3372,14 +4082,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocCulturalContextType",
       "datacolumn": "assocCulturalContextType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocCulturalContextGroupList",
@@ -3388,14 +4101,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocCulturalContextNote",
       "datacolumn": "assocCulturalContextNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocCulturalContextGroupList",
@@ -3404,7 +4120,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocOrganization",
@@ -3415,7 +4134,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocOrganizationGroupList",
@@ -3424,14 +4143,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocOrganizationType",
       "datacolumn": "assocOrganizationType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocOrganizationGroupList",
@@ -3440,14 +4162,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocOrganizationNote",
       "datacolumn": "assocOrganizationNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocOrganizationGroupList",
@@ -3456,7 +4181,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPerson",
@@ -3467,7 +4195,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPersonGroupList",
@@ -3476,14 +4204,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPersonType",
       "datacolumn": "assocPersonType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPersonGroupList",
@@ -3492,14 +4223,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPersonNote",
       "datacolumn": "assocPersonNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPersonGroupList",
@@ -3508,14 +4242,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPlace",
       "datacolumn": "assocPlace",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPlaceGroupList",
@@ -3524,14 +4261,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPlaceType",
       "datacolumn": "assocPlaceType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPlaceGroupList",
@@ -3540,14 +4280,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocPlaceNote",
       "datacolumn": "assocPlaceNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocPlaceGroupList",
@@ -3556,14 +4299,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventName",
       "datacolumn": "assocEventName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3571,14 +4317,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventNameType",
       "datacolumn": "assocEventNameType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3586,7 +4335,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventOrganization",
@@ -3597,7 +4349,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventOrganizations"
@@ -3605,14 +4357,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventPeople",
       "datacolumn": "assocEventPeople",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventPeoples"
@@ -3620,7 +4375,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventPerson",
@@ -3631,7 +4389,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventPersons"
@@ -3639,14 +4397,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventPlace",
       "datacolumn": "assocEventPlace",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocEventPlaces"
@@ -3654,14 +4415,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocEventNote",
       "datacolumn": "assocEventNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3669,17 +4433,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocStructuredDateGroup",
       "datacolumn": "assocStructuredDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocDateGroupList",
@@ -3688,14 +4452,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocDateType",
       "datacolumn": "assocDateType",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocDateGroupList",
@@ -3704,14 +4471,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "assocDateNote",
       "datacolumn": "assocDateNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "assocDateGroupList",
@@ -3720,14 +4490,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "objectHistoryNote",
       "datacolumn": "objectHistoryNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3735,7 +4508,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwner",
@@ -3746,7 +4522,7 @@
           "person"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3755,7 +4531,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwner",
@@ -3766,7 +4545,7 @@
           "organization"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3775,17 +4554,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwnershipDateGroup",
       "datacolumn": "anthroOwnershipDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3794,14 +4573,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwnershipCategory",
       "datacolumn": "anthroOwnershipCategory",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3810,7 +4592,12 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "company",
+        "private",
+        "public"
+      ]
     },
     {
       "fieldname": "anthroOwnershipPlace",
@@ -3821,7 +4608,7 @@
           "place"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3830,14 +4617,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwnershipMethod",
       "datacolumn": "anthroOwnershipMethod",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3846,7 +4636,15 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "bequest",
+        "exchange",
+        "gift",
+        "purchase",
+        "transfer",
+        "treasure"
+      ]
     },
     {
       "fieldname": "anthroOwnershipPriceCurrency",
@@ -3854,7 +4652,7 @@
       "transforms": {
         "vocabulary": "currency"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3863,14 +4661,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwnershipPriceAmount",
       "datacolumn": "anthroOwnershipPriceAmount",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3879,14 +4680,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "anthroOwnershipNote",
       "datacolumn": "anthroOwnershipNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "anthroOwnershipGroupList",
@@ -3895,14 +4699,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "ownersPersonalExperience",
       "datacolumn": "ownersPersonalExperience",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3910,14 +4717,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "ownersPersonalResponse",
       "datacolumn": "ownersPersonalResponse",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3925,14 +4735,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "ownersReference",
       "datacolumn": "ownersReference",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "ownersReferences"
@@ -3940,14 +4753,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "ownersContributionNote",
       "datacolumn": "ownersContributionNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3955,14 +4771,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "viewersRole",
       "datacolumn": "viewersRole",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3970,14 +4789,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "viewersPersonalExperience",
       "datacolumn": "viewersPersonalExperience",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -3985,14 +4807,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "viewersPersonalResponse",
       "datacolumn": "viewersPersonalResponse",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -4000,14 +4825,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "viewersReference",
       "datacolumn": "viewersReference",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "viewersReferences"
@@ -4015,14 +4843,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "y",
-      "in_repeating_group": "n"
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "viewersContributionNote",
       "datacolumn": "viewersContributionNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
 
@@ -4030,7 +4861,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "n/a"
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "reference",
@@ -4041,7 +4875,7 @@
           "citation"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "referenceGroupList",
@@ -4050,7 +4884,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "reference",
@@ -4061,7 +4898,7 @@
           "worldcat"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
         "referenceGroupList",
@@ -4070,14 +4907,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "referenceNote",
       "datacolumn": "referenceNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_common",
       "xpath": [
         "referenceGroupList",
@@ -4086,14 +4926,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldLocVerbatim",
       "datacolumn": "fieldLocVerbatim",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4102,7 +4945,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldLocPlace",
@@ -4113,7 +4959,7 @@
           "place"
         ]
       },
-      "sourcetype": null,
+      "source_type": "authority",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4122,14 +4968,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "taxonomicRange",
       "datacolumn": "taxonomicRange",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4138,14 +4987,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "fieldLocCounty",
       "datacolumn": "fieldLocCounty",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4154,14 +5006,2082 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "Abbeville",
+        "Aberdeenshire (UK)",
+        "Acadia",
+        "Acaponeta",
+        "Accomack",
+        "Ada",
+        "Adair",
+        "Adams",
+        "Addison",
+        "Agusan del Norte",
+        "Ahuacatlan",
+        "Aiken",
+        "Aitkin",
+        "Alachua",
+        "Alamance",
+        "Alameda",
+        "Alamosa",
+        "Albany",
+        "Albemarle",
+        "Alcona",
+        "Alcorn",
+        "Aleutians East",
+        "Aleutians West",
+        "Alexander",
+        "Alexandria",
+        "Alfalfa",
+        "Alger",
+        "Allamakee",
+        "Allegan",
+        "Allegany",
+        "Alleghany",
+        "Allegheny",
+        "Allen",
+        "Allendale",
+        "Alpena",
+        "Alpine",
+        "Amador",
+        "Amazonas",
+        "Amelia",
+        "Amherst",
+        "Amite",
+        "Anchorage",
+        "Anderson",
+        "Andrew",
+        "Andrews",
+        "Androscoggin",
+        "Angelina",
+        "Anglesey",
+        "Anglesey (UK)",
+        "Angus (Forfarshire) (UK)",
+        "Anne Arundel",
+        "Anoka",
+        "Anson",
+        "Antelope",
+        "Antonina",
+        "Antrim",
+        "Antrim (UK)",
+        "Apache",
+        "Appanoose",
+        "Appling",
+        "Appomattox",
+        "Aransas",
+        "Arapahoe",
+        "Archer",
+        "Archuleta",
+        "Arenac",
+        "Argyll (Argyllshire) (UK)",
+        "Arkansas",
+        "Arlington",
+        "Armagh (UK)",
+        "Armstrong",
+        "Aroostook",
+        "Arran, Island of",
+        "Arthur",
+        "Ascension",
+        "Ashe",
+        "Ashland",
+        "Ashley",
+        "Ashtabula",
+        "Asotin",
+        "Assumption",
+        "Atascosa",
+        "Atchison",
+        "Athens",
+        "Atkinson",
+        "Atlantic",
+        "Atoka",
+        "Attala",
+        "Audrain",
+        "Audubon",
+        "Auglaize",
+        "Augusta",
+        "Aurora",
+        "Austin",
+        "Autauga",
+        "Avery",
+        "Avoyelles",
+        "Ayopaya",
+        "Ayrshire (UK)",
+        "Ba",
+        "Baca",
+        "Bacon",
+        "Bagua",
+        "Bailey",
+        "Baker",
+        "Baldwin",
+        "Ballard",
+        "Baltimore",
+        "Bamberg",
+        "Bandera",
+        "Banffshire (UK)",
+        "Banks",
+        "Banner",
+        "Bannock",
+        "Baraga",
+        "Barber",
+        "Barbour",
+        "Barnes",
+        "Barnstable",
+        "Barnwell",
+        "Barreiras",
+        "Barren",
+        "Barron",
+        "Barrow",
+        "Barry",
+        "Bartholomew",
+        "Barton",
+        "Bartow",
+        "Bastrop",
+        "Bates",
+        "Bath",
+        "Baxter",
+        "Bay",
+        "Bayfield",
+        "Baylor",
+        "Beadle",
+        "Bear Lake",
+        "Beaufort",
+        "Beauregard",
+        "Beaver",
+        "Beaverhead",
+        "Becker",
+        "Beckham",
+        "Bedford",
+        "Bedfordshire (UK)",
+        "Bee",
+        "Belknap",
+        "Bell",
+        "Belmont",
+        "Beltrami",
+        "Ben Hill",
+        "Benewah",
+        "Bennett",
+        "Bennington",
+        "Benson",
+        "Bent",
+        "Benton",
+        "Benzie",
+        "Bergen",
+        "Berkeley",
+        "Berks",
+        "Berkshire",
+        "Berkshire (UK)",
+        "Bernalillo",
+        "Berrien",
+        "Bertie",
+        "Berwickshire (UK)",
+        "Bethel",
+        "Bexar",
+        "Bibb",
+        "Bienville",
+        "Big Horn",
+        "Big Stone",
+        "Billings",
+        "Bingham",
+        "Black Hawk",
+        "Blackford",
+        "Bladen",
+        "Blaine",
+        "Blair",
+        "Blanco",
+        "Bland",
+        "Bleckley",
+        "Bledsoe",
+        "Blount",
+        "Blue Earth",
+        "Boise",
+        "Bolivar",
+        "Bollinger",
+        "Bon Homme",
+        "Bonaventure",
+        "Bond",
+        "Bongara",
+        "Bonner",
+        "Bonneville",
+        "Boone",
+        "Borden",
+        "Bosque",
+        "Bossier",
+        "Botetourt",
+        "Bothwell Municipality",
+        "Bottineau",
+        "Boulder",
+        "Boundary",
+        "Bourbon",
+        "Bowie",
+        "Bowman",
+        "Box Butte",
+        "Box Elder",
+        "Boyd",
+        "Boyle",
+        "Bracken",
+        "Bradford",
+        "Bradley",
+        "Branch",
+        "Brantley",
+        "Braxton",
+        "Brazoria",
+        "Brazos",
+        "Breathitt",
+        "Breckinridge",
+        "Brecknockshire (Breconshire) (UK)",
+        "Bremer",
+        "Brevard",
+        "Brewster",
+        "Briscoe",
+        "Bristol",
+        "Bristol Bay",
+        "Broadwater",
+        "Bronx",
+        "Brooke",
+        "Brookings",
+        "Brooks",
+        "Broome",
+        "Broomfield",
+        "Broward",
+        "Brown",
+        "Brule",
+        "Brunswick",
+        "Bryan",
+        "Buchanan",
+        "Buckingham",
+        "Buckinghamshire (UK)",
+        "Bucks",
+        "Buena Vista",
+        "Buffalo",
+        "Bullitt",
+        "Bulloch",
+        "Bullock",
+        "Buncombe",
+        "Bureau",
+        "Burke",
+        "Burleigh",
+        "Burleson",
+        "Burlington",
+        "Burnet",
+        "Burnett",
+        "Burnie Municipality",
+        "Burt",
+        "Buteshire (UK)",
+        "Butler",
+        "Butte",
+        "Butts",
+        "Cabarrus",
+        "Cabell",
+        "Cache",
+        "Caddo",
+        "Caernarfonshire (Carnarvonshire) (UK)",
+        "Caithness (UK)",
+        "Cajamarca",
+        "Calaveras",
+        "Calcasieu",
+        "Caldwell",
+        "Caledonia",
+        "Calhoun",
+        "Callahan",
+        "Callaway",
+        "Calloway",
+        "Calumet",
+        "Calvert",
+        "Camas",
+        "Cambria",
+        "Cambridgeshire (UK)",
+        "Camden",
+        "Cameron",
+        "Camp",
+        "Campbell",
+        "Canadian",
+        "Candelaria",
+        "Candler",
+        "Cannon",
+        "Canyon",
+        "Cape Girardeau",
+        "Cape May",
+        "Capiz",
+        "Carangola",
+        "Carbon",
+        "Cardiganshire (UK)",
+        "Caribou",
+        "Carlisle",
+        "Carlton",
+        "Carmarthenshire (UK)",
+        "Caroline",
+        "Carroll",
+        "Carson",
+        "Carson City",
+        "Carter",
+        "Carteret",
+        "Carver",
+        "Cascade",
+        "Casey",
+        "Cass",
+        "Cassia",
+        "Castro",
+        "Castrovirreina",
+        "Caswell",
+        "Catahoula",
+        "Catawba",
+        "Catoosa",
+        "Catron",
+        "Cattaraugus",
+        "Cautin",
+        "Cavalier",
+        "Cayuga",
+        "Cecil",
+        "Cedar",
+        "Celendin",
+        "Centre",
+        "Cerro Gordo",
+        "Chachapoyas",
+        "Chaffee",
+        "Chambers",
+        "Champaign",
+        "Chariton",
+        "Charles",
+        "Charles City",
+        "Charles Mix",
+        "Charleston",
+        "Charlevoix",
+        "Charlotte",
+        "Charlottesville",
+        "Charlton",
+        "Chase",
+        "Chatham",
+        "Chattahoochee",
+        "Chattooga",
+        "Chautauqua",
+        "Chaves",
+        "Cheatham",
+        "Cheboygan",
+        "Chelan",
+        "Chemung",
+        "Chenango",
+        "Cherokee",
+        "Cherry",
+        "Chesapeake",
+        "Cheshire",
+        "Cheshire (UK)",
+        "Chester",
+        "Chesterfield",
+        "Cheyenne",
+        "Chiang Mai, Changwat",
+        "Chickasaw",
+        "Chicligasta",
+        "Chicot",
+        "Childress",
+        "Chilton",
+        "Chippewa",
+        "Chisago",
+        "Chittenden",
+        "Choctaw",
+        "Chouteau",
+        "Chowan",
+        "Christian",
+        "Churchill",
+        "Cibola",
+        "Cimarron",
+        "Citrus",
+        "Clackamas",
+        "Clackmannanshire (UK)",
+        "Claiborne",
+        "Clallam",
+        "Clare",
+        "Clarendon",
+        "Clarion",
+        "Clark",
+        "Clarke",
+        "Clatsop",
+        "Clay",
+        "Clayton",
+        "Clear Creek",
+        "Clearfield",
+        "Clearwater",
+        "Cleburne",
+        "Clermont",
+        "Cleveland",
+        "Clinch",
+        "Clinton",
+        "Cloud",
+        "Coahoma",
+        "Coal",
+        "Cobb",
+        "Cochise",
+        "Cochran",
+        "Cocke",
+        "Coconino",
+        "Codington",
+        "Coffee",
+        "Coffey",
+        "Coke",
+        "Colbert",
+        "Cole",
+        "Coleman",
+        "Coles",
+        "Colfax",
+        "Colleton",
+        "Collier",
+        "Collin",
+        "Collingsworth",
+        "Colonial Heights",
+        "Colorado",
+        "Colquitt",
+        "Columbia",
+        "Columbiana",
+        "Columbus",
+        "Colusa",
+        "Comal",
+        "Comanche",
+        "Comondú",
+        "Compostela",
+        "Concho",
+        "Concordia",
+        "Conecuh",
+        "Conejos",
+        "Contra Costa",
+        "Converse",
+        "Conway",
+        "Cook",
+        "Cooke",
+        "Cooper",
+        "Coos",
+        "Coosa",
+        "Copiah",
+        "Cornwall",
+        "Cornwall (UK)",
+        "Corson",
+        "Cortland",
+        "Corumba",
+        "Coryell",
+        "Coshocton",
+        "Costilla",
+        "Cottle",
+        "Cotton",
+        "Cottonwood",
+        "Covington",
+        "Coweta",
+        "Cowley",
+        "Cowlitz",
+        "Craig",
+        "Craighead",
+        "Crane",
+        "Craven",
+        "Crawford",
+        "Creek",
+        "Crenshaw",
+        "Crisp",
+        "Crittenden",
+        "Crockett",
+        "Cromartyshire (UK)",
+        "Crook",
+        "Crosby",
+        "Cross",
+        "Crow Wing",
+        "Crowley",
+        "Culberson",
+        "Cullman",
+        "Culpeper",
+        "Cumberland",
+        "Cumberland (UK)",
+        "Cuming",
+        "Currituck",
+        "Curry",
+        "Custer",
+        "Cuyahoga",
+        "Dade",
+        "Daggett",
+        "Dakota",
+        "Dale",
+        "Dallam",
+        "Dallas",
+        "Dane",
+        "Daniels",
+        "Danville",
+        "Dare",
+        "Darke",
+        "Darlington",
+        "Dauphin",
+        "Davidson",
+        "Davie",
+        "Daviess",
+        "Davis",
+        "Davison",
+        "Dawes",
+        "Dawson",
+        "Day",
+        "De Baca",
+        "De Kalb",
+        "De Soto",
+        "De Witt",
+        "DeKalb",
+        "DeSoto",
+        "DeWitt",
+        "Deaf Smith",
+        "Dearborn",
+        "Decatur",
+        "Deer Lodge",
+        "Defiance",
+        "Del Norte",
+        "Delaware",
+        "Deloraine Municipality",
+        "Delta",
+        "Denali",
+        "Denbighshire (UK)",
+        "Dent",
+        "Denton",
+        "Denver",
+        "Derbyshire (UK)",
+        "Des Moines",
+        "Deschutes",
+        "Desha",
+        "Deuel",
+        "Devon (UK)",
+        "Dewey",
+        "Diamantina",
+        "Dickens",
+        "Dickenson",
+        "Dickey",
+        "Dickinson",
+        "Dickson",
+        "Dillingham",
+        "Dillon",
+        "Dimmit",
+        "Dinwiddie",
+        "District of Columbia",
+        "Divide",
+        "Dixie",
+        "Dixon",
+        "Doddridge",
+        "Dodge",
+        "Dolores",
+        "Dona Ana",
+        "Doniphan",
+        "Donley",
+        "Dooly",
+        "Door",
+        "Dorchester",
+        "Dorset (UK)",
+        "Dougherty",
+        "Douglas",
+        "Down (UK)",
+        "Doña Ana",
+        "Drew",
+        "Du Page",
+        "DuPage",
+        "Dubois",
+        "Dubuque",
+        "Duchesne",
+        "Dukes",
+        "Dumbartonshire (UK)",
+        "Dumfriesshire (UK)",
+        "Dundy",
+        "Dunklin",
+        "Dunn",
+        "Duplin",
+        "Durham",
+        "Durham (UK)",
+        "Dutchess",
+        "Duval",
+        "Dyer",
+        "Eagle",
+        "Early",
+        "East Baton Rouge",
+        "East Carroll",
+        "East Feliciana",
+        "East Lothian (UK)",
+        "Eastland",
+        "Eaton",
+        "Eau Claire",
+        "Echols",
+        "Ector",
+        "Eddy",
+        "Edgar",
+        "Edgecombe",
+        "Edgefield",
+        "Edmonson",
+        "Edmunds",
+        "Edwards",
+        "Effingham",
+        "El Dorado",
+        "El Paso",
+        "Elbert",
+        "Elk",
+        "Elkhart",
+        "Elko",
+        "Elliott",
+        "Ellis",
+        "Ellsworth",
+        "Elmore",
+        "Emanuel",
+        "Emery",
+        "Emmet",
+        "Emmons",
+        "Emporia",
+        "Ensenada",
+        "Erath",
+        "Erie",
+        "Escambia",
+        "Esmeralda",
+        "Esmeraldas",
+        "Esperance Municipality",
+        "Essex",
+        "Essex (MA)",
+        "Essex (UK)",
+        "Estill",
+        "Etowah",
+        "Eureka",
+        "Evangeline",
+        "Evans",
+        "Fairbanks North Star",
+        "Fairfax",
+        "Fairfield",
+        "Fall River",
+        "Fallon",
+        "Falls",
+        "Falls Church",
+        "Fannin",
+        "Faribault",
+        "Faulk",
+        "Faulkner",
+        "Fauquier",
+        "Fayette",
+        "Fentress",
+        "Fergus",
+        "Fermanagh (UK)",
+        "Ferry",
+        "Fife (UK)",
+        "Fillmore",
+        "Fingal Municipality",
+        "Finney",
+        "Fisher",
+        "Flagler",
+        "Flathead",
+        "Fleming",
+        "Flintshire (UK)",
+        "Florence",
+        "Florida",
+        "Floyd",
+        "Fluvanna",
+        "Foard",
+        "Fond Du Lac",
+        "Fond du Lac",
+        "Ford",
+        "Forest",
+        "Forrest",
+        "Forsyth",
+        "Fort Bend",
+        "Foster",
+        "Fountain",
+        "Franklin",
+        "Frederick",
+        "Fredericksburg",
+        "Freeborn",
+        "Freestone",
+        "Fremont",
+        "Fresno",
+        "Frio",
+        "Frontier",
+        "Fulton",
+        "Furnas",
+        "Gadsden",
+        "Gage",
+        "Gaines",
+        "Galapagos",
+        "Galax",
+        "Gallatin",
+        "Gallia",
+        "Galveston",
+        "Galway",
+        "Garden",
+        "Garfield",
+        "Garland",
+        "Garrard",
+        "Garrett",
+        "Garvin",
+        "Garza",
+        "Gasconade",
+        "Gaston",
+        "Gates",
+        "Geary",
+        "Geauga",
+        "Gem",
+        "Genesee",
+        "Geneva",
+        "Gentry",
+        "George",
+        "Georgetown",
+        "Gibson",
+        "Gila",
+        "Gilchrist",
+        "Giles",
+        "Gillespie",
+        "Gilliam",
+        "Gilmer",
+        "Gilpin",
+        "Glacier",
+        "Glades",
+        "Gladwin",
+        "Glamorgan (UK)",
+        "Glamorgan Municipality",
+        "Glascock",
+        "Glasscock",
+        "Glenn",
+        "Glenorchy Municipality",
+        "Gloucester",
+        "Gloucestershire (UK)",
+        "Glynn",
+        "Gogebic",
+        "Golden Valley",
+        "Goliad",
+        "Gonzales",
+        "Goochland",
+        "Goodhue",
+        "Gooding",
+        "Gordon",
+        "Gormanston Municipality",
+        "Goshen",
+        "Gosper",
+        "Gouveia",
+        "Gove",
+        "Grady",
+        "Grafton",
+        "Graham",
+        "Grainger",
+        "Grand",
+        "Grand Forks",
+        "Grand Isle",
+        "Grand Traverse",
+        "Granite",
+        "Grant",
+        "Granville",
+        "Gratiot",
+        "Graves",
+        "Gray",
+        "Grays Harbor",
+        "Grayson",
+        "Greeley",
+        "Green",
+        "Green Lake",
+        "Greenbrier",
+        "Greene",
+        "Greenlee",
+        "Greensville",
+        "Greenup",
+        "Greenville",
+        "Greenwood",
+        "Greer",
+        "Gregg",
+        "Gregory",
+        "Grenada",
+        "Griggs",
+        "Grimes",
+        "Grundy",
+        "Guadalupe",
+        "Guaraquecaba",
+        "Guaratuba",
+        "Guernsey",
+        "Guilford",
+        "Gulf",
+        "Gunnison",
+        "Guthrie",
+        "Gwinnett",
+        "Haakon",
+        "Habersham",
+        "Haines",
+        "Hale",
+        "Halifax",
+        "Hall",
+        "Hamblen",
+        "Hamilton",
+        "Hamilton Municipality",
+        "Hamlin",
+        "Hampden",
+        "Hampshire",
+        "Hampshire (UK)",
+        "Hampton",
+        "Hancock",
+        "Hand",
+        "Hanover",
+        "Hansford",
+        "Hanson",
+        "Haralson",
+        "Hardee",
+        "Hardeman",
+        "Hardin",
+        "Harding",
+        "Hardy",
+        "Harford",
+        "Harlan",
+        "Harmon",
+        "Harnett",
+        "Harney",
+        "Harper",
+        "Harris",
+        "Harrison",
+        "Harrisonburg",
+        "Hart",
+        "Hartford",
+        "Hartley",
+        "Harvey",
+        "Haskell",
+        "Hawaii",
+        "Hawkins",
+        "Hayes",
+        "Hays",
+        "Haywood",
+        "Heard",
+        "Hemphill",
+        "Hempstead",
+        "Henderson",
+        "Hendricks",
+        "Hendry",
+        "Hennepin",
+        "Henrico",
+        "Henry",
+        "Herefordshire (UK)",
+        "Herkimer",
+        "Hernando",
+        "Hertford",
+        "Hertfordshire (UK)",
+        "Hettinger",
+        "Hickman",
+        "Hickory",
+        "Hidalgo",
+        "Highland",
+        "Highlands",
+        "Hill",
+        "Hillsborough",
+        "Hillsdale",
+        "Hinds",
+        "Hinsdale",
+        "Hitchcock",
+        "Hobart Municipality",
+        "Hocking",
+        "Hockley",
+        "Hodgeman",
+        "Hoke",
+        "Holmes",
+        "Holt",
+        "Honolulu",
+        "Hood",
+        "Hood River",
+        "Hooker",
+        "Hoonah–Angoon",
+        "Hopewell",
+        "Hopkins",
+        "Horry",
+        "Hot Spring",
+        "Hot Springs",
+        "Houghton",
+        "Houston",
+        "Howard",
+        "Howell",
+        "Huancabamba",
+        "Huanuco",
+        "Hubbard",
+        "Hudson",
+        "Hudspeth",
+        "Huerfano",
+        "Hughes",
+        "Humboldt",
+        "Humphreys",
+        "Hunt",
+        "Hunterdon",
+        "Huntingdon",
+        "Huntingdonshire (UK)",
+        "Huntington",
+        "Huron",
+        "Hutchinson",
+        "Hyde",
+        "Iberia",
+        "Iberville",
+        "Ida",
+        "Idaho",
+        "Imperial",
+        "Independence",
+        "Indian River",
+        "Indiana",
+        "Ingham",
+        "Inverness-shire (UK)",
+        "Inyo",
+        "Ionia",
+        "Iosco",
+        "Iowa",
+        "Iredell",
+        "Irion",
+        "Iron",
+        "Iroquois",
+        "Irwin",
+        "Isabella",
+        "Isanti",
+        "Island",
+        "Isle of Wight",
+        "Issaquena",
+        "Itasca",
+        "Itawamba",
+        "Ixtlan",
+        "Izard",
+        "Jack",
+        "Jackson",
+        "Jaguariaiya",
+        "Jalisco",
+        "James City",
+        "Jasper",
+        "Jay",
+        "Jeff Davis",
+        "Jefferson",
+        "Jefferson Davis",
+        "Jenkins",
+        "Jennings",
+        "Jerauld",
+        "Jerome",
+        "Jersey",
+        "Jessamine",
+        "Jewell",
+        "Jim Hogg",
+        "Jim Wells",
+        "Jo Daviess",
+        "Johnson",
+        "Johnston",
+        "Jolo Group",
+        "Jones",
+        "Josephine",
+        "Juab",
+        "Judith Basin",
+        "Juneau",
+        "Juniata",
+        "Juquila",
+        "Kalamazoo",
+        "Kalawao",
+        "Kalkaska",
+        "Kanabec",
+        "Kanawha",
+        "Kandavu",
+        "Kandiyohi",
+        "Kane",
+        "Kankakee",
+        "Karnes",
+        "Kauai",
+        "Kaufman",
+        "Kay",
+        "Kearney",
+        "Kearny",
+        "Keith",
+        "Kemper",
+        "Kenai Peninsula",
+        "Kendall",
+        "Kenedy",
+        "Kennebec",
+        "Kenosha",
+        "Kent",
+        "Kent (UK)",
+        "Kentish Municipality",
+        "Kenton",
+        "Keokuk",
+        "Kepulauan",
+        "Kepulauan Kangean Islands",
+        "Kern",
+        "Kerr",
+        "Kershaw",
+        "Ketchikan Gateway",
+        "Kewaunee",
+        "Keweenaw",
+        "Keya Paha",
+        "Kidder",
+        "Kimball",
+        "Kimble",
+        "Kincardineshire (UK)",
+        "King",
+        "King George",
+        "King William",
+        "King and Queen",
+        "Kingborough Municipality",
+        "Kingfisher",
+        "Kingman",
+        "Kings",
+        "Kingsbury",
+        "Kinney",
+        "Kinross-shire (UK)",
+        "Kiowa",
+        "Kirkcudbrightshire (UK)",
+        "Kit Carson",
+        "Kitsap",
+        "Kittitas",
+        "Kittson",
+        "Klamath",
+        "Kleberg",
+        "Klickitat",
+        "Knott",
+        "Knox",
+        "Kodiak Island",
+        "Koochiching",
+        "Kootenai",
+        "Korinthos",
+        "Koro",
+        "Kosciusko",
+        "Kossuth",
+        "La Crosse",
+        "La Paz",
+        "La Plata",
+        "La Salle",
+        "LaGrange",
+        "LaMoure",
+        "LaPorte",
+        "LaRue",
+        "LaSalle",
+        "Labette",
+        "Lac qui Parle",
+        "Lackawanna",
+        "Laclede",
+        "Lafayette",
+        "Lafourche",
+        "Lake",
+        "Lake and Peninsula",
+        "Lake of the Woods",
+        "Lamar",
+        "Lamas",
+        "Lamb",
+        "Lamoille",
+        "Lampasas",
+        "Lanarkshire (UK)",
+        "Lancashire (UK)",
+        "Lancaster",
+        "Lander",
+        "Lane",
+        "Langlade",
+        "Lanier",
+        "Lapeer",
+        "Laramie",
+        "Larecaja",
+        "Larimer",
+        "Las Animas",
+        "Lassen",
+        "Latah",
+        "Latimer",
+        "Lauderdale",
+        "Launceston Municipality",
+        "Laurel",
+        "Laurens",
+        "Lavaca",
+        "Lawrence",
+        "Le Flore",
+        "Le Sueur",
+        "Lea",
+        "Leake",
+        "Leavenworth",
+        "Lebanon",
+        "Lee",
+        "Leelanau",
+        "Leflore",
+        "Lehigh",
+        "Leicestershire (UK)",
+        "Lemhi",
+        "Lenawee",
+        "Lenoir",
+        "Leon",
+        "Leslie",
+        "Letcher",
+        "Levy",
+        "Lewis",
+        "Lewis and Clark",
+        "Lexington",
+        "Liberty",
+        "Licking",
+        "Lilydale Municipality",
+        "Limestone",
+        "Lincoln",
+        "Lincolnshire (UK)",
+        "Linn",
+        "Lipscomb",
+        "Litchfield",
+        "Little River",
+        "Live Oak",
+        "Livingston",
+        "Llano",
+        "Logan",
+        "Loja",
+        "Londonderry (UK)",
+        "Long",
+        "Longford Municipality",
+        "Lonoke",
+        "Lorain",
+        "Loreto",
+        "Los Alamos",
+        "Los Angeles",
+        "Los Cabos",
+        "Loudon",
+        "Loudoun",
+        "Louisa",
+        "Loup",
+        "Love",
+        "Loving",
+        "Lowndes",
+        "Lubbock",
+        "Lucas",
+        "Luce",
+        "Lumpkin",
+        "Luna",
+        "Lunenburg",
+        "Luzerne",
+        "Lycoming",
+        "Lyman",
+        "Lynchburg",
+        "Lynn",
+        "Lyon",
+        "Mackinac",
+        "Macomb",
+        "Macon",
+        "Macoupin",
+        "Madera",
+        "Madison",
+        "Magoffin",
+        "Mahaska",
+        "Mahnomen",
+        "Mahoning",
+        "Major",
+        "Malheur",
+        "Manabi",
+        "Manassas",
+        "Manassas Park",
+        "Manatee",
+        "Manistee",
+        "Manitowoc",
+        "Marathon",
+        "Marengo",
+        "Maricopa",
+        "Maries",
+        "Marin",
+        "Marinette",
+        "Marion",
+        "Mariposa",
+        "Marlboro",
+        "Marquette",
+        "Marshall",
+        "Martin",
+        "Martinsville",
+        "Mason",
+        "Massac",
+        "Matagorda",
+        "Matanuska-Susitna",
+        "Mathews",
+        "Maui",
+        "Maury",
+        "Maverick",
+        "Mayes",
+        "McClain",
+        "McCone",
+        "McCook",
+        "McCormick",
+        "McCracken",
+        "McCreary",
+        "McCulloch",
+        "McCurtain",
+        "McDonald",
+        "McDonough",
+        "McDowell",
+        "McDuffie",
+        "McHenry",
+        "McIntosh",
+        "McKean",
+        "McKenzie",
+        "McKinley",
+        "McLean",
+        "McLennan",
+        "McLeod",
+        "McMinn",
+        "McMullen",
+        "McNairy",
+        "McPherson",
+        "Meade",
+        "Meagher",
+        "Mecklenburg",
+        "Mecosta",
+        "Medina",
+        "Meeker",
+        "Meigs",
+        "Mellette",
+        "Menard",
+        "Mendocino",
+        "Menifee",
+        "Menominee",
+        "Merced",
+        "Mercer",
+        "Merionethshire (UK)",
+        "Meriwether",
+        "Merrick",
+        "Merrimack",
+        "Mesa",
+        "Metcalfe",
+        "Mexicali",
+        "Miahuatlan",
+        "Miami",
+        "Miami-Dade",
+        "Middlesex",
+        "Middlesex (UK)",
+        "Midland",
+        "Midlothian (UK)",
+        "Mifflin",
+        "Milam",
+        "Millard",
+        "Mille Lacs",
+        "Miller",
+        "Mills",
+        "Milwaukee",
+        "Miner",
+        "Mineral",
+        "Mingo",
+        "Minidoka",
+        "Minnehaha",
+        "Missaukee",
+        "Mississippi",
+        "Missoula",
+        "Mitchell",
+        "Mizque",
+        "Mobile",
+        "Modoc",
+        "Moffat",
+        "Mohave",
+        "Moniteau",
+        "Monmouth",
+        "Monmouthshire (UK)",
+        "Mono",
+        "Monona",
+        "Monongalia",
+        "Monroe",
+        "Montague",
+        "Montcalm",
+        "Monterey",
+        "Montezuma",
+        "Montgomery",
+        "Montgomeryshire (UK)",
+        "Montmorency",
+        "Montour",
+        "Montrose",
+        "Moody",
+        "Moore",
+        "Mora",
+        "Morayshire (UK)",
+        "Morehouse",
+        "Morgan",
+        "Morrill",
+        "Morris",
+        "Morrison",
+        "Morro do Chapeu",
+        "Morrow",
+        "Morton",
+        "Motley",
+        "Moultrie",
+        "Mountrail",
+        "Mower",
+        "Muhlenberg",
+        "Mulegé",
+        "Multnomah",
+        "Murray",
+        "Muscatine",
+        "Muscogee",
+        "Muskegon",
+        "Muskingum",
+        "Muskogee",
+        "Musselshell",
+        "Nacogdoches",
+        "Nairnshire (UK)",
+        "Nakhon Ratchasima, Changwat",
+        "Nance",
+        "Nantucket",
+        "Nantucket (MA)",
+        "Napa",
+        "Nash",
+        "Nassau",
+        "Natchitoches",
+        "Natrona",
+        "Navajo",
+        "Navarro",
+        "Nelson",
+        "Nemaha",
+        "Neosho",
+        "Neshoba",
+        "Ness",
+        "Nevada",
+        "New Castle",
+        "New Hanover",
+        "New Haven",
+        "New Kent",
+        "New London",
+        "New Madrid",
+        "New Norfolk Municipality",
+        "New York",
+        "Newaygo",
+        "Newberry",
+        "Newport",
+        "Newport News",
+        "Newton",
+        "Nez Perc",
+        "Nez Perce",
+        "Niagara",
+        "Nicholas",
+        "Nicholson",
+        "Nicollet",
+        "Niobrara",
+        "Noble",
+        "Nobles",
+        "Nodaway",
+        "Nolan",
+        "Nome",
+        "Norfolk",
+        "Norfolk (UK)",
+        "Norman",
+        "North Slope",
+        "Northampton",
+        "Northamptonshire (UK)",
+        "Northumberland",
+        "Northumberland (UK)",
+        "Northwest Arctic",
+        "Norton",
+        "Nottinghamshire (UK)",
+        "Nottoway",
+        "Nowata",
+        "Noxubee",
+        "Nuckolls",
+        "Nueces",
+        "Nueva Vizcaya",
+        "Nye",
+        "O'Brien",
+        "Oakland",
+        "Oatlands Municipality",
+        "Obion",
+        "Ocean",
+        "Oceana",
+        "Ochiltree",
+        "Oconee",
+        "Oconto",
+        "Ogemaw",
+        "Ogle",
+        "Oglethorpe",
+        "Ohio",
+        "Okaloosa",
+        "Okanogan",
+        "Okeechobee",
+        "Okfuskee",
+        "Oklahoma",
+        "Okmulgee",
+        "Oktibbeha",
+        "Oldham",
+        "Oliver",
+        "Olmsted",
+        "Oneida",
+        "Onondaga",
+        "Onslow",
+        "Ontario",
+        "Ontonagon",
+        "Orange",
+        "Orangeburg",
+        "Oregon",
+        "Orkney (UK)",
+        "Orleans",
+        "Osage",
+        "Osborne",
+        "Osceola",
+        "Oscoda",
+        "Oswego",
+        "Otero",
+        "Otoe",
+        "Otsego",
+        "Ottawa",
+        "Otter Tail",
+        "Ouachita",
+        "Ouray",
+        "Outagamie",
+        "Overton",
+        "Owen",
+        "Owsley",
+        "Owyhee",
+        "Oxford",
+        "Oxfordshire (UK)",
+        "Ozark",
+        "Ozaukee",
+        "Pacific",
+        "Page",
+        "Palm Beach",
+        "Palmeira",
+        "Palo Alto",
+        "Palo Pinto",
+        "Pamlico",
+        "Pampanga",
+        "Pangasinan",
+        "Panola",
+        "Paranagua",
+        "Park",
+        "Parke",
+        "Parker",
+        "Parmer",
+        "Pasco",
+        "Pasquotank",
+        "Passaic",
+        "Patrick",
+        "Paulding",
+        "Pawnee",
+        "Payette",
+        "Payne",
+        "Peach",
+        "Pearl River",
+        "Pecos",
+        "Peeblesshire (UK)",
+        "Pembina",
+        "Pembrokeshire (UK)",
+        "Pemiscot",
+        "Pend Oreille",
+        "Pender",
+        "Pendleton",
+        "Penguin Municipality",
+        "Pennington",
+        "Penobscot",
+        "Peoria",
+        "Pepin",
+        "Perkins",
+        "Perquimans",
+        "Perry",
+        "Pershing",
+        "Person",
+        "Perthshire (UK)",
+        "Petersburg",
+        "Petroleum",
+        "Pettis",
+        "Phelps",
+        "Philadelphia",
+        "Phillips",
+        "Piatt",
+        "Pickaway",
+        "Pickens",
+        "Pickett",
+        "Pierce",
+        "Pike",
+        "Pima",
+        "Pinal",
+        "Pine",
+        "Pinellas",
+        "Pipestone",
+        "Piscataquis",
+        "Pitkin",
+        "Pitt",
+        "Pittsburg",
+        "Pittsylvania",
+        "Piura",
+        "Piute",
+        "Placer",
+        "Plaquemines",
+        "Platte",
+        "Pleasants",
+        "Plumas",
+        "Plymouth",
+        "Pocahontas",
+        "Pochutla",
+        "Poinsett",
+        "Pointe Coupee",
+        "Polk",
+        "Pondera",
+        "Pontotoc",
+        "Pope",
+        "Poquoson",
+        "Portage",
+        "Porter",
+        "Portland Municipality",
+        "Portsmouth",
+        "Posey",
+        "Pottawatomie",
+        "Pottawattamie",
+        "Potter",
+        "Powder River",
+        "Powell",
+        "Power",
+        "Poweshiek",
+        "Powhatan",
+        "Prairie",
+        "Pratt",
+        "Preble",
+        "Prentiss",
+        "Presidio",
+        "Presque Isle",
+        "Preston",
+        "Price",
+        "Prince Edward",
+        "Prince George",
+        "Prince George's",
+        "Prince William",
+        "Prince of Wales-Hyder",
+        "Providence",
+        "Prowers",
+        "Pueblo",
+        "Pujili",
+        "Pulaski",
+        "Pushmataha",
+        "Putnam",
+        "Quay",
+        "Queen Anne's",
+        "Queen Elizabeth Islands",
+        "Queens",
+        "Quezon",
+        "Quitman",
+        "Quito",
+        "Rabun",
+        "Racine",
+        "Radford",
+        "Radnorshire (UK)",
+        "Raiatea",
+        "Rains",
+        "Raleigh",
+        "Ralls",
+        "Ramsey",
+        "Randall",
+        "Randolph",
+        "Rankin",
+        "Ransom",
+        "Rapides",
+        "Rappahannock",
+        "Rarotonga",
+        "Ravalli",
+        "Rawlins",
+        "Ray",
+        "Reagan",
+        "Real",
+        "Red Lake",
+        "Red River",
+        "Red Willow",
+        "Redwood",
+        "Reeves",
+        "Refugio",
+        "Renfrewshire (UK)",
+        "Reno",
+        "Rensselaer",
+        "Renville",
+        "Republic",
+        "Rewa",
+        "Reynolds",
+        "Rhea",
+        "Rice",
+        "Rich",
+        "Richardson",
+        "Richland",
+        "Richmond",
+        "Riley",
+        "Ringarooma Municipality",
+        "Ringgold",
+        "Rio Arriba",
+        "Rio Blanco",
+        "Rio Branco",
+        "Rio Grande",
+        "Rio Verde",
+        "Ripley",
+        "Ritchie",
+        "Riverside",
+        "Rizal",
+        "Roane",
+        "Roanoke",
+        "Roberts",
+        "Robertson",
+        "Robeson",
+        "Rock",
+        "Rock Island",
+        "Rockbridge",
+        "Rockcastle",
+        "Rockdale",
+        "Rockingham",
+        "Rockland",
+        "Rockwall",
+        "Roger Mills",
+        "Rogers",
+        "Rolette",
+        "Rooks",
+        "Roosevelt",
+        "Rosarito, Playas de",
+        "Roscommon",
+        "Roseau",
+        "Rosebud",
+        "Ross",
+        "Ross Municipality",
+        "Ross-shire (UK)",
+        "Routt",
+        "Rowan",
+        "Roxburghshire (UK)",
+        "Runnels",
+        "Rush",
+        "Rusk",
+        "Russell",
+        "Russell Islands",
+        "Rutherford",
+        "Rutland",
+        "Rutland (UK)",
+        "Sabah",
+        "Sabine",
+        "Sac",
+        "Sacramento",
+        "Sagadahoc",
+        "Saginaw",
+        "Saguache",
+        "Salem",
+        "Saline",
+        "Salt Lake",
+        "Saluda",
+        "Sampson",
+        "San Augustine",
+        "San Benito",
+        "San Bernardino",
+        "San Blas",
+        "San Diego",
+        "San Francisco",
+        "San Ignacio",
+        "San Jacinto",
+        "San Joaquin",
+        "San Juan",
+        "San Luis Obispo",
+        "San Mateo",
+        "San Miguel",
+        "San Patricio",
+        "San Pedro Lagunillas",
+        "San Pedro Lagunitas",
+        "San Saba",
+        "Sanborn",
+        "Sanders",
+        "Sandoval",
+        "Sandusky",
+        "Sangamon",
+        "Sanilac",
+        "Sanpete",
+        "Santa Barbara",
+        "Santa Clara",
+        "Santa Cruz",
+        "Santa Fe",
+        "Santa Maria del Oro",
+        "Santa Rosa",
+        "Santa Victoria",
+        "Sarasota",
+        "Saratoga",
+        "Sarawak",
+        "Sargent",
+        "Sarpy",
+        "Sauk",
+        "Saunders",
+        "Sawyer",
+        "Schenectady",
+        "Schleicher",
+        "Schley",
+        "Schoharie",
+        "Schoolcraft",
+        "Schuyler",
+        "Schuylkill",
+        "Scioto",
+        "Scotland",
+        "Scott",
+        "Scotts Bluff",
+        "Scottsdale Municipality",
+        "Screven",
+        "Scurry",
+        "Searcy",
+        "Sebastian",
+        "Sedgwick",
+        "Selkirkshire (UK)",
+        "Seminole",
+        "Seneca",
+        "Senyavin Islands",
+        "Sequatchie",
+        "Sequoyah",
+        "Sevier",
+        "Seward",
+        "Shackelford",
+        "Shannon",
+        "Sharkey",
+        "Sharp",
+        "Shasta",
+        "Shawano",
+        "Shawnee",
+        "Sheboygan",
+        "Sheffield Municipality",
+        "Shelby",
+        "Shenandoah",
+        "Sherburne",
+        "Sheridan",
+        "Sherman",
+        "Shetland (UK)",
+        "Shiawassee",
+        "Shoshone",
+        "Shropshire (UK)",
+        "Sibley",
+        "Sierra",
+        "Silver Bow",
+        "Simpson",
+        "Sioux",
+        "Siskiyou",
+        "Sitka",
+        "Skagit",
+        "Skagway",
+        "Skamania",
+        "Slope",
+        "Smith",
+        "Smyth",
+        "Snohomish",
+        "Snyder",
+        "Socorro",
+        "Sola de Vega",
+        "Solano",
+        "Somerset",
+        "Somerset (UK)",
+        "Somervell",
+        "Sonoma",
+        "Sorell Municipality",
+        "Southampton",
+        "Southeast Fairbanks",
+        "Spalding",
+        "Spartanburg",
+        "Spencer",
+        "Spink",
+        "Spokane",
+        "Spotsylvania",
+        "Spring Bay Municipality",
+        "St. Bernard",
+        "St. Charles",
+        "St. Clair",
+        "St. Croix",
+        "St. Francis",
+        "St. Francois",
+        "St. Helena",
+        "St. James",
+        "St. John the Baptist",
+        "St. Johns",
+        "St. Joseph",
+        "St. Landry",
+        "St. Lawrence",
+        "St. Leonards Municipality",
+        "St. Louis",
+        "St. Lucie",
+        "St. Martin",
+        "St. Mary",
+        "St. Mary's",
+        "St. Tammany",
+        "Stafford",
+        "Staffordshire (UK)",
+        "Stanislaus",
+        "Stanley",
+        "Stanly",
+        "Stanton",
+        "Stark",
+        "Starke",
+        "Starr",
+        "Staunton",
+        "Ste. Genevieve",
+        "Stearns",
+        "Steele",
+        "Stephens",
+        "Stephenson",
+        "Sterling",
+        "Steuben",
+        "Stevens",
+        "Stewart",
+        "Stillwater",
+        "Stirlingshire (UK)",
+        "Stoddard",
+        "Stokes",
+        "Stone",
+        "Stonewall",
+        "Storey",
+        "Story",
+        "Strafford",
+        "Stutsman",
+        "Sublette",
+        "Sud Yungas",
+        "Suffolk",
+        "Suffolk (UK)",
+        "Sullivan",
+        "Sully",
+        "Summers",
+        "Summit",
+        "Sumner",
+        "Sumter",
+        "Sunflower",
+        "Surrey (UK)",
+        "Surry",
+        "Susquehanna",
+        "Sussex",
+        "Sussex (UK)",
+        "Sutherland (UK)",
+        "Sutter",
+        "Sutton",
+        "Suwannee",
+        "Swain",
+        "Sweet Grass",
+        "Sweetwater",
+        "Swift",
+        "Swisher",
+        "Switzerland",
+        "Tahiti",
+        "Talbot",
+        "Taliaferro",
+        "Talladega",
+        "Tallahatchie",
+        "Tallapoosa",
+        "Taltal",
+        "Tama",
+        "Taney",
+        "Tangipahoa",
+        "Taos",
+        "Tarrant",
+        "Tasman Municipality",
+        "Tate",
+        "Tattnall",
+        "Taylor",
+        "Tazewell",
+        "Tecate",
+        "Tehama",
+        "Telfair",
+        "Teller",
+        "Tensas",
+        "Tepic",
+        "Terrebonne",
+        "Terrell",
+        "Terry",
+        "Teton",
+        "Texas",
+        "Thayer",
+        "Thomas",
+        "Throckmorton",
+        "Thurston",
+        "Tift",
+        "Tijuana",
+        "Tillamook",
+        "Tillman",
+        "Tioga",
+        "Tippah",
+        "Tippecanoe",
+        "Tipton",
+        "Tishomingo",
+        "Titus",
+        "Todd",
+        "Tolland",
+        "Tom Green",
+        "Tompkins",
+        "Tompkins (NY)",
+        "Tooele",
+        "Toole",
+        "Toombs",
+        "Torrance",
+        "Towner",
+        "Towns",
+        "Traill",
+        "Transylvania",
+        "Traverse",
+        "Travis",
+        "Treasure",
+        "Trego",
+        "Trempealeau",
+        "Treutlen",
+        "Trigg",
+        "Trimble",
+        "Trinity",
+        "Tripp",
+        "Troup",
+        "Trousdale",
+        "Trumbull",
+        "Tucker",
+        "Tulare",
+        "Tulsa",
+        "Tunica",
+        "Tuolumne",
+        "Turner",
+        "Tuscaloosa",
+        "Tuscarawas",
+        "Tuscola",
+        "Twiggs",
+        "Twin Falls",
+        "Tyler",
+        "Tyrone (UK)",
+        "Tyrrell",
+        "Uinta",
+        "Uintah",
+        "Ulster",
+        "Ulverstone Municipality",
+        "Umatilla",
+        "Unicoi",
+        "Union",
+        "Unknown",
+        "Unknown",
+        "Upshur",
+        "Upson",
+        "Upton",
+        "Urubamba",
+        "Utah",
+        "Uvalde",
+        "Val Verde",
+        "Valdez–Cordova",
+        "Valencia",
+        "Valley",
+        "Van Buren",
+        "Van Wert",
+        "Van Zandt",
+        "Vance",
+        "Vanderburgh",
+        "Vanua Levu",
+        "Venango",
+        "Ventura",
+        "Vermilion",
+        "Vermillion",
+        "Vernon",
+        "Victoria",
+        "Vigo",
+        "Vilas",
+        "Vinton",
+        "Virginia Beach",
+        "Viti Levu",
+        "Volusia",
+        "Wabash",
+        "Wabasha",
+        "Wabaunsee",
+        "Wade Hampton",
+        "Wadena",
+        "Wagoner",
+        "Wahkiakum",
+        "Wake",
+        "Wakulla",
+        "Waldo",
+        "Walker",
+        "Walla Walla",
+        "Wallace",
+        "Waller",
+        "Wallowa",
+        "Walsh",
+        "Walthall",
+        "Walton",
+        "Walworth",
+        "Wapello",
+        "Waratah Municipality",
+        "Ward",
+        "Ware",
+        "Warren",
+        "Warrick",
+        "Warwickshire (UK)",
+        "Wasatch",
+        "Wasco",
+        "Waseca",
+        "Washakie",
+        "Washburn",
+        "Washington",
+        "Washita",
+        "Washoe",
+        "Washtenaw",
+        "Watauga",
+        "Watonwan",
+        "Waukesha",
+        "Waupaca",
+        "Waushara",
+        "Wayne",
+        "Waynesboro",
+        "Weakley",
+        "Webb",
+        "Weber",
+        "Webster",
+        "Weld",
+        "Wells",
+        "West Baton Rouge",
+        "West Carroll",
+        "West Feliciana",
+        "West Lothian (Linlithgowshire) (UK)",
+        "Westchester",
+        "Westmoreland",
+        "Westmorland (UK)",
+        "Weston",
+        "Wetzel",
+        "Wexford",
+        "Wharton",
+        "Whatcom",
+        "Wheatland",
+        "Wheeler",
+        "White",
+        "White Pine",
+        "Whiteside",
+        "Whitfield",
+        "Whitley",
+        "Whitman",
+        "Wibaux",
+        "Wichita",
+        "Wicomico",
+        "Wigtownshire (UK)",
+        "Wilbarger",
+        "Wilcox",
+        "Wilkes",
+        "Wilkin",
+        "Wilkinson",
+        "Will",
+        "Will (IL)",
+        "Willacy",
+        "Williams",
+        "Williamsburg",
+        "Williamson",
+        "Wilson",
+        "Wiltshire (UK)",
+        "Winchester",
+        "Windham",
+        "Windsor",
+        "Winkler",
+        "Winn",
+        "Winnebago",
+        "Winneshiek",
+        "Winona",
+        "Winston",
+        "Wirt",
+        "Wise",
+        "Wolfe",
+        "Wood",
+        "Woodbury",
+        "Woodford",
+        "Woodruff",
+        "Woods",
+        "Woodson",
+        "Woodward",
+        "Worcester",
+        "Worcestershire (UK)",
+        "Worth",
+        "Wrangell",
+        "Wright",
+        "Wyandot",
+        "Wyandotte",
+        "Wyoming",
+        "Wythe",
+        "Yadkin",
+        "Yakima",
+        "Yakutat",
+        "Yalobusha",
+        "Yamhill",
+        "Yancey",
+        "Yankton",
+        "Yates",
+        "Yavapai",
+        "Yazoo",
+        "Yell",
+        "Yellow Medicine",
+        "Yellowstone",
+        "Yoakum",
+        "Yolo",
+        "York",
+        "Yorkshire (UK)",
+        "Young",
+        "Yuba",
+        "Yukon–Koyukuk",
+        "Yuma",
+        "Zambales",
+        "Zapata",
+        "Zavala",
+        "Zeehan Municipality",
+        "Zhongdian",
+        "Ziebach"
+      ]
     },
     {
       "fieldname": "fieldLocState",
       "datacolumn": "fieldLocState",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4170,14 +7090,413 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "'Eua",
+        "AK",
+        "AL",
+        "ALB",
+        "AR",
+        "ARIZ",
+        "AZ",
+        "AZ Territory",
+        "Aamzonas",
+        "Acre",
+        "Alajuela",
+        "Alajuelo",
+        "Alberta",
+        "Alger",
+        "Alta Verapaz",
+        "Amazonas",
+        "Ancash",
+        "Anhui",
+        "Antioquia",
+        "Antofagasta",
+        "Apurimac",
+        "Aragua",
+        "Araucania",
+        "Arequipa",
+        "Artigas",
+        "Atacama",
+        "Atlantida",
+        "Ayacucho",
+        "Azuay",
+        "B.C.S.",
+        "BCS",
+        "BN",
+        "Bac Phan",
+        "Bahia",
+        "Baja California",
+        "Baja California Sur",
+        "Baja Verapaz",
+        "Baleares",
+        "Baluchistan",
+        "Banguey Island",
+        "Barinas",
+        "Benguet",
+        "Binh Tri Thien, Tinh",
+        "Biobio, Regio del",
+        "Bismarck Archipelago",
+        "Bohol",
+        "Bolivar",
+        "Boyaca",
+        "British Columbia",
+        "Brunei",
+        "Buenos Aires",
+        "Bulacan",
+        "CA",
+        "CHI",
+        "CO",
+        "CO Territory",
+        "COCA",
+        "COL",
+        "COP",
+        "CT",
+        "Cajamarca",
+        "Campeche",
+        "Canar",
+        "Cape Province",
+        "Carchi",
+        "Caroline Islands",
+        "Cartago",
+        "Cascajal",
+        "Cataluna",
+        "Cauca",
+        "Cebu",
+        "Central",
+        "Chalatenango",
+        "Chia",
+        "Chiang Mai, Changwat",
+        "Chiapas",
+        "Chihuahua",
+        "Chimaltenango",
+        "Chimborazo",
+        "Chinandega",
+        "Chiriqui",
+        "Chontales",
+        "Chupadero",
+        "Chuquisaca",
+        "Coahuila",
+        "Cochabamba",
+        "Cocle",
+        "Colima",
+        "Comayagua",
+        "Concepcion",
+        "Coquimbo",
+        "Cordoba",
+        "Cortes",
+        "Costa",
+        "Cotopaxi",
+        "Cundinamarca",
+        "Cuzco",
+        "DE",
+        "DUR",
+        "Darien",
+        "Dept. La e",
+        "Dept. Mag",
+        "Distrito Federal",
+        "Durango",
+        "East Malaysia",
+        "East Sepik",
+        "Eastern Division",
+        "Eastern Divsion",
+        "El Progreso",
+        "Esmeraldas",
+        "Esteli",
+        "FL",
+        "Florida",
+        "Fujian",
+        "GA",
+        "GRO",
+        "GUAM",
+        "Gansu",
+        "Goias",
+        "Golestan",
+        "Granada",
+        "Guanacaste",
+        "Guanajuato",
+        "Guangdong",
+        "Guatemala",
+        "Guayas",
+        "Guerrero",
+        "Guizhou",
+        "HI",
+        "Ha Bach, Tinh",
+        "Hainan",
+        "Halland",
+        "Hamadan",
+        "Heidelberg",
+        "Heredia",
+        "Hidalgo",
+        "Honshu",
+        "Huancabamba",
+        "Huancavelica",
+        "Huanuco",
+        "Hubei",
+        "Huehuetena",
+        "Huehuetenango",
+        "Humacao",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "Idaho",
+        "Insular",
+        "Ipiros",
+        "Iqnique Province",
+        "Iringa",
+        "Isabela",
+        "Izabel",
+        "JAL",
+        "Jalisco",
+        "Jalsico",
+        "Jawa Timur",
+        "Jiangsu",
+        "Jujuy",
+        "Junin",
+        "KS",
+        "KY",
+        "Kangean",
+        "Khorasan Province",
+        "Kkanh Hoa",
+        "KwaZulu-Natal",
+        "LA",
+        "LASAN",
+        "La Habana",
+        "La Libertad",
+        "La Paz",
+        "La Vega",
+        "Lambayeque",
+        "Las Villas",
+        "Leon",
+        "Lima",
+        "Limon",
+        "Loja",
+        "Loreto",
+        "Luzon",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MIC",
+        "MICH",
+        "MN",
+        "MO",
+        "MON",
+        "MS",
+        "MT",
+        "MX",
+        "Madre de Dios",
+        "Magdalena",
+        "Maldonado",
+        "Manabi",
+        "Manitoba",
+        "Mariana Islands",
+        "Mato Grosso",
+        "Matto Grosso",
+        "Mayaguez",
+        "Mazandaran",
+        "Merida",
+        "Meta",
+        "Mexico",
+        "Michoacan",
+        "Minas Gerais",
+        "Mindanao",
+        "Misiones",
+        "Montevideo",
+        "Morazan",
+        "Morelos",
+        "N. Segovia",
+        "NAY",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NL",
+        "NM",
+        "NM-TX",
+        "NV",
+        "NY",
+        "Narino",
+        "Nayarit",
+        "Neuvo Leon",
+        "Nevada",
+        "New Brunswick",
+        "New South Wales",
+        "Newfoundland",
+        "Nord",
+        "Norte",
+        "Norte de Santander",
+        "North Ayrshire",
+        "Northeastern",
+        "Northern",
+        "Northern Division",
+        "Northern Territory",
+        "Northwest Frontier",
+        "Northwest Territories",
+        "Nova Scotia",
+        "Nuevo Leon",
+        "Nunavut",
+        "O",
+        "OH",
+        "OK",
+        "OR",
+        "OR (?)",
+        "OR or WA",
+        "Oaxaca",
+        "Ontario",
+        "Oregon",
+        "Oriente",
+        "Otuzco",
+        "PA",
+        "PE",
+        "PMG",
+        "PRE",
+        "PUE",
+        "Palawan",
+        "Panama",
+        "Panay",
+        "Paraguari",
+        "Parana",
+        "Paris",
+        "Pasco",
+        "Pataz",
+        "Peloponnisos",
+        "Peten",
+        "Pichincha",
+        "Piura",
+        "Pohnpei",
+        "Pomeroon-Supernaam",
+        "Portuguesa",
+        "Potosi",
+        "Prince Edward Island",
+        "Puebla",
+        "Puerto Rico",
+        "Puno",
+        "Puntarenas",
+        "Quang Ngai",
+        "Quebec",
+        "Queensland",
+        "Quezaltenango",
+        "Quezon",
+        "Quiche",
+        "RI",
+        "Rio de Janeiro",
+        "Rizal",
+        "S Catarina",
+        "S L Potosi",
+        "S.L. Potos",
+        "SC",
+        "SD",
+        "SIN",
+        "SL Potosi",
+        "SON",
+        "Sabah",
+        "Salta",
+        "Samar",
+        "San Blas",
+        "San Jose",
+        "San Luis",
+        "San Luis Potosi",
+        "San Luis a",
+        "San Martin",
+        "San Miguel",
+        "San Pedro",
+        "Santa Barbara",
+        "Santa Catarina",
+        "Santa Cruz",
+        "Santander",
+        "Santiago, Region Met",
+        "Sao Paulo",
+        "Sarawak",
+        "Saskatchewan",
+        "Savaii Island",
+        "Scotland",
+        "Semnan",
+        "Seybo",
+        "Sichuan",
+        "Sierra",
+        "Sinaloa",
+        "Societe, Iles de la",
+        "Societe, Isles de la",
+        "Sonora",
+        "Sonsonate",
+        "South Australia",
+        "Southern Cook Island",
+        "St. Andrew",
+        "St. Croix",
+        "Stann Creek",
+        "Sulu",
+        "Sumatera",
+        "TAB",
+        "TAM",
+        "TN",
+        "TX",
+        "TX ",
+        "TX-NM",
+        "Tabasco",
+        "Tachira",
+        "Tacna",
+        "Tamaulipas",
+        "Tarank Province",
+        "Tarija",
+        "Tarma",
+        "Tasmania",
+        "Tehran",
+        "Tierra del Fuego",
+        "Tlaxcala",
+        "Toledo",
+        "Tongatapu",
+        "Trelawny",
+        "Trujillo",
+        "Tuamotu, Archipel de",
+        "Tubuai, Iles",
+        "Tucuman",
+        "Tutuila Island",
+        "UT",
+        "Unknown",
+        "Upolu Island",
+        "Utah",
+        "VA",
+        "VT",
+        "Valle",
+        "Valparaiso",
+        "Vaupes",
+        "Veracruz",
+        "Verguas",
+        "Victoria",
+        "WA",
+        "WA Territory",
+        "WAS",
+        "WI",
+        "WN",
+        "WV",
+        "WY",
+        "Wales",
+        "Western Australia",
+        "Western Cape",
+        "Wyoming",
+        "Xizang",
+        "Yaracuy",
+        "Yoro",
+        "Yucatan",
+        "Yukon Territory",
+        "Yunnan",
+        "Zacatecas",
+        "Zhejiang",
+        "Zulia",
+        "w TX to NM",
+        "w. TX - El Paso, NM",
+        "w. TX - El Paso,NM"
+      ]
     },
     {
       "fieldname": "fieldLocCountry",
       "datacolumn": "fieldLocCountry",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4186,14 +7505,279 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "AD",
+        "AE",
+        "AI",
+        "AL",
+        "AO",
+        "AQ",
+        "AT",
+        "AW",
+        "AX",
+        "AZ",
+        "Afghanistan",
+        "Algeria",
+        "American Samoa",
+        "Antigua",
+        "Antigua and Barbuda",
+        "Argentina",
+        "Armenia",
+        "Australia",
+        "BA",
+        "BB",
+        "BD",
+        "BF",
+        "BG",
+        "BH",
+        "BI",
+        "BJ",
+        "BL",
+        "BQ",
+        "BS",
+        "BT",
+        "BV",
+        "BW",
+        "BY",
+        "Belgium",
+        "Belize",
+        "Bermuda",
+        "Bolivia",
+        "Borneo",
+        "Brazil",
+        "Brunei",
+        "CC",
+        "CF",
+        "CG",
+        "CH",
+        "CI",
+        "CV",
+        "CW",
+        "CX",
+        "CY",
+        "CZ",
+        "Cambodia",
+        "Cameroon",
+        "Canada",
+        "Chile",
+        "China",
+        "Colombia",
+        "Cook Islands",
+        "Costa Rica",
+        "Croatia",
+        "Cuba",
+        "D R Congo",
+        "DJ",
+        "DM",
+        "Denmark",
+        "Dominican Republic",
+        "EE",
+        "EG",
+        "EH",
+        "ER",
+        "ET",
+        "Ecuador",
+        "El Salvador",
+        "Ellas",
+        "Equatorial Guinea",
+        "Espana",
+        "FK",
+        "FO",
+        "Fiji",
+        "Finland",
+        "France",
+        "GA",
+        "GD",
+        "GE",
+        "GF",
+        "GG",
+        "GH",
+        "GI",
+        "GM",
+        "GN",
+        "GS",
+        "GU",
+        "GW",
+        "Germany",
+        "Greenland",
+        "Guadeloupe",
+        "Guatemala",
+        "Guyana",
+        "HK",
+        "HM",
+        "HN",
+        "Haiti",
+        "Hispaniola",
+        "Honduras",
+        "IM",
+        "IO",
+        "IQ",
+        "Iceland",
+        "India",
+        "Indonesia",
+        "Iran",
+        "Ireland",
+        "Israel",
+        "Italy",
+        "JE",
+        "Jamaica",
+        "Japan",
+        "Jordan",
+        "KG",
+        "KI",
+        "KM",
+        "KN",
+        "KP",
+        "KW",
+        "KY",
+        "KZ",
+        "Kenya",
+        "LA",
+        "LI",
+        "LR",
+        "LS",
+        "LT",
+        "LU",
+        "LV",
+        "LY",
+        "Lebanon",
+        "MC",
+        "MD",
+        "ME",
+        "MF",
+        "MK",
+        "ML",
+        "MO",
+        "MP",
+        "MQ",
+        "MR",
+        "MS",
+        "MT",
+        "MU",
+        "MV",
+        "MZ",
+        "Madagascar",
+        "Malawi",
+        "Malaysia",
+        "Marshall Islands",
+        "Mexico",
+        "Micronesia",
+        "Mongolia",
+        "Morocco",
+        "Myanmar",
+        "NE",
+        "NF",
+        "NG",
+        "NR",
+        "Namibia",
+        "Nepal",
+        "Netherlands",
+        "Netherlands Antilles",
+        "New Caledonia",
+        "New Zealand",
+        "Nicaragua",
+        "Nihon",
+        "Niue",
+        "Norway",
+        "OM",
+        "PF",
+        "PL",
+        "PM",
+        "PN",
+        "PS",
+        "PW",
+        "Pakistan",
+        "Panama",
+        "Papua New Guinea",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Polynesia",
+        "Polynesie francaise",
+        "Portugal",
+        "Prathet Thai",
+        "Puerto Rico",
+        "QA",
+        "RO",
+        "RS",
+        "RW",
+        "Republica Dominicana",
+        "Reunion",
+        "Russia",
+        "SA",
+        "SG",
+        "SJ",
+        "SK",
+        "SL",
+        "SM",
+        "SN",
+        "SO",
+        "SS",
+        "ST",
+        "SX",
+        "SZ",
+        "Saint Helena",
+        "Saint Lucia",
+        "Samoa",
+        "Scotland",
+        "Seychelles",
+        "Slovenia",
+        "Solomon Islands",
+        "South Africa",
+        "South Korea",
+        "Spain",
+        "Sri Lanka",
+        "Sudan",
+        "Suriname",
+        "Sweden",
+        "Syria",
+        "TC",
+        "TD",
+        "TF",
+        "TG",
+        "TJ",
+        "TK",
+        "TL",
+        "TM",
+        "TN",
+        "TV",
+        "Taiwan",
+        "Tanzania",
+        "Thailand",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Turkey",
+        "UA",
+        "UM",
+        "USA",
+        "UZ",
+        "Uganda",
+        "United Kingdom",
+        "Uruguay",
+        "VA",
+        "VC",
+        "VG",
+        "Vanuatu",
+        "Venezuela",
+        "Viet Nam",
+        "Virgin Islands",
+        "WF",
+        "Western Samoa",
+        "YE",
+        "YT",
+        "ZM",
+        "ZW",
+        "Zhonghua",
+        "unknown"
+      ]
     },
     {
       "fieldname": "fieldLocHigherGeography",
       "datacolumn": "fieldLocHigherGeography",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4202,14 +7786,18 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "North America",
+        "pacificocean"
+      ]
     },
     {
       "fieldname": "vLatitude",
       "datacolumn": "vLatitude",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4218,14 +7806,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "vLongitude",
       "datacolumn": "vLongitude",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4234,14 +7825,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "vCoordinates",
       "datacolumn": "vCoordinates",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4250,14 +7844,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "vOtherCoords",
       "datacolumn": "vOtherCoords",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4266,7 +7863,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "vCoordSys",
@@ -4274,7 +7874,7 @@
       "transforms": {
         "vocabulary": "vcoordsys"
       },
-      "sourcetype": null,
+      "source_type": "vocabulary",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4283,14 +7883,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "decimalLatitude",
       "datacolumn": "decimalLatitude",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4299,14 +7902,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "decimalLongitude",
       "datacolumn": "decimalLongitude",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4315,14 +7921,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "geodeticDatum",
       "datacolumn": "geodeticDatum",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4331,14 +7940,22 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "ADG66",
+        "NAD27",
+        "NAD83",
+        "NAD83&amp;WGS84",
+        "Not Recorded",
+        "WGS84"
+      ]
     },
     {
       "fieldname": "coordUncertainty",
       "datacolumn": "coordUncertainty",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4347,14 +7964,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "coordUncertaintyUnit",
       "datacolumn": "coordUncertaintyUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4363,14 +7983,21 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "feet",
+        "kilometers",
+        "meters",
+        "miles",
+        "unknown"
+      ]
     },
     {
       "fieldname": "vDepth",
       "datacolumn": "vDepth",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4379,14 +8006,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "minDepth",
       "datacolumn": "minDepth",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4395,14 +8025,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "maxDepth",
       "datacolumn": "maxDepth",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4411,14 +8044,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "depthUnit",
       "datacolumn": "depthUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4427,14 +8063,26 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "centimeters",
+        "fathoms",
+        "feet",
+        "furlongs",
+        "inches",
+        "kilometers",
+        "meters",
+        "miles",
+        "rods",
+        "uncertain"
+      ]
     },
     {
       "fieldname": "vElevation",
       "datacolumn": "vElevation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4443,14 +8091,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "minElevation",
       "datacolumn": "minElevation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4459,14 +8110,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "maxElevation",
       "datacolumn": "maxElevation",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4475,14 +8129,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "elevationUnit",
       "datacolumn": "elevationUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4491,14 +8148,19 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "feet",
+        "meters",
+        "uncertain"
+      ]
     },
     {
       "fieldname": "vDistanceAboveSurface",
       "datacolumn": "vDistanceAboveSurface",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4507,14 +8169,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "minDistanceAboveSurface",
       "datacolumn": "minDistanceAboveSurface",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4523,14 +8188,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "maxDistanceAboveSurface",
       "datacolumn": "maxDistanceAboveSurface",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4539,14 +8207,17 @@
       "data_type": "float",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "distanceAboveSurfaceUnit",
       "datacolumn": "distanceAboveSurfaceUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4555,14 +8226,26 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "centimeters",
+        "fathoms",
+        "feet",
+        "furlongs",
+        "inches",
+        "kilometers",
+        "meters",
+        "miles",
+        "rods",
+        "uncertain"
+      ]
     },
     {
       "fieldname": "localityNote",
       "datacolumn": "localityNote",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4571,14 +8254,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "localitySource",
       "datacolumn": "localitySource",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4587,14 +8273,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "localitySourceDetail",
       "datacolumn": "localitySourceDetail",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4603,14 +8292,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "pointRadiusSpatialFit",
       "datacolumn": "pointRadiusSpatialFit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4619,14 +8311,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "footprintWKT",
       "datacolumn": "footprintWKT",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4635,14 +8330,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "footprintSRS",
       "datacolumn": "footprintSRS",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4651,14 +8349,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "footprintSpatialFit",
       "datacolumn": "footprintSpatialFit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4667,14 +8368,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "coordPrecision",
       "datacolumn": "coordPrecision",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4683,14 +8387,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "geoRefencedBy",
       "datacolumn": "geoRefencedBy",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4699,17 +8406,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "geoRefDateGroup",
       "datacolumn": "geoRefDateGroup",
       "transforms": {
-        "special": [
-          "structured_date"
-        ]
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4718,14 +8425,17 @@
       "data_type": "structured date group",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "geoRefProtocol",
       "datacolumn": "geoRefProtocol",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4734,14 +8444,20 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "biogeomancer",
+        "chapman-wieczorek-2006-guide-best-practices-georeferencing",
+        "georeferencing-dummies",
+        "manis-herpnet-ornis-georeferencing-guidelines"
+      ]
     },
     {
       "fieldname": "geoRefSource",
       "datacolumn": "geoRefSource",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4750,14 +8466,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "geoRefVerificationStatus",
       "datacolumn": "geoRefVerificationStatus",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4766,14 +8485,19 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "unverified",
+        "verified-contributor",
+        "verified-data-custodian"
+      ]
     },
     {
       "fieldname": "geoRefRemarks",
       "datacolumn": "geoRefRemarks",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4782,14 +8506,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "geoRefPlaceName",
       "datacolumn": "geoRefPlaceName",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "na",
       "namespace": "collectionobjects_anthro",
       "xpath": [
         "localityGroupList",
@@ -4798,14 +8525,17 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ]
     },
     {
       "fieldname": "technicalAttribute",
       "datacolumn": "technicalAttribute",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "technicalAttributeGroupList",
@@ -4814,14 +8544,18 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "magnetic-tape-type",
+        "record-speed"
+      ]
     },
     {
       "fieldname": "technicalAttributeMeasurement",
       "datacolumn": "technicalAttributeMeasurement",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "technicalAttributeGroupList",
@@ -4830,14 +8564,18 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "78",
+        "metal"
+      ]
     },
     {
       "fieldname": "technicalAttributeMeasurementUnit",
       "datacolumn": "technicalAttributeMeasurementUnit",
       "transforms": {
       },
-      "sourcetype": null,
+      "source_type": "optionlist",
       "namespace": "collectionobjects_common",
       "xpath": [
         "technicalAttributeGroupList",
@@ -4846,7 +8584,10 @@
       "data_type": "string",
       "required": "n",
       "repeats": "n",
-      "in_repeating_group": "y"
+      "in_repeating_group": "y",
+      "opt_list_values": [
+        "rpm"
+      ]
     }
   ]
 }

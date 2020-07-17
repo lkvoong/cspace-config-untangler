@@ -33,9 +33,10 @@ RSpec.describe CCU::FieldMap do
           expect(result).to eq(%w[authority authority])
         end
         it 'mappings datacolumns = contentConceptAssociated contentConceptMaterial' do
-          expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptAssociated contentConceptMaterial])
+          result = mappings.map{ |m| m.datacolumn }.sort
+            expect(result).to eq(%w[contentConceptAssociated contentConceptMaterial])
         end
-    end
+      end
     end
   end
   
@@ -63,7 +64,6 @@ RSpec.describe CCU::FieldMap do
       let(:result) { FieldMapper.new(field: ageUnit) }
       describe '#get_data_columns' do
         it 'column is the same as field name' do
-          binding.pry
           expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['ageUnit'])
         end
       end
@@ -124,12 +124,12 @@ RSpec.describe CCU::FieldMap do
         end
         describe '#get_transforms' do
           it 'creates transform hashes as expected' do
-          rh = result.hash.map{ |src, h| h[:transforms] }
-          expected = [
-            { authority:  %w[conceptauthorities concept] },
-            { authority:  %w[conceptauthorities material_ca] }
-          ]
-          expect(rh).to eq(expected)
+            rh = result.hash.map{ |src, h| h[:transforms] }
+            expected = [
+              { authority:  %w[conceptauthorities concept] },
+              { authority:  %w[conceptauthorities material_ca] }
+            ]
+            expect(rh).to eq(expected)
           end
         end
         describe '#source_type' do
@@ -156,7 +156,7 @@ RSpec.describe CCU::FieldMap do
         it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
-            { special: %w[structured_date] },
+            {},
           ]
           expect(rh).to eq(expected)
         end
