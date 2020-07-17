@@ -47,14 +47,14 @@ RSpec.describe CCU::FormProps do
     it 'returns correct ns for a panel that is an extension' do
       h = anthro_default.config['children'][10]['props']
       fp = CCU::FormProps.new(anthro_default, h)
-      expect(fp.ns).to eq('ext.locality')
+      expect(fp.ns).to eq('ns2:collectionobjects_common')
     end
     it 'returns correct ns for child of panel that is an extension' do
       h = anthro_default.config['children'][10]['props']
       fp = CCU::FormProps.new(anthro_default, h)
       hh = h['children']['props']
       fpp = CCU::FormProps.new(anthro_default, hh, fp)
-      expect(fp.ns).to eq('ext.locality')
+      expect(fpp.ns).to eq('ns2:collectionobjects_anthro')
     end
   end
 

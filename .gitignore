@@ -18,3 +18,4 @@ Gemfile.lock
 /data/profile_config.yaml
 /data/configs/*.json
 /data/mappers/*.json
+/data/config_holder/
