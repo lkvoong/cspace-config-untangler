@@ -47,6 +47,9 @@ module CspaceConfigUntangler
   autoload :StructuredDateField, 'cspace_config_untangler/structured_date_field'
   autoload :StructuredDateFieldMaker, 'cspace_config_untangler/structured_date_field_maker'
 
+  autoload :Template, 'cspace_config_untangler/template'
+  autoload :CsvTemplate, 'cspace_config_untangler/template'
+  
   # mapping CSV data to CSpace XML
   autoload :FieldMap, 'cspace_config_untangler/field_map'
   autoload :FieldMapper, 'cspace_config_untangler/field_map'

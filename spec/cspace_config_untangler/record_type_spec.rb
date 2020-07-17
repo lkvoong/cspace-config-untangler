@@ -2,19 +2,31 @@ require 'spec_helper'
 
 RSpec.describe CCU::RecordType do
   before do
-    stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/5_2')
+    stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/6_0')
   end
 
   let(:core_profile) { CCU::Profile.new('core') }
   let(:anthro_profile) { CCU::Profile.new('anthro') }
+  let(:bg_profile) { CCU::Profile.new('botgarden') }
   let(:core_co) { CCU::RecordType.new(core_profile, 'collectionobject') }  
   let(:anthro_co) { CCU::RecordType.new(anthro_profile, 'collectionobject') }
+  let(:bg_co) { CCU::RecordType.new(bg_profile, 'collectionobject') }
+  
   describe '.new' do
     it 'creates CCU::RecordType object' do
       expect(core_co).to be_instance_of(CCU::RecordType)
     end
   end
 
+  # it 'blah' do
+  #   fields = bg_co.field_defs.select{ |fs| fs.name == 'accessionUseType' }
+  #   pp(fields[0])
+
+  #   ffields = bg_co.form_fields.select{ |fs| fs.name == 'accessionUseType' }
+  #   pp(ffields[0])
+    
+  # end
+  
   describe '.panels' do
     it 'returns array' do
       expect(anthro_co.panels).to be_instance_of(Array)

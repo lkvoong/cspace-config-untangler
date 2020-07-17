@@ -10,6 +10,9 @@ module CspaceConfigUntangler
       @config = get_config
       @fields = []
       get_form_fields
+      if @rectype.profile.name == 'publicart_2_0_1'
+        @fields = @fields.reject{ |f| f.name == 'addressCounty' }
+      end
     end
 
     private
@@ -62,7 +65,7 @@ module CspaceConfigUntangler
         process_subrecord('contact', 'default')
       elsif @name == 'blob' && @form.rectype.profile.extensions.include?(@name)
         @is_blob = true
-#        process_subrecord('blob', 'upload')
+        #        process_subrecord('blob', 'upload')
         process_subrecord('blob', 'view')
       elsif @name.empty?
         profile = @form.rectype.profile.name
@@ -140,9 +143,15 @@ module CspaceConfigUntangler
       ns = 'ext.dimension' if is_measurement?
       ns = 'ext.address' if is_address? && @is_contact == false
       ns = 'ext.accessionattributes' if @ns == 'ns2:collectionobjects_accessionattributes'
+      ns = 'ext.accessionuse' if @ns == 'ns2:collectionobjects_accessionuse'
       ns = 'ext.fineart' if @ns == 'ns2:collectionobjects_fineart'
-      ns = 'ext.contentWorks' if @ns == 'ns2:collectionobjects_variablemedia' && @name.start_with?('contentWork')
       ns = 'ext.commission' if @ns == 'ns2:acquisitions_commission'
+      if @ns == 'ns2:collectionobjects_variablemedia'
+        @name.start_with?('contentWork') ? ns = 'ext.contentWorks' : ns = 'ext.technicalSpecs'
+      end
+      if @ns == 'ns2:conditionchecks_variablemedia'
+        ns = 'ext.technicalChanges'
+      end
       if @ns == 'ns2:persons_publicart' || @ns == 'ns2:organizations_publicart'
         ns = 'ext.socialMedia' if @name.start_with?('socialMedia')
       end

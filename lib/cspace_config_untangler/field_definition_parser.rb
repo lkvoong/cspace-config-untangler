@@ -42,7 +42,7 @@ module CspaceConfigUntangler
         @fdp = fdpobj
         @ns = ns
         @ns_for_id = @ns
-        if @ns == 'ns2:contacts_common'
+        if @ns.start_with?('ns2:contacts_')
           @config = @fdp.rectype.profile.config['recordTypes']['contact']['fields']['document'][@ns]
         elsif @ns == 'ns2:blobs_common'
           @config = @fdp.rectype.profile.config['recordTypes']['blob']['fields']['document'][@ns]

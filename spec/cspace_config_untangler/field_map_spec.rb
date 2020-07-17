@@ -17,8 +17,28 @@ RSpec.describe CCU::FieldMap do
   let(:anthro_profile) { CCU::Profile.new('anthro', rectypes: ['collectionobject'], structured_date_treatment: :collapse) }
   let(:afields) { anthro_profile.fields }
   let(:bupper) { afields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'behrensmeyerUpper' }[0] }
+
+  let(:botgarden_profile) { CCU::Profile.new('botgarden', rectypes: ['collectionobject'], structured_date_treatment: :collapse) }
+  let(:bg_fields) { botgarden_profile.fields }
+  let(:fruitsDec) { bg_fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'fruitsDec' }[0] }
+  let(:accessionUseType) { bg_fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'accessionUseType' }[0] }
   
   # ["authority: concept/associated", "authority: concept/material"]
+  describe FieldMapping do
+    context 'core profile' do
+      context 'contentConcept' do
+        let(:mappings) { FieldMapper.new(field: contentConcept).mappings }
+        it 'mappings have source_type = authority' do
+          result = mappings.map{ |m| m.source_type }
+          expect(result).to eq(%w[authority authority])
+        end
+        it 'mappings datacolumns = contentConceptAssociated contentConceptMaterial' do
+          expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptAssociated contentConceptMaterial])
+        end
+    end
+    end
+  end
+  
   describe FieldMapper do
     context 'when no field source' do
       let(:result) { FieldMapper.new(field: assocActivity) }
@@ -43,6 +63,7 @@ RSpec.describe CCU::FieldMap do
       let(:result) { FieldMapper.new(field: ageUnit) }
       describe '#get_data_columns' do
         it 'column is the same as field name' do
+          binding.pry
           expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['ageUnit'])
         end
       end
