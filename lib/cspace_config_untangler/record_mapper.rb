@@ -6,20 +6,19 @@ module CspaceConfigUntangler
       ::RecordMapping = CspaceConfigUntangler::RecordMapper::RecordMapping
       attr_reader :hash
 
-      # profile = string - name of profile
-      # rectype = string - name of rectype to generate mapper for
+      # profile = CCU::Profile
+      # rectype = CCU::RecordType
       def initialize(profile:, rectype:)
         @profile = profile
         @rectype = rectype
-        p = CCU::Profile.new(@profile, rectypes: [@rectype], structured_date_treatment: :collapse)
-        @config = p.config
-        @mappings = p.rectypes[0].fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+        @config = @profile.config
+        @mappings = @rectype.fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
         @hash = {}
         build_hash
       end
 
       # output = string = path to output json file
-      def to_json(output: "data/mappers/#{@profile}-#{@rectype}.json")
+      def to_json(output: "data/mappers/#{@profile.name}-#{@rectype.name}.json")
         File.open(output, 'w') do |f|
           f.write(JSON.pretty_generate(@hash))
         end
@@ -29,14 +28,14 @@ module CspaceConfigUntangler
 
       def build_hash
         @hash[:config] = {}
-        @hash[:config][:document_name] = @config.dig('recordTypes', @rectype, 'serviceConfig', 'documentName')
-        @hash[:config][:service_name] = @config.dig('recordTypes', @rectype, 'serviceConfig', 'serviceName')
-        @hash[:config][:service_path] = @config.dig('recordTypes', @rectype, 'serviceConfig', 'servicePath')
-        @hash[:config][:service_type] = @config.dig('recordTypes', @rectype, 'serviceConfig', 'serviceType')
-        @hash[:config][:object_name] = @config.dig('recordTypes', @rectype, 'serviceConfig', 'objectName')
+        @hash[:config][:document_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'documentName')
+        @hash[:config][:service_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'serviceName')
+        @hash[:config][:service_path] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'servicePath')
+        @hash[:config][:service_type] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'serviceType')
+        @hash[:config][:object_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'objectName')
         @hash[:config][:profile_basename] = @config.dig('basename').sub('/cspace/', '')
         @hash[:config][:ns_uri] = NamespaceUris.new(profile_config: @config,
-                                                    rectype: @rectype,
+                                                    rectype: @rectype.name,
                                                     mapper_config: @hash[:config]).hash
         @hash[:docstructure] = {}
         create_hierarchy

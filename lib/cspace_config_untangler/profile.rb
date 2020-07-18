@@ -2,9 +2,9 @@ require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
   class Profile
-    attr_reader :name, :config, :authorities, :rectypes, :extensions, :option_lists, :vocabularies, :panels, :form_fields, :field_defs, :messages, :structured_date_treatment
+    attr_reader :name, :config, :authorities, :rectypes, :rectypes_all, :extensions, :option_lists, :vocabularies, :panels, :form_fields, :field_defs, :messages, :structured_date_treatment
     
-    def initialize(profile, rectypes: [], structured_date_treatment: :explode)
+    def initialize(profile:, rectypes: [], structured_date_treatment: :explode)
       @name = profile
       @config = JSON.parse(File.read("#{CCU::CONFIGDIR}/#{@name}.json"))
       @messages = {}
@@ -140,9 +140,13 @@ module CspaceConfigUntangler
     
     def get_rectypes(rectypes)
       remove = %w[account all authrole authority batch batchinvocation blob contact idgenerator object procedure relation report reportinvocation structureddates vocabulary]
-      @rectypes = rectypes.empty? ? @config['recordTypes'].keys - remove : rectypes - remove
-      @rectypes = @rectypes.map{ |rt| CCU::RecordType.new(self, rt) }
       @rectypes_all = @config['recordTypes'].keys - remove
+
+      # if no rectypes are given, process all of them
+      # otherwise process only the ones passed in
+      @rectypes = rectypes.empty? ? @config['recordTypes'].keys - remove : rectypes - remove
+      @rectypes = @rectypes.select{ |rt| @rectypes_all.include?(rt) }
+      @rectypes = @rectypes.map{ |rt| CCU::RecordType.new(self, rt) }
     end
 
     def get_extensions

@@ -68,44 +68,40 @@ module CspaceConfigUntangler
       }
     end
 
-    desc 'write_mapper', 'create file containing JSON representation of record mapper'
-    option :profile, :desc => 'ONE profile'
-    option :rectype, :desc => 'ONE rectype'
-    option :output, :desc => 'path to output file', :default => 'data/mapper.json'
-    def write_mapper
-      recmapper = RecordMapping.new(profile: options[:profile],
-                                      rectype: options[:rectype]
-                                     )
-      
-        File.open(options[:output], 'w'){ |f|
-          f.write(JSON.pretty_generate(recmapper))
-        }
-    end
-
-    desc 'write_mappers', 'create files containing JSON representation of all known record mappers'
+    desc 'write_mappers', 'writes JSON serializations of RecordMappers for the given rectype(s) for the given profiles'
+    option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to write mappers for; if blank, will process all record types in profile', :default => ''
     option :outputdir, desc: 'path to output directory. File name will be: profile-rectype.json', default: 'data/mappers'
     def write_mappers
-      get_profiles.each do |p|
-        puts "Writing mappers for #{p}..."        
-        CCU::Profile.new(p).rectypes.each do |rt|
+      rts = options[:rectypes].split(',').map(&:strip)
+      get_profiles.each do |profile|
+        puts "Writing mappers for #{profile}..."
+        p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
+        p.rectypes.each do |rt|
           puts "  ...#{rt.name}"
           recmapper = RecordMapping.new(profile: p,
-                                        rectype: rt.name
+                                        rectype: rt
                                        )
-          path = "#{options[:outputdir]}/#{p}-#{rt.name}.json"
+          path = "#{options[:outputdir]}/#{p.name}-#{rt.name}.json"
           recmapper.to_json(output: path)
         end
       end
     end
 
-    desc 'write_csv_template', 'write CSV template for batch data import'
-    option :profile, :desc => 'ONE profile'
-    option :rectype, :desc => 'ONE rectype'
+    desc 'write_csv_templates', 'write batch import CSV templates for given (or all) record types in the given profiles'
+    option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to create templates for; if blank, will process all record types in profile', :default => ''
     option :outputdir, :desc => 'path to output directory. File name will be: profile-rectype_template.csv', :default => 'data/templates'
-    def write_csv_template
-      CsvTemplate.new(profile: options[:profile],
-                      rectype: options[:rectype]
-                     ).write(options[:outputdir])
+    def write_csv_templates
+      rts = options[:rectypes].split(',').map(&:strip)
+      get_profiles.each do |profile|
+        puts "Writing templates for #{profile}..."
+        p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
+        p.rectypes.each do |rt|
+          puts "  ...#{rt.name}"
+          CsvTemplate.new(profile: p,
+                          rectype: rt
+                         ).write(options[:outputdir])
+        end
+      end
     end
 
     desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'

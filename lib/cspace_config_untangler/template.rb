@@ -6,20 +6,19 @@ module CspaceConfigUntangler
       ::CsvTemplate = CspaceConfigUntangler::Template::CsvTemplate
       attr_reader :csvdata
 
-      # profile = string - name of profile
-      # rectype = string - name of rectype to generate mapper for
+      # profile = CCU::Profile 
+      # rectype = CCU::RecordType
       def initialize(profile:, rectype:)
         @profile = profile
         @rectype = rectype
-        p = CCU::Profile.new(@profile, rectypes: [@rectype], structured_date_treatment: :collapse)
-        @config = p.config
-        @mappings = p.rectypes[0].fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+        @config = @profile.config
+        @mappings = @rectype.fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
         @csvdata = []
         build_template
       end
 
       def write(dir)
-        filename = "#{@profile}-#{@rectype}_template.csv"
+        filename = "#{@profile.name}-#{@rectype.name}_template.csv"
         path = "#{File.expand_path(dir)}/#{filename}"
         CSV.open(path, 'wb') do |csv|
           @csvdata.each{ |r| csv << r }

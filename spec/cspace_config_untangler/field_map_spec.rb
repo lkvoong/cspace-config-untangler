@@ -1,33 +1,32 @@
 require 'spec_helper'
 
 RSpec.describe CCU::FieldMap do
-  before do
-    stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/6_0')
+  before(:all) do
+    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
+  @core_profile = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject', 'concept'], structured_date_treatment: :collapse)
+  @fields = @core_profile.fields
+  @contentConcept = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'contentConcept' }[0]
+  @assocActivity = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocActivity' }[0]
+  @assocStructuredDateGroup = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocStructuredDateGroup' }[0]
+  @ageUnit = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageUnit' }[0]
+  @ageQualifier = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageQualifier' }[0]
+  @termPrefForLang = @fields.select{ |f| f.rectype.name == 'concept' && f.name == 'termPrefForLang' }[0]
+
+  @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: ['collectionobject'], structured_date_treatment: :collapse)
+  @afields = @anthro_profile.fields
+  @bupper = @afields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'behrensmeyerUpper' }[0]
+
+  @botgarden_profile = CCU::Profile.new(profile: 'botgarden', rectypes: ['collectionobject'], structured_date_treatment: :collapse)
+  @bg_fields = @botgarden_profile.fields
+  @fruitsDec = @bg_fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'fruitsDec' }[0]
+  @accessionUseType = @bg_fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'accessionUseType' }[0]
   end
-
-  let(:core_profile) { CCU::Profile.new('core', rectypes: ['collectionobject', 'concept'], structured_date_treatment: :collapse) }
-  let(:fields) { core_profile.fields }
-  let(:contentConcept) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'contentConcept' }[0] }
-  let(:assocActivity) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocActivity' }[0] }
-  let(:assocStructuredDateGroup) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocStructuredDateGroup' }[0] }
-  let(:ageUnit) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageUnit' }[0] }
-  let(:ageQualifier) { fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'ageQualifier' }[0] }
-  let(:termPrefForLang) { fields.select{ |f| f.rectype.name == 'concept' && f.name == 'termPrefForLang' }[0] }
-
-  let(:anthro_profile) { CCU::Profile.new('anthro', rectypes: ['collectionobject'], structured_date_treatment: :collapse) }
-  let(:afields) { anthro_profile.fields }
-  let(:bupper) { afields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'behrensmeyerUpper' }[0] }
-
-  let(:botgarden_profile) { CCU::Profile.new('botgarden', rectypes: ['collectionobject'], structured_date_treatment: :collapse) }
-  let(:bg_fields) { botgarden_profile.fields }
-  let(:fruitsDec) { bg_fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'fruitsDec' }[0] }
-  let(:accessionUseType) { bg_fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'accessionUseType' }[0] }
   
   # ["authority: concept/associated", "authority: concept/material"]
   describe FieldMapping do
     context 'core profile' do
       context 'contentConcept' do
-        let(:mappings) { FieldMapper.new(field: contentConcept).mappings }
+        let(:mappings) { FieldMapper.new(field: @contentConcept).mappings }
         it 'mappings have source_type = authority' do
           result = mappings.map{ |m| m.source_type }
           expect(result).to eq(%w[authority authority])
@@ -42,7 +41,7 @@ RSpec.describe CCU::FieldMap do
   
   describe FieldMapper do
     context 'when no field source' do
-      let(:result) { FieldMapper.new(field: assocActivity) }
+      let(:result) { FieldMapper.new(field: @assocActivity) }
       describe '#get_data_columns' do
         it 'column is the same as field name' do
           expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['assocActivity'])
@@ -61,7 +60,7 @@ RSpec.describe CCU::FieldMap do
     end
 
     context 'when field source is option list' do
-      let(:result) { FieldMapper.new(field: ageUnit) }
+      let(:result) { FieldMapper.new(field: @ageUnit) }
       describe '#get_data_columns' do
         it 'column is the same as field name' do
           expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['ageUnit'])
@@ -81,7 +80,7 @@ RSpec.describe CCU::FieldMap do
 
     context 'when field source is vocabulary' do
       context 'we assume only one vocabulary source per field' do
-        let(:result) { FieldMapper.new(field: ageQualifier) }
+        let(:result) { FieldMapper.new(field: @ageQualifier) }
         describe '#get_data_columns' do
           it 'column is the same as field name' do
             expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['ageQualifier'])
@@ -111,7 +110,7 @@ RSpec.describe CCU::FieldMap do
 
     context 'when field source is authority' do
       context 'and two authorities may be used' do
-        let(:result) { FieldMapper.new(field: contentConcept) }
+        let(:result) { FieldMapper.new(field: @contentConcept) }
         describe '#get_data_columns' do
           it 'merges in column name hash as expected' do
             expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptAssociated contentConceptMaterial])
@@ -141,7 +140,7 @@ RSpec.describe CCU::FieldMap do
     end
 
     context 'when stuctured date field' do
-      let(:result) { FieldMapper.new(field: assocStructuredDateGroup) }
+      let(:result) { FieldMapper.new(field: @assocStructuredDateGroup) }
       describe '#get_data_columns' do
         it 'merges in column name hash as expected' do
           expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[assocStructuredDateGroup])
@@ -169,7 +168,7 @@ RSpec.describe CCU::FieldMap do
     end
 
     context 'when boolean field' do
-      let(:result) { FieldMapper.new(field: termPrefForLang) }
+      let(:result) { FieldMapper.new(field: @termPrefForLang) }
       describe '#get_transforms' do
         it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
@@ -182,7 +181,7 @@ RSpec.describe CCU::FieldMap do
     end
 
     context 'when behrensmeyer field' do
-      let(:result) { FieldMapper.new(field: bupper) }
+      let(:result) { FieldMapper.new(field: @bupper) }
       describe '#get_transforms' do
         it 'creates transform hashes as expected' do
           rh = result.hash.map{ |src, h| h[:transforms] }
@@ -198,14 +197,14 @@ RSpec.describe CCU::FieldMap do
 
   describe AuthorityConfigLookup do
     context 'when given profile=core and authority=concept/material' do
-      let(:result) { AuthorityConfigLookup.new(profile: contentConcept.profile,
+      let(:result) { AuthorityConfigLookup.new(profile: @contentConcept.profile,
                                                authority: 'authority: concept/material').result }
       it 'returns [conceptauthorities, material_ca]' do
         expect(result).to eq(%w[conceptauthorities material_ca])
       end
     end
     context 'when given profile=core and authority=person/ulan' do
-      let(:result) { AuthorityConfigLookup.new(profile: contentConcept.profile,
+      let(:result) { AuthorityConfigLookup.new(profile: @contentConcept.profile,
                                                authority: 'authority: person/ulan').result }
       it 'returns [personauthorities, ulan_pa]' do
         expect(result).to eq(%w[personauthorities ulan_pa])

@@ -1,18 +1,21 @@
 require 'spec_helper'
 
 RSpec.describe CCU::RecordMapper do
-  before do
-    stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/6_0')
+  before(:all) do
+    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
+    @anthro_profile = CCU::Profile.new(profile: 'anthro',
+                                       rectypes: ['collectionobject', 'claim', 'taxon'],
+                                       structured_date_treatment: :collapse)
+    @anthro_co = @anthro_profile.rectypes.select{ |rt| rt.name == 'collectionobject' }.first
+    @anthro_claim = @anthro_profile.rectypes.select{ |rt| rt.name == 'claim' }.first
+    @anthro_taxon = @anthro_profile.rectypes.select{ |rt| rt.name == 'taxon' }.first
+    @rm_anthro_co = RecordMapping.new(profile: @anthro_profile, rectype: @anthro_co)
   end
 
-  let(:anthro_profile) { CCU::Profile.new('anthro', rectypes: ['collectionobject'], structured_date_treatment: :collapse) }
-  let(:rm_anthro_co) { RecordMapping.new(profile: 'anthro', rectype: 'collectionobject') }
-
-  # ["authority: concept/associated", "authority: concept/material"]
   describe RecordMapping do
     describe '#hash' do
       it 'returns record mapping hash' do
-        expect(rm_anthro_co.hash).to be_a(Hash)
+        expect(@rm_anthro_co.hash).to be_a(Hash)
       end
     end
   end
@@ -20,9 +23,9 @@ RSpec.describe CCU::RecordMapper do
   describe NamespaceUris do
     context 'anthro' do
       context 'collectionobject' do
-        let(:result) { NamespaceUris.new(profile_config: anthro_profile.config,
+        let(:result) { NamespaceUris.new(profile_config: @anthro_profile.config,
                                          rectype: 'collectionobject',
-                                         mapper_config: rm_anthro_co.hash[:config]
+                                         mapper_config: @rm_anthro_co.hash[:config]
                                         ).hash }
 
         let(:expected) { {
@@ -40,8 +43,8 @@ RSpec.describe CCU::RecordMapper do
       end
 
       context 'claim' do
-        let(:rm_anthro_claim) { RecordMapping.new(profile: 'anthro', rectype: 'claim') }
-        let(:result) { NamespaceUris.new(profile_config: anthro_profile.config,
+        let(:rm_anthro_claim) { RecordMapping.new(profile: @anthro_profile, rectype: @anthro_claim) }
+        let(:result) { NamespaceUris.new(profile_config: @anthro_profile.config,
                                          rectype: 'claim',
                                          mapper_config: rm_anthro_claim.hash[:config]
                                         ).hash }
@@ -57,8 +60,8 @@ RSpec.describe CCU::RecordMapper do
       end
       
       context 'taxon' do
-        let(:rm_anthro_taxon) { RecordMapping.new(profile: 'anthro', rectype: 'taxon') }
-        let(:result) { NamespaceUris.new(profile_config: anthro_profile.config,
+        let(:rm_anthro_taxon) { RecordMapping.new(profile: @anthro_profile, rectype: @anthro_taxon) }
+        let(:result) { NamespaceUris.new(profile_config: @anthro_profile.config,
                                          rectype: 'taxon',
                                          mapper_config: rm_anthro_taxon.hash[:config]
                                         ).hash }
