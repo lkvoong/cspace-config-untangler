@@ -35,16 +35,26 @@ module CspaceConfigUntangler
         datatype = ['DATA TYPE']
         repeats = ['REPEATABLE FIELD?']
         group = ['IN REPEATING FIELD GROUP?']
+        source = ['VALUE SOURCE']
         headers = ['CSVHEADER']
         
         [requiredfields, otherfields].each do |fieldmappings|
           fieldmappings.each do |mapping|
             instruct << ''
-            headers << mapping.datacolumn
-            datatype << mapping.data_type
             required << mapping.required
+            datatype << mapping.data_type
             repeats << mapping.repeats
             group << mapping.in_repeating_group
+            if mapping.source_type == 'optionlist'
+              source << mapping.opt_list_values.join(', ')
+            elsif mapping.source_type == 'authority'
+              source << mapping.transforms[:authority].join('/')
+            elsif mapping.source_type == 'vocabulary'
+              source << "vocabulary: #{mapping.transforms[:vocabulary]}"
+            else
+              source << ''
+            end
+            headers << mapping.datacolumn
           end
         end
 
@@ -53,6 +63,7 @@ module CspaceConfigUntangler
         @csvdata << datatype
         @csvdata << repeats
         @csvdata << group
+        @csvdata << source
         @csvdata << headers
       end
       

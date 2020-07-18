@@ -3,4 +3,5 @@ REQUIRED,y,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n
 DATA TYPE,string,string,float,date,date,string,string,string,string,string,string,string,string,string,string,string,string,string,date
 REPEATABLE FIELD?,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n
 IN REPEATING FIELD GROUP?,n/a,y,y,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,y,y,y,y,y,y,y
+VALUE SOURCE,"",vocabulary: currency,"","","",personauthorities/person,personauthorities/person_shared,orgauthorities/organization,orgauthorities/organization_shared,vocabulary: valuationsourcerole,"Current Value, Original Value, Replacement Value","",personauthorities/person,personauthorities/person_shared,orgauthorities/organization,orgauthorities/organization_shared,"","",""
 CSVHEADER,valuationcontrolRefNumber,valueCurrency,valueAmount,valueDate,valueRenewalDate,valueSourcePersonLocal,valueSourcePersonShared,valueSourceOrganizationLocal,valueSourceOrganizationShared,valueSourceRole,valueType,valueNote,insurerPersonLocal,insurerPersonShared,insurerOrganizationLocal,insurerOrganizationShared,insuranceNote,insurancePolicyNumber,insuranceRenewalDate

@@ -3,4 +3,5 @@ REQUIRED,n,n,n,n,n,n,n
 DATA TYPE,string,string,string,string,integer,string,string
 REPEATABLE FIELD?,n,n,n,n,n,n,n
 IN REPEATING FIELD GROUP?,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+VALUE SOURCE,taxonomyauthority/taxon,"","",taxonomyauthority/taxon,"","no, yes",""
 CSVHEADER,family,commonName,locale,taxonName,numberOfLabels,printLabels,labelData

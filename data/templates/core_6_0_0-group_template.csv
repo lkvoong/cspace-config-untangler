@@ -3,4 +3,5 @@ REQUIRED,y,n,n,n,n,n
 DATA TYPE,string,string,string,date,date,string
 REPEATABLE FIELD?,n,n,n,n,n,n
 IN REPEATING FIELD GROUP?,n/a,n/a,n/a,n/a,n/a,n/a
+VALUE SOURCE,"","antiquities, architecture-design, decorative-arts, ethnography, herpetology, media-performance-art, paintings-sculpture, paleobotany, photographs, prints-drawings",personauthorities/person,"","",""
 CSVHEADER,title,responsibleDepartment,owner,groupEarliestSingleDate,groupLatestDate,scopeNote

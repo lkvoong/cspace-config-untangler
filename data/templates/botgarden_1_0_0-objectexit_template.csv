@@ -3,4 +3,5 @@ REQUIRED,n,n,n,n,n,n,n,n,n,n
 DATA TYPE,string,structured date group,string,string,string,string,string,integer,string,string
 REPEATABLE FIELD?,n,n,n,n,y,n,n,n,n,n
 IN REPEATING FIELD GROUP?,n/a,n/a,n/a,n/a,n,n/a,n/a,n/a,n/a,n/a
+VALUE SOURCE,"","",personauthorities/person,orgauthorities/organization,"courier, inperson, post",orgauthorities/organization,"deaccession, disposal, returnofloan","","",""
 CSVHEADER,exitNumber,exitDateGroup,currentOwnerPerson,currentOwnerOrganization,exitMethod,depositor,exitReason,count,exitNote,packingNote

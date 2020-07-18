@@ -3,4 +3,5 @@ REQUIRED,n,n,n,n,n,n,n,n,n
 DATA TYPE,date,string,string,string,string,string,string,string,integer
 REPEATABLE FIELD?,n,n,n,n,n,n,n,n,n
 IN REPEATING FIELD GROUP?,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+VALUE SOURCE,"",vocabulary: reasonformove,orgauthorities/organization,personauthorities/person,"","No, Yes",vocabulary: labelsize,vocabulary: labelstandtype,""
 CSVHEADER,locationDate,reasonForMove,currentLocation,movementContact,movementNote,labelRequested,labelSize,labelStandType,labelCount
