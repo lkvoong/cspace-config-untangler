@@ -6,7 +6,7 @@ module CspaceConfigUntangler
       profiles = profilearray.map{ |p| CCU::Profile.new(profile: p) }
       @profiles = profiles.map{ |p| p.name }
       @output = "#{outputdir}/compare_#{@profiles[0]}_to_#{@profiles[1]}.csv"
-      @fields = profiles.map{ |p| p.fields }.map{ |p| by_path(p) }
+      @fields = profiles.map{ |p| p.fields.map{ |f| f.clean} }.map{ |p| by_path(p) }
       @combined = combined_fields
       @diff = diff_combined
       @diff.each{ |k, arr| puts "#{k}: #{arr.size}" }
@@ -25,7 +25,7 @@ module CspaceConfigUntangler
     private
 
     def diffed_fields
-            diff_fields = []
+      diff_fields = []
       
       @diff.each do |type, val|
         if type['not in']
