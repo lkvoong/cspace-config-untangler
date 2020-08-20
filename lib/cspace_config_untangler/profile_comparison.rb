@@ -3,7 +3,7 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   class ProfileComparison
     def initialize(profilearray, outputdir)
-      profiles = profilearray.map{ |p| CCU::Profile.new(p) }
+      profiles = profilearray.map{ |p| CCU::Profile.new(profile: p) }
       @profiles = profiles.map{ |p| p.name }
       @output = "#{outputdir}/compare_#{@profiles[0]}_to_#{@profiles[1]}.csv"
       @fields = profiles.map{ |p| p.fields }.map{ |p| by_path(p) }

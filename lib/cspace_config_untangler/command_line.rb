@@ -194,7 +194,7 @@ module CspaceConfigUntangler
       rt = options[:rectypes] == 'all' ? [] : options[:rectypes].split(',')
       fs = []
       get_profiles.each {|profile|
-        p = CCU::Profile.new(profile, rectypes: rt, structured_date_treatment: options[:structured_date].to_sym)
+        p = CCU::Profile.new(profile: profile, rectypes: rt, structured_date_treatment: options[:structured_date].to_sym)
         p.fields.each{ |f| fs << f }
       }
       CSV.open(options[:output], 'wb'){ |csv|
