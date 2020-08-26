@@ -1,7 +1,7 @@
 = CspaceConfigUntangler
 
 == Conceptual overview
-Reads JSON config file. 
+Reads JSON config file output by CollectionSpace application. 
 
 Gets field definitions (`field_defs`), including repeatability, data type, value source, XML field name and parents, etc.
 
@@ -25,6 +25,19 @@ Since there is no way to programmatically grab the JSON config, this currently r
 -  https://herbarium.collectionspace.org/cspace/herbarium/config (not applied? - dev is)
 -  https://botgarden.collectionspace.org/cspace/botgarden/config (not applied?)
 -  https://bonsai.collectionspace.org/cspace/bonsai/config
+-  https://cspace.ohiohistory.org/cspace/ohc/config
+
+And for the latest dev versions of profiles:
+
+-  https://core.dev.collectionspace.org/cspace/core/config
+-  https://anthro.dev.collectionspace.org/cspace/anthro/config
+-  https://fcart.dev.collectionspace.org/cspace/fcart/config
+-  https://lhmc.dev.collectionspace.org/cspace/lhmc/config
+-  https://publicart.dev.collectionspace.org/cspace/publicart/config
+-  https://materials.dev.collectionspace.org/cspace/materials/config
+-  https://herbarium.dev.collectionspace.org/cspace/herbarium/config (not applied? - dev is)
+-  https://botgarden.dev.collectionspace.org/cspace/botgarden/config (not applied?)
+-  https://bonsai.dev.collectionspace.org/cspace/bonsai/config
 -  https://cspace.ohiohistory.org/cspace/ohc/config
 
 
