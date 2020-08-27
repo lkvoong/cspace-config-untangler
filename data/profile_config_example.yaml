@@ -1,0 +1,28 @@
+profiles:
+  anthro:
+    setup: 'standard'
+  bonsai:
+    setup: 'standard'
+  botgarden:
+    setup: 'standard'
+  core:
+    setup: 'standard'
+  fcart:
+    setup: 'standard'
+  herbarium:
+    setup: 'standard'
+  lhmc:
+    setup: 'standard'
+  materials:
+    setup: 'standard'
+  publicart:
+    setup: 'standard'
+  custom_profile_name:
+    prod:
+      base: 'custom_profile.cspace.mymuseum.org'
+      user: 'kristina.spurgin@lyrasis.org'
+      pw: 'mypassword'
+    dev:
+      base: 'custom_profile.dev.cspace.mymuseum.org'
+      user: 'kristina.spurgin@lyrasis.org'
+      pw: 'mydevpassword'
