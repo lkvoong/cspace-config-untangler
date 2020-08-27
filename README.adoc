@@ -22,10 +22,9 @@ Since there is no way to programmatically grab the JSON config, this currently r
 -  https://lhmc.collectionspace.org/cspace/lhmc/config
 -  https://publicart.collectionspace.org/cspace/publicart/config
 -  https://materials.collectionspace.org/cspace/materials/config
--  https://herbarium.collectionspace.org/cspace/herbarium/config (not applied? - dev is)
--  https://botgarden.collectionspace.org/cspace/botgarden/config (not applied?)
+-  https://herbarium.collectionspace.org/cspace/herbarium/config
+-  https://botgarden.collectionspace.org/cspace/botgarden/config
 -  https://bonsai.collectionspace.org/cspace/bonsai/config
--  https://cspace.ohiohistory.org/cspace/ohc/config
 
 And for the latest dev versions of profiles:
 
@@ -38,7 +37,6 @@ And for the latest dev versions of profiles:
 -  https://herbarium.dev.collectionspace.org/cspace/herbarium/config (not applied? - dev is)
 -  https://botgarden.dev.collectionspace.org/cspace/botgarden/config (not applied?)
 -  https://bonsai.dev.collectionspace.org/cspace/bonsai/config
--  https://cspace.ohiohistory.org/cspace/ohc/config
 
 
 Set `CCU.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
@@ -53,8 +51,8 @@ Set `CCU.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
 * `cd` into cloned directory
 * `bundle/install`
 * Download your configs into the appropriate `data/configs` directory or directories
-* Configure your constants https://github.com/lyrasis/cspace-config-untangler/blob/7dbf54bc5f6f8df4079aa9de8b4f8666af4b1fd8/lib/cspace_config_untangler.rb#L17-L19[here]
-* Set up `profile_config.yaml`. See sub-section below for details on this.
+* Configure your constants https://github.com/collectionspace/cspace-config-untangler/blob/master/lib/cspace_config_untangler.rb[in `lib/cspace_config_untangler.rb`]
+* Rename `data/profile_config_example.yaml` to  `data/profile_config.yaml` and set up any custom configs you want to use following the pattern given. See sub-section below for details on this.
 
 === `profile_config.yaml` setup
 
