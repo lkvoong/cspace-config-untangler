@@ -41,10 +41,14 @@ And for the latest dev versions of profiles:
 -  https://cspace.ohiohistory.org/cspace/ohc/config
 
 
-Set `CDC.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
+Set `CCU.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
 
-== Usage
+== Setup
 
+* Tested with Ruby 2.7.0
+* Do `bundle --version`
+- If the version of Bundler is lower than 2.1.2, do `gem update bundler`
+** Bundler should come standard with Ruby 2.7.0, but may be an older version. If you get an error that you don't have Bundler installed when you try to check the version, do `gem install bundler`
 * Clone this repo
 * `cd` into cloned directory
 * `bundle/install`
@@ -52,17 +56,7 @@ Set `CDC.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
 * Configure your constants https://github.com/lyrasis/cspace-config-untangler/blob/7dbf54bc5f6f8df4079aa9de8b4f8666af4b1fd8/lib/cspace_config_untangler.rb#L17-L19[here]
 * Set up `profile_config.yaml`. See sub-section below for details on this.
 
-Once this is done, from the cloned directory, you should be able to type `exe/ccu` (or just `ccu` depending on your setup) at the command prompt to get the list of available functions with their brief descriptions.
-
-`main_profile`, `all_profiles`, and `check_profiles` help you verify your config and use of the --profiles option are ok.
-
-`readable_profiles` saves the specified JSON config(s) to new files as pretty-printed JSON you can meaningfully grep or deal with in Oxygen or other editors.
-
-`list_rec_types` and `extensions_by_profile` give some high-level info for each profile.
-
-`fields_csv` outputs CSV file of combined data from field_defs and form_fields for each profile indicated.
-
-===`profile_config.yaml` setup
+=== `profile_config.yaml` setup
 
 This YAML config supports using the CSpace services REST API to get the vocabularies used by a profile.
 
@@ -77,7 +71,9 @@ profiles:
     setup: 'standard'
   anthro:
     setup: 'standard'
-  clientname:
+  bonsai:
+   setup: 'standard'
+  noncommunity_profile_name:
     prod:
       base: 'cspace.clientdomain.org'
       user: 'admin@cspace.clientdomain.org'
@@ -88,9 +84,41 @@ profiles:
       pw: 'passwordstring'
 ----
 
+==== To use community profiles
+
 The behavior of `setup: standard` for authenticating to demo or dev is hard-coded for LYRASIS-hosting assumptions in `site_config.rb`. (These authorization credentials are stated on the public landing pages for the demo and dev instances, so this is not secure info, but will eventually be refactored out.
 
-For different authentication patterns, follow the pattern shown for the `clientname` profile. `clientname` must match a profile listed in your constants. Setting up `prod` is required. Setting up `dev` is optional.
+*All you need to do is add the community profile name you want to use, and `setup: 'standard'`.*
+
+==== To use custom profiles/configs
+
+For different authentication patterns, follow the pattern shown for the `noncommunity_profile_name` profile.
+
+The profile name must match a JSON config file name for a profile in your `CONFIGDIR` directory, without any version suffixing. For instance, you may have the following in `CONFIGDIR`:
+
+- noncommunity_profile_name_1_0_0
+- noncommunity_profile_name_1_0_1
+
+The name in your YAML config should be as shown above. The `lib/cspace_config_untangler/site_config.rb` code handles matching the specific profile version with the correct authentication.
+
+If you need to authenticate differently for different versions, control this by renaming the relevant JSON config file, and adding an entry for that name in the YAML.
+
+Setting up `prod` is required. Setting up `dev` is optional.
+
+== Usage
+
+Once the setup is done, from the cloned directory, you should be able to type `exe/ccu` (or just `ccu` depending on your setup) at the command prompt to get the list of available functions with their brief descriptions.
+
+*The best source of info on what each function does and how to use it is the `exe/ccu` command (overview) and `exe/ccu help {function_name}` (for details on options and implementation).*
+
+`main_profile`, `all_profiles`, and `check_profiles` help you verify your config and use of the --profiles option are ok.
+
+`readable_profiles` saves the specified JSON config(s) to new files as pretty-printed JSON you can meaningfully grep or deal with in Oxygen or other editors.
+
+`list_rec_types` and `extensions_by_profile` give some high-level info for each profile.
+
+`fields_csv` outputs CSV file of combined data from field_defs and form_fields for each profile indicated.
+
 
 
 == Known limitations/issues
