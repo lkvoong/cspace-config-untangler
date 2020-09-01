@@ -18,13 +18,13 @@ Since there is no way to programmatically grab the JSON config, this currently r
 
 -  https://core.collectionspace.org/cspace/core/config
 -  https://anthro.collectionspace.org/cspace/anthro/config
--  https://fcart.collectionspace.org/cspace/fcart/config
--  https://lhmc.collectionspace.org/cspace/lhmc/config
--  https://publicart.collectionspace.org/cspace/publicart/config
--  https://materials.collectionspace.org/cspace/materials/config
--  https://herbarium.collectionspace.org/cspace/herbarium/config
--  https://botgarden.collectionspace.org/cspace/botgarden/config
 -  https://bonsai.collectionspace.org/cspace/bonsai/config
+-  https://botgarden.collectionspace.org/cspace/botgarden/config
+-  https://fcart.collectionspace.org/cspace/fcart/config
+-  https://herbarium.collectionspace.org/cspace/herbarium/config
+-  https://lhmc.collectionspace.org/cspace/lhmc/config
+-  https://materials.collectionspace.org/cspace/materials/config
+-  https://publicart.collectionspace.org/cspace/publicart/config
 
 And for the latest dev versions of profiles:
 
