@@ -25,7 +25,6 @@
   "mappings": [
     {
       "fieldname": "loanInNumber",
-      "datacolumn": "loanInNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -43,7 +42,6 @@
     },
     {
       "fieldname": "loanPurpose",
-      "datacolumn": "loanPurpose",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -67,7 +65,6 @@
     },
     {
       "fieldname": "loanGroup",
-      "datacolumn": "loanGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -87,7 +84,6 @@
     },
     {
       "fieldname": "loanIndividual",
-      "datacolumn": "loanIndividualLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -110,7 +106,6 @@
     },
     {
       "fieldname": "loanIndividual",
-      "datacolumn": "loanIndividualShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -133,7 +128,6 @@
     },
     {
       "fieldname": "loanStatus",
-      "datacolumn": "loanStatus",
       "transforms": {
         "vocabulary": "loanoutstatus"
       },
@@ -153,7 +147,6 @@
     },
     {
       "fieldname": "loanStatusDate",
-      "datacolumn": "loanStatusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -172,7 +165,6 @@
     },
     {
       "fieldname": "loanStatusNote",
-      "datacolumn": "loanStatusNote",
       "transforms": {
       },
       "source_type": "na",
@@ -191,7 +183,6 @@
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -214,7 +205,6 @@
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -237,7 +227,6 @@
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -260,7 +249,6 @@
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -283,7 +271,6 @@
     },
     {
       "fieldname": "lendersContact",
-      "datacolumn": "lendersContactLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -306,7 +293,6 @@
     },
     {
       "fieldname": "lendersContact",
-      "datacolumn": "lendersContactShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -329,7 +315,6 @@
     },
     {
       "fieldname": "lendersAuthorizationDate",
-      "datacolumn": "lendersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -348,7 +333,6 @@
     },
     {
       "fieldname": "loanInConditions",
-      "datacolumn": "loanInConditions",
       "transforms": {
       },
       "source_type": "na",
@@ -366,7 +350,6 @@
     },
     {
       "fieldname": "loanInNote",
-      "datacolumn": "loanInNote",
       "transforms": {
       },
       "source_type": "na",
@@ -384,7 +367,6 @@
     },
     {
       "fieldname": "loanInDate",
-      "datacolumn": "loanInDate",
       "transforms": {
       },
       "source_type": "na",
@@ -402,7 +384,6 @@
     },
     {
       "fieldname": "loanReturnDate",
-      "datacolumn": "loanReturnDate",
       "transforms": {
       },
       "source_type": "na",

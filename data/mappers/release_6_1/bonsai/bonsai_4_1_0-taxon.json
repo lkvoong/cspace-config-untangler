@@ -31,7 +31,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -50,7 +49,6 @@
     },
     {
       "fieldname": "termFormattedDisplayName",
-      "datacolumn": "termFormattedDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -69,7 +67,6 @@
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -88,7 +85,6 @@
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -110,7 +106,6 @@
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -131,7 +126,6 @@
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "taxontermflag"
       },
@@ -151,7 +145,6 @@
     },
     {
       "fieldname": "taxonomicStatus",
-      "datacolumn": "taxonomicStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -173,7 +166,6 @@
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -193,7 +185,6 @@
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -215,7 +206,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -238,7 +228,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -261,7 +250,6 @@
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -280,7 +268,6 @@
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -299,7 +286,6 @@
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -318,7 +304,6 @@
     },
     {
       "fieldname": "taxonRank",
-      "datacolumn": "taxonRank",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -344,7 +329,6 @@
     },
     {
       "fieldname": "taxonCurrency",
-      "datacolumn": "taxonCurrency",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -364,7 +348,6 @@
     },
     {
       "fieldname": "taxonAuthor",
-      "datacolumn": "taxonAuthorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -387,7 +370,6 @@
     },
     {
       "fieldname": "taxonAuthor",
-      "datacolumn": "taxonAuthorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -410,7 +392,6 @@
     },
     {
       "fieldname": "taxonAuthorType",
-      "datacolumn": "taxonAuthorType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -430,7 +411,6 @@
     },
     {
       "fieldname": "taxonYear",
-      "datacolumn": "taxonYear",
       "transforms": {
       },
       "source_type": "na",
@@ -448,7 +428,6 @@
     },
     {
       "fieldname": "taxonIsNamedHybrid",
-      "datacolumn": "taxonIsNamedHybrid",
       "transforms": {
         "special": [
           "boolean"
@@ -469,7 +448,6 @@
     },
     {
       "fieldname": "taxonCitation",
-      "datacolumn": "taxonCitationLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -491,7 +469,6 @@
     },
     {
       "fieldname": "taxonCitation",
-      "datacolumn": "taxonCitationWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -513,7 +490,6 @@
     },
     {
       "fieldname": "taxonNote",
-      "datacolumn": "taxonNote",
       "transforms": {
       },
       "source_type": "na",
@@ -531,7 +507,6 @@
     },
     {
       "fieldname": "commonName",
-      "datacolumn": "commonName",
       "transforms": {
       },
       "source_type": "na",
@@ -550,7 +525,6 @@
     },
     {
       "fieldname": "commonNameLanguage",
-      "datacolumn": "commonNameLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -570,7 +544,6 @@
     },
     {
       "fieldname": "commonNameSource",
-      "datacolumn": "commonNameSource",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -593,7 +566,6 @@
     },
     {
       "fieldname": "commonNameSourceDetail",
-      "datacolumn": "commonNameSourceDetail",
       "transforms": {
       },
       "source_type": "na",

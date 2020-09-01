@@ -25,7 +25,6 @@
   "mappings": [
     {
       "fieldname": "propNumber",
-      "datacolumn": "propNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -43,7 +42,6 @@
     },
     {
       "fieldname": "propType",
-      "datacolumn": "propType",
       "transforms": {
         "vocabulary": "proptype"
       },
@@ -62,7 +60,6 @@
     },
     {
       "fieldname": "numStarted",
-      "datacolumn": "numStarted",
       "transforms": {
       },
       "source_type": "na",
@@ -80,7 +77,6 @@
     },
     {
       "fieldname": "propDate",
-      "datacolumn": "propDate",
       "transforms": {
       },
       "source_type": "na",
@@ -98,7 +94,6 @@
     },
     {
       "fieldname": "propReason",
-      "datacolumn": "propReason",
       "transforms": {
         "vocabulary": "propreason"
       },
@@ -117,7 +112,6 @@
     },
     {
       "fieldname": "propComments",
-      "datacolumn": "propComments",
       "transforms": {
       },
       "source_type": "na",
@@ -135,7 +129,6 @@
     },
     {
       "fieldname": "scarStrat",
-      "datacolumn": "scarStrat",
       "transforms": {
         "vocabulary": "scarstrat"
       },
@@ -155,7 +148,6 @@
     },
     {
       "fieldname": "duration",
-      "datacolumn": "duration",
       "transforms": {
       },
       "source_type": "na",
@@ -174,7 +166,6 @@
     },
     {
       "fieldname": "durationUnit",
-      "datacolumn": "durationUnit",
       "transforms": {
         "vocabulary": "durationunit"
       },
@@ -194,7 +185,6 @@
     },
     {
       "fieldname": "extraSeeds",
-      "datacolumn": "extraSeeds",
       "transforms": {
         "special": [
           "boolean"
@@ -215,7 +205,6 @@
     },
     {
       "fieldname": "spores",
-      "datacolumn": "spores",
       "transforms": {
         "special": [
           "boolean"
@@ -236,7 +225,6 @@
     },
     {
       "fieldname": "cuttingType",
-      "datacolumn": "cuttingType",
       "transforms": {
         "vocabulary": "cuttingtype"
       },
@@ -255,7 +243,6 @@
     },
     {
       "fieldname": "hormone",
-      "datacolumn": "hormone",
       "transforms": {
         "vocabulary": "propHormones"
       },
@@ -274,7 +261,6 @@
     },
     {
       "fieldname": "concentration",
-      "datacolumn": "concentration",
       "transforms": {
       },
       "source_type": "na",
@@ -292,7 +278,6 @@
     },
     {
       "fieldname": "wounded",
-      "datacolumn": "wounded",
       "transforms": {
         "special": [
           "boolean"
@@ -313,7 +298,6 @@
     },
     {
       "fieldname": "plantType",
-      "datacolumn": "plantType",
       "transforms": {
         "vocabulary": "propPlantType"
       },
@@ -332,7 +316,6 @@
     },
     {
       "fieldname": "activityDate",
-      "datacolumn": "activityDate",
       "transforms": {
       },
       "source_type": "na",
@@ -351,7 +334,6 @@
     },
     {
       "fieldname": "activityType",
-      "datacolumn": "activityType",
       "transforms": {
         "vocabulary": "propActivityType"
       },
@@ -371,7 +353,6 @@
     },
     {
       "fieldname": "propCount",
-      "datacolumn": "propCount",
       "transforms": {
       },
       "source_type": "na",
@@ -390,7 +371,6 @@
     },
     {
       "fieldname": "medium",
-      "datacolumn": "medium",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -413,7 +393,6 @@
     },
     {
       "fieldname": "potSize",
-      "datacolumn": "potSize",
       "transforms": {
         "vocabulary": "potsize"
       },
@@ -433,7 +412,6 @@
     },
     {
       "fieldname": "nurseryLocation",
-      "datacolumn": "nurseryLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -456,7 +434,6 @@
     },
     {
       "fieldname": "conditions",
-      "datacolumn": "conditions",
       "transforms": {
         "vocabulary": "propConditions"
       },
@@ -476,7 +453,6 @@
     },
     {
       "fieldname": "chemicalApplied",
-      "datacolumn": "chemicalApplied",
       "transforms": {
         "vocabulary": "propChemicals"
       },
@@ -496,7 +472,6 @@
     },
     {
       "fieldname": "activityConcentration",
-      "datacolumn": "activityConcentration",
       "transforms": {
       },
       "source_type": "na",
@@ -515,7 +490,6 @@
     },
     {
       "fieldname": "activityComments",
-      "datacolumn": "activityComments",
       "transforms": {
       },
       "source_type": "na",
@@ -534,7 +508,6 @@
     },
     {
       "fieldname": "germinationDate",
-      "datacolumn": "germinationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -552,7 +525,6 @@
     },
     {
       "fieldname": "successRate",
-      "datacolumn": "successRate",
       "transforms": {
       },
       "source_type": "na",

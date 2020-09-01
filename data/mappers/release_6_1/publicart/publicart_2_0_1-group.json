@@ -17,7 +17,6 @@
   "mappings": [
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -35,7 +34,6 @@
     },
     {
       "fieldname": "responsibleDepartment",
-      "datacolumn": "responsibleDepartment",
       "transforms": {
         "vocabulary": "program"
       },
@@ -54,7 +52,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -76,7 +73,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -98,7 +94,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -120,7 +115,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -142,7 +136,6 @@
     },
     {
       "fieldname": "groupEarliestSingleDate",
-      "datacolumn": "groupEarliestSingleDate",
       "transforms": {
       },
       "source_type": "na",
@@ -160,7 +153,6 @@
     },
     {
       "fieldname": "groupLatestDate",
-      "datacolumn": "groupLatestDate",
       "transforms": {
       },
       "source_type": "na",
@@ -178,7 +170,6 @@
     },
     {
       "fieldname": "scopeNote",
-      "datacolumn": "scopeNote",
       "transforms": {
       },
       "source_type": "na",

@@ -53,7 +53,6 @@
   "mappings": [
     {
       "fieldname": "exhibitionNumber",
-      "datacolumn": "exhibitionNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -71,7 +70,6 @@
     },
     {
       "fieldname": "type",
-      "datacolumn": "type",
       "transforms": {
         "vocabulary": "exhibitiontype"
       },
@@ -90,7 +88,6 @@
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -108,7 +105,6 @@
     },
     {
       "fieldname": "sponsor",
-      "datacolumn": "sponsorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -130,7 +126,6 @@
     },
     {
       "fieldname": "sponsor",
-      "datacolumn": "sponsorPersonUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -152,7 +147,6 @@
     },
     {
       "fieldname": "sponsor",
-      "datacolumn": "sponsorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -174,7 +168,6 @@
     },
     {
       "fieldname": "sponsor",
-      "datacolumn": "sponsorOrganizationUlan",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -196,7 +189,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -218,7 +210,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerPersonUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -240,7 +231,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -262,7 +252,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerOrganizationUlan",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -284,7 +273,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -307,7 +295,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueOrganizationUlan",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -330,7 +317,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -353,7 +339,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -376,7 +361,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venuePlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -399,7 +383,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venuePlaceTgn",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -422,7 +405,6 @@
     },
     {
       "fieldname": "venueOpeningDate",
-      "datacolumn": "venueOpeningDate",
       "transforms": {
       },
       "source_type": "na",
@@ -441,7 +423,6 @@
     },
     {
       "fieldname": "venueClosingDate",
-      "datacolumn": "venueClosingDate",
       "transforms": {
       },
       "source_type": "na",
@@ -460,7 +441,6 @@
     },
     {
       "fieldname": "venueAttendance",
-      "datacolumn": "venueAttendance",
       "transforms": {
       },
       "source_type": "na",
@@ -479,7 +459,6 @@
     },
     {
       "fieldname": "venueUrl",
-      "datacolumn": "venueUrl",
       "transforms": {
       },
       "source_type": "na",
@@ -498,7 +477,6 @@
     },
     {
       "fieldname": "workingGroupTitle",
-      "datacolumn": "workingGroupTitle",
       "transforms": {
       },
       "source_type": "na",
@@ -517,7 +495,6 @@
     },
     {
       "fieldname": "workingGroupNote",
-      "datacolumn": "workingGroupNote",
       "transforms": {
       },
       "source_type": "na",
@@ -536,7 +513,6 @@
     },
     {
       "fieldname": "exhibitionPerson",
-      "datacolumn": "exhibitionPersonPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -561,7 +537,6 @@
     },
     {
       "fieldname": "exhibitionPerson",
-      "datacolumn": "exhibitionPersonPersonUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -586,7 +561,6 @@
     },
     {
       "fieldname": "exhibitionPerson",
-      "datacolumn": "exhibitionPersonOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -611,7 +585,6 @@
     },
     {
       "fieldname": "exhibitionPerson",
-      "datacolumn": "exhibitionPersonOrganizationUlan",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -636,7 +609,6 @@
     },
     {
       "fieldname": "exhibitionPersonRole",
-      "datacolumn": "exhibitionPersonRole",
       "transforms": {
         "vocabulary": "exhibitionpersonrole"
       },
@@ -658,7 +630,6 @@
     },
     {
       "fieldname": "planningNote",
-      "datacolumn": "planningNote",
       "transforms": {
       },
       "source_type": "na",
@@ -676,7 +647,6 @@
     },
     {
       "fieldname": "curatorialNote",
-      "datacolumn": "curatorialNote",
       "transforms": {
       },
       "source_type": "na",
@@ -694,7 +664,6 @@
     },
     {
       "fieldname": "generalNote",
-      "datacolumn": "generalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -712,7 +681,6 @@
     },
     {
       "fieldname": "boilerplateText",
-      "datacolumn": "boilerplateText",
       "transforms": {
       },
       "source_type": "na",
@@ -730,7 +698,6 @@
     },
     {
       "fieldname": "galleryRotationName",
-      "datacolumn": "galleryRotationName",
       "transforms": {
       },
       "source_type": "na",
@@ -749,7 +716,6 @@
     },
     {
       "fieldname": "galleryRotationStartDateGroup",
-      "datacolumn": "galleryRotationStartDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -768,7 +734,6 @@
     },
     {
       "fieldname": "galleryRotationEndDateGroup",
-      "datacolumn": "galleryRotationEndDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -787,7 +752,6 @@
     },
     {
       "fieldname": "galleryRotationNote",
-      "datacolumn": "galleryRotationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -806,7 +770,6 @@
     },
     {
       "fieldname": "exhibitionReference",
-      "datacolumn": "exhibitionReferenceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -829,7 +792,6 @@
     },
     {
       "fieldname": "exhibitionReference",
-      "datacolumn": "exhibitionReferenceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -852,7 +814,6 @@
     },
     {
       "fieldname": "exhibitionReferenceType",
-      "datacolumn": "exhibitionReferenceType",
       "transforms": {
         "vocabulary": "exhibitionreferencetype"
       },
@@ -872,7 +833,6 @@
     },
     {
       "fieldname": "exhibitionReferenceNote",
-      "datacolumn": "exhibitionReferenceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -891,7 +851,6 @@
     },
     {
       "fieldname": "exhibitionSectionName",
-      "datacolumn": "exhibitionSectionName",
       "transforms": {
       },
       "source_type": "na",
@@ -910,7 +869,6 @@
     },
     {
       "fieldname": "exhibitionSectionLocation",
-      "datacolumn": "exhibitionSectionLocation",
       "transforms": {
       },
       "source_type": "na",
@@ -929,7 +887,6 @@
     },
     {
       "fieldname": "exhibitionSectionObjects",
-      "datacolumn": "exhibitionSectionObjects",
       "transforms": {
       },
       "source_type": "na",
@@ -948,7 +905,6 @@
     },
     {
       "fieldname": "exhibitionSectionNote",
-      "datacolumn": "exhibitionSectionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -967,7 +923,6 @@
     },
     {
       "fieldname": "exhibitionStatus",
-      "datacolumn": "exhibitionStatus",
       "transforms": {
         "vocabulary": "exhibitionstatus"
       },
@@ -987,7 +942,6 @@
     },
     {
       "fieldname": "exhibitionStatusDate",
-      "datacolumn": "exhibitionStatusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -1006,7 +960,6 @@
     },
     {
       "fieldname": "exhibitionStatusNote",
-      "datacolumn": "exhibitionStatusNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1025,7 +978,6 @@
     },
     {
       "fieldname": "exhibitionObjectNumber",
-      "datacolumn": "exhibitionObjectNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -1044,7 +996,6 @@
     },
     {
       "fieldname": "exhibitionObjectName",
-      "datacolumn": "exhibitionObjectName",
       "transforms": {
       },
       "source_type": "na",
@@ -1063,7 +1014,6 @@
     },
     {
       "fieldname": "exhibitionObjectConsCheckDate",
-      "datacolumn": "exhibitionObjectConsCheckDate",
       "transforms": {
       },
       "source_type": "na",
@@ -1082,7 +1032,6 @@
     },
     {
       "fieldname": "exhibitionObjectConsTreatment",
-      "datacolumn": "exhibitionObjectConsTreatment",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1103,7 +1052,6 @@
     },
     {
       "fieldname": "exhibitionObjectSection",
-      "datacolumn": "exhibitionObjectSection",
       "transforms": {
       },
       "source_type": "na",
@@ -1122,7 +1070,6 @@
     },
     {
       "fieldname": "exhibitionObjectCase",
-      "datacolumn": "exhibitionObjectCase",
       "transforms": {
       },
       "source_type": "na",
@@ -1141,7 +1088,6 @@
     },
     {
       "fieldname": "exhibitionObjectSeqNum",
-      "datacolumn": "exhibitionObjectSeqNum",
       "transforms": {
       },
       "source_type": "na",
@@ -1160,7 +1106,6 @@
     },
     {
       "fieldname": "exhibitionObjectRotation",
-      "datacolumn": "exhibitionObjectRotation",
       "transforms": {
       },
       "source_type": "na",
@@ -1179,7 +1124,6 @@
     },
     {
       "fieldname": "exhibitionObjectNote",
-      "datacolumn": "exhibitionObjectNote",
       "transforms": {
       },
       "source_type": "na",

@@ -147,7 +147,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -166,7 +165,6 @@
     },
     {
       "fieldname": "termName",
-      "datacolumn": "termName",
       "transforms": {
       },
       "source_type": "na",
@@ -185,7 +183,6 @@
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -204,7 +201,6 @@
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -226,7 +222,6 @@
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -247,7 +242,6 @@
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "materialtermflag"
       },
@@ -267,7 +261,6 @@
     },
     {
       "fieldname": "historicalStatus",
-      "datacolumn": "historicalStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -289,7 +282,6 @@
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -309,7 +301,6 @@
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -331,7 +322,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -354,7 +344,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceShared",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -377,7 +366,6 @@
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -396,7 +384,6 @@
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -415,7 +402,6 @@
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -434,7 +420,6 @@
     },
     {
       "fieldname": "publishTo",
-      "datacolumn": "publishTo",
       "transforms": {
         "vocabulary": "publishto"
       },
@@ -453,7 +438,6 @@
     },
     {
       "fieldname": "materialCompositionFamilyName",
-      "datacolumn": "materialCompositionFamilyNameMaterialclassification",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -476,7 +460,6 @@
     },
     {
       "fieldname": "materialCompositionFamilyName",
-      "datacolumn": "materialCompositionFamilyNameSharedmaterialclassification",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -499,7 +482,6 @@
     },
     {
       "fieldname": "materialCompositionClassName",
-      "datacolumn": "materialCompositionClassNameMaterialclassification",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -522,7 +504,6 @@
     },
     {
       "fieldname": "materialCompositionClassName",
-      "datacolumn": "materialCompositionClassNameSharedmaterialclassification",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -545,7 +526,6 @@
     },
     {
       "fieldname": "materialCompositionGenericName",
-      "datacolumn": "materialCompositionGenericNameMaterialclassification",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -568,7 +548,6 @@
     },
     {
       "fieldname": "materialCompositionGenericName",
-      "datacolumn": "materialCompositionGenericNameSharedmaterialclassification",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -591,7 +570,6 @@
     },
     {
       "fieldname": "description",
-      "datacolumn": "description",
       "transforms": {
       },
       "source_type": "na",
@@ -609,7 +587,6 @@
     },
     {
       "fieldname": "typicalUse",
-      "datacolumn": "typicalUse",
       "transforms": {
         "vocabulary": "materialuse"
       },
@@ -628,7 +605,6 @@
     },
     {
       "fieldname": "discontinued",
-      "datacolumn": "discontinued",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -647,7 +623,6 @@
     },
     {
       "fieldname": "discontinuedBy",
-      "datacolumn": "discontinuedByLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -669,7 +644,6 @@
     },
     {
       "fieldname": "discontinuedBy",
-      "datacolumn": "discontinuedByShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -691,7 +665,6 @@
     },
     {
       "fieldname": "discontinuedDate",
-      "datacolumn": "discontinuedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -709,7 +682,6 @@
     },
     {
       "fieldname": "productionDate",
-      "datacolumn": "productionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -727,7 +699,6 @@
     },
     {
       "fieldname": "productionNote",
-      "datacolumn": "productionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -745,7 +716,6 @@
     },
     {
       "fieldname": "materialProductionOrganization",
-      "datacolumn": "materialProductionOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -768,7 +738,6 @@
     },
     {
       "fieldname": "materialProductionOrganization",
-      "datacolumn": "materialProductionOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -791,7 +760,6 @@
     },
     {
       "fieldname": "materialProductionOrganizationRole",
-      "datacolumn": "materialProductionOrganizationRole",
       "transforms": {
         "vocabulary": "materialproductionrole"
       },
@@ -811,7 +779,6 @@
     },
     {
       "fieldname": "materialProductionPerson",
-      "datacolumn": "materialProductionPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -834,7 +801,6 @@
     },
     {
       "fieldname": "materialProductionPerson",
-      "datacolumn": "materialProductionPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -857,7 +823,6 @@
     },
     {
       "fieldname": "materialProductionPersonRole",
-      "datacolumn": "materialProductionPersonRole",
       "transforms": {
         "vocabulary": "materialproductionrole"
       },
@@ -877,7 +842,6 @@
     },
     {
       "fieldname": "materialProductionPlace",
-      "datacolumn": "materialProductionPlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -900,7 +864,6 @@
     },
     {
       "fieldname": "materialProductionPlace",
-      "datacolumn": "materialProductionPlaceShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -923,7 +886,6 @@
     },
     {
       "fieldname": "materialProductionPlaceRole",
-      "datacolumn": "materialProductionPlaceRole",
       "transforms": {
         "vocabulary": "materialproductionrole"
       },
@@ -943,7 +905,6 @@
     },
     {
       "fieldname": "featuredApplication",
-      "datacolumn": "featuredApplicationLocal",
       "transforms": {
         "authority": [
           "workauthorities",
@@ -966,7 +927,6 @@
     },
     {
       "fieldname": "featuredApplication",
-      "datacolumn": "featuredApplicationShared",
       "transforms": {
         "authority": [
           "workauthorities",
@@ -989,7 +949,6 @@
     },
     {
       "fieldname": "featuredApplicationNote",
-      "datacolumn": "featuredApplicationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1008,7 +967,6 @@
     },
     {
       "fieldname": "materialCitationSource",
-      "datacolumn": "materialCitationSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -1031,7 +989,6 @@
     },
     {
       "fieldname": "materialCitationSource",
-      "datacolumn": "materialCitationSourceShared",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -1054,7 +1011,6 @@
     },
     {
       "fieldname": "materialCitationSourceDetail",
-      "datacolumn": "materialCitationSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -1073,7 +1029,6 @@
     },
     {
       "fieldname": "externalUrl",
-      "datacolumn": "externalUrl",
       "transforms": {
       },
       "source_type": "na",
@@ -1092,7 +1047,6 @@
     },
     {
       "fieldname": "externalUrlNote",
-      "datacolumn": "externalUrlNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1111,7 +1065,6 @@
     },
     {
       "fieldname": "additionalResource",
-      "datacolumn": "additionalResource",
       "transforms": {
         "vocabulary": "materialresource"
       },
@@ -1131,7 +1084,6 @@
     },
     {
       "fieldname": "additionalResourceNote",
-      "datacolumn": "additionalResourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1150,7 +1102,6 @@
     },
     {
       "fieldname": "materialTermAttributionContributingOrganization",
-      "datacolumn": "materialTermAttributionContributingOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1173,7 +1124,6 @@
     },
     {
       "fieldname": "materialTermAttributionContributingOrganization",
-      "datacolumn": "materialTermAttributionContributingOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1196,7 +1146,6 @@
     },
     {
       "fieldname": "materialTermAttributionContributingPerson",
-      "datacolumn": "materialTermAttributionContributingPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1219,7 +1168,6 @@
     },
     {
       "fieldname": "materialTermAttributionContributingPerson",
-      "datacolumn": "materialTermAttributionContributingPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1242,7 +1190,6 @@
     },
     {
       "fieldname": "materialTermAttributionContributingDate",
-      "datacolumn": "materialTermAttributionContributingDate",
       "transforms": {
       },
       "source_type": "na",
@@ -1261,7 +1208,6 @@
     },
     {
       "fieldname": "materialTermAttributionEditingOrganization",
-      "datacolumn": "materialTermAttributionEditingOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1284,7 +1230,6 @@
     },
     {
       "fieldname": "materialTermAttributionEditingOrganization",
-      "datacolumn": "materialTermAttributionEditingOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1307,7 +1252,6 @@
     },
     {
       "fieldname": "materialTermAttributionEditingPerson",
-      "datacolumn": "materialTermAttributionEditingPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1330,7 +1274,6 @@
     },
     {
       "fieldname": "materialTermAttributionEditingPerson",
-      "datacolumn": "materialTermAttributionEditingPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1353,7 +1296,6 @@
     },
     {
       "fieldname": "materialTermAttributionEditingNote",
-      "datacolumn": "materialTermAttributionEditingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1372,7 +1314,6 @@
     },
     {
       "fieldname": "materialTermAttributionEditingDate",
-      "datacolumn": "materialTermAttributionEditingDate",
       "transforms": {
       },
       "source_type": "na",
@@ -1391,7 +1332,6 @@
     },
     {
       "fieldname": "commonForm",
-      "datacolumn": "commonForm",
       "transforms": {
         "vocabulary": "materialform"
       },
@@ -1410,7 +1350,6 @@
     },
     {
       "fieldname": "formType",
-      "datacolumn": "formType",
       "transforms": {
         "vocabulary": "materialformtype"
       },
@@ -1430,7 +1369,6 @@
     },
     {
       "fieldname": "typicalSize",
-      "datacolumn": "typicalSize",
       "transforms": {
       },
       "source_type": "na",
@@ -1449,7 +1387,6 @@
     },
     {
       "fieldname": "dimension",
-      "datacolumn": "dimension",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1482,7 +1419,6 @@
     },
     {
       "fieldname": "measurementUnit",
-      "datacolumn": "measurementUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1518,7 +1454,6 @@
     },
     {
       "fieldname": "value",
-      "datacolumn": "value",
       "transforms": {
       },
       "source_type": "na",
@@ -1539,7 +1474,6 @@
     },
     {
       "fieldname": "formNote",
-      "datacolumn": "formNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1557,7 +1491,6 @@
     },
     {
       "fieldname": "acousticalPropertyType",
-      "datacolumn": "acousticalPropertyType",
       "transforms": {
         "vocabulary": "acousticalproperties"
       },
@@ -1577,7 +1510,6 @@
     },
     {
       "fieldname": "acousticalPropertyNote",
-      "datacolumn": "acousticalPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1596,7 +1528,6 @@
     },
     {
       "fieldname": "durabilityPropertyType",
-      "datacolumn": "durabilityPropertyType",
       "transforms": {
         "vocabulary": "durabilityproperties"
       },
@@ -1616,7 +1547,6 @@
     },
     {
       "fieldname": "durabilityPropertyNote",
-      "datacolumn": "durabilityPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1635,7 +1565,6 @@
     },
     {
       "fieldname": "electricalPropertyType",
-      "datacolumn": "electricalPropertyType",
       "transforms": {
         "vocabulary": "electricalproperties"
       },
@@ -1655,7 +1584,6 @@
     },
     {
       "fieldname": "electricalPropertyNote",
-      "datacolumn": "electricalPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1674,7 +1602,6 @@
     },
     {
       "fieldname": "hygrothermalPropertyType",
-      "datacolumn": "hygrothermalPropertyType",
       "transforms": {
         "vocabulary": "hygrothermalproperties"
       },
@@ -1694,7 +1621,6 @@
     },
     {
       "fieldname": "hygrothermalPropertyNote",
-      "datacolumn": "hygrothermalPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1713,7 +1639,6 @@
     },
     {
       "fieldname": "mechanicalPropertyType",
-      "datacolumn": "mechanicalPropertyType",
       "transforms": {
         "vocabulary": "mechanicalproperties"
       },
@@ -1733,7 +1658,6 @@
     },
     {
       "fieldname": "mechanicalPropertyNote",
-      "datacolumn": "mechanicalPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1752,7 +1676,6 @@
     },
     {
       "fieldname": "opticalPropertyType",
-      "datacolumn": "opticalPropertyType",
       "transforms": {
         "vocabulary": "opticalproperties"
       },
@@ -1772,7 +1695,6 @@
     },
     {
       "fieldname": "opticalPropertyNote",
-      "datacolumn": "opticalPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1791,7 +1713,6 @@
     },
     {
       "fieldname": "sensorialPropertyType",
-      "datacolumn": "sensorialPropertyType",
       "transforms": {
         "vocabulary": "sensorialproperties"
       },
@@ -1811,7 +1732,6 @@
     },
     {
       "fieldname": "sensorialPropertyNote",
-      "datacolumn": "sensorialPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1830,7 +1750,6 @@
     },
     {
       "fieldname": "smartMaterialPropertyType",
-      "datacolumn": "smartMaterialPropertyType",
       "transforms": {
         "vocabulary": "smartmaterialproperties"
       },
@@ -1850,7 +1769,6 @@
     },
     {
       "fieldname": "smartMaterialPropertyNote",
-      "datacolumn": "smartMaterialPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1869,7 +1787,6 @@
     },
     {
       "fieldname": "additionalPropertyType",
-      "datacolumn": "additionalPropertyType",
       "transforms": {
         "vocabulary": "additionalproperties"
       },
@@ -1889,7 +1806,6 @@
     },
     {
       "fieldname": "additionalPropertyNote",
-      "datacolumn": "additionalPropertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1908,7 +1824,6 @@
     },
     {
       "fieldname": "propertyNote",
-      "datacolumn": "propertyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1926,7 +1841,6 @@
     },
     {
       "fieldname": "recycledContent",
-      "datacolumn": "recycledContent",
       "transforms": {
       },
       "source_type": "na",
@@ -1945,7 +1859,6 @@
     },
     {
       "fieldname": "recycledContentHigh",
-      "datacolumn": "recycledContentHigh",
       "transforms": {
       },
       "source_type": "na",
@@ -1964,7 +1877,6 @@
     },
     {
       "fieldname": "recycledContentQualifier",
-      "datacolumn": "recycledContentQualifier",
       "transforms": {
         "vocabulary": "recycledcontentqualifiers"
       },
@@ -1984,7 +1896,6 @@
     },
     {
       "fieldname": "lifecycleComponent",
-      "datacolumn": "lifecycleComponent",
       "transforms": {
         "vocabulary": "lifecyclecomponents"
       },
@@ -2004,7 +1915,6 @@
     },
     {
       "fieldname": "lifecycleComponentNote",
-      "datacolumn": "lifecycleComponentNote",
       "transforms": {
       },
       "source_type": "na",
@@ -2023,7 +1933,6 @@
     },
     {
       "fieldname": "embodiedEnergyValue",
-      "datacolumn": "embodiedEnergyValue",
       "transforms": {
       },
       "source_type": "na",
@@ -2042,7 +1951,6 @@
     },
     {
       "fieldname": "embodiedEnergyValueHigh",
-      "datacolumn": "embodiedEnergyValueHigh",
       "transforms": {
       },
       "source_type": "na",
@@ -2061,7 +1969,6 @@
     },
     {
       "fieldname": "embodiedEnergyUnit",
-      "datacolumn": "embodiedEnergyUnit",
       "transforms": {
         "vocabulary": "energyunits"
       },
@@ -2081,7 +1988,6 @@
     },
     {
       "fieldname": "embodiedEnergyNote",
-      "datacolumn": "embodiedEnergyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -2100,7 +2006,6 @@
     },
     {
       "fieldname": "certificationProgram",
-      "datacolumn": "certificationProgram",
       "transforms": {
         "vocabulary": "ecologicalcertifications"
       },
@@ -2120,7 +2025,6 @@
     },
     {
       "fieldname": "certificationCreditNote",
-      "datacolumn": "certificationCreditNote",
       "transforms": {
       },
       "source_type": "na",
@@ -2139,7 +2043,6 @@
     },
     {
       "fieldname": "ecologyNote",
-      "datacolumn": "ecologyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -2157,7 +2060,6 @@
     },
     {
       "fieldname": "castingProcess",
-      "datacolumn": "castingProcess",
       "transforms": {
         "vocabulary": "castingprocesses"
       },
@@ -2176,7 +2078,6 @@
     },
     {
       "fieldname": "joiningProcess",
-      "datacolumn": "joiningProcess",
       "transforms": {
         "vocabulary": "joiningprocesses"
       },
@@ -2195,7 +2096,6 @@
     },
     {
       "fieldname": "moldingProcess",
-      "datacolumn": "moldingProcess",
       "transforms": {
         "vocabulary": "moldingprocesses"
       },
@@ -2214,7 +2114,6 @@
     },
     {
       "fieldname": "surfacingProcess",
-      "datacolumn": "surfacingProcess",
       "transforms": {
         "vocabulary": "surfacingprocesses"
       },
@@ -2233,7 +2132,6 @@
     },
     {
       "fieldname": "deformingProcess",
-      "datacolumn": "deformingProcess",
       "transforms": {
         "vocabulary": "deformingprocesses"
       },
@@ -2252,7 +2150,6 @@
     },
     {
       "fieldname": "machiningProcess",
-      "datacolumn": "machiningProcess",
       "transforms": {
         "vocabulary": "machiningprocesses"
       },
@@ -2271,7 +2168,6 @@
     },
     {
       "fieldname": "rapidPrototypingProcess",
-      "datacolumn": "rapidPrototypingProcess",
       "transforms": {
         "vocabulary": "rapidprototypingprocesses"
       },
@@ -2290,7 +2186,6 @@
     },
     {
       "fieldname": "additionalProcess",
-      "datacolumn": "additionalProcess",
       "transforms": {
         "vocabulary": "additionalprocesses"
       },
@@ -2310,7 +2205,6 @@
     },
     {
       "fieldname": "additionalProcessNote",
-      "datacolumn": "additionalProcessNote",
       "transforms": {
       },
       "source_type": "na",
@@ -2329,7 +2223,6 @@
     },
     {
       "fieldname": "processNote",
-      "datacolumn": "processNote",
       "transforms": {
       },
       "source_type": "na",

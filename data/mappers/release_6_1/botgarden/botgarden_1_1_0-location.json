@@ -25,7 +25,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -44,7 +43,6 @@
     },
     {
       "fieldname": "termName",
-      "datacolumn": "termName",
       "transforms": {
       },
       "source_type": "na",
@@ -63,7 +61,6 @@
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -82,7 +79,6 @@
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -104,7 +100,6 @@
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -125,7 +120,6 @@
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "locationtermflag"
       },
@@ -145,7 +139,6 @@
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -165,7 +158,6 @@
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -187,7 +179,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSource",
       "transforms": {
       },
       "source_type": "na",
@@ -206,7 +197,6 @@
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -225,7 +215,6 @@
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -244,7 +233,6 @@
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -263,7 +251,6 @@
     },
     {
       "fieldname": "locationType",
-      "datacolumn": "locationType",
       "transforms": {
         "vocabulary": "locationtype"
       },
@@ -282,7 +269,6 @@
     },
     {
       "fieldname": "securityNote",
-      "datacolumn": "securityNote",
       "transforms": {
       },
       "source_type": "na",
@@ -300,7 +286,6 @@
     },
     {
       "fieldname": "address",
-      "datacolumn": "address",
       "transforms": {
       },
       "source_type": "na",
@@ -318,7 +303,6 @@
     },
     {
       "fieldname": "accessNote",
-      "datacolumn": "accessNote",
       "transforms": {
       },
       "source_type": "na",
@@ -336,7 +320,6 @@
     },
     {
       "fieldname": "conditionNote",
-      "datacolumn": "conditionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -355,7 +338,6 @@
     },
     {
       "fieldname": "conditionNoteDate",
-      "datacolumn": "conditionNoteDate",
       "transforms": {
       },
       "source_type": "na",

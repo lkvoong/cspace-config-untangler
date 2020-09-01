@@ -25,7 +25,6 @@
   "mappings": [
     {
       "fieldname": "collector",
-      "datacolumn": "collector",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -47,7 +46,6 @@
     },
     {
       "fieldname": "loanOutDate",
-      "datacolumn": "loanOutDate",
       "transforms": {
       },
       "source_type": "na",
@@ -65,7 +63,6 @@
     },
     {
       "fieldname": "loanOutNumber",
-      "datacolumn": "loanOutNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -83,7 +80,6 @@
     },
     {
       "fieldname": "sterile",
-      "datacolumn": "sterile",
       "transforms": {
         "special": [
           "boolean"
@@ -104,7 +100,6 @@
     },
     {
       "fieldname": "fertile",
-      "datacolumn": "fertile",
       "transforms": {
         "special": [
           "boolean"
@@ -125,7 +120,6 @@
     },
     {
       "fieldname": "flowering",
-      "datacolumn": "flowering",
       "transforms": {
         "special": [
           "boolean"
@@ -146,7 +140,6 @@
     },
     {
       "fieldname": "fruiting",
-      "datacolumn": "fruiting",
       "transforms": {
         "special": [
           "boolean"
@@ -167,7 +160,6 @@
     },
     {
       "fieldname": "inSpore",
-      "datacolumn": "inSpore",
       "transforms": {
         "special": [
           "boolean"
@@ -188,7 +180,6 @@
     },
     {
       "fieldname": "hortWild",
-      "datacolumn": "hortWild",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -207,7 +198,6 @@
     },
     {
       "fieldname": "gardenLocation",
-      "datacolumn": "gardenLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -229,7 +219,6 @@
     },
     {
       "fieldname": "loanPurpose",
-      "datacolumn": "loanPurpose",
       "transforms": {
       },
       "source_type": "na",
@@ -247,7 +236,6 @@
     },
     {
       "fieldname": "loanOutNote",
-      "datacolumn": "loanOutNote",
       "transforms": {
       },
       "source_type": "na",
@@ -265,7 +253,6 @@
     },
     {
       "fieldname": "fieldCollectionNote",
-      "datacolumn": "fieldCollectionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -283,7 +270,6 @@
     },
     {
       "fieldname": "annotation",
-      "datacolumn": "annotation",
       "transforms": {
       },
       "source_type": "na",
@@ -301,7 +287,6 @@
     },
     {
       "fieldname": "borrower",
-      "datacolumn": "borrower",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -323,7 +308,6 @@
     },
     {
       "fieldname": "numLent",
-      "datacolumn": "numLent",
       "transforms": {
       },
       "source_type": "na",
@@ -341,7 +325,6 @@
     },
     {
       "fieldname": "sheetAccessionNumber",
-      "datacolumn": "sheetAccessionNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -359,7 +342,6 @@
     },
     {
       "fieldname": "lendersAuthorizer",
-      "datacolumn": "lendersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -381,7 +363,6 @@
     },
     {
       "fieldname": "reviewComplete",
-      "datacolumn": "reviewComplete",
       "transforms": {
         "special": [
           "boolean"
@@ -402,7 +383,6 @@
     },
     {
       "fieldname": "labelRequested",
-      "datacolumn": "labelRequested",
       "transforms": {
       },
       "source_type": "optionlist",

@@ -40,7 +40,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -59,7 +58,6 @@
     },
     {
       "fieldname": "termName",
-      "datacolumn": "termName",
       "transforms": {
       },
       "source_type": "na",
@@ -78,7 +76,6 @@
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -97,7 +94,6 @@
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -119,7 +115,6 @@
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -144,7 +139,6 @@
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "placetermflag"
       },
@@ -164,7 +158,6 @@
     },
     {
       "fieldname": "historicalStatus",
-      "datacolumn": "historicalStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -185,7 +178,6 @@
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -205,7 +197,6 @@
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -227,7 +218,6 @@
     },
     {
       "fieldname": "nameAbbrev",
-      "datacolumn": "nameAbbrev",
       "transforms": {
       },
       "source_type": "na",
@@ -246,7 +236,6 @@
     },
     {
       "fieldname": "nameNote",
-      "datacolumn": "nameNote",
       "transforms": {
       },
       "source_type": "na",
@@ -265,7 +254,6 @@
     },
     {
       "fieldname": "nameDateGroup",
-      "datacolumn": "nameDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -284,7 +272,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -307,7 +294,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -330,7 +316,6 @@
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -349,7 +334,6 @@
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -368,7 +352,6 @@
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -387,7 +370,6 @@
     },
     {
       "fieldname": "placementType",
-      "datacolumn": "placementType",
       "transforms": {
         "vocabulary": "placementtypes"
       },
@@ -406,7 +388,6 @@
     },
     {
       "fieldname": "publicArtPlaceType",
-      "datacolumn": "publicArtPlaceType",
       "transforms": {
         "vocabulary": "placetypes"
       },
@@ -425,7 +406,6 @@
     },
     {
       "fieldname": "placementEnvironment",
-      "datacolumn": "placementEnvironment",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -445,7 +425,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -468,7 +447,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -491,7 +469,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -514,7 +491,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -537,7 +513,6 @@
     },
     {
       "fieldname": "ownerType",
-      "datacolumn": "ownerType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -557,7 +532,6 @@
     },
     {
       "fieldname": "ownershipDateGroup",
-      "datacolumn": "ownershipDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -576,7 +550,6 @@
     },
     {
       "fieldname": "ownershipNote",
-      "datacolumn": "ownershipNote",
       "transforms": {
       },
       "source_type": "na",
@@ -595,7 +568,6 @@
     },
     {
       "fieldname": "placeNote",
-      "datacolumn": "placeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -613,7 +585,6 @@
     },
     {
       "fieldname": "addressPlace1",
-      "datacolumn": "addressPlace1",
       "transforms": {
       },
       "source_type": "na",
@@ -632,7 +603,6 @@
     },
     {
       "fieldname": "addressPlace2",
-      "datacolumn": "addressPlace2",
       "transforms": {
       },
       "source_type": "na",
@@ -651,7 +621,6 @@
     },
     {
       "fieldname": "addressMunicipality",
-      "datacolumn": "addressMunicipalityLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -674,7 +643,6 @@
     },
     {
       "fieldname": "addressMunicipality",
-      "datacolumn": "addressMunicipalityShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -697,7 +665,6 @@
     },
     {
       "fieldname": "addressStateOrProvince",
-      "datacolumn": "addressStateOrProvinceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -720,7 +687,6 @@
     },
     {
       "fieldname": "addressStateOrProvince",
-      "datacolumn": "addressStateOrProvinceShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -743,7 +709,6 @@
     },
     {
       "fieldname": "addressPostCode",
-      "datacolumn": "addressPostCode",
       "transforms": {
       },
       "source_type": "na",
@@ -762,7 +727,6 @@
     },
     {
       "fieldname": "addressCountry",
-      "datacolumn": "addressCountryLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -785,7 +749,6 @@
     },
     {
       "fieldname": "addressCountry",
-      "datacolumn": "addressCountryShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -808,7 +771,6 @@
     },
     {
       "fieldname": "addressType",
-      "datacolumn": "addressType",
       "transforms": {
         "vocabulary": "addresstype"
       },
@@ -828,7 +790,6 @@
     },
     {
       "fieldname": "decimalLatitude",
-      "datacolumn": "decimalLatitude",
       "transforms": {
       },
       "source_type": "na",
@@ -847,7 +808,6 @@
     },
     {
       "fieldname": "decimalLongitude",
-      "datacolumn": "decimalLongitude",
       "transforms": {
       },
       "source_type": "na",
@@ -866,7 +826,6 @@
     },
     {
       "fieldname": "geodeticDatum",
-      "datacolumn": "geodeticDatum",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -888,7 +847,6 @@
     },
     {
       "fieldname": "coordUncertaintyInMeters",
-      "datacolumn": "coordUncertaintyInMeters",
       "transforms": {
       },
       "source_type": "na",
@@ -907,7 +865,6 @@
     },
     {
       "fieldname": "coordPrecision",
-      "datacolumn": "coordPrecision",
       "transforms": {
       },
       "source_type": "na",
@@ -926,7 +883,6 @@
     },
     {
       "fieldname": "pointRadiusSpatialFit",
-      "datacolumn": "pointRadiusSpatialFit",
       "transforms": {
       },
       "source_type": "na",
@@ -945,7 +901,6 @@
     },
     {
       "fieldname": "footprintWKT",
-      "datacolumn": "footprintWKT",
       "transforms": {
       },
       "source_type": "na",
@@ -964,7 +919,6 @@
     },
     {
       "fieldname": "footprintSRS",
-      "datacolumn": "footprintSRS",
       "transforms": {
       },
       "source_type": "na",
@@ -983,7 +937,6 @@
     },
     {
       "fieldname": "footprintSpatialFit",
-      "datacolumn": "footprintSpatialFit",
       "transforms": {
       },
       "source_type": "na",
@@ -1002,7 +955,6 @@
     },
     {
       "fieldname": "geoReferencedBy",
-      "datacolumn": "geoReferencedByPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1025,7 +977,6 @@
     },
     {
       "fieldname": "geoReferencedBy",
-      "datacolumn": "geoReferencedByPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1048,7 +999,6 @@
     },
     {
       "fieldname": "geoReferencedBy",
-      "datacolumn": "geoReferencedByOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1071,7 +1021,6 @@
     },
     {
       "fieldname": "geoReferencedBy",
-      "datacolumn": "geoReferencedByOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1094,7 +1043,6 @@
     },
     {
       "fieldname": "geoRefDateGroup",
-      "datacolumn": "geoRefDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -1113,7 +1061,6 @@
     },
     {
       "fieldname": "geoRefProtocol",
-      "datacolumn": "geoRefProtocol",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1135,7 +1082,6 @@
     },
     {
       "fieldname": "geoRefSource",
-      "datacolumn": "geoRefSource",
       "transforms": {
       },
       "source_type": "na",
@@ -1154,7 +1100,6 @@
     },
     {
       "fieldname": "geoRefVerificationStatus",
-      "datacolumn": "geoRefVerificationStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1175,7 +1120,6 @@
     },
     {
       "fieldname": "geoRefRemarks",
-      "datacolumn": "geoRefRemarks",
       "transforms": {
       },
       "source_type": "na",
@@ -1194,7 +1138,6 @@
     },
     {
       "fieldname": "geoRefPlaceName",
-      "datacolumn": "geoRefPlaceName",
       "transforms": {
       },
       "source_type": "na",

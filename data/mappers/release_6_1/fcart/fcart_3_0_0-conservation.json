@@ -35,7 +35,6 @@
   "mappings": [
     {
       "fieldname": "conservationNumber",
-      "datacolumn": "conservationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -53,7 +52,6 @@
     },
     {
       "fieldname": "status",
-      "datacolumn": "status",
       "transforms": {
         "vocabulary": "conservationstatus"
       },
@@ -73,7 +71,6 @@
     },
     {
       "fieldname": "statusDate",
-      "datacolumn": "statusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -92,7 +89,6 @@
     },
     {
       "fieldname": "treatmentPurpose",
-      "datacolumn": "treatmentPurpose",
       "transforms": {
         "vocabulary": "treatmentpurpose"
       },
@@ -111,7 +107,6 @@
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -133,7 +128,6 @@
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -155,7 +149,6 @@
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -178,7 +171,6 @@
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -201,7 +193,6 @@
     },
     {
       "fieldname": "otherPartyRole",
-      "datacolumn": "otherPartyRole",
       "transforms": {
         "vocabulary": "otherpartyrole"
       },
@@ -221,7 +212,6 @@
     },
     {
       "fieldname": "otherPartyNote",
-      "datacolumn": "otherPartyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -240,7 +230,6 @@
     },
     {
       "fieldname": "examinationStaff",
-      "datacolumn": "examinationStaff",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -263,7 +252,6 @@
     },
     {
       "fieldname": "examinationPhase",
-      "datacolumn": "examinationPhase",
       "transforms": {
         "vocabulary": "examinationphase"
       },
@@ -283,7 +271,6 @@
     },
     {
       "fieldname": "examinationDate",
-      "datacolumn": "examinationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -302,7 +289,6 @@
     },
     {
       "fieldname": "examinationNote",
-      "datacolumn": "examinationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -321,7 +307,6 @@
     },
     {
       "fieldname": "fabricationNote",
-      "datacolumn": "fabricationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -339,7 +324,6 @@
     },
     {
       "fieldname": "proposedTreatment",
-      "datacolumn": "proposedTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -357,7 +341,6 @@
     },
     {
       "fieldname": "approvedBy",
-      "datacolumn": "approvedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -379,7 +362,6 @@
     },
     {
       "fieldname": "approvedDate",
-      "datacolumn": "approvedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -397,7 +379,6 @@
     },
     {
       "fieldname": "treatmentStartDate",
-      "datacolumn": "treatmentStartDate",
       "transforms": {
       },
       "source_type": "na",
@@ -415,7 +396,6 @@
     },
     {
       "fieldname": "treatmentEndDate",
-      "datacolumn": "treatmentEndDate",
       "transforms": {
       },
       "source_type": "na",
@@ -433,7 +413,6 @@
     },
     {
       "fieldname": "treatmentSummary",
-      "datacolumn": "treatmentSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -451,7 +430,6 @@
     },
     {
       "fieldname": "proposedAnalysis",
-      "datacolumn": "proposedAnalysis",
       "transforms": {
       },
       "source_type": "na",
@@ -469,7 +447,6 @@
     },
     {
       "fieldname": "researcher",
-      "datacolumn": "researcher",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -491,7 +468,6 @@
     },
     {
       "fieldname": "proposedAnalysisDate",
-      "datacolumn": "proposedAnalysisDate",
       "transforms": {
       },
       "source_type": "na",
@@ -509,7 +485,6 @@
     },
     {
       "fieldname": "destAnalysisApprovedDate",
-      "datacolumn": "destAnalysisApprovedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -528,7 +503,6 @@
     },
     {
       "fieldname": "destAnalysisApprovalNote",
-      "datacolumn": "destAnalysisApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -547,7 +521,6 @@
     },
     {
       "fieldname": "sampleBy",
-      "datacolumn": "sampleBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -570,7 +543,6 @@
     },
     {
       "fieldname": "sampleDate",
-      "datacolumn": "sampleDate",
       "transforms": {
       },
       "source_type": "na",
@@ -589,7 +561,6 @@
     },
     {
       "fieldname": "sampleDescription",
-      "datacolumn": "sampleDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -608,7 +579,6 @@
     },
     {
       "fieldname": "sampleReturned",
-      "datacolumn": "sampleReturned",
       "transforms": {
         "special": [
           "boolean"
@@ -630,7 +600,6 @@
     },
     {
       "fieldname": "sampleReturnedLocation",
-      "datacolumn": "sampleReturnedLocation",
       "transforms": {
       },
       "source_type": "na",
@@ -649,7 +618,6 @@
     },
     {
       "fieldname": "analysisMethod",
-      "datacolumn": "analysisMethod",
       "transforms": {
       },
       "source_type": "na",
@@ -667,7 +635,6 @@
     },
     {
       "fieldname": "analysisResults",
-      "datacolumn": "analysisResults",
       "transforms": {
       },
       "source_type": "na",

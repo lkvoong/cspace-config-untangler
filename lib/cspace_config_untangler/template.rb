@@ -12,7 +12,7 @@ module CspaceConfigUntangler
         @profile = profile
         @rectype = rectype
         @config = @profile.config
-        @mappings = @rectype.fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+        @mappings = @rectype.mappings
         @csvdata = []
         build_template
       end

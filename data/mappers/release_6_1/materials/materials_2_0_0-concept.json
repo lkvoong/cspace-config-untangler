@@ -31,7 +31,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -50,7 +49,6 @@
     },
     {
       "fieldname": "termName",
-      "datacolumn": "termName",
       "transforms": {
       },
       "source_type": "na",
@@ -69,7 +67,6 @@
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -88,7 +85,6 @@
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -110,7 +106,6 @@
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -131,7 +126,6 @@
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "concepttermflag"
       },
@@ -151,7 +145,6 @@
     },
     {
       "fieldname": "historicalStatus",
-      "datacolumn": "historicalStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -173,7 +166,6 @@
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -193,7 +185,6 @@
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -215,7 +206,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -238,7 +228,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceShared",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -261,7 +250,6 @@
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -280,7 +268,6 @@
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -299,7 +286,6 @@
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -318,7 +304,6 @@
     },
     {
       "fieldname": "conceptRecordType",
-      "datacolumn": "conceptRecordType",
       "transforms": {
         "vocabulary": "concepttype"
       },
@@ -337,7 +322,6 @@
     },
     {
       "fieldname": "scopeNote",
-      "datacolumn": "scopeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -355,7 +339,6 @@
     },
     {
       "fieldname": "scopeNoteSource",
-      "datacolumn": "scopeNoteSource",
       "transforms": {
       },
       "source_type": "na",
@@ -373,7 +356,6 @@
     },
     {
       "fieldname": "scopeNoteSourceDetail",
-      "datacolumn": "scopeNoteSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -391,7 +373,6 @@
     },
     {
       "fieldname": "citationSource",
-      "datacolumn": "citationSource",
       "transforms": {
       },
       "source_type": "na",
@@ -410,7 +391,6 @@
     },
     {
       "fieldname": "citationSourceDetail",
-      "datacolumn": "citationSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -429,7 +409,6 @@
     },
     {
       "fieldname": "additionalSource",
-      "datacolumn": "additionalSource",
       "transforms": {
       },
       "source_type": "na",
@@ -448,7 +427,6 @@
     },
     {
       "fieldname": "additionalSourceDetail",
-      "datacolumn": "additionalSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -467,7 +445,6 @@
     },
     {
       "fieldname": "additionalSourceID",
-      "datacolumn": "additionalSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -486,7 +463,6 @@
     },
     {
       "fieldname": "additionalSourceNote",
-      "datacolumn": "additionalSourceNote",
       "transforms": {
       },
       "source_type": "na",

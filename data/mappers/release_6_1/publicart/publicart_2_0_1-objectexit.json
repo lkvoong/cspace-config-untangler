@@ -23,7 +23,6 @@
   "mappings": [
     {
       "fieldname": "exitNumber",
-      "datacolumn": "exitNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -41,7 +40,6 @@
     },
     {
       "fieldname": "exitDateGroup",
-      "datacolumn": "exitDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -59,7 +57,6 @@
     },
     {
       "fieldname": "exitReason",
-      "datacolumn": "exitReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -79,7 +76,6 @@
     },
     {
       "fieldname": "exitMethod",
-      "datacolumn": "exitMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -99,7 +95,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -121,7 +116,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -143,7 +137,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -165,7 +158,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -187,7 +179,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -209,7 +200,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -231,7 +221,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -253,7 +242,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -275,7 +263,6 @@
     },
     {
       "fieldname": "exitNote",
-      "datacolumn": "exitNote",
       "transforms": {
       },
       "source_type": "na",
@@ -293,7 +280,6 @@
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -311,7 +297,6 @@
     },
     {
       "fieldname": "displosalNewObjectNumber",
-      "datacolumn": "displosalNewObjectNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -329,7 +314,6 @@
     },
     {
       "fieldname": "deaccessionAuthorizer",
-      "datacolumn": "deaccessionAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -351,7 +335,6 @@
     },
     {
       "fieldname": "authorizationDate",
-      "datacolumn": "authorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -369,7 +352,6 @@
     },
     {
       "fieldname": "deaccessionApprovalGroup",
-      "datacolumn": "deaccessionApprovalGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -389,7 +371,6 @@
     },
     {
       "fieldname": "deaccessionApprovalIndividual",
-      "datacolumn": "deaccessionApprovalIndividual",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -412,7 +393,6 @@
     },
     {
       "fieldname": "deaccessionApprovalStatus",
-      "datacolumn": "deaccessionApprovalStatus",
       "transforms": {
         "vocabulary": "deaccessionapprovalstatus"
       },
@@ -432,7 +412,6 @@
     },
     {
       "fieldname": "deaccessionApprovalDate",
-      "datacolumn": "deaccessionApprovalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -451,7 +430,6 @@
     },
     {
       "fieldname": "deaccessionApprovalNote",
-      "datacolumn": "deaccessionApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -470,7 +448,6 @@
     },
     {
       "fieldname": "deaccessionDate",
-      "datacolumn": "deaccessionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -488,7 +465,6 @@
     },
     {
       "fieldname": "disposalDate",
-      "datacolumn": "disposalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -506,7 +482,6 @@
     },
     {
       "fieldname": "disposalMethod",
-      "datacolumn": "disposalMethod",
       "transforms": {
         "vocabulary": "disposalmethod"
       },
@@ -525,7 +500,6 @@
     },
     {
       "fieldname": "displosalReason",
-      "datacolumn": "displosalReason",
       "transforms": {
       },
       "source_type": "na",
@@ -543,7 +517,6 @@
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -565,7 +538,6 @@
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -587,7 +559,6 @@
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -609,7 +580,6 @@
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -631,7 +601,6 @@
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -653,7 +622,6 @@
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -675,7 +643,6 @@
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -697,7 +664,6 @@
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -719,7 +685,6 @@
     },
     {
       "fieldname": "groupDisposalCurrency",
-      "datacolumn": "groupDisposalCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -738,7 +703,6 @@
     },
     {
       "fieldname": "groupDisplosalValue",
-      "datacolumn": "groupDisplosalValue",
       "transforms": {
       },
       "source_type": "na",
@@ -756,7 +720,6 @@
     },
     {
       "fieldname": "displosalProvisos",
-      "datacolumn": "displosalProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -774,7 +737,6 @@
     },
     {
       "fieldname": "displosalNote",
-      "datacolumn": "displosalNote",
       "transforms": {
       },
       "source_type": "na",

@@ -48,7 +48,6 @@
   "mappings": [
     {
       "fieldname": "conditionCheckRefNumber",
-      "datacolumn": "conditionCheckRefNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -66,7 +65,6 @@
     },
     {
       "fieldname": "conditionCheckAssessmentDate",
-      "datacolumn": "conditionCheckAssessmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -84,7 +82,6 @@
     },
     {
       "fieldname": "conditionCheckMethod",
-      "datacolumn": "conditionCheckMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -103,7 +100,6 @@
     },
     {
       "fieldname": "conditionCheckReason",
-      "datacolumn": "conditionCheckReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -125,7 +121,6 @@
     },
     {
       "fieldname": "conditionChecker",
-      "datacolumn": "conditionCheckerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -147,7 +142,6 @@
     },
     {
       "fieldname": "conditionChecker",
-      "datacolumn": "conditionCheckerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -169,7 +163,6 @@
     },
     {
       "fieldname": "conditionCheckNote",
-      "datacolumn": "conditionCheckNote",
       "transforms": {
       },
       "source_type": "na",
@@ -187,7 +180,6 @@
     },
     {
       "fieldname": "objectAuditCategory",
-      "datacolumn": "objectAuditCategory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -207,7 +199,6 @@
     },
     {
       "fieldname": "conservationTreatmentPriority",
-      "datacolumn": "conservationTreatmentPriority",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -227,7 +218,6 @@
     },
     {
       "fieldname": "nextConditionCheckDate",
-      "datacolumn": "nextConditionCheckDate",
       "transforms": {
       },
       "source_type": "na",
@@ -245,7 +235,6 @@
     },
     {
       "fieldname": "completeness",
-      "datacolumn": "completeness",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -266,7 +255,6 @@
     },
     {
       "fieldname": "completenessDate",
-      "datacolumn": "completenessDate",
       "transforms": {
       },
       "source_type": "na",
@@ -285,7 +273,6 @@
     },
     {
       "fieldname": "completenessNote",
-      "datacolumn": "completenessNote",
       "transforms": {
       },
       "source_type": "na",
@@ -304,7 +291,6 @@
     },
     {
       "fieldname": "hazard",
-      "datacolumn": "hazard",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -324,7 +310,6 @@
     },
     {
       "fieldname": "hazardDate",
-      "datacolumn": "hazardDate",
       "transforms": {
       },
       "source_type": "na",
@@ -343,7 +328,6 @@
     },
     {
       "fieldname": "hazardNote",
-      "datacolumn": "hazardNote",
       "transforms": {
       },
       "source_type": "na",
@@ -362,7 +346,6 @@
     },
     {
       "fieldname": "techAssessment",
-      "datacolumn": "techAssessment",
       "transforms": {
       },
       "source_type": "na",
@@ -381,7 +364,6 @@
     },
     {
       "fieldname": "techAssessmentDate",
-      "datacolumn": "techAssessmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -400,7 +382,6 @@
     },
     {
       "fieldname": "conditionLHMC",
-      "datacolumn": "conditionLHMC",
       "transforms": {
         "vocabulary": "condition"
       },
@@ -420,7 +401,6 @@
     },
     {
       "fieldname": "conditionFacetLHMC",
-      "datacolumn": "conditionFacetLHMC",
       "transforms": {
         "vocabulary": "conditionfacet"
       },
@@ -440,7 +420,6 @@
     },
     {
       "fieldname": "conditionDateLHMC",
-      "datacolumn": "conditionDateLHMC",
       "transforms": {
       },
       "source_type": "na",
@@ -459,7 +438,6 @@
     },
     {
       "fieldname": "conditionNoteLHMC",
-      "datacolumn": "conditionNoteLHMC",
       "transforms": {
       },
       "source_type": "na",
@@ -478,7 +456,6 @@
     },
     {
       "fieldname": "maintenanceDate",
-      "datacolumn": "maintenanceDate",
       "transforms": {
       },
       "source_type": "na",
@@ -496,7 +473,6 @@
     },
     {
       "fieldname": "maintenanceCycle",
-      "datacolumn": "maintenanceCycle",
       "transforms": {
         "vocabulary": "maintenancecycle"
       },
@@ -515,7 +491,6 @@
     },
     {
       "fieldname": "maintenanceNote",
-      "datacolumn": "maintenanceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -533,7 +508,6 @@
     },
     {
       "fieldname": "envConditionNote",
-      "datacolumn": "envConditionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -552,7 +526,6 @@
     },
     {
       "fieldname": "envConditionNoteDate",
-      "datacolumn": "envConditionNoteDate",
       "transforms": {
       },
       "source_type": "na",
@@ -571,7 +544,6 @@
     },
     {
       "fieldname": "displayRecommendations",
-      "datacolumn": "displayRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -589,7 +561,6 @@
     },
     {
       "fieldname": "handlingRecommendations",
-      "datacolumn": "handlingRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -607,7 +578,6 @@
     },
     {
       "fieldname": "securityRecommendations",
-      "datacolumn": "securityRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -625,7 +595,6 @@
     },
     {
       "fieldname": "storageRequirements",
-      "datacolumn": "storageRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -643,7 +612,6 @@
     },
     {
       "fieldname": "envRecommendations",
-      "datacolumn": "envRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -661,7 +629,6 @@
     },
     {
       "fieldname": "packingRecommendations",
-      "datacolumn": "packingRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -679,7 +646,6 @@
     },
     {
       "fieldname": "specialRequirements",
-      "datacolumn": "specialRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -697,7 +663,6 @@
     },
     {
       "fieldname": "legalRequirements",
-      "datacolumn": "legalRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -715,7 +680,6 @@
     },
     {
       "fieldname": "legalReqsHeld",
-      "datacolumn": "legalReqsHeld",
       "transforms": {
       },
       "source_type": "na",
@@ -734,7 +698,6 @@
     },
     {
       "fieldname": "legalReqsHeldBeginDate",
-      "datacolumn": "legalReqsHeldBeginDate",
       "transforms": {
       },
       "source_type": "na",
@@ -753,7 +716,6 @@
     },
     {
       "fieldname": "legalReqsHeldEndDate",
-      "datacolumn": "legalReqsHeldEndDate",
       "transforms": {
       },
       "source_type": "na",
@@ -772,7 +734,6 @@
     },
     {
       "fieldname": "legalReqsHeldNumber",
-      "datacolumn": "legalReqsHeldNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -791,7 +752,6 @@
     },
     {
       "fieldname": "legalReqsHeldRenewDate",
-      "datacolumn": "legalReqsHeldRenewDate",
       "transforms": {
       },
       "source_type": "na",
@@ -810,7 +770,6 @@
     },
     {
       "fieldname": "salvagePriorityCode",
-      "datacolumn": "salvagePriorityCode",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -831,7 +790,6 @@
     },
     {
       "fieldname": "salvagePriorityCodeDate",
-      "datacolumn": "salvagePriorityCodeDate",
       "transforms": {
       },
       "source_type": "na",

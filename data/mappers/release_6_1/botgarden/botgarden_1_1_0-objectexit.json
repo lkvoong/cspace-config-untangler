@@ -22,7 +22,6 @@
   "mappings": [
     {
       "fieldname": "exitNumber",
-      "datacolumn": "exitNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -40,7 +39,6 @@
     },
     {
       "fieldname": "exitDateGroup",
-      "datacolumn": "exitDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -58,7 +56,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -80,7 +77,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -102,7 +98,6 @@
     },
     {
       "fieldname": "exitMethod",
-      "datacolumn": "exitMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -122,7 +117,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositor",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -144,7 +138,6 @@
     },
     {
       "fieldname": "exitReason",
-      "datacolumn": "exitReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -164,7 +157,6 @@
     },
     {
       "fieldname": "count",
-      "datacolumn": "count",
       "transforms": {
       },
       "source_type": "na",
@@ -182,7 +174,6 @@
     },
     {
       "fieldname": "exitNote",
-      "datacolumn": "exitNote",
       "transforms": {
       },
       "source_type": "na",
@@ -200,7 +191,6 @@
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",

@@ -30,7 +30,6 @@
   "mappings": [
     {
       "fieldname": "identificationNumber",
-      "datacolumn": "identificationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -48,7 +47,6 @@
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -66,7 +64,6 @@
     },
     {
       "fieldname": "name",
-      "datacolumn": "name",
       "transforms": {
       },
       "source_type": "na",
@@ -84,7 +81,6 @@
     },
     {
       "fieldname": "mimeType",
-      "datacolumn": "mimeType",
       "transforms": {
       },
       "source_type": "na",
@@ -102,7 +98,6 @@
     },
     {
       "fieldname": "length",
-      "datacolumn": "length",
       "transforms": {
       },
       "source_type": "na",
@@ -120,7 +115,6 @@
     },
     {
       "fieldname": "externalUrl",
-      "datacolumn": "externalUrl",
       "transforms": {
       },
       "source_type": "na",
@@ -138,7 +132,6 @@
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -160,7 +153,6 @@
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -182,7 +174,6 @@
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -204,7 +195,6 @@
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -226,7 +216,6 @@
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -248,7 +237,6 @@
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -270,7 +258,6 @@
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -292,7 +279,6 @@
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -314,7 +300,6 @@
     },
     {
       "fieldname": "copyrightStatement",
-      "datacolumn": "copyrightStatement",
       "transforms": {
       },
       "source_type": "na",
@@ -332,7 +317,6 @@
     },
     {
       "fieldname": "type",
-      "datacolumn": "type",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -354,7 +338,6 @@
     },
     {
       "fieldname": "publishTo",
-      "datacolumn": "publishTo",
       "transforms": {
         "vocabulary": "publishto"
       },
@@ -373,7 +356,6 @@
     },
     {
       "fieldname": "dateGroup",
-      "datacolumn": "dateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -391,7 +373,6 @@
     },
     {
       "fieldname": "source",
-      "datacolumn": "source",
       "transforms": {
       },
       "source_type": "na",
@@ -409,7 +390,6 @@
     },
     {
       "fieldname": "publicartRightsHolder",
-      "datacolumn": "publicartRightsHolderPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -431,7 +411,6 @@
     },
     {
       "fieldname": "publicartRightsHolder",
-      "datacolumn": "publicartRightsHolderPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -453,7 +432,6 @@
     },
     {
       "fieldname": "publicartRightsHolder",
-      "datacolumn": "publicartRightsHolderOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -475,7 +453,6 @@
     },
     {
       "fieldname": "publicartRightsHolder",
-      "datacolumn": "publicartRightsHolderOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -497,7 +474,6 @@
     },
     {
       "fieldname": "description",
-      "datacolumn": "description",
       "transforms": {
       },
       "source_type": "na",

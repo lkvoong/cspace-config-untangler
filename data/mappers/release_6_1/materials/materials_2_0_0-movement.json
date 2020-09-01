@@ -19,7 +19,6 @@
   "mappings": [
     {
       "fieldname": "movementReferenceNumber",
-      "datacolumn": "movementReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -37,7 +36,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -59,7 +57,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -81,7 +78,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -103,7 +99,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -125,7 +120,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -147,7 +141,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -169,7 +162,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -191,7 +183,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -213,7 +204,6 @@
     },
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -231,7 +221,6 @@
     },
     {
       "fieldname": "reasonForMove",
-      "datacolumn": "reasonForMove",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -255,7 +244,6 @@
     },
     {
       "fieldname": "plannedRemovalDate",
-      "datacolumn": "plannedRemovalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -273,7 +261,6 @@
     },
     {
       "fieldname": "removalDate",
-      "datacolumn": "removalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -291,7 +278,6 @@
     },
     {
       "fieldname": "movementContact",
-      "datacolumn": "movementContactLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -313,7 +299,6 @@
     },
     {
       "fieldname": "movementContact",
-      "datacolumn": "movementContactShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -335,7 +320,6 @@
     },
     {
       "fieldname": "movementNote",
-      "datacolumn": "movementNote",
       "transforms": {
       },
       "source_type": "na",
@@ -353,7 +337,6 @@
     },
     {
       "fieldname": "inventoryActionRequired",
-      "datacolumn": "inventoryActionRequired",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -373,7 +356,6 @@
     },
     {
       "fieldname": "frequencyForInventory",
-      "datacolumn": "frequencyForInventory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -395,7 +377,6 @@
     },
     {
       "fieldname": "inventoryDate",
-      "datacolumn": "inventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -413,7 +394,6 @@
     },
     {
       "fieldname": "nextInventoryDate",
-      "datacolumn": "nextInventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -431,7 +411,6 @@
     },
     {
       "fieldname": "inventoryContact",
-      "datacolumn": "inventoryContactLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -453,7 +432,6 @@
     },
     {
       "fieldname": "inventoryContact",
-      "datacolumn": "inventoryContactShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -475,7 +453,6 @@
     },
     {
       "fieldname": "inventoryNote",
-      "datacolumn": "inventoryNote",
       "transforms": {
       },
       "source_type": "na",

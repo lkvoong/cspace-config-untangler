@@ -39,7 +39,6 @@
   "mappings": [
     {
       "fieldname": "identificationNumber",
-      "datacolumn": "identificationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -57,7 +56,6 @@
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -75,7 +73,6 @@
     },
     {
       "fieldname": "publishTo",
-      "datacolumn": "publishTo",
       "transforms": {
         "vocabulary": "publishto"
       },
@@ -94,7 +91,6 @@
     },
     {
       "fieldname": "name",
-      "datacolumn": "name",
       "transforms": {
       },
       "source_type": "na",
@@ -112,7 +108,6 @@
     },
     {
       "fieldname": "mimeType",
-      "datacolumn": "mimeType",
       "transforms": {
       },
       "source_type": "na",
@@ -130,7 +125,6 @@
     },
     {
       "fieldname": "length",
-      "datacolumn": "length",
       "transforms": {
       },
       "source_type": "na",
@@ -148,7 +142,6 @@
     },
     {
       "fieldname": "externalUrl",
-      "datacolumn": "externalUrl",
       "transforms": {
       },
       "source_type": "na",
@@ -166,7 +159,6 @@
     },
     {
       "fieldname": "measuredPart",
-      "datacolumn": "measuredPart",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -192,7 +184,6 @@
     },
     {
       "fieldname": "dimensionSummary",
-      "datacolumn": "dimensionSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -211,7 +202,6 @@
     },
     {
       "fieldname": "dimension",
-      "datacolumn": "dimension",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -244,7 +234,6 @@
     },
     {
       "fieldname": "measuredBy",
-      "datacolumn": "measuredByPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -269,7 +258,6 @@
     },
     {
       "fieldname": "measuredBy",
-      "datacolumn": "measuredByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -294,7 +282,6 @@
     },
     {
       "fieldname": "measurementMethod",
-      "datacolumn": "measurementMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -334,7 +321,6 @@
     },
     {
       "fieldname": "value",
-      "datacolumn": "value",
       "transforms": {
       },
       "source_type": "na",
@@ -355,7 +341,6 @@
     },
     {
       "fieldname": "measurementUnit",
-      "datacolumn": "measurementUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -391,7 +376,6 @@
     },
     {
       "fieldname": "valueQualifier",
-      "datacolumn": "valueQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -412,7 +396,6 @@
     },
     {
       "fieldname": "valueDate",
-      "datacolumn": "valueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -433,7 +416,6 @@
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -455,7 +437,6 @@
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -477,7 +458,6 @@
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -499,7 +479,6 @@
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -521,7 +500,6 @@
     },
     {
       "fieldname": "language",
-      "datacolumn": "language",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -540,7 +518,6 @@
     },
     {
       "fieldname": "publisher",
-      "datacolumn": "publisherPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -562,7 +539,6 @@
     },
     {
       "fieldname": "publisher",
-      "datacolumn": "publisherOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -584,7 +560,6 @@
     },
     {
       "fieldname": "relation",
-      "datacolumn": "relation",
       "transforms": {
       },
       "source_type": "na",
@@ -602,7 +577,6 @@
     },
     {
       "fieldname": "copyrightStatement",
-      "datacolumn": "copyrightStatement",
       "transforms": {
       },
       "source_type": "na",
@@ -620,7 +594,6 @@
     },
     {
       "fieldname": "type",
-      "datacolumn": "type",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -642,7 +615,6 @@
     },
     {
       "fieldname": "coverage",
-      "datacolumn": "coverage",
       "transforms": {
       },
       "source_type": "na",
@@ -660,7 +632,6 @@
     },
     {
       "fieldname": "dateGroup",
-      "datacolumn": "dateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -678,7 +649,6 @@
     },
     {
       "fieldname": "source",
-      "datacolumn": "source",
       "transforms": {
       },
       "source_type": "na",
@@ -696,7 +666,6 @@
     },
     {
       "fieldname": "subject",
-      "datacolumn": "subject",
       "transforms": {
       },
       "source_type": "na",
@@ -714,7 +683,6 @@
     },
     {
       "fieldname": "rightsHolder",
-      "datacolumn": "rightsHolderPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -736,7 +704,6 @@
     },
     {
       "fieldname": "rightsHolder",
-      "datacolumn": "rightsHolderOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -758,7 +725,6 @@
     },
     {
       "fieldname": "description",
-      "datacolumn": "description",
       "transforms": {
       },
       "source_type": "na",

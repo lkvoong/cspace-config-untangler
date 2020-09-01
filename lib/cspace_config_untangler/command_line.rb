@@ -8,7 +8,7 @@ module CspaceConfigUntangler
 
     no_commands{
       def get_profiles
-        all_profiles = [CCU::MAINPROFILE, CCU::PROFILES].flatten
+        all_profiles = [CCU::MAINPROFILE, CCU::PROFILES].flatten.uniq
         if options[:profiles].empty?
           return [CCU::MAINPROFILE]
         elsif options[:profiles] == 'all'

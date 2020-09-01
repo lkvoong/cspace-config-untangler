@@ -21,7 +21,6 @@
   "mappings": [
     {
       "fieldname": "movementReferenceNumber",
-      "datacolumn": "movementReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -39,7 +38,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -61,7 +59,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -83,7 +80,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -105,7 +101,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -127,7 +122,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -149,7 +143,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -171,7 +164,6 @@
     },
     {
       "fieldname": "currentLocationFitness",
-      "datacolumn": "currentLocationFitness",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -192,7 +184,6 @@
     },
     {
       "fieldname": "currentLocationNote",
-      "datacolumn": "currentLocationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -210,7 +201,6 @@
     },
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -228,7 +218,6 @@
     },
     {
       "fieldname": "reasonForMove",
-      "datacolumn": "reasonForMove",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -252,7 +241,6 @@
     },
     {
       "fieldname": "movementMethod",
-      "datacolumn": "movementMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -272,7 +260,6 @@
     },
     {
       "fieldname": "plannedRemovalDate",
-      "datacolumn": "plannedRemovalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -290,7 +277,6 @@
     },
     {
       "fieldname": "removalDate",
-      "datacolumn": "removalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -308,7 +294,6 @@
     },
     {
       "fieldname": "movementContact",
-      "datacolumn": "movementContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -330,7 +315,6 @@
     },
     {
       "fieldname": "movementNote",
-      "datacolumn": "movementNote",
       "transforms": {
       },
       "source_type": "na",
@@ -348,7 +332,6 @@
     },
     {
       "fieldname": "inventoryActionRequired",
-      "datacolumn": "inventoryActionRequired",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -368,7 +351,6 @@
     },
     {
       "fieldname": "frequencyForInventory",
-      "datacolumn": "frequencyForInventory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -390,7 +372,6 @@
     },
     {
       "fieldname": "inventoryDate",
-      "datacolumn": "inventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -408,7 +389,6 @@
     },
     {
       "fieldname": "nextInventoryDate",
-      "datacolumn": "nextInventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -426,7 +406,6 @@
     },
     {
       "fieldname": "inventoryContact",
-      "datacolumn": "inventoryContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -448,7 +427,6 @@
     },
     {
       "fieldname": "inventoryNote",
-      "datacolumn": "inventoryNote",
       "transforms": {
       },
       "source_type": "na",

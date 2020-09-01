@@ -53,7 +53,6 @@
   "mappings": [
     {
       "fieldname": "conservationNumber",
-      "datacolumn": "conservationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -71,7 +70,6 @@
     },
     {
       "fieldname": "status",
-      "datacolumn": "status",
       "transforms": {
         "vocabulary": "conservationstatus"
       },
@@ -91,7 +89,6 @@
     },
     {
       "fieldname": "statusDate",
-      "datacolumn": "statusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -110,7 +107,6 @@
     },
     {
       "fieldname": "treatmentPurpose",
-      "datacolumn": "treatmentPurpose",
       "transforms": {
         "vocabulary": "treatmentpurpose"
       },
@@ -129,7 +125,6 @@
     },
     {
       "fieldname": "treatmentPerformed",
-      "datacolumn": "treatmentPerformed",
       "transforms": {
         "vocabulary": "treatmentperformed"
       },
@@ -148,7 +143,6 @@
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -170,7 +164,6 @@
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -192,7 +185,6 @@
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -215,7 +207,6 @@
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -238,7 +229,6 @@
     },
     {
       "fieldname": "otherPartyRole",
-      "datacolumn": "otherPartyRole",
       "transforms": {
         "vocabulary": "otherpartyrole"
       },
@@ -258,7 +248,6 @@
     },
     {
       "fieldname": "otherPartyNote",
-      "datacolumn": "otherPartyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -277,7 +266,6 @@
     },
     {
       "fieldname": "proposedTreatment",
-      "datacolumn": "proposedTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -295,7 +283,6 @@
     },
     {
       "fieldname": "approvedBy",
-      "datacolumn": "approvedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -317,7 +304,6 @@
     },
     {
       "fieldname": "approvedDate",
-      "datacolumn": "approvedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -335,7 +321,6 @@
     },
     {
       "fieldname": "treatmentStartDate",
-      "datacolumn": "treatmentStartDate",
       "transforms": {
       },
       "source_type": "na",
@@ -353,7 +338,6 @@
     },
     {
       "fieldname": "treatmentEndDate",
-      "datacolumn": "treatmentEndDate",
       "transforms": {
       },
       "source_type": "na",
@@ -371,7 +355,6 @@
     },
     {
       "fieldname": "treatmentSummary",
-      "datacolumn": "treatmentSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -389,7 +372,6 @@
     },
     {
       "fieldname": "futureTreatment",
-      "datacolumn": "futureTreatment",
       "transforms": {
         "vocabulary": "futuretreatment"
       },
@@ -409,7 +391,6 @@
     },
     {
       "fieldname": "futureTreatmentDate",
-      "datacolumn": "futureTreatmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -428,7 +409,6 @@
     },
     {
       "fieldname": "futureTreatmentNote",
-      "datacolumn": "futureTreatmentNote",
       "transforms": {
       },
       "source_type": "na",
@@ -447,7 +427,6 @@
     },
     {
       "fieldname": "destAnalysisApprovedDate",
-      "datacolumn": "destAnalysisApprovedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -466,7 +445,6 @@
     },
     {
       "fieldname": "destAnalysisApprovalNote",
-      "datacolumn": "destAnalysisApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -485,7 +463,6 @@
     },
     {
       "fieldname": "sampleBy",
-      "datacolumn": "sampleBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -508,7 +485,6 @@
     },
     {
       "fieldname": "sampleDate",
-      "datacolumn": "sampleDate",
       "transforms": {
       },
       "source_type": "na",
@@ -527,7 +503,6 @@
     },
     {
       "fieldname": "sampleDescription",
-      "datacolumn": "sampleDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -546,7 +521,6 @@
     },
     {
       "fieldname": "sampleReturned",
-      "datacolumn": "sampleReturned",
       "transforms": {
         "special": [
           "boolean"
@@ -568,7 +542,6 @@
     },
     {
       "fieldname": "sampleReturnedLocation",
-      "datacolumn": "sampleReturnedLocation",
       "transforms": {
       },
       "source_type": "na",
@@ -587,7 +560,6 @@
     },
     {
       "fieldname": "analysisMethod",
-      "datacolumn": "analysisMethod",
       "transforms": {
       },
       "source_type": "na",
@@ -605,7 +577,6 @@
     },
     {
       "fieldname": "analysisResults",
-      "datacolumn": "analysisResults",
       "transforms": {
       },
       "source_type": "na",
@@ -623,7 +594,6 @@
     },
     {
       "fieldname": "fertilizerUsed",
-      "datacolumn": "fertilizerUsed",
       "transforms": {
         "vocabulary": "fertilizerused"
       },
@@ -643,7 +613,6 @@
     },
     {
       "fieldname": "appliedBy",
-      "datacolumn": "appliedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -666,7 +635,6 @@
     },
     {
       "fieldname": "nitrogenPercent",
-      "datacolumn": "nitrogenPercent",
       "transforms": {
       },
       "source_type": "na",
@@ -685,7 +653,6 @@
     },
     {
       "fieldname": "phosphorusPercent",
-      "datacolumn": "phosphorusPercent",
       "transforms": {
       },
       "source_type": "na",
@@ -704,7 +671,6 @@
     },
     {
       "fieldname": "potassiumPercent",
-      "datacolumn": "potassiumPercent",
       "transforms": {
       },
       "source_type": "na",
@@ -723,7 +689,6 @@
     },
     {
       "fieldname": "applicationDate",
-      "datacolumn": "applicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -742,7 +707,6 @@
     },
     {
       "fieldname": "amountApplied",
-      "datacolumn": "amountApplied",
       "transforms": {
       },
       "source_type": "na",
@@ -761,7 +725,6 @@
     },
     {
       "fieldname": "fertilizationNotes",
-      "datacolumn": "fertilizationNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -780,7 +743,6 @@
     },
     {
       "fieldname": "nextApplicationDate",
-      "datacolumn": "nextApplicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -799,7 +761,6 @@
     },
     {
       "fieldname": "fertilizerToBeUsed",
-      "datacolumn": "fertilizerToBeUsed",
       "transforms": {
       },
       "source_type": "na",
@@ -819,7 +780,6 @@
     },
     {
       "fieldname": "pestOrDiseaseObserved",
-      "datacolumn": "pestOrDiseaseObserved",
       "transforms": {
         "vocabulary": "pestordiseaseobserved"
       },
@@ -839,7 +799,6 @@
     },
     {
       "fieldname": "identifiedBy",
-      "datacolumn": "identifiedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -862,7 +821,6 @@
     },
     {
       "fieldname": "dateObserved",
-      "datacolumn": "dateObserved",
       "transforms": {
       },
       "source_type": "na",
@@ -881,7 +839,6 @@
     },
     {
       "fieldname": "treatmentDate",
-      "datacolumn": "treatmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -900,7 +857,6 @@
     },
     {
       "fieldname": "futureTreatmentDate",
-      "datacolumn": "futureTreatmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -919,7 +875,6 @@
     },
     {
       "fieldname": "treatedBy",
-      "datacolumn": "treatedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -942,7 +897,6 @@
     },
     {
       "fieldname": "treatedWith",
-      "datacolumn": "treatedWith",
       "transforms": {
       },
       "source_type": "na",
@@ -961,7 +915,6 @@
     },
     {
       "fieldname": "futureTreatment",
-      "datacolumn": "futureTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -980,7 +933,6 @@
     },
     {
       "fieldname": "futureTreatmentNotes",
-      "datacolumn": "futureTreatmentNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -999,7 +951,6 @@
     },
     {
       "fieldname": "dateRepotted",
-      "datacolumn": "dateRepotted",
       "transforms": {
       },
       "source_type": "na",
@@ -1017,7 +968,6 @@
     },
     {
       "fieldname": "nextRepotting",
-      "datacolumn": "nextRepotting",
       "transforms": {
       },
       "source_type": "na",
@@ -1035,7 +985,6 @@
     },
     {
       "fieldname": "soilMix",
-      "datacolumn": "soilMix",
       "transforms": {
         "vocabulary": "soilmix"
       },
@@ -1054,7 +1003,6 @@
     },
     {
       "fieldname": "description",
-      "datacolumn": "description",
       "transforms": {
       },
       "source_type": "na",
@@ -1072,7 +1020,6 @@
     },
     {
       "fieldname": "container",
-      "datacolumn": "container",
       "transforms": {
       },
       "source_type": "na",
@@ -1090,7 +1037,6 @@
     },
     {
       "fieldname": "performedBy",
-      "datacolumn": "performedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1112,7 +1058,6 @@
     },
     {
       "fieldname": "plannedTreatment",
-      "datacolumn": "plannedTreatment",
       "transforms": {
       },
       "source_type": "na",

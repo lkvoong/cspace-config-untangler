@@ -20,7 +20,6 @@
   "mappings": [
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -38,7 +37,6 @@
     },
     {
       "fieldname": "reasonForMove",
-      "datacolumn": "reasonForMove",
       "transforms": {
         "vocabulary": "reasonformove"
       },
@@ -57,7 +55,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -79,7 +76,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -101,7 +97,6 @@
     },
     {
       "fieldname": "movementContact",
-      "datacolumn": "movementContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -123,7 +118,6 @@
     },
     {
       "fieldname": "movementNote",
-      "datacolumn": "movementNote",
       "transforms": {
       },
       "source_type": "na",
@@ -141,7 +135,6 @@
     },
     {
       "fieldname": "labelRequested",
-      "datacolumn": "labelRequested",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -160,7 +153,6 @@
     },
     {
       "fieldname": "labelSize",
-      "datacolumn": "labelSize",
       "transforms": {
         "vocabulary": "labelsize"
       },
@@ -179,7 +171,6 @@
     },
     {
       "fieldname": "labelStandType",
-      "datacolumn": "labelStandType",
       "transforms": {
         "vocabulary": "labelstandtype"
       },
@@ -198,7 +189,6 @@
     },
     {
       "fieldname": "labelCount",
-      "datacolumn": "labelCount",
       "transforms": {
       },
       "source_type": "na",

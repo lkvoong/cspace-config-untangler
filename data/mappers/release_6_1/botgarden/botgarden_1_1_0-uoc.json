@@ -47,7 +47,6 @@
   "mappings": [
     {
       "fieldname": "referenceNumber",
-      "datacolumn": "referenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -65,7 +64,6 @@
     },
     {
       "fieldname": "method",
-      "datacolumn": "method",
       "transforms": {
         "vocabulary": "uocmethods"
       },
@@ -84,7 +82,6 @@
     },
     {
       "fieldname": "collectionType",
-      "datacolumn": "collectionType",
       "transforms": {
         "vocabulary": "uoccollectiontypes"
       },
@@ -103,7 +100,6 @@
     },
     {
       "fieldname": "projectId",
-      "datacolumn": "projectId",
       "transforms": {
         "vocabulary": "uocprojectid"
       },
@@ -122,7 +118,6 @@
     },
     {
       "fieldname": "subcollection",
-      "datacolumn": "subcollection",
       "transforms": {
         "vocabulary": "uocsubcollections"
       },
@@ -141,7 +136,6 @@
     },
     {
       "fieldname": "materialType",
-      "datacolumn": "materialType",
       "transforms": {
         "vocabulary": "uocmaterialtypes"
       },
@@ -160,7 +154,6 @@
     },
     {
       "fieldname": "user",
-      "datacolumn": "userPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -183,7 +176,6 @@
     },
     {
       "fieldname": "user",
-      "datacolumn": "userOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -206,7 +198,6 @@
     },
     {
       "fieldname": "userUocRole",
-      "datacolumn": "userUocRole",
       "transforms": {
         "vocabulary": "uocuserroles"
       },
@@ -226,7 +217,6 @@
     },
     {
       "fieldname": "userInstitution",
-      "datacolumn": "userInstitution",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -249,7 +239,6 @@
     },
     {
       "fieldname": "userInstitutionRole",
-      "datacolumn": "userInstitutionRole",
       "transforms": {
         "vocabulary": "uocusertypes"
       },
@@ -269,7 +258,6 @@
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -287,7 +275,6 @@
     },
     {
       "fieldname": "dateRequested",
-      "datacolumn": "dateRequested",
       "transforms": {
       },
       "source_type": "na",
@@ -305,7 +292,6 @@
     },
     {
       "fieldname": "dateCompleted",
-      "datacolumn": "dateCompleted",
       "transforms": {
       },
       "source_type": "na",
@@ -323,7 +309,6 @@
     },
     {
       "fieldname": "occasion",
-      "datacolumn": "occasion",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -345,7 +330,6 @@
     },
     {
       "fieldname": "projectDescription",
-      "datacolumn": "projectDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -363,7 +347,6 @@
     },
     {
       "fieldname": "authorizedBy",
-      "datacolumn": "authorizedByPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -386,7 +369,6 @@
     },
     {
       "fieldname": "authorizedBy",
-      "datacolumn": "authorizedByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -409,7 +391,6 @@
     },
     {
       "fieldname": "authorizationDate",
-      "datacolumn": "authorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -428,7 +409,6 @@
     },
     {
       "fieldname": "authorizationStatus",
-      "datacolumn": "authorizationStatus",
       "transforms": {
         "vocabulary": "uocauthorizationstatuses"
       },
@@ -448,7 +428,6 @@
     },
     {
       "fieldname": "authorizationNote",
-      "datacolumn": "authorizationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -467,7 +446,6 @@
     },
     {
       "fieldname": "useDate",
-      "datacolumn": "useDate",
       "transforms": {
       },
       "source_type": "na",
@@ -486,7 +464,6 @@
     },
     {
       "fieldname": "useDateTimeNote",
-      "datacolumn": "useDateTimeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -505,7 +482,6 @@
     },
     {
       "fieldname": "useDateNumberOfVisitors",
-      "datacolumn": "useDateNumberOfVisitors",
       "transforms": {
       },
       "source_type": "na",
@@ -524,7 +500,6 @@
     },
     {
       "fieldname": "useDateHoursSpent",
-      "datacolumn": "useDateHoursSpent",
       "transforms": {
       },
       "source_type": "na",
@@ -543,7 +518,6 @@
     },
     {
       "fieldname": "useDateVisitorNote",
-      "datacolumn": "useDateVisitorNote",
       "transforms": {
       },
       "source_type": "na",
@@ -562,7 +536,6 @@
     },
     {
       "fieldname": "endDate",
-      "datacolumn": "endDate",
       "transforms": {
       },
       "source_type": "na",
@@ -580,7 +553,6 @@
     },
     {
       "fieldname": "staffName",
-      "datacolumn": "staffNamePerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -603,7 +575,6 @@
     },
     {
       "fieldname": "staffName",
-      "datacolumn": "staffNameOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -626,7 +597,6 @@
     },
     {
       "fieldname": "staffRole",
-      "datacolumn": "staffRole",
       "transforms": {
         "vocabulary": "uocstaffroles"
       },
@@ -646,7 +616,6 @@
     },
     {
       "fieldname": "staffHours",
-      "datacolumn": "staffHours",
       "transforms": {
       },
       "source_type": "na",
@@ -665,7 +634,6 @@
     },
     {
       "fieldname": "staffNote",
-      "datacolumn": "staffNote",
       "transforms": {
       },
       "source_type": "na",
@@ -684,7 +652,6 @@
     },
     {
       "fieldname": "location",
-      "datacolumn": "locationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -706,7 +673,6 @@
     },
     {
       "fieldname": "location",
-      "datacolumn": "locationPlace",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -728,7 +694,6 @@
     },
     {
       "fieldname": "location",
-      "datacolumn": "locationLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -750,7 +715,6 @@
     },
     {
       "fieldname": "feeCurrency",
-      "datacolumn": "feeCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -770,7 +734,6 @@
     },
     {
       "fieldname": "feeValue",
-      "datacolumn": "feeValue",
       "transforms": {
       },
       "source_type": "na",
@@ -789,7 +752,6 @@
     },
     {
       "fieldname": "feePaid",
-      "datacolumn": "feePaid",
       "transforms": {
         "special": [
           "boolean"
@@ -811,7 +773,6 @@
     },
     {
       "fieldname": "feeNote",
-      "datacolumn": "feeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -830,7 +791,6 @@
     },
     {
       "fieldname": "note",
-      "datacolumn": "note",
       "transforms": {
       },
       "source_type": "na",
@@ -848,7 +808,6 @@
     },
     {
       "fieldname": "provisos",
-      "datacolumn": "provisos",
       "transforms": {
       },
       "source_type": "na",
@@ -866,7 +825,6 @@
     },
     {
       "fieldname": "obligationsFulfilled",
-      "datacolumn": "obligationsFulfilled",
       "transforms": {
         "special": [
           "boolean"
@@ -887,7 +845,6 @@
     },
     {
       "fieldname": "result",
-      "datacolumn": "result",
       "transforms": {
       },
       "source_type": "na",

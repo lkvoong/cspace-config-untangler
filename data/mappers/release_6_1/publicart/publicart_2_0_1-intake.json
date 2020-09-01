@@ -39,7 +39,6 @@
   "mappings": [
     {
       "fieldname": "entryNumber",
-      "datacolumn": "entryNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -57,7 +56,6 @@
     },
     {
       "fieldname": "entryDate",
-      "datacolumn": "entryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -75,7 +73,6 @@
     },
     {
       "fieldname": "entryReason",
-      "datacolumn": "entryReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -96,7 +93,6 @@
     },
     {
       "fieldname": "entryMethod",
-      "datacolumn": "entryMethod",
       "transforms": {
         "vocabulary": "entrymethod"
       },
@@ -115,7 +111,6 @@
     },
     {
       "fieldname": "returnDate",
-      "datacolumn": "returnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -133,7 +128,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -155,7 +149,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -177,7 +170,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -199,7 +191,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -221,7 +212,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -244,7 +234,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -267,7 +256,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -290,7 +278,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -313,7 +300,6 @@
     },
     {
       "fieldname": "depositorsRequirements",
-      "datacolumn": "depositorsRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -332,7 +318,6 @@
     },
     {
       "fieldname": "approvalGroup",
-      "datacolumn": "approvalGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -352,7 +337,6 @@
     },
     {
       "fieldname": "approvalIndividual",
-      "datacolumn": "approvalIndividualLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -375,7 +359,6 @@
     },
     {
       "fieldname": "approvalIndividual",
-      "datacolumn": "approvalIndividualShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -398,7 +381,6 @@
     },
     {
       "fieldname": "approvalStatus",
-      "datacolumn": "approvalStatus",
       "transforms": {
         "vocabulary": "deaccessionapprovalstatus"
       },
@@ -418,7 +400,6 @@
     },
     {
       "fieldname": "approvalDate",
-      "datacolumn": "approvalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -437,7 +418,6 @@
     },
     {
       "fieldname": "approvalNote",
-      "datacolumn": "approvalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -456,7 +436,6 @@
     },
     {
       "fieldname": "entryNote",
-      "datacolumn": "entryNote",
       "transforms": {
       },
       "source_type": "na",
@@ -474,7 +453,6 @@
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -492,7 +470,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -515,7 +492,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -538,7 +514,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -561,7 +536,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -584,7 +558,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationPlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -607,7 +580,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationPlaceShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -630,7 +602,6 @@
     },
     {
       "fieldname": "currentLocationFitness",
-      "datacolumn": "currentLocationFitness",
       "transforms": {
         "vocabulary": "conditionfitness"
       },
@@ -650,7 +621,6 @@
     },
     {
       "fieldname": "currentLocationNote",
-      "datacolumn": "currentLocationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -669,7 +639,6 @@
     },
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -687,7 +656,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -709,7 +677,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -731,7 +698,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -753,7 +719,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -775,7 +740,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationPlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -797,7 +761,6 @@
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationPlaceShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -819,7 +782,6 @@
     },
     {
       "fieldname": "conditionCheckMethod",
-      "datacolumn": "conditionCheckMethod",
       "transforms": {
         "vocabulary": "conditioncheckmethod"
       },
@@ -838,7 +800,6 @@
     },
     {
       "fieldname": "conditionCheckReason",
-      "datacolumn": "conditionCheckReason",
       "transforms": {
         "vocabulary": "conditioncheckreason"
       },
@@ -857,7 +818,6 @@
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -879,7 +839,6 @@
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -901,7 +860,6 @@
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -923,7 +881,6 @@
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -945,7 +902,6 @@
     },
     {
       "fieldname": "conditionCheckDate",
-      "datacolumn": "conditionCheckDate",
       "transforms": {
       },
       "source_type": "na",
@@ -963,7 +919,6 @@
     },
     {
       "fieldname": "conditionCheckReferenceNumber",
-      "datacolumn": "conditionCheckReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -981,7 +936,6 @@
     },
     {
       "fieldname": "conditionCheckNote",
-      "datacolumn": "conditionCheckNote",
       "transforms": {
       },
       "source_type": "na",

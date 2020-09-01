@@ -37,7 +37,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -56,7 +55,6 @@
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -78,7 +76,6 @@
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
         "vocabulary": "citationtermtype"
       },
@@ -98,7 +95,6 @@
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "citationtermflag"
       },
@@ -118,7 +114,6 @@
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -138,7 +133,6 @@
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -160,7 +154,6 @@
     },
     {
       "fieldname": "termFullCitation",
-      "datacolumn": "termFullCitation",
       "transforms": {
       },
       "source_type": "na",
@@ -179,7 +172,6 @@
     },
     {
       "fieldname": "termTitle",
-      "datacolumn": "termTitle",
       "transforms": {
       },
       "source_type": "na",
@@ -198,7 +190,6 @@
     },
     {
       "fieldname": "termSubTitle",
-      "datacolumn": "termSubTitle",
       "transforms": {
       },
       "source_type": "na",
@@ -217,7 +208,6 @@
     },
     {
       "fieldname": "termSectionTitle",
-      "datacolumn": "termSectionTitle",
       "transforms": {
       },
       "source_type": "na",
@@ -236,7 +226,6 @@
     },
     {
       "fieldname": "termVolume",
-      "datacolumn": "termVolume",
       "transforms": {
       },
       "source_type": "na",
@@ -255,7 +244,6 @@
     },
     {
       "fieldname": "termIssue",
-      "datacolumn": "termIssue",
       "transforms": {
       },
       "source_type": "na",
@@ -274,7 +262,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -297,7 +284,6 @@
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceShared",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -320,7 +306,6 @@
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -339,7 +324,6 @@
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -358,7 +342,6 @@
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -377,7 +360,6 @@
     },
     {
       "fieldname": "publisher",
-      "datacolumn": "publisher",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -400,7 +382,6 @@
     },
     {
       "fieldname": "publicationPlace",
-      "datacolumn": "publicationPlace",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -423,7 +404,6 @@
     },
     {
       "fieldname": "publicationDate",
-      "datacolumn": "publicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -442,7 +422,6 @@
     },
     {
       "fieldname": "edition",
-      "datacolumn": "edition",
       "transforms": {
       },
       "source_type": "na",
@@ -461,7 +440,6 @@
     },
     {
       "fieldname": "pages",
-      "datacolumn": "pages",
       "transforms": {
       },
       "source_type": "na",
@@ -480,7 +458,6 @@
     },
     {
       "fieldname": "agent",
-      "datacolumn": "agentPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -503,7 +480,6 @@
     },
     {
       "fieldname": "agent",
-      "datacolumn": "agentOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -526,7 +502,6 @@
     },
     {
       "fieldname": "role",
-      "datacolumn": "role",
       "transforms": {
         "vocabulary": "agentinfotype"
       },
@@ -546,7 +521,6 @@
     },
     {
       "fieldname": "note",
-      "datacolumn": "note",
       "transforms": {
       },
       "source_type": "na",
@@ -565,7 +539,6 @@
     },
     {
       "fieldname": "citationNote",
-      "datacolumn": "citationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -583,7 +556,6 @@
     },
     {
       "fieldname": "resourceIdent",
-      "datacolumn": "resourceIdent",
       "transforms": {
       },
       "source_type": "na",
@@ -602,7 +574,6 @@
     },
     {
       "fieldname": "type",
-      "datacolumn": "type",
       "transforms": {
         "vocabulary": "resourceidtype"
       },
@@ -622,7 +593,6 @@
     },
     {
       "fieldname": "captureDate",
-      "datacolumn": "captureDate",
       "transforms": {
       },
       "source_type": "na",
@@ -641,7 +611,6 @@
     },
     {
       "fieldname": "relatedTerm",
-      "datacolumn": "relatedTerm",
       "transforms": {
       },
       "source_type": "na",
@@ -660,7 +629,6 @@
     },
     {
       "fieldname": "relationType",
-      "datacolumn": "relationType",
       "transforms": {
         "vocabulary": "relationtypetype"
       },

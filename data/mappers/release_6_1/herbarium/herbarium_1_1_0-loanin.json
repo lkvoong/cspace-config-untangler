@@ -45,7 +45,6 @@
   "mappings": [
     {
       "fieldname": "loanInNumber",
-      "datacolumn": "loanInNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -63,7 +62,6 @@
     },
     {
       "fieldname": "loanPurpose",
-      "datacolumn": "loanPurpose",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -87,7 +85,6 @@
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -110,7 +107,6 @@
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -133,7 +129,6 @@
     },
     {
       "fieldname": "lendersContact",
-      "datacolumn": "lendersContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -156,7 +151,6 @@
     },
     {
       "fieldname": "lendersAuthorizer",
-      "datacolumn": "lendersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -179,7 +173,6 @@
     },
     {
       "fieldname": "lendersAuthorizationDate",
-      "datacolumn": "lendersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -198,7 +191,6 @@
     },
     {
       "fieldname": "borrowersContact",
-      "datacolumn": "borrowersContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -220,7 +212,6 @@
     },
     {
       "fieldname": "borrowersAuthorizer",
-      "datacolumn": "borrowersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -242,7 +233,6 @@
     },
     {
       "fieldname": "borrowersAuthorizationDate",
-      "datacolumn": "borrowersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -260,7 +250,6 @@
     },
     {
       "fieldname": "loanInConditions",
-      "datacolumn": "loanInConditions",
       "transforms": {
       },
       "source_type": "na",
@@ -278,7 +267,6 @@
     },
     {
       "fieldname": "loanInNote",
-      "datacolumn": "loanInNote",
       "transforms": {
       },
       "source_type": "na",
@@ -296,7 +284,6 @@
     },
     {
       "fieldname": "majorGroup",
-      "datacolumn": "majorGroup",
       "transforms": {
         "vocabulary": "majortaxongroup"
       },
@@ -315,7 +302,6 @@
     },
     {
       "fieldname": "geography",
-      "datacolumn": "geography",
       "transforms": {
       },
       "source_type": "na",
@@ -333,7 +319,6 @@
     },
     {
       "fieldname": "taxonomy",
-      "datacolumn": "taxonomyLocal",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -355,7 +340,6 @@
     },
     {
       "fieldname": "taxonomy",
-      "datacolumn": "taxonomyCommon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -377,7 +361,6 @@
     },
     {
       "fieldname": "objKind",
-      "datacolumn": "objKind",
       "transforms": {
         "vocabulary": "objectkind"
       },
@@ -396,7 +379,6 @@
     },
     {
       "fieldname": "loanGroup",
-      "datacolumn": "loanGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -416,7 +398,6 @@
     },
     {
       "fieldname": "loanIndividual",
-      "datacolumn": "loanIndividual",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -439,7 +420,6 @@
     },
     {
       "fieldname": "loanStatus",
-      "datacolumn": "loanStatus",
       "transforms": {
         "vocabulary": "loanoutstatus"
       },
@@ -459,7 +439,6 @@
     },
     {
       "fieldname": "loanStatusDate",
-      "datacolumn": "loanStatusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -478,7 +457,6 @@
     },
     {
       "fieldname": "loanStatusNote",
-      "datacolumn": "loanStatusNote",
       "transforms": {
       },
       "source_type": "na",
@@ -497,7 +475,6 @@
     },
     {
       "fieldname": "loanInDate",
-      "datacolumn": "loanInDate",
       "transforms": {
       },
       "source_type": "na",
@@ -515,7 +492,6 @@
     },
     {
       "fieldname": "dueDate",
-      "datacolumn": "dueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -533,7 +509,6 @@
     },
     {
       "fieldname": "loanRenewalApplicationDate",
-      "datacolumn": "loanRenewalApplicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -551,7 +526,6 @@
     },
     {
       "fieldname": "shipDate",
-      "datacolumn": "shipDate",
       "transforms": {
       },
       "source_type": "na",
@@ -569,7 +543,6 @@
     },
     {
       "fieldname": "loanReturnDate",
-      "datacolumn": "loanReturnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -587,7 +560,6 @@
     },
     {
       "fieldname": "transferInDate",
-      "datacolumn": "transferInDate",
       "transforms": {
       },
       "source_type": "na",
@@ -605,7 +577,6 @@
     },
     {
       "fieldname": "transferInOrg",
-      "datacolumn": "transferInOrg",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -627,7 +598,6 @@
     },
     {
       "fieldname": "transferInPerson",
-      "datacolumn": "transferInPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -649,7 +619,6 @@
     },
     {
       "fieldname": "returnDate",
-      "datacolumn": "returnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -668,7 +637,6 @@
     },
     {
       "fieldname": "returnQuantity",
-      "datacolumn": "returnQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -687,7 +655,6 @@
     },
     {
       "fieldname": "returnNotes",
-      "datacolumn": "returnNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -706,7 +673,6 @@
     },
     {
       "fieldname": "transferOutDate",
-      "datacolumn": "transferOutDate",
       "transforms": {
       },
       "source_type": "na",
@@ -725,7 +691,6 @@
     },
     {
       "fieldname": "transferOutQuantity",
-      "datacolumn": "transferOutQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -744,7 +709,6 @@
     },
     {
       "fieldname": "transferOutOrg",
-      "datacolumn": "transferOutOrg",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -767,7 +731,6 @@
     },
     {
       "fieldname": "transferOutPerson",
-      "datacolumn": "transferOutPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -790,7 +753,6 @@
     },
     {
       "fieldname": "transferOutDirector",
-      "datacolumn": "transferOutDirector",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -813,7 +775,6 @@
     },
     {
       "fieldname": "transferOutNotes",
-      "datacolumn": "transferOutNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -832,7 +793,6 @@
     },
     {
       "fieldname": "transferOutReturnDate",
-      "datacolumn": "transferOutReturnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -851,7 +811,6 @@
     },
     {
       "fieldname": "transferOutReturnQuantity",
-      "datacolumn": "transferOutReturnQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -870,7 +829,6 @@
     },
     {
       "fieldname": "transferOutReturnNotes",
-      "datacolumn": "transferOutReturnNotes",
       "transforms": {
       },
       "source_type": "na",

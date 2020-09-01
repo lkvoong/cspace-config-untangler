@@ -23,7 +23,6 @@
   "mappings": [
     {
       "fieldname": "acquisitionReferenceNumber",
-      "datacolumn": "acquisitionReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -41,7 +40,6 @@
     },
     {
       "fieldname": "accessionDateGroup",
-      "datacolumn": "accessionDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -59,7 +57,6 @@
     },
     {
       "fieldname": "acquisitionAuthorizer",
-      "datacolumn": "acquisitionAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -81,7 +78,6 @@
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
-      "datacolumn": "acquisitionAuthorizerDate",
       "transforms": {
       },
       "source_type": "na",
@@ -99,7 +95,6 @@
     },
     {
       "fieldname": "acquisitionDateGroup",
-      "datacolumn": "acquisitionDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -117,7 +112,6 @@
     },
     {
       "fieldname": "acquisitionMethod",
-      "datacolumn": "acquisitionMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -139,7 +133,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -161,7 +154,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -183,7 +175,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -205,7 +196,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -227,7 +217,6 @@
     },
     {
       "fieldname": "creditLine",
-      "datacolumn": "creditLine",
       "transforms": {
       },
       "source_type": "na",
@@ -245,7 +234,6 @@
     },
     {
       "fieldname": "acquisitionReason",
-      "datacolumn": "acquisitionReason",
       "transforms": {
       },
       "source_type": "na",
@@ -263,7 +251,6 @@
     },
     {
       "fieldname": "acquisitionNote",
-      "datacolumn": "acquisitionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -281,7 +268,6 @@
     },
     {
       "fieldname": "acquisitionProvisos",
-      "datacolumn": "acquisitionProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -299,7 +285,6 @@
     },
     {
       "fieldname": "fieldCollectionEventName",
-      "datacolumn": "fieldCollectionEventName",
       "transforms": {
       },
       "source_type": "na",

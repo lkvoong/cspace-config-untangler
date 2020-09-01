@@ -12,8 +12,7 @@ module CspaceConfigUntangler
         @profile = profile
         @rectype = rectype
         @config = @profile.config
-        @mappings = @rectype.fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
-        ensure_unique_datacolumns
+        @mappings = @rectype.mappings
         @hash = {}
         build_hash
       end
@@ -26,18 +25,6 @@ module CspaceConfigUntangler
       end
       
       private
-
-      def ensure_unique_datacolumns
-        checkhash = {}
-        @mappings.each do |mapping|
-          if checkhash.key?(mapping.datacolumn)
-            add = mapping.xpath.empty? ? mapping.namespace.split('_').last : mapping.xpath.last
-            mapping.datacolumn = "#{add}_#{mapping.datacolumn}"
-          else
-            checkhash[mapping.datacolumn] = nil
-          end
-        end
-      end
 
       def build_hash
         @hash[:config] = {}

@@ -34,7 +34,6 @@
   "mappings": [
     {
       "fieldname": "exhibitionNumber",
-      "datacolumn": "exhibitionNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -52,7 +51,6 @@
     },
     {
       "fieldname": "type",
-      "datacolumn": "type",
       "transforms": {
         "vocabulary": "exhibitiontype"
       },
@@ -71,7 +69,6 @@
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -89,7 +86,6 @@
     },
     {
       "fieldname": "exhibitionSupport",
-      "datacolumn": "exhibitionSupportPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -112,7 +108,6 @@
     },
     {
       "fieldname": "exhibitionSupport",
-      "datacolumn": "exhibitionSupportPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -135,7 +130,6 @@
     },
     {
       "fieldname": "exhibitionSupport",
-      "datacolumn": "exhibitionSupportOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -158,7 +152,6 @@
     },
     {
       "fieldname": "exhibitionSupport",
-      "datacolumn": "exhibitionSupportOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -181,7 +174,6 @@
     },
     {
       "fieldname": "exhibitionSupportNote",
-      "datacolumn": "exhibitionSupportNote",
       "transforms": {
       },
       "source_type": "na",
@@ -200,7 +192,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -222,7 +213,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -244,7 +234,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -266,7 +255,6 @@
     },
     {
       "fieldname": "organizer",
-      "datacolumn": "organizerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -288,7 +276,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -311,7 +298,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -334,7 +320,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -357,7 +342,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venueLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -380,7 +364,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venuePlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -403,7 +386,6 @@
     },
     {
       "fieldname": "venue",
-      "datacolumn": "venuePlaceShared",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -426,7 +408,6 @@
     },
     {
       "fieldname": "venueOpeningDate",
-      "datacolumn": "venueOpeningDate",
       "transforms": {
       },
       "source_type": "na",
@@ -445,7 +426,6 @@
     },
     {
       "fieldname": "venueClosingDate",
-      "datacolumn": "venueClosingDate",
       "transforms": {
       },
       "source_type": "na",
@@ -464,7 +444,6 @@
     },
     {
       "fieldname": "venueAttendance",
-      "datacolumn": "venueAttendance",
       "transforms": {
       },
       "source_type": "na",
@@ -483,7 +462,6 @@
     },
     {
       "fieldname": "venueUrl",
-      "datacolumn": "venueUrl",
       "transforms": {
       },
       "source_type": "na",
@@ -502,7 +480,6 @@
     },
     {
       "fieldname": "planningNote",
-      "datacolumn": "planningNote",
       "transforms": {
       },
       "source_type": "na",
@@ -520,7 +497,6 @@
     },
     {
       "fieldname": "curatorialNote",
-      "datacolumn": "curatorialNote",
       "transforms": {
       },
       "source_type": "na",
@@ -538,7 +514,6 @@
     },
     {
       "fieldname": "generalNote",
-      "datacolumn": "generalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -556,7 +531,6 @@
     },
     {
       "fieldname": "boilerplateText",
-      "datacolumn": "boilerplateText",
       "transforms": {
       },
       "source_type": "na",
@@ -574,7 +548,6 @@
     },
     {
       "fieldname": "galleryRotationName",
-      "datacolumn": "galleryRotationName",
       "transforms": {
       },
       "source_type": "na",
@@ -593,7 +566,6 @@
     },
     {
       "fieldname": "galleryRotationStartDateGroup",
-      "datacolumn": "galleryRotationStartDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -612,7 +584,6 @@
     },
     {
       "fieldname": "galleryRotationEndDateGroup",
-      "datacolumn": "galleryRotationEndDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -631,7 +602,6 @@
     },
     {
       "fieldname": "galleryRotationNote",
-      "datacolumn": "galleryRotationNote",
       "transforms": {
       },
       "source_type": "na",

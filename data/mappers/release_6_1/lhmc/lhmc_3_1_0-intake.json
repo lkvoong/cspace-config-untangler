@@ -52,7 +52,6 @@
   "mappings": [
     {
       "fieldname": "entryNumber",
-      "datacolumn": "entryNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -70,7 +69,6 @@
     },
     {
       "fieldname": "entryDate",
-      "datacolumn": "entryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -88,7 +86,6 @@
     },
     {
       "fieldname": "receivedBy",
-      "datacolumn": "receivedByPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -110,7 +107,6 @@
     },
     {
       "fieldname": "receivedBy",
-      "datacolumn": "receivedByPersonUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -132,7 +128,6 @@
     },
     {
       "fieldname": "receivedBy",
-      "datacolumn": "receivedByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -154,7 +149,6 @@
     },
     {
       "fieldname": "entryReason",
-      "datacolumn": "entryReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -175,7 +169,6 @@
     },
     {
       "fieldname": "entryMethod",
-      "datacolumn": "entryMethod",
       "transforms": {
         "vocabulary": "entrymethod"
       },
@@ -194,7 +187,6 @@
     },
     {
       "fieldname": "returnDate",
-      "datacolumn": "returnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -212,7 +204,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -234,7 +225,6 @@
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -256,7 +246,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -279,7 +268,6 @@
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -302,7 +290,6 @@
     },
     {
       "fieldname": "depositorsRequirements",
-      "datacolumn": "depositorsRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -321,7 +308,6 @@
     },
     {
       "fieldname": "intakeStatus",
-      "datacolumn": "intakeStatus",
       "transforms": {
         "vocabulary": "intakestatus"
       },
@@ -340,7 +326,6 @@
     },
     {
       "fieldname": "approvalGroup",
-      "datacolumn": "approvalGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -360,7 +345,6 @@
     },
     {
       "fieldname": "approvalIndividual",
-      "datacolumn": "approvalIndividual",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -383,7 +367,6 @@
     },
     {
       "fieldname": "approvalStatus",
-      "datacolumn": "approvalStatus",
       "transforms": {
         "vocabulary": "deaccessionapprovalstatus"
       },
@@ -403,7 +386,6 @@
     },
     {
       "fieldname": "approvalDate",
-      "datacolumn": "approvalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -422,7 +404,6 @@
     },
     {
       "fieldname": "approvalNote",
-      "datacolumn": "approvalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -441,7 +422,6 @@
     },
     {
       "fieldname": "entryNote",
-      "datacolumn": "entryNote",
       "transforms": {
       },
       "source_type": "na",
@@ -459,7 +439,6 @@
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -477,7 +456,6 @@
     },
     {
       "fieldname": "valuer",
-      "datacolumn": "valuerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -499,7 +477,6 @@
     },
     {
       "fieldname": "valuer",
-      "datacolumn": "valuerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -521,7 +498,6 @@
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -543,7 +519,6 @@
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -565,7 +540,6 @@
     },
     {
       "fieldname": "insurancePolicyNumber",
-      "datacolumn": "insurancePolicyNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -583,7 +557,6 @@
     },
     {
       "fieldname": "insuranceRenewalDate",
-      "datacolumn": "insuranceRenewalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -601,7 +574,6 @@
     },
     {
       "fieldname": "premiumCurrency",
-      "datacolumn": "premiumCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -621,7 +593,6 @@
     },
     {
       "fieldname": "premiumValue",
-      "datacolumn": "premiumValue",
       "transforms": {
       },
       "source_type": "na",
@@ -640,7 +611,6 @@
     },
     {
       "fieldname": "insuranceNote",
-      "datacolumn": "insuranceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -658,7 +628,6 @@
     },
     {
       "fieldname": "insuredBy",
-      "datacolumn": "insuredBy",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -677,7 +646,6 @@
     },
     {
       "fieldname": "insuredValueCurrency",
-      "datacolumn": "insuredValueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -697,7 +665,6 @@
     },
     {
       "fieldname": "insuredValue",
-      "datacolumn": "insuredValue",
       "transforms": {
       },
       "source_type": "na",
@@ -716,7 +683,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -739,7 +705,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -762,7 +727,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -785,7 +749,6 @@
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationPlace",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -808,7 +771,6 @@
     },
     {
       "fieldname": "currentLocationFitness",
-      "datacolumn": "currentLocationFitness",
       "transforms": {
         "vocabulary": "conditionfitness"
       },
@@ -828,7 +790,6 @@
     },
     {
       "fieldname": "currentLocationNote",
-      "datacolumn": "currentLocationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -847,7 +808,6 @@
     },
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -865,7 +825,6 @@
     },
     {
       "fieldname": "inventoriedBy",
-      "datacolumn": "inventoriedByLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -887,7 +846,6 @@
     },
     {
       "fieldname": "inventoriedBy",
-      "datacolumn": "inventoriedByUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -909,7 +867,6 @@
     },
     {
       "fieldname": "conditionCheckMethod",
-      "datacolumn": "conditionCheckMethod",
       "transforms": {
         "vocabulary": "conditioncheckmethod"
       },
@@ -928,7 +885,6 @@
     },
     {
       "fieldname": "conditionCheckReason",
-      "datacolumn": "conditionCheckReason",
       "transforms": {
         "vocabulary": "conditioncheckreason"
       },
@@ -947,7 +903,6 @@
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -969,7 +924,6 @@
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -991,7 +945,6 @@
     },
     {
       "fieldname": "conditionCheckDate",
-      "datacolumn": "conditionCheckDate",
       "transforms": {
       },
       "source_type": "na",
@@ -1009,7 +962,6 @@
     },
     {
       "fieldname": "conditionCheckReferenceNumber",
-      "datacolumn": "conditionCheckReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -1027,7 +979,6 @@
     },
     {
       "fieldname": "intakeCondition",
-      "datacolumn": "intakeCondition",
       "transforms": {
         "vocabulary": "condition"
       },
@@ -1046,7 +997,6 @@
     },
     {
       "fieldname": "conditionCheckNote",
-      "datacolumn": "conditionCheckNote",
       "transforms": {
       },
       "source_type": "na",

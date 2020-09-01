@@ -39,7 +39,6 @@
   "mappings": [
     {
       "fieldname": "acquisitionReferenceNumber",
-      "datacolumn": "acquisitionReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -57,7 +56,6 @@
     },
     {
       "fieldname": "accessionDate",
-      "datacolumn": "accessionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -75,7 +73,6 @@
     },
     {
       "fieldname": "acquisitionAuthorizer",
-      "datacolumn": "acquisitionAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -97,7 +94,6 @@
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
-      "datacolumn": "acquisitionAuthorizerDate",
       "transforms": {
       },
       "source_type": "na",
@@ -115,7 +111,6 @@
     },
     {
       "fieldname": "acquisitionDate",
-      "datacolumn": "acquisitionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -133,7 +128,6 @@
     },
     {
       "fieldname": "acquisitionMethod",
-      "datacolumn": "acquisitionMethod",
       "transforms": {
         "vocabulary": "acquisitionmethod"
       },
@@ -152,7 +146,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -174,7 +167,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -196,7 +188,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -218,7 +209,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -240,7 +230,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -262,7 +251,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -284,7 +272,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -306,7 +293,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -328,7 +314,6 @@
     },
     {
       "fieldname": "acquisitionReason",
-      "datacolumn": "acquisitionReason",
       "transforms": {
       },
       "source_type": "na",
@@ -346,7 +331,6 @@
     },
     {
       "fieldname": "acquisitionNote",
-      "datacolumn": "acquisitionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -364,7 +348,6 @@
     },
     {
       "fieldname": "acquisitionFundingCurrency",
-      "datacolumn": "acquisitionFundingCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -384,7 +367,6 @@
     },
     {
       "fieldname": "acquisitionFundingValue",
-      "datacolumn": "acquisitionFundingValue",
       "transforms": {
       },
       "source_type": "na",
@@ -403,7 +385,6 @@
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourcePersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -426,7 +407,6 @@
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourcePersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -449,7 +429,6 @@
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourceOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -472,7 +451,6 @@
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourceOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -495,7 +473,6 @@
     },
     {
       "fieldname": "acquisitionFundingSourceProvisos",
-      "datacolumn": "acquisitionFundingSourceProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -514,7 +491,6 @@
     },
     {
       "fieldname": "creditLine",
-      "datacolumn": "creditLine",
       "transforms": {
       },
       "source_type": "na",
@@ -532,7 +508,6 @@
     },
     {
       "fieldname": "commissioningBody",
-      "datacolumn": "commissioningBodyPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -554,7 +529,6 @@
     },
     {
       "fieldname": "commissioningBody",
-      "datacolumn": "commissioningBodyOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -576,7 +550,6 @@
     },
     {
       "fieldname": "commissionDate",
-      "datacolumn": "commissionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -594,7 +567,6 @@
     },
     {
       "fieldname": "commissionBudgetType",
-      "datacolumn": "commissionBudgetType",
       "transforms": {
         "vocabulary": "budgettype"
       },
@@ -614,7 +586,6 @@
     },
     {
       "fieldname": "commissionBudgetTypeNote",
-      "datacolumn": "commissionBudgetTypeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -633,7 +604,6 @@
     },
     {
       "fieldname": "commissionProjectedValueCurrency",
-      "datacolumn": "commissionProjectedValueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -653,7 +623,6 @@
     },
     {
       "fieldname": "commissionProjectedValueAmount",
-      "datacolumn": "commissionProjectedValueAmount",
       "transforms": {
       },
       "source_type": "na",
@@ -672,7 +641,6 @@
     },
     {
       "fieldname": "commissionActualValueCurrency",
-      "datacolumn": "commissionActualValueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -692,7 +660,6 @@
     },
     {
       "fieldname": "commissionActualValueAmount",
-      "datacolumn": "commissionActualValueAmount",
       "transforms": {
       },
       "source_type": "na",

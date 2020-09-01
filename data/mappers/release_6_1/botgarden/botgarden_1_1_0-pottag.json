@@ -17,7 +17,6 @@
   "mappings": [
     {
       "fieldname": "family",
-      "datacolumn": "family",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -39,7 +38,6 @@
     },
     {
       "fieldname": "commonName",
-      "datacolumn": "commonName",
       "transforms": {
       },
       "source_type": "na",
@@ -57,7 +55,6 @@
     },
     {
       "fieldname": "locale",
-      "datacolumn": "locale",
       "transforms": {
       },
       "source_type": "na",
@@ -75,7 +72,6 @@
     },
     {
       "fieldname": "taxonName",
-      "datacolumn": "taxonName",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -97,7 +93,6 @@
     },
     {
       "fieldname": "numberOfLabels",
-      "datacolumn": "numberOfLabels",
       "transforms": {
       },
       "source_type": "na",
@@ -115,7 +110,6 @@
     },
     {
       "fieldname": "printLabels",
-      "datacolumn": "printLabels",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -134,7 +128,6 @@
     },
     {
       "fieldname": "labelData",
-      "datacolumn": "labelData",
       "transforms": {
       },
       "source_type": "na",

@@ -27,7 +27,6 @@
   "mappings": [
     {
       "fieldname": "acquisitionReferenceNumber",
-      "datacolumn": "acquisitionReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -45,7 +44,6 @@
     },
     {
       "fieldname": "accessionDateGroup",
-      "datacolumn": "accessionDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -63,7 +61,6 @@
     },
     {
       "fieldname": "acquisitionAuthorizer",
-      "datacolumn": "acquisitionAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -85,7 +82,6 @@
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
-      "datacolumn": "acquisitionAuthorizerDate",
       "transforms": {
       },
       "source_type": "na",
@@ -103,7 +99,6 @@
     },
     {
       "fieldname": "acquisitionDateGroup",
-      "datacolumn": "acquisitionDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -121,7 +116,6 @@
     },
     {
       "fieldname": "acquisitionMethod",
-      "datacolumn": "acquisitionMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -143,7 +137,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -165,7 +158,6 @@
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -187,7 +179,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -209,7 +200,6 @@
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -231,7 +221,6 @@
     },
     {
       "fieldname": "transferOfTitleNumber",
-      "datacolumn": "transferOfTitleNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -249,7 +238,6 @@
     },
     {
       "fieldname": "groupPurchasePriceCurrency",
-      "datacolumn": "groupPurchasePriceCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -268,7 +256,6 @@
     },
     {
       "fieldname": "groupPurchasePriceValue",
-      "datacolumn": "groupPurchasePriceValue",
       "transforms": {
       },
       "source_type": "na",
@@ -286,7 +273,6 @@
     },
     {
       "fieldname": "objectOfferPriceCurrency",
-      "datacolumn": "objectOfferPriceCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -305,7 +291,6 @@
     },
     {
       "fieldname": "objectOfferPriceValue",
-      "datacolumn": "objectOfferPriceValue",
       "transforms": {
       },
       "source_type": "na",
@@ -323,7 +308,6 @@
     },
     {
       "fieldname": "objectPurchaseOfferPriceCurrency",
-      "datacolumn": "objectPurchaseOfferPriceCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -342,7 +326,6 @@
     },
     {
       "fieldname": "objectPurchaseOfferPriceValue",
-      "datacolumn": "objectPurchaseOfferPriceValue",
       "transforms": {
       },
       "source_type": "na",
@@ -360,7 +343,6 @@
     },
     {
       "fieldname": "objectPurchasePriceCurrency",
-      "datacolumn": "objectPurchasePriceCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -379,7 +361,6 @@
     },
     {
       "fieldname": "objectPurchasePriceValue",
-      "datacolumn": "objectPurchasePriceValue",
       "transforms": {
       },
       "source_type": "na",
@@ -397,7 +378,6 @@
     },
     {
       "fieldname": "originalObjectPurchasePriceCurrency",
-      "datacolumn": "originalObjectPurchasePriceCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -416,7 +396,6 @@
     },
     {
       "fieldname": "originalObjectPurchasePriceValue",
-      "datacolumn": "originalObjectPurchasePriceValue",
       "transforms": {
       },
       "source_type": "na",
@@ -434,7 +413,6 @@
     },
     {
       "fieldname": "acquisitionReason",
-      "datacolumn": "acquisitionReason",
       "transforms": {
       },
       "source_type": "na",
@@ -452,7 +430,6 @@
     },
     {
       "fieldname": "acquisitionNote",
-      "datacolumn": "acquisitionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -470,7 +447,6 @@
     },
     {
       "fieldname": "acquisitionProvisos",
-      "datacolumn": "acquisitionProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -488,7 +464,6 @@
     },
     {
       "fieldname": "acquisitionFundingCurrency",
-      "datacolumn": "acquisitionFundingCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -508,7 +483,6 @@
     },
     {
       "fieldname": "acquisitionFundingValue",
-      "datacolumn": "acquisitionFundingValue",
       "transforms": {
       },
       "source_type": "na",
@@ -527,7 +501,6 @@
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourcePerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -550,7 +523,6 @@
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourceOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -573,7 +545,6 @@
     },
     {
       "fieldname": "acquisitionFundingSourceProvisos",
-      "datacolumn": "acquisitionFundingSourceProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -592,7 +563,6 @@
     },
     {
       "fieldname": "creditLine",
-      "datacolumn": "creditLine",
       "transforms": {
       },
       "source_type": "na",
