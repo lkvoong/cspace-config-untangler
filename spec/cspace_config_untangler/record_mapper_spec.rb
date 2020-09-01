@@ -18,6 +18,36 @@ RSpec.describe CCU::RecordMapper do
         expect(@rm_anthro_co.hash).to be_a(Hash)
       end
     end
+
+    describe '#ensure_unique_datacolumns' do
+      context 'anthro profile' do
+        context 'collectionobject recordtype' do
+          before(:all) do
+            @mappings = @rm_anthro_co.mappings
+          end
+          context 'fieldname = sex' do
+            it 'columnnames: sex, commingledRemainsGroup_sex' do
+              result = @mappings.select{ |m| m.fieldname == 'sex' }.map{ |m| m.datacolumn }.sort
+              expect(result).to eq(%w[commingledRemainsGroup_sex sex])
+            end
+          end
+          context 'fieldname = reference' do
+            # does NOT change datacolumn values, as one field's use of multiple authorities
+            #  has already caused all datacolumn values to be different
+            it 'columnnames: ' do
+              result = @mappings.select{ |m| m.fieldname == 'reference' }.map{ |m| m.datacolumn }.sort
+              expect(result).to eq(%w[reference referenceLocal referenceWorldcat])
+            end
+          end
+          context 'fieldname = fieldLocVerbatim' do
+            it 'columnnames: ' do
+              result = @mappings.select{ |m| m.fieldname == 'fieldLocVerbatim' }.map{ |m| m.datacolumn }.sort
+              expect(result).to eq(%w[fieldLocVerbatim localityGroup_fieldLocVerbatim])
+            end
+          end
+        end
+      end
+    end
   end
 
   describe NamespaceUris do

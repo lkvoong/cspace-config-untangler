@@ -5,8 +5,9 @@ module CspaceConfigUntangler
     class FieldMapping
       ::FieldMapping = CspaceConfigUntangler::FieldMap::FieldMapping
       include CCU::TrackAttributes
-      attr_reader :fieldname, :datacolumn, :transforms, :source_type, :namespace, :xpath, :data_type,
+      attr_reader :fieldname, :transforms, :source_type, :namespace, :xpath, :data_type,
         :required, :repeats, :in_repeating_group, :opt_list_values
+      attr_accessor :datacolumn
       def initialize(field:, datacolumn:, transforms: {}, source_type:)
         @fieldname = field.name
         @namespace = field.ns.sub('ns2:', '')
