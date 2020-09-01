@@ -34,7 +34,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementReferenceNumber"
     },
     {
       "fieldname": "normalLocation",
@@ -55,7 +56,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationLocal"
     },
     {
       "fieldname": "normalLocation",
@@ -76,7 +78,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationOffsite"
     },
     {
       "fieldname": "normalLocation",
@@ -97,7 +100,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationOrganization"
     },
     {
       "fieldname": "currentLocation",
@@ -118,7 +122,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationLocal"
     },
     {
       "fieldname": "currentLocation",
@@ -139,7 +144,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationOffsite"
     },
     {
       "fieldname": "currentLocation",
@@ -160,7 +166,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganization"
     },
     {
       "fieldname": "currentLocationFitness",
@@ -180,7 +187,8 @@
         "suitable",
         "temporary",
         "unsuitable"
-      ]
+      ],
+      "datacolumn": "currentLocationFitness"
     },
     {
       "fieldname": "currentLocationNote",
@@ -197,7 +205,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationNote"
     },
     {
       "fieldname": "locationDate",
@@ -214,7 +223,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationDate"
     },
     {
       "fieldname": "reasonForMove",
@@ -237,7 +247,8 @@
         "newstoragelocation",
         "photography",
         "research"
-      ]
+      ],
+      "datacolumn": "reasonForMove"
     },
     {
       "fieldname": "movementMethod",
@@ -256,7 +267,8 @@
         "forklift",
         "handcarried",
         "trolley"
-      ]
+      ],
+      "datacolumn": "movementMethod"
     },
     {
       "fieldname": "plannedRemovalDate",
@@ -273,7 +285,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "plannedRemovalDate"
     },
     {
       "fieldname": "removalDate",
@@ -290,7 +303,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "removalDate"
     },
     {
       "fieldname": "movementContact",
@@ -311,7 +325,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementContact"
     },
     {
       "fieldname": "movementNote",
@@ -328,7 +343,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementNote"
     },
     {
       "fieldname": "inventoryActionRequired",
@@ -347,7 +363,8 @@
         "conservation",
         "preservation",
         "re-housing"
-      ]
+      ],
+      "datacolumn": "inventoryActionRequired"
     },
     {
       "fieldname": "frequencyForInventory",
@@ -368,7 +385,8 @@
         "monthly",
         "semi-annually",
         "weekly"
-      ]
+      ],
+      "datacolumn": "frequencyForInventory"
     },
     {
       "fieldname": "inventoryDate",
@@ -385,7 +403,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryDate"
     },
     {
       "fieldname": "nextInventoryDate",
@@ -402,7 +421,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nextInventoryDate"
     },
     {
       "fieldname": "inventoryContact",
@@ -423,7 +443,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryContact"
     },
     {
       "fieldname": "inventoryNote",
@@ -440,7 +461,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryNote"
     }
   ]
 }

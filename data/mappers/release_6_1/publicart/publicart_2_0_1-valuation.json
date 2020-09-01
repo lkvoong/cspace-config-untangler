@@ -41,7 +41,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuationcontrolRefNumber"
     },
     {
       "fieldname": "valueCurrency",
@@ -60,7 +61,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueCurrency"
     },
     {
       "fieldname": "valueAmount",
@@ -78,7 +80,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueAmount"
     },
     {
       "fieldname": "valueDate",
@@ -95,7 +98,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "valueRenewalDate",
@@ -112,7 +116,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueRenewalDate"
     },
     {
       "fieldname": "valueSource",
@@ -133,7 +138,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourcePersonLocal"
     },
     {
       "fieldname": "valueSource",
@@ -154,7 +160,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourcePersonShared"
     },
     {
       "fieldname": "valueSource",
@@ -175,7 +182,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceOrganizationLocal"
     },
     {
       "fieldname": "valueSource",
@@ -196,7 +204,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceOrganizationShared"
     },
     {
       "fieldname": "valueSourceRole",
@@ -214,7 +223,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceRole"
     },
     {
       "fieldname": "valueType",
@@ -233,7 +243,8 @@
         "Current Value",
         "Original Value",
         "Replacement Value"
-      ]
+      ],
+      "datacolumn": "valueType"
     },
     {
       "fieldname": "valueNote",
@@ -250,7 +261,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueNote"
     },
     {
       "fieldname": "insurer",
@@ -272,7 +284,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerPersonLocal"
     },
     {
       "fieldname": "insurer",
@@ -294,7 +307,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerPersonShared"
     },
     {
       "fieldname": "insurer",
@@ -316,7 +330,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerOrganizationLocal"
     },
     {
       "fieldname": "insurer",
@@ -338,7 +353,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerOrganizationShared"
     },
     {
       "fieldname": "insuranceNote",
@@ -356,7 +372,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceNote"
     },
     {
       "fieldname": "insurancePolicyNumber",
@@ -374,7 +391,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurancePolicyNumber"
     },
     {
       "fieldname": "insuranceRenewalDate",
@@ -392,7 +410,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceRenewalDate"
     }
   ]
 }

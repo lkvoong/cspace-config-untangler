@@ -40,7 +40,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionReferenceNumber"
     },
     {
       "fieldname": "accessionDateGroup",
@@ -57,7 +58,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionDateGroup"
     },
     {
       "fieldname": "acquisitionAuthorizer",
@@ -78,7 +80,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionAuthorizer"
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
@@ -95,7 +98,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionAuthorizerDate"
     },
     {
       "fieldname": "acquisitionDateGroup",
@@ -112,7 +116,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionDateGroup"
     },
     {
       "fieldname": "acquisitionMethod",
@@ -133,7 +138,8 @@
         "purchase",
         "transfer",
         "treasure"
-      ]
+      ],
+      "datacolumn": "acquisitionMethod"
     },
     {
       "fieldname": "acquisitionSource",
@@ -154,7 +160,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourcePerson"
     },
     {
       "fieldname": "acquisitionSource",
@@ -175,7 +182,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourceOrganization"
     },
     {
       "fieldname": "owner",
@@ -196,7 +204,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPerson"
     },
     {
       "fieldname": "owner",
@@ -217,7 +226,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganization"
     },
     {
       "fieldname": "transferOfTitleNumber",
@@ -234,7 +244,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOfTitleNumber"
     },
     {
       "fieldname": "groupPurchasePriceCurrency",
@@ -252,7 +263,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupPurchasePriceCurrency"
     },
     {
       "fieldname": "groupPurchasePriceValue",
@@ -269,7 +281,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupPurchasePriceValue"
     },
     {
       "fieldname": "objectOfferPriceCurrency",
@@ -287,7 +300,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectOfferPriceCurrency"
     },
     {
       "fieldname": "objectOfferPriceValue",
@@ -304,7 +318,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectOfferPriceValue"
     },
     {
       "fieldname": "objectPurchaseOfferPriceCurrency",
@@ -322,7 +337,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectPurchaseOfferPriceCurrency"
     },
     {
       "fieldname": "objectPurchaseOfferPriceValue",
@@ -339,7 +355,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectPurchaseOfferPriceValue"
     },
     {
       "fieldname": "objectPurchasePriceCurrency",
@@ -357,7 +374,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectPurchasePriceCurrency"
     },
     {
       "fieldname": "objectPurchasePriceValue",
@@ -374,7 +392,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectPurchasePriceValue"
     },
     {
       "fieldname": "originalObjectPurchasePriceCurrency",
@@ -392,7 +411,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "originalObjectPurchasePriceCurrency"
     },
     {
       "fieldname": "originalObjectPurchasePriceValue",
@@ -409,7 +429,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "originalObjectPurchasePriceValue"
     },
     {
       "fieldname": "acquisitionReason",
@@ -426,7 +447,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionReason"
     },
     {
       "fieldname": "acquisitionNote",
@@ -443,7 +465,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionNote"
     },
     {
       "fieldname": "acquisitionProvisos",
@@ -460,7 +483,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionProvisos"
     },
     {
       "fieldname": "acquisitionFundingCurrency",
@@ -479,7 +503,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingCurrency"
     },
     {
       "fieldname": "acquisitionFundingValue",
@@ -497,7 +522,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingValue"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -519,7 +545,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourcePerson"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -541,7 +568,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceOrganization"
     },
     {
       "fieldname": "acquisitionFundingSourceProvisos",
@@ -559,7 +587,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceProvisos"
     },
     {
       "fieldname": "creditLine",
@@ -576,7 +605,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creditLine"
     }
   ]
 }

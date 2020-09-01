@@ -35,7 +35,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitNumber"
     },
     {
       "fieldname": "exitDateGroup",
@@ -52,7 +53,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitDateGroup"
     },
     {
       "fieldname": "currentOwner",
@@ -73,7 +75,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerPerson"
     },
     {
       "fieldname": "currentOwner",
@@ -94,7 +97,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerOrganization"
     },
     {
       "fieldname": "exitMethod",
@@ -113,7 +117,8 @@
         "courier",
         "inperson",
         "post"
-      ]
+      ],
+      "datacolumn": "exitMethod"
     },
     {
       "fieldname": "depositor",
@@ -134,7 +139,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositor"
     },
     {
       "fieldname": "exitReason",
@@ -153,7 +159,8 @@
         "deaccession",
         "disposal",
         "returnofloan"
-      ]
+      ],
+      "datacolumn": "exitReason"
     },
     {
       "fieldname": "count",
@@ -170,7 +177,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "count"
     },
     {
       "fieldname": "exitNote",
@@ -187,7 +195,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitNote"
     },
     {
       "fieldname": "packingNote",
@@ -204,7 +213,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "packingNote"
     }
   ]
 }

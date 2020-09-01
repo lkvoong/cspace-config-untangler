@@ -34,7 +34,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuationcontrolRefNumber"
     },
     {
       "fieldname": "valueCurrency",
@@ -53,7 +54,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueCurrency"
     },
     {
       "fieldname": "valueAmount",
@@ -71,7 +73,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueAmount"
     },
     {
       "fieldname": "valueDate",
@@ -88,7 +91,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "valueRenewalDate",
@@ -105,7 +109,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueRenewalDate"
     },
     {
       "fieldname": "valueSource",
@@ -126,7 +131,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourcePerson"
     },
     {
       "fieldname": "valueSource",
@@ -147,7 +153,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceOrganization"
     },
     {
       "fieldname": "valueType",
@@ -166,7 +173,8 @@
         "Current Value",
         "Original Value",
         "Replacement Value"
-      ]
+      ],
+      "datacolumn": "valueType"
     },
     {
       "fieldname": "valueNote",
@@ -183,7 +191,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueNote"
     }
   ]
 }

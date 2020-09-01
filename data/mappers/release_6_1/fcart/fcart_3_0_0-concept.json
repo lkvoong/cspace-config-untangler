@@ -52,7 +52,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termName",
@@ -70,7 +71,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termName"
     },
     {
       "fieldname": "termQualifier",
@@ -88,7 +90,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
@@ -109,7 +112,8 @@
         "provisional",
         "rejected",
         "under review"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
@@ -129,7 +133,8 @@
         "alternate descriptor",
         "descriptor",
         "used for term"
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
@@ -148,7 +153,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "historicalStatus",
@@ -169,7 +175,8 @@
         "current",
         "historical",
         "unknown"
-      ]
+      ],
+      "datacolumn": "historicalStatus"
     },
     {
       "fieldname": "termLanguage",
@@ -188,7 +195,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
@@ -209,7 +217,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "termSource",
@@ -231,7 +240,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceLocal"
     },
     {
       "fieldname": "termSource",
@@ -253,7 +263,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceWorldcat"
     },
     {
       "fieldname": "termSourceDetail",
@@ -271,7 +282,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
@@ -289,7 +301,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
@@ -307,7 +320,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "conceptRecordType",
@@ -325,7 +339,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRecordType"
     },
     {
       "fieldname": "scopeNote",
@@ -342,7 +357,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNote"
     },
     {
       "fieldname": "scopeNoteSource",
@@ -359,7 +375,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNoteSource"
     },
     {
       "fieldname": "scopeNoteSourceDetail",
@@ -376,7 +393,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNoteSourceDetail"
     },
     {
       "fieldname": "citationSource",
@@ -394,7 +412,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "citationSource"
     },
     {
       "fieldname": "citationSourceDetail",
@@ -412,7 +431,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "citationSourceDetail"
     },
     {
       "fieldname": "additionalSource",
@@ -430,7 +450,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSource"
     },
     {
       "fieldname": "additionalSourceDetail",
@@ -448,7 +469,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSourceDetail"
     },
     {
       "fieldname": "additionalSourceID",
@@ -466,7 +488,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSourceID"
     },
     {
       "fieldname": "additionalSourceNote",
@@ -484,7 +507,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSourceNote"
     },
     {
       "fieldname": "relatedConcept",
@@ -506,7 +530,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedConcept"
     },
     {
       "fieldname": "conceptRelationType",
@@ -525,7 +550,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRelationType"
     },
     {
       "fieldname": "conceptRelationDateGroup",
@@ -543,7 +569,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRelationDateGroup"
     },
     {
       "fieldname": "conceptTermDateGroup",
@@ -560,7 +587,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptTermDateGroup"
     },
     {
       "fieldname": "conceptRemarks",
@@ -577,7 +605,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRemarks"
     }
   ]
 }

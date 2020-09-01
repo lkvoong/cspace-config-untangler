@@ -39,7 +39,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termName",
@@ -57,7 +58,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termName"
     },
     {
       "fieldname": "termQualifier",
@@ -75,7 +77,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
@@ -96,7 +99,8 @@
         "provisional",
         "rejected",
         "under review"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
@@ -116,7 +120,8 @@
         "alternate descriptor",
         "descriptor",
         "used for term"
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
@@ -135,7 +140,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "termLanguage",
@@ -154,7 +160,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
@@ -175,7 +182,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "termSource",
@@ -193,7 +201,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSource"
     },
     {
       "fieldname": "termSourceDetail",
@@ -211,7 +220,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
@@ -229,7 +239,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
@@ -247,7 +258,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "locationType",
@@ -265,7 +277,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationType"
     },
     {
       "fieldname": "securityNote",
@@ -282,7 +295,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "securityNote"
     },
     {
       "fieldname": "address",
@@ -299,7 +313,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "address"
     },
     {
       "fieldname": "accessNote",
@@ -316,7 +331,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessNote"
     },
     {
       "fieldname": "conditionNote",
@@ -334,7 +350,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionNote"
     },
     {
       "fieldname": "conditionNoteDate",
@@ -352,7 +369,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionNoteDate"
     }
   ]
 }

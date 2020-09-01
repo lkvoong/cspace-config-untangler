@@ -23,8 +23,11 @@ module CspaceConfigUntangler
       end
 
       def to_h
-        attrs = self.attr_readers
-        ivs = attrs.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
+        readable = self.attr_readers
+        accessible = self.attr_accessors
+        attrs = readable + accessible
+        
+        ivs = attrs.flatten.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
         h = {}
         attrs.each_with_index{ |a, i| h[a.to_sym] = self.instance_variable_get(ivs[i]) }
         return h

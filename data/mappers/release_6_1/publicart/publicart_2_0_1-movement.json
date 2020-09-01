@@ -32,7 +32,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementReferenceNumber"
     },
     {
       "fieldname": "currentLocation",
@@ -53,7 +54,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationLocal"
     },
     {
       "fieldname": "currentLocation",
@@ -74,7 +76,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationOffsite"
     },
     {
       "fieldname": "currentLocation",
@@ -95,7 +98,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganizationLocal"
     },
     {
       "fieldname": "currentLocation",
@@ -116,7 +120,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganizationShared"
     },
     {
       "fieldname": "currentLocation",
@@ -137,7 +142,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationPlaceLocal"
     },
     {
       "fieldname": "currentLocation",
@@ -158,7 +164,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationPlaceShared"
     },
     {
       "fieldname": "currentLocationFitness",
@@ -178,7 +185,8 @@
         "suitable",
         "temporary",
         "unsuitable"
-      ]
+      ],
+      "datacolumn": "currentLocationFitness"
     },
     {
       "fieldname": "currentLocationNote",
@@ -195,7 +203,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationNote"
     },
     {
       "fieldname": "locationDate",
@@ -212,7 +221,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationDate"
     },
     {
       "fieldname": "reasonForMove",
@@ -235,7 +245,8 @@
         "newstoragelocation",
         "photography",
         "research"
-      ]
+      ],
+      "datacolumn": "reasonForMove"
     },
     {
       "fieldname": "movementMethod",
@@ -254,7 +265,8 @@
         "forklift",
         "handcarried",
         "trolley"
-      ]
+      ],
+      "datacolumn": "movementMethod"
     },
     {
       "fieldname": "plannedRemovalDate",
@@ -271,7 +283,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "plannedRemovalDate"
     },
     {
       "fieldname": "removalDate",
@@ -288,7 +301,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "removalDate"
     },
     {
       "fieldname": "movementContact",
@@ -309,7 +323,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementContactLocal"
     },
     {
       "fieldname": "movementContact",
@@ -330,7 +345,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementContactShared"
     },
     {
       "fieldname": "movementNote",
@@ -347,7 +363,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementNote"
     }
   ]
 }

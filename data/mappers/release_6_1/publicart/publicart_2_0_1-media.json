@@ -43,7 +43,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identificationNumber"
     },
     {
       "fieldname": "title",
@@ -60,7 +61,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "name",
@@ -77,7 +79,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "name"
     },
     {
       "fieldname": "mimeType",
@@ -94,7 +97,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mimeType"
     },
     {
       "fieldname": "length",
@@ -111,7 +115,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "length"
     },
     {
       "fieldname": "externalUrl",
@@ -128,7 +133,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "externalUrl"
     },
     {
       "fieldname": "contributor",
@@ -149,7 +155,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorPersonLocal"
     },
     {
       "fieldname": "contributor",
@@ -170,7 +177,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorPersonShared"
     },
     {
       "fieldname": "contributor",
@@ -191,7 +199,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorOrganizationLocal"
     },
     {
       "fieldname": "contributor",
@@ -212,7 +221,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorOrganizationShared"
     },
     {
       "fieldname": "creator",
@@ -233,7 +243,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPersonLocal"
     },
     {
       "fieldname": "creator",
@@ -254,7 +265,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPersonShared"
     },
     {
       "fieldname": "creator",
@@ -275,7 +287,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganizationLocal"
     },
     {
       "fieldname": "creator",
@@ -296,7 +309,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganizationShared"
     },
     {
       "fieldname": "copyrightStatement",
@@ -313,7 +327,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "copyrightStatement"
     },
     {
       "fieldname": "type",
@@ -334,7 +349,8 @@
         "moving_image",
         "sound",
         "still_image"
-      ]
+      ],
+      "datacolumn": "type"
     },
     {
       "fieldname": "publishTo",
@@ -352,7 +368,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publishTo"
     },
     {
       "fieldname": "dateGroup",
@@ -369,7 +386,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateGroup"
     },
     {
       "fieldname": "source",
@@ -386,7 +404,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "source"
     },
     {
       "fieldname": "publicartRightsHolder",
@@ -407,7 +426,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicartRightsHolderPersonLocal"
     },
     {
       "fieldname": "publicartRightsHolder",
@@ -428,7 +448,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicartRightsHolderPersonShared"
     },
     {
       "fieldname": "publicartRightsHolder",
@@ -449,7 +470,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicartRightsHolderOrganizationLocal"
     },
     {
       "fieldname": "publicartRightsHolder",
@@ -470,7 +492,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicartRightsHolderOrganizationShared"
     },
     {
       "fieldname": "description",
@@ -487,7 +510,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "description"
     }
   ]
 }

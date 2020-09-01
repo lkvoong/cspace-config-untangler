@@ -52,7 +52,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionReferenceNumber"
     },
     {
       "fieldname": "accessionDate",
@@ -69,7 +70,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionDate"
     },
     {
       "fieldname": "acquisitionAuthorizer",
@@ -90,7 +92,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionAuthorizer"
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
@@ -107,7 +110,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionAuthorizerDate"
     },
     {
       "fieldname": "acquisitionDate",
@@ -124,7 +128,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionDate"
     },
     {
       "fieldname": "acquisitionMethod",
@@ -142,7 +147,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionMethod"
     },
     {
       "fieldname": "acquisitionSource",
@@ -163,7 +169,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourcePersonLocal"
     },
     {
       "fieldname": "acquisitionSource",
@@ -184,7 +191,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourcePersonShared"
     },
     {
       "fieldname": "acquisitionSource",
@@ -205,7 +213,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourceOrganizationLocal"
     },
     {
       "fieldname": "acquisitionSource",
@@ -226,7 +235,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourceOrganizationShared"
     },
     {
       "fieldname": "owner",
@@ -247,7 +257,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPersonLocal"
     },
     {
       "fieldname": "owner",
@@ -268,7 +279,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPersonShared"
     },
     {
       "fieldname": "owner",
@@ -289,7 +301,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganizationLocal"
     },
     {
       "fieldname": "owner",
@@ -310,7 +323,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganizationShared"
     },
     {
       "fieldname": "acquisitionReason",
@@ -327,7 +341,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionReason"
     },
     {
       "fieldname": "acquisitionNote",
@@ -344,7 +359,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionNote"
     },
     {
       "fieldname": "acquisitionFundingCurrency",
@@ -363,7 +379,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingCurrency"
     },
     {
       "fieldname": "acquisitionFundingValue",
@@ -381,7 +398,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingValue"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -403,7 +421,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourcePersonLocal"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -425,7 +444,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourcePersonShared"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -447,7 +467,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceOrganizationLocal"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -469,7 +490,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceOrganizationShared"
     },
     {
       "fieldname": "acquisitionFundingSourceProvisos",
@@ -487,7 +509,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceProvisos"
     },
     {
       "fieldname": "creditLine",
@@ -504,7 +527,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creditLine"
     },
     {
       "fieldname": "commissioningBody",
@@ -525,7 +549,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissioningBodyPerson"
     },
     {
       "fieldname": "commissioningBody",
@@ -546,7 +571,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissioningBodyOrganization"
     },
     {
       "fieldname": "commissionDate",
@@ -563,7 +589,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionDate"
     },
     {
       "fieldname": "commissionBudgetType",
@@ -582,7 +609,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionBudgetType"
     },
     {
       "fieldname": "commissionBudgetTypeNote",
@@ -600,7 +628,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionBudgetTypeNote"
     },
     {
       "fieldname": "commissionProjectedValueCurrency",
@@ -619,7 +648,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionProjectedValueCurrency"
     },
     {
       "fieldname": "commissionProjectedValueAmount",
@@ -637,7 +667,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionProjectedValueAmount"
     },
     {
       "fieldname": "commissionActualValueCurrency",
@@ -656,7 +687,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionActualValueCurrency"
     },
     {
       "fieldname": "commissionActualValueAmount",
@@ -674,7 +706,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionActualValueAmount"
     }
   ]
 }

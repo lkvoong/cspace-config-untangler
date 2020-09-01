@@ -60,7 +60,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceNumber"
     },
     {
       "fieldname": "method",
@@ -78,7 +79,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "method"
     },
     {
       "fieldname": "collectionType",
@@ -95,7 +97,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "collectionType"
     },
     {
       "fieldname": "projectId",
@@ -112,7 +115,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "projectId"
     },
     {
       "fieldname": "subcollection",
@@ -129,7 +133,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "subcollection"
     },
     {
       "fieldname": "materialType",
@@ -146,7 +151,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialType"
     },
     {
       "fieldname": "user",
@@ -168,7 +174,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "userPerson"
     },
     {
       "fieldname": "user",
@@ -190,7 +197,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "userOrganization"
     },
     {
       "fieldname": "userUocRole",
@@ -208,7 +216,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "userUocRole"
     },
     {
       "fieldname": "userInstitution",
@@ -230,7 +239,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "userInstitution"
     },
     {
       "fieldname": "userInstitutionRole",
@@ -249,7 +259,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "userInstitutionRole"
     },
     {
       "fieldname": "title",
@@ -266,7 +277,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "dateRequested",
@@ -283,7 +295,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateRequested"
     },
     {
       "fieldname": "dateCompleted",
@@ -300,7 +313,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateCompleted"
     },
     {
       "fieldname": "occasion",
@@ -321,7 +335,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "occasion"
     },
     {
       "fieldname": "projectDescription",
@@ -338,7 +353,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "projectDescription"
     },
     {
       "fieldname": "authorizedBy",
@@ -360,7 +376,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "authorizedByPerson"
     },
     {
       "fieldname": "authorizedBy",
@@ -382,7 +399,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "authorizedByOrganization"
     },
     {
       "fieldname": "authorizationDate",
@@ -400,7 +418,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "authorizationDate"
     },
     {
       "fieldname": "authorizationStatus",
@@ -418,7 +437,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "authorizationStatus"
     },
     {
       "fieldname": "authorizationNote",
@@ -436,7 +456,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "authorizationNote"
     },
     {
       "fieldname": "useDate",
@@ -454,7 +475,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "useDate"
     },
     {
       "fieldname": "useDateTimeNote",
@@ -472,7 +494,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "useDateTimeNote"
     },
     {
       "fieldname": "useDateNumberOfVisitors",
@@ -490,7 +513,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "useDateNumberOfVisitors"
     },
     {
       "fieldname": "useDateHoursSpent",
@@ -508,7 +532,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "useDateHoursSpent"
     },
     {
       "fieldname": "useDateVisitorNote",
@@ -526,7 +551,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "useDateVisitorNote"
     },
     {
       "fieldname": "endDate",
@@ -543,7 +569,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "endDate"
     },
     {
       "fieldname": "staffName",
@@ -565,7 +592,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "staffNamePerson"
     },
     {
       "fieldname": "staffName",
@@ -587,7 +615,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "staffNameOrganization"
     },
     {
       "fieldname": "staffRole",
@@ -605,7 +634,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "staffRole"
     },
     {
       "fieldname": "staffHours",
@@ -623,7 +653,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "staffHours"
     },
     {
       "fieldname": "staffNote",
@@ -641,7 +672,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "staffNote"
     },
     {
       "fieldname": "location",
@@ -662,7 +694,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationOrganization"
     },
     {
       "fieldname": "location",
@@ -683,7 +716,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationPlace"
     },
     {
       "fieldname": "location",
@@ -704,7 +738,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationLocation"
     },
     {
       "fieldname": "feeCurrency",
@@ -723,7 +758,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "feeCurrency"
     },
     {
       "fieldname": "feeValue",
@@ -741,7 +777,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "feeValue"
     },
     {
       "fieldname": "feePaid",
@@ -762,7 +799,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "feePaid"
     },
     {
       "fieldname": "feeNote",
@@ -780,7 +818,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "feeNote"
     },
     {
       "fieldname": "note",
@@ -797,7 +836,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "note"
     },
     {
       "fieldname": "provisos",
@@ -814,7 +854,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "provisos"
     },
     {
       "fieldname": "obligationsFulfilled",
@@ -834,7 +875,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "obligationsFulfilled"
     },
     {
       "fieldname": "result",
@@ -851,7 +893,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "result"
     }
   ]
 }

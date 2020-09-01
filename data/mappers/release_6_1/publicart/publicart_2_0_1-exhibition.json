@@ -47,7 +47,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exhibitionNumber"
     },
     {
       "fieldname": "type",
@@ -65,7 +66,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "type"
     },
     {
       "fieldname": "title",
@@ -82,7 +84,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "exhibitionSupport",
@@ -104,7 +107,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exhibitionSupportPersonLocal"
     },
     {
       "fieldname": "exhibitionSupport",
@@ -126,7 +130,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exhibitionSupportPersonShared"
     },
     {
       "fieldname": "exhibitionSupport",
@@ -148,7 +153,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exhibitionSupportOrganizationLocal"
     },
     {
       "fieldname": "exhibitionSupport",
@@ -170,7 +176,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exhibitionSupportOrganizationShared"
     },
     {
       "fieldname": "exhibitionSupportNote",
@@ -188,7 +195,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exhibitionSupportNote"
     },
     {
       "fieldname": "organizer",
@@ -209,7 +217,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "organizerPersonLocal"
     },
     {
       "fieldname": "organizer",
@@ -230,7 +239,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "organizerPersonShared"
     },
     {
       "fieldname": "organizer",
@@ -251,7 +261,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "organizerOrganizationLocal"
     },
     {
       "fieldname": "organizer",
@@ -272,7 +283,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "organizerOrganizationShared"
     },
     {
       "fieldname": "venue",
@@ -294,7 +306,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueOrganizationLocal"
     },
     {
       "fieldname": "venue",
@@ -316,7 +329,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueOrganizationShared"
     },
     {
       "fieldname": "venue",
@@ -338,7 +352,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueLocationLocal"
     },
     {
       "fieldname": "venue",
@@ -360,7 +375,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueLocationOffsite"
     },
     {
       "fieldname": "venue",
@@ -382,7 +398,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venuePlaceLocal"
     },
     {
       "fieldname": "venue",
@@ -404,7 +421,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venuePlaceShared"
     },
     {
       "fieldname": "venueOpeningDate",
@@ -422,7 +440,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueOpeningDate"
     },
     {
       "fieldname": "venueClosingDate",
@@ -440,7 +459,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueClosingDate"
     },
     {
       "fieldname": "venueAttendance",
@@ -458,7 +478,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueAttendance"
     },
     {
       "fieldname": "venueUrl",
@@ -476,7 +497,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "venueUrl"
     },
     {
       "fieldname": "planningNote",
@@ -493,7 +515,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "planningNote"
     },
     {
       "fieldname": "curatorialNote",
@@ -510,7 +533,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "curatorialNote"
     },
     {
       "fieldname": "generalNote",
@@ -527,7 +551,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "generalNote"
     },
     {
       "fieldname": "boilerplateText",
@@ -544,7 +569,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "boilerplateText"
     },
     {
       "fieldname": "galleryRotationName",
@@ -562,7 +588,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "galleryRotationName"
     },
     {
       "fieldname": "galleryRotationStartDateGroup",
@@ -580,7 +607,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "galleryRotationStartDateGroup"
     },
     {
       "fieldname": "galleryRotationEndDateGroup",
@@ -598,7 +626,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "galleryRotationEndDateGroup"
     },
     {
       "fieldname": "galleryRotationNote",
@@ -616,7 +645,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "galleryRotationNote"
     }
   ]
 }

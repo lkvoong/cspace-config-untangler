@@ -45,7 +45,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identificationNumber"
     },
     {
       "fieldname": "title",
@@ -62,7 +63,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "publishTo",
@@ -80,7 +82,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publishTo"
     },
     {
       "fieldname": "name",
@@ -97,7 +100,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "name"
     },
     {
       "fieldname": "mimeType",
@@ -114,7 +118,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mimeType"
     },
     {
       "fieldname": "length",
@@ -131,7 +136,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "length"
     },
     {
       "fieldname": "externalUrl",
@@ -148,7 +154,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "externalUrl"
     },
     {
       "fieldname": "contributor",
@@ -169,7 +176,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorPersonLocal"
     },
     {
       "fieldname": "contributor",
@@ -190,7 +198,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorPersonShared"
     },
     {
       "fieldname": "contributor",
@@ -211,7 +220,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorOrganizationLocal"
     },
     {
       "fieldname": "contributor",
@@ -232,7 +242,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorOrganizationShared"
     },
     {
       "fieldname": "creator",
@@ -253,7 +264,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPersonLocal"
     },
     {
       "fieldname": "creator",
@@ -274,7 +286,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPersonShared"
     },
     {
       "fieldname": "creator",
@@ -295,7 +308,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganizationLocal"
     },
     {
       "fieldname": "creator",
@@ -316,7 +330,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganizationShared"
     },
     {
       "fieldname": "relation",
@@ -333,7 +348,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relation"
     },
     {
       "fieldname": "type",
@@ -354,7 +370,8 @@
         "moving_image",
         "sound",
         "still_image"
-      ]
+      ],
+      "datacolumn": "type"
     },
     {
       "fieldname": "coverage",
@@ -375,7 +392,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coverageMaterialLocal"
     },
     {
       "fieldname": "coverage",
@@ -396,7 +414,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coverageMaterialShared"
     },
     {
       "fieldname": "coverage",
@@ -417,7 +436,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coveragePlace"
     },
     {
       "fieldname": "dateGroup",
@@ -434,7 +454,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateGroup"
     },
     {
       "fieldname": "source",
@@ -451,7 +472,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "source"
     },
     {
       "fieldname": "subject",
@@ -468,7 +490,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "subject"
     },
     {
       "fieldname": "copyrightStatement",
@@ -485,7 +508,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "copyrightStatement"
     },
     {
       "fieldname": "rightsHolder",
@@ -506,7 +530,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderPersonLocal"
     },
     {
       "fieldname": "rightsHolder",
@@ -527,7 +552,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderPersonShared"
     },
     {
       "fieldname": "rightsHolder",
@@ -548,7 +574,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderOrganizationLocal"
     },
     {
       "fieldname": "rightsHolder",
@@ -569,7 +596,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderOrganizationShared"
     },
     {
       "fieldname": "description",
@@ -586,7 +614,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "description"
     }
   ]
 }

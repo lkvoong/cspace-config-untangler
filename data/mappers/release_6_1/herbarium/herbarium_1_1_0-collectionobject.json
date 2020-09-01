@@ -216,7 +216,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectNumber"
     },
     {
       "fieldname": "collection",
@@ -236,7 +237,8 @@
         "permanent-collection",
         "study-collection",
         "teaching-collection"
-      ]
+      ],
+      "datacolumn": "collection"
     },
     {
       "fieldname": "namedCollection",
@@ -257,7 +259,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "namedCollection"
     },
     {
       "fieldname": "determinationTaxon",
@@ -279,7 +282,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationTaxon"
     },
     {
       "fieldname": "determinationQualifier",
@@ -298,7 +302,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationQualifier"
     },
     {
       "fieldname": "determinationBy",
@@ -320,7 +325,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationBy"
     },
     {
       "fieldname": "determinationDateGroup",
@@ -338,7 +344,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationDateGroup"
     },
     {
       "fieldname": "determinationInstitution",
@@ -360,7 +367,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationInstitution"
     },
     {
       "fieldname": "determinationKind",
@@ -379,7 +387,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationKind"
     },
     {
       "fieldname": "determinationReference",
@@ -397,7 +406,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationReference"
     },
     {
       "fieldname": "determinationRefPage",
@@ -415,7 +425,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationRefPage"
     },
     {
       "fieldname": "determinationNote",
@@ -433,7 +444,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "determinationNote"
     },
     {
       "fieldname": "localName",
@@ -451,7 +463,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "localName"
     },
     {
       "fieldname": "localNameLanguage",
@@ -470,7 +483,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "localNameLanguage"
     },
     {
       "fieldname": "herbHybridParent",
@@ -492,7 +506,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbHybridParentLocal"
     },
     {
       "fieldname": "herbHybridParent",
@@ -514,7 +529,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbHybridParentCommon"
     },
     {
       "fieldname": "herbHybridParentQualifier",
@@ -533,7 +549,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbHybridParentQualifier"
     },
     {
       "fieldname": "hybridName",
@@ -550,7 +567,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "hybridName"
     },
     {
       "fieldname": "labelHeader",
@@ -571,7 +589,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelHeader"
     },
     {
       "fieldname": "labelFooter",
@@ -592,7 +611,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelFooter"
     },
     {
       "fieldname": "sheetNumber",
@@ -609,7 +629,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sheetNumber"
     },
     {
       "fieldname": "sheetCount",
@@ -626,7 +647,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sheetCount"
     },
     {
       "fieldname": "briefDescription",
@@ -643,7 +665,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "briefDescription"
     },
     {
       "fieldname": "publishTo",
@@ -661,7 +684,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publishTo"
     },
     {
       "fieldname": "numberValue",
@@ -679,7 +703,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numberValue"
     },
     {
       "fieldname": "numberType",
@@ -701,7 +726,8 @@
         "previous",
         "serial",
         "unknown"
-      ]
+      ],
+      "datacolumn": "numberType"
     },
     {
       "fieldname": "comment",
@@ -718,7 +744,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "comment"
     },
     {
       "fieldname": "inventoryStatus",
@@ -736,7 +763,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryStatus"
     },
     {
       "fieldname": "herbTypeSpecimenKind",
@@ -755,7 +783,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenKind"
     },
     {
       "fieldname": "herbTypeSpecimenAssertionBy",
@@ -777,7 +806,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenAssertionBy"
     },
     {
       "fieldname": "herbTypeSpecimenReference",
@@ -795,7 +825,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenReference"
     },
     {
       "fieldname": "herbTypeSpecimenRefPage",
@@ -813,7 +844,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenRefPage"
     },
     {
       "fieldname": "herbTypeSpecimenBasionym",
@@ -835,7 +867,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenBasionymLocal"
     },
     {
       "fieldname": "herbTypeSpecimenBasionym",
@@ -857,7 +890,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenBasionymCommon"
     },
     {
       "fieldname": "herbTypeSpecimenNotes",
@@ -875,7 +909,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbTypeSpecimenNotes"
     },
     {
       "fieldname": "sex",
@@ -893,7 +928,8 @@
       "opt_list_values": [
         "female",
         "male"
-      ]
+      ],
+      "datacolumn": "sex"
     },
     {
       "fieldname": "phase",
@@ -911,7 +947,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "phase"
     },
     {
       "fieldname": "form",
@@ -929,7 +966,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "form"
     },
     {
       "fieldname": "style",
@@ -946,7 +984,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "style"
     },
     {
       "fieldname": "postToPublic",
@@ -964,7 +1003,8 @@
       "opt_list_values": [
         "no",
         "yes"
-      ]
+      ],
+      "datacolumn": "postToPublic"
     },
     {
       "fieldname": "assocActivity",
@@ -982,7 +1022,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocActivity"
     },
     {
       "fieldname": "assocActivityType",
@@ -1000,7 +1041,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocActivityType"
     },
     {
       "fieldname": "assocActivityNote",
@@ -1018,7 +1060,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocActivityNote"
     },
     {
       "fieldname": "assocObject",
@@ -1036,7 +1079,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocObject"
     },
     {
       "fieldname": "assocObjectType",
@@ -1054,7 +1098,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocObjectType"
     },
     {
       "fieldname": "assocObjectNote",
@@ -1072,7 +1117,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocObjectNote"
     },
     {
       "fieldname": "assocConcept",
@@ -1094,7 +1140,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocConcept"
     },
     {
       "fieldname": "assocConceptType",
@@ -1112,7 +1159,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocConceptType"
     },
     {
       "fieldname": "assocConceptNote",
@@ -1130,7 +1178,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocConceptNote"
     },
     {
       "fieldname": "assocCulturalContext",
@@ -1148,7 +1197,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocCulturalContext"
     },
     {
       "fieldname": "assocCulturalContextType",
@@ -1166,7 +1216,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocCulturalContextType"
     },
     {
       "fieldname": "assocCulturalContextNote",
@@ -1184,7 +1235,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocCulturalContextNote"
     },
     {
       "fieldname": "assocOrganization",
@@ -1206,7 +1258,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocOrganization"
     },
     {
       "fieldname": "assocOrganizationType",
@@ -1224,7 +1277,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocOrganizationType"
     },
     {
       "fieldname": "assocOrganizationNote",
@@ -1242,7 +1296,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocOrganizationNote"
     },
     {
       "fieldname": "assocPeople",
@@ -1260,7 +1315,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPeople"
     },
     {
       "fieldname": "assocPeopleType",
@@ -1278,7 +1334,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPeopleType"
     },
     {
       "fieldname": "assocPeopleNote",
@@ -1296,7 +1353,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPeopleNote"
     },
     {
       "fieldname": "assocPerson",
@@ -1318,7 +1376,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPerson"
     },
     {
       "fieldname": "assocPersonType",
@@ -1336,7 +1395,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPersonType"
     },
     {
       "fieldname": "assocPersonNote",
@@ -1354,7 +1414,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPersonNote"
     },
     {
       "fieldname": "assocPlace",
@@ -1372,7 +1433,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPlace"
     },
     {
       "fieldname": "assocPlaceType",
@@ -1390,7 +1452,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPlaceType"
     },
     {
       "fieldname": "assocPlaceNote",
@@ -1408,7 +1471,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPlaceNote"
     },
     {
       "fieldname": "assocEventName",
@@ -1425,7 +1489,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventName"
     },
     {
       "fieldname": "assocEventNameType",
@@ -1442,7 +1507,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventNameType"
     },
     {
       "fieldname": "assocEventOrganization",
@@ -1463,7 +1529,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventOrganization"
     },
     {
       "fieldname": "assocEventPeople",
@@ -1480,7 +1547,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventPeople"
     },
     {
       "fieldname": "assocEventPerson",
@@ -1501,7 +1569,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventPerson"
     },
     {
       "fieldname": "assocEventPlace",
@@ -1518,7 +1587,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventPlace"
     },
     {
       "fieldname": "assocEventNote",
@@ -1535,7 +1605,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventNote"
     },
     {
       "fieldname": "assocStructuredDateGroup",
@@ -1553,7 +1624,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocStructuredDateGroup"
     },
     {
       "fieldname": "assocDateType",
@@ -1571,7 +1643,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocDateType"
     },
     {
       "fieldname": "assocDateNote",
@@ -1589,7 +1662,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocDateNote"
     },
     {
       "fieldname": "objectHistoryNote",
@@ -1606,7 +1680,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectHistoryNote"
     },
     {
       "fieldname": "usage",
@@ -1624,7 +1699,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "usage"
     },
     {
       "fieldname": "usageNote",
@@ -1642,7 +1718,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "usageNote"
     },
     {
       "fieldname": "owner",
@@ -1663,7 +1740,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPerson"
     },
     {
       "fieldname": "owner",
@@ -1684,7 +1762,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganization"
     },
     {
       "fieldname": "ownershipDateGroup",
@@ -1701,7 +1780,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipDateGroup"
     },
     {
       "fieldname": "ownershipAccess",
@@ -1720,7 +1800,8 @@
         "limited",
         "open",
         "restricted"
-      ]
+      ],
+      "datacolumn": "ownershipAccess"
     },
     {
       "fieldname": "ownershipCategory",
@@ -1739,7 +1820,8 @@
         "company",
         "private",
         "public"
-      ]
+      ],
+      "datacolumn": "ownershipCategory"
     },
     {
       "fieldname": "ownershipPlace",
@@ -1756,7 +1838,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipPlace"
     },
     {
       "fieldname": "ownershipExchangeMethod",
@@ -1778,7 +1861,8 @@
         "purchase",
         "transfer",
         "treasure"
-      ]
+      ],
+      "datacolumn": "ownershipExchangeMethod"
     },
     {
       "fieldname": "ownershipExchangeNote",
@@ -1795,7 +1879,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipExchangeNote"
     },
     {
       "fieldname": "ownershipExchangePriceCurrency",
@@ -1813,7 +1898,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipExchangePriceCurrency"
     },
     {
       "fieldname": "ownershipExchangePriceValue",
@@ -1830,7 +1916,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipExchangePriceValue"
     },
     {
       "fieldname": "reference",
@@ -1852,7 +1939,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceLocal"
     },
     {
       "fieldname": "reference",
@@ -1874,7 +1962,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceWorldcat"
     },
     {
       "fieldname": "referenceNote",
@@ -1892,7 +1981,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceNote"
     },
     {
       "fieldname": "fieldCollectionDateGroup",
@@ -1909,7 +1999,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionDateGroup"
     },
     {
       "fieldname": "fieldCollector",
@@ -1930,7 +2021,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectorPerson"
     },
     {
       "fieldname": "fieldCollector",
@@ -1951,7 +2043,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectorOrganization"
     },
     {
       "fieldname": "fieldCollectionNumber",
@@ -1968,7 +2061,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionNumber"
     },
     {
       "fieldname": "fieldCollectionMethod",
@@ -1986,7 +2080,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionMethod"
     },
     {
       "fieldname": "habitat",
@@ -2003,7 +2098,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "habitat"
     },
     {
       "fieldname": "herbAssocTaxon",
@@ -2025,7 +2121,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbAssocTaxonLocal"
     },
     {
       "fieldname": "herbAssocTaxon",
@@ -2047,7 +2144,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbAssocTaxonCommon"
     },
     {
       "fieldname": "herbAssocTaxonCommonName",
@@ -2065,7 +2163,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbAssocTaxonCommonName"
     },
     {
       "fieldname": "herbAssocTaxonInteraction",
@@ -2084,7 +2183,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbAssocTaxonInteraction"
     },
     {
       "fieldname": "herbCollectionLocationVerbatim",
@@ -2102,7 +2202,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbCollectionLocationVerbatim"
     },
     {
       "fieldname": "herbCollectionPlace",
@@ -2124,7 +2225,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "herbCollectionPlace"
     },
     {
       "fieldname": "title",
@@ -2142,7 +2244,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "titleLanguage",
@@ -2161,7 +2264,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "titleLanguage"
     },
     {
       "fieldname": "titleType",
@@ -2184,7 +2288,8 @@
         "popular",
         "series",
         "trade"
-      ]
+      ],
+      "datacolumn": "titleType"
     },
     {
       "fieldname": "titleTranslation",
@@ -2204,7 +2309,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "titleTranslation"
     },
     {
       "fieldname": "titleTranslationLanguage",
@@ -2225,7 +2331,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "titleTranslationLanguage"
     },
     {
       "fieldname": "objectName",
@@ -2243,7 +2350,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectName"
     },
     {
       "fieldname": "objectNameCurrency",
@@ -2262,7 +2370,8 @@
       "opt_list_values": [
         "archaic",
         "current"
-      ]
+      ],
+      "datacolumn": "objectNameCurrency"
     },
     {
       "fieldname": "objectNameLevel",
@@ -2281,7 +2390,8 @@
       "opt_list_values": [
         "group",
         "subgroup"
-      ]
+      ],
+      "datacolumn": "objectNameLevel"
     },
     {
       "fieldname": "objectNameSystem",
@@ -2300,7 +2410,8 @@
       "opt_list_values": [
         "art-and-architecture-thesaurus",
         "nomenclature"
-      ]
+      ],
+      "datacolumn": "objectNameSystem"
     },
     {
       "fieldname": "objectNameType",
@@ -2322,7 +2433,8 @@
         "simple",
         "taxonomic",
         "typological"
-      ]
+      ],
+      "datacolumn": "objectNameType"
     },
     {
       "fieldname": "objectNameLanguage",
@@ -2341,7 +2453,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectNameLanguage"
     },
     {
       "fieldname": "objectNameNote",
@@ -2359,7 +2472,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectNameNote"
     },
     {
       "fieldname": "measuredPart",
@@ -2384,7 +2498,8 @@
         "paper-size",
         "plate-size",
         "unframed"
-      ]
+      ],
+      "datacolumn": "measuredPart"
     },
     {
       "fieldname": "dimensionSummary",
@@ -2402,7 +2517,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dimensionSummary"
     },
     {
       "fieldname": "dimension",
@@ -2434,7 +2550,8 @@
         "volume",
         "weight",
         "width"
-      ]
+      ],
+      "datacolumn": "dimension"
     },
     {
       "fieldname": "measuredBy",
@@ -2458,7 +2575,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByPerson"
     },
     {
       "fieldname": "measuredBy",
@@ -2482,7 +2600,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByOrganization"
     },
     {
       "fieldname": "measurementMethod",
@@ -2521,7 +2640,8 @@
         "standard_mesh_screen",
         "taping_chaining",
         "theodolite_total_station"
-      ]
+      ],
+      "datacolumn": "measurementMethod"
     },
     {
       "fieldname": "value",
@@ -2541,7 +2661,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "value"
     },
     {
       "fieldname": "measurementUnit",
@@ -2576,7 +2697,8 @@
         "square-feet",
         "stories",
         "tons"
-      ]
+      ],
+      "datacolumn": "measurementUnit"
     },
     {
       "fieldname": "valueQualifier",
@@ -2596,7 +2718,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueQualifier"
     },
     {
       "fieldname": "valueDate",
@@ -2616,7 +2739,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "objectProductionDateGroup",
@@ -2633,7 +2757,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionDateGroup"
     },
     {
       "fieldname": "objectProductionPerson",
@@ -2655,7 +2780,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPerson"
     },
     {
       "fieldname": "objectProductionPersonRole",
@@ -2673,7 +2799,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPersonRole"
     },
     {
       "fieldname": "objectProductionOrganization",
@@ -2695,7 +2822,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionOrganization"
     },
     {
       "fieldname": "objectProductionOrganizationRole",
@@ -2713,7 +2841,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionOrganizationRole"
     },
     {
       "fieldname": "numberOfObjects",
@@ -2730,7 +2859,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numberOfObjects"
     },
     {
       "fieldname": "responsibleDepartment",
@@ -2756,7 +2886,8 @@
         "paleobotany",
         "photographs",
         "prints-drawings"
-      ]
+      ],
+      "datacolumn": "responsibleDepartment"
     },
     {
       "fieldname": "distinguishingFeatures",
@@ -2773,7 +2904,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "distinguishingFeatures"
     },
     {
       "fieldname": "copyNumber",
@@ -2790,7 +2922,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "copyNumber"
     },
     {
       "fieldname": "editionNumber",
@@ -2807,7 +2940,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "editionNumber"
     },
     {
       "fieldname": "color",
@@ -2824,7 +2958,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "color"
     },
     {
       "fieldname": "material",
@@ -2842,7 +2977,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "material"
     },
     {
       "fieldname": "materialComponent",
@@ -2860,7 +2996,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialComponent"
     },
     {
       "fieldname": "materialComponentNote",
@@ -2878,7 +3015,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialComponentNote"
     },
     {
       "fieldname": "materialName",
@@ -2896,7 +3034,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialName"
     },
     {
       "fieldname": "materialSource",
@@ -2914,7 +3053,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialSource"
     },
     {
       "fieldname": "physicalDescription",
@@ -2931,7 +3071,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "physicalDescription"
     },
     {
       "fieldname": "technicalAttribute",
@@ -2950,7 +3091,8 @@
       "opt_list_values": [
         "magnetic-tape-type",
         "record-speed"
-      ]
+      ],
+      "datacolumn": "technicalAttribute"
     },
     {
       "fieldname": "technicalAttributeMeasurement",
@@ -2969,7 +3111,8 @@
       "opt_list_values": [
         "78",
         "metal"
-      ]
+      ],
+      "datacolumn": "technicalAttributeMeasurement"
     },
     {
       "fieldname": "technicalAttributeMeasurementUnit",
@@ -2987,7 +3130,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
         "rpm"
-      ]
+      ],
+      "datacolumn": "technicalAttributeMeasurementUnit"
     },
     {
       "fieldname": "contentDescription",
@@ -3004,7 +3148,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentDescription"
     },
     {
       "fieldname": "contentLanguage",
@@ -3022,7 +3167,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentLanguage"
     },
     {
       "fieldname": "contentActivity",
@@ -3039,7 +3185,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentActivity"
     },
     {
       "fieldname": "contentConcept",
@@ -3060,7 +3207,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentConceptAssociated"
     },
     {
       "fieldname": "contentConcept",
@@ -3081,7 +3229,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentConceptMaterial"
     },
     {
       "fieldname": "contentDateGroup",
@@ -3098,7 +3247,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentDateGroup"
     },
     {
       "fieldname": "contentPosition",
@@ -3126,7 +3276,8 @@
         "rim",
         "top",
         "verso"
-      ]
+      ],
+      "datacolumn": "contentPosition"
     },
     {
       "fieldname": "contentObject",
@@ -3144,7 +3295,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentObject"
     },
     {
       "fieldname": "contentObjectType",
@@ -3163,7 +3315,8 @@
       "opt_list_values": [
         "food",
         "furniture"
-      ]
+      ],
+      "datacolumn": "contentObjectType"
     },
     {
       "fieldname": "contentPeople",
@@ -3180,7 +3333,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPeople"
     },
     {
       "fieldname": "contentPerson",
@@ -3201,7 +3355,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPersonLocal"
     },
     {
       "fieldname": "contentPerson",
@@ -3222,7 +3377,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPersonUlan"
     },
     {
       "fieldname": "contentPlace",
@@ -3239,7 +3395,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPlace"
     },
     {
       "fieldname": "contentScript",
@@ -3262,7 +3419,8 @@
         "rustic-capitals",
         "spencerian-method",
         "square-capitals"
-      ]
+      ],
+      "datacolumn": "contentScript"
     },
     {
       "fieldname": "contentOrganization",
@@ -3283,7 +3441,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOrganizationLocal"
     },
     {
       "fieldname": "contentOrganization",
@@ -3304,7 +3463,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOrganizationUlan"
     },
     {
       "fieldname": "contentEventName",
@@ -3322,7 +3482,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentEventName"
     },
     {
       "fieldname": "contentEventNameType",
@@ -3340,7 +3501,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentEventNameType"
     },
     {
       "fieldname": "contentOther",
@@ -3358,7 +3520,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOther"
     },
     {
       "fieldname": "contentOtherType",
@@ -3376,7 +3539,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOtherType"
     },
     {
       "fieldname": "contentNote",
@@ -3393,7 +3557,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentNote"
     },
     {
       "fieldname": "technique",
@@ -3411,7 +3576,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "technique"
     },
     {
       "fieldname": "techniqueType",
@@ -3429,7 +3595,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "techniqueType"
     },
     {
       "fieldname": "objectProductionPlace",
@@ -3447,7 +3614,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPlace"
     },
     {
       "fieldname": "objectProductionPlaceRole",
@@ -3465,7 +3633,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPlaceRole"
     },
     {
       "fieldname": "objectProductionNote",
@@ -3482,7 +3651,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionNote"
     }
   ]
 }

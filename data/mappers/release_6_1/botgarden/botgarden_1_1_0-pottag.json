@@ -34,7 +34,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "family"
     },
     {
       "fieldname": "commonName",
@@ -51,7 +52,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonName"
     },
     {
       "fieldname": "locale",
@@ -68,7 +70,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locale"
     },
     {
       "fieldname": "taxonName",
@@ -89,7 +92,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonName"
     },
     {
       "fieldname": "numberOfLabels",
@@ -106,7 +110,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numberOfLabels"
     },
     {
       "fieldname": "printLabels",
@@ -124,7 +129,8 @@
       "opt_list_values": [
         "no",
         "yes"
-      ]
+      ],
+      "datacolumn": "printLabels"
     },
     {
       "fieldname": "labelData",
@@ -141,7 +147,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelData"
     }
   ]
 }

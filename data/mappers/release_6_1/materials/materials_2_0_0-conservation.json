@@ -48,7 +48,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservationNumber"
     },
     {
       "fieldname": "status",
@@ -67,7 +68,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "status"
     },
     {
       "fieldname": "statusDate",
@@ -85,7 +87,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "statusDate"
     },
     {
       "fieldname": "treatmentPurpose",
@@ -103,7 +106,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentPurpose"
     },
     {
       "fieldname": "conservator",
@@ -124,7 +128,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorPersonLocal"
     },
     {
       "fieldname": "conservator",
@@ -145,7 +150,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorPersonShared"
     },
     {
       "fieldname": "conservator",
@@ -166,7 +172,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorOrganizationLocal"
     },
     {
       "fieldname": "conservator",
@@ -187,7 +194,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorOrganizationShared"
     },
     {
       "fieldname": "otherParty",
@@ -209,7 +217,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyPersonLocal"
     },
     {
       "fieldname": "otherParty",
@@ -231,7 +240,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyPersonShared"
     },
     {
       "fieldname": "otherParty",
@@ -253,7 +263,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyOrganizationLocal"
     },
     {
       "fieldname": "otherParty",
@@ -275,7 +286,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyOrganizationShared"
     },
     {
       "fieldname": "otherPartyRole",
@@ -294,7 +306,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyRole"
     },
     {
       "fieldname": "otherPartyNote",
@@ -312,7 +325,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyNote"
     },
     {
       "fieldname": "examinationStaff",
@@ -334,7 +348,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationStaffLocal"
     },
     {
       "fieldname": "examinationStaff",
@@ -356,7 +371,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationStaffShared"
     },
     {
       "fieldname": "examinationPhase",
@@ -375,7 +391,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationPhase"
     },
     {
       "fieldname": "examinationDate",
@@ -393,7 +410,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationDate"
     },
     {
       "fieldname": "examinationNote",
@@ -411,7 +429,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationNote"
     },
     {
       "fieldname": "fabricationNote",
@@ -428,7 +447,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fabricationNote"
     },
     {
       "fieldname": "proposedTreatment",
@@ -445,7 +465,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedTreatment"
     },
     {
       "fieldname": "approvedBy",
@@ -466,7 +487,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedByLocal"
     },
     {
       "fieldname": "approvedBy",
@@ -487,7 +509,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedByShared"
     },
     {
       "fieldname": "approvedDate",
@@ -504,7 +527,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedDate"
     },
     {
       "fieldname": "treatmentStartDate",
@@ -521,7 +545,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentStartDate"
     },
     {
       "fieldname": "treatmentEndDate",
@@ -538,7 +563,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentEndDate"
     },
     {
       "fieldname": "treatmentSummary",
@@ -555,7 +581,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentSummary"
     },
     {
       "fieldname": "proposedAnalysis",
@@ -572,7 +599,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedAnalysis"
     },
     {
       "fieldname": "researcher",
@@ -593,7 +621,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "researcherLocal"
     },
     {
       "fieldname": "researcher",
@@ -614,7 +643,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "researcherShared"
     },
     {
       "fieldname": "proposedAnalysisDate",
@@ -631,7 +661,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedAnalysisDate"
     },
     {
       "fieldname": "destAnalysisApprovedDate",
@@ -649,7 +680,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "destAnalysisApprovedDate"
     },
     {
       "fieldname": "destAnalysisApprovalNote",
@@ -667,7 +699,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "destAnalysisApprovalNote"
     },
     {
       "fieldname": "sampleBy",
@@ -689,7 +722,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleByLocal"
     },
     {
       "fieldname": "sampleBy",
@@ -711,7 +745,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleByShared"
     },
     {
       "fieldname": "sampleDate",
@@ -729,7 +764,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleDate"
     },
     {
       "fieldname": "sampleDescription",
@@ -747,7 +783,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleDescription"
     },
     {
       "fieldname": "sampleReturned",
@@ -768,7 +805,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleReturned"
     },
     {
       "fieldname": "sampleReturnedLocation",
@@ -786,7 +824,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleReturnedLocation"
     },
     {
       "fieldname": "analysisMethod",
@@ -803,7 +842,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "analysisMethod"
     },
     {
       "fieldname": "analysisResults",
@@ -820,7 +860,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "analysisResults"
     }
   ]
 }

@@ -93,7 +93,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimNumber"
     },
     {
       "fieldname": "nagpraClaimName",
@@ -110,7 +111,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimName"
     },
     {
       "fieldname": "nagpraClaimAltName",
@@ -128,7 +130,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimAltName"
     },
     {
       "fieldname": "nagpraClaimAltNameNote",
@@ -146,7 +149,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimAltNameNote"
     },
     {
       "fieldname": "claimFiledBy",
@@ -168,7 +172,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledByPerson"
     },
     {
       "fieldname": "claimFiledBy",
@@ -190,7 +195,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledByOrganization"
     },
     {
       "fieldname": "claimFiledOnBehalfOf",
@@ -212,7 +218,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledOnBehalfOfPerson"
     },
     {
       "fieldname": "claimFiledOnBehalfOf",
@@ -234,7 +241,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledOnBehalfOfOrganization"
     },
     {
       "fieldname": "claimantNote",
@@ -252,7 +260,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimantNote"
     },
     {
       "fieldname": "nagpraClaimType",
@@ -270,7 +279,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimType"
     },
     {
       "fieldname": "claimReceivedDate",
@@ -288,7 +298,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimReceivedDate"
     },
     {
       "fieldname": "claimReceivedNote",
@@ -306,7 +317,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimReceivedNote"
     },
     {
       "fieldname": "nagpraClaimNote",
@@ -323,7 +335,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNote"
     },
     {
       "fieldname": "nagpraClaimSiteName",
@@ -345,7 +358,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSiteName"
     },
     {
       "fieldname": "nagpraClaimSiteNote",
@@ -363,7 +377,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSiteNote"
     },
     {
       "fieldname": "nagpraClaimGroupName",
@@ -385,7 +400,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimGroupName"
     },
     {
       "fieldname": "nagpraClaimGroupNote",
@@ -403,7 +419,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimGroupNote"
     },
     {
       "fieldname": "nagpraClaimPeriodDateGroup",
@@ -421,7 +438,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimPeriodDateGroup"
     },
     {
       "fieldname": "nagpraClaimPeriodNote",
@@ -439,7 +457,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimPeriodNote"
     },
     {
       "fieldname": "nagpraClaimInitialResponseDate",
@@ -457,7 +476,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimInitialResponseDate"
     },
     {
       "fieldname": "nagpraClaimInitialResponseNote",
@@ -475,7 +495,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimInitialResponseNote"
     },
     {
       "fieldname": "nagpraClaimSentToLocalDate",
@@ -493,7 +514,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToLocalDate"
     },
     {
       "fieldname": "nagpraClaimSentToLocalNote",
@@ -511,7 +533,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToLocalNote"
     },
     {
       "fieldname": "nagpraClaimLocalRecDate",
@@ -529,7 +552,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimLocalRecDate"
     },
     {
       "fieldname": "nagpraClaimLocalRecNote",
@@ -547,7 +571,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimLocalRecNote"
     },
     {
       "fieldname": "nagpraClaimSentToNatlDate",
@@ -565,7 +590,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToNatlDate"
     },
     {
       "fieldname": "nagpraClaimSentToNatlNote",
@@ -583,7 +609,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToNatlNote"
     },
     {
       "fieldname": "nagpraClaimNatlRespDate",
@@ -601,7 +628,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlRespDate"
     },
     {
       "fieldname": "nagpraClaimNatlRespNote",
@@ -619,7 +647,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlRespNote"
     },
     {
       "fieldname": "nagpraClaimNatlApprovalDate",
@@ -637,7 +666,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlApprovalDate"
     },
     {
       "fieldname": "nagpraClaimNatlApprovalNote",
@@ -655,7 +685,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlApprovalNote"
     },
     {
       "fieldname": "nagpraClaimNoticeDate",
@@ -673,7 +704,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNoticeDate"
     },
     {
       "fieldname": "nagpraClaimNoticeDateType",
@@ -692,7 +724,8 @@
       "opt_list_values": [
         "begin",
         "end"
-      ]
+      ],
+      "datacolumn": "nagpraClaimNoticeDateType"
     },
     {
       "fieldname": "nagpraClaimNoticeNote",
@@ -710,7 +743,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNoticeNote"
     },
     {
       "fieldname": "nagpraClaimTransferDate",
@@ -728,7 +762,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimTransferDate"
     },
     {
       "fieldname": "nagpraClaimTransferNote",
@@ -746,7 +781,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimTransferNote"
     },
     {
       "fieldname": "dispositionPossibilitiesDiscussed",
@@ -766,7 +802,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dispositionPossibilitiesDiscussed"
     },
     {
       "fieldname": "dispositionPossibilitiesDiscussedNote",
@@ -783,7 +820,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dispositionPossibilitiesDiscussedNote"
     },
     {
       "fieldname": "surroundingTribesContacted",
@@ -803,7 +841,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "surroundingTribesContacted"
     },
     {
       "fieldname": "surroundingTribesContactedNote",
@@ -820,7 +859,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "surroundingTribesContactedNote"
     },
     {
       "fieldname": "workingTeamNotified",
@@ -840,7 +880,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "workingTeamNotified"
     },
     {
       "fieldname": "workingTeamNotifiedNote",
@@ -857,7 +898,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "workingTeamNotifiedNote"
     },
     {
       "fieldname": "siteFileResearchCompleted",
@@ -877,7 +919,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "siteFileResearchCompleted"
     },
     {
       "fieldname": "siteFileResearchCompletedNote",
@@ -894,7 +937,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "siteFileResearchCompletedNote"
     },
     {
       "fieldname": "accessionFileResearchCompleted",
@@ -914,7 +958,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionFileResearchCompleted"
     },
     {
       "fieldname": "accessionFileResearchCompletedNote",
@@ -931,7 +976,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionFileResearchCompletedNote"
     },
     {
       "fieldname": "objectsLocatedAndCounted",
@@ -951,7 +997,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsLocatedAndCounted"
     },
     {
       "fieldname": "objectsLocatedAndCountedNote",
@@ -968,7 +1015,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsLocatedAndCountedNote"
     },
     {
       "fieldname": "objectsConsolidated",
@@ -988,7 +1036,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsConsolidated"
     },
     {
       "fieldname": "objectsConsolidatedNote",
@@ -1005,7 +1054,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsConsolidatedNote"
     },
     {
       "fieldname": "objectsPhotographed",
@@ -1025,7 +1075,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsPhotographed"
     },
     {
       "fieldname": "objectsPhotographedNote",
@@ -1042,7 +1093,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsPhotographedNote"
     },
     {
       "fieldname": "registrationDocumentsDrafted",
@@ -1062,7 +1114,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "registrationDocumentsDrafted"
     },
     {
       "fieldname": "registrationDocumentsDraftedNote",
@@ -1079,7 +1132,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "registrationDocumentsDraftedNote"
     },
     {
       "fieldname": "tribeContactedForPackingPreferences",
@@ -1099,7 +1153,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "tribeContactedForPackingPreferences"
     },
     {
       "fieldname": "tribeContactedForPackingPreferencesNote",
@@ -1116,7 +1171,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "tribeContactedForPackingPreferencesNote"
     },
     {
       "fieldname": "dateArrangedForTransfer",
@@ -1136,7 +1192,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateArrangedForTransfer"
     },
     {
       "fieldname": "dateArrangedForTransferNote",
@@ -1153,7 +1210,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateArrangedForTransferNote"
     },
     {
       "fieldname": "objectsMarkedAsDeaccessioned",
@@ -1173,7 +1231,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsMarkedAsDeaccessioned"
     },
     {
       "fieldname": "objectsMarkedAsDeaccessionedNote",
@@ -1190,7 +1249,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsMarkedAsDeaccessionedNote"
     },
     {
       "fieldname": "documentsArchived",
@@ -1210,7 +1270,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "documentsArchived"
     },
     {
       "fieldname": "documentsArchivedNote",
@@ -1227,7 +1288,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "documentsArchivedNote"
     }
   ]
 }

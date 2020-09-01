@@ -45,7 +45,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termName",
@@ -63,7 +64,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termName"
     },
     {
       "fieldname": "termQualifier",
@@ -81,7 +83,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
@@ -101,7 +104,8 @@
         "complete",
         "inprogress",
         "quickaddedneedsattention"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
@@ -119,7 +123,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
@@ -138,7 +143,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "termLanguage",
@@ -157,7 +163,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
@@ -178,7 +185,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "termSource",
@@ -200,7 +208,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceLocal"
     },
     {
       "fieldname": "termSource",
@@ -222,7 +231,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceWorldcat"
     },
     {
       "fieldname": "termSourceDetail",
@@ -240,7 +250,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
@@ -258,7 +269,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
@@ -276,7 +288,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "workType",
@@ -294,7 +307,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "workType"
     },
     {
       "fieldname": "workDateGroup",
@@ -311,7 +325,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "workDateGroup"
     },
     {
       "fieldname": "creator",
@@ -333,7 +348,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPersonLocal"
     },
     {
       "fieldname": "creator",
@@ -355,7 +371,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPersonShared"
     },
     {
       "fieldname": "creator",
@@ -377,7 +394,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganizationLocal"
     },
     {
       "fieldname": "creator",
@@ -399,7 +417,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganizationShared"
     },
     {
       "fieldname": "creatorType",
@@ -418,7 +437,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorType"
     },
     {
       "fieldname": "addressPlace1",
@@ -436,7 +456,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPlace1"
     },
     {
       "fieldname": "addressPlace2",
@@ -454,7 +475,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPlace2"
     },
     {
       "fieldname": "addressMunicipality",
@@ -476,7 +498,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressMunicipality"
     },
     {
       "fieldname": "addressStateOrProvince",
@@ -498,7 +521,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressStateOrProvince"
     },
     {
       "fieldname": "addressPostCode",
@@ -516,7 +540,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPostCode"
     },
     {
       "fieldname": "addressCountry",
@@ -538,7 +563,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressCountry"
     },
     {
       "fieldname": "addressType",
@@ -557,7 +583,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressType"
     }
   ]
 }

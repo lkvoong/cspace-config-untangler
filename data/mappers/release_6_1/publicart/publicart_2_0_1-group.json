@@ -30,7 +30,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "responsibleDepartment",
@@ -48,7 +49,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "responsibleDepartment"
     },
     {
       "fieldname": "owner",
@@ -69,7 +71,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPersonLocal"
     },
     {
       "fieldname": "owner",
@@ -90,7 +93,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPersonShared"
     },
     {
       "fieldname": "owner",
@@ -111,7 +115,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganizationLocal"
     },
     {
       "fieldname": "owner",
@@ -132,7 +137,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganizationShared"
     },
     {
       "fieldname": "groupEarliestSingleDate",
@@ -149,7 +155,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupEarliestSingleDate"
     },
     {
       "fieldname": "groupLatestDate",
@@ -166,7 +173,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupLatestDate"
     },
     {
       "fieldname": "scopeNote",
@@ -183,7 +191,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNote"
     }
   ]
 }

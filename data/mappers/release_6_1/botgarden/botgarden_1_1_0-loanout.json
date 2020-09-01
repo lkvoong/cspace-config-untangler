@@ -42,7 +42,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "collector"
     },
     {
       "fieldname": "loanOutDate",
@@ -59,7 +60,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutDate"
     },
     {
       "fieldname": "loanOutNumber",
@@ -76,7 +78,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutNumber"
     },
     {
       "fieldname": "sterile",
@@ -96,7 +99,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sterile"
     },
     {
       "fieldname": "fertile",
@@ -116,7 +120,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fertile"
     },
     {
       "fieldname": "flowering",
@@ -136,7 +141,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowering"
     },
     {
       "fieldname": "fruiting",
@@ -156,7 +162,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruiting"
     },
     {
       "fieldname": "inSpore",
@@ -176,7 +183,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inSpore"
     },
     {
       "fieldname": "hortWild",
@@ -194,7 +202,8 @@
       "opt_list_values": [
         "Horticultural",
         "Wild"
-      ]
+      ],
+      "datacolumn": "hortWild"
     },
     {
       "fieldname": "gardenLocation",
@@ -215,7 +224,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "gardenLocation"
     },
     {
       "fieldname": "loanPurpose",
@@ -232,7 +242,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanPurpose"
     },
     {
       "fieldname": "loanOutNote",
@@ -249,7 +260,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutNote"
     },
     {
       "fieldname": "fieldCollectionNote",
@@ -266,7 +278,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionNote"
     },
     {
       "fieldname": "annotation",
@@ -283,7 +296,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "annotation"
     },
     {
       "fieldname": "borrower",
@@ -304,7 +318,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrower"
     },
     {
       "fieldname": "numLent",
@@ -321,7 +336,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numLent"
     },
     {
       "fieldname": "sheetAccessionNumber",
@@ -338,7 +354,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sheetAccessionNumber"
     },
     {
       "fieldname": "lendersAuthorizer",
@@ -359,7 +376,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizer"
     },
     {
       "fieldname": "reviewComplete",
@@ -379,7 +397,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "reviewComplete"
     },
     {
       "fieldname": "labelRequested",
@@ -397,7 +416,8 @@
       "opt_list_values": [
         "No",
         "Yes"
-      ]
+      ],
+      "datacolumn": "labelRequested"
     }
   ]
 }

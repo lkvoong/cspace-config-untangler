@@ -70,7 +70,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termName",
@@ -88,7 +89,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termName"
     },
     {
       "fieldname": "termQualifier",
@@ -106,7 +108,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
@@ -127,7 +130,8 @@
         "provisional",
         "rejected",
         "under review"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
@@ -147,7 +151,8 @@
         "alternate descriptor",
         "descriptor",
         "used for term"
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
@@ -166,7 +171,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "termLanguage",
@@ -185,7 +191,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
@@ -206,7 +213,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "mainBodyName",
@@ -224,7 +232,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mainBodyName"
     },
     {
       "fieldname": "additionsToName",
@@ -242,7 +251,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionsToName"
     },
     {
       "fieldname": "termSource",
@@ -264,7 +274,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSource"
     },
     {
       "fieldname": "termSourceDetail",
@@ -282,7 +293,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
@@ -300,7 +312,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
@@ -318,7 +331,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "organizationRecordType",
@@ -336,7 +350,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "organizationRecordType"
     },
     {
       "fieldname": "foundingDateGroup",
@@ -353,7 +368,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "foundingDateGroup"
     },
     {
       "fieldname": "foundingPlace",
@@ -370,7 +386,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "foundingPlace"
     },
     {
       "fieldname": "dissolutionDateGroup",
@@ -387,7 +404,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dissolutionDateGroup"
     },
     {
       "fieldname": "group",
@@ -404,7 +422,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "group"
     },
     {
       "fieldname": "function",
@@ -421,7 +440,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "function"
     },
     {
       "fieldname": "historyNote",
@@ -438,7 +458,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "historyNote"
     },
     {
       "fieldname": "contactName",
@@ -460,7 +481,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contactName"
     },
     {
       "fieldname": "contactRole",
@@ -479,7 +501,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contactRole"
     },
     {
       "fieldname": "contactDateGroup",
@@ -497,7 +520,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contactDateGroup"
     },
     {
       "fieldname": "contactEndDateGroup",
@@ -515,7 +539,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contactEndDateGroup"
     },
     {
       "fieldname": "contactStatus",
@@ -534,7 +559,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contactStatus"
     },
     {
       "fieldname": "email",
@@ -552,7 +578,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "email"
     },
     {
       "fieldname": "emailType",
@@ -572,7 +599,8 @@
         "business",
         "other",
         "personal"
-      ]
+      ],
+      "datacolumn": "emailType"
     },
     {
       "fieldname": "telephoneNumber",
@@ -590,7 +618,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "telephoneNumber"
     },
     {
       "fieldname": "telephoneNumberType",
@@ -611,7 +640,8 @@
         "home",
         "mobile",
         "other"
-      ]
+      ],
+      "datacolumn": "telephoneNumberType"
     },
     {
       "fieldname": "faxNumber",
@@ -629,7 +659,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "faxNumber"
     },
     {
       "fieldname": "faxNumberType",
@@ -649,7 +680,8 @@
         "business",
         "home",
         "other"
-      ]
+      ],
+      "datacolumn": "faxNumberType"
     },
     {
       "fieldname": "webAddress",
@@ -667,7 +699,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "webAddress"
     },
     {
       "fieldname": "webAddressType",
@@ -687,7 +720,8 @@
         "business",
         "other",
         "personal"
-      ]
+      ],
+      "datacolumn": "webAddressType"
     },
     {
       "fieldname": "addressPlace1",
@@ -705,7 +739,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPlace1"
     },
     {
       "fieldname": "addressPlace2",
@@ -723,7 +758,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPlace2"
     },
     {
       "fieldname": "addressMunicipality",
@@ -741,7 +777,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressMunicipality"
     },
     {
       "fieldname": "addressStateOrProvince",
@@ -759,7 +796,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressStateOrProvince"
     },
     {
       "fieldname": "addressPostCode",
@@ -777,7 +815,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPostCode"
     },
     {
       "fieldname": "addressCountry",
@@ -1043,7 +1082,8 @@
         "ZA",
         "ZM",
         "ZW"
-      ]
+      ],
+      "datacolumn": "addressCountry"
     },
     {
       "fieldname": "addressType",
@@ -1063,7 +1103,8 @@
         "business",
         "home",
         "other"
-      ]
+      ],
+      "datacolumn": "addressType"
     }
   ]
 }

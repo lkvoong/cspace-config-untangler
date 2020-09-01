@@ -52,7 +52,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identificationNumber"
     },
     {
       "fieldname": "title",
@@ -69,7 +70,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "publishTo",
@@ -87,7 +89,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publishTo"
     },
     {
       "fieldname": "name",
@@ -104,7 +107,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "name"
     },
     {
       "fieldname": "mimeType",
@@ -121,7 +125,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mimeType"
     },
     {
       "fieldname": "length",
@@ -138,7 +143,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "length"
     },
     {
       "fieldname": "externalUrl",
@@ -155,7 +161,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "externalUrl"
     },
     {
       "fieldname": "measuredPart",
@@ -180,7 +187,8 @@
         "paper-size",
         "plate-size",
         "unframed"
-      ]
+      ],
+      "datacolumn": "measuredPart"
     },
     {
       "fieldname": "dimensionSummary",
@@ -198,7 +206,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dimensionSummary"
     },
     {
       "fieldname": "dimension",
@@ -230,7 +239,8 @@
         "volume",
         "weight",
         "width"
-      ]
+      ],
+      "datacolumn": "dimension"
     },
     {
       "fieldname": "measuredBy",
@@ -254,7 +264,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByPerson"
     },
     {
       "fieldname": "measuredBy",
@@ -278,7 +289,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByOrganization"
     },
     {
       "fieldname": "measurementMethod",
@@ -317,7 +329,8 @@
         "standard_mesh_screen",
         "taping_chaining",
         "theodolite_total_station"
-      ]
+      ],
+      "datacolumn": "measurementMethod"
     },
     {
       "fieldname": "value",
@@ -337,7 +350,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "value"
     },
     {
       "fieldname": "measurementUnit",
@@ -372,7 +386,8 @@
         "square-feet",
         "stories",
         "tons"
-      ]
+      ],
+      "datacolumn": "measurementUnit"
     },
     {
       "fieldname": "valueQualifier",
@@ -392,7 +407,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueQualifier"
     },
     {
       "fieldname": "valueDate",
@@ -412,7 +428,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "contributor",
@@ -433,7 +450,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorPerson"
     },
     {
       "fieldname": "contributor",
@@ -454,7 +472,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorOrganization"
     },
     {
       "fieldname": "creator",
@@ -475,7 +494,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPerson"
     },
     {
       "fieldname": "creator",
@@ -496,7 +516,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganization"
     },
     {
       "fieldname": "language",
@@ -514,7 +535,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "language"
     },
     {
       "fieldname": "publisher",
@@ -535,7 +557,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publisherPerson"
     },
     {
       "fieldname": "publisher",
@@ -556,7 +579,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publisherOrganization"
     },
     {
       "fieldname": "relation",
@@ -573,7 +597,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relation"
     },
     {
       "fieldname": "copyrightStatement",
@@ -590,7 +615,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "copyrightStatement"
     },
     {
       "fieldname": "type",
@@ -611,7 +637,8 @@
         "moving_image",
         "sound",
         "still_image"
-      ]
+      ],
+      "datacolumn": "type"
     },
     {
       "fieldname": "coverage",
@@ -628,7 +655,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coverage"
     },
     {
       "fieldname": "dateGroup",
@@ -645,7 +673,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateGroup"
     },
     {
       "fieldname": "source",
@@ -662,7 +691,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "source"
     },
     {
       "fieldname": "subject",
@@ -679,7 +709,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "subject"
     },
     {
       "fieldname": "rightsHolder",
@@ -700,7 +731,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderPerson"
     },
     {
       "fieldname": "rightsHolder",
@@ -721,7 +753,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderOrganization"
     },
     {
       "fieldname": "description",
@@ -738,7 +771,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "description"
     }
   ]
 }

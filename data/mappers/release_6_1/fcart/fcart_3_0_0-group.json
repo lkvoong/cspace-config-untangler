@@ -30,7 +30,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "responsibleDepartment",
@@ -55,7 +56,8 @@
         "paintings-sculpture",
         "photographs",
         "prints-drawings"
-      ]
+      ],
+      "datacolumn": "responsibleDepartment"
     },
     {
       "fieldname": "owner",
@@ -76,7 +78,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "owner"
     },
     {
       "fieldname": "groupEarliestSingleDate",
@@ -93,7 +96,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupEarliestSingleDate"
     },
     {
       "fieldname": "groupLatestDate",
@@ -110,7 +114,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupLatestDate"
     },
     {
       "fieldname": "scopeNote",
@@ -127,7 +132,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNote"
     }
   ]
 }

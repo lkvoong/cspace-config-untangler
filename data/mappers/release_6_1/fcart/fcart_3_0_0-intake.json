@@ -54,7 +54,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryNumber"
     },
     {
       "fieldname": "entryDate",
@@ -71,7 +72,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryDate"
     },
     {
       "fieldname": "entryReason",
@@ -91,7 +93,8 @@
         "consideration",
         "enquiry",
         "loan"
-      ]
+      ],
+      "datacolumn": "entryReason"
     },
     {
       "fieldname": "entryMethod",
@@ -109,7 +112,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryMethod"
     },
     {
       "fieldname": "returnDate",
@@ -126,7 +130,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "returnDate"
     },
     {
       "fieldname": "currentOwner",
@@ -147,7 +152,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerPerson"
     },
     {
       "fieldname": "currentOwner",
@@ -168,7 +174,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerOrganization"
     },
     {
       "fieldname": "depositor",
@@ -190,7 +197,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorPerson"
     },
     {
       "fieldname": "depositor",
@@ -212,7 +220,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorOrganization"
     },
     {
       "fieldname": "depositorsRequirements",
@@ -230,7 +239,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorsRequirements"
     },
     {
       "fieldname": "approvalGroup",
@@ -249,7 +259,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalGroup"
     },
     {
       "fieldname": "approvalIndividual",
@@ -271,7 +282,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalIndividual"
     },
     {
       "fieldname": "approvalStatus",
@@ -290,7 +302,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalStatus"
     },
     {
       "fieldname": "approvalDate",
@@ -308,7 +321,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalDate"
     },
     {
       "fieldname": "approvalNote",
@@ -326,7 +340,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalNote"
     },
     {
       "fieldname": "entryNote",
@@ -343,7 +358,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryNote"
     },
     {
       "fieldname": "packingNote",
@@ -360,7 +376,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "packingNote"
     },
     {
       "fieldname": "valuer",
@@ -381,7 +398,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuerPerson"
     },
     {
       "fieldname": "valuer",
@@ -402,7 +420,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuerOrganization"
     },
     {
       "fieldname": "valuationReferenceNumber",
@@ -419,7 +438,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuationReferenceNumber"
     },
     {
       "fieldname": "insurer",
@@ -440,7 +460,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerPerson"
     },
     {
       "fieldname": "insurer",
@@ -461,7 +482,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerOrganization"
     },
     {
       "fieldname": "insurancePolicyNumber",
@@ -478,7 +500,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurancePolicyNumber"
     },
     {
       "fieldname": "insuranceRenewalDate",
@@ -495,7 +518,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceRenewalDate"
     },
     {
       "fieldname": "insuranceReferenceNumber",
@@ -512,7 +536,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceReferenceNumber"
     },
     {
       "fieldname": "insuranceNote",
@@ -529,7 +554,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceNote"
     },
     {
       "fieldname": "currentLocation",
@@ -551,7 +577,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationLocal"
     },
     {
       "fieldname": "currentLocation",
@@ -573,7 +600,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationOffsite"
     },
     {
       "fieldname": "currentLocation",
@@ -595,7 +623,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganization"
     },
     {
       "fieldname": "currentLocation",
@@ -617,7 +646,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationPlace"
     },
     {
       "fieldname": "currentLocationFitness",
@@ -636,7 +666,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationFitness"
     },
     {
       "fieldname": "currentLocationNote",
@@ -654,7 +685,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationNote"
     },
     {
       "fieldname": "locationDate",
@@ -671,7 +703,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationDate"
     },
     {
       "fieldname": "normalLocation",
@@ -692,7 +725,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationLocal"
     },
     {
       "fieldname": "normalLocation",
@@ -713,7 +747,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationOffsite"
     },
     {
       "fieldname": "normalLocation",
@@ -734,7 +769,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationOrganization"
     },
     {
       "fieldname": "normalLocation",
@@ -755,7 +791,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationPlace"
     },
     {
       "fieldname": "conditionCheckMethod",
@@ -773,7 +810,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckMethod"
     },
     {
       "fieldname": "conditionCheckReason",
@@ -791,7 +829,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckReason"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
@@ -812,7 +851,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerOrAssessorPerson"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
@@ -833,7 +873,8 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerOrAssessorOrganization"
     },
     {
       "fieldname": "conditionCheckDate",
@@ -850,7 +891,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckDate"
     },
     {
       "fieldname": "conditionCheckReferenceNumber",
@@ -867,7 +909,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckReferenceNumber"
     },
     {
       "fieldname": "conditionCheckNote",
@@ -884,7 +927,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckNote"
     }
   ]
 }

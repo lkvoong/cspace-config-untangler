@@ -58,7 +58,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckRefNumber"
     },
     {
       "fieldname": "conditionCheckAssessmentDate",
@@ -75,7 +76,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckAssessmentDate"
     },
     {
       "fieldname": "conditionCheckMethod",
@@ -93,7 +95,8 @@
       "opt_list_values": [
         "observed",
         "xrayed"
-      ]
+      ],
+      "datacolumn": "conditionCheckMethod"
     },
     {
       "fieldname": "conditionCheckReason",
@@ -114,7 +117,8 @@
         "exhibition",
         "loanin",
         "newacquisition"
-      ]
+      ],
+      "datacolumn": "conditionCheckReason"
     },
     {
       "fieldname": "conditionChecker",
@@ -135,7 +139,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerPerson"
     },
     {
       "fieldname": "conditionChecker",
@@ -156,7 +161,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerOrganization"
     },
     {
       "fieldname": "conditionCheckNote",
@@ -173,7 +179,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckNote"
     },
     {
       "fieldname": "objectAuditCategory",
@@ -192,7 +199,8 @@
         "high",
         "low",
         "medium"
-      ]
+      ],
+      "datacolumn": "objectAuditCategory"
     },
     {
       "fieldname": "conservationTreatmentPriority",
@@ -211,7 +219,8 @@
         "high",
         "low",
         "medium"
-      ]
+      ],
+      "datacolumn": "conservationTreatmentPriority"
     },
     {
       "fieldname": "nextConditionCheckDate",
@@ -228,7 +237,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nextConditionCheckDate"
     },
     {
       "fieldname": "completeness",
@@ -248,7 +258,8 @@
         "complete",
         "fragmented",
         "incomplete"
-      ]
+      ],
+      "datacolumn": "completeness"
     },
     {
       "fieldname": "completenessDate",
@@ -266,7 +277,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "completenessDate"
     },
     {
       "fieldname": "completenessNote",
@@ -284,7 +296,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "completenessNote"
     },
     {
       "fieldname": "hazard",
@@ -303,7 +316,8 @@
       "opt_list_values": [
         "poisonous",
         "radioactive"
-      ]
+      ],
+      "datacolumn": "hazard"
     },
     {
       "fieldname": "hazardDate",
@@ -321,7 +335,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "hazardDate"
     },
     {
       "fieldname": "hazardNote",
@@ -339,7 +354,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "hazardNote"
     },
     {
       "fieldname": "techAssessment",
@@ -357,7 +373,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "techAssessment"
     },
     {
       "fieldname": "techAssessmentDate",
@@ -375,7 +392,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "techAssessmentDate"
     },
     {
       "fieldname": "condition",
@@ -396,7 +414,8 @@
         "injeopardy",
         "needsnowork",
         "notexhibitablestable"
-      ]
+      ],
+      "datacolumn": "condition"
     },
     {
       "fieldname": "conditionDate",
@@ -414,7 +433,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionDate"
     },
     {
       "fieldname": "conditionNote",
@@ -432,7 +452,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionNote"
     },
     {
       "fieldname": "envConditionNote",
@@ -450,7 +471,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "envConditionNote"
     },
     {
       "fieldname": "envConditionNoteDate",
@@ -468,7 +490,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "envConditionNoteDate"
     },
     {
       "fieldname": "displayRecommendations",
@@ -485,7 +508,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displayRecommendations"
     },
     {
       "fieldname": "handlingRecommendations",
@@ -502,7 +526,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "handlingRecommendations"
     },
     {
       "fieldname": "securityRecommendations",
@@ -519,7 +544,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "securityRecommendations"
     },
     {
       "fieldname": "storageRequirements",
@@ -536,7 +562,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "storageRequirements"
     },
     {
       "fieldname": "envRecommendations",
@@ -553,7 +580,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "envRecommendations"
     },
     {
       "fieldname": "packingRecommendations",
@@ -570,7 +598,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "packingRecommendations"
     },
     {
       "fieldname": "specialRequirements",
@@ -587,7 +616,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "specialRequirements"
     },
     {
       "fieldname": "legalRequirements",
@@ -604,7 +634,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalRequirements"
     },
     {
       "fieldname": "legalReqsHeld",
@@ -622,7 +653,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeld"
     },
     {
       "fieldname": "legalReqsHeldBeginDate",
@@ -640,7 +672,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldBeginDate"
     },
     {
       "fieldname": "legalReqsHeldEndDate",
@@ -658,7 +691,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldEndDate"
     },
     {
       "fieldname": "legalReqsHeldNumber",
@@ -676,7 +710,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldNumber"
     },
     {
       "fieldname": "legalReqsHeldRenewDate",
@@ -694,7 +729,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldRenewDate"
     },
     {
       "fieldname": "salvagePriorityCode",
@@ -714,7 +750,8 @@
         "high",
         "low",
         "medium"
-      ]
+      ],
+      "datacolumn": "salvagePriorityCode"
     },
     {
       "fieldname": "salvagePriorityCodeDate",
@@ -732,7 +769,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "salvagePriorityCodeDate"
     }
   ]
 }

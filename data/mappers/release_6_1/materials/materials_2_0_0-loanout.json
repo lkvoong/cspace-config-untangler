@@ -34,7 +34,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutNumber"
     },
     {
       "fieldname": "lendersAuthorizer",
@@ -55,7 +56,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizerLocal"
     },
     {
       "fieldname": "lendersAuthorizer",
@@ -76,7 +78,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizerShared"
     },
     {
       "fieldname": "specialConditionsOfLoan",
@@ -93,7 +96,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "specialConditionsOfLoan"
     },
     {
       "fieldname": "loanPurpose",
@@ -116,7 +120,8 @@
         "photography",
         "research",
         "scientificorexhibitpreparation"
-      ]
+      ],
+      "datacolumn": "loanPurpose"
     },
     {
       "fieldname": "borrower",
@@ -137,7 +142,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowerPersonLocal"
     },
     {
       "fieldname": "borrower",
@@ -158,7 +164,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowerPersonShared"
     },
     {
       "fieldname": "borrower",
@@ -179,7 +186,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowerOrganizationLocal"
     },
     {
       "fieldname": "borrower",
@@ -200,7 +208,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowerOrganizationShared"
     },
     {
       "fieldname": "loanOutNote",
@@ -217,7 +226,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutNote"
     },
     {
       "fieldname": "loanGroup",
@@ -236,7 +246,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanGroup"
     },
     {
       "fieldname": "loanIndividual",
@@ -258,7 +269,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanIndividualLocal"
     },
     {
       "fieldname": "loanIndividual",
@@ -280,7 +292,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanIndividualShared"
     },
     {
       "fieldname": "loanStatus",
@@ -299,7 +312,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanStatus"
     },
     {
       "fieldname": "loanStatusDate",
@@ -317,7 +331,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanStatusDate"
     },
     {
       "fieldname": "loanStatusNote",
@@ -335,7 +350,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanStatusNote"
     },
     {
       "fieldname": "loanOutDate",
@@ -352,7 +368,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutDate"
     },
     {
       "fieldname": "loanReturnDate",
@@ -369,7 +386,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanReturnDate"
     },
     {
       "fieldname": "loanRenewalApplicationDate",
@@ -386,7 +404,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanRenewalApplicationDate"
     }
   ]
 }

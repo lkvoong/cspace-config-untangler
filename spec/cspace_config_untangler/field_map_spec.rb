@@ -35,6 +35,13 @@ RSpec.describe CCU::FieldMap do
           result = mappings.map{ |m| m.datacolumn }.sort
             expect(result).to eq(%w[contentConceptAssociated contentConceptMaterial])
         end
+
+        describe '.to_h' do
+          it 'gets all attributes' do
+            hash = mappings[0].to_h
+            expect(hash.key?(:datacolumn)).to be true
+          end
+        end
       end
     end
   end
@@ -187,7 +194,7 @@ RSpec.describe CCU::FieldMap do
           rh = result.hash.map{ |src, h| h[:transforms] }
           expected = [
             { special: %w[behrensmeyer_translate],
-              vocabulary: 'behrensmeyer' },
+             vocabulary: 'behrensmeyer' },
           ]
           expect(rh).to eq(expected)
         end

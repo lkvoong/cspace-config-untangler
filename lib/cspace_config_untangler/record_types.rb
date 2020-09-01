@@ -73,6 +73,7 @@ module CspaceConfigUntangler
           add = mapping.xpath.empty? ? mapping.namespace.split('_').last : mapping.xpath.last
           mapping.datacolumn = "#{add}_#{mapping.datacolumn}"
         else
+          mapping.datacolumn = mapping.datacolumn
           checkhash[mapping.datacolumn] = nil
         end
       end
