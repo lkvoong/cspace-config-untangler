@@ -38,7 +38,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -53,11 +52,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termName",
-      "datacolumn": "termName",
       "transforms": {
       },
       "source_type": "na",
@@ -72,11 +71,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termName"
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -91,11 +90,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -113,11 +112,11 @@
         "provisional",
         "rejected",
         "under review"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -134,11 +133,11 @@
         "alternate descriptor",
         "descriptor",
         "used for term"
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "concepttermflag"
       },
@@ -154,11 +153,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "historicalStatus",
-      "datacolumn": "historicalStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -176,11 +175,11 @@
         "current",
         "historical",
         "unknown"
-      ]
+      ],
+      "datacolumn": "historicalStatus"
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -196,11 +195,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -218,11 +217,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -241,11 +240,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceLocal"
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -264,11 +263,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceWorldcat"
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -283,11 +282,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -302,11 +301,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -321,11 +320,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "conceptRecordType",
-      "datacolumn": "conceptRecordType",
       "transforms": {
         "vocabulary": "conceptrecordtype"
       },
@@ -340,11 +339,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRecordType"
     },
     {
       "fieldname": "scopeNote",
-      "datacolumn": "scopeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -358,11 +357,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNote"
     },
     {
       "fieldname": "scopeNoteSource",
-      "datacolumn": "scopeNoteSource",
       "transforms": {
       },
       "source_type": "na",
@@ -376,11 +375,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNoteSource"
     },
     {
       "fieldname": "scopeNoteSourceDetail",
-      "datacolumn": "scopeNoteSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -394,11 +393,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scopeNoteSourceDetail"
     },
     {
       "fieldname": "citationSource",
-      "datacolumn": "citationSource",
       "transforms": {
       },
       "source_type": "na",
@@ -413,11 +412,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "citationSource"
     },
     {
       "fieldname": "citationSourceDetail",
-      "datacolumn": "citationSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -432,11 +431,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "citationSourceDetail"
     },
     {
       "fieldname": "additionalSource",
-      "datacolumn": "additionalSource",
       "transforms": {
       },
       "source_type": "na",
@@ -451,11 +450,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSource"
     },
     {
       "fieldname": "additionalSourceDetail",
-      "datacolumn": "additionalSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -470,11 +469,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSourceDetail"
     },
     {
       "fieldname": "additionalSourceID",
-      "datacolumn": "additionalSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -489,11 +488,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSourceID"
     },
     {
       "fieldname": "additionalSourceNote",
-      "datacolumn": "additionalSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -508,11 +507,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "additionalSourceNote"
     },
     {
       "fieldname": "relatedConcept",
-      "datacolumn": "relatedConcept",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -531,11 +530,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedConcept"
     },
     {
       "fieldname": "conceptRelationType",
-      "datacolumn": "conceptRelationType",
       "transforms": {
         "vocabulary": "conceptrelationtype"
       },
@@ -551,11 +550,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRelationType"
     },
     {
       "fieldname": "conceptRelationDateGroup",
-      "datacolumn": "conceptRelationDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -570,11 +569,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRelationDateGroup"
     },
     {
       "fieldname": "conceptTermDateGroup",
-      "datacolumn": "conceptTermDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -588,11 +587,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptTermDateGroup"
     },
     {
       "fieldname": "conceptRemarks",
-      "datacolumn": "conceptRemarks",
       "transforms": {
       },
       "source_type": "na",
@@ -606,7 +605,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conceptRemarks"
     }
   ]
 }

@@ -39,7 +39,6 @@
   "mappings": [
     {
       "fieldname": "acquisitionReferenceNumber",
-      "datacolumn": "acquisitionReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -53,11 +52,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionReferenceNumber"
     },
     {
       "fieldname": "accessionDate",
-      "datacolumn": "accessionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -71,11 +70,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionDate"
     },
     {
       "fieldname": "acquisitionAuthorizer",
-      "datacolumn": "acquisitionAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -93,11 +92,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionAuthorizer"
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
-      "datacolumn": "acquisitionAuthorizerDate",
       "transforms": {
       },
       "source_type": "na",
@@ -111,11 +110,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionAuthorizerDate"
     },
     {
       "fieldname": "acquisitionDate",
-      "datacolumn": "acquisitionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -129,11 +128,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionDate"
     },
     {
       "fieldname": "acquisitionMethod",
-      "datacolumn": "acquisitionMethod",
       "transforms": {
         "vocabulary": "acquisitionmethod"
       },
@@ -148,11 +147,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionMethod"
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -170,11 +169,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourcePersonLocal"
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourcePersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -192,11 +191,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourcePersonShared"
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -214,11 +213,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourceOrganizationLocal"
     },
     {
       "fieldname": "acquisitionSource",
-      "datacolumn": "acquisitionSourceOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -236,11 +235,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionSourceOrganizationShared"
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -258,11 +257,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPersonLocal"
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -280,11 +279,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPersonShared"
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -302,11 +301,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganizationLocal"
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -324,11 +323,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganizationShared"
     },
     {
       "fieldname": "acquisitionReason",
-      "datacolumn": "acquisitionReason",
       "transforms": {
       },
       "source_type": "na",
@@ -342,11 +341,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionReason"
     },
     {
       "fieldname": "acquisitionNote",
-      "datacolumn": "acquisitionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -360,11 +359,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionNote"
     },
     {
       "fieldname": "acquisitionFundingCurrency",
-      "datacolumn": "acquisitionFundingCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -380,11 +379,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingCurrency"
     },
     {
       "fieldname": "acquisitionFundingValue",
-      "datacolumn": "acquisitionFundingValue",
       "transforms": {
       },
       "source_type": "na",
@@ -399,11 +398,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingValue"
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourcePersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -422,11 +421,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourcePersonLocal"
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourcePersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -445,11 +444,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourcePersonShared"
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourceOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -468,11 +467,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceOrganizationLocal"
     },
     {
       "fieldname": "acquisitionFundingSource",
-      "datacolumn": "acquisitionFundingSourceOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -491,11 +490,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceOrganizationShared"
     },
     {
       "fieldname": "acquisitionFundingSourceProvisos",
-      "datacolumn": "acquisitionFundingSourceProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -510,11 +509,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "acquisitionFundingSourceProvisos"
     },
     {
       "fieldname": "creditLine",
-      "datacolumn": "creditLine",
       "transforms": {
       },
       "source_type": "na",
@@ -528,11 +527,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creditLine"
     },
     {
       "fieldname": "commissioningBody",
-      "datacolumn": "commissioningBodyPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -550,11 +549,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissioningBodyPerson"
     },
     {
       "fieldname": "commissioningBody",
-      "datacolumn": "commissioningBodyOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -572,11 +571,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissioningBodyOrganization"
     },
     {
       "fieldname": "commissionDate",
-      "datacolumn": "commissionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -590,11 +589,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionDate"
     },
     {
       "fieldname": "commissionBudgetType",
-      "datacolumn": "commissionBudgetType",
       "transforms": {
         "vocabulary": "budgettype"
       },
@@ -610,11 +609,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionBudgetType"
     },
     {
       "fieldname": "commissionBudgetTypeNote",
-      "datacolumn": "commissionBudgetTypeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -629,11 +628,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionBudgetTypeNote"
     },
     {
       "fieldname": "commissionProjectedValueCurrency",
-      "datacolumn": "commissionProjectedValueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -649,11 +648,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionProjectedValueCurrency"
     },
     {
       "fieldname": "commissionProjectedValueAmount",
-      "datacolumn": "commissionProjectedValueAmount",
       "transforms": {
       },
       "source_type": "na",
@@ -668,11 +667,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionProjectedValueAmount"
     },
     {
       "fieldname": "commissionActualValueCurrency",
-      "datacolumn": "commissionActualValueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -688,11 +687,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionActualValueCurrency"
     },
     {
       "fieldname": "commissionActualValueAmount",
-      "datacolumn": "commissionActualValueAmount",
       "transforms": {
       },
       "source_type": "na",
@@ -707,7 +706,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commissionActualValueAmount"
     }
   ]
 }

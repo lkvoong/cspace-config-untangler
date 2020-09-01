@@ -41,7 +41,6 @@
   "mappings": [
     {
       "fieldname": "entryNumber",
-      "datacolumn": "entryNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -55,11 +54,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryNumber"
     },
     {
       "fieldname": "entryDate",
-      "datacolumn": "entryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -73,11 +72,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryDate"
     },
     {
       "fieldname": "entryReason",
-      "datacolumn": "entryReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -94,11 +93,11 @@
         "consideration",
         "enquiry",
         "loan"
-      ]
+      ],
+      "datacolumn": "entryReason"
     },
     {
       "fieldname": "entryMethod",
-      "datacolumn": "entryMethod",
       "transforms": {
         "vocabulary": "entrymethod"
       },
@@ -113,11 +112,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryMethod"
     },
     {
       "fieldname": "returnDate",
-      "datacolumn": "returnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -131,11 +130,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "returnDate"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -153,11 +152,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerPerson"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -175,11 +174,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerOrganization"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -198,11 +197,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorPerson"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -221,11 +220,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorOrganization"
     },
     {
       "fieldname": "depositorsRequirements",
-      "datacolumn": "depositorsRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -240,11 +239,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorsRequirements"
     },
     {
       "fieldname": "approvalGroup",
-      "datacolumn": "approvalGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -260,11 +259,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalGroup"
     },
     {
       "fieldname": "approvalIndividual",
-      "datacolumn": "approvalIndividual",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -283,11 +282,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalIndividual"
     },
     {
       "fieldname": "approvalStatus",
-      "datacolumn": "approvalStatus",
       "transforms": {
         "vocabulary": "deaccessionapprovalstatus"
       },
@@ -303,11 +302,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalStatus"
     },
     {
       "fieldname": "approvalDate",
-      "datacolumn": "approvalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -322,11 +321,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalDate"
     },
     {
       "fieldname": "approvalNote",
-      "datacolumn": "approvalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -341,11 +340,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvalNote"
     },
     {
       "fieldname": "entryNote",
-      "datacolumn": "entryNote",
       "transforms": {
       },
       "source_type": "na",
@@ -359,11 +358,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "entryNote"
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -377,11 +376,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "packingNote"
     },
     {
       "fieldname": "valuer",
-      "datacolumn": "valuerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -399,11 +398,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuerPerson"
     },
     {
       "fieldname": "valuer",
-      "datacolumn": "valuerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -421,11 +420,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuerOrganization"
     },
     {
       "fieldname": "valuationReferenceNumber",
-      "datacolumn": "valuationReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -439,11 +438,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuationReferenceNumber"
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -461,11 +460,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerPerson"
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -483,11 +482,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerOrganization"
     },
     {
       "fieldname": "insurancePolicyNumber",
-      "datacolumn": "insurancePolicyNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -501,11 +500,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurancePolicyNumber"
     },
     {
       "fieldname": "insuranceRenewalDate",
-      "datacolumn": "insuranceRenewalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -519,11 +518,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceRenewalDate"
     },
     {
       "fieldname": "insuranceReferenceNumber",
-      "datacolumn": "insuranceReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -537,11 +536,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceReferenceNumber"
     },
     {
       "fieldname": "insuranceNote",
-      "datacolumn": "insuranceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -555,11 +554,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceNote"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -578,11 +577,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationLocal"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -601,11 +600,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationOffsite"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -624,11 +623,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganization"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationPlace",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -647,11 +646,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationPlace"
     },
     {
       "fieldname": "currentLocationFitness",
-      "datacolumn": "currentLocationFitness",
       "transforms": {
         "vocabulary": "conditionfitness"
       },
@@ -667,11 +666,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationFitness"
     },
     {
       "fieldname": "currentLocationNote",
-      "datacolumn": "currentLocationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -686,11 +685,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationNote"
     },
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -704,11 +703,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationDate"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -726,11 +725,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationLocal"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -748,11 +747,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationOffsite"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -770,11 +769,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationOrganization"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationPlace",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -792,11 +791,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationPlace"
     },
     {
       "fieldname": "conditionCheckMethod",
-      "datacolumn": "conditionCheckMethod",
       "transforms": {
         "vocabulary": "conditioncheckmethod"
       },
@@ -811,11 +810,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckMethod"
     },
     {
       "fieldname": "conditionCheckReason",
-      "datacolumn": "conditionCheckReason",
       "transforms": {
         "vocabulary": "conditioncheckreason"
       },
@@ -830,11 +829,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckReason"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -852,11 +851,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerOrAssessorPerson"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
-      "datacolumn": "conditionCheckerOrAssessorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -874,11 +873,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerOrAssessorOrganization"
     },
     {
       "fieldname": "conditionCheckDate",
-      "datacolumn": "conditionCheckDate",
       "transforms": {
       },
       "source_type": "na",
@@ -892,11 +891,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckDate"
     },
     {
       "fieldname": "conditionCheckReferenceNumber",
-      "datacolumn": "conditionCheckReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -910,11 +909,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckReferenceNumber"
     },
     {
       "fieldname": "conditionCheckNote",
-      "datacolumn": "conditionCheckNote",
       "transforms": {
       },
       "source_type": "na",
@@ -928,7 +927,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckNote"
     }
   ]
 }

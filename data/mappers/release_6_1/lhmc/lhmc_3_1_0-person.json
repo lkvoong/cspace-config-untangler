@@ -59,7 +59,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -74,11 +73,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termName",
-      "datacolumn": "termName",
       "transforms": {
       },
       "source_type": "na",
@@ -93,11 +92,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termName"
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -112,11 +111,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -134,11 +133,11 @@
         "provisional",
         "rejected",
         "under review"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
         "vocabulary": "persontermtype"
       },
@@ -154,11 +153,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "persontermflag"
       },
@@ -174,11 +173,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -194,11 +193,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -216,11 +215,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "salutation",
-      "datacolumn": "salutation",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -237,11 +236,11 @@
         "dear",
         "hello",
         "to"
-      ]
+      ],
+      "datacolumn": "salutation"
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -267,11 +266,11 @@
         "Ms",
         "Professor",
         "Sir"
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "foreName",
-      "datacolumn": "foreName",
       "transforms": {
       },
       "source_type": "na",
@@ -286,11 +285,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "foreName"
     },
     {
       "fieldname": "middleName",
-      "datacolumn": "middleName",
       "transforms": {
       },
       "source_type": "na",
@@ -305,11 +304,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "middleName"
     },
     {
       "fieldname": "surName",
-      "datacolumn": "surName",
       "transforms": {
       },
       "source_type": "na",
@@ -324,11 +323,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "surName"
     },
     {
       "fieldname": "nameAdditions",
-      "datacolumn": "nameAdditions",
       "transforms": {
       },
       "source_type": "na",
@@ -343,11 +342,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nameAdditions"
     },
     {
       "fieldname": "initials",
-      "datacolumn": "initials",
       "transforms": {
       },
       "source_type": "na",
@@ -362,11 +361,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "initials"
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -385,11 +384,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceLocal"
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -408,11 +407,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceWorldcat"
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -427,11 +426,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -446,11 +445,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -465,11 +464,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "gender",
-      "datacolumn": "gender",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -484,11 +483,11 @@
       "opt_list_values": [
         "female",
         "male"
-      ]
+      ],
+      "datacolumn": "gender"
     },
     {
       "fieldname": "occupation",
-      "datacolumn": "occupation",
       "transforms": {
       },
       "source_type": "na",
@@ -502,11 +501,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "occupation"
     },
     {
       "fieldname": "schoolOrStyle",
-      "datacolumn": "schoolOrStyle",
       "transforms": {
       },
       "source_type": "na",
@@ -520,11 +519,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "schoolOrStyle"
     },
     {
       "fieldname": "group",
-      "datacolumn": "group",
       "transforms": {
       },
       "source_type": "na",
@@ -538,11 +537,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "group"
     },
     {
       "fieldname": "nationality",
-      "datacolumn": "nationality",
       "transforms": {
       },
       "source_type": "na",
@@ -556,11 +555,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nationality"
     },
     {
       "fieldname": "publicationsPerson",
-      "datacolumn": "publicationsPersonLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -579,11 +578,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicationsPersonLocal"
     },
     {
       "fieldname": "publicationsPerson",
-      "datacolumn": "publicationsPersonWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -602,11 +601,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicationsPersonWorldcat"
     },
     {
       "fieldname": "publicationsPersonNote",
-      "datacolumn": "publicationsPersonNote",
       "transforms": {
       },
       "source_type": "na",
@@ -621,11 +620,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publicationsPersonNote"
     },
     {
       "fieldname": "nameNote",
-      "datacolumn": "nameNote",
       "transforms": {
       },
       "source_type": "na",
@@ -639,11 +638,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nameNote"
     },
     {
       "fieldname": "relatedPerson",
-      "datacolumn": "relatedPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -661,11 +660,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedPersonLocal"
     },
     {
       "fieldname": "relatedPerson",
-      "datacolumn": "relatedPersonUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -683,11 +682,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedPersonUlan"
     },
     {
       "fieldname": "relationshipType",
-      "datacolumn": "relationshipType",
       "transforms": {
         "vocabulary": "personrelationship"
       },
@@ -702,11 +701,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relationshipType"
     },
     {
       "fieldname": "relationshipNote",
-      "datacolumn": "relationshipNote",
       "transforms": {
       },
       "source_type": "na",
@@ -720,11 +719,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relationshipNote"
     },
     {
       "fieldname": "placeOrResidence",
-      "datacolumn": "placeOrResidenceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -742,11 +741,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "placeOrResidenceLocal"
     },
     {
       "fieldname": "placeOrResidence",
-      "datacolumn": "placeOrResidenceTgn",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -764,11 +763,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "placeOrResidenceTgn"
     },
     {
       "fieldname": "placeNote",
-      "datacolumn": "placeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -782,11 +781,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "placeNote"
     },
     {
       "fieldname": "birthDateGroup",
-      "datacolumn": "birthDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -800,11 +799,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "birthDateGroup"
     },
     {
       "fieldname": "birthPlace",
-      "datacolumn": "birthPlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -822,11 +821,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "birthPlaceLocal"
     },
     {
       "fieldname": "birthPlace",
-      "datacolumn": "birthPlaceTgn",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -844,11 +843,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "birthPlaceTgn"
     },
     {
       "fieldname": "deathDateGroup",
-      "datacolumn": "deathDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -862,11 +861,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deathDateGroup"
     },
     {
       "fieldname": "deathPlace",
-      "datacolumn": "deathPlaceLocal",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -884,11 +883,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deathPlaceLocal"
     },
     {
       "fieldname": "deathPlace",
-      "datacolumn": "deathPlaceTgn",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -906,11 +905,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deathPlaceTgn"
     },
     {
       "fieldname": "bioNote",
-      "datacolumn": "bioNote",
       "transforms": {
       },
       "source_type": "na",
@@ -924,11 +923,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "bioNote"
     },
     {
       "fieldname": "email",
-      "datacolumn": "email",
       "transforms": {
       },
       "source_type": "na",
@@ -943,11 +942,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "email"
     },
     {
       "fieldname": "emailType",
-      "datacolumn": "emailType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -964,11 +963,11 @@
         "business",
         "other",
         "personal"
-      ]
+      ],
+      "datacolumn": "emailType"
     },
     {
       "fieldname": "telephoneNumber",
-      "datacolumn": "telephoneNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -983,11 +982,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "telephoneNumber"
     },
     {
       "fieldname": "telephoneNumberType",
-      "datacolumn": "telephoneNumberType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1005,11 +1004,11 @@
         "home",
         "mobile",
         "other"
-      ]
+      ],
+      "datacolumn": "telephoneNumberType"
     },
     {
       "fieldname": "faxNumber",
-      "datacolumn": "faxNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -1024,11 +1023,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "faxNumber"
     },
     {
       "fieldname": "faxNumberType",
-      "datacolumn": "faxNumberType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1045,11 +1044,11 @@
         "business",
         "home",
         "other"
-      ]
+      ],
+      "datacolumn": "faxNumberType"
     },
     {
       "fieldname": "webAddress",
-      "datacolumn": "webAddress",
       "transforms": {
       },
       "source_type": "na",
@@ -1064,11 +1063,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "webAddress"
     },
     {
       "fieldname": "webAddressType",
-      "datacolumn": "webAddressType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1085,11 +1084,11 @@
         "business",
         "other",
         "personal"
-      ]
+      ],
+      "datacolumn": "webAddressType"
     },
     {
       "fieldname": "addressPlace1",
-      "datacolumn": "addressPlace1",
       "transforms": {
       },
       "source_type": "na",
@@ -1104,11 +1103,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPlace1"
     },
     {
       "fieldname": "addressPlace2",
-      "datacolumn": "addressPlace2",
       "transforms": {
       },
       "source_type": "na",
@@ -1123,11 +1122,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPlace2"
     },
     {
       "fieldname": "addressMunicipality",
-      "datacolumn": "addressMunicipality",
       "transforms": {
       },
       "source_type": "na",
@@ -1142,11 +1141,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressMunicipality"
     },
     {
       "fieldname": "addressStateOrProvince",
-      "datacolumn": "addressStateOrProvince",
       "transforms": {
       },
       "source_type": "na",
@@ -1161,11 +1160,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressStateOrProvince"
     },
     {
       "fieldname": "addressPostCode",
-      "datacolumn": "addressPostCode",
       "transforms": {
       },
       "source_type": "na",
@@ -1180,11 +1179,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "addressPostCode"
     },
     {
       "fieldname": "addressCountry",
-      "datacolumn": "addressCountry",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1447,11 +1446,11 @@
         "ZA",
         "ZM",
         "ZW"
-      ]
+      ],
+      "datacolumn": "addressCountry"
     },
     {
       "fieldname": "addressType",
-      "datacolumn": "addressType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1468,7 +1467,8 @@
         "business",
         "home",
         "other"
-      ]
+      ],
+      "datacolumn": "addressType"
     }
   ]
 }

@@ -20,7 +20,6 @@
   "mappings": [
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -34,11 +33,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationDate"
     },
     {
       "fieldname": "reasonForMove",
-      "datacolumn": "reasonForMove",
       "transforms": {
         "vocabulary": "reasonformove"
       },
@@ -53,11 +52,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "reasonForMove"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -75,11 +74,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocation"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -97,11 +96,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganization"
     },
     {
       "fieldname": "movementContact",
-      "datacolumn": "movementContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -119,11 +118,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementContact"
     },
     {
       "fieldname": "movementNote",
-      "datacolumn": "movementNote",
       "transforms": {
       },
       "source_type": "na",
@@ -137,11 +136,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementNote"
     },
     {
       "fieldname": "labelRequested",
-      "datacolumn": "labelRequested",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -156,11 +155,11 @@
       "opt_list_values": [
         "No",
         "Yes"
-      ]
+      ],
+      "datacolumn": "labelRequested"
     },
     {
       "fieldname": "labelSize",
-      "datacolumn": "labelSize",
       "transforms": {
         "vocabulary": "labelsize"
       },
@@ -175,11 +174,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelSize"
     },
     {
       "fieldname": "labelStandType",
-      "datacolumn": "labelStandType",
       "transforms": {
         "vocabulary": "labelstandtype"
       },
@@ -194,11 +193,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelStandType"
     },
     {
       "fieldname": "labelCount",
-      "datacolumn": "labelCount",
       "transforms": {
       },
       "source_type": "na",
@@ -212,7 +211,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelCount"
     }
   ]
 }

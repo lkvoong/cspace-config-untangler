@@ -25,7 +25,6 @@
   "mappings": [
     {
       "fieldname": "collector",
-      "datacolumn": "collector",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -43,11 +42,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "collector"
     },
     {
       "fieldname": "loanOutDate",
-      "datacolumn": "loanOutDate",
       "transforms": {
       },
       "source_type": "na",
@@ -61,11 +60,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutDate"
     },
     {
       "fieldname": "loanOutNumber",
-      "datacolumn": "loanOutNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -79,11 +78,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutNumber"
     },
     {
       "fieldname": "sterile",
-      "datacolumn": "sterile",
       "transforms": {
         "special": [
           "boolean"
@@ -100,11 +99,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sterile"
     },
     {
       "fieldname": "fertile",
-      "datacolumn": "fertile",
       "transforms": {
         "special": [
           "boolean"
@@ -121,11 +120,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fertile"
     },
     {
       "fieldname": "flowering",
-      "datacolumn": "flowering",
       "transforms": {
         "special": [
           "boolean"
@@ -142,11 +141,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowering"
     },
     {
       "fieldname": "fruiting",
-      "datacolumn": "fruiting",
       "transforms": {
         "special": [
           "boolean"
@@ -163,11 +162,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruiting"
     },
     {
       "fieldname": "inSpore",
-      "datacolumn": "inSpore",
       "transforms": {
         "special": [
           "boolean"
@@ -184,11 +183,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inSpore"
     },
     {
       "fieldname": "hortWild",
-      "datacolumn": "hortWild",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -203,11 +202,11 @@
       "opt_list_values": [
         "Horticultural",
         "Wild"
-      ]
+      ],
+      "datacolumn": "hortWild"
     },
     {
       "fieldname": "gardenLocation",
-      "datacolumn": "gardenLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -225,11 +224,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "gardenLocation"
     },
     {
       "fieldname": "loanPurpose",
-      "datacolumn": "loanPurpose",
       "transforms": {
       },
       "source_type": "na",
@@ -243,11 +242,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanPurpose"
     },
     {
       "fieldname": "loanOutNote",
-      "datacolumn": "loanOutNote",
       "transforms": {
       },
       "source_type": "na",
@@ -261,11 +260,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanOutNote"
     },
     {
       "fieldname": "fieldCollectionNote",
-      "datacolumn": "fieldCollectionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -279,11 +278,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionNote"
     },
     {
       "fieldname": "annotation",
-      "datacolumn": "annotation",
       "transforms": {
       },
       "source_type": "na",
@@ -297,11 +296,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "annotation"
     },
     {
       "fieldname": "borrower",
-      "datacolumn": "borrower",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -319,11 +318,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrower"
     },
     {
       "fieldname": "numLent",
-      "datacolumn": "numLent",
       "transforms": {
       },
       "source_type": "na",
@@ -337,11 +336,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numLent"
     },
     {
       "fieldname": "sheetAccessionNumber",
-      "datacolumn": "sheetAccessionNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -355,11 +354,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sheetAccessionNumber"
     },
     {
       "fieldname": "lendersAuthorizer",
-      "datacolumn": "lendersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -377,11 +376,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizer"
     },
     {
       "fieldname": "reviewComplete",
-      "datacolumn": "reviewComplete",
       "transforms": {
         "special": [
           "boolean"
@@ -398,11 +397,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "reviewComplete"
     },
     {
       "fieldname": "labelRequested",
-      "datacolumn": "labelRequested",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -417,7 +416,8 @@
       "opt_list_values": [
         "No",
         "Yes"
-      ]
+      ],
+      "datacolumn": "labelRequested"
     }
   ]
 }

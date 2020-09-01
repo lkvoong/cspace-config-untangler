@@ -122,6 +122,7 @@ Once the setup is done, from the cloned directory, you should be able to type `e
 == Known limitations/issues
 
 - For 5.2 configs, data source values are not consistently supplied for structured date fields. This is because configuration of the structured date fields was not written out to the JSON config in a standard way until 6.0.
+- RecordMappers and CSV templates stored in this repo for releases before 6.1 may not handle multiple fields with the same name in the same record type correctly. The code handles this properly as of 0.3.4, but mappers and templates for older releases were not generated
 - Does not currently report on fields in the `ns2:collectionspace_core` namespace 
 - Does not currently report on fields in the `rel:relations-common-list` namespace because the way this data is defined in the config is very different from the rest
 - `contact` and `blob` get reported/treated as extensions within the tool, rather than sub-records

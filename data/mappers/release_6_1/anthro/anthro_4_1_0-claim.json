@@ -80,7 +80,6 @@
   "mappings": [
     {
       "fieldname": "claimNumber",
-      "datacolumn": "claimNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -94,11 +93,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimNumber"
     },
     {
       "fieldname": "nagpraClaimName",
-      "datacolumn": "nagpraClaimName",
       "transforms": {
       },
       "source_type": "na",
@@ -112,11 +111,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimName"
     },
     {
       "fieldname": "nagpraClaimAltName",
-      "datacolumn": "nagpraClaimAltName",
       "transforms": {
       },
       "source_type": "na",
@@ -131,11 +130,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimAltName"
     },
     {
       "fieldname": "nagpraClaimAltNameNote",
-      "datacolumn": "nagpraClaimAltNameNote",
       "transforms": {
       },
       "source_type": "na",
@@ -150,11 +149,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimAltNameNote"
     },
     {
       "fieldname": "claimFiledBy",
-      "datacolumn": "claimFiledByPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -173,11 +172,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledByPerson"
     },
     {
       "fieldname": "claimFiledBy",
-      "datacolumn": "claimFiledByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -196,11 +195,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledByOrganization"
     },
     {
       "fieldname": "claimFiledOnBehalfOf",
-      "datacolumn": "claimFiledOnBehalfOfPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -219,11 +218,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledOnBehalfOfPerson"
     },
     {
       "fieldname": "claimFiledOnBehalfOf",
-      "datacolumn": "claimFiledOnBehalfOfOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -242,11 +241,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimFiledOnBehalfOfOrganization"
     },
     {
       "fieldname": "claimantNote",
-      "datacolumn": "claimantNote",
       "transforms": {
       },
       "source_type": "na",
@@ -261,11 +260,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimantNote"
     },
     {
       "fieldname": "nagpraClaimType",
-      "datacolumn": "nagpraClaimType",
       "transforms": {
         "vocabulary": "nagpraclaimtype"
       },
@@ -280,11 +279,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimType"
     },
     {
       "fieldname": "claimReceivedDate",
-      "datacolumn": "claimReceivedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -299,11 +298,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimReceivedDate"
     },
     {
       "fieldname": "claimReceivedNote",
-      "datacolumn": "claimReceivedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -318,11 +317,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "claimReceivedNote"
     },
     {
       "fieldname": "nagpraClaimNote",
-      "datacolumn": "nagpraClaimNote",
       "transforms": {
       },
       "source_type": "na",
@@ -336,11 +335,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNote"
     },
     {
       "fieldname": "nagpraClaimSiteName",
-      "datacolumn": "nagpraClaimSiteName",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -359,11 +358,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSiteName"
     },
     {
       "fieldname": "nagpraClaimSiteNote",
-      "datacolumn": "nagpraClaimSiteNote",
       "transforms": {
       },
       "source_type": "na",
@@ -378,11 +377,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSiteNote"
     },
     {
       "fieldname": "nagpraClaimGroupName",
-      "datacolumn": "nagpraClaimGroupName",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -401,11 +400,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimGroupName"
     },
     {
       "fieldname": "nagpraClaimGroupNote",
-      "datacolumn": "nagpraClaimGroupNote",
       "transforms": {
       },
       "source_type": "na",
@@ -420,11 +419,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimGroupNote"
     },
     {
       "fieldname": "nagpraClaimPeriodDateGroup",
-      "datacolumn": "nagpraClaimPeriodDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -439,11 +438,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimPeriodDateGroup"
     },
     {
       "fieldname": "nagpraClaimPeriodNote",
-      "datacolumn": "nagpraClaimPeriodNote",
       "transforms": {
       },
       "source_type": "na",
@@ -458,11 +457,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimPeriodNote"
     },
     {
       "fieldname": "nagpraClaimInitialResponseDate",
-      "datacolumn": "nagpraClaimInitialResponseDate",
       "transforms": {
       },
       "source_type": "na",
@@ -477,11 +476,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimInitialResponseDate"
     },
     {
       "fieldname": "nagpraClaimInitialResponseNote",
-      "datacolumn": "nagpraClaimInitialResponseNote",
       "transforms": {
       },
       "source_type": "na",
@@ -496,11 +495,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimInitialResponseNote"
     },
     {
       "fieldname": "nagpraClaimSentToLocalDate",
-      "datacolumn": "nagpraClaimSentToLocalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -515,11 +514,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToLocalDate"
     },
     {
       "fieldname": "nagpraClaimSentToLocalNote",
-      "datacolumn": "nagpraClaimSentToLocalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -534,11 +533,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToLocalNote"
     },
     {
       "fieldname": "nagpraClaimLocalRecDate",
-      "datacolumn": "nagpraClaimLocalRecDate",
       "transforms": {
       },
       "source_type": "na",
@@ -553,11 +552,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimLocalRecDate"
     },
     {
       "fieldname": "nagpraClaimLocalRecNote",
-      "datacolumn": "nagpraClaimLocalRecNote",
       "transforms": {
       },
       "source_type": "na",
@@ -572,11 +571,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimLocalRecNote"
     },
     {
       "fieldname": "nagpraClaimSentToNatlDate",
-      "datacolumn": "nagpraClaimSentToNatlDate",
       "transforms": {
       },
       "source_type": "na",
@@ -591,11 +590,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToNatlDate"
     },
     {
       "fieldname": "nagpraClaimSentToNatlNote",
-      "datacolumn": "nagpraClaimSentToNatlNote",
       "transforms": {
       },
       "source_type": "na",
@@ -610,11 +609,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimSentToNatlNote"
     },
     {
       "fieldname": "nagpraClaimNatlRespDate",
-      "datacolumn": "nagpraClaimNatlRespDate",
       "transforms": {
       },
       "source_type": "na",
@@ -629,11 +628,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlRespDate"
     },
     {
       "fieldname": "nagpraClaimNatlRespNote",
-      "datacolumn": "nagpraClaimNatlRespNote",
       "transforms": {
       },
       "source_type": "na",
@@ -648,11 +647,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlRespNote"
     },
     {
       "fieldname": "nagpraClaimNatlApprovalDate",
-      "datacolumn": "nagpraClaimNatlApprovalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -667,11 +666,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlApprovalDate"
     },
     {
       "fieldname": "nagpraClaimNatlApprovalNote",
-      "datacolumn": "nagpraClaimNatlApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -686,11 +685,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNatlApprovalNote"
     },
     {
       "fieldname": "nagpraClaimNoticeDate",
-      "datacolumn": "nagpraClaimNoticeDate",
       "transforms": {
       },
       "source_type": "na",
@@ -705,11 +704,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNoticeDate"
     },
     {
       "fieldname": "nagpraClaimNoticeDateType",
-      "datacolumn": "nagpraClaimNoticeDateType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -725,11 +724,11 @@
       "opt_list_values": [
         "begin",
         "end"
-      ]
+      ],
+      "datacolumn": "nagpraClaimNoticeDateType"
     },
     {
       "fieldname": "nagpraClaimNoticeNote",
-      "datacolumn": "nagpraClaimNoticeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -744,11 +743,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimNoticeNote"
     },
     {
       "fieldname": "nagpraClaimTransferDate",
-      "datacolumn": "nagpraClaimTransferDate",
       "transforms": {
       },
       "source_type": "na",
@@ -763,11 +762,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimTransferDate"
     },
     {
       "fieldname": "nagpraClaimTransferNote",
-      "datacolumn": "nagpraClaimTransferNote",
       "transforms": {
       },
       "source_type": "na",
@@ -782,11 +781,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nagpraClaimTransferNote"
     },
     {
       "fieldname": "dispositionPossibilitiesDiscussed",
-      "datacolumn": "dispositionPossibilitiesDiscussed",
       "transforms": {
         "special": [
           "boolean"
@@ -803,11 +802,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dispositionPossibilitiesDiscussed"
     },
     {
       "fieldname": "dispositionPossibilitiesDiscussedNote",
-      "datacolumn": "dispositionPossibilitiesDiscussedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -821,11 +820,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dispositionPossibilitiesDiscussedNote"
     },
     {
       "fieldname": "surroundingTribesContacted",
-      "datacolumn": "surroundingTribesContacted",
       "transforms": {
         "special": [
           "boolean"
@@ -842,11 +841,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "surroundingTribesContacted"
     },
     {
       "fieldname": "surroundingTribesContactedNote",
-      "datacolumn": "surroundingTribesContactedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -860,11 +859,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "surroundingTribesContactedNote"
     },
     {
       "fieldname": "workingTeamNotified",
-      "datacolumn": "workingTeamNotified",
       "transforms": {
         "special": [
           "boolean"
@@ -881,11 +880,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "workingTeamNotified"
     },
     {
       "fieldname": "workingTeamNotifiedNote",
-      "datacolumn": "workingTeamNotifiedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -899,11 +898,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "workingTeamNotifiedNote"
     },
     {
       "fieldname": "siteFileResearchCompleted",
-      "datacolumn": "siteFileResearchCompleted",
       "transforms": {
         "special": [
           "boolean"
@@ -920,11 +919,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "siteFileResearchCompleted"
     },
     {
       "fieldname": "siteFileResearchCompletedNote",
-      "datacolumn": "siteFileResearchCompletedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -938,11 +937,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "siteFileResearchCompletedNote"
     },
     {
       "fieldname": "accessionFileResearchCompleted",
-      "datacolumn": "accessionFileResearchCompleted",
       "transforms": {
         "special": [
           "boolean"
@@ -959,11 +958,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionFileResearchCompleted"
     },
     {
       "fieldname": "accessionFileResearchCompletedNote",
-      "datacolumn": "accessionFileResearchCompletedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -977,11 +976,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionFileResearchCompletedNote"
     },
     {
       "fieldname": "objectsLocatedAndCounted",
-      "datacolumn": "objectsLocatedAndCounted",
       "transforms": {
         "special": [
           "boolean"
@@ -998,11 +997,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsLocatedAndCounted"
     },
     {
       "fieldname": "objectsLocatedAndCountedNote",
-      "datacolumn": "objectsLocatedAndCountedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1016,11 +1015,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsLocatedAndCountedNote"
     },
     {
       "fieldname": "objectsConsolidated",
-      "datacolumn": "objectsConsolidated",
       "transforms": {
         "special": [
           "boolean"
@@ -1037,11 +1036,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsConsolidated"
     },
     {
       "fieldname": "objectsConsolidatedNote",
-      "datacolumn": "objectsConsolidatedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1055,11 +1054,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsConsolidatedNote"
     },
     {
       "fieldname": "objectsPhotographed",
-      "datacolumn": "objectsPhotographed",
       "transforms": {
         "special": [
           "boolean"
@@ -1076,11 +1075,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsPhotographed"
     },
     {
       "fieldname": "objectsPhotographedNote",
-      "datacolumn": "objectsPhotographedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1094,11 +1093,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsPhotographedNote"
     },
     {
       "fieldname": "registrationDocumentsDrafted",
-      "datacolumn": "registrationDocumentsDrafted",
       "transforms": {
         "special": [
           "boolean"
@@ -1115,11 +1114,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "registrationDocumentsDrafted"
     },
     {
       "fieldname": "registrationDocumentsDraftedNote",
-      "datacolumn": "registrationDocumentsDraftedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1133,11 +1132,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "registrationDocumentsDraftedNote"
     },
     {
       "fieldname": "tribeContactedForPackingPreferences",
-      "datacolumn": "tribeContactedForPackingPreferences",
       "transforms": {
         "special": [
           "boolean"
@@ -1154,11 +1153,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "tribeContactedForPackingPreferences"
     },
     {
       "fieldname": "tribeContactedForPackingPreferencesNote",
-      "datacolumn": "tribeContactedForPackingPreferencesNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1172,11 +1171,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "tribeContactedForPackingPreferencesNote"
     },
     {
       "fieldname": "dateArrangedForTransfer",
-      "datacolumn": "dateArrangedForTransfer",
       "transforms": {
         "special": [
           "boolean"
@@ -1193,11 +1192,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateArrangedForTransfer"
     },
     {
       "fieldname": "dateArrangedForTransferNote",
-      "datacolumn": "dateArrangedForTransferNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1211,11 +1210,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateArrangedForTransferNote"
     },
     {
       "fieldname": "objectsMarkedAsDeaccessioned",
-      "datacolumn": "objectsMarkedAsDeaccessioned",
       "transforms": {
         "special": [
           "boolean"
@@ -1232,11 +1231,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsMarkedAsDeaccessioned"
     },
     {
       "fieldname": "objectsMarkedAsDeaccessionedNote",
-      "datacolumn": "objectsMarkedAsDeaccessionedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1250,11 +1249,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectsMarkedAsDeaccessionedNote"
     },
     {
       "fieldname": "documentsArchived",
-      "datacolumn": "documentsArchived",
       "transforms": {
         "special": [
           "boolean"
@@ -1271,11 +1270,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "documentsArchived"
     },
     {
       "fieldname": "documentsArchivedNote",
-      "datacolumn": "documentsArchivedNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1289,7 +1288,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "documentsArchivedNote"
     }
   ]
 }

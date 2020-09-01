@@ -34,7 +34,6 @@
   "mappings": [
     {
       "fieldname": "InventoryID",
-      "datacolumn": "InventoryID",
       "transforms": {
       },
       "source_type": "na",
@@ -48,11 +47,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "InventoryID"
     },
     {
       "fieldname": "osteoAgeEstimateVerbatim",
-      "datacolumn": "osteoAgeEstimateVerbatim",
       "transforms": {
       },
       "source_type": "na",
@@ -67,11 +66,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "osteoAgeEstimateVerbatim"
     },
     {
       "fieldname": "osteoAgeEstimateLower",
-      "datacolumn": "osteoAgeEstimateLower",
       "transforms": {
       },
       "source_type": "na",
@@ -86,11 +85,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "osteoAgeEstimateLower"
     },
     {
       "fieldname": "osteoAgeEstimateUpper",
-      "datacolumn": "osteoAgeEstimateUpper",
       "transforms": {
       },
       "source_type": "na",
@@ -105,11 +104,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "osteoAgeEstimateUpper"
     },
     {
       "fieldname": "osteoAgeEstimateDateGroup",
-      "datacolumn": "osteoAgeEstimateDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -124,11 +123,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "osteoAgeEstimateDateGroup"
     },
     {
       "fieldname": "osteoAgeEstimateAnalyst",
-      "datacolumn": "osteoAgeEstimateAnalyst",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -147,11 +146,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "osteoAgeEstimateAnalyst"
     },
     {
       "fieldname": "osteoAgeEstimateNote",
-      "datacolumn": "osteoAgeEstimateNote",
       "transforms": {
       },
       "source_type": "na",
@@ -166,11 +165,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "osteoAgeEstimateNote"
     },
     {
       "fieldname": "sexDetermination",
-      "datacolumn": "sexDetermination",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -192,11 +191,11 @@
         "Probably female",
         "Probably male",
         "Unknown"
-      ]
+      ],
+      "datacolumn": "sexDetermination"
     },
     {
       "fieldname": "sexDeterminationDateGroup",
-      "datacolumn": "sexDeterminationDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -211,11 +210,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sexDeterminationDateGroup"
     },
     {
       "fieldname": "sexDeterminationAnalyst",
-      "datacolumn": "sexDeterminationAnalyst",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -234,11 +233,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sexDeterminationAnalyst"
     },
     {
       "fieldname": "sexDeterminationNote",
-      "datacolumn": "sexDeterminationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -253,11 +252,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sexDeterminationNote"
     },
     {
       "fieldname": "completeness",
-      "datacolumn": "completeness",
       "transforms": {
         "vocabulary": "osteocompleteness"
       },
@@ -272,11 +271,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "completeness"
     },
     {
       "fieldname": "completenessNote",
-      "datacolumn": "completenessNote",
       "transforms": {
       },
       "source_type": "na",
@@ -290,11 +289,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "completenessNote"
     },
     {
       "fieldname": "molarsPresent",
-      "datacolumn": "molarsPresent",
       "transforms": {
         "special": [
           "boolean"
@@ -311,11 +310,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "molarsPresent"
     },
     {
       "fieldname": "dentitionScore",
-      "datacolumn": "dentitionScore",
       "transforms": {
         "vocabulary": "dentitionscore"
       },
@@ -330,11 +329,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dentitionScore"
     },
     {
       "fieldname": "dentitionNote",
-      "datacolumn": "dentitionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -348,11 +347,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dentitionNote"
     },
     {
       "fieldname": "mortuaryTreatment",
-      "datacolumn": "mortuaryTreatment",
       "transforms": {
         "vocabulary": "mortuarytreatment"
       },
@@ -367,11 +366,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mortuaryTreatment"
     },
     {
       "fieldname": "mortuaryTreatmentNote",
-      "datacolumn": "mortuaryTreatmentNote",
       "transforms": {
       },
       "source_type": "na",
@@ -385,11 +384,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mortuaryTreatmentNote"
     },
     {
       "fieldname": "behrensmeyerSingleLower",
-      "datacolumn": "behrensmeyerSingleLower",
       "transforms": {
         "special": [
           "behrensmeyer_translate"
@@ -407,11 +406,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "behrensmeyerSingleLower"
     },
     {
       "fieldname": "behrensmeyerUpper",
-      "datacolumn": "behrensmeyerUpper",
       "transforms": {
         "special": [
           "behrensmeyer_translate"
@@ -429,11 +428,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "behrensmeyerUpper"
     },
     {
       "fieldname": "NotesOnElementInventory",
-      "datacolumn": "NotesOnElementInventory",
       "transforms": {
       },
       "source_type": "na",
@@ -447,11 +446,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "NotesOnElementInventory"
     },
     {
       "fieldname": "pathologyNote",
-      "datacolumn": "pathologyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -465,11 +464,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "pathologyNote"
     },
     {
       "fieldname": "InventoryIsComplete",
-      "datacolumn": "InventoryIsComplete",
       "transforms": {
         "special": [
           "boolean"
@@ -486,11 +485,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "InventoryIsComplete"
     },
     {
       "fieldname": "inventoryAnalyst",
-      "datacolumn": "inventoryAnalyst",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -508,11 +507,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryAnalyst"
     },
     {
       "fieldname": "inventoryDate",
-      "datacolumn": "inventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -526,11 +525,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryDate"
     },
     {
       "fieldname": "Notes_DentalPathology",
-      "datacolumn": "Notes_DentalPathology",
       "transforms": {
       },
       "source_type": "na",
@@ -544,11 +543,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "Notes_DentalPathology"
     },
     {
       "fieldname": "Notes_CranialPathology",
-      "datacolumn": "Notes_CranialPathology",
       "transforms": {
       },
       "source_type": "na",
@@ -562,11 +561,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "Notes_CranialPathology"
     },
     {
       "fieldname": "Notes_PostcranialPathology",
-      "datacolumn": "Notes_PostcranialPathology",
       "transforms": {
       },
       "source_type": "na",
@@ -580,11 +579,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "Notes_PostcranialPathology"
     },
     {
       "fieldname": "Notes_CulturalModifications",
-      "datacolumn": "Notes_CulturalModifications",
       "transforms": {
       },
       "source_type": "na",
@@ -598,11 +597,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "Notes_CulturalModifications"
     },
     {
       "fieldname": "Notes_NHTaphonomicAlterations",
-      "datacolumn": "Notes_NHTaphonomicAlterations",
       "transforms": {
       },
       "source_type": "na",
@@ -616,11 +615,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "Notes_NHTaphonomicAlterations"
     },
     {
       "fieldname": "Notes_CuratorialSuffixing",
-      "datacolumn": "Notes_CuratorialSuffixing",
       "transforms": {
       },
       "source_type": "na",
@@ -634,11 +633,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "Notes_CuratorialSuffixing"
     },
     {
       "fieldname": "cranialDeformationPresent",
-      "datacolumn": "cranialDeformationPresent",
       "transforms": {
         "special": [
           "boolean"
@@ -655,11 +654,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "cranialDeformationPresent"
     },
     {
       "fieldname": "cranialDeformationCategory",
-      "datacolumn": "cranialDeformationCategory",
       "transforms": {
         "vocabulary": "cranialdeformationcategory"
       },
@@ -674,11 +673,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "cranialDeformationCategory"
     },
     {
       "fieldname": "cranialDeformationNote",
-      "datacolumn": "cranialDeformationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -692,11 +691,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "cranialDeformationNote"
     },
     {
       "fieldname": "trepanationPresent",
-      "datacolumn": "trepanationPresent",
       "transforms": {
         "special": [
           "boolean"
@@ -713,11 +712,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationPresent"
     },
     {
       "fieldname": "trepanationLocation",
-      "datacolumn": "trepanationLocation",
       "transforms": {
       },
       "source_type": "na",
@@ -732,11 +731,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationLocation"
     },
     {
       "fieldname": "trepanationDimensionMax",
-      "datacolumn": "trepanationDimensionMax",
       "transforms": {
       },
       "source_type": "na",
@@ -751,11 +750,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationDimensionMax"
     },
     {
       "fieldname": "trepanationDimensionMin",
-      "datacolumn": "trepanationDimensionMin",
       "transforms": {
       },
       "source_type": "na",
@@ -770,11 +769,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationDimensionMin"
     },
     {
       "fieldname": "trepanationTechnique",
-      "datacolumn": "trepanationTechnique",
       "transforms": {
         "vocabulary": "trepanationtechnique"
       },
@@ -790,11 +789,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationTechnique"
     },
     {
       "fieldname": "trepanationHealing",
-      "datacolumn": "trepanationHealing",
       "transforms": {
         "vocabulary": "trepanationhealing"
       },
@@ -810,11 +809,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationHealing"
     },
     {
       "fieldname": "trepanationCertainty",
-      "datacolumn": "trepanationCertainty",
       "transforms": {
         "vocabulary": "trepanationcertainty"
       },
@@ -830,11 +829,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationCertainty"
     },
     {
       "fieldname": "trepanationNote",
-      "datacolumn": "trepanationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -849,11 +848,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationNote"
     },
     {
       "fieldname": "trepanationGeneralNote",
-      "datacolumn": "trepanationGeneralNote",
       "transforms": {
       },
       "source_type": "na",
@@ -867,7 +866,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "trepanationGeneralNote"
     }
   ]
 }

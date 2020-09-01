@@ -5,8 +5,9 @@ module CspaceConfigUntangler
     class FieldMapping
       ::FieldMapping = CspaceConfigUntangler::FieldMap::FieldMapping
       include CCU::TrackAttributes
-      attr_reader :fieldname, :datacolumn, :transforms, :source_type, :namespace, :xpath, :data_type,
+      attr_reader :fieldname, :transforms, :source_type, :namespace, :xpath, :data_type,
         :required, :repeats, :in_repeating_group, :opt_list_values
+      attr_accessor :datacolumn
       def initialize(field:, datacolumn:, transforms: {}, source_type:)
         @fieldname = field.name
         @namespace = field.ns.sub('ns2:', '')
@@ -22,8 +23,11 @@ module CspaceConfigUntangler
       end
 
       def to_h
-        attrs = self.attr_readers
-        ivs = attrs.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
+        readable = self.attr_readers
+        accessible = self.attr_accessors
+        attrs = readable + accessible
+        
+        ivs = attrs.flatten.map{ |e| '@' + e.to_s }.map{ |e| e.to_sym }
         h = {}
         attrs.each_with_index{ |a, i| h[a.to_sym] = self.instance_variable_get(ivs[i]) }
         return h

@@ -23,7 +23,6 @@
   "mappings": [
     {
       "fieldname": "exitNumber",
-      "datacolumn": "exitNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -37,11 +36,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitNumber"
     },
     {
       "fieldname": "exitDateGroup",
-      "datacolumn": "exitDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -55,11 +54,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitDateGroup"
     },
     {
       "fieldname": "exitReason",
-      "datacolumn": "exitReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -75,11 +74,11 @@
         "deaccession",
         "disposal",
         "returnofloan"
-      ]
+      ],
+      "datacolumn": "exitReason"
     },
     {
       "fieldname": "exitMethod",
-      "datacolumn": "exitMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -95,11 +94,11 @@
         "courier",
         "inperson",
         "post"
-      ]
+      ],
+      "datacolumn": "exitMethod"
     },
     {
       "fieldname": "exitQuantity",
-      "datacolumn": "exitQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -113,11 +112,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitQuantity"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -135,11 +134,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerPersonLocal"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -157,11 +156,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerPersonShared"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -179,11 +178,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerOrganizationLocal"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -201,11 +200,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerOrganizationShared"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -223,11 +222,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorPersonLocal"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -245,11 +244,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorPersonShared"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -267,11 +266,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorOrganizationLocal"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositorOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -289,11 +288,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositorOrganizationShared"
     },
     {
       "fieldname": "exitNote",
-      "datacolumn": "exitNote",
       "transforms": {
       },
       "source_type": "na",
@@ -307,11 +306,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitNote"
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -325,11 +324,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "packingNote"
     },
     {
       "fieldname": "displosalNewObjectNumber",
-      "datacolumn": "displosalNewObjectNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -343,11 +342,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displosalNewObjectNumber"
     },
     {
       "fieldname": "deaccessionAuthorizer",
-      "datacolumn": "deaccessionAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -365,11 +364,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionAuthorizer"
     },
     {
       "fieldname": "authorizationDate",
-      "datacolumn": "authorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -383,11 +382,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "authorizationDate"
     },
     {
       "fieldname": "deaccessionApprovalGroup",
-      "datacolumn": "deaccessionApprovalGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -403,11 +402,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionApprovalGroup"
     },
     {
       "fieldname": "deaccessionApprovalIndividual",
-      "datacolumn": "deaccessionApprovalIndividual",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -426,11 +425,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionApprovalIndividual"
     },
     {
       "fieldname": "deaccessionApprovalStatus",
-      "datacolumn": "deaccessionApprovalStatus",
       "transforms": {
         "vocabulary": "deaccessionapprovalstatus"
       },
@@ -446,11 +445,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionApprovalStatus"
     },
     {
       "fieldname": "deaccessionApprovalDate",
-      "datacolumn": "deaccessionApprovalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -465,11 +464,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionApprovalDate"
     },
     {
       "fieldname": "deaccessionApprovalNote",
-      "datacolumn": "deaccessionApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -484,11 +483,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionApprovalNote"
     },
     {
       "fieldname": "deaccessionDate",
-      "datacolumn": "deaccessionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -502,11 +501,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deaccessionDate"
     },
     {
       "fieldname": "disposalDate",
-      "datacolumn": "disposalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -520,11 +519,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalDate"
     },
     {
       "fieldname": "disposalMethod",
-      "datacolumn": "disposalMethod",
       "transforms": {
         "vocabulary": "disposalmethod"
       },
@@ -539,11 +538,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalMethod"
     },
     {
       "fieldname": "displosalReason",
-      "datacolumn": "displosalReason",
       "transforms": {
       },
       "source_type": "na",
@@ -557,11 +556,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displosalReason"
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -579,11 +578,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalProposedRecipientPersonLocal"
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -601,11 +600,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalProposedRecipientPersonShared"
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -623,11 +622,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalProposedRecipientOrganizationLocal"
     },
     {
       "fieldname": "disposalProposedRecipient",
-      "datacolumn": "disposalProposedRecipientOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -645,11 +644,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalProposedRecipientOrganizationShared"
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -667,11 +666,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalRecipientPersonLocal"
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -689,11 +688,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalRecipientPersonShared"
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -711,11 +710,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalRecipientOrganizationLocal"
     },
     {
       "fieldname": "disposalRecipient",
-      "datacolumn": "disposalRecipientOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -733,11 +732,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalRecipientOrganizationShared"
     },
     {
       "fieldname": "disposalCurrency",
-      "datacolumn": "disposalCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -752,11 +751,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "disposalCurrency"
     },
     {
       "fieldname": "displosalValue",
-      "datacolumn": "displosalValue",
       "transforms": {
       },
       "source_type": "na",
@@ -770,11 +769,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displosalValue"
     },
     {
       "fieldname": "groupDisposalCurrency",
-      "datacolumn": "groupDisposalCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -789,11 +788,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupDisposalCurrency"
     },
     {
       "fieldname": "groupDisplosalValue",
-      "datacolumn": "groupDisplosalValue",
       "transforms": {
       },
       "source_type": "na",
@@ -807,11 +806,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "groupDisplosalValue"
     },
     {
       "fieldname": "displosalProvisos",
-      "datacolumn": "displosalProvisos",
       "transforms": {
       },
       "source_type": "na",
@@ -825,11 +824,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displosalProvisos"
     },
     {
       "fieldname": "displosalNote",
-      "datacolumn": "displosalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -843,7 +842,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displosalNote"
     }
   ]
 }

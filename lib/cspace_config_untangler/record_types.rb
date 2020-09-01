@@ -63,6 +63,22 @@ module CspaceConfigUntangler
       multi = h.select{ |path, farr| farr.length > 1 }
       return multi.keys
     end
+
+    def mappings
+      checkhash = {}
+      mappings = fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+      # ensure unique datacolumn values for templates and mapper
+        mappings.each do |mapping|
+        if checkhash.key?(mapping.datacolumn)
+          add = mapping.xpath.empty? ? mapping.namespace.split('_').last : mapping.xpath.last
+          mapping.datacolumn = "#{add}_#{mapping.datacolumn}"
+        else
+          mapping.datacolumn = mapping.datacolumn
+          checkhash[mapping.datacolumn] = nil
+        end
+      end
+      mappings
+    end
     
     private
 

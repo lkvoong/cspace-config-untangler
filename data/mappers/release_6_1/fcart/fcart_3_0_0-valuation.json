@@ -21,7 +21,6 @@
   "mappings": [
     {
       "fieldname": "valuationcontrolRefNumber",
-      "datacolumn": "valuationcontrolRefNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -35,11 +34,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuationcontrolRefNumber"
     },
     {
       "fieldname": "valueCurrency",
-      "datacolumn": "valueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -55,11 +54,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueCurrency"
     },
     {
       "fieldname": "valueAmount",
-      "datacolumn": "valueAmount",
       "transforms": {
       },
       "source_type": "na",
@@ -74,11 +73,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueAmount"
     },
     {
       "fieldname": "valueDate",
-      "datacolumn": "valueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -92,11 +91,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "valueRenewalDate",
-      "datacolumn": "valueRenewalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -110,11 +109,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueRenewalDate"
     },
     {
       "fieldname": "valueSource",
-      "datacolumn": "valueSourcePerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -132,11 +131,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourcePerson"
     },
     {
       "fieldname": "valueSource",
-      "datacolumn": "valueSourceOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -154,11 +153,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceOrganization"
     },
     {
       "fieldname": "valueType",
-      "datacolumn": "valueType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -174,11 +173,11 @@
         "Current Value",
         "Original Value",
         "Replacement Value"
-      ]
+      ],
+      "datacolumn": "valueType"
     },
     {
       "fieldname": "valueNote",
-      "datacolumn": "valueNote",
       "transforms": {
       },
       "source_type": "na",
@@ -192,7 +191,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueNote"
     }
   ]
 }

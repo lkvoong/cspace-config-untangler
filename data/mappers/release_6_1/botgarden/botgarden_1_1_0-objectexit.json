@@ -22,7 +22,6 @@
   "mappings": [
     {
       "fieldname": "exitNumber",
-      "datacolumn": "exitNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -36,11 +35,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitNumber"
     },
     {
       "fieldname": "exitDateGroup",
-      "datacolumn": "exitDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -54,11 +53,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitDateGroup"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -76,11 +75,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerPerson"
     },
     {
       "fieldname": "currentOwner",
-      "datacolumn": "currentOwnerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -98,11 +97,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentOwnerOrganization"
     },
     {
       "fieldname": "exitMethod",
-      "datacolumn": "exitMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -118,11 +117,11 @@
         "courier",
         "inperson",
         "post"
-      ]
+      ],
+      "datacolumn": "exitMethod"
     },
     {
       "fieldname": "depositor",
-      "datacolumn": "depositor",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -140,11 +139,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "depositor"
     },
     {
       "fieldname": "exitReason",
-      "datacolumn": "exitReason",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -160,11 +159,11 @@
         "deaccession",
         "disposal",
         "returnofloan"
-      ]
+      ],
+      "datacolumn": "exitReason"
     },
     {
       "fieldname": "count",
-      "datacolumn": "count",
       "transforms": {
       },
       "source_type": "na",
@@ -178,11 +177,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "count"
     },
     {
       "fieldname": "exitNote",
-      "datacolumn": "exitNote",
       "transforms": {
       },
       "source_type": "na",
@@ -196,11 +195,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "exitNote"
     },
     {
       "fieldname": "packingNote",
-      "datacolumn": "packingNote",
       "transforms": {
       },
       "source_type": "na",
@@ -214,7 +213,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "packingNote"
     }
   ]
 }

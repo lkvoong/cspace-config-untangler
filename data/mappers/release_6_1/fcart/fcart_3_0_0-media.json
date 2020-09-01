@@ -39,7 +39,6 @@
   "mappings": [
     {
       "fieldname": "identificationNumber",
-      "datacolumn": "identificationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -53,11 +52,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identificationNumber"
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -71,11 +70,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "publishTo",
-      "datacolumn": "publishTo",
       "transforms": {
         "vocabulary": "publishto"
       },
@@ -90,11 +89,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publishTo"
     },
     {
       "fieldname": "name",
-      "datacolumn": "name",
       "transforms": {
       },
       "source_type": "na",
@@ -108,11 +107,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "name"
     },
     {
       "fieldname": "mimeType",
-      "datacolumn": "mimeType",
       "transforms": {
       },
       "source_type": "na",
@@ -126,11 +125,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "mimeType"
     },
     {
       "fieldname": "length",
-      "datacolumn": "length",
       "transforms": {
       },
       "source_type": "na",
@@ -144,11 +143,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "length"
     },
     {
       "fieldname": "externalUrl",
-      "datacolumn": "externalUrl",
       "transforms": {
       },
       "source_type": "na",
@@ -162,11 +161,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "externalUrl"
     },
     {
       "fieldname": "measuredPart",
-      "datacolumn": "measuredPart",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -205,11 +204,11 @@
         "stories",
         "tessera",
         "unframed"
-      ]
+      ],
+      "datacolumn": "measuredPart"
     },
     {
       "fieldname": "dimensionSummary",
-      "datacolumn": "dimensionSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -224,11 +223,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dimensionSummary"
     },
     {
       "fieldname": "dimension",
-      "datacolumn": "dimension",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -262,11 +261,11 @@
         "volume",
         "weight",
         "width"
-      ]
+      ],
+      "datacolumn": "dimension"
     },
     {
       "fieldname": "measuredBy",
-      "datacolumn": "measuredByPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -287,11 +286,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByPerson"
     },
     {
       "fieldname": "measuredBy",
-      "datacolumn": "measuredByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -312,11 +311,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByOrganization"
     },
     {
       "fieldname": "measurementMethod",
-      "datacolumn": "measurementMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -352,11 +351,11 @@
         "standard_mesh_screen",
         "taping_chaining",
         "theodolite_total_station"
-      ]
+      ],
+      "datacolumn": "measurementMethod"
     },
     {
       "fieldname": "value",
-      "datacolumn": "value",
       "transforms": {
       },
       "source_type": "na",
@@ -373,11 +372,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "value"
     },
     {
       "fieldname": "measurementUnit",
-      "datacolumn": "measurementUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -409,11 +408,11 @@
         "pounds",
         "square-feet",
         "stories"
-      ]
+      ],
+      "datacolumn": "measurementUnit"
     },
     {
       "fieldname": "valueQualifier",
-      "datacolumn": "valueQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -430,11 +429,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueQualifier"
     },
     {
       "fieldname": "valueDate",
-      "datacolumn": "valueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -451,11 +450,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -473,11 +472,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorPerson"
     },
     {
       "fieldname": "contributor",
-      "datacolumn": "contributorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -495,11 +494,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contributorOrganization"
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -517,11 +516,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorPerson"
     },
     {
       "fieldname": "creator",
-      "datacolumn": "creatorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -539,11 +538,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "creatorOrganization"
     },
     {
       "fieldname": "language",
-      "datacolumn": "language",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -558,11 +557,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "language"
     },
     {
       "fieldname": "publisher",
-      "datacolumn": "publisherPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -580,11 +579,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publisherPerson"
     },
     {
       "fieldname": "publisher",
-      "datacolumn": "publisherOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -602,11 +601,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "publisherOrganization"
     },
     {
       "fieldname": "relation",
-      "datacolumn": "relation",
       "transforms": {
       },
       "source_type": "na",
@@ -620,11 +619,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relation"
     },
     {
       "fieldname": "copyrightStatement",
-      "datacolumn": "copyrightStatement",
       "transforms": {
       },
       "source_type": "na",
@@ -638,11 +637,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "copyrightStatement"
     },
     {
       "fieldname": "type",
-      "datacolumn": "type",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -660,11 +659,11 @@
         "moving_image",
         "sound",
         "still_image"
-      ]
+      ],
+      "datacolumn": "type"
     },
     {
       "fieldname": "coverage",
-      "datacolumn": "coverage",
       "transforms": {
       },
       "source_type": "na",
@@ -678,11 +677,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coverage"
     },
     {
       "fieldname": "dateGroup",
-      "datacolumn": "dateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -696,11 +695,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateGroup"
     },
     {
       "fieldname": "source",
-      "datacolumn": "source",
       "transforms": {
       },
       "source_type": "na",
@@ -714,11 +713,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "source"
     },
     {
       "fieldname": "subject",
-      "datacolumn": "subject",
       "transforms": {
       },
       "source_type": "na",
@@ -732,11 +731,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "subject"
     },
     {
       "fieldname": "rightsHolder",
-      "datacolumn": "rightsHolderPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -754,11 +753,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderPerson"
     },
     {
       "fieldname": "rightsHolder",
-      "datacolumn": "rightsHolderOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -776,11 +775,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "rightsHolderOrganization"
     },
     {
       "fieldname": "description",
-      "datacolumn": "description",
       "transforms": {
       },
       "source_type": "na",
@@ -794,7 +793,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "description"
     }
   ]
 }

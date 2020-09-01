@@ -25,7 +25,6 @@
   "mappings": [
     {
       "fieldname": "propNumber",
-      "datacolumn": "propNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -39,11 +38,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "propNumber"
     },
     {
       "fieldname": "propType",
-      "datacolumn": "propType",
       "transforms": {
         "vocabulary": "proptype"
       },
@@ -58,11 +57,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "propType"
     },
     {
       "fieldname": "numStarted",
-      "datacolumn": "numStarted",
       "transforms": {
       },
       "source_type": "na",
@@ -76,11 +75,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numStarted"
     },
     {
       "fieldname": "propDate",
-      "datacolumn": "propDate",
       "transforms": {
       },
       "source_type": "na",
@@ -94,11 +93,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "propDate"
     },
     {
       "fieldname": "propReason",
-      "datacolumn": "propReason",
       "transforms": {
         "vocabulary": "propreason"
       },
@@ -113,11 +112,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "propReason"
     },
     {
       "fieldname": "propComments",
-      "datacolumn": "propComments",
       "transforms": {
       },
       "source_type": "na",
@@ -131,11 +130,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "propComments"
     },
     {
       "fieldname": "scarStrat",
-      "datacolumn": "scarStrat",
       "transforms": {
         "vocabulary": "scarstrat"
       },
@@ -151,11 +150,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "scarStrat"
     },
     {
       "fieldname": "duration",
-      "datacolumn": "duration",
       "transforms": {
       },
       "source_type": "na",
@@ -170,11 +169,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "duration"
     },
     {
       "fieldname": "durationUnit",
-      "datacolumn": "durationUnit",
       "transforms": {
         "vocabulary": "durationunit"
       },
@@ -190,11 +189,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "durationUnit"
     },
     {
       "fieldname": "extraSeeds",
-      "datacolumn": "extraSeeds",
       "transforms": {
         "special": [
           "boolean"
@@ -211,11 +210,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "extraSeeds"
     },
     {
       "fieldname": "spores",
-      "datacolumn": "spores",
       "transforms": {
         "special": [
           "boolean"
@@ -232,11 +231,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "spores"
     },
     {
       "fieldname": "cuttingType",
-      "datacolumn": "cuttingType",
       "transforms": {
         "vocabulary": "cuttingtype"
       },
@@ -251,11 +250,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "cuttingType"
     },
     {
       "fieldname": "hormone",
-      "datacolumn": "hormone",
       "transforms": {
         "vocabulary": "propHormones"
       },
@@ -270,11 +269,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "hormone"
     },
     {
       "fieldname": "concentration",
-      "datacolumn": "concentration",
       "transforms": {
       },
       "source_type": "na",
@@ -288,11 +287,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "concentration"
     },
     {
       "fieldname": "wounded",
-      "datacolumn": "wounded",
       "transforms": {
         "special": [
           "boolean"
@@ -309,11 +308,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "wounded"
     },
     {
       "fieldname": "plantType",
-      "datacolumn": "plantType",
       "transforms": {
         "vocabulary": "propPlantType"
       },
@@ -328,11 +327,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "plantType"
     },
     {
       "fieldname": "activityDate",
-      "datacolumn": "activityDate",
       "transforms": {
       },
       "source_type": "na",
@@ -347,11 +346,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "activityDate"
     },
     {
       "fieldname": "activityType",
-      "datacolumn": "activityType",
       "transforms": {
         "vocabulary": "propActivityType"
       },
@@ -367,11 +366,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "activityType"
     },
     {
       "fieldname": "propCount",
-      "datacolumn": "propCount",
       "transforms": {
       },
       "source_type": "na",
@@ -386,11 +385,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "propCount"
     },
     {
       "fieldname": "medium",
-      "datacolumn": "medium",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -409,11 +408,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "medium"
     },
     {
       "fieldname": "potSize",
-      "datacolumn": "potSize",
       "transforms": {
         "vocabulary": "potsize"
       },
@@ -429,11 +428,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "potSize"
     },
     {
       "fieldname": "nurseryLocation",
-      "datacolumn": "nurseryLocation",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -452,11 +451,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nurseryLocation"
     },
     {
       "fieldname": "conditions",
-      "datacolumn": "conditions",
       "transforms": {
         "vocabulary": "propConditions"
       },
@@ -472,11 +471,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditions"
     },
     {
       "fieldname": "chemicalApplied",
-      "datacolumn": "chemicalApplied",
       "transforms": {
         "vocabulary": "propChemicals"
       },
@@ -492,11 +491,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "chemicalApplied"
     },
     {
       "fieldname": "activityConcentration",
-      "datacolumn": "activityConcentration",
       "transforms": {
       },
       "source_type": "na",
@@ -511,11 +510,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "activityConcentration"
     },
     {
       "fieldname": "activityComments",
-      "datacolumn": "activityComments",
       "transforms": {
       },
       "source_type": "na",
@@ -530,11 +529,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "activityComments"
     },
     {
       "fieldname": "germinationDate",
-      "datacolumn": "germinationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -548,11 +547,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "germinationDate"
     },
     {
       "fieldname": "successRate",
-      "datacolumn": "successRate",
       "transforms": {
       },
       "source_type": "na",
@@ -566,7 +565,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "successRate"
     }
   ]
 }

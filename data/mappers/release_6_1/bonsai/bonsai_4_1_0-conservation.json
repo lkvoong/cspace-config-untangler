@@ -53,7 +53,6 @@
   "mappings": [
     {
       "fieldname": "conservationNumber",
-      "datacolumn": "conservationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -67,11 +66,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservationNumber"
     },
     {
       "fieldname": "status",
-      "datacolumn": "status",
       "transforms": {
         "vocabulary": "conservationstatus"
       },
@@ -87,11 +86,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "status"
     },
     {
       "fieldname": "statusDate",
-      "datacolumn": "statusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -106,11 +105,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "statusDate"
     },
     {
       "fieldname": "treatmentPurpose",
-      "datacolumn": "treatmentPurpose",
       "transforms": {
         "vocabulary": "treatmentpurpose"
       },
@@ -125,11 +124,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentPurpose"
     },
     {
       "fieldname": "treatmentPerformed",
-      "datacolumn": "treatmentPerformed",
       "transforms": {
         "vocabulary": "treatmentperformed"
       },
@@ -144,11 +143,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentPerformed"
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -166,11 +165,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorPerson"
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -188,11 +187,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorOrganization"
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -211,11 +210,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyPerson"
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -234,11 +233,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyOrganization"
     },
     {
       "fieldname": "otherPartyRole",
-      "datacolumn": "otherPartyRole",
       "transforms": {
         "vocabulary": "otherpartyrole"
       },
@@ -254,11 +253,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyRole"
     },
     {
       "fieldname": "otherPartyNote",
-      "datacolumn": "otherPartyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -273,11 +272,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyNote"
     },
     {
       "fieldname": "proposedTreatment",
-      "datacolumn": "proposedTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -291,11 +290,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedTreatment"
     },
     {
       "fieldname": "approvedBy",
-      "datacolumn": "approvedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -313,11 +312,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedBy"
     },
     {
       "fieldname": "approvedDate",
-      "datacolumn": "approvedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -331,11 +330,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedDate"
     },
     {
       "fieldname": "treatmentStartDate",
-      "datacolumn": "treatmentStartDate",
       "transforms": {
       },
       "source_type": "na",
@@ -349,11 +348,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentStartDate"
     },
     {
       "fieldname": "treatmentEndDate",
-      "datacolumn": "treatmentEndDate",
       "transforms": {
       },
       "source_type": "na",
@@ -367,11 +366,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentEndDate"
     },
     {
       "fieldname": "treatmentSummary",
-      "datacolumn": "treatmentSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -385,11 +384,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentSummary"
     },
     {
       "fieldname": "futureTreatment",
-      "datacolumn": "futureTreatment",
       "transforms": {
         "vocabulary": "futuretreatment"
       },
@@ -405,11 +404,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "futureTreatment"
     },
     {
       "fieldname": "futureTreatmentDate",
-      "datacolumn": "futureTreatmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -424,11 +423,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "futureTreatmentDate"
     },
     {
       "fieldname": "futureTreatmentNote",
-      "datacolumn": "futureTreatmentNote",
       "transforms": {
       },
       "source_type": "na",
@@ -443,11 +442,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "futureTreatmentNote"
     },
     {
       "fieldname": "destAnalysisApprovedDate",
-      "datacolumn": "destAnalysisApprovedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -462,11 +461,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "destAnalysisApprovedDate"
     },
     {
       "fieldname": "destAnalysisApprovalNote",
-      "datacolumn": "destAnalysisApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -481,11 +480,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "destAnalysisApprovalNote"
     },
     {
       "fieldname": "sampleBy",
-      "datacolumn": "sampleBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -504,11 +503,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleBy"
     },
     {
       "fieldname": "sampleDate",
-      "datacolumn": "sampleDate",
       "transforms": {
       },
       "source_type": "na",
@@ -523,11 +522,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleDate"
     },
     {
       "fieldname": "sampleDescription",
-      "datacolumn": "sampleDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -542,11 +541,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleDescription"
     },
     {
       "fieldname": "sampleReturned",
-      "datacolumn": "sampleReturned",
       "transforms": {
         "special": [
           "boolean"
@@ -564,11 +563,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleReturned"
     },
     {
       "fieldname": "sampleReturnedLocation",
-      "datacolumn": "sampleReturnedLocation",
       "transforms": {
       },
       "source_type": "na",
@@ -583,11 +582,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleReturnedLocation"
     },
     {
       "fieldname": "analysisMethod",
-      "datacolumn": "analysisMethod",
       "transforms": {
       },
       "source_type": "na",
@@ -601,11 +600,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "analysisMethod"
     },
     {
       "fieldname": "analysisResults",
-      "datacolumn": "analysisResults",
       "transforms": {
       },
       "source_type": "na",
@@ -619,11 +618,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "analysisResults"
     },
     {
       "fieldname": "fertilizerUsed",
-      "datacolumn": "fertilizerUsed",
       "transforms": {
         "vocabulary": "fertilizerused"
       },
@@ -639,11 +638,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fertilizerUsed"
     },
     {
       "fieldname": "appliedBy",
-      "datacolumn": "appliedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -662,11 +661,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "appliedBy"
     },
     {
       "fieldname": "nitrogenPercent",
-      "datacolumn": "nitrogenPercent",
       "transforms": {
       },
       "source_type": "na",
@@ -681,11 +680,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nitrogenPercent"
     },
     {
       "fieldname": "phosphorusPercent",
-      "datacolumn": "phosphorusPercent",
       "transforms": {
       },
       "source_type": "na",
@@ -700,11 +699,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "phosphorusPercent"
     },
     {
       "fieldname": "potassiumPercent",
-      "datacolumn": "potassiumPercent",
       "transforms": {
       },
       "source_type": "na",
@@ -719,11 +718,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "potassiumPercent"
     },
     {
       "fieldname": "applicationDate",
-      "datacolumn": "applicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -738,11 +737,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "applicationDate"
     },
     {
       "fieldname": "amountApplied",
-      "datacolumn": "amountApplied",
       "transforms": {
       },
       "source_type": "na",
@@ -757,11 +756,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "amountApplied"
     },
     {
       "fieldname": "fertilizationNotes",
-      "datacolumn": "fertilizationNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -776,11 +775,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fertilizationNotes"
     },
     {
       "fieldname": "nextApplicationDate",
-      "datacolumn": "nextApplicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -795,11 +794,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nextApplicationDate"
     },
     {
       "fieldname": "fertilizerToBeUsed",
-      "datacolumn": "fertilizerToBeUsed",
       "transforms": {
       },
       "source_type": "na",
@@ -815,11 +814,11 @@
       "in_repeating_group": "as part of larger repeating group",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fertilizerToBeUsed"
     },
     {
       "fieldname": "pestOrDiseaseObserved",
-      "datacolumn": "pestOrDiseaseObserved",
       "transforms": {
         "vocabulary": "pestordiseaseobserved"
       },
@@ -835,11 +834,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "pestOrDiseaseObserved"
     },
     {
       "fieldname": "identifiedBy",
-      "datacolumn": "identifiedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -858,11 +857,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identifiedBy"
     },
     {
       "fieldname": "dateObserved",
-      "datacolumn": "dateObserved",
       "transforms": {
       },
       "source_type": "na",
@@ -877,11 +876,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateObserved"
     },
     {
       "fieldname": "treatmentDate",
-      "datacolumn": "treatmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -896,11 +895,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentDate"
     },
     {
       "fieldname": "futureTreatmentDate",
-      "datacolumn": "futureTreatmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -915,11 +914,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "pestsAndDiseaseGroup_futureTreatmentDate"
     },
     {
       "fieldname": "treatedBy",
-      "datacolumn": "treatedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -938,11 +937,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatedBy"
     },
     {
       "fieldname": "treatedWith",
-      "datacolumn": "treatedWith",
       "transforms": {
       },
       "source_type": "na",
@@ -957,11 +956,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatedWith"
     },
     {
       "fieldname": "futureTreatment",
-      "datacolumn": "futureTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -976,11 +975,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "pestsAndDiseaseGroup_futureTreatment"
     },
     {
       "fieldname": "futureTreatmentNotes",
-      "datacolumn": "futureTreatmentNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -995,11 +994,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "futureTreatmentNotes"
     },
     {
       "fieldname": "dateRepotted",
-      "datacolumn": "dateRepotted",
       "transforms": {
       },
       "source_type": "na",
@@ -1013,11 +1012,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dateRepotted"
     },
     {
       "fieldname": "nextRepotting",
-      "datacolumn": "nextRepotting",
       "transforms": {
       },
       "source_type": "na",
@@ -1031,11 +1030,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nextRepotting"
     },
     {
       "fieldname": "soilMix",
-      "datacolumn": "soilMix",
       "transforms": {
         "vocabulary": "soilmix"
       },
@@ -1050,11 +1049,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "soilMix"
     },
     {
       "fieldname": "description",
-      "datacolumn": "description",
       "transforms": {
       },
       "source_type": "na",
@@ -1068,11 +1067,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "description"
     },
     {
       "fieldname": "container",
-      "datacolumn": "container",
       "transforms": {
       },
       "source_type": "na",
@@ -1086,11 +1085,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "container"
     },
     {
       "fieldname": "performedBy",
-      "datacolumn": "performedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1108,11 +1107,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "performedBy"
     },
     {
       "fieldname": "plannedTreatment",
-      "datacolumn": "plannedTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -1126,7 +1125,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "plannedTreatment"
     }
   ]
 }

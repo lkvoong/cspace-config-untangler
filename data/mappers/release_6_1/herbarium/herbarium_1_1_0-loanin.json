@@ -45,7 +45,6 @@
   "mappings": [
     {
       "fieldname": "loanInNumber",
-      "datacolumn": "loanInNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -59,11 +58,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInNumber"
     },
     {
       "fieldname": "loanPurpose",
-      "datacolumn": "loanPurpose",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -83,11 +82,11 @@
         "photography",
         "research",
         "scientificorexhibitpreparation"
-      ]
+      ],
+      "datacolumn": "loanPurpose"
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -106,11 +105,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lenderPerson"
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -129,11 +128,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lenderOrganization"
     },
     {
       "fieldname": "lendersContact",
-      "datacolumn": "lendersContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -152,11 +151,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersContact"
     },
     {
       "fieldname": "lendersAuthorizer",
-      "datacolumn": "lendersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -175,11 +174,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizer"
     },
     {
       "fieldname": "lendersAuthorizationDate",
-      "datacolumn": "lendersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -194,11 +193,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizationDate"
     },
     {
       "fieldname": "borrowersContact",
-      "datacolumn": "borrowersContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -216,11 +215,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowersContact"
     },
     {
       "fieldname": "borrowersAuthorizer",
-      "datacolumn": "borrowersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -238,11 +237,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowersAuthorizer"
     },
     {
       "fieldname": "borrowersAuthorizationDate",
-      "datacolumn": "borrowersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -256,11 +255,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowersAuthorizationDate"
     },
     {
       "fieldname": "loanInConditions",
-      "datacolumn": "loanInConditions",
       "transforms": {
       },
       "source_type": "na",
@@ -274,11 +273,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInConditions"
     },
     {
       "fieldname": "loanInNote",
-      "datacolumn": "loanInNote",
       "transforms": {
       },
       "source_type": "na",
@@ -292,11 +291,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInNote"
     },
     {
       "fieldname": "majorGroup",
-      "datacolumn": "majorGroup",
       "transforms": {
         "vocabulary": "majortaxongroup"
       },
@@ -311,11 +310,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "majorGroup"
     },
     {
       "fieldname": "geography",
-      "datacolumn": "geography",
       "transforms": {
       },
       "source_type": "na",
@@ -329,11 +328,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "geography"
     },
     {
       "fieldname": "taxonomy",
-      "datacolumn": "taxonomyLocal",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -351,11 +350,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonomyLocal"
     },
     {
       "fieldname": "taxonomy",
-      "datacolumn": "taxonomyCommon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -373,11 +372,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonomyCommon"
     },
     {
       "fieldname": "objKind",
-      "datacolumn": "objKind",
       "transforms": {
         "vocabulary": "objectkind"
       },
@@ -392,11 +391,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objKind"
     },
     {
       "fieldname": "loanGroup",
-      "datacolumn": "loanGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
@@ -412,11 +411,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanGroup"
     },
     {
       "fieldname": "loanIndividual",
-      "datacolumn": "loanIndividual",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -435,11 +434,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanIndividual"
     },
     {
       "fieldname": "loanStatus",
-      "datacolumn": "loanStatus",
       "transforms": {
         "vocabulary": "loanoutstatus"
       },
@@ -455,11 +454,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanStatus"
     },
     {
       "fieldname": "loanStatusDate",
-      "datacolumn": "loanStatusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -474,11 +473,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanStatusDate"
     },
     {
       "fieldname": "loanStatusNote",
-      "datacolumn": "loanStatusNote",
       "transforms": {
       },
       "source_type": "na",
@@ -493,11 +492,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanStatusNote"
     },
     {
       "fieldname": "loanInDate",
-      "datacolumn": "loanInDate",
       "transforms": {
       },
       "source_type": "na",
@@ -511,11 +510,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInDate"
     },
     {
       "fieldname": "dueDate",
-      "datacolumn": "dueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -529,11 +528,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dueDate"
     },
     {
       "fieldname": "loanRenewalApplicationDate",
-      "datacolumn": "loanRenewalApplicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -547,11 +546,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanRenewalApplicationDate"
     },
     {
       "fieldname": "shipDate",
-      "datacolumn": "shipDate",
       "transforms": {
       },
       "source_type": "na",
@@ -565,11 +564,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "shipDate"
     },
     {
       "fieldname": "loanReturnDate",
-      "datacolumn": "loanReturnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -583,11 +582,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanReturnDate"
     },
     {
       "fieldname": "transferInDate",
-      "datacolumn": "transferInDate",
       "transforms": {
       },
       "source_type": "na",
@@ -601,11 +600,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferInDate"
     },
     {
       "fieldname": "transferInOrg",
-      "datacolumn": "transferInOrg",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -623,11 +622,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferInOrg"
     },
     {
       "fieldname": "transferInPerson",
-      "datacolumn": "transferInPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -645,11 +644,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferInPerson"
     },
     {
       "fieldname": "returnDate",
-      "datacolumn": "returnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -664,11 +663,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "returnDate"
     },
     {
       "fieldname": "returnQuantity",
-      "datacolumn": "returnQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -683,11 +682,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "returnQuantity"
     },
     {
       "fieldname": "returnNotes",
-      "datacolumn": "returnNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -702,11 +701,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "returnNotes"
     },
     {
       "fieldname": "transferOutDate",
-      "datacolumn": "transferOutDate",
       "transforms": {
       },
       "source_type": "na",
@@ -721,11 +720,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutDate"
     },
     {
       "fieldname": "transferOutQuantity",
-      "datacolumn": "transferOutQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -740,11 +739,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutQuantity"
     },
     {
       "fieldname": "transferOutOrg",
-      "datacolumn": "transferOutOrg",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -763,11 +762,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutOrg"
     },
     {
       "fieldname": "transferOutPerson",
-      "datacolumn": "transferOutPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -786,11 +785,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutPerson"
     },
     {
       "fieldname": "transferOutDirector",
-      "datacolumn": "transferOutDirector",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -809,11 +808,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutDirector"
     },
     {
       "fieldname": "transferOutNotes",
-      "datacolumn": "transferOutNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -828,11 +827,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutNotes"
     },
     {
       "fieldname": "transferOutReturnDate",
-      "datacolumn": "transferOutReturnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -847,11 +846,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutReturnDate"
     },
     {
       "fieldname": "transferOutReturnQuantity",
-      "datacolumn": "transferOutReturnQuantity",
       "transforms": {
       },
       "source_type": "na",
@@ -866,11 +865,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutReturnQuantity"
     },
     {
       "fieldname": "transferOutReturnNotes",
-      "datacolumn": "transferOutReturnNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -885,7 +884,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "transferOutReturnNotes"
     }
   ]
 }

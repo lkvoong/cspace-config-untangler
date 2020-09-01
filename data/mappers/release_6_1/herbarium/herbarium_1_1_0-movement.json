@@ -21,7 +21,6 @@
   "mappings": [
     {
       "fieldname": "movementReferenceNumber",
-      "datacolumn": "movementReferenceNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -35,11 +34,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementReferenceNumber"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -57,11 +56,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationLocal"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -79,11 +78,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationLocationOffsite"
     },
     {
       "fieldname": "normalLocation",
-      "datacolumn": "normalLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -101,11 +100,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "normalLocationOrganization"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationLocal",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -123,11 +122,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationLocal"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationLocationOffsite",
       "transforms": {
         "authority": [
           "locationauthorities",
@@ -145,11 +144,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationLocationOffsite"
     },
     {
       "fieldname": "currentLocation",
-      "datacolumn": "currentLocationOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -167,11 +166,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationOrganization"
     },
     {
       "fieldname": "currentLocationFitness",
-      "datacolumn": "currentLocationFitness",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -188,11 +187,11 @@
         "suitable",
         "temporary",
         "unsuitable"
-      ]
+      ],
+      "datacolumn": "currentLocationFitness"
     },
     {
       "fieldname": "currentLocationNote",
-      "datacolumn": "currentLocationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -206,11 +205,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "currentLocationNote"
     },
     {
       "fieldname": "locationDate",
-      "datacolumn": "locationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -224,11 +223,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locationDate"
     },
     {
       "fieldname": "reasonForMove",
-      "datacolumn": "reasonForMove",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -248,11 +247,11 @@
         "newstoragelocation",
         "photography",
         "research"
-      ]
+      ],
+      "datacolumn": "reasonForMove"
     },
     {
       "fieldname": "movementMethod",
-      "datacolumn": "movementMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -268,11 +267,11 @@
         "forklift",
         "handcarried",
         "trolley"
-      ]
+      ],
+      "datacolumn": "movementMethod"
     },
     {
       "fieldname": "plannedRemovalDate",
-      "datacolumn": "plannedRemovalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -286,11 +285,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "plannedRemovalDate"
     },
     {
       "fieldname": "removalDate",
-      "datacolumn": "removalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -304,11 +303,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "removalDate"
     },
     {
       "fieldname": "movementContact",
-      "datacolumn": "movementContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -326,11 +325,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementContact"
     },
     {
       "fieldname": "movementNote",
-      "datacolumn": "movementNote",
       "transforms": {
       },
       "source_type": "na",
@@ -344,11 +343,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "movementNote"
     },
     {
       "fieldname": "inventoryActionRequired",
-      "datacolumn": "inventoryActionRequired",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -364,11 +363,11 @@
         "conservation",
         "preservation",
         "re-housing"
-      ]
+      ],
+      "datacolumn": "inventoryActionRequired"
     },
     {
       "fieldname": "frequencyForInventory",
-      "datacolumn": "frequencyForInventory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -386,11 +385,11 @@
         "monthly",
         "semi-annually",
         "weekly"
-      ]
+      ],
+      "datacolumn": "frequencyForInventory"
     },
     {
       "fieldname": "inventoryDate",
-      "datacolumn": "inventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -404,11 +403,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryDate"
     },
     {
       "fieldname": "nextInventoryDate",
-      "datacolumn": "nextInventoryDate",
       "transforms": {
       },
       "source_type": "na",
@@ -422,11 +421,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nextInventoryDate"
     },
     {
       "fieldname": "inventoryContact",
-      "datacolumn": "inventoryContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -444,11 +443,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryContact"
     },
     {
       "fieldname": "inventoryNote",
-      "datacolumn": "inventoryNote",
       "transforms": {
       },
       "source_type": "na",
@@ -462,7 +461,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryNote"
     }
   ]
 }

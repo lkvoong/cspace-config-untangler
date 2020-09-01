@@ -28,7 +28,6 @@
   "mappings": [
     {
       "fieldname": "valuationcontrolRefNumber",
-      "datacolumn": "valuationcontrolRefNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -42,11 +41,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valuationcontrolRefNumber"
     },
     {
       "fieldname": "valueCurrency",
-      "datacolumn": "valueCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -62,11 +61,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueCurrency"
     },
     {
       "fieldname": "valueAmount",
-      "datacolumn": "valueAmount",
       "transforms": {
       },
       "source_type": "na",
@@ -81,11 +80,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueAmount"
     },
     {
       "fieldname": "valueDate",
-      "datacolumn": "valueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -99,11 +98,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "valueRenewalDate",
-      "datacolumn": "valueRenewalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -117,11 +116,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueRenewalDate"
     },
     {
       "fieldname": "valueSource",
-      "datacolumn": "valueSourcePersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -139,11 +138,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourcePersonLocal"
     },
     {
       "fieldname": "valueSource",
-      "datacolumn": "valueSourcePersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -161,11 +160,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourcePersonShared"
     },
     {
       "fieldname": "valueSource",
-      "datacolumn": "valueSourceOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -183,11 +182,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceOrganizationLocal"
     },
     {
       "fieldname": "valueSource",
-      "datacolumn": "valueSourceOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -205,11 +204,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceOrganizationShared"
     },
     {
       "fieldname": "valueSourceRole",
-      "datacolumn": "valueSourceRole",
       "transforms": {
         "vocabulary": "valuationsourcerole"
       },
@@ -224,11 +223,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueSourceRole"
     },
     {
       "fieldname": "valueType",
-      "datacolumn": "valueType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -244,11 +243,11 @@
         "Current Value",
         "Original Value",
         "Replacement Value"
-      ]
+      ],
+      "datacolumn": "valueType"
     },
     {
       "fieldname": "valueNote",
-      "datacolumn": "valueNote",
       "transforms": {
       },
       "source_type": "na",
@@ -262,11 +261,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueNote"
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -285,11 +284,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerPersonLocal"
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerPersonShared",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -308,11 +307,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerPersonShared"
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -331,11 +330,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerOrganizationLocal"
     },
     {
       "fieldname": "insurer",
-      "datacolumn": "insurerOrganizationShared",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -354,11 +353,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurerOrganizationShared"
     },
     {
       "fieldname": "insuranceNote",
-      "datacolumn": "insuranceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -373,11 +372,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceNote"
     },
     {
       "fieldname": "insurancePolicyNumber",
-      "datacolumn": "insurancePolicyNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -392,11 +391,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insurancePolicyNumber"
     },
     {
       "fieldname": "insuranceRenewalDate",
-      "datacolumn": "insuranceRenewalDate",
       "transforms": {
       },
       "source_type": "na",
@@ -411,7 +410,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "insuranceRenewalDate"
     }
   ]
 }

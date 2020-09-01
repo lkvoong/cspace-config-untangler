@@ -35,7 +35,6 @@
   "mappings": [
     {
       "fieldname": "conservationNumber",
-      "datacolumn": "conservationNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -49,11 +48,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservationNumber"
     },
     {
       "fieldname": "status",
-      "datacolumn": "status",
       "transforms": {
         "vocabulary": "conservationstatus"
       },
@@ -69,11 +68,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "status"
     },
     {
       "fieldname": "statusDate",
-      "datacolumn": "statusDate",
       "transforms": {
       },
       "source_type": "na",
@@ -88,11 +87,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "statusDate"
     },
     {
       "fieldname": "treatmentPurpose",
-      "datacolumn": "treatmentPurpose",
       "transforms": {
         "vocabulary": "treatmentpurpose"
       },
@@ -107,11 +106,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentPurpose"
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -129,11 +128,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorPerson"
     },
     {
       "fieldname": "conservator",
-      "datacolumn": "conservatorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -151,11 +150,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conservatorOrganization"
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -174,11 +173,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyPerson"
     },
     {
       "fieldname": "otherParty",
-      "datacolumn": "otherPartyOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -197,11 +196,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyOrganization"
     },
     {
       "fieldname": "otherPartyRole",
-      "datacolumn": "otherPartyRole",
       "transforms": {
         "vocabulary": "otherpartyrole"
       },
@@ -217,11 +216,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyRole"
     },
     {
       "fieldname": "otherPartyNote",
-      "datacolumn": "otherPartyNote",
       "transforms": {
       },
       "source_type": "na",
@@ -236,11 +235,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "otherPartyNote"
     },
     {
       "fieldname": "examinationStaff",
-      "datacolumn": "examinationStaff",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -259,11 +258,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationStaff"
     },
     {
       "fieldname": "examinationPhase",
-      "datacolumn": "examinationPhase",
       "transforms": {
         "vocabulary": "examinationphase"
       },
@@ -279,11 +278,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationPhase"
     },
     {
       "fieldname": "examinationDate",
-      "datacolumn": "examinationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -298,11 +297,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationDate"
     },
     {
       "fieldname": "examinationNote",
-      "datacolumn": "examinationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -317,11 +316,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "examinationNote"
     },
     {
       "fieldname": "fabricationNote",
-      "datacolumn": "fabricationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -335,11 +334,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fabricationNote"
     },
     {
       "fieldname": "proposedTreatment",
-      "datacolumn": "proposedTreatment",
       "transforms": {
       },
       "source_type": "na",
@@ -353,11 +352,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedTreatment"
     },
     {
       "fieldname": "approvedBy",
-      "datacolumn": "approvedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -375,11 +374,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedBy"
     },
     {
       "fieldname": "approvedDate",
-      "datacolumn": "approvedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -393,11 +392,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "approvedDate"
     },
     {
       "fieldname": "treatmentStartDate",
-      "datacolumn": "treatmentStartDate",
       "transforms": {
       },
       "source_type": "na",
@@ -411,11 +410,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentStartDate"
     },
     {
       "fieldname": "treatmentEndDate",
-      "datacolumn": "treatmentEndDate",
       "transforms": {
       },
       "source_type": "na",
@@ -429,11 +428,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentEndDate"
     },
     {
       "fieldname": "treatmentSummary",
-      "datacolumn": "treatmentSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -447,11 +446,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "treatmentSummary"
     },
     {
       "fieldname": "proposedAnalysis",
-      "datacolumn": "proposedAnalysis",
       "transforms": {
       },
       "source_type": "na",
@@ -465,11 +464,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedAnalysis"
     },
     {
       "fieldname": "researcher",
-      "datacolumn": "researcher",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -487,11 +486,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "researcher"
     },
     {
       "fieldname": "proposedAnalysisDate",
-      "datacolumn": "proposedAnalysisDate",
       "transforms": {
       },
       "source_type": "na",
@@ -505,11 +504,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "proposedAnalysisDate"
     },
     {
       "fieldname": "destAnalysisApprovedDate",
-      "datacolumn": "destAnalysisApprovedDate",
       "transforms": {
       },
       "source_type": "na",
@@ -524,11 +523,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "destAnalysisApprovedDate"
     },
     {
       "fieldname": "destAnalysisApprovalNote",
-      "datacolumn": "destAnalysisApprovalNote",
       "transforms": {
       },
       "source_type": "na",
@@ -543,11 +542,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "destAnalysisApprovalNote"
     },
     {
       "fieldname": "sampleBy",
-      "datacolumn": "sampleBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -566,11 +565,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleBy"
     },
     {
       "fieldname": "sampleDate",
-      "datacolumn": "sampleDate",
       "transforms": {
       },
       "source_type": "na",
@@ -585,11 +584,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleDate"
     },
     {
       "fieldname": "sampleDescription",
-      "datacolumn": "sampleDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -604,11 +603,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleDescription"
     },
     {
       "fieldname": "sampleReturned",
-      "datacolumn": "sampleReturned",
       "transforms": {
         "special": [
           "boolean"
@@ -626,11 +625,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleReturned"
     },
     {
       "fieldname": "sampleReturnedLocation",
-      "datacolumn": "sampleReturnedLocation",
       "transforms": {
       },
       "source_type": "na",
@@ -645,11 +644,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "sampleReturnedLocation"
     },
     {
       "fieldname": "analysisMethod",
-      "datacolumn": "analysisMethod",
       "transforms": {
       },
       "source_type": "na",
@@ -663,11 +662,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "analysisMethod"
     },
     {
       "fieldname": "analysisResults",
-      "datacolumn": "analysisResults",
       "transforms": {
       },
       "source_type": "na",
@@ -681,7 +680,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "analysisResults"
     }
   ]
 }

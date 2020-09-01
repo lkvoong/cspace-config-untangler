@@ -28,7 +28,6 @@
   "mappings": [
     {
       "fieldname": "loanInNumber",
-      "datacolumn": "loanInNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -42,11 +41,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInNumber"
     },
     {
       "fieldname": "loanPurpose",
-      "datacolumn": "loanPurpose",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -66,11 +65,11 @@
         "photography",
         "research",
         "scientificorexhibitpreparation"
-      ]
+      ],
+      "datacolumn": "loanPurpose"
     },
     {
       "fieldname": "loaninStatusLHMC",
-      "datacolumn": "loaninStatusLHMC",
       "transforms": {
         "vocabulary": "loanoutstatus"
       },
@@ -86,11 +85,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loaninStatusLHMC"
     },
     {
       "fieldname": "loaninStatusDateLHMC",
-      "datacolumn": "loaninStatusDateLHMC",
       "transforms": {
       },
       "source_type": "na",
@@ -105,11 +104,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loaninStatusDateLHMC"
     },
     {
       "fieldname": "loaninStatusNoteLHMC",
-      "datacolumn": "loaninStatusNoteLHMC",
       "transforms": {
       },
       "source_type": "na",
@@ -124,11 +123,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loaninStatusNoteLHMC"
     },
     {
       "fieldname": "loaninStatusAuthorizerLHMC",
-      "datacolumn": "loaninStatusAuthorizerLHMCLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -147,11 +146,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loaninStatusAuthorizerLHMCLocal"
     },
     {
       "fieldname": "loaninStatusAuthorizerLHMC",
-      "datacolumn": "loaninStatusAuthorizerLHMCUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -170,11 +169,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loaninStatusAuthorizerLHMCUlan"
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -193,11 +192,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lenderPerson"
     },
     {
       "fieldname": "lender",
-      "datacolumn": "lenderOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -216,11 +215,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lenderOrganization"
     },
     {
       "fieldname": "lendersContact",
-      "datacolumn": "lendersContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -239,11 +238,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersContact"
     },
     {
       "fieldname": "lendersAuthorizer",
-      "datacolumn": "lendersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -262,11 +261,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizer"
     },
     {
       "fieldname": "lendersAuthorizationDate",
-      "datacolumn": "lendersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -281,11 +280,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "lendersAuthorizationDate"
     },
     {
       "fieldname": "borrowersContact",
-      "datacolumn": "borrowersContact",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -303,11 +302,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowersContact"
     },
     {
       "fieldname": "borrowersAuthorizer",
-      "datacolumn": "borrowersAuthorizer",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -325,11 +324,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowersAuthorizer"
     },
     {
       "fieldname": "borrowersAuthorizationDate",
-      "datacolumn": "borrowersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -343,11 +342,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "borrowersAuthorizationDate"
     },
     {
       "fieldname": "loanInConditions",
-      "datacolumn": "loanInConditions",
       "transforms": {
       },
       "source_type": "na",
@@ -361,11 +360,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInConditions"
     },
     {
       "fieldname": "loanInNote",
-      "datacolumn": "loanInNote",
       "transforms": {
       },
       "source_type": "na",
@@ -379,11 +378,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInNote"
     },
     {
       "fieldname": "loanInDate",
-      "datacolumn": "loanInDate",
       "transforms": {
       },
       "source_type": "na",
@@ -397,11 +396,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanInDate"
     },
     {
       "fieldname": "loanReturnDate",
-      "datacolumn": "loanReturnDate",
       "transforms": {
       },
       "source_type": "na",
@@ -415,11 +414,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanReturnDate"
     },
     {
       "fieldname": "loanRenewalApplicationDate",
-      "datacolumn": "loanRenewalApplicationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -433,7 +432,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "loanRenewalApplicationDate"
     }
   ]
 }

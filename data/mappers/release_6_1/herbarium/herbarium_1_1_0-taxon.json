@@ -38,7 +38,6 @@
   "mappings": [
     {
       "fieldname": "termDisplayName",
-      "datacolumn": "termDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -53,11 +52,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termDisplayName"
     },
     {
       "fieldname": "termFormattedDisplayName",
-      "datacolumn": "termFormattedDisplayName",
       "transforms": {
       },
       "source_type": "na",
@@ -72,11 +71,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFormattedDisplayName"
     },
     {
       "fieldname": "termQualifier",
-      "datacolumn": "termQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -91,11 +90,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termQualifier"
     },
     {
       "fieldname": "termStatus",
-      "datacolumn": "termStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -113,11 +112,11 @@
         "provisional",
         "rejected",
         "under review"
-      ]
+      ],
+      "datacolumn": "termStatus"
     },
     {
       "fieldname": "termType",
-      "datacolumn": "termType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -134,11 +133,11 @@
         "alternate descriptor",
         "descriptor",
         "used for term"
-      ]
+      ],
+      "datacolumn": "termType"
     },
     {
       "fieldname": "termFlag",
-      "datacolumn": "termFlag",
       "transforms": {
         "vocabulary": "taxontermflag"
       },
@@ -154,11 +153,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termFlag"
     },
     {
       "fieldname": "taxonomicStatus",
-      "datacolumn": "taxonomicStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -176,11 +175,11 @@
         "invalid",
         "misapplied name",
         "valid"
-      ]
+      ],
+      "datacolumn": "taxonomicStatus"
     },
     {
       "fieldname": "termLanguage",
-      "datacolumn": "termLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -196,11 +195,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termLanguage"
     },
     {
       "fieldname": "termPrefForLang",
-      "datacolumn": "termPrefForLang",
       "transforms": {
         "special": [
           "boolean"
@@ -218,11 +217,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termPrefForLang"
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -241,11 +240,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceLocal"
     },
     {
       "fieldname": "termSource",
-      "datacolumn": "termSourceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -264,11 +263,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceWorldcat"
     },
     {
       "fieldname": "termSourceDetail",
-      "datacolumn": "termSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -283,11 +282,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceDetail"
     },
     {
       "fieldname": "termSourceID",
-      "datacolumn": "termSourceID",
       "transforms": {
       },
       "source_type": "na",
@@ -302,11 +301,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceID"
     },
     {
       "fieldname": "termSourceNote",
-      "datacolumn": "termSourceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -321,11 +320,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "termSourceNote"
     },
     {
       "fieldname": "taxonRank",
-      "datacolumn": "taxonRank",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -347,11 +346,11 @@
         "order",
         "phylum",
         "species"
-      ]
+      ],
+      "datacolumn": "taxonRank"
     },
     {
       "fieldname": "taxonMajorGroup",
-      "datacolumn": "taxonMajorGroup",
       "transforms": {
         "vocabulary": "taxonmajorgroup"
       },
@@ -366,11 +365,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonMajorGroup"
     },
     {
       "fieldname": "taxonFamily",
-      "datacolumn": "taxonFamilyLocal",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -388,11 +387,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonFamilyLocal"
     },
     {
       "fieldname": "taxonFamily",
-      "datacolumn": "taxonFamilyCommon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -410,11 +409,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonFamilyCommon"
     },
     {
       "fieldname": "taxonAuthor",
-      "datacolumn": "taxonAuthorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -433,11 +432,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonAuthorPerson"
     },
     {
       "fieldname": "taxonAuthor",
-      "datacolumn": "taxonAuthorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -456,11 +455,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonAuthorOrganization"
     },
     {
       "fieldname": "taxonAuthorType",
-      "datacolumn": "taxonAuthorType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -476,11 +475,11 @@
       "opt_list_values": [
         "ascribed",
         "parenthetical"
-      ]
+      ],
+      "datacolumn": "taxonAuthorType"
     },
     {
       "fieldname": "taxonYear",
-      "datacolumn": "taxonYear",
       "transforms": {
       },
       "source_type": "na",
@@ -494,11 +493,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonYear"
     },
     {
       "fieldname": "taxonIsNamedHybrid",
-      "datacolumn": "taxonIsNamedHybrid",
       "transforms": {
         "special": [
           "boolean"
@@ -515,11 +514,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonIsNamedHybrid"
     },
     {
       "fieldname": "taxonCitation",
-      "datacolumn": "taxonCitationLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -537,11 +536,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonCitationLocal"
     },
     {
       "fieldname": "taxonCitation",
-      "datacolumn": "taxonCitationWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -559,11 +558,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonCitationWorldcat"
     },
     {
       "fieldname": "taxonBasionym",
-      "datacolumn": "taxonBasionymLocal",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -581,11 +580,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonBasionymLocal"
     },
     {
       "fieldname": "taxonBasionym",
-      "datacolumn": "taxonBasionymCommon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -603,11 +602,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonBasionymCommon"
     },
     {
       "fieldname": "taxonNote",
-      "datacolumn": "taxonNote",
       "transforms": {
       },
       "source_type": "na",
@@ -621,11 +620,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonNote"
     },
     {
       "fieldname": "commonName",
-      "datacolumn": "commonName",
       "transforms": {
       },
       "source_type": "na",
@@ -640,11 +639,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonName"
     },
     {
       "fieldname": "commonNameLanguage",
-      "datacolumn": "commonNameLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -660,11 +659,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonNameLanguage"
     },
     {
       "fieldname": "commonNameSource",
-      "datacolumn": "commonNameSource",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -683,11 +682,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonNameSource"
     },
     {
       "fieldname": "commonNameSourceDetail",
-      "datacolumn": "commonNameSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -702,11 +701,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonNameSourceDetail"
     },
     {
       "fieldname": "relatedTerm",
-      "datacolumn": "relatedTermLocal",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -725,11 +724,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedTermLocal"
     },
     {
       "fieldname": "relatedTerm",
-      "datacolumn": "relatedTermCommon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -748,11 +747,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedTermCommon"
     },
     {
       "fieldname": "relatedTermType",
-      "datacolumn": "relatedTermType",
       "transforms": {
         "vocabulary": "taxonrelatedtermtype"
       },
@@ -768,11 +767,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedTermType"
     },
     {
       "fieldname": "relatedTermSource",
-      "datacolumn": "relatedTermSource",
       "transforms": {
       },
       "source_type": "na",
@@ -787,11 +786,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedTermSource"
     },
     {
       "fieldname": "relatedTermSourceDetail",
-      "datacolumn": "relatedTermSourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -806,7 +805,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "relatedTermSourceDetail"
     }
   ]
 }

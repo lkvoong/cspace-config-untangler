@@ -52,5 +52,35 @@ RSpec.describe CCU::RecordType do
       it 'hash values are CCU::Form objects' do
         expect(@anthro_co.forms['default']).to be_instance_of(CCU::Form)
       end
+  end
+
+  describe '.mappings' do
+    context 'anthro profile' do
+      context 'collectionobject recordtype' do
+        before(:all) do
+          @mappings = @anthro_co.mappings
+        end
+        context 'fieldname = sex' do
+          it 'columnnames: sex, commingledRemainsGroup_sex' do
+            result = @mappings.select{ |m| m.fieldname == 'sex' }.map{ |m| m.datacolumn }.sort
+            expect(result).to eq(%w[commingledRemainsGroup_sex sex])
+          end
+        end
+        context 'fieldname = reference' do
+          # does NOT change datacolumn values, as one field's use of multiple authorities
+          #  has already caused all datacolumn values to be different
+          it 'columnnames: reference referenceLocal referenceWorldcat' do
+            result = @mappings.select{ |m| m.fieldname == 'reference' }.map{ |m| m.datacolumn }.sort
+            expect(result).to eq(%w[reference referenceLocal referenceWorldcat])
+          end
+        end
+        context 'fieldname = fieldLocVerbatim' do
+          it 'columnnames: fieldLocVerbatim localityGroup_fieldLocVerbatim' do
+            result = @mappings.select{ |m| m.fieldname == 'fieldLocVerbatim' }.map{ |m| m.datacolumn }.sort
+            expect(result).to eq(%w[fieldLocVerbatim localityGroup_fieldLocVerbatim])
+          end
+        end
+      end
     end
+  end
 end #RSpec

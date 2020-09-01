@@ -17,7 +17,6 @@
   "mappings": [
     {
       "fieldname": "family",
-      "datacolumn": "family",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -35,11 +34,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "family"
     },
     {
       "fieldname": "commonName",
-      "datacolumn": "commonName",
       "transforms": {
       },
       "source_type": "na",
@@ -53,11 +52,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonName"
     },
     {
       "fieldname": "locale",
-      "datacolumn": "locale",
       "transforms": {
       },
       "source_type": "na",
@@ -71,11 +70,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "locale"
     },
     {
       "fieldname": "taxonName",
-      "datacolumn": "taxonName",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -93,11 +92,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonName"
     },
     {
       "fieldname": "numberOfLabels",
-      "datacolumn": "numberOfLabels",
       "transforms": {
       },
       "source_type": "na",
@@ -111,11 +110,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numberOfLabels"
     },
     {
       "fieldname": "printLabels",
-      "datacolumn": "printLabels",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -130,11 +129,11 @@
       "opt_list_values": [
         "no",
         "yes"
-      ]
+      ],
+      "datacolumn": "printLabels"
     },
     {
       "fieldname": "labelData",
-      "datacolumn": "labelData",
       "transforms": {
       },
       "source_type": "na",
@@ -148,7 +147,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "labelData"
     }
   ]
 }

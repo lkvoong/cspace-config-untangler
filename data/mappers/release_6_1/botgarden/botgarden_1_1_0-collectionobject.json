@@ -212,7 +212,6 @@
   "mappings": [
     {
       "fieldname": "objectNumber",
-      "datacolumn": "objectNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -226,11 +225,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectNumber"
     },
     {
       "fieldname": "accessionDate",
-      "datacolumn": "accessionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -244,11 +243,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionDate"
     },
     {
       "fieldname": "deadFlag",
-      "datacolumn": "deadFlag",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -263,11 +262,11 @@
       "opt_list_values": [
         "false",
         "true"
-      ]
+      ],
+      "datacolumn": "deadFlag"
     },
     {
       "fieldname": "deadDate",
-      "datacolumn": "deadDate",
       "transforms": {
       },
       "source_type": "na",
@@ -281,11 +280,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "deadDate"
     },
     {
       "fieldname": "taxon",
-      "datacolumn": "taxon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -304,11 +303,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxon"
     },
     {
       "fieldname": "qualifier",
-      "datacolumn": "qualifier",
       "transforms": {
         "vocabulary": "taxonqualifier"
       },
@@ -324,11 +323,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "qualifier"
     },
     {
       "fieldname": "affinityTaxon",
-      "datacolumn": "affinityTaxon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -347,11 +346,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "affinityTaxon"
     },
     {
       "fieldname": "hybridFlag",
-      "datacolumn": "hybridFlag",
       "transforms": {
         "special": [
           "boolean"
@@ -369,11 +368,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "hybridFlag"
     },
     {
       "fieldname": "taxonomicIdentHybridParent",
-      "datacolumn": "taxonomicIdentHybridParent",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -394,11 +393,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonomicIdentHybridParent"
     },
     {
       "fieldname": "taxonomicIdentHybridParentQualifier",
-      "datacolumn": "taxonomicIdentHybridParentQualifier",
       "transforms": {
         "vocabulary": "hybridparentqualifier"
       },
@@ -416,11 +415,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonomicIdentHybridParentQualifier"
     },
     {
       "fieldname": "reference",
-      "datacolumn": "reference",
       "transforms": {
       },
       "source_type": "na",
@@ -435,11 +434,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "reference"
     },
     {
       "fieldname": "refPage",
-      "datacolumn": "refPage",
       "transforms": {
       },
       "source_type": "na",
@@ -454,11 +453,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "refPage"
     },
     {
       "fieldname": "identKind",
-      "datacolumn": "identKind",
       "transforms": {
         "vocabulary": "taxonkind"
       },
@@ -474,11 +473,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identKind"
     },
     {
       "fieldname": "notes",
-      "datacolumn": "notes",
       "transforms": {
       },
       "source_type": "na",
@@ -493,11 +492,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "notes"
     },
     {
       "fieldname": "identBy",
-      "datacolumn": "identByPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -516,11 +515,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identByPerson"
     },
     {
       "fieldname": "identBy",
-      "datacolumn": "identByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -539,11 +538,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identByOrganization"
     },
     {
       "fieldname": "identDateGroup",
-      "datacolumn": "identDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -558,11 +557,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "identDateGroup"
     },
     {
       "fieldname": "institution",
-      "datacolumn": "institution",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -581,11 +580,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "institution"
     },
     {
       "fieldname": "recordStatus",
-      "datacolumn": "recordStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -602,11 +601,11 @@
         "in-process",
         "new",
         "temporary"
-      ]
+      ],
+      "datacolumn": "recordStatus"
     },
     {
       "fieldname": "provenanceType",
-      "datacolumn": "provenanceType",
       "transforms": {
         "vocabulary": "provenancetype"
       },
@@ -621,11 +620,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "provenanceType"
     },
     {
       "fieldname": "rare",
-      "datacolumn": "rare",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -640,11 +639,11 @@
       "opt_list_values": [
         "false",
         "true"
-      ]
+      ],
+      "datacolumn": "rare"
     },
     {
       "fieldname": "cultivated",
-      "datacolumn": "cultivated",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -659,11 +658,11 @@
       "opt_list_values": [
         "false",
         "true"
-      ]
+      ],
+      "datacolumn": "cultivated"
     },
     {
       "fieldname": "cbdRestriction",
-      "datacolumn": "cbdRestriction",
       "transforms": {
         "special": [
           "boolean"
@@ -680,11 +679,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "cbdRestriction"
     },
     {
       "fieldname": "requestedBy",
-      "datacolumn": "requestedBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -702,11 +701,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "requestedBy"
     },
     {
       "fieldname": "briefDescription",
-      "datacolumn": "briefDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -720,11 +719,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "briefDescription"
     },
     {
       "fieldname": "namedCollection",
-      "datacolumn": "namedCollection",
       "transforms": {
         "authority": [
           "workauthorities",
@@ -742,11 +741,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "namedCollection"
     },
     {
       "fieldname": "source",
-      "datacolumn": "source",
       "transforms": {
       },
       "source_type": "na",
@@ -760,11 +759,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "source"
     },
     {
       "fieldname": "comment",
-      "datacolumn": "comment",
       "transforms": {
       },
       "source_type": "na",
@@ -778,11 +777,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "comment"
     },
     {
       "fieldname": "typeSpecimenKind",
-      "datacolumn": "typeSpecimenKind",
       "transforms": {
         "vocabulary": "typespecimenkind"
       },
@@ -798,11 +797,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "typeSpecimenKind"
     },
     {
       "fieldname": "typeSpecimenAssertionBy",
-      "datacolumn": "typeSpecimenAssertionBy",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -821,11 +820,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "typeSpecimenAssertionBy"
     },
     {
       "fieldname": "typeSpecimenReference",
-      "datacolumn": "typeSpecimenReference",
       "transforms": {
       },
       "source_type": "na",
@@ -840,11 +839,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "typeSpecimenReference"
     },
     {
       "fieldname": "typeSpecimenRefPage",
-      "datacolumn": "typeSpecimenRefPage",
       "transforms": {
       },
       "source_type": "na",
@@ -859,11 +858,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "typeSpecimenRefPage"
     },
     {
       "fieldname": "typeSpecimenBasionym",
-      "datacolumn": "typeSpecimenBasionym",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -882,11 +881,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "typeSpecimenBasionym"
     },
     {
       "fieldname": "typeSpecimenNotes",
-      "datacolumn": "typeSpecimenNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -901,11 +900,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "typeSpecimenNotes"
     },
     {
       "fieldname": "fieldLocVerbatim",
-      "datacolumn": "fieldLocVerbatim",
       "transforms": {
       },
       "source_type": "na",
@@ -920,11 +919,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldLocVerbatim"
     },
     {
       "fieldname": "fieldLocPlace",
-      "datacolumn": "fieldLocPlace",
       "transforms": {
         "authority": [
           "placeauthorities",
@@ -943,11 +942,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldLocPlace"
     },
     {
       "fieldname": "taxonomicRange",
-      "datacolumn": "taxonomicRange",
       "transforms": {
       },
       "source_type": "na",
@@ -962,11 +961,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "taxonomicRange"
     },
     {
       "fieldname": "fieldLocCounty",
-      "datacolumn": "fieldLocCounty",
       "transforms": {
         "vocabulary": "county"
       },
@@ -982,11 +981,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldLocCounty"
     },
     {
       "fieldname": "fieldLocState",
-      "datacolumn": "fieldLocState",
       "transforms": {
         "vocabulary": "state"
       },
@@ -1002,11 +1001,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldLocState"
     },
     {
       "fieldname": "fieldLocCountry",
-      "datacolumn": "fieldLocCountry",
       "transforms": {
         "vocabulary": "country"
       },
@@ -1022,11 +1021,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldLocCountry"
     },
     {
       "fieldname": "fieldLocHigherGeography",
-      "datacolumn": "fieldLocHigherGeography",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1042,11 +1041,11 @@
       "opt_list_values": [
         "North America",
         "pacificocean"
-      ]
+      ],
+      "datacolumn": "fieldLocHigherGeography"
     },
     {
       "fieldname": "vLatitude",
-      "datacolumn": "vLatitude",
       "transforms": {
       },
       "source_type": "na",
@@ -1061,11 +1060,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vLatitude"
     },
     {
       "fieldname": "vLongitude",
-      "datacolumn": "vLongitude",
       "transforms": {
       },
       "source_type": "na",
@@ -1080,11 +1079,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vLongitude"
     },
     {
       "fieldname": "vCoordinates",
-      "datacolumn": "vCoordinates",
       "transforms": {
       },
       "source_type": "na",
@@ -1099,11 +1098,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vCoordinates"
     },
     {
       "fieldname": "vOtherCoords",
-      "datacolumn": "vOtherCoords",
       "transforms": {
       },
       "source_type": "na",
@@ -1118,11 +1117,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vOtherCoords"
     },
     {
       "fieldname": "vCoordSys",
-      "datacolumn": "vCoordSys",
       "transforms": {
         "vocabulary": "vcoordsys"
       },
@@ -1138,11 +1137,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vCoordSys"
     },
     {
       "fieldname": "decimalLatitude",
-      "datacolumn": "decimalLatitude",
       "transforms": {
       },
       "source_type": "na",
@@ -1157,11 +1156,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "decimalLatitude"
     },
     {
       "fieldname": "decimalLongitude",
-      "datacolumn": "decimalLongitude",
       "transforms": {
       },
       "source_type": "na",
@@ -1176,11 +1175,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "decimalLongitude"
     },
     {
       "fieldname": "geodeticDatum",
-      "datacolumn": "geodeticDatum",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1200,11 +1199,11 @@
         "NAD83&amp;WGS84",
         "Not Recorded",
         "WGS84"
-      ]
+      ],
+      "datacolumn": "geodeticDatum"
     },
     {
       "fieldname": "coordUncertainty",
-      "datacolumn": "coordUncertainty",
       "transforms": {
       },
       "source_type": "na",
@@ -1219,11 +1218,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coordUncertainty"
     },
     {
       "fieldname": "coordUncertaintyUnit",
-      "datacolumn": "coordUncertaintyUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1242,11 +1241,11 @@
         "meters",
         "miles",
         "unknown"
-      ]
+      ],
+      "datacolumn": "coordUncertaintyUnit"
     },
     {
       "fieldname": "vDepth",
-      "datacolumn": "vDepth",
       "transforms": {
       },
       "source_type": "na",
@@ -1261,11 +1260,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vDepth"
     },
     {
       "fieldname": "minDepth",
-      "datacolumn": "minDepth",
       "transforms": {
       },
       "source_type": "na",
@@ -1280,11 +1279,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "minDepth"
     },
     {
       "fieldname": "maxDepth",
-      "datacolumn": "maxDepth",
       "transforms": {
       },
       "source_type": "na",
@@ -1299,11 +1298,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "maxDepth"
     },
     {
       "fieldname": "depthUnit",
-      "datacolumn": "depthUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1327,11 +1326,11 @@
         "miles",
         "rods",
         "uncertain"
-      ]
+      ],
+      "datacolumn": "depthUnit"
     },
     {
       "fieldname": "vElevation",
-      "datacolumn": "vElevation",
       "transforms": {
       },
       "source_type": "na",
@@ -1346,11 +1345,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vElevation"
     },
     {
       "fieldname": "minElevation",
-      "datacolumn": "minElevation",
       "transforms": {
       },
       "source_type": "na",
@@ -1365,11 +1364,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "minElevation"
     },
     {
       "fieldname": "maxElevation",
-      "datacolumn": "maxElevation",
       "transforms": {
       },
       "source_type": "na",
@@ -1384,11 +1383,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "maxElevation"
     },
     {
       "fieldname": "elevationUnit",
-      "datacolumn": "elevationUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1405,11 +1404,11 @@
         "feet",
         "meters",
         "uncertain"
-      ]
+      ],
+      "datacolumn": "elevationUnit"
     },
     {
       "fieldname": "vDistanceAboveSurface",
-      "datacolumn": "vDistanceAboveSurface",
       "transforms": {
       },
       "source_type": "na",
@@ -1424,11 +1423,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vDistanceAboveSurface"
     },
     {
       "fieldname": "minDistanceAboveSurface",
-      "datacolumn": "minDistanceAboveSurface",
       "transforms": {
       },
       "source_type": "na",
@@ -1443,11 +1442,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "minDistanceAboveSurface"
     },
     {
       "fieldname": "maxDistanceAboveSurface",
-      "datacolumn": "maxDistanceAboveSurface",
       "transforms": {
       },
       "source_type": "na",
@@ -1462,11 +1461,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "maxDistanceAboveSurface"
     },
     {
       "fieldname": "distanceAboveSurfaceUnit",
-      "datacolumn": "distanceAboveSurfaceUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1490,11 +1489,11 @@
         "miles",
         "rods",
         "uncertain"
-      ]
+      ],
+      "datacolumn": "distanceAboveSurfaceUnit"
     },
     {
       "fieldname": "localityNote",
-      "datacolumn": "localityNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1509,11 +1508,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "localityNote"
     },
     {
       "fieldname": "localitySource",
-      "datacolumn": "localitySource",
       "transforms": {
       },
       "source_type": "na",
@@ -1528,11 +1527,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "localitySource"
     },
     {
       "fieldname": "localitySourceDetail",
-      "datacolumn": "localitySourceDetail",
       "transforms": {
       },
       "source_type": "na",
@@ -1547,11 +1546,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "localitySourceDetail"
     },
     {
       "fieldname": "pointRadiusSpatialFit",
-      "datacolumn": "pointRadiusSpatialFit",
       "transforms": {
       },
       "source_type": "na",
@@ -1566,11 +1565,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "pointRadiusSpatialFit"
     },
     {
       "fieldname": "footprintWKT",
-      "datacolumn": "footprintWKT",
       "transforms": {
       },
       "source_type": "na",
@@ -1585,11 +1584,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "footprintWKT"
     },
     {
       "fieldname": "footprintSRS",
-      "datacolumn": "footprintSRS",
       "transforms": {
       },
       "source_type": "na",
@@ -1604,11 +1603,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "footprintSRS"
     },
     {
       "fieldname": "footprintSpatialFit",
-      "datacolumn": "footprintSpatialFit",
       "transforms": {
       },
       "source_type": "na",
@@ -1623,11 +1622,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "footprintSpatialFit"
     },
     {
       "fieldname": "coordPrecision",
-      "datacolumn": "coordPrecision",
       "transforms": {
       },
       "source_type": "na",
@@ -1642,11 +1641,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "coordPrecision"
     },
     {
       "fieldname": "geoRefencedBy",
-      "datacolumn": "geoRefencedBy",
       "transforms": {
       },
       "source_type": "na",
@@ -1661,11 +1660,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "geoRefencedBy"
     },
     {
       "fieldname": "geoRefDateGroup",
-      "datacolumn": "geoRefDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -1680,11 +1679,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "geoRefDateGroup"
     },
     {
       "fieldname": "geoRefProtocol",
-      "datacolumn": "geoRefProtocol",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1702,11 +1701,11 @@
         "chapman-wieczorek-2006-guide-best-practices-georeferencing",
         "georeferencing-dummies",
         "manis-herpnet-ornis-georeferencing-guidelines"
-      ]
+      ],
+      "datacolumn": "geoRefProtocol"
     },
     {
       "fieldname": "geoRefSource",
-      "datacolumn": "geoRefSource",
       "transforms": {
       },
       "source_type": "na",
@@ -1721,11 +1720,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "geoRefSource"
     },
     {
       "fieldname": "geoRefVerificationStatus",
-      "datacolumn": "geoRefVerificationStatus",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -1742,11 +1741,11 @@
         "unverified",
         "verified-contributor",
         "verified-data-custodian"
-      ]
+      ],
+      "datacolumn": "geoRefVerificationStatus"
     },
     {
       "fieldname": "geoRefRemarks",
-      "datacolumn": "geoRefRemarks",
       "transforms": {
       },
       "source_type": "na",
@@ -1761,11 +1760,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "geoRefRemarks"
     },
     {
       "fieldname": "geoRefPlaceName",
-      "datacolumn": "geoRefPlaceName",
       "transforms": {
       },
       "source_type": "na",
@@ -1780,11 +1779,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "geoRefPlaceName"
     },
     {
       "fieldname": "fieldCollectionDateGroup",
-      "datacolumn": "fieldCollectionDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -1798,11 +1797,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionDateGroup"
     },
     {
       "fieldname": "fieldCollector",
-      "datacolumn": "fieldCollectorPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1820,11 +1819,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectorPerson"
     },
     {
       "fieldname": "fieldCollector",
-      "datacolumn": "fieldCollectorOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -1842,11 +1841,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectorOrganization"
     },
     {
       "fieldname": "fieldCollectionNumber",
-      "datacolumn": "fieldCollectionNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -1860,11 +1859,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionNumber"
     },
     {
       "fieldname": "fieldCollectionNumberAssignor",
-      "datacolumn": "fieldCollectionNumberAssignor",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -1882,11 +1881,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionNumberAssignor"
     },
     {
       "fieldname": "vegetationType",
-      "datacolumn": "vegetationType",
       "transforms": {
         "vocabulary": "vegetationtype"
       },
@@ -1901,11 +1900,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "vegetationType"
     },
     {
       "fieldname": "fieldCollectionMethod",
-      "datacolumn": "fieldCollectionMethod",
       "transforms": {
         "vocabulary": "collectionmethod"
       },
@@ -1920,11 +1919,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionMethod"
     },
     {
       "fieldname": "fieldCollectionNote",
-      "datacolumn": "fieldCollectionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -1938,11 +1937,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fieldCollectionNote"
     },
     {
       "fieldname": "associatedTaxon",
-      "datacolumn": "associatedTaxon",
       "transforms": {
         "authority": [
           "taxonomyauthority",
@@ -1961,11 +1960,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "associatedTaxon"
     },
     {
       "fieldname": "commonName",
-      "datacolumn": "commonName",
       "transforms": {
       },
       "source_type": "na",
@@ -1980,11 +1979,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "commonName"
     },
     {
       "fieldname": "interaction",
-      "datacolumn": "interaction",
       "transforms": {
         "vocabulary": "assoctaxoninteraction"
       },
@@ -2000,11 +1999,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "interaction"
     },
     {
       "fieldname": "sex",
-      "datacolumn": "sex",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -2019,11 +2018,11 @@
       "opt_list_values": [
         "female",
         "male"
-      ]
+      ],
+      "datacolumn": "sex"
     },
     {
       "fieldname": "form",
-      "datacolumn": "form",
       "transforms": {
         "vocabulary": "phaseformtype"
       },
@@ -2038,11 +2037,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "form"
     },
     {
       "fieldname": "postToPublic",
-      "datacolumn": "postToPublic",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -2057,11 +2056,11 @@
       "opt_list_values": [
         "no",
         "yes"
-      ]
+      ],
+      "datacolumn": "postToPublic"
     },
     {
       "fieldname": "phase",
-      "datacolumn": "phase",
       "transforms": {
         "vocabulary": "botanicalphase"
       },
@@ -2076,11 +2075,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "phase"
     },
     {
       "fieldname": "annotationType",
-      "datacolumn": "annotationType",
       "transforms": {
         "vocabulary": "annotationtype"
       },
@@ -2096,11 +2095,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "annotationType"
     },
     {
       "fieldname": "annotationNote",
-      "datacolumn": "annotationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -2115,11 +2114,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "annotationNote"
     },
     {
       "fieldname": "annotationDate",
-      "datacolumn": "annotationDate",
       "transforms": {
       },
       "source_type": "na",
@@ -2134,11 +2133,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "annotationDate"
     },
     {
       "fieldname": "annotationAuthor",
-      "datacolumn": "annotationAuthor",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -2157,11 +2156,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "annotationAuthor"
     },
     {
       "fieldname": "flowerColor",
-      "datacolumn": "flowerColor",
       "transforms": {
       },
       "source_type": "na",
@@ -2175,11 +2174,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowerColor"
     },
     {
       "fieldname": "fruitColor",
-      "datacolumn": "fruitColor",
       "transforms": {
       },
       "source_type": "na",
@@ -2193,11 +2192,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitColor"
     },
     {
       "fieldname": "securityRisk",
-      "datacolumn": "securityRisk",
       "transforms": {
       },
       "source_type": "na",
@@ -2211,11 +2210,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "securityRisk"
     },
     {
       "fieldname": "propagationHistory",
-      "datacolumn": "propagationHistory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -2237,11 +2236,11 @@
         "sexual-reproduction",
         "unknown",
         "vegetative-reproduction"
-      ]
+      ],
+      "datacolumn": "propagationHistory"
     },
     {
       "fieldname": "breedingSystem",
-      "datacolumn": "breedingSystem",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -2262,11 +2261,11 @@
         "monoecious-and-self-compatible",
         "monoecious-and-self-incompatible",
         "unknown"
-      ]
+      ],
+      "datacolumn": "breedingSystem"
     },
     {
       "fieldname": "classUse",
-      "datacolumn": "classUse",
       "transforms": {
         "special": [
           "boolean"
@@ -2283,11 +2282,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "classUse"
     },
     {
       "fieldname": "researchUse",
-      "datacolumn": "researchUse",
       "transforms": {
         "special": [
           "boolean"
@@ -2304,11 +2303,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "researchUse"
     },
     {
       "fieldname": "distribution",
-      "datacolumn": "distribution",
       "transforms": {
         "special": [
           "boolean"
@@ -2325,11 +2324,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "distribution"
     },
     {
       "fieldname": "ignoreRedDot",
-      "datacolumn": "ignoreRedDot",
       "transforms": {
         "special": [
           "boolean"
@@ -2346,11 +2345,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ignoreRedDot"
     },
     {
       "fieldname": "fragrance",
-      "datacolumn": "fragrance",
       "transforms": {
         "special": [
           "boolean"
@@ -2367,11 +2366,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fragrance"
     },
     {
       "fieldname": "flowersJan",
-      "datacolumn": "flowersJan",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2386,11 +2385,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersJan"
     },
     {
       "fieldname": "flowersFeb",
-      "datacolumn": "flowersFeb",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2405,11 +2404,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersFeb"
     },
     {
       "fieldname": "flowersMar",
-      "datacolumn": "flowersMar",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2424,11 +2423,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersMar"
     },
     {
       "fieldname": "flowersApr",
-      "datacolumn": "flowersApr",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2443,11 +2442,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersApr"
     },
     {
       "fieldname": "flowersMay",
-      "datacolumn": "flowersMay",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2462,11 +2461,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersMay"
     },
     {
       "fieldname": "flowersJun",
-      "datacolumn": "flowersJun",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2481,11 +2480,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersJun"
     },
     {
       "fieldname": "flowersJul",
-      "datacolumn": "flowersJul",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2500,11 +2499,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersJul"
     },
     {
       "fieldname": "flowersAug",
-      "datacolumn": "flowersAug",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2519,11 +2518,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersAug"
     },
     {
       "fieldname": "flowersSep",
-      "datacolumn": "flowersSep",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2538,11 +2537,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersSep"
     },
     {
       "fieldname": "flowersOct",
-      "datacolumn": "flowersOct",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2557,11 +2556,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersOct"
     },
     {
       "fieldname": "flowersNov",
-      "datacolumn": "flowersNov",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2576,11 +2575,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersNov"
     },
     {
       "fieldname": "flowersDec",
-      "datacolumn": "flowersDec",
       "transforms": {
         "vocabulary": "floweringstatus"
       },
@@ -2595,11 +2594,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "flowersDec"
     },
     {
       "fieldname": "fruitsJan",
-      "datacolumn": "fruitsJan",
       "transforms": {
         "special": [
           "boolean"
@@ -2616,11 +2615,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsJan"
     },
     {
       "fieldname": "fruitsFeb",
-      "datacolumn": "fruitsFeb",
       "transforms": {
         "special": [
           "boolean"
@@ -2637,11 +2636,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsFeb"
     },
     {
       "fieldname": "fruitsMar",
-      "datacolumn": "fruitsMar",
       "transforms": {
         "special": [
           "boolean"
@@ -2658,11 +2657,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsMar"
     },
     {
       "fieldname": "fruitsApr",
-      "datacolumn": "fruitsApr",
       "transforms": {
         "special": [
           "boolean"
@@ -2679,11 +2678,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsApr"
     },
     {
       "fieldname": "fruitsMay",
-      "datacolumn": "fruitsMay",
       "transforms": {
         "special": [
           "boolean"
@@ -2700,11 +2699,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsMay"
     },
     {
       "fieldname": "fruitsJun",
-      "datacolumn": "fruitsJun",
       "transforms": {
         "special": [
           "boolean"
@@ -2721,11 +2720,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsJun"
     },
     {
       "fieldname": "fruitsJul",
-      "datacolumn": "fruitsJul",
       "transforms": {
         "special": [
           "boolean"
@@ -2742,11 +2741,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsJul"
     },
     {
       "fieldname": "fruitsAug",
-      "datacolumn": "fruitsAug",
       "transforms": {
         "special": [
           "boolean"
@@ -2763,11 +2762,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsAug"
     },
     {
       "fieldname": "fruitsSep",
-      "datacolumn": "fruitsSep",
       "transforms": {
         "special": [
           "boolean"
@@ -2784,11 +2783,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsSep"
     },
     {
       "fieldname": "fruitsOct",
-      "datacolumn": "fruitsOct",
       "transforms": {
         "special": [
           "boolean"
@@ -2805,11 +2804,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsOct"
     },
     {
       "fieldname": "fruitsNov",
-      "datacolumn": "fruitsNov",
       "transforms": {
         "special": [
           "boolean"
@@ -2826,11 +2825,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsNov"
     },
     {
       "fieldname": "fruitsDec",
-      "datacolumn": "fruitsDec",
       "transforms": {
         "special": [
           "boolean"
@@ -2847,11 +2846,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "fruitsDec"
     },
     {
       "fieldname": "accessionUseType",
-      "datacolumn": "accessionUseType",
       "transforms": {
         "vocabulary": "accessionusetype"
       },
@@ -2867,11 +2866,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUseType"
     },
     {
       "fieldname": "accessionUsedIn",
-      "datacolumn": "accessionUsedInClass",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -2890,11 +2889,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUsedInClass"
     },
     {
       "fieldname": "accessionUsedIn",
-      "datacolumn": "accessionUsedInResearch",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -2913,11 +2912,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUsedInResearch"
     },
     {
       "fieldname": "accessionUseRequestDate",
-      "datacolumn": "accessionUseRequestDate",
       "transforms": {
       },
       "source_type": "na",
@@ -2932,11 +2931,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUseRequestDate"
     },
     {
       "fieldname": "accessionUseFilledDate",
-      "datacolumn": "accessionUseFilledDate",
       "transforms": {
       },
       "source_type": "na",
@@ -2951,11 +2950,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUseFilledDate"
     },
     {
       "fieldname": "accessionUserMaterialType",
-      "datacolumn": "accessionUserMaterialType",
       "transforms": {
         "vocabulary": "materialtype"
       },
@@ -2971,11 +2970,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUserMaterialType"
     },
     {
       "fieldname": "accessionUseNotes",
-      "datacolumn": "accessionUseNotes",
       "transforms": {
       },
       "source_type": "na",
@@ -2990,11 +2989,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "accessionUseNotes"
     },
     {
       "fieldname": "assocActivity",
-      "datacolumn": "assocActivity",
       "transforms": {
       },
       "source_type": "na",
@@ -3009,11 +3008,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocActivity"
     },
     {
       "fieldname": "assocActivityType",
-      "datacolumn": "assocActivityType",
       "transforms": {
       },
       "source_type": "na",
@@ -3028,11 +3027,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocActivityType"
     },
     {
       "fieldname": "assocActivityNote",
-      "datacolumn": "assocActivityNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3047,11 +3046,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocActivityNote"
     },
     {
       "fieldname": "assocObject",
-      "datacolumn": "assocObject",
       "transforms": {
       },
       "source_type": "na",
@@ -3066,11 +3065,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocObject"
     },
     {
       "fieldname": "assocObjectType",
-      "datacolumn": "assocObjectType",
       "transforms": {
       },
       "source_type": "na",
@@ -3085,11 +3084,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocObjectType"
     },
     {
       "fieldname": "assocObjectNote",
-      "datacolumn": "assocObjectNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3104,11 +3103,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocObjectNote"
     },
     {
       "fieldname": "assocConcept",
-      "datacolumn": "assocConcept",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -3127,11 +3126,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocConcept"
     },
     {
       "fieldname": "assocConceptType",
-      "datacolumn": "assocConceptType",
       "transforms": {
       },
       "source_type": "na",
@@ -3146,11 +3145,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocConceptType"
     },
     {
       "fieldname": "assocConceptNote",
-      "datacolumn": "assocConceptNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3165,11 +3164,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocConceptNote"
     },
     {
       "fieldname": "assocCulturalContext",
-      "datacolumn": "assocCulturalContext",
       "transforms": {
       },
       "source_type": "na",
@@ -3184,11 +3183,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocCulturalContext"
     },
     {
       "fieldname": "assocCulturalContextType",
-      "datacolumn": "assocCulturalContextType",
       "transforms": {
       },
       "source_type": "na",
@@ -3203,11 +3202,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocCulturalContextType"
     },
     {
       "fieldname": "assocCulturalContextNote",
-      "datacolumn": "assocCulturalContextNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3222,11 +3221,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocCulturalContextNote"
     },
     {
       "fieldname": "assocOrganization",
-      "datacolumn": "assocOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -3245,11 +3244,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocOrganization"
     },
     {
       "fieldname": "assocOrganizationType",
-      "datacolumn": "assocOrganizationType",
       "transforms": {
       },
       "source_type": "na",
@@ -3264,11 +3263,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocOrganizationType"
     },
     {
       "fieldname": "assocOrganizationNote",
-      "datacolumn": "assocOrganizationNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3283,11 +3282,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocOrganizationNote"
     },
     {
       "fieldname": "assocPeople",
-      "datacolumn": "assocPeople",
       "transforms": {
       },
       "source_type": "na",
@@ -3302,11 +3301,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPeople"
     },
     {
       "fieldname": "assocPeopleType",
-      "datacolumn": "assocPeopleType",
       "transforms": {
       },
       "source_type": "na",
@@ -3321,11 +3320,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPeopleType"
     },
     {
       "fieldname": "assocPeopleNote",
-      "datacolumn": "assocPeopleNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3340,11 +3339,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPeopleNote"
     },
     {
       "fieldname": "assocPerson",
-      "datacolumn": "assocPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -3363,11 +3362,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPerson"
     },
     {
       "fieldname": "assocPersonType",
-      "datacolumn": "assocPersonType",
       "transforms": {
       },
       "source_type": "na",
@@ -3382,11 +3381,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPersonType"
     },
     {
       "fieldname": "assocPersonNote",
-      "datacolumn": "assocPersonNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3401,11 +3400,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPersonNote"
     },
     {
       "fieldname": "assocPlace",
-      "datacolumn": "assocPlace",
       "transforms": {
       },
       "source_type": "na",
@@ -3420,11 +3419,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPlace"
     },
     {
       "fieldname": "assocPlaceType",
-      "datacolumn": "assocPlaceType",
       "transforms": {
       },
       "source_type": "na",
@@ -3439,11 +3438,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPlaceType"
     },
     {
       "fieldname": "assocPlaceNote",
-      "datacolumn": "assocPlaceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3458,11 +3457,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocPlaceNote"
     },
     {
       "fieldname": "assocEventName",
-      "datacolumn": "assocEventName",
       "transforms": {
       },
       "source_type": "na",
@@ -3476,11 +3475,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventName"
     },
     {
       "fieldname": "assocEventNameType",
-      "datacolumn": "assocEventNameType",
       "transforms": {
       },
       "source_type": "na",
@@ -3494,11 +3493,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventNameType"
     },
     {
       "fieldname": "assocEventOrganization",
-      "datacolumn": "assocEventOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -3516,11 +3515,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventOrganization"
     },
     {
       "fieldname": "assocEventPeople",
-      "datacolumn": "assocEventPeople",
       "transforms": {
       },
       "source_type": "na",
@@ -3534,11 +3533,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventPeople"
     },
     {
       "fieldname": "assocEventPerson",
-      "datacolumn": "assocEventPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -3556,11 +3555,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventPerson"
     },
     {
       "fieldname": "assocEventPlace",
-      "datacolumn": "assocEventPlace",
       "transforms": {
       },
       "source_type": "na",
@@ -3574,11 +3573,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventPlace"
     },
     {
       "fieldname": "assocEventNote",
-      "datacolumn": "assocEventNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3592,11 +3591,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocEventNote"
     },
     {
       "fieldname": "assocStructuredDateGroup",
-      "datacolumn": "assocStructuredDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -3611,11 +3610,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocStructuredDateGroup"
     },
     {
       "fieldname": "assocDateType",
-      "datacolumn": "assocDateType",
       "transforms": {
       },
       "source_type": "na",
@@ -3630,11 +3629,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocDateType"
     },
     {
       "fieldname": "assocDateNote",
-      "datacolumn": "assocDateNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3649,11 +3648,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "assocDateNote"
     },
     {
       "fieldname": "objectHistoryNote",
-      "datacolumn": "objectHistoryNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3667,11 +3666,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectHistoryNote"
     },
     {
       "fieldname": "usage",
-      "datacolumn": "usage",
       "transforms": {
       },
       "source_type": "na",
@@ -3686,11 +3685,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "usage"
     },
     {
       "fieldname": "usageNote",
-      "datacolumn": "usageNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3705,11 +3704,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "usageNote"
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -3727,11 +3726,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerPerson"
     },
     {
       "fieldname": "owner",
-      "datacolumn": "ownerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -3749,11 +3748,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownerOrganization"
     },
     {
       "fieldname": "ownershipDateGroup",
-      "datacolumn": "ownershipDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -3767,11 +3766,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipDateGroup"
     },
     {
       "fieldname": "ownershipAccess",
-      "datacolumn": "ownershipAccess",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -3787,11 +3786,11 @@
         "limited",
         "open",
         "restricted"
-      ]
+      ],
+      "datacolumn": "ownershipAccess"
     },
     {
       "fieldname": "ownershipCategory",
-      "datacolumn": "ownershipCategory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -3807,11 +3806,11 @@
         "company",
         "private",
         "public"
-      ]
+      ],
+      "datacolumn": "ownershipCategory"
     },
     {
       "fieldname": "ownershipPlace",
-      "datacolumn": "ownershipPlace",
       "transforms": {
       },
       "source_type": "na",
@@ -3825,11 +3824,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipPlace"
     },
     {
       "fieldname": "ownershipExchangeMethod",
-      "datacolumn": "ownershipExchangeMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -3848,11 +3847,11 @@
         "purchase",
         "transfer",
         "treasure"
-      ]
+      ],
+      "datacolumn": "ownershipExchangeMethod"
     },
     {
       "fieldname": "ownershipExchangeNote",
-      "datacolumn": "ownershipExchangeNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3866,11 +3865,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipExchangeNote"
     },
     {
       "fieldname": "ownershipExchangePriceCurrency",
-      "datacolumn": "ownershipExchangePriceCurrency",
       "transforms": {
         "vocabulary": "currency"
       },
@@ -3885,11 +3884,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipExchangePriceCurrency"
     },
     {
       "fieldname": "ownershipExchangePriceValue",
-      "datacolumn": "ownershipExchangePriceValue",
       "transforms": {
       },
       "source_type": "na",
@@ -3903,11 +3902,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "ownershipExchangePriceValue"
     },
     {
       "fieldname": "reference",
-      "datacolumn": "referenceLocal",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -3926,11 +3925,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceLocal"
     },
     {
       "fieldname": "reference",
-      "datacolumn": "referenceWorldcat",
       "transforms": {
         "authority": [
           "citationauthorities",
@@ -3949,11 +3948,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceWorldcat"
     },
     {
       "fieldname": "referenceNote",
-      "datacolumn": "referenceNote",
       "transforms": {
       },
       "source_type": "na",
@@ -3968,11 +3967,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "referenceNote"
     },
     {
       "fieldname": "numberValue",
-      "datacolumn": "numberValue",
       "transforms": {
       },
       "source_type": "na",
@@ -3987,11 +3986,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numberValue"
     },
     {
       "fieldname": "numberType",
-      "datacolumn": "numberType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4010,11 +4009,11 @@
         "previous",
         "serial",
         "unknown"
-      ]
+      ],
+      "datacolumn": "numberType"
     },
     {
       "fieldname": "inventoryStatus",
-      "datacolumn": "inventoryStatus",
       "transforms": {
         "vocabulary": "inventorystatus"
       },
@@ -4029,11 +4028,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "inventoryStatus"
     },
     {
       "fieldname": "title",
-      "datacolumn": "title",
       "transforms": {
       },
       "source_type": "na",
@@ -4048,11 +4047,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "title"
     },
     {
       "fieldname": "titleLanguage",
-      "datacolumn": "titleLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -4068,11 +4067,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "titleLanguage"
     },
     {
       "fieldname": "titleType",
-      "datacolumn": "titleType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4092,11 +4091,11 @@
         "popular",
         "series",
         "trade"
-      ]
+      ],
+      "datacolumn": "titleType"
     },
     {
       "fieldname": "titleTranslation",
-      "datacolumn": "titleTranslation",
       "transforms": {
       },
       "source_type": "na",
@@ -4113,11 +4112,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "titleTranslation"
     },
     {
       "fieldname": "titleTranslationLanguage",
-      "datacolumn": "titleTranslationLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -4135,11 +4134,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "titleTranslationLanguage"
     },
     {
       "fieldname": "objectName",
-      "datacolumn": "objectName",
       "transforms": {
       },
       "source_type": "na",
@@ -4154,11 +4153,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectName"
     },
     {
       "fieldname": "objectNameCurrency",
-      "datacolumn": "objectNameCurrency",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4174,11 +4173,11 @@
       "opt_list_values": [
         "archaic",
         "current"
-      ]
+      ],
+      "datacolumn": "objectNameCurrency"
     },
     {
       "fieldname": "objectNameLevel",
-      "datacolumn": "objectNameLevel",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4194,11 +4193,11 @@
       "opt_list_values": [
         "group",
         "subgroup"
-      ]
+      ],
+      "datacolumn": "objectNameLevel"
     },
     {
       "fieldname": "objectNameSystem",
-      "datacolumn": "objectNameSystem",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4214,11 +4213,11 @@
       "opt_list_values": [
         "art-and-architecture-thesaurus",
         "nomenclature"
-      ]
+      ],
+      "datacolumn": "objectNameSystem"
     },
     {
       "fieldname": "objectNameType",
-      "datacolumn": "objectNameType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4237,11 +4236,11 @@
         "simple",
         "taxonomic",
         "typological"
-      ]
+      ],
+      "datacolumn": "objectNameType"
     },
     {
       "fieldname": "objectNameLanguage",
-      "datacolumn": "objectNameLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -4257,11 +4256,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectNameLanguage"
     },
     {
       "fieldname": "objectNameNote",
-      "datacolumn": "objectNameNote",
       "transforms": {
       },
       "source_type": "na",
@@ -4276,11 +4275,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectNameNote"
     },
     {
       "fieldname": "measuredPart",
-      "datacolumn": "measuredPart",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4302,11 +4301,11 @@
         "paper-size",
         "plate-size",
         "unframed"
-      ]
+      ],
+      "datacolumn": "measuredPart"
     },
     {
       "fieldname": "dimensionSummary",
-      "datacolumn": "dimensionSummary",
       "transforms": {
       },
       "source_type": "na",
@@ -4321,11 +4320,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "dimensionSummary"
     },
     {
       "fieldname": "dimension",
-      "datacolumn": "dimension",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4354,11 +4353,11 @@
         "volume",
         "weight",
         "width"
-      ]
+      ],
+      "datacolumn": "dimension"
     },
     {
       "fieldname": "measuredBy",
-      "datacolumn": "measuredByPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -4379,11 +4378,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByPerson"
     },
     {
       "fieldname": "measuredBy",
-      "datacolumn": "measuredByOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -4404,11 +4403,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "measuredByOrganization"
     },
     {
       "fieldname": "measurementMethod",
-      "datacolumn": "measurementMethod",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4444,11 +4443,11 @@
         "standard_mesh_screen",
         "taping_chaining",
         "theodolite_total_station"
-      ]
+      ],
+      "datacolumn": "measurementMethod"
     },
     {
       "fieldname": "value",
-      "datacolumn": "value",
       "transforms": {
       },
       "source_type": "na",
@@ -4465,11 +4464,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "value"
     },
     {
       "fieldname": "measurementUnit",
-      "datacolumn": "measurementUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4501,11 +4500,11 @@
         "square-feet",
         "stories",
         "tons"
-      ]
+      ],
+      "datacolumn": "measurementUnit"
     },
     {
       "fieldname": "valueQualifier",
-      "datacolumn": "valueQualifier",
       "transforms": {
       },
       "source_type": "na",
@@ -4522,11 +4521,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueQualifier"
     },
     {
       "fieldname": "valueDate",
-      "datacolumn": "valueDate",
       "transforms": {
       },
       "source_type": "na",
@@ -4543,11 +4542,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "valueDate"
     },
     {
       "fieldname": "objectProductionDateGroup",
-      "datacolumn": "objectProductionDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -4561,11 +4560,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionDateGroup"
     },
     {
       "fieldname": "objectProductionPerson",
-      "datacolumn": "objectProductionPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -4584,11 +4583,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPerson"
     },
     {
       "fieldname": "objectProductionPersonRole",
-      "datacolumn": "objectProductionPersonRole",
       "transforms": {
       },
       "source_type": "na",
@@ -4603,11 +4602,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPersonRole"
     },
     {
       "fieldname": "objectProductionOrganization",
-      "datacolumn": "objectProductionOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -4626,11 +4625,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionOrganization"
     },
     {
       "fieldname": "objectProductionOrganizationRole",
-      "datacolumn": "objectProductionOrganizationRole",
       "transforms": {
       },
       "source_type": "na",
@@ -4645,11 +4644,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionOrganizationRole"
     },
     {
       "fieldname": "numberOfObjects",
-      "datacolumn": "numberOfObjects",
       "transforms": {
       },
       "source_type": "na",
@@ -4663,11 +4662,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "numberOfObjects"
     },
     {
       "fieldname": "responsibleDepartment",
-      "datacolumn": "responsibleDepartment",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4690,11 +4689,11 @@
         "paleobotany",
         "photographs",
         "prints-drawings"
-      ]
+      ],
+      "datacolumn": "responsibleDepartment"
     },
     {
       "fieldname": "collection",
-      "datacolumn": "collection",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4711,11 +4710,11 @@
         "permanent-collection",
         "study-collection",
         "teaching-collection"
-      ]
+      ],
+      "datacolumn": "collection"
     },
     {
       "fieldname": "distinguishingFeatures",
-      "datacolumn": "distinguishingFeatures",
       "transforms": {
       },
       "source_type": "na",
@@ -4729,11 +4728,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "distinguishingFeatures"
     },
     {
       "fieldname": "copyNumber",
-      "datacolumn": "copyNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -4747,11 +4746,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "copyNumber"
     },
     {
       "fieldname": "editionNumber",
-      "datacolumn": "editionNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -4765,11 +4764,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "editionNumber"
     },
     {
       "fieldname": "color",
-      "datacolumn": "color",
       "transforms": {
       },
       "source_type": "na",
@@ -4783,11 +4782,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "color"
     },
     {
       "fieldname": "material",
-      "datacolumn": "material",
       "transforms": {
       },
       "source_type": "na",
@@ -4802,11 +4801,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "material"
     },
     {
       "fieldname": "materialComponent",
-      "datacolumn": "materialComponent",
       "transforms": {
       },
       "source_type": "na",
@@ -4821,11 +4820,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialComponent"
     },
     {
       "fieldname": "materialComponentNote",
-      "datacolumn": "materialComponentNote",
       "transforms": {
       },
       "source_type": "na",
@@ -4840,11 +4839,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialComponentNote"
     },
     {
       "fieldname": "materialName",
-      "datacolumn": "materialName",
       "transforms": {
       },
       "source_type": "na",
@@ -4859,11 +4858,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialName"
     },
     {
       "fieldname": "materialSource",
-      "datacolumn": "materialSource",
       "transforms": {
       },
       "source_type": "na",
@@ -4878,11 +4877,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "materialSource"
     },
     {
       "fieldname": "physicalDescription",
-      "datacolumn": "physicalDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -4896,11 +4895,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "physicalDescription"
     },
     {
       "fieldname": "technicalAttribute",
-      "datacolumn": "technicalAttribute",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4916,11 +4915,11 @@
       "opt_list_values": [
         "magnetic-tape-type",
         "record-speed"
-      ]
+      ],
+      "datacolumn": "technicalAttribute"
     },
     {
       "fieldname": "technicalAttributeMeasurement",
-      "datacolumn": "technicalAttributeMeasurement",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4936,11 +4935,11 @@
       "opt_list_values": [
         "78",
         "metal"
-      ]
+      ],
+      "datacolumn": "technicalAttributeMeasurement"
     },
     {
       "fieldname": "technicalAttributeMeasurementUnit",
-      "datacolumn": "technicalAttributeMeasurementUnit",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -4955,11 +4954,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
         "rpm"
-      ]
+      ],
+      "datacolumn": "technicalAttributeMeasurementUnit"
     },
     {
       "fieldname": "contentDescription",
-      "datacolumn": "contentDescription",
       "transforms": {
       },
       "source_type": "na",
@@ -4973,11 +4972,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentDescription"
     },
     {
       "fieldname": "contentLanguage",
-      "datacolumn": "contentLanguage",
       "transforms": {
         "vocabulary": "languages"
       },
@@ -4992,11 +4991,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentLanguage"
     },
     {
       "fieldname": "contentActivity",
-      "datacolumn": "contentActivity",
       "transforms": {
       },
       "source_type": "na",
@@ -5010,11 +5009,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentActivity"
     },
     {
       "fieldname": "contentConcept",
-      "datacolumn": "contentConcept",
       "transforms": {
         "authority": [
           "conceptauthorities",
@@ -5032,11 +5031,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentConcept"
     },
     {
       "fieldname": "contentDateGroup",
-      "datacolumn": "contentDateGroup",
       "transforms": {
       },
       "source_type": "na",
@@ -5050,11 +5049,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentDateGroup"
     },
     {
       "fieldname": "contentPosition",
-      "datacolumn": "contentPosition",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -5079,11 +5078,11 @@
         "rim",
         "top",
         "verso"
-      ]
+      ],
+      "datacolumn": "contentPosition"
     },
     {
       "fieldname": "contentObject",
-      "datacolumn": "contentObject",
       "transforms": {
       },
       "source_type": "na",
@@ -5098,11 +5097,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentObject"
     },
     {
       "fieldname": "contentObjectType",
-      "datacolumn": "contentObjectType",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -5118,11 +5117,11 @@
       "opt_list_values": [
         "food",
         "furniture"
-      ]
+      ],
+      "datacolumn": "contentObjectType"
     },
     {
       "fieldname": "contentPeople",
-      "datacolumn": "contentPeople",
       "transforms": {
       },
       "source_type": "na",
@@ -5136,11 +5135,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPeople"
     },
     {
       "fieldname": "contentPerson",
-      "datacolumn": "contentPersonLocal",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -5158,11 +5157,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPersonLocal"
     },
     {
       "fieldname": "contentPerson",
-      "datacolumn": "contentPersonUlan",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -5180,11 +5179,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPersonUlan"
     },
     {
       "fieldname": "contentPlace",
-      "datacolumn": "contentPlace",
       "transforms": {
       },
       "source_type": "na",
@@ -5198,11 +5197,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentPlace"
     },
     {
       "fieldname": "contentScript",
-      "datacolumn": "contentScript",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -5222,11 +5221,11 @@
         "rustic-capitals",
         "spencerian-method",
         "square-capitals"
-      ]
+      ],
+      "datacolumn": "contentScript"
     },
     {
       "fieldname": "contentOrganization",
-      "datacolumn": "contentOrganizationLocal",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -5244,11 +5243,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOrganizationLocal"
     },
     {
       "fieldname": "contentOrganization",
-      "datacolumn": "contentOrganizationUlan",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -5266,11 +5265,11 @@
       "in_repeating_group": "n",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOrganizationUlan"
     },
     {
       "fieldname": "contentEventName",
-      "datacolumn": "contentEventName",
       "transforms": {
       },
       "source_type": "na",
@@ -5285,11 +5284,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentEventName"
     },
     {
       "fieldname": "contentEventNameType",
-      "datacolumn": "contentEventNameType",
       "transforms": {
       },
       "source_type": "na",
@@ -5304,11 +5303,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentEventNameType"
     },
     {
       "fieldname": "contentOther",
-      "datacolumn": "contentOther",
       "transforms": {
       },
       "source_type": "na",
@@ -5323,11 +5322,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOther"
     },
     {
       "fieldname": "contentOtherType",
-      "datacolumn": "contentOtherType",
       "transforms": {
       },
       "source_type": "na",
@@ -5342,11 +5341,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentOtherType"
     },
     {
       "fieldname": "contentNote",
-      "datacolumn": "contentNote",
       "transforms": {
       },
       "source_type": "na",
@@ -5360,11 +5359,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "contentNote"
     },
     {
       "fieldname": "technique",
-      "datacolumn": "technique",
       "transforms": {
       },
       "source_type": "na",
@@ -5379,11 +5378,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "technique"
     },
     {
       "fieldname": "techniqueType",
-      "datacolumn": "techniqueType",
       "transforms": {
       },
       "source_type": "na",
@@ -5398,11 +5397,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "techniqueType"
     },
     {
       "fieldname": "objectProductionPlace",
-      "datacolumn": "objectProductionPlace",
       "transforms": {
       },
       "source_type": "na",
@@ -5417,11 +5416,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPlace"
     },
     {
       "fieldname": "objectProductionPlaceRole",
-      "datacolumn": "objectProductionPlaceRole",
       "transforms": {
       },
       "source_type": "na",
@@ -5436,11 +5435,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionPlaceRole"
     },
     {
       "fieldname": "objectProductionNote",
-      "datacolumn": "objectProductionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -5454,7 +5453,8 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "objectProductionNote"
     }
   ]
 }

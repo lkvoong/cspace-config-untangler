@@ -37,7 +37,6 @@
   "mappings": [
     {
       "fieldname": "conditionCheckRefNumber",
-      "datacolumn": "conditionCheckRefNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -51,11 +50,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckRefNumber"
     },
     {
       "fieldname": "conditionCheckAssessmentDate",
-      "datacolumn": "conditionCheckAssessmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -69,11 +68,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckAssessmentDate"
     },
     {
       "fieldname": "conditionChecker",
-      "datacolumn": "conditionCheckerPerson",
       "transforms": {
         "authority": [
           "personauthorities",
@@ -91,11 +90,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerPerson"
     },
     {
       "fieldname": "conditionChecker",
-      "datacolumn": "conditionCheckerOrganization",
       "transforms": {
         "authority": [
           "orgauthorities",
@@ -113,11 +112,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckerOrganization"
     },
     {
       "fieldname": "conditionCheckNote",
-      "datacolumn": "conditionCheckNote",
       "transforms": {
       },
       "source_type": "na",
@@ -131,11 +130,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionCheckNote"
     },
     {
       "fieldname": "objectAuditCategory",
-      "datacolumn": "objectAuditCategory",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -151,11 +150,11 @@
         "high",
         "low",
         "medium"
-      ]
+      ],
+      "datacolumn": "objectAuditCategory"
     },
     {
       "fieldname": "conservationTreatmentPriority",
-      "datacolumn": "conservationTreatmentPriority",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -171,11 +170,11 @@
         "high",
         "low",
         "medium"
-      ]
+      ],
+      "datacolumn": "conservationTreatmentPriority"
     },
     {
       "fieldname": "nextConditionCheckDate",
-      "datacolumn": "nextConditionCheckDate",
       "transforms": {
       },
       "source_type": "na",
@@ -189,11 +188,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "nextConditionCheckDate"
     },
     {
       "fieldname": "completeness",
-      "datacolumn": "completeness",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -210,11 +209,11 @@
         "complete",
         "fragmented",
         "incomplete"
-      ]
+      ],
+      "datacolumn": "completeness"
     },
     {
       "fieldname": "completenessDate",
-      "datacolumn": "completenessDate",
       "transforms": {
       },
       "source_type": "na",
@@ -229,11 +228,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "completenessDate"
     },
     {
       "fieldname": "completenessNote",
-      "datacolumn": "completenessNote",
       "transforms": {
       },
       "source_type": "na",
@@ -248,11 +247,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "completenessNote"
     },
     {
       "fieldname": "techAssessment",
-      "datacolumn": "techAssessment",
       "transforms": {
       },
       "source_type": "na",
@@ -267,11 +266,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "techAssessment"
     },
     {
       "fieldname": "techAssessmentDate",
-      "datacolumn": "techAssessmentDate",
       "transforms": {
       },
       "source_type": "na",
@@ -286,11 +285,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "techAssessmentDate"
     },
     {
       "fieldname": "condition",
-      "datacolumn": "condition",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -308,11 +307,11 @@
         "injeopardy",
         "needsnowork",
         "notexhibitablestable"
-      ]
+      ],
+      "datacolumn": "condition"
     },
     {
       "fieldname": "conditionDate",
-      "datacolumn": "conditionDate",
       "transforms": {
       },
       "source_type": "na",
@@ -327,11 +326,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionDate"
     },
     {
       "fieldname": "conditionNote",
-      "datacolumn": "conditionNote",
       "transforms": {
       },
       "source_type": "na",
@@ -346,11 +345,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "conditionNote"
     },
     {
       "fieldname": "displayRecommendations",
-      "datacolumn": "displayRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -364,11 +363,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "displayRecommendations"
     },
     {
       "fieldname": "handlingRecommendations",
-      "datacolumn": "handlingRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -382,11 +381,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "handlingRecommendations"
     },
     {
       "fieldname": "envRecommendations",
-      "datacolumn": "envRecommendations",
       "transforms": {
       },
       "source_type": "na",
@@ -400,11 +399,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "envRecommendations"
     },
     {
       "fieldname": "specialRequirements",
-      "datacolumn": "specialRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -418,11 +417,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "specialRequirements"
     },
     {
       "fieldname": "legalRequirements",
-      "datacolumn": "legalRequirements",
       "transforms": {
       },
       "source_type": "na",
@@ -436,11 +435,11 @@
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalRequirements"
     },
     {
       "fieldname": "legalReqsHeld",
-      "datacolumn": "legalReqsHeld",
       "transforms": {
       },
       "source_type": "na",
@@ -455,11 +454,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeld"
     },
     {
       "fieldname": "legalReqsHeldBeginDate",
-      "datacolumn": "legalReqsHeldBeginDate",
       "transforms": {
       },
       "source_type": "na",
@@ -474,11 +473,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldBeginDate"
     },
     {
       "fieldname": "legalReqsHeldEndDate",
-      "datacolumn": "legalReqsHeldEndDate",
       "transforms": {
       },
       "source_type": "na",
@@ -493,11 +492,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldEndDate"
     },
     {
       "fieldname": "legalReqsHeldNumber",
-      "datacolumn": "legalReqsHeldNumber",
       "transforms": {
       },
       "source_type": "na",
@@ -512,11 +511,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldNumber"
     },
     {
       "fieldname": "legalReqsHeldRenewDate",
-      "datacolumn": "legalReqsHeldRenewDate",
       "transforms": {
       },
       "source_type": "na",
@@ -531,11 +530,11 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "legalReqsHeldRenewDate"
     },
     {
       "fieldname": "salvagePriorityCode",
-      "datacolumn": "salvagePriorityCode",
       "transforms": {
       },
       "source_type": "optionlist",
@@ -552,11 +551,11 @@
         "high",
         "low",
         "medium"
-      ]
+      ],
+      "datacolumn": "salvagePriorityCode"
     },
     {
       "fieldname": "salvagePriorityCodeDate",
-      "datacolumn": "salvagePriorityCodeDate",
       "transforms": {
       },
       "source_type": "na",
@@ -571,7 +570,8 @@
       "in_repeating_group": "y",
       "opt_list_values": [
 
-      ]
+      ],
+      "datacolumn": "salvagePriorityCodeDate"
     }
   ]
 }

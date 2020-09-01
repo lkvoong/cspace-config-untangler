@@ -4,7 +4,7 @@ module CspaceConfigUntangler
   module RecordMapper
     class RecordMapping
       ::RecordMapping = CspaceConfigUntangler::RecordMapper::RecordMapping
-      attr_reader :hash
+      attr_reader :hash, :mappings
 
       # profile = CCU::Profile
       # rectype = CCU::RecordType
@@ -12,7 +12,7 @@ module CspaceConfigUntangler
         @profile = profile
         @rectype = rectype
         @config = @profile.config
-        @mappings = @rectype.fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+        @mappings = @rectype.mappings
         @hash = {}
         build_hash
       end
