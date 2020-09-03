@@ -121,8 +121,16 @@ Once the setup is done, from the cloned directory, you should be able to type `e
 
 == Known limitations/issues
 
+=== General
+
 - For 5.2 configs, data source values are not consistently supplied for structured date fields. This is because configuration of the structured date fields was not written out to the JSON config in a standard way until 6.0.
 - RecordMappers and CSV templates stored in this repo for releases before 6.1 may not handle multiple fields with the same name in the same record type correctly. The code handles this properly as of 0.3.4, but mappers and templates for older releases were not generated
 - Does not currently report on fields in the `ns2:collectionspace_core` namespace 
 - Does not currently report on fields in the `rel:relations-common-list` namespace because the way this data is defined in the config is very different from the rest
 - `contact` and `blob` get reported/treated as extensions within the tool, rather than sub-records
+
+=== Working with non-community profiles
+
+- Do `exe/ccu write_fields_csv -p all` and check whether the `data_type` column has any blank values. If so, probably your profile has configured some fields from extensions in an unexpected manner. This can cause `forms/default/props/subpath` values (used to create form_field ids) to not match the `fields/document/.../{fieldname}/[config]/messages/name/id` values (used to create field_def ids) for some fields. The Untangler is then unable to match up form_field info with field_def info to generate the necessary combined field info required for fully-populated fields CSV, CSV template, and RecordMapper output. You'll need to do some hard-coding somewhere in the code to get a match
+- If you have record types with (a) *no* required field; or (b) multiple required fields, you will need to hard-code `identifier_field` values in `record_mapper.rb`'s `get_id_field` method.
+- If you have created any form templates that include fields that are *not* included in your `default` template, your Untangler output will not include those fields. The assumption is that the `default` form contains all possible fields for a record type. 
