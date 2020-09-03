@@ -11,8 +11,8 @@ module CspaceConfigUntangler
       def initialize(profile:, rectype:)
         @profile = profile
         @rectype = rectype
-        @config = @profile.config
         @mappings = @rectype.mappings
+        @config = @profile.config
         @hash = {}
         build_hash
       end
@@ -37,11 +37,42 @@ module CspaceConfigUntangler
         @hash[:config][:ns_uri] = NamespaceUris.new(profile_config: @config,
                                                     rectype: @rectype.name,
                                                     mapper_config: @hash[:config]).hash
+        @hash[:config][:identifier_field] = get_id_field
+        @hash[:config][:authority_subtypes] = get_subtypes if @hash[:config][:service_type] == 'authority'
         @hash[:docstructure] = {}
         create_hierarchy
         @hash[:mappings] = @mappings.map{ |m| m.to_h }
       end
 
+      def get_subtypes
+        result = []
+        vocabs = @config.dig('recordTypes', @rectype.name, 'vocabularies')
+        vocabs.each do |keyword, config|
+          next if keyword == 'all'
+          name = config.dig('messages', 'name', 'defaultMessage')
+          servicepath_name = config.dig('serviceConfig', 'servicePath').match(/\((.*)\)/)[1]
+          result << { name: name, servicepath_name: servicepath_name }
+        end
+        result
+      end
+      
+      def get_id_field
+        case @hash[:config][:service_type]
+        when 'object'
+          'objectNumber'
+        when 'authority'
+          'shortIdentifier'
+        when 'procedure'
+          # osteology is currently the only procedure record with >1 required field
+          # all other procedures only require their respective ID field
+          if [@hash[:config][:document_name]] == 'osteology'
+            'InventoryID'
+          else
+            @mappings.select{ |m| m.required == 'y' }.first.fieldname
+          end
+        end
+      end
+      
       def create_hierarchy
         # top level keys are the namespaces
         @mappings.each do |m|
