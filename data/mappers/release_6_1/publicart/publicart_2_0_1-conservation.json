@@ -9,7 +9,8 @@
     "ns_uri": {
       "conservation_common": "http://collectionspace.org/services/conservation",
       "conservation_publicart": "http://collectionspace.org/services/conservation/domain/publicart"
-    }
+    },
+    "identifier_field": "conservationNumber"
   },
   "docstructure": {
     "conservation_common": {

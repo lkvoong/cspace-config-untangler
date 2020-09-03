@@ -13,7 +13,8 @@
       "collectionobjects_accessionuse": "http://collectionspace.org/services/collectionobject/domain/accessionuse",
       "collectionobjects_annotation": "http://collectionspace.org/services/collectionobject/domain/annotation",
       "collectionobjects_naturalhistory_extension": "http://collectionspace.org/services/collectionobject/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": "objectNumber"
   },
   "docstructure": {
     "collectionobjects_common": {

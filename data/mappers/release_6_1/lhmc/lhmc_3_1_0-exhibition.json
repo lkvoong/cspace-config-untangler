@@ -9,7 +9,8 @@
     "ns_uri": {
       "exhibitions_common": "http://collectionspace.org/services/exhibition",
       "exhibitions_lhmc": "http://collectionspace.org/services/exhibition/domain/lhmc"
-    }
+    },
+    "identifier_field": "exhibitionNumber"
   },
   "docstructure": {
     "exhibitions_common": {

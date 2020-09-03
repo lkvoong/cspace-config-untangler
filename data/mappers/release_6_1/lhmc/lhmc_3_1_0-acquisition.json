@@ -9,7 +9,8 @@
     "ns_uri": {
       "acquisitions_common": "http://collectionspace.org/services/acquisition",
       "acquisitions_lhmc": "http://collectionspace.org/services/acquisition/domain/lhmc"
-    }
+    },
+    "identifier_field": "acquisitionReferenceNumber"
   },
   "docstructure": {
     "acquisitions_common": {

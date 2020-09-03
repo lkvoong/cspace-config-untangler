@@ -8,7 +8,8 @@
     "profile_basename": "anthro",
     "ns_uri": {
       "acquisitions_common": "http://collectionspace.org/services/acquisition"
-    }
+    },
+    "identifier_field": "acquisitionReferenceNumber"
   },
   "docstructure": {
     "acquisitions_common": {

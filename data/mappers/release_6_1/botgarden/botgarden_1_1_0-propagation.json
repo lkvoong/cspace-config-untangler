@@ -8,7 +8,8 @@
     "profile_basename": "botgarden",
     "ns_uri": {
       "propagations_common": null
-    }
+    },
+    "identifier_field": "propNumber"
   },
   "docstructure": {
     "propagation_common": {

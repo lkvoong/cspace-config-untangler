@@ -8,7 +8,18 @@
     "profile_basename": "materials",
     "ns_uri": {
       "places_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "place"
+      },
+      {
+        "name": "Shared",
+        "servicepath_name": "place_shared"
+      }
+    ]
   },
   "docstructure": {
     "places_common": {

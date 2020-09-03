@@ -9,7 +9,8 @@
     "ns_uri": {
       "movements_common": "http://collectionspace.org/services/movement",
       "movements_botgarden": "http://collectionspace.org/services/movement/domain/botgarden"
-    }
+    },
+    "identifier_field": null
   },
   "docstructure": {
     "movements_common": {

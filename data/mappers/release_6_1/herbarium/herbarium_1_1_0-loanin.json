@@ -10,7 +10,8 @@
       "loansin_common": "http://collectionspace.org/services/loanin",
       "loansin_herbarium": "http://collectionspace.org/services/loanin/domain/herbarium",
       "loansin_naturalhistory_extension": "http://collectionspace.org/services/loanin/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": "loanInNumber"
   },
   "docstructure": {
     "loansin_common": {

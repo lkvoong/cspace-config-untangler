@@ -9,7 +9,8 @@
     "ns_uri": {
       "collectionobjects_common": "http://collectionspace.org/services/collectionobject",
       "collectionobjects_materials": "http://collectionspace.org/services/collectionobject/domain/materials"
-    }
+    },
+    "identifier_field": "objectNumber"
   },
   "docstructure": {
     "collectionobjects_common": {

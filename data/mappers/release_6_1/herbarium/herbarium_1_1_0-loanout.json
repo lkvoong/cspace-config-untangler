@@ -10,7 +10,8 @@
       "loansout_common": "http://collectionspace.org/services/loanout",
       "loansout_herbarium": "http://collectionspace.org/services/loanout/domain/herbarium",
       "loansout_naturalhistory_extension": "http://collectionspace.org/services/loanout/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": "loanOutNumber"
   },
   "docstructure": {
     "loansout_common": {

@@ -8,7 +8,8 @@
     "profile_basename": "anthro",
     "ns_uri": {
       "objectexit_common": "http://collectionspace.org/services/objectexit"
-    }
+    },
+    "identifier_field": "exitNumber"
   },
   "docstructure": {
     "objectexit_common": {

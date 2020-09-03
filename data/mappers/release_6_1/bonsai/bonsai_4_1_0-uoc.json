@@ -8,7 +8,8 @@
     "profile_basename": "bonsai",
     "ns_uri": {
       "uoc_common": "http://collectionspace.org/services/uoc"
-    }
+    },
+    "identifier_field": "referenceNumber"
   },
   "docstructure": {
     "uoc_common": {

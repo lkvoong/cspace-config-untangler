@@ -8,7 +8,18 @@
     "profile_basename": "materials",
     "ns_uri": {
       "materials_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "material"
+      },
+      {
+        "name": "Shared",
+        "servicepath_name": "material_shared"
+      }
+    ]
   },
   "docstructure": {
     "materials_common": {

@@ -13,7 +13,8 @@
       "collectionobjects_culturalcare": "http://collectionspace.org/services/collectionobject/domain/collectionobject",
       "collectionobjects_nagpra": "http://collectionspace.org/services/collectionobject/domain/nagpra",
       "collectionobjects_naturalhistory_extension": "http://collectionspace.org/services/collectionobject/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": "objectNumber"
   },
   "docstructure": {
     "collectionobjects_common": {

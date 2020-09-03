@@ -8,7 +8,8 @@
     "profile_basename": "core",
     "ns_uri": {
       "conditionchecks_common": "http://collectionspace.org/services/conditioncheck"
-    }
+    },
+    "identifier_field": "conditionCheckRefNumber"
   },
   "docstructure": {
     "conditionchecks_common": {

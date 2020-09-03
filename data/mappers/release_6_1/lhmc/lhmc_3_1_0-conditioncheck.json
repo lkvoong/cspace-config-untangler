@@ -9,7 +9,8 @@
     "ns_uri": {
       "conditionchecks_common": "http://collectionspace.org/services/conditioncheck",
       "conditionchecks_lhmc": "http://collectionspace.org/services/conditioncheck/domain/lhmc"
-    }
+    },
+    "identifier_field": "conditionCheckRefNumber"
   },
   "docstructure": {
     "conditionchecks_common": {

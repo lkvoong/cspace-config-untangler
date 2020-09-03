@@ -8,7 +8,8 @@
     "profile_basename": "fcart",
     "ns_uri": {
       "exhibitions_common": "http://collectionspace.org/services/exhibition"
-    }
+    },
+    "identifier_field": "exhibitionNumber"
   },
   "docstructure": {
     "exhibitions_common": {

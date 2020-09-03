@@ -8,7 +8,18 @@
     "profile_basename": "botgarden",
     "ns_uri": {
       "taxon_common": "http://collectionspace.org/services/taxonomy"
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "taxon"
+      },
+      {
+        "name": "Common",
+        "servicepath_name": "common_ta"
+      }
+    ]
   },
   "docstructure": {
     "taxon_common": {

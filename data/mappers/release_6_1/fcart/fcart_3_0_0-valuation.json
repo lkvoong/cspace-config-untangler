@@ -8,7 +8,8 @@
     "profile_basename": "fcart",
     "ns_uri": {
       "valuationcontrols_common": "http://collectionspace.org/services/valuationcontrol"
-    }
+    },
+    "identifier_field": "valuationcontrolRefNumber"
   },
   "docstructure": {
     "valuationcontrols_common": {

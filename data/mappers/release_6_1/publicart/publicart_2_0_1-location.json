@@ -9,7 +9,18 @@
     "ns_uri": {
       "locations_common": null,
       "locations_publicart": "http://collectionspace.org/services//domain/publicart"
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "location"
+      },
+      {
+        "name": "Offsite",
+        "servicepath_name": "offsite_sla"
+      }
+    ]
   },
   "docstructure": {
     "locations_common": {

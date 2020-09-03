@@ -8,7 +8,8 @@
     "profile_basename": "fcart",
     "ns_uri": {
       "conservation_common": "http://collectionspace.org/services/conservation"
-    }
+    },
+    "identifier_field": "conservationNumber"
   },
   "docstructure": {
     "conservation_common": {

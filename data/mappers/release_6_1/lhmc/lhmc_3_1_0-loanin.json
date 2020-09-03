@@ -9,7 +9,8 @@
     "ns_uri": {
       "loansin_common": "http://collectionspace.org/services/loanin",
       "loansin_lhmc": "http://collectionspace.org/services/loanin/domain/lhmc"
-    }
+    },
+    "identifier_field": "loanInNumber"
   },
   "docstructure": {
     "loansin_common": {

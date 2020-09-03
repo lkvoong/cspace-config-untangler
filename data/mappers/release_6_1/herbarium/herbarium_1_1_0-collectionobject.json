@@ -10,7 +10,8 @@
       "collectionobjects_common": "http://collectionspace.org/services/collectionobject",
       "collectionobjects_herbarium": "http://collectionspace.org/services/collectionobject/domain/herbarium",
       "collectionobjects_naturalhistory_extension": "http://collectionspace.org/services/collectionobject/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": "objectNumber"
   },
   "docstructure": {
     "collectionobjects_common": {

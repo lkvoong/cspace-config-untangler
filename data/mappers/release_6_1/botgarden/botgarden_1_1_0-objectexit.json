@@ -9,7 +9,8 @@
     "ns_uri": {
       "objectexit_common": "http://collectionspace.org/services/objectexit",
       "objectexit_naturalhistory_extension": "http://collectionspace.org/objectexit/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": null
   },
   "docstructure": {
     "objectexit_common": {
