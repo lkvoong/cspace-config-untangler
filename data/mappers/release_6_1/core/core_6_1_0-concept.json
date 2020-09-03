@@ -7,7 +7,7 @@
     "object_name": "Conceptitem",
     "profile_basename": "core",
     "ns_uri": {
-      "concepts_common": null
+      "concepts_common": "http://collectionspace.org/services/concept"
     },
     "identifier_field": "shortIdentifier",
     "authority_subtypes": [

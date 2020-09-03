@@ -7,7 +7,7 @@
     "object_name": "Locationitem",
     "profile_basename": "publicart",
     "ns_uri": {
-      "locations_common": null,
+      "locations_common": "http://collectionspace.org/services/location",
       "locations_publicart": "http://collectionspace.org/services//domain/publicart"
     },
     "identifier_field": "shortIdentifier",

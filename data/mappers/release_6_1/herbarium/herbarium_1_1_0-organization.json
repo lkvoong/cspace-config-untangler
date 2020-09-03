@@ -7,7 +7,7 @@
     "object_name": "Organization",
     "profile_basename": "herbarium",
     "ns_uri": {
-      "organizations_common": null,
+      "organizations_common": "http://collectionspace.org/services/organization",
       "contacts_common": null
     },
     "identifier_field": "shortIdentifier",

@@ -7,7 +7,7 @@
     "object_name": "Citation",
     "profile_basename": "anthro",
     "ns_uri": {
-      "citations_common": null
+      "citations_common": "http://collectionspace.org/services/citation"
     },
     "identifier_field": "shortIdentifier",
     "authority_subtypes": [

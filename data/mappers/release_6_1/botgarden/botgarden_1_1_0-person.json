@@ -7,7 +7,7 @@
     "object_name": "Person",
     "profile_basename": "botgarden",
     "ns_uri": {
-      "persons_common": null,
+      "persons_common": "http://collectionspace.org/services/person",
       "contacts_common": null
     },
     "identifier_field": "shortIdentifier",
