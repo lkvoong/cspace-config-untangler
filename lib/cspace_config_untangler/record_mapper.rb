@@ -116,10 +116,9 @@ module CspaceConfigUntangler
           .reject{ |k| k == 'ns2:collectionspace_core' || k == 'ns2:account_permission' }
           .each do |ns|
             objname = @mconfig[:object_name].downcase unless @mconfig[:service_type] == 'authority'
-
             if ns == "ns2:#{@mconfig[:document_name]}_common"
               if @mconfig[:service_type] == 'authority'
-                uri = @config.dig('recordTypes', @mconfig[:document_name], 'fields', 'document', ns, 'csid', '[config]',
+                uri = @config.dig('recordTypes', @rectype, 'fields', 'document', ns, 'csid', '[config]',
                                   'extensionParentConfig', 'service', 'ns')
               else
                 uri = "http://collectionspace.org/services/#{objname}"

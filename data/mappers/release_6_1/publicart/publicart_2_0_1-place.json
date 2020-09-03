@@ -7,7 +7,7 @@
     "object_name": "Placeitem",
     "profile_basename": "publicart",
     "ns_uri": {
-      "places_common": null,
+      "places_common": "http://collectionspace.org/services/place",
       "places_publicart": "http://collectionspace.org/services//domain/publicart"
     },
     "identifier_field": "shortIdentifier",

@@ -34,7 +34,7 @@ RSpec.describe CCU::RecordMapper do
     before(:all) do
       @anthro_profile = CCU::Profile.new(profile: 'anthro_4_1_0',
                                          rectypes: ['collectionobject', 'claim',
-                                                    'osteology', 'taxon'],
+                                                    'osteology', 'place', 'taxon'],
                                          structured_date_treatment: :collapse)
     end
     context 'collectionobject' do
@@ -125,6 +125,27 @@ RSpec.describe CCU::RecordMapper do
       end
     end
     
+    context 'place' do
+      before(:all) do
+        @rectype = @anthro_profile.rectypes.select{ |rt| rt.name == 'place' }.first
+        @mapper = RecordMapping.new(profile: @anthro_profile, rectype: @rectype)
+        @config = @mapper.hash[:config]
+      end
+      describe NamespaceUris do
+        let(:result) { NamespaceUris.new(profile_config: @anthro_profile.config,
+                                         rectype: 'place',
+                                         mapper_config: @config
+                                        ).hash }
+        let(:expected) { {
+          'places_common' => 'http://collectionspace.org/services/place'
+        } }
+
+        it 'generates hash correctly' do
+          expected.keys.each{ |k| expect(result[k]).to eq(expected[k]) }
+        end
+      end
+    end
+
     context 'taxon' do
       before(:all) do
         @anthro_taxon = @anthro_profile.rectypes.select{ |rt| rt.name == 'taxon' }.first

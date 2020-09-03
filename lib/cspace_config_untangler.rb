@@ -1,5 +1,6 @@
 # standard library
 require 'csv'
+require 'fileutils'
 require 'json'
 require 'logger'
 require 'pp'

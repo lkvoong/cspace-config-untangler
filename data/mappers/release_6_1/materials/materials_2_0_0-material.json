@@ -7,7 +7,7 @@
     "object_name": "Materialitem",
     "profile_basename": "materials",
     "ns_uri": {
-      "materials_common": null
+      "materials_common": "http://collectionspace.org/services/material"
     },
     "identifier_field": "shortIdentifier",
     "authority_subtypes": [

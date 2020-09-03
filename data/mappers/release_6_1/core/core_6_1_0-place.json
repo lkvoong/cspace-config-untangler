@@ -7,7 +7,7 @@
     "object_name": "Placeitem",
     "profile_basename": "core",
     "ns_uri": {
-      "places_common": null
+      "places_common": "http://collectionspace.org/services/place"
     },
     "identifier_field": "shortIdentifier",
     "authority_subtypes": [

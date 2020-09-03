@@ -7,7 +7,7 @@
     "object_name": "Workitem",
     "profile_basename": "bonsai",
     "ns_uri": {
-      "works_common": null
+      "works_common": "http://collectionspace.org/services/work"
     },
     "identifier_field": "shortIdentifier",
     "authority_subtypes": [

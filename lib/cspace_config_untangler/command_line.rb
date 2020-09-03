@@ -54,7 +54,7 @@ module CspaceConfigUntangler
     def list_rec_types
       get_profiles.each{ |p|
         puts "\n#{p}:"
-        puts CCU::Profile.new(p).rectypes.map{ |e| "  #{e.name}" }
+        puts CCU::Profile.new(profile: p).rectypes.map{ |e| "  #{e.name}" }
       }
     end
 
@@ -76,12 +76,14 @@ module CspaceConfigUntangler
       get_profiles.each do |profile|
         puts "Writing mappers for #{profile}..."
         p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
+        dir_path = "#{options[:outputdir]}/#{p.name}"
+        FileUtils.mkdir_p(dir_path)
         p.rectypes.each do |rt|
           puts "  ...#{rt.name}"
           recmapper = RecordMapping.new(profile: p,
                                         rectype: rt
                                        )
-          path = "#{options[:outputdir]}/#{p.name}-#{rt.name}.json"
+          path = "#{dir_path}/#{p.name}-#{rt.name}.json"
           recmapper.to_json(output: path)
         end
       end
@@ -108,7 +110,7 @@ module CspaceConfigUntangler
     def extensions_by_profile
       exts = {}
       get_profiles.each{ |p|
-        CCU::Profile.new(p).extensions.each{ |ext|
+        CCU::Profile.new(profile: p).extensions.each{ |ext|
           if exts.has_key?(ext)
             exts[ext] << p
           else
@@ -126,7 +128,7 @@ module CspaceConfigUntangler
     def write_field_defs
       field_defs = []
       get_profiles.each {|profile|
-        p = CCU::Profile.new(profile)
+        p = CCU::Profile.new(profile: profile)
         if options[:rectype] == 'all'
           rts = p.rectypes.map{ |rt| rt.name }
         else
@@ -157,7 +159,7 @@ module CspaceConfigUntangler
     def write_form_fields
       form_fields = []
       get_profiles.each {|profile|
-        p = CCU::Profile.new(profile)
+        p = CCU::Profile.new(profile: profile)
         if options[:rectype] == 'all'
           rts = p.rectypes.map{ |rt| rt.name }
         else
@@ -211,7 +213,7 @@ The full schema_path should be unique within a record type. Non-unique fields ar
   LONGDESC
     def report_nonunique_fields
       get_profiles.each {|profile|
-        p = CCU::Profile.new(profile)
+        p = CCU::Profile.new(profile: profile)
         h = {}
         p.nonunique_fields.each{ |rt, fields| h[rt] = fields if fields.length > 0 }
         h.each{ |rt, fields| fields.each{ |f| puts "#{@name} - #{rt} - #{f}" } }

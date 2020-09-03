@@ -7,7 +7,7 @@
     "object_name": "Person",
     "profile_basename": "publicart",
     "ns_uri": {
-      "persons_common": null,
+      "persons_common": "http://collectionspace.org/services/person",
       "contacts_common": null,
       "persons_publicart": "http://collectionspace.org/services//domain/publicart"
     },
