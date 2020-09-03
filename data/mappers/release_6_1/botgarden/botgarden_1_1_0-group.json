@@ -8,7 +8,8 @@
     "profile_basename": "botgarden",
     "ns_uri": {
       "groups_common": "http://collectionspace.org/services/group"
-    }
+    },
+    "identifier_field": "title"
   },
   "docstructure": {
     "groups_common": {

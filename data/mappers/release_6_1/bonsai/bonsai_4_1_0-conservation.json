@@ -10,7 +10,8 @@
       "conservation_common": "http://collectionspace.org/services/conservation",
       "conservation_bonsai": "http://collectionspace.org/services/conservation/domain/bonsai",
       "conservation_livingplant": "http://collectionspace.org/services/conservation/domain/livingplant"
-    }
+    },
+    "identifier_field": "conservationNumber"
   },
   "docstructure": {
     "conservation_common": {

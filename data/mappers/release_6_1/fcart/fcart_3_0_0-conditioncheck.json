@@ -9,7 +9,8 @@
     "ns_uri": {
       "conditionchecks_common": "http://collectionspace.org/services/conditioncheck",
       "conditionchecks_variablemedia": null
-    }
+    },
+    "identifier_field": "conditionCheckRefNumber"
   },
   "docstructure": {
     "conditionchecks_common": {

@@ -8,7 +8,8 @@
     "profile_basename": "botgarden",
     "ns_uri": {
       "pottags_common": "http://collectionspace.org/services/pottag"
-    }
+    },
+    "identifier_field": null
   },
   "docstructure": {
     "pottags_common": {

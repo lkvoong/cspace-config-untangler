@@ -10,7 +10,8 @@
       "acquisitions_common": "http://collectionspace.org/services/acquisition",
       "acquisitions_publicart": "http://collectionspace.org/services/acquisition/domain/publicart",
       "acquisitions_commission": null
-    }
+    },
+    "identifier_field": "acquisitionReferenceNumber"
   },
   "docstructure": {
     "acquisitions_common": {

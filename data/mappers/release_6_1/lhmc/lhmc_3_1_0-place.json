@@ -9,7 +9,18 @@
     "ns_uri": {
       "places_common": null,
       "places_lhmc": "http://collectionspace.org/services//domain/lhmc"
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "place"
+      },
+      {
+        "name": "TGN",
+        "servicepath_name": "tgn_place"
+      }
+    ]
   },
   "docstructure": {
     "places_common": {

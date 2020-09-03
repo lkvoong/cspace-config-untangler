@@ -11,7 +11,8 @@
       "collectionobjects_variablemedia": null,
       "collectionobjects_fineart": null,
       "collectionobjects_annotation": "http://collectionspace.org/services/collectionobject/domain/annotation"
-    }
+    },
+    "identifier_field": "objectNumber"
   },
   "docstructure": {
     "collectionobjects_common": {

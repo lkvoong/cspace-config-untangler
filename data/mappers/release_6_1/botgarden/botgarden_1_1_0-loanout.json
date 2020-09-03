@@ -10,7 +10,8 @@
       "loansout_common": "http://collectionspace.org/services/loanout",
       "loansout_botgarden": "http://collectionspace.org/services/loanout/domain/botgarden",
       "loansout_naturalhistory_extension": "http://collectionspace.org/services/loanout/domain/naturalhistory_extension"
-    }
+    },
+    "identifier_field": "loanOutNumber"
   },
   "docstructure": {
     "loansout_botgarden": {

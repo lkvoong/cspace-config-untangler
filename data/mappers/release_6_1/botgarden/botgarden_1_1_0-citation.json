@@ -8,7 +8,18 @@
     "profile_basename": "botgarden",
     "ns_uri": {
       "citations_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "citation"
+      },
+      {
+        "name": "WorldCat",
+        "servicepath_name": "worldcat"
+      }
+    ]
   },
   "docstructure": {
     "citations_common": {

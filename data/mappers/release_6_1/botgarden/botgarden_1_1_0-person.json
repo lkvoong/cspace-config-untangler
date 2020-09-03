@@ -9,7 +9,18 @@
     "ns_uri": {
       "persons_common": null,
       "contacts_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "person"
+      },
+      {
+        "name": "ULAN",
+        "servicepath_name": "ulan_pa"
+      }
+    ]
   },
   "docstructure": {
     "persons_common": {

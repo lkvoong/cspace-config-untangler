@@ -9,7 +9,18 @@
     "ns_uri": {
       "taxon_common": "http://collectionspace.org/services/taxonomy",
       "taxon_herbarium": "http://collectionspace.org/services//domain/herbarium"
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "taxon"
+      },
+      {
+        "name": "Common",
+        "servicepath_name": "common_ta"
+      }
+    ]
   },
   "docstructure": {
     "taxon_common": {

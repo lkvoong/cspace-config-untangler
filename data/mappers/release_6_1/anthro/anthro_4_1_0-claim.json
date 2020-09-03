@@ -9,7 +9,8 @@
     "ns_uri": {
       "claims_common": "http://collectionspace.org/services/claim",
       "claims_nagpra": "http://collectionspace.org/services/claim/domain/nagpra"
-    }
+    },
+    "identifier_field": "claimNumber"
   },
   "docstructure": {
     "claims_common": {

@@ -10,7 +10,18 @@
       "persons_common": null,
       "contacts_common": null,
       "persons_lhmc": "http://collectionspace.org/services//domain/lhmc"
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "person"
+      },
+      {
+        "name": "ULAN",
+        "servicepath_name": "ulan_pa"
+      }
+    ]
   },
   "docstructure": {
     "persons_common": {

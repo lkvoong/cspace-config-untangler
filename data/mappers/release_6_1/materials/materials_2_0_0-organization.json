@@ -9,7 +9,18 @@
     "ns_uri": {
       "organizations_common": null,
       "contacts_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "organization"
+      },
+      {
+        "name": "Shared",
+        "servicepath_name": "organization_shared"
+      }
+    ]
   },
   "docstructure": {
     "organizations_common": {

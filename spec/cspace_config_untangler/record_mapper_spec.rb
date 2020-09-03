@@ -2,13 +2,41 @@ require 'spec_helper'
 
 RSpec.describe CCU::RecordMapper do
   before(:all) do
-    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
-    @anthro_profile = CCU::Profile.new(profile: 'anthro',
-                                       rectypes: ['collectionobject', 'claim', 'osteology', 'taxon'],
-                                       structured_date_treatment: :collapse)    
+    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_1')
+  end
+
+  context 'botgarden' do
+    before(:all) do
+      @profile = CCU::Profile.new(profile: 'botgarden_1_1_0',
+                                  rectypes: ['loanout'],
+                                  structured_date_treatment: :collapse)
+    end
+    context 'loanout' do
+      before(:all) do
+        @loanout = @profile.rectypes.select{ |rt| rt.name == 'loanout' }.first
+        @mapper = RecordMapping.new(profile: @profile, rectype: @loanout)
+        @config = @mapper.hash[:config]
+      end
+      describe RecordMapping do
+        describe '#hash[:config]' do
+          it "hash[:config][:service_type'] = 'procedure'" do
+            expect(@config[:service_type]).to eq('procedure')
+          end
+          it "hash[:config][:identifier_field'] = 'loanOutNumber'" do
+            expect(@config[:identifier_field]).to eq('loanOutNumber')
+          end
+        end
+      end
+    end
   end
 
   context 'anthro' do
+    before(:all) do
+      @anthro_profile = CCU::Profile.new(profile: 'anthro_4_1_0',
+                                         rectypes: ['collectionobject', 'claim',
+                                                    'osteology', 'taxon'],
+                                         structured_date_treatment: :collapse)
+    end
     context 'collectionobject' do
       before(:all) do
         @anthro_co = @anthro_profile.rectypes.select{ |rt| rt.name == 'collectionobject' }.first
@@ -63,20 +91,20 @@ RSpec.describe CCU::RecordMapper do
         end
       end
       describe NamespaceUris do
-      let(:result) { NamespaceUris.new(profile_config: @anthro_profile.config,
-                                       rectype: 'claim',
-                                       mapper_config: @claim_config
-                                      ).hash }
+        let(:result) { NamespaceUris.new(profile_config: @anthro_profile.config,
+                                         rectype: 'claim',
+                                         mapper_config: @claim_config
+                                        ).hash }
 
-      let(:expected) { {
-        'claims_nagpra' => 'http://collectionspace.org/services/claim/domain/nagpra',
-        'claims_common' => 'http://collectionspace.org/services/claim'
-      } }
+        let(:expected) { {
+          'claims_nagpra' => 'http://collectionspace.org/services/claim/domain/nagpra',
+          'claims_common' => 'http://collectionspace.org/services/claim'
+        } }
 
-      it 'generates hash correctly' do
-        expected.keys.each{ |k| expect(result[k]).to eq(expected[k]) }
-      end
+        it 'generates hash correctly' do
+          expected.keys.each{ |k| expect(result[k]).to eq(expected[k]) }
         end
+      end
     end
 
     context 'osteology' do

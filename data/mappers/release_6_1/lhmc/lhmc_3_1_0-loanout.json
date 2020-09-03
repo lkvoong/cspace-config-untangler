@@ -9,7 +9,8 @@
     "ns_uri": {
       "loansout_common": "http://collectionspace.org/services/loanout",
       "loansout_lhmc": "http://collectionspace.org/services/loanout/domain/lhmc"
-    }
+    },
+    "identifier_field": "loanOutNumber"
   },
   "docstructure": {
     "loansout_common": {

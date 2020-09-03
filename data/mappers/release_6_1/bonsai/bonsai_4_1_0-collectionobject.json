@@ -10,7 +10,8 @@
       "collectionobjects_common": "http://collectionspace.org/services/collectionobject",
       "collectionobjects_bonsai": "http://collectionspace.org/services/collectionobject/domain/bonsai",
       "collectionobjects_accessionattributes": "http://collectionspace.org/services/collectionobject/domain/accessionattributes"
-    }
+    },
+    "identifier_field": "objectNumber"
   },
   "docstructure": {
     "collectionobjects_common": {

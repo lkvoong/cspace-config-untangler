@@ -8,7 +8,26 @@
     "profile_basename": "materials",
     "ns_uri": {
       "concepts_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Nomenclature",
+        "servicepath_name": "nomenclature"
+      },
+      {
+        "name": "Occasion",
+        "servicepath_name": "occasion"
+      },
+      {
+        "name": "Material Classification",
+        "servicepath_name": "materialclassification"
+      },
+      {
+        "name": "Shared Material Classification",
+        "servicepath_name": "materialclassification_shared"
+      }
+    ]
   },
   "docstructure": {
     "concepts_common": {

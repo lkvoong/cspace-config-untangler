@@ -9,7 +9,8 @@
     "ns_uri": {
       "conditionchecks_common": "http://collectionspace.org/services/conditioncheck",
       "conditionchecks_publicart": "http://collectionspace.org/services/conditioncheck/domain/publicart"
-    }
+    },
+    "identifier_field": "conditionCheckRefNumber"
   },
   "docstructure": {
     "conditionchecks_common": {

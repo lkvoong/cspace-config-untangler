@@ -9,7 +9,8 @@
     "ns_uri": {
       "media_common": "http://collectionspace.org/services/media",
       "media_materials": "http://collectionspace.org/services/media/domain/materials"
-    }
+    },
+    "identifier_field": "identificationNumber"
   },
   "docstructure": {
     "media_common": {

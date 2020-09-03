@@ -9,7 +9,8 @@
     "ns_uri": {
       "media_common": "http://collectionspace.org/services/media",
       "media_publicart": "http://collectionspace.org/services/media/domain/publicart"
-    }
+    },
+    "identifier_field": "identificationNumber"
   },
   "docstructure": {
     "media_common": {

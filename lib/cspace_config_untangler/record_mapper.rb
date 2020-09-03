@@ -59,18 +59,21 @@ module CspaceConfigUntangler
       def get_id_field
         case @hash[:config][:service_type]
         when 'object'
-          'objectNumber'
+          id_field = 'objectNumber'
         when 'authority'
-          'shortIdentifier'
+          id_field = 'shortIdentifier'
         when 'procedure'
-          # osteology is currently the only procedure record with >1 required field
-          # all other procedures only require their respective ID field
-          if [@hash[:config][:document_name]] == 'osteology'
-            'InventoryID'
-          else
-            @mappings.select{ |m| m.required == 'y' }.first.fieldname
+          mapping = @mappings.select{ |m| m.required == 'y' }
+          if mapping.length == 1
+            id_field = mapping.first.fieldname
+          elsif mapping.length > 1
+            id_field = 'InventoryID' if @rectype.name == 'osteology'
+          elsif mapping.empty?
+            id_field = 'loanOutNumber'if @profile.name.start_with?('botgarden') &&
+              @rectype.name == 'loanout'
           end
         end
+        id_field
       end
       
       def create_hierarchy

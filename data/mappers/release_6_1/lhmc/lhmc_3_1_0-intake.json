@@ -9,7 +9,8 @@
     "ns_uri": {
       "intakes_common": "http://collectionspace.org/services/intake",
       "intakes_lhmc": "http://collectionspace.org/services/intake/domain/lhmc"
-    }
+    },
+    "identifier_field": "entryNumber"
   },
   "docstructure": {
     "intakes_common": {

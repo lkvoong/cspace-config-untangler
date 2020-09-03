@@ -8,7 +8,8 @@
     "profile_basename": "publicart",
     "ns_uri": {
       "loansin_common": "http://collectionspace.org/services/loanin"
-    }
+    },
+    "identifier_field": "loanInNumber"
   },
   "docstructure": {
     "loansin_common": {

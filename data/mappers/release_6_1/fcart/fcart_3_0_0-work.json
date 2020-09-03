@@ -8,7 +8,18 @@
     "profile_basename": "fcart",
     "ns_uri": {
       "works_common": null
-    }
+    },
+    "identifier_field": "shortIdentifier",
+    "authority_subtypes": [
+      {
+        "name": "Local",
+        "servicepath_name": "work"
+      },
+      {
+        "name": "CONA",
+        "servicepath_name": "cona_work"
+      }
+    ]
   },
   "docstructure": {
     "works_common": {

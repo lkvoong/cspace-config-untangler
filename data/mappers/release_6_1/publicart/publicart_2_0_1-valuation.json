@@ -9,7 +9,8 @@
     "ns_uri": {
       "valuationcontrols_common": "http://collectionspace.org/services/valuationcontrol",
       "valuationcontrols_publicart": "http://collectionspace.org/services/valuationcontrol/domain/publicart"
-    }
+    },
+    "identifier_field": "valuationcontrolRefNumber"
   },
   "docstructure": {
     "valuationcontrols_common": {
