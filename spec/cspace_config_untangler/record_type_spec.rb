@@ -98,6 +98,16 @@ RSpec.describe CCU::RecordType do
 
     describe '.batch_mappings' do
     context 'anthro profile' do
+      context 'collectionobject recordtype' do
+        before(:all) do
+          @mappings = @anthro_co.batch_mappings
+        end
+        it 'removes computedCurrentLocation mappings' do
+          result = @mappings.select{ |m| m.fieldname == 'computedCurrentLocation' }
+          expect(result).to be_empty
+        end
+      end
+
       context 'movement recordtype' do
         before(:all) do
           @mappings = @anthro_movement.batch_mappings

@@ -95,10 +95,8 @@ module CspaceConfigUntangler
       puts 'Record mappers without a config/identifier_field value'
       rts = options[:rectypes].split(',').map(&:strip)
       get_profiles.each do |profile|
-#        puts profile
         p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
         p.rectypes.each do |rt|
-#          puts rt.name
           recmapper = RecordMapping.new(profile: p,
                                         rectype: rt
                                        ).hash
