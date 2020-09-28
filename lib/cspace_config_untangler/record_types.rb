@@ -84,7 +84,9 @@ module CspaceConfigUntangler
     #   some unique ID field is required for batch import/processing
     def batch_mappings
       mappings = self.mappings
-      if @name == 'movement'
+      if @name == 'collectionobject'
+        mappings = mappings.reject{ |m| m.fieldname == 'computedCurrentLocation' }
+      elsif @name == 'movement'
         unless @profile.name.start_with?('botgarden')
           mapping = mappings.select{ |m| m.fieldname == 'movementReferenceNumber' }.first
           mapping.required = 'y'
