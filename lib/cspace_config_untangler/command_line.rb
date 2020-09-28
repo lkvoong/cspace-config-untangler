@@ -89,6 +89,25 @@ module CspaceConfigUntangler
       end
     end
 
+    desc 'report_mappers_without_identifier_field', 'outputs to screen a list of mappers where no identifier_field is set'
+    option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to write mappers for; if blank, will process all record types in profile', :default => ''
+    def report_mappers_without_identifier_field
+      puts 'Record mappers without a config/identifier_field value'
+      rts = options[:rectypes].split(',').map(&:strip)
+      get_profiles.each do |profile|
+#        puts profile
+        p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
+        p.rectypes.each do |rt|
+#          puts rt.name
+          recmapper = RecordMapping.new(profile: p,
+                                        rectype: rt
+                                       ).hash
+          id_field = recmapper[:config][:identifier_field]
+          puts "#{profile} -- #{rt.name}" if id_field.blank?
+        end
+      end
+    end
+
     desc 'write_csv_templates', 'write batch import CSV templates for given (or all) record types in the given profiles'
     option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to create templates for; if blank, will process all record types in profile', :default => ''
     option :outputdir, :desc => 'path to output directory. File name will be: profile-rectype_template.csv', :default => 'data/templates'

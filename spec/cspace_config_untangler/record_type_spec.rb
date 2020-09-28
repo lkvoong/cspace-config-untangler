@@ -5,10 +5,11 @@ RSpec.describe CCU::RecordType do
   before(:all) do
     CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
     @core_profile = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject'])
-    @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: ['collectionobject'])
+    @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: %w[collectionobject movement])
     @bg_profile = CCU::Profile.new(profile: 'botgarden', rectypes: ['collectionobject'])
     @core_co = @core_profile.rectypes[0]
     @anthro_co = @anthro_profile.rectypes[0]
+    @anthro_movement = @anthro_profile.rectypes[1]
     @bg_co = @bg_profile.rectypes[0]
   end
   describe '.new' do
@@ -78,6 +79,33 @@ RSpec.describe CCU::RecordType do
           it 'columnnames: fieldLocVerbatim localityGroup_fieldLocVerbatim' do
             result = @mappings.select{ |m| m.fieldname == 'fieldLocVerbatim' }.map{ |m| m.datacolumn }.sort
             expect(result).to eq(%w[fieldLocVerbatim localityGroup_fieldLocVerbatim])
+          end
+        end
+      end
+      context 'movement recordtype' do
+        before(:all) do
+          @mappings = @anthro_movement.mappings
+        end
+        context 'fieldname = movementReferenceNumber' do
+          it 'is not required' do
+            result = @mappings.select{ |m| m.fieldname == 'movementReferenceNumber' }.map{ |m| m.required }.sort
+            expect(result).to eq(%w[n])
+          end
+        end
+      end
+    end
+  end
+
+    describe '.batch_mappings' do
+    context 'anthro profile' do
+      context 'movement recordtype' do
+        before(:all) do
+          @mappings = @anthro_movement.batch_mappings
+        end
+        context 'fieldname = movementReferenceNumber' do
+          it 'is required' do
+            result = @mappings.select{ |m| m.fieldname == 'movementReferenceNumber' }.map{ |m| m.required }.sort
+            expect(result).to eq(%w[y])
           end
         end
       end
