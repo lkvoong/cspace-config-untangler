@@ -79,6 +79,29 @@ module CspaceConfigUntangler
       end
       mappings
     end
+
+    # sets up "faux-required" fields for record types that do not have any required fields
+    #   some unique ID field is required for batch import/processing
+    def batch_mappings
+      mappings = self.mappings
+      if @name == 'movement'
+        unless @profile.name.start_with?('botgarden')
+          mapping = mappings.select{ |m| m.fieldname == 'movementReferenceNumber' }.first
+          mapping.required = 'y'
+        end
+      end
+      if @profile.name.start_with?('botgarden')
+        if @name == 'loanout'
+          mapping = mappings.select{ |m| m.fieldname == 'loanOutNumber' }.first
+          mapping.required = 'y'
+        end
+        if @name == 'objectexit'
+          mapping = mappings.select{ |m| m.fieldname == 'exitNumber' }.first
+          mapping.required = 'y'
+        end
+      end
+      mappings
+    end
     
     private
 

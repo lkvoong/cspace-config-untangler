@@ -12,7 +12,7 @@ module CspaceConfigUntangler
         @profile = profile
         @rectype = rectype
         @config = @profile.config
-        @mappings = @rectype.mappings
+        @mappings = @rectype.batch_mappings
         @csvdata = []
         build_template
       end

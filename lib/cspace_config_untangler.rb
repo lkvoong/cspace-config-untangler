@@ -8,6 +8,7 @@ require 'yaml'
 
 # external gems
 require 'bundler/setup'
+require 'facets/kernel/blank'
 require 'http'
 require 'nokogiri'
 require 'pry'

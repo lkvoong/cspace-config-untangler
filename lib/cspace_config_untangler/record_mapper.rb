@@ -11,7 +11,7 @@ module CspaceConfigUntangler
       def initialize(profile:, rectype:)
         @profile = profile
         @rectype = rectype
-        @mappings = @rectype.mappings
+        @mappings = @rectype.batch_mappings
         @config = @profile.config
         @hash = {}
         build_hash
@@ -55,7 +55,7 @@ module CspaceConfigUntangler
         end
         result
       end
-      
+
       def get_id_field
         case @hash[:config][:service_type]
         when 'object'
@@ -67,10 +67,9 @@ module CspaceConfigUntangler
           if mapping.length == 1
             id_field = mapping.first.fieldname
           elsif mapping.length > 1
+            # osteology has 3 required fields, but only the ID is suitable for use here
             id_field = 'InventoryID' if @rectype.name == 'osteology'
-          elsif mapping.empty?
-            id_field = 'loanOutNumber'if @profile.name.start_with?('botgarden') &&
-              @rectype.name == 'loanout'
+            id_field = 'movementReferenceNumber' if @rectype.name == 'movement' && !@profile.name.start_with?('botgarden')
           end
         end
         id_field
