@@ -2,6 +2,103 @@ require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
   module RecordMapper
+    RecordMapper = CspaceConfigUntangler::RecordMapper
+
+    class Validator
+      attr_reader :path, :mapper, :valid, :errors, :validated
+      def initialize(path)
+        @path = path
+        @valid = false
+        @validated = false
+        @errors = []
+        begin
+          @mapper = JSON.parse(File.read(@path))
+        rescue JSON::ParserError
+          @errors <<  "#{@path} is not a valid JSON file"
+          @mapper = nil
+        end
+      end
+
+      def validate
+        @validated = true
+        return if @mapper.nil?
+        results = [
+        main_keys_present,
+        has_ns_uris,
+        has_id_field,
+        has_field_mapping_namespaces
+      ]
+
+        @valid = true if results.uniq == [true]
+      end
+
+      def report
+        validate unless @validated
+        unless @valid
+          puts ''
+          puts "INVALID: #{@path}"
+          @errors.each{ |err| puts "  #{err}" }
+          puts ''
+        end
+      end
+
+      private
+
+      def has_field_mapping_namespaces
+        mappings = @mapper.dig('mappings')
+        if mappings.blank?
+          @errors << 'No field mappings specified'
+          return false
+        end
+
+        missing_ns = mappings.select{ |mapping| mapping['namespace'].blank? }
+        if missing_ns.empty?
+          return true
+        else
+          missing_ns.each{ |mapping| @errors << "Field mapping(s) for #{mapping['fieldname']} lack(s) namespace" }
+          return false
+        end
+      end
+
+      def has_id_field
+        id_field = @mapper.dig('config', 'identifier_field')
+        if id_field.blank?
+          @errors << 'No identifier field specified in config'
+          return false
+        else
+          return true
+        end
+      end
+
+      def has_ns_uris
+        ns_hash = @mapper.dig('config', 'ns_uri')
+        if ns_hash.nil?
+          @errors << 'No namespace hash in config'
+          return false
+        end
+
+        null_uris = ns_hash.select{ |ns, uri| uri.nil? }
+        if null_uris.empty?
+          return true
+        else
+          null_uris.keys.each{ |ns| @errors << "No namespace URI extracted for #{ns}" }
+          return false
+        end
+      end
+
+      def main_keys_present
+        expected = %w[config docstructure mappings]
+        keys = @mapper.keys
+        diff = expected - keys
+        if diff.empty?
+          true
+        else
+          diff.each{ |key| @errors << "Missing top-level key: #{key}" }
+          false
+        end
+      end
+    end
+    
     class RecordMapping
       ::RecordMapping = CspaceConfigUntangler::RecordMapper::RecordMapping
       attr_reader :hash, :mappings

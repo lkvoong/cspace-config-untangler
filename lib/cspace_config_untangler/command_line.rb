@@ -112,21 +112,24 @@ module CspaceConfigUntangler
       end
     end
 
-    desc 'report_mappers_without_identifier_field', 'Outputs to screen a list of mappers where no identifier_field is set'
-    option :rectypes, desc: 'comma-delimited (no spaces) list of record types to write mappers for; if blank, will process all record types in profile', default: '', aliases: '-r'
-    def report_mappers_without_identifier_field
-      puts 'Record mappers without a config/identifier_field value'
-      rts = options[:rectypes].split(',').map(&:strip)
-      get_profiles.each do |profile|
-        p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
-        p.rectypes.each do |rt|
-          recmapper = RecordMapping.new(profile: p,
-                                        rectype: rt
-                                       ).hash
-          id_field = recmapper[:config][:identifier_field]
-          puts "#{profile} -- #{rt.name}" if id_field.blank?
-        end
+    desc 'validate_mappers', 'Prints to screen a validation report of the JSON mappers in a directory'
+    long_desc <<-LONGDESC
+    The output directory given will be recursively traversed to find .json files. It is
+      expected that all .json files in this directory structure will be RecordMappers.
+
+    Currently the validation checks for:
+      - expected top-level keys
+      - a URI for every namespace defined for the Mapper
+      - a namespace defined for every field mapping
+  LONGDESC
+    option :input, desc: 'Path to input directory containing JSON mappers. Will be traversed recursively', default: 'data/mappers', aliases: '-i'
+    def validate_mappers
+      mapper_paths = Dir.glob("#{options[:input]}/**/*.json")
+      mapper_paths.each do |path|
+        validator = RecordMapper::Validator.new(path)
+        validator.report
       end
+      puts "\n\nAll mappers validated. Any errors were reported above. Nothing above means all are valid!"
     end
 
     desc 'extensions_by_profile', 'List all extensions used in profiles, and list which profile uses each'
