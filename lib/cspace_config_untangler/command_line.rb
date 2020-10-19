@@ -34,23 +34,23 @@ module CspaceConfigUntangler
       default: CCU::MAINPROFILE,
       aliases: '-p'
     
-    desc 'main_profile', 'print the name of the main profile'
+    desc 'main_profile', 'Print the name of the main profile'
     def main_profile
       puts CCU::MAINPROFILE
     end
 
-    desc 'all_profiles', 'print the names of all known profiles'
+    desc 'all_profiles', 'Print the names of all known profiles'
     def all_profiles
       puts [CCU::MAINPROFILE, CCU::PROFILES].flatten.uniq.sort
     end
 
-    desc 'check_profiles', 'print the names of profiles that will be processed'
+    desc 'check_profiles', 'Print the names of profiles that will be processed'
     def check_profiles
       profiles = get_profiles
       puts profiles
     end
 
-    desc 'list_rec_types', 'lists record types in each profile'
+    desc 'list_rec_types', 'Lists record types in each profile'
     def list_rec_types
       get_profiles.each{ |p|
         puts "\n#{p}:"
@@ -58,7 +58,7 @@ module CspaceConfigUntangler
       }
     end
 
-    desc 'readable_profiles', 'create file containing JSON that is not all one line'
+    desc 'readable_profiles', 'Reformats (in place) JSON profile configs so that they are not one very long line. Non-destructive if run over JSON multiple times.'
     def readable_profiles
       get_profiles.each{ |p|
         profile = CCU::Profile.new(profile: p).config
@@ -68,15 +68,17 @@ module CspaceConfigUntangler
       }
     end
 
-    desc 'write_mappers', 'writes JSON serializations of RecordMappers for the given rectype(s) for the given profiles'
-    option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to write mappers for; if blank, will process all record types in profile', :default => ''
-    option :outputdir, desc: 'path to output directory. File name will be: profile-rectype.json', default: 'data/mappers'
+    desc 'write_mappers', 'Writes JSON serializations of RecordMappers for the given rectype(s) for the given profiles'
+    option :rectypes, desc: 'Comma-delimited (no spaces) list of record types to write mappers for. If blank, will process all record types in profile', default: '', aliases: '-r' 
+    option :outputdir, desc: 'Path to output directory. File name will be: profile-rectype.json', default: 'data/mappers', aliases: '-o'
+    option :subdirs, desc: 'y/n. Whether to organize into subdirectories within given output directory by normalized profile name. Normalized profile name is the profile with version info/underscores removed.', default: 'n', aliases: '-s'
     def write_mappers
       rts = options[:rectypes].split(',').map(&:strip)
       get_profiles.each do |profile|
         puts "Writing mappers for #{profile}..."
+        norm_name = profile.sub(/_.*/, '')
         p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
-        dir_path = "#{options[:outputdir]}/#{p.name}"
+        dir_path = options[:subdirs] == 'y' ? "#{options[:outputdir]}/#{norm_name}" : options[:outputdir]
         FileUtils.mkdir_p(dir_path)
         p.rectypes.each do |rt|
           puts "  ...#{rt.name}"
@@ -89,8 +91,29 @@ module CspaceConfigUntangler
       end
     end
 
-    desc 'report_mappers_without_identifier_field', 'outputs to screen a list of mappers where no identifier_field is set'
-    option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to write mappers for; if blank, will process all record types in profile', :default => ''
+    desc 'write_csv_templates', 'Write batch import CSV templates for given (or all) record types in the given profiles'
+    option :rectypes, desc: 'Comma-delimited (no spaces) list of record types to create templates for; if blank, will process all record types in profile', default: '', aliases: '-r'
+    option :outputdir, desc: 'Path to output directory. File name will be: profile-rectype_template.csv', default:'data/templates', aliases: '-o'
+    option :subdirs, desc: 'y/n. Whether to organize into subdirectories within given output directory by normalized profile name. Normalized profile name is the profile with version info/underscores removed.', default: 'n', aliases: '-s'
+    def write_csv_templates
+      rts = options[:rectypes].split(',').map(&:strip)
+      get_profiles.each do |profile|
+        puts "Writing templates for #{profile}..."
+        norm_name = profile.sub(/_.*/, '')
+        p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
+        dir_path = options[:subdirs] == 'y' ? "#{options[:outputdir]}/#{norm_name}" : options[:outputdir]
+        FileUtils.mkdir_p(dir_path)
+        p.rectypes.each do |rt|
+          puts "  ...#{rt.name}"
+          CsvTemplate.new(profile: p,
+                          rectype: rt
+                         ).write(dir_path)
+        end
+      end
+    end
+
+    desc 'report_mappers_without_identifier_field', 'Outputs to screen a list of mappers where no identifier_field is set'
+    option :rectypes, desc: 'comma-delimited (no spaces) list of record types to write mappers for; if blank, will process all record types in profile', default: '', aliases: '-r'
     def report_mappers_without_identifier_field
       puts 'Record mappers without a config/identifier_field value'
       rts = options[:rectypes].split(',').map(&:strip)
@@ -106,24 +129,7 @@ module CspaceConfigUntangler
       end
     end
 
-    desc 'write_csv_templates', 'write batch import CSV templates for given (or all) record types in the given profiles'
-    option :rectypes, :desc => 'comma-delimited (no spaces) list of record types to create templates for; if blank, will process all record types in profile', :default => ''
-    option :outputdir, :desc => 'path to output directory. File name will be: profile-rectype_template.csv', :default => 'data/templates'
-    def write_csv_templates
-      rts = options[:rectypes].split(',').map(&:strip)
-      get_profiles.each do |profile|
-        puts "Writing templates for #{profile}..."
-        p = CCU::Profile.new(profile: profile, rectypes: rts, structured_date_treatment: :collapse)
-        p.rectypes.each do |rt|
-          puts "  ...#{rt.name}"
-          CsvTemplate.new(profile: p,
-                          rectype: rt
-                         ).write(options[:outputdir])
-        end
-      end
-    end
-
-    desc 'extensions_by_profile', 'list all extensions used in profiles, and list which profile uses each'
+    desc 'extensions_by_profile', 'List all extensions used in profiles, and list which profile uses each'
     def extensions_by_profile
       exts = {}
       get_profiles.each{ |p|
@@ -138,10 +144,10 @@ module CspaceConfigUntangler
       pp(exts)
     end
 
-    desc 'write_field_defs', 'write file containing field definition data'
-    option :rectype, :desc => 'the record type(s) to get fields for', :default => 'all'
-    option :format, :desc => 'output format: csv or json', :default => 'csv'
-    option :output, :desc => 'path to output file', :default => 'data/field_definitions.csv'
+    desc 'write_field_defs', 'Write file containing field definition data'
+    option :rectype, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
+    option :format, desc: 'Output format: csv or json', default: 'csv', aliases: '-f'
+    option :output, desc: 'Path to output file', default: 'data/field_definitions.csv', aliases: '-o'
     def write_field_defs
       field_defs = []
       get_profiles.each {|profile|
@@ -166,13 +172,15 @@ module CspaceConfigUntangler
         File.open(options[:output], 'w'){ |file|
           file.write(JSON.pretty_generate(field_defs.map{ |fd| fd.to_h }))
         }
+      else
+        puts 'Format must be csv or json'
       end
     end
 
-    desc 'write_form_fields', 'write file containing form field data'
-    option :rectype, :desc => 'the record type(s) to get fields for', :default => 'all'
-    option :format, :desc => 'output format: csv or json', :default => 'csv'
-    option :output, :desc => 'path to output file', :default => 'data/form_fields.csv'
+    desc 'write_form_fields', 'Write file containing form field data'
+    option :rectype, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
+    option :format, desc: 'Output format: csv or json', default: 'csv', aliases: '-f'
+    option :output, desc: 'Path to output file', default: 'data/form_fields.csv', aliases: '-o'
     def write_form_fields
       form_fields = []
       get_profiles.each {|profile|
@@ -195,16 +203,18 @@ module CspaceConfigUntangler
         File.open(options[:output], 'w'){ |file|
           file.write(JSON.pretty_generate(form_fields.map{ |ff| ff.to_h }))
         }
+      else
+        puts 'Format must be csv or json'
       end
     end
 
-    desc 'write_fields_csv', 'write CSV containing field data'
-    option :output, :desc => 'path to output file', :default => 'data/fields.csv'
-    option :rectypes, :desc => 'Comma separated list of record types to include. Defaults to all.', :default => 'all'
+    desc 'write_fields_csv', 'Write CSV containing full field data'
+    option :output, desc: 'Path to output file', default: 'data/fields.csv', aliases: '-o'
+    option :rectypes, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
     option :structured_date,
-      :desc => 'explode: report all individual structured date fields; collapse: report the parent of individual structured date fields as the field',
-      :default => 'explode'
-    
+      desc: 'explode: report all individual structured date fields; collapse: report the parent of individual structured date fields as the field',
+      default: 'explode',
+      aliases: '-sd'
     def write_fields_csv
       unless %w[explode collapse].include?(options[:structured_date])
         puts '--structured_date parameter must be either "explode" or "collapse"'
@@ -222,7 +232,7 @@ module CspaceConfigUntangler
       }
     end
 
-    desc 'report_nonunique_fields', 'print list of non-unique fields per profile'
+    desc 'report_nonunique_fields', 'Print list of non-unique fields per profile'
     long_desc <<-LONGDESC
 Uniqueness is determined by the full XML schema, i.e. the schema_path plus the field name.
 
@@ -237,8 +247,8 @@ The full schema_path should be unique within a record type. Non-unique fields ar
       }
     end
     
-    desc 'compare_profiles', 'outputs a comparison of two profiles in CSV format'
-    option :output, :desc => 'path to directory in which to output file', :default => 'data'
+    desc 'compare_profiles', 'Outputs a comparison of two profiles in CSV format'
+    option :output, desc: 'Path to directory in which to output file. Name of the file is hardcoded, using the names of the profiles.', default: 'data', aliases: '-o'
     def compare_profiles
       if options[:profiles] == 'all'
         profiles = get_profiles
