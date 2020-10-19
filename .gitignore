@@ -13,6 +13,7 @@ Gemfile.lock
 .rspec_status
 
 # data to ignore
+*.csv
 *.xlsx
 /data/profile_config.yaml
 /data/comparisons/private
