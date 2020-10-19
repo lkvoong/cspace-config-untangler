@@ -9,7 +9,7 @@
     "ns_uri": {
       "movements_common": "http://collectionspace.org/services/movement"
     },
-    "identifier_field": null
+    "identifier_field": "movementReferenceNumber"
   },
   "docstructure": {
     "movements_common": {
@@ -30,13 +30,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementReferenceNumber"
+      "datacolumn": "movementReferenceNumber",
+      "required": "y"
     },
     {
       "fieldname": "normalLocation",
@@ -52,13 +52,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationLocationLocal"
+      "datacolumn": "normalLocationLocationLocal",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -74,13 +74,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationLocationOffsite"
+      "datacolumn": "normalLocationLocationOffsite",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -96,13 +96,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationOrganization"
+      "datacolumn": "normalLocationOrganization",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -118,13 +118,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationLocationLocal"
+      "datacolumn": "currentLocationLocationLocal",
+      "required": "y"
     },
     {
       "fieldname": "currentLocation",
@@ -140,13 +140,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationLocationOffsite"
+      "datacolumn": "currentLocationLocationOffsite",
+      "required": "y"
     },
     {
       "fieldname": "currentLocation",
@@ -162,13 +162,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationOrganization"
+      "datacolumn": "currentLocationOrganization",
+      "required": "y"
     },
     {
       "fieldname": "currentLocationFitness",
@@ -180,7 +180,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -189,7 +188,8 @@
         "temporary",
         "unsuitable"
       ],
-      "datacolumn": "currentLocationFitness"
+      "datacolumn": "currentLocationFitness",
+      "required": "n"
     },
     {
       "fieldname": "currentLocationNote",
@@ -201,13 +201,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationNote"
+      "datacolumn": "currentLocationNote",
+      "required": "n"
     },
     {
       "fieldname": "locationDate",
@@ -219,13 +219,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationDate"
+      "datacolumn": "locationDate",
+      "required": "n"
     },
     {
       "fieldname": "reasonForMove",
@@ -237,7 +237,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -249,7 +248,8 @@
         "photography",
         "research"
       ],
-      "datacolumn": "reasonForMove"
+      "datacolumn": "reasonForMove",
+      "required": "n"
     },
     {
       "fieldname": "movementMethod",
@@ -261,7 +261,6 @@
         "movementMethods"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
@@ -269,7 +268,8 @@
         "handcarried",
         "trolley"
       ],
-      "datacolumn": "movementMethod"
+      "datacolumn": "movementMethod",
+      "required": "n"
     },
     {
       "fieldname": "plannedRemovalDate",
@@ -281,13 +281,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "plannedRemovalDate"
+      "datacolumn": "plannedRemovalDate",
+      "required": "n"
     },
     {
       "fieldname": "removalDate",
@@ -299,13 +299,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "removalDate"
+      "datacolumn": "removalDate",
+      "required": "n"
     },
     {
       "fieldname": "movementContact",
@@ -321,13 +321,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementContact"
+      "datacolumn": "movementContact",
+      "required": "n"
     },
     {
       "fieldname": "movementNote",
@@ -339,13 +339,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementNote"
+      "datacolumn": "movementNote",
+      "required": "n"
     },
     {
       "fieldname": "inventoryActionRequired",
@@ -357,7 +357,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -365,7 +364,8 @@
         "preservation",
         "re-housing"
       ],
-      "datacolumn": "inventoryActionRequired"
+      "datacolumn": "inventoryActionRequired",
+      "required": "n"
     },
     {
       "fieldname": "frequencyForInventory",
@@ -377,7 +377,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -387,7 +386,8 @@
         "semi-annually",
         "weekly"
       ],
-      "datacolumn": "frequencyForInventory"
+      "datacolumn": "frequencyForInventory",
+      "required": "n"
     },
     {
       "fieldname": "inventoryDate",
@@ -399,13 +399,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "inventoryDate"
+      "datacolumn": "inventoryDate",
+      "required": "n"
     },
     {
       "fieldname": "nextInventoryDate",
@@ -417,13 +417,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nextInventoryDate"
+      "datacolumn": "nextInventoryDate",
+      "required": "n"
     },
     {
       "fieldname": "inventoryContact",
@@ -439,13 +439,13 @@
         "inventoryContactList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "inventoryContact"
+      "datacolumn": "inventoryContact",
+      "required": "n"
     },
     {
       "fieldname": "inventoryNote",
@@ -457,13 +457,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "inventoryNote"
+      "datacolumn": "inventoryNote",
+      "required": "n"
     }
   ]
 }
