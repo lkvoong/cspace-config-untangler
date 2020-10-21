@@ -3,8 +3,9 @@ require 'spec_helper'
 RSpec.describe CCU::FieldMap do
   before(:all) do
     CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
-  @core_profile = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject', 'concept'], structured_date_treatment: :collapse)
+  @core_profile = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject', 'concept', 'movement'], structured_date_treatment: :collapse)
   @fields = @core_profile.fields
+  @currentLocation = @fields.select{ |f| f.rectype.name == 'movement' && f.name == 'currentLocation' }[0]
   @contentConcept = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'contentConcept' }[0]
   @assocActivity = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocActivity' }[0]
   @assocStructuredDateGroup = @fields.select{ |f| f.rectype.name == 'collectionobject' && f.name == 'assocStructuredDateGroup' }[0]
@@ -34,6 +35,25 @@ RSpec.describe CCU::FieldMap do
         it 'mappings datacolumns = contentConceptAssociated contentConceptMaterial' do
           result = mappings.map{ |m| m.datacolumn }.sort
             expect(result).to eq(%w[contentConceptAssociated contentConceptMaterial])
+        end
+
+        describe '.to_h' do
+          it 'gets all attributes' do
+            hash = mappings[0].to_h
+            expect(hash.key?(:datacolumn)).to be true
+          end
+        end
+      end
+
+      context 'currentLocation' do
+        let(:mappings) { FieldMapper.new(field: @currentLocation).mappings }
+        it 'mappings have source_type = authority' do
+          result = mappings.map{ |m| m.source_type }
+          expect(result).to eq(%w[authority authority authority])
+        end
+        it 'mappings datacolumns = currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization' do
+          result = mappings.map{ |m| m.datacolumn }.sort
+          expect(result).to eq(%w[currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization])
         end
 
         describe '.to_h' do
