@@ -1,13 +1,15 @@
 require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
+
+  
   class Field
-  attr_reader :name, :ns, :ns_for_id, :panel, :ui_path, :id,
+    attr_reader :name, :ns, :ns_for_id, :panel, :ui_path, :id,
       :schema_path,
       :repeats, :in_repeating_group,
       :data_type, :value_source, :value_list,
       :required
-  attr_accessor :to_csv, :profile, :rectype
+    attr_accessor :to_csv, :profile, :rectype
 
     def initialize(rectype_obj, form_field)
       ff = form_field
@@ -161,5 +163,27 @@ module CspaceConfigUntangler
     end    
   end #class Field
   
-  
+  # Provides a way to force a field external to the configs into Untangler output
+  # Initially used only to make CSV templates for Media record types include a mediaFileURI field
+  # See the `media_uri_field` private method in record_types.rb for how to set up field_hash parameter.
+  class ForcedField < Field
+    def initialize(rectype_obj, field_hash)
+      @rectype = rectype_obj
+      @profile = @rectype.profile
+      @name = field_hash[:name]
+      @ns = field_hash[:ns]
+      @ns_for_id = @ns
+      @panel = ''
+      @ui_path = []
+      @id = "#{@ns}.#{@name}"
+      @schema_path = []
+      @repeats = field_hash[:repeats]
+      @in_repeating_group = field_hash[:in_repeating_group]
+      @data_type = field_hash[:data_type]
+      @value_source = field_hash[:value_source]
+      @value_list = field_hash[:value_list]
+      @required = field_hash[:required]
+      @to_csv = format_csv
+    end
+  end
 end #module

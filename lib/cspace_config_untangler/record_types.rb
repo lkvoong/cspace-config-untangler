@@ -39,6 +39,7 @@ module CspaceConfigUntangler
       fields = form_fields.map{ |ff| CCU::Field.new(self, ff) }
       fields = explode_structured_date_fields(fields) if @structured_date_treatment == :explode
       fields = fields.flatten
+      fields << media_uri_field if @name == 'media'
       @nonunique_fields = get_nonunique_fields(fields)
       return fields
     end
@@ -68,7 +69,7 @@ module CspaceConfigUntangler
       checkhash = {}
       mappings = fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
       # ensure unique datacolumn values for templates and mapper
-        mappings.each do |mapping|
+      mappings.each do |mapping|
         if checkhash.key?(mapping.datacolumn)
           add = mapping.xpath.empty? ? mapping.namespace.split('_').last : mapping.xpath.last
           mapping.datacolumn = "#{add}_#{mapping.datacolumn}"
@@ -91,6 +92,8 @@ module CspaceConfigUntangler
           mapping = mappings.select{ |m| m.fieldname == 'movementReferenceNumber' }.first
           mapping.required = 'y'
         end
+      elsif @name == 'media'
+        mappings = mappings.reject{ |m| m.fieldname == 'mediaFileURI' }
       end
       if @profile.name.start_with?('botgarden')
         if @name == 'loanout'
@@ -106,6 +109,20 @@ module CspaceConfigUntangler
     end
     
     private
+
+    def media_uri_field
+      field_hash = {
+        name: 'mediaFileURI',
+        ns: 'not-mapped',
+        repeats: 'n',
+        in_repeating_group: 'n/a',
+        data_type: 'string',
+        value_source: [],
+        value_list: [],
+        required: 'n'
+      }
+      CCU::ForcedField.new(self, field_hash)
+    end
 
     def get_forms
       if @config.dig('forms') && @name != 'blob'

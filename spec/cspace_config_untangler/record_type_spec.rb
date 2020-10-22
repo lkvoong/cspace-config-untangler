@@ -4,12 +4,14 @@ RSpec.describe CCU::RecordType do
 
   before(:all) do
     CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
-    @core_profile = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject'])
-    @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: %w[collectionobject movement])
-    @bg_profile = CCU::Profile.new(profile: 'botgarden', rectypes: ['collectionobject'])
+    @core_profile = CCU::Profile.new(profile: 'core', rectypes: %w[collectionobject media])
+    @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: %w[collectionobject movement media])
+    @bg_profile = CCU::Profile.new(profile: 'botgarden', rectypes: %w[collectionobject])
     @core_co = @core_profile.rectypes[0]
+    @core_media = @core_profile.rectypes[1]
     @anthro_co = @anthro_profile.rectypes[0]
     @anthro_movement = @anthro_profile.rectypes[1]
+    @anthro_media = @anthro_profile.rectypes[2]
     @bg_co = @bg_profile.rectypes[0]
   end
   describe '.new' do
@@ -96,6 +98,20 @@ RSpec.describe CCU::RecordType do
     end
   end
 
+  describe '.fields' do
+    context 'core profile' do
+      context 'media recordtype' do
+        before(:all) do
+          @fields = @core_media.fields
+        end
+        it 'includes mediaFileURI field' do
+          result = @fields.select{ |f| f.name == 'mediaFileURI' }
+          expect(result.length).to eq(1)
+        end
+      end
+    end
+  end
+
     describe '.batch_mappings' do
     context 'anthro profile' do
       context 'collectionobject recordtype' do
@@ -107,7 +123,15 @@ RSpec.describe CCU::RecordType do
           expect(result).to be_empty
         end
       end
-
+      context 'media recordtype' do
+        before(:all) do
+          @mappings = @anthro_media.batch_mappings
+        end
+        it 'removes mediaFileURI mappings' do
+          result = @mappings.select{ |m| m.fieldname == 'mediaFileURI' }
+          expect(result).to be_empty
+        end
+      end
       context 'movement recordtype' do
         before(:all) do
           @mappings = @anthro_movement.batch_mappings
