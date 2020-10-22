@@ -2,7 +2,7 @@
   "allowDeleteHierarchyLeaves": false,
   "autocompleteFindDelay": 500,
   "autocompleteMinLength": 3,
-  "basename": "/cspace/core",
+  "basename": "/cspace/lhmc",
   "className": "",
   "container": "#cspace",
   "defaultAdvancedSearchBooleanOp": "or",
@@ -21,8 +21,70 @@
   "logo": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNzIuODYgNDQiIHdpZHRoPSIyNzIuODZweCIgaGVpZ2h0PSI0NHB4Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2JlYzBjMjt9LmNscy0ye2ZpbGw6IzczOWRkMjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmNvbGxlY3Rpb25zcGFjZTI8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTIzLjYzLDI2LjA1YTgsOCwwLDAsMSw4LjExLTguMjVBNy44OSw3Ljg5LDAsMCwxLDM4LDIwLjMzbC0yLDEuNzZhNS41OCw1LjU4LDAsMCwwLTQuMjUtMS43NmMtMy4wNSwwLTUuMDYsMi40OC01LjA2LDUuNzJzMiw1LjY4LDUuMDYsNS42OGE2LDYsMCwwLDAsNC42My0xLjk1bDEuOTUsMS43MmE4LjEsOC4xLDAsMCwxLTYuNTksMi43N0E4LDgsMCwwLDEsMjMuNjMsMjYuMDVaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDEuNTgsMjYuMDVhOC4zOCw4LjM4LDAsMSwxLDguNyw4LjIxaC0uMzZBOC4xNCw4LjE0LDAsMCwxLDQxLjU4LDI2LjA1Wm0xMy42NCwwYzAtMy4yOS0yLjE1LTUuNzctNS4zLTUuNzdzLTUuMjksMi41LTUuMjksNS43NywyLjE1LDUuNzMsNS4yOSw1LjczLDUuMy0yLjQ4LDUuMy01LjczWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYzLjE5LDBoM1YzMy44OGgtM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi4yNiwwaDNWMzMuODhoLTNaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNODguNzIsMzEuNzhhNiw2LDAsMCwwLDQuOTEtMi4wNWwxLjgyLDEuNzZhOC4yLDguMiwwLDAsMS02LjY5LDIuNzdjLTUuMSwwLTguNTctMy41My04LjU3LTguMjFhOC4xMyw4LjEzLDAsMCwxLDgtOC4yNWguMjNjNSwwLDguMDcsMy45LDgsOS4zSDgzLjIzQTUuMTYsNS4xNiwwLDAsMCw4OC43MiwzMS43OFptNC42Mi03LjExYy0uMzktMi40OS0xLjk0LTQuMzktNC45MS00LjM5YTUsNSwwLDAsMC01LjExLDQuMzlaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTAwLjIyLDI2LjA1YTgsOCwwLDAsMSw4LjExLTguMjUsNy44Niw3Ljg2LDAsMCwxLDYuMiwyLjUzbC0yLDEuNzZhNS41Niw1LjU2LDAsMCwwLTQuMjQtMS43NmMtMy4wNiwwLTUuMDcsMi40OC01LjA3LDUuNzJzMiw1LjY4LDUuMDcsNS42OEE2LDYsMCwwLDAsMTEzLDI5Ljc4bDIsMS43MmE4LjQ0LDguNDQsMCwwLDEtMTQuNjktNS40NVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTguMiwyMC42NlYxOC4xOGgyVjguNGgyLjkydjkuNzhoMy45djIuNDhoLTMuOXY5YzAsMS40My41MywyLjExLDEuNjcsMi4xMWEyLjg2LDIuODYsMCwwLDAsMS43Mi0uNjdsMS4yNCwyLjA1YTQuODQsNC44NCwwLDAsMS0zLjMsMS4xNWMtMi41NywwLTQuMjQtMS4zOS00LjI0LTQuNDlWMjAuNjZaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMxLjcxLDEwLjQ1YTIsMiwwLDEsMSwyLDJBMiwyLDAsMCwxLDEzMS43MSwxMC40NVptLjUyLDcuNzNoM3YxNS43aC0zWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE0MC4xLDI2LjA1YTguMzgsOC4zOCwwLDEsMSw4LjcxLDguMjFoLS4zNkE4LjE1LDguMTUsMCwwLDEsMTQwLjEsMjYuMDVabTEzLjY1LDBjMC0zLjI5LTIuMTUtNS43Ny01LjMtNS43N3MtNS4zLDIuNDgtNS4zLDUuNzcsMi4xNSw1LjczLDUuMyw1LjczLDUuMy0yLjQ4LDUuMy01LjczWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE2MS41OCwxOC4xOGgyLjkxdjIuNTNhNS43Nyw1Ljc3LDAsMCwxLDUuMzktMi45MWMzLjQzLDAsNiwyLjE5LDYsNi40NHY5LjY0SDE3M1YyNC41M2MwLTIuNzctMS4zNC00LjExLTMuODItNC4xMWE0LjM5LDQuMzksMCwwLDAtNC42Nyw0Ljc3djguNjloLTIuOTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTgwLjA4LDMwLjczbDIuMS0xLjQ4YTUuMTUsNS4xNSwwLDAsMCw0LjYzLDIuNTNjMiwwLDMuMTQtLjgxLDMuMTQtMi4xcy0xLjA5LTEuOTUtMy44MS0yLjczYy0zLjEyLS44Ni01LTIuMDUtNS00LjgyLDAtMi41NywyLTQuMzQsNS4xNS00LjM0YTYuMjksNi4yOSwwLDAsMSw1LjM5LDIuNTNsLTEuOTUsMS42MmEzLjkzLDMuOTMsMCwwLDAtMy4zOS0xLjY3Yy0xLjU1LDAtMi40OC43OC0yLjQ4LDEuNzcsMCwxLjM4LDEsMS43NiwzLjQ0LDIuMzgsMy4zNC44Niw1LjQ1LDIuMjQsNS40NSw1LjExcy0yLjI0LDQuNzItNiw0LjcyQTcuNzIsNy43MiwwLDAsMSwxODAuMDgsMzAuNzNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTk3LjY1LDE4LjE4aDIuOTF2Mi42N2E2LjE0LDYuMTQsMCwwLDEsNS42OC0zLjA1YzQuMzksMCw3LjczLDMuNTMsNy43Myw4LjI2cy0zLjM0LDguMi03LjczLDguMmE2LjEzLDYuMTMsMCwwLDEtNS42OC0zVjQ0aC0yLjkxWk0yMTEsMjYuMDVjMC0zLjM0LTIuMTUtNS42OC01LjMtNS42OHMtNS4yLDIuMzQtNS4yLDUuNjgsMi4xLDUuNjMsNS4yLDUuNjMsNS4zLTIuMzQsNS4zLTUuNjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjE3Ljc4LDI2LjA1YzAtNC43MiwzLjMtOC4yNSw3LjY0LTguMjVBNS45NCw1Ljk0LDAsMCwxLDIzMSwyMC44NVYxOC4xOGgyLjkyVjMzLjg3SDIzMVYzMS4yYTUuOTQsNS45NCwwLDAsMS01LjUzLDMuMDVDMjIxLjA4LDM0LjI2LDIxNy43OCwzMC43MywyMTcuNzgsMjYuMDVabTEzLjI2LDBjMC0zLjM0LTItNS42OC01LjA3LTUuNjhzLTUuMTYsMi4zNC01LjE2LDUuNjgsMi4wNiw1LjYzLDUuMTYsNS42Myw1LjA4LTIuMzQsNS4wOC01LjYzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTIzOC42OCwyNi4wNWE4LDgsMCwwLDEsOC4xMS04LjI1QTcuODksNy44OSwwLDAsMSwyNTMsMjAuMzNsLTEuOTUsMS43NmE1LjU4LDUuNTgsMCwwLDAtNC4yNS0xLjc2Yy0zLjA1LDAtNS4wNywyLjQ4LTUuMDcsNS43MnMyLDUuNjgsNS4wNyw1LjY4YTYsNiwwLDAsMCw0LjYxLTEuOTRsMiwxLjcyYTguNDMsOC40MywwLDAsMS0xNC42OC01LjQ2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI2NS4xNywzMS43OGE2LDYsMCwwLDAsNC45MS0yLjA1bDEuODEsMS43NmE4LjE3LDguMTcsMCwwLDEtNi42OCwyLjc3Yy01LjEsMC04LjU3LTMuNTMtOC41Ny04LjIxYTguMTMsOC4xMywwLDAsMSw4LTguMjVoLjIzYzUsMCw4LjA3LDMuOSw4LDkuM0gyNTkuNjhBNS4xNiw1LjE2LDAsMCwwLDI2NS4xNywzMS43OFptNC42Mi03LjExYy0uMzktMi40OS0yLTQuMzktNC45MS00LjM5YTUsNSwwLDAsMC01LjExLDQuMzlaIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI2LjM5IiB5PSIxNy41MyIgd2lkdGg9IjQuMDEiIGhlaWdodD0iNC4wMSIgcng9IjAuNTciLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYuMzkiIHk9IjIzLjk5IiB3aWR0aD0iNC4wMSIgaGVpZ2h0PSI0LjAxIiByeD0iMC41NyIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTIuNzEiIHk9IjIzLjk5IiB3aWR0aD0iNC4wMSIgaGVpZ2h0PSI0LjAxIiByeD0iMC41NyIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeT0iMjMuOTkiIHdpZHRoPSI0LjAxIiBoZWlnaHQ9IjQuMDEiIHJ4PSIwLjU3Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI2LjM5IiB5PSIzMC4yNCIgd2lkdGg9IjQuMDEiIGhlaWdodD0iNC4wMSIgcng9IjAuNTciLz48L3N2Zz4=",
   "mediaSnapshotSort": "title",
   "messages": {
-    "about.title": "Core Profile",
-    "about.contentHTML": "<div><p>CollectionSpace is a free, open-source collections management application for museums, historical societies, natural science collections, and more.</p><p>This is a demo site.</p><ul><li><b>Username:</b> admin@core.collectionspace.org</li><li><b>Password:</b> Administrator</li></ul></div>"
+    "about.title": "Local History & Material Culture Profile",
+    "field.acquisitions_common.accessionDateGroup.name": "Accessioned",
+    "field.acquisitions_common.acquisitionMethod.name": "Received as",
+    "field.acquisitions_common.acquisitionProvisos.name": "Restrictions",
+    "field.acquisitions_common.acquisitionReferenceNumber.name": "Accession number",
+    "field.collectionobjects_common.contentDescription.fullName": "Content description/summary/scope",
+    "field.collectionobjects_common.contentDescription.name": "Description/summary/scope",
+    "field.collectionobjects_common.contentNote.fullName": "Content abstract",
+    "field.collectionobjects_common.contentNote.name": "Abstract",
+    "field.collectionobjects_common.inscriptionDescriptionInterpretation.fullName": "Non-textual inscription maker's mark note",
+    "field.collectionobjects_common.inscriptionDescriptionInterpretation.name": "Maker's mark note",
+    "field.collectionobjects_common.objectStatus.name": "Original/copy",
+    "field.collectionobjects_common.objectHistoryNote.name": "Provenance",
+    "field.conditionchecks_common.techAssessmentGroup.name": "Mechanism operation",
+    "field.conditionchecks_common.techAssessment.fullName": "Mechanism operation description",
+    "field.conditionchecks_common.techAssessmentDate.fullName": "Mechanism operation date",
+    "field.intakes_common.currentOwner.name": "Source",
+    "field.intakes_common.despositorsRequirements.fullName": "Depositor restriction",
+    "field.intakes_common.despositorsRequirements.name": "Restriction",
+    "field.intakes_common.entryDate.name": "Received date",
+    "field.intakes_common.entryMethod.name": "Received as",
+    "field.intakes_common.entryNote.name": "Note",
+    "field.intakes_common.returnDate.name": "Return by",
+    "field.intakes_common.insuranceRenewalDate.fullName": "Insurance policy expiration date",
+    "field.intakes_common.insuranceRenewalDate.name": "Policy expiration date",
+    "field.intakes_common.insurer.name": "Insurance company",
+    "field.intakes_common.currentLocationGroup.name": "Interim location",
+    "field.intakes_common.currentLocation.fullName": "Interim location",
+    "field.intakes_common.currentLocationFitness.fullName": "Interim location fitness",
+    "field.intakes_common.locationDate.name": "Inventoried date",
+    "field.intakes_common.conditionCheckDate.name": "Condition date",
+    "field.intakes_common.conditionCheckNote.name": "Condition note",
+    "field.intakes_common.conditionCheckerOrAssessor.fullName": "Condition check by",
+    "field.intakes_common.conditionCheckerOrAssessor.name": "Condition by",
+    "field.movements_common.movementReferenceNumber.name": "Object ID",
+    "field.movements_common.normalLocation.name": "Home location/building",
+    "inputTable.movement.currentLocation": "Temp location/building",
+    "field.movements_common.currentLocation.fullName": "Temp location/building",
+    "field.movements_common.currentLocation.name": "Location/building",
+    "field.movements_common.currentLocationFitness.fullName": "Temp location/building fitness",
+    "field.movements_common.currentLocationNote.fullName": "Temp location/building note",
+    "field.movements_common.locationDate.name": "Inventoried date",
+    "field.movements_common.reasonForMove.name": "Reason",
+    "field.movements_common.movementContact.fullName": "Moved by",
+    "field.movements_common.movementContact.name": "Moved by",
+    "field.movements_common.plannedRemovalDate.name": "Temp location until",
+    "field.movements_common.removalDate.name": "Temp location date",
+    "field.movements_common.movementNote.fullName": "Temp location note",
+    "field.movements_common.movementNote.name": "Temp location note",
+    "field.persons_common.personTermGroupList.required": "At least one full name is required. Please enter a value.",
+    "field.persons_common.termDisplayName.fullName": "Term full name",
+    "field.persons_common.termDisplayName.name": "Full name",
+    "field.persons_common.forename.fullName": "Term first name",
+    "field.persons_common.forename.name": "First name",
+    "field.persons_common.surname.fullName": "Term last name",
+    "field.persons_common.surname.name": "Last name",
+    "field.persons_common.birthDateGroup.name": "Born",
+    "field.persons_common.birthPlace.name": "Where",
+    "field.persons_common.deathDateGroup.name": "Died",
+    "field.persons_common.deathPlace.name": "Where",
+    "field.persons_common.occupation.name": "Occupation/sphere of activity",
+    "field.persons_common.bioNote.name": "Note",
+    "field.places_common.placeNote.name": "Legal description",
+    "about.contentHTML": "<div><p>CollectionSpace is a free, open-source collections management application for museums, historical societies, natural science collections, and more.</p><p>This is a demo site.</p><ul><li><b>Username:</b> admin@lhmc.collectionspace.org</li><li><b>Password:</b> Administrator</li></ul></div>"
   },
   "prettyUrls": true,
   "relationMemberPerm": "U",
@@ -36,7 +98,7 @@
     "datecertainty",
     "datequalifier"
   ],
-  "tenantId": "1",
+  "tenantId": "501",
   "termDeprecationEnabled": false,
   "extensions": {
     "address": {
@@ -1234,6 +1296,286 @@
           }
         }
       }
+    },
+    "culturalcare": {
+      "collectionobject": {
+        "messages": {
+          "panel": {
+            "culturalCare": {
+              "id": "panel.collectionobject.culturalCare",
+              "defaultMessage": "Cultural Care Information"
+            }
+          }
+        },
+        "fields": {
+          "ns2:collectionobjects_culturalcare": {
+            "[config]": {
+              "service": {
+                "ns": "http://collectionspace.org/services/collectionobject/domain/collectionobject"
+              }
+            },
+            "culturalCareNotes": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "culturalCareNote": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.collectionobjects_culturalcare.culturalCareNote.name",
+                      "defaultMessage": "Cultural care note"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "TextInput",
+                    "props": {
+                      "multiline": true
+                    }
+                  }
+                }
+              }
+            },
+            "accessLimitationsGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "accessLimitationsGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.collectionobjects_culturalcare.accessLimitationsGroup.name",
+                      "defaultMessage": "Access limitation"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "limitationType": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.limitationType.fullName",
+                        "defaultMessage": "Access limitation type"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.limitationType.name",
+                        "defaultMessage": "Type"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "limitationtype"
+                      }
+                    }
+                  }
+                },
+                "limitationLevel": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.limitationLevel.fullName",
+                        "defaultMessage": "Access limitation level"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.limitationLevel.name",
+                        "defaultMessage": "Level"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "limitationlevel"
+                      }
+                    }
+                  }
+                },
+                "limitationDetails": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.limitationDetails.fullName",
+                        "defaultMessage": "Access limitation detail"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.limitationDetails.name",
+                        "defaultMessage": "Detail"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "requester": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.requester.fullName",
+                        "defaultMessage": "Access limitation requestor"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.requester.name",
+                        "defaultMessage": "Requestor"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local"
+                      }
+                    }
+                  }
+                },
+                "requestOnBehalfOf": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.requestOnBehalfOf.fullName",
+                        "defaultMessage": "Access limitation requested on behalf of"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.requestOnBehalfOf.name",
+                        "defaultMessage": "On behalf of"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "organization/local"
+                      }
+                    }
+                  }
+                },
+                "requestDate": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.requestDate.fullName",
+                        "defaultMessage": "Access limitation request date"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.requestDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "form": {
+          "key": null,
+          "ref": null,
+          "props": {
+            "name": "culturalCare",
+            "collapsible": true,
+            "collapsed": true,
+            "children": [
+              {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "culturalCareNotes",
+                  "subpath": "ns2:collectionobjects_culturalcare",
+                  "children": {
+                    "key": null,
+                    "ref": null,
+                    "props": {
+                      "name": "culturalCareNote"
+                    },
+                    "_owner": null
+                  }
+                },
+                "_owner": null
+              },
+              {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "accessLimitationsGroupList",
+                  "subpath": "ns2:collectionobjects_culturalcare",
+                  "children": {
+                    "key": null,
+                    "ref": null,
+                    "props": {
+                      "name": "accessLimitationsGroup",
+                      "children": [
+                        {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "limitationType"
+                          },
+                          "_owner": null
+                        },
+                        {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "limitationLevel"
+                          },
+                          "_owner": null
+                        },
+                        {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "limitationDetails"
+                          },
+                          "_owner": null
+                        },
+                        {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "requester"
+                          },
+                          "_owner": null
+                        },
+                        {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "requestOnBehalfOf"
+                          },
+                          "_owner": null
+                        },
+                        {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "requestDate"
+                          },
+                          "_owner": null
+                        }
+                      ]
+                    },
+                    "_owner": null
+                  }
+                },
+                "_owner": null
+              }
+            ]
+          },
+          "_owner": null
+        }
+      }
     }
   },
   "optionLists": {
@@ -2055,6 +2397,7 @@
         "copy",
         "forgery",
         "holotype",
+        "original",
         "paralectotype",
         "paratype",
         "type"
@@ -2083,6 +2426,10 @@
         "type": {
           "id": "option.objectStatuses.type",
           "defaultMessage": "type"
+        },
+        "original": {
+          "id": "option.objectStatuses.original",
+          "defaultMessage": "original"
         }
       }
     },
@@ -5205,6 +5552,109 @@
           "defaultMessage": "complete"
         }
       }
+    },
+    "lhmcInscriptionTypes": {
+      "values": [
+        "hallmark",
+        "stamp",
+        "signature",
+        "maker's-mark",
+        "paper-tag",
+        "cloth-label"
+      ],
+      "messages": {
+        "hallmark": {
+          "id": "option.lhmcInscriptionTypes.hallmark",
+          "defaultMessage": "hallmark"
+        },
+        "stamp": {
+          "id": "option.lhmcInscriptionTypes.stamp",
+          "defaultMessage": "stamp"
+        },
+        "signature": {
+          "id": "option.lhmcInscriptionTypes.signature",
+          "defaultMessage": "signature"
+        },
+        "maker's-mark": {
+          "id": "option.lhmcInscriptionTypes.maker's-mark",
+          "defaultMessage": "maker's mark"
+        },
+        "paper-tag": {
+          "id": "option.lhmcInscriptionTypes.paper-tag",
+          "defaultMessage": "paper tag"
+        },
+        "cloth-label": {
+          "id": "option.lhmcInscriptionTypes.cloth-label",
+          "defaultMessage": "cloth label"
+        }
+      }
+    },
+    "inscriptionMethods": {
+      "values": [
+        "engraved",
+        "painted",
+        "stenciled",
+        "etched",
+        "embossed",
+        "stamped",
+        "embroidered",
+        "pen-and-ink",
+        "pencil"
+      ],
+      "messages": {
+        "engraved": {
+          "id": "option.inscriptionMethods.engraved",
+          "defaultMessage": "engraved"
+        },
+        "painted": {
+          "id": "option.inscriptionMethods.painted",
+          "defaultMessage": "painted"
+        },
+        "stenciled": {
+          "id": "option.inscriptionMethods.stenciled",
+          "defaultMessage": "stenciled"
+        },
+        "etched": {
+          "id": "option.inscriptionMethods.etched",
+          "defaultMessage": "etched"
+        },
+        "embossed": {
+          "id": "option.inscriptionMethods.embossed",
+          "defaultMessage": "embossed"
+        },
+        "stamped": {
+          "id": "option.inscriptionMethods.stamped",
+          "defaultMessage": "stamped"
+        },
+        "embroidered": {
+          "id": "option.inscriptionMethods.embroidered",
+          "defaultMessage": "embroidered"
+        },
+        "pen-and-ink": {
+          "id": "option.inscriptionMethods.pen-and-ink",
+          "defaultMessage": "pen & ink"
+        },
+        "pencil": {
+          "id": "option.inscriptionMethods.pencil",
+          "defaultMessage": "pencil"
+        }
+      }
+    },
+    "insuredByValues": {
+      "values": [
+        "lender",
+        "borrower"
+      ],
+      "messages": {
+        "lender": {
+          "id": "option.insuredByValues.lender",
+          "defaultMessage": "lender"
+        },
+        "borrower": {
+          "id": "option.insuredByValues.borrower",
+          "defaultMessage": "borrower"
+        }
+      }
     }
   },
   "invocables": {
@@ -8026,6 +8476,70 @@
                 }
               }
             }
+          },
+          "ns2:acquisitions_lhmc": {
+            "receivedGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "receivedGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.acquisitions_lhmc.receivedGroup.name",
+                      "defaultMessage": "Received"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "receivedDate": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.acquisitions_lhmc.receivedDate.fullName",
+                        "defaultMessage": "Received date"
+                      },
+                      "name": {
+                        "id": "field.acquisitions_lhmc.receivedDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                },
+                "receivedBy": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.acquisitions_lhmc.receivedBy.fullName",
+                        "defaultMessage": "Received by"
+                      },
+                      "name": {
+                        "id": "field.acquisitions_lhmc.receivedBy.name",
+                        "defaultMessage": "By"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/ulan,person/shared"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -8106,6 +8620,41 @@
                                     "key": null,
                                     "ref": null,
                                     "props": {
+                                      "name": "receivedGroupList",
+                                      "subpath": "ns2:acquisitions_lhmc",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "receivedGroup",
+                                          "children": [
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "receivedBy"
+                                              },
+                                              "_owner": null
+                                            },
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "receivedDate"
+                                              },
+                                              "_owner": null
+                                            }
+                                          ]
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
                                       "name": "acquisitionDateGroupList",
                                       "children": {
                                         "key": null,
@@ -8141,7 +8690,16 @@
                                       }
                                     },
                                     "_owner": null
-                                  },
+                                  }
+                                ]
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "children": [
                                   {
                                     "key": null,
                                     "ref": null,
@@ -8165,16 +8723,7 @@
                                       "name": "transferOfTitleNumber"
                                     },
                                     "_owner": null
-                                  }
-                                ]
-                              },
-                              "_owner": null
-                            },
-                            {
-                              "key": null,
-                              "ref": null,
-                              "props": {
-                                "children": [
+                                  },
                                   {
                                     "key": null,
                                     "ref": null,
@@ -8211,58 +8760,6 @@
                                           "key": null,
                                           "ref": null,
                                           "props": {
-                                            "name": "objectOfferPrice",
-                                            "children": [
-                                              {
-                                                "key": null,
-                                                "ref": null,
-                                                "props": {
-                                                  "name": "objectOfferPriceCurrency"
-                                                },
-                                                "_owner": null
-                                              },
-                                              {
-                                                "key": null,
-                                                "ref": null,
-                                                "props": {
-                                                  "name": "objectOfferPriceValue"
-                                                },
-                                                "_owner": null
-                                              }
-                                            ]
-                                          },
-                                          "_owner": null
-                                        },
-                                        {
-                                          "key": null,
-                                          "ref": null,
-                                          "props": {
-                                            "name": "objectPurchaseOfferPrice",
-                                            "children": [
-                                              {
-                                                "key": null,
-                                                "ref": null,
-                                                "props": {
-                                                  "name": "objectPurchaseOfferPriceCurrency"
-                                                },
-                                                "_owner": null
-                                              },
-                                              {
-                                                "key": null,
-                                                "ref": null,
-                                                "props": {
-                                                  "name": "objectPurchaseOfferPriceValue"
-                                                },
-                                                "_owner": null
-                                              }
-                                            ]
-                                          },
-                                          "_owner": null
-                                        },
-                                        {
-                                          "key": null,
-                                          "ref": null,
-                                          "props": {
                                             "name": "objectPurchasePrice",
                                             "children": [
                                               {
@@ -8278,32 +8775,6 @@
                                                 "ref": null,
                                                 "props": {
                                                   "name": "objectPurchasePriceValue"
-                                                },
-                                                "_owner": null
-                                              }
-                                            ]
-                                          },
-                                          "_owner": null
-                                        },
-                                        {
-                                          "key": null,
-                                          "ref": null,
-                                          "props": {
-                                            "name": "originalObjectPurchasePrice",
-                                            "children": [
-                                              {
-                                                "key": null,
-                                                "ref": null,
-                                                "props": {
-                                                  "name": "originalObjectPurchasePriceCurrency"
-                                                },
-                                                "_owner": null
-                                              },
-                                              {
-                                                "key": null,
-                                                "ref": null,
-                                                "props": {
-                                                  "name": "originalObjectPurchasePriceValue"
                                                 },
                                                 "_owner": null
                                               }
@@ -12939,6 +13410,10 @@
           "hierarchy": {
             "id": "panel.collectionobject.hierarchy",
             "defaultMessage": "Hierarchy"
+          },
+          "culturalCare": {
+            "id": "panel.collectionobject.culturalCare",
+            "defaultMessage": "Cultural Care Information"
           }
         },
         "inputTable": {
@@ -13374,9 +13849,9 @@
                       }
                     },
                     "view": {
-                      "type": "OptionPickerInput",
+                      "type": "TermPickerInput",
                       "props": {
-                        "source": "numberTypes"
+                        "source": "numbertype"
                       }
                     }
                   }
@@ -15638,7 +16113,10 @@
                   },
                   "repeating": true,
                   "view": {
-                    "type": "TextInput"
+                    "type": "AutocompleteInput",
+                    "props": {
+                      "source": "place/local,place/tgn"
+                    }
                   }
                 }
               }
@@ -16815,7 +17293,7 @@
                     "view": {
                       "type": "OptionPickerInput",
                       "props": {
-                        "source": "inscriptionTypes"
+                        "source": "lhmcInscriptionTypes"
                       }
                     }
                   }
@@ -16833,7 +17311,10 @@
                       }
                     },
                     "view": {
-                      "type": "TextInput"
+                      "type": "OptionPickerInput",
+                      "props": {
+                        "source": "inscriptionMethods"
+                      }
                     }
                   }
                 },
@@ -18735,7 +19216,10 @@
                       }
                     },
                     "view": {
-                      "type": "TextInput"
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "place/local,place/tgn"
+                      }
                     }
                   }
                 },
@@ -19547,7 +20031,10 @@
                       }
                     },
                     "view": {
-                      "type": "TextInput"
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "place/local,place/tgn"
+                      }
                     }
                   }
                 },
@@ -21624,7 +22111,10 @@
                   }
                 },
                 "view": {
-                  "type": "TextInput"
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "place/local,place/tgn"
+                  }
                 }
               }
             },
@@ -22807,6 +23297,171 @@
                 }
               }
             }
+          },
+          "ns2:collectionobjects_culturalcare": {
+            "culturalCareNotes": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "culturalCareNote": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.collectionobjects_culturalcare.culturalCareNote.name",
+                      "defaultMessage": "Cultural care note"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "TextInput",
+                    "props": {
+                      "multiline": true
+                    }
+                  }
+                }
+              }
+            },
+            "accessLimitationsGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "accessLimitationsGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.collectionobjects_culturalcare.accessLimitationsGroup.name",
+                      "defaultMessage": "Access limitation"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "limitationType": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.limitationType.fullName",
+                        "defaultMessage": "Access limitation type"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.limitationType.name",
+                        "defaultMessage": "Type"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "limitationtype"
+                      }
+                    }
+                  }
+                },
+                "limitationLevel": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.limitationLevel.fullName",
+                        "defaultMessage": "Access limitation level"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.limitationLevel.name",
+                        "defaultMessage": "Level"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "limitationlevel"
+                      }
+                    }
+                  }
+                },
+                "limitationDetails": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.limitationDetails.fullName",
+                        "defaultMessage": "Access limitation detail"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.limitationDetails.name",
+                        "defaultMessage": "Detail"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "requester": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.requester.fullName",
+                        "defaultMessage": "Access limitation requestor"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.requester.name",
+                        "defaultMessage": "Requestor"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local"
+                      }
+                    }
+                  }
+                },
+                "requestOnBehalfOf": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.requestOnBehalfOf.fullName",
+                        "defaultMessage": "Access limitation requested on behalf of"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.requestOnBehalfOf.name",
+                        "defaultMessage": "On behalf of"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "organization/local"
+                      }
+                    }
+                  }
+                },
+                "requestDate": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_culturalcare.requestDate.fullName",
+                        "defaultMessage": "Access limitation request date"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_culturalcare.requestDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -23876,22 +24531,6 @@
                                               "ref": null,
                                               "props": {
                                                 "name": "contentPlace"
-                                              },
-                                              "_owner": null
-                                            }
-                                          },
-                                          "_owner": null
-                                        },
-                                        {
-                                          "key": null,
-                                          "ref": null,
-                                          "props": {
-                                            "name": "contentScripts",
-                                            "children": {
-                                              "key": null,
-                                              "ref": null,
-                                              "props": {
-                                                "name": "contentScript"
                                               },
                                               "_owner": null
                                             }
@@ -25523,6 +26162,102 @@
                   "key": null,
                   "ref": null,
                   "props": {
+                    "name": "culturalCare",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "children": [
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "culturalCareNotes",
+                          "subpath": "ns2:collectionobjects_culturalcare",
+                          "children": {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "name": "culturalCareNote"
+                            },
+                            "_owner": null
+                          }
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "accessLimitationsGroupList",
+                          "subpath": "ns2:collectionobjects_culturalcare",
+                          "children": {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "name": "accessLimitationsGroup",
+                              "children": [
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "limitationType"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "limitationLevel"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "limitationDetails"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "requester"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "requestOnBehalfOf"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "requestDate"
+                                  },
+                                  "_owner": null
+                                }
+                              ]
+                            },
+                            "_owner": null
+                          }
+                        },
+                        "_owner": null
+                      }
+                    ]
+                  },
+                  "_owner": null
+                },
+                {
+                  "key": null,
+                  "ref": null,
+                  "props": {
                     "name": "hierarchy",
                     "collapsible": true,
                     "collapsed": true,
@@ -26996,22 +27731,6 @@
                                               "ref": null,
                                               "props": {
                                                 "name": "contentPlace"
-                                              },
-                                              "_owner": null
-                                            }
-                                          },
-                                          "_owner": null
-                                        },
-                                        {
-                                          "key": null,
-                                          "ref": null,
-                                          "props": {
-                                            "name": "contentScripts",
-                                            "children": {
-                                              "key": null,
-                                              "ref": null,
-                                              "props": {
-                                                "name": "contentScript"
                                               },
                                               "_owner": null
                                             }
@@ -28802,6 +29521,12 @@
             "id": "panel.conditioncheck.objectRequirementInfo",
             "defaultMessage": "Object Recommendation/Requirement Information"
           }
+        },
+        "inputTable": {
+          "maintenance": {
+            "id": "inputTable.conditioncheck.maintenance",
+            "defaultMessage": "Maintenance"
+          }
         }
       },
       "serviceConfig": {
@@ -28836,7 +29561,7 @@
           },
           {
             "op": "eq",
-            "path": "ns2:conditionchecks_common/conditionCheckGroupList/conditionCheckGroup/condition"
+            "path": "ns2:conditionchecks_lhmc/conditionCheckLHMCGroupList/conditionCheckLHMCGroup/conditionLHMC"
           },
           {
             "op": "cont",
@@ -28870,7 +29595,8 @@
             },
             "order": 20,
             "sortBy": "conditionchecks_common:conditionCheckGroupList/0/condition",
-            "width": 450
+            "width": 450,
+            "disabled": true
           },
           "updatedAt": {
             "messages": {
@@ -28882,6 +29608,17 @@
             "order": 30,
             "sortBy": "collectionspace_core:updatedAt",
             "width": 150
+          },
+          "conditionLHMC": {
+            "messages": {
+              "label": {
+                "id": "column.conditioncheck.default.conditionLHMC",
+                "defaultMessage": "Condition"
+              }
+            },
+            "order": 20,
+            "sortBy": "conditionchecks_lhmc:conditionCheckLHMCGroupList/0/conditionLHMC",
+            "width": 450
           }
         }
       },
@@ -29079,7 +29816,8 @@
               "[config]": {
                 "view": {
                   "type": "CompoundInput"
-                }
+                },
+                "searchDisabled": true
               },
               "conditionCheckGroup": {
                 "[config]": {
@@ -29782,6 +30520,162 @@
                 }
               }
             }
+          },
+          "ns2:conditionchecks_lhmc": {
+            "conditionCheckLHMCGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "conditionCheckLHMCGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.conditionchecks_lhmc.conditionCheckLHMCGroup.name",
+                      "defaultMessage": "Condition"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "conditionLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.conditionchecks_lhmc.conditionLHMC.fullName",
+                        "defaultMessage": "Condition description"
+                      },
+                      "name": {
+                        "id": "field.conditionchecks_lhmc.conditionLHMC.name",
+                        "defaultMessage": "Description"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "condition"
+                      }
+                    }
+                  }
+                },
+                "conditionFacetLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.conditionchecks_lhmc.conditionFacetLHMC.fullName",
+                        "defaultMessage": "Condition facet"
+                      },
+                      "name": {
+                        "id": "field.conditionchecks_lhmc.conditionFacetLHMC.name",
+                        "defaultMessage": "Facet"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "conditionfacet"
+                      }
+                    }
+                  }
+                },
+                "conditionDateLHMC": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.conditionchecks_lhmc.conditionDateLHMC.fullName",
+                        "defaultMessage": "Condition date"
+                      },
+                      "name": {
+                        "id": "field.conditionchecks_lhmc.conditionDateLHMC.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                },
+                "conditionNoteLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.conditionchecks_lhmc.conditionNoteLHMC.fullName",
+                        "defaultMessage": "Condition note"
+                      },
+                      "name": {
+                        "id": "field.conditionchecks_lhmc.conditionNoteLHMC.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "maintenanceDate": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATE",
+                "messages": {
+                  "fullName": {
+                    "id": "field.conditionchecks_lhmc.maintenanceDate.fullName",
+                    "defaultMessage": "Maintenance date"
+                  },
+                  "name": {
+                    "id": "field.conditionchecks_lhmc.maintenanceDate.name",
+                    "defaultMessage": "Date"
+                  }
+                },
+                "view": {
+                  "type": "DateInput"
+                }
+              }
+            },
+            "maintenanceCycle": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.conditionchecks_lhmc.maintenanceCycle.fullName",
+                    "defaultMessage": "Maintenance cycle"
+                  },
+                  "name": {
+                    "id": "field.conditionchecks_lhmc.maintenanceCycle.name",
+                    "defaultMessage": "Cycle"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "maintenancecycle"
+                  }
+                }
+              }
+            },
+            "maintenanceNote": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.conditionchecks_lhmc.maintenanceNote.fullName",
+                    "defaultMessage": "Maintenance note"
+                  },
+                  "name": {
+                    "id": "field.conditionchecks_lhmc.maintenanceNote.name",
+                    "defaultMessage": "Note"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            }
           }
         }
       },
@@ -30048,18 +30942,19 @@
                         "key": null,
                         "ref": null,
                         "props": {
-                          "name": "conditionCheckGroupList",
+                          "name": "conditionCheckLHMCGroupList",
+                          "subpath": "ns2:conditionchecks_lhmc",
                           "children": {
                             "key": null,
                             "ref": null,
                             "props": {
-                              "name": "conditionCheckGroup",
+                              "name": "conditionCheckLHMCGroup",
                               "children": [
                                 {
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "condition"
+                                    "name": "conditionLHMC"
                                   },
                                   "_owner": null
                                 },
@@ -30067,7 +30962,7 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "conditionDate"
+                                    "name": "conditionFacetLHMC"
                                   },
                                   "_owner": null
                                 },
@@ -30075,7 +30970,15 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "conditionNote"
+                                    "name": "conditionDateLHMC"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "conditionNoteLHMC"
                                   },
                                   "_owner": null
                                 }
@@ -30083,6 +30986,43 @@
                             },
                             "_owner": null
                           }
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "maintenance",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "maintenanceDate",
+                                "subpath": "ns2:conditionchecks_lhmc"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "maintenanceCycle",
+                                "subpath": "ns2:conditionchecks_lhmc"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "maintenanceNote",
+                                "subpath": "ns2:conditionchecks_lhmc"
+                              },
+                              "_owner": null
+                            }
+                          ]
                         },
                         "_owner": null
                       },
@@ -35038,6 +35978,24 @@
                 }
               }
             }
+          },
+          "ns2:exhibitions_lhmc": {
+            "restrictions": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.exhibitions_lhmc.restrictions.name",
+                    "defaultMessage": "Restrictions"
+                  }
+                },
+                "view": {
+                  "type": "TextInput",
+                  "props": {
+                    "multiline": true
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -35326,6 +36284,14 @@
                                       "name": "curatorialNote"
                                     },
                                     "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "generalNote"
+                                    },
+                                    "_owner": null
                                   }
                                 ]
                               },
@@ -35340,7 +36306,7 @@
                                     "key": null,
                                     "ref": null,
                                     "props": {
-                                      "name": "generalNote"
+                                      "name": "boilerplateText"
                                     },
                                     "_owner": null
                                   },
@@ -35348,7 +36314,8 @@
                                     "key": null,
                                     "ref": null,
                                     "props": {
-                                      "name": "boilerplateText"
+                                      "name": "restrictions",
+                                      "subpath": "ns2:exhibitions_lhmc"
                                     },
                                     "_owner": null
                                   }
@@ -37165,6 +38132,212 @@
                 }
               }
             }
+          },
+          "ns2:intakes_lhmc": {
+            "receivedBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.intakes_lhmc.receivedBy.name",
+                    "defaultMessage": "Received by"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,person/ulan,organization/local,organization/shared"
+                  }
+                }
+              }
+            },
+            "intakeStatus": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.intakes_lhmc.intakeStatus.name",
+                    "defaultMessage": "Intake status"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "intakestatus"
+                  }
+                }
+              }
+            },
+            "insuredBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.intakes_lhmc.insuredBy.name",
+                    "defaultMessage": "Insured by"
+                  }
+                },
+                "view": {
+                  "type": "OptionPickerInput",
+                  "props": {
+                    "source": "insuredByValues"
+                  }
+                }
+              }
+            },
+            "premiumGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "premiumGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.intakes_lhmc.premiumGroup.name",
+                      "defaultMessage": "Premium"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "premiumCurrency": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.intakes_lhmc.premiumCurrency.fullName",
+                        "defaultMessage": "Premium currency"
+                      },
+                      "name": {
+                        "id": "field.intakes_lhmc.premiumCurrency.name",
+                        "defaultMessage": "Currency"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "currency"
+                      }
+                    }
+                  }
+                },
+                "premiumValue": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_FLOAT",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.intakes_lhmc.premiumValue.fullName",
+                        "defaultMessage": "Premium value"
+                      },
+                      "name": {
+                        "id": "field.intakes_lhmc.premiumValue.name",
+                        "defaultMessage": "Value"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "insuredValueGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "insuredValueGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.intakes_lhmc.insuredValueGroup.name",
+                      "defaultMessage": "Insured value"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "insuredValueCurrency": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.intakes_lhmc.insuredValueCurrency.fullName",
+                        "defaultMessage": "Insured value currency"
+                      },
+                      "name": {
+                        "id": "field.intakes_lhmc.insuredValueCurrency.name",
+                        "defaultMessage": "Currency"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "currency"
+                      }
+                    }
+                  }
+                },
+                "insuredValue": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_FLOAT",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.intakes_lhmc.insuredValue.fullName",
+                        "defaultMessage": "Insured value"
+                      },
+                      "name": {
+                        "id": "field.intakes_lhmc.insuredValue.name",
+                        "defaultMessage": "Value"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "inventoriedBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.intakes_lhmc.inventoriedBy.name",
+                    "defaultMessage": "Inventoried by"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,person/ulan"
+                  }
+                }
+              }
+            },
+            "intakeCondition": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.intakes_lhmc.intakeCondition.name",
+                    "defaultMessage": "Condition"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "condition"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -37213,6 +38386,15 @@
                                     "ref": null,
                                     "props": {
                                       "name": "entryDate"
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "receivedBy",
+                                      "subpath": "ns2:intakes_lhmc"
                                     },
                                     "_owner": null
                                   },
@@ -37306,6 +38488,15 @@
                                       }
                                     },
                                     "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "intakeStatus",
+                                      "subpath": "ns2:intakes_lhmc"
+                                    },
+                                    "_owner": null
                                   }
                                 ]
                               },
@@ -37397,139 +38588,6 @@
                   "key": null,
                   "ref": null,
                   "props": {
-                    "name": "objectCollectionInfo",
-                    "collapsible": true,
-                    "collapsed": true,
-                    "children": {
-                      "key": null,
-                      "ref": null,
-                      "props": {
-                        "children": [
-                          {
-                            "key": null,
-                            "ref": null,
-                            "props": {
-                              "children": [
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionDate"
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionMethods",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "fieldCollectionMethod"
-                                      },
-                                      "_owner": null
-                                    }
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionNote"
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionNumber"
-                                  },
-                                  "_owner": null
-                                }
-                              ]
-                            },
-                            "_owner": null
-                          },
-                          {
-                            "key": null,
-                            "ref": null,
-                            "props": {
-                              "children": [
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionPlace"
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionSources",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "fieldCollectionSource"
-                                      },
-                                      "_owner": null
-                                    }
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectors",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "fieldCollector"
-                                      },
-                                      "_owner": null
-                                    }
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "fieldCollectionEventNames",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "fieldCollectionEventName"
-                                      },
-                                      "_owner": null
-                                    }
-                                  },
-                                  "_owner": null
-                                }
-                              ]
-                            },
-                            "_owner": null
-                          }
-                        ]
-                      },
-                      "_owner": null
-                    }
-                  },
-                  "_owner": null
-                },
-                {
-                  "key": null,
-                  "ref": null,
-                  "props": {
                     "name": "valuation",
                     "collapsible": true,
                     "collapsed": true,
@@ -37547,10 +38605,10 @@
                             "_owner": null
                           },
                           {
+                            "type": "div",
                             "key": null,
                             "ref": null,
                             "props": {
-                              "name": "valuationReferenceNumber"
                             },
                             "_owner": null
                           }
@@ -37609,6 +38667,41 @@
                                     "name": "insuranceRenewalDate"
                                   },
                                   "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "premiumGroupList",
+                                    "subpath": "ns2:intakes_lhmc",
+                                    "children": {
+                                      "key": null,
+                                      "ref": null,
+                                      "props": {
+                                        "name": "premiumGroup",
+                                        "children": [
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "premiumCurrency"
+                                            },
+                                            "_owner": null
+                                          },
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "premiumValue"
+                                            },
+                                            "_owner": null
+                                          }
+                                        ]
+                                      },
+                                      "_owner": null
+                                    }
+                                  },
+                                  "_owner": null
                                 }
                               ]
                             },
@@ -37623,7 +38716,7 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "insuranceReferenceNumber"
+                                    "name": "insuranceNote"
                                   },
                                   "_owner": null
                                 },
@@ -37631,7 +38724,43 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "insuranceNote"
+                                    "name": "insuredBy",
+                                    "subpath": "ns2:intakes_lhmc"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "insuredValueGroupList",
+                                    "subpath": "ns2:intakes_lhmc",
+                                    "children": {
+                                      "key": null,
+                                      "ref": null,
+                                      "props": {
+                                        "name": "insuredValueGroup",
+                                        "children": [
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "insuredValueCurrency"
+                                            },
+                                            "_owner": null
+                                          },
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "insuredValue"
+                                            },
+                                            "_owner": null
+                                          }
+                                        ]
+                                      },
+                                      "_owner": null
+                                    }
                                   },
                                   "_owner": null
                                 }
@@ -37713,7 +38842,8 @@
                               "key": null,
                               "ref": null,
                               "props": {
-                                "name": "normalLocation"
+                                "name": "inventoriedBy",
+                                "subpath": "ns2:intakes_lhmc"
                               },
                               "_owner": null
                             }
@@ -37813,6 +38943,15 @@
                                     "ref": null,
                                     "props": {
                                       "name": "conditionCheckReferenceNumber"
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "intakeCondition",
+                                      "subpath": "ns2:intakes_lhmc"
                                     },
                                     "_owner": null
                                   }
@@ -38183,7 +39322,7 @@
           },
           {
             "op": "eq",
-            "path": "ns2:loansin_common/loanStatusGroupList/loanStatusGroup/loanStatus"
+            "path": "ns2:loansin_lhmc/loaninStatusLHMCGroupList/loaninStatusLHMCGroup/loaninStatusLHMC"
           },
           {
             "op": "eq",
@@ -38400,7 +39539,8 @@
               "[config]": {
                 "view": {
                   "type": "CompoundInput"
-                }
+                },
+                "searchDisabled": true
               },
               "loanStatusGroup": {
                 "[config]": {
@@ -38749,6 +39889,107 @@
                 }
               }
             }
+          },
+          "ns2:loansin_lhmc": {
+            "loaninStatusLHMCGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "loaninStatusLHMCGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.loansin_lhmc.loaninStatusLHMCGroup.name",
+                      "defaultMessage": "Loan status"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "loaninStatusLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansin_lhmc.loaninStatusLHMC.fullName",
+                        "defaultMessage": "Loan status"
+                      },
+                      "name": {
+                        "id": "field.loansin_lhmc.loaninStatusLHMC.name",
+                        "defaultMessage": "Status"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "loanoutstatus"
+                      }
+                    }
+                  }
+                },
+                "loaninStatusDateLHMC": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansin_lhmc.loaninStatusDateLHMC.fullName",
+                        "defaultMessage": "Loan status date"
+                      },
+                      "name": {
+                        "id": "field.loansin_lhmc.loaninStatusDateLHMC.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                },
+                "loaninStatusNoteLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansin_lhmc.loaninStatusNoteLHMC.fullName",
+                        "defaultMessage": "Loan status note"
+                      },
+                      "name": {
+                        "id": "field.loansin_lhmc.loaninStatusNoteLHMC.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "loaninStatusAuthorizerLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansin_lhmc.loaninStatusAuthorizerLHMC.fullName",
+                        "defaultMessage": "Loan status authorizer"
+                      },
+                      "name": {
+                        "id": "field.loansin_lhmc.loaninStatusAuthorizerLHMC.name",
+                        "defaultMessage": "Authorizer"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/shared,person/ulan"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -38801,18 +40042,19 @@
                       "key": null,
                       "ref": null,
                       "props": {
-                        "name": "loanStatusGroupList",
+                        "name": "loaninStatusLHMCGroupList",
+                        "subpath": "ns2:loansin_lhmc",
                         "children": {
                           "key": null,
                           "ref": null,
                           "props": {
-                            "name": "loanStatusGroup",
+                            "name": "loaninStatusLHMCGroup",
                             "children": [
                               {
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanGroup"
+                                  "name": "loaninStatusLHMC"
                                 },
                                 "_owner": null
                               },
@@ -38820,7 +40062,7 @@
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanIndividual"
+                                  "name": "loaninStatusDateLHMC"
                                 },
                                 "_owner": null
                               },
@@ -38828,7 +40070,7 @@
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanStatus"
+                                  "name": "loaninStatusNoteLHMC"
                                 },
                                 "_owner": null
                               },
@@ -38836,15 +40078,7 @@
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanStatusDate"
-                                },
-                                "_owner": null
-                              },
-                              {
-                                "key": null,
-                                "ref": null,
-                                "props": {
-                                  "name": "loanStatusNote"
+                                  "name": "loaninStatusAuthorizerLHMC"
                                 },
                                 "_owner": null
                               }
@@ -39077,7 +40311,7 @@
           },
           {
             "op": "eq",
-            "path": "ns2:loansout_common/loanStatusGroupList/loanStatusGroup/loanStatus"
+            "path": "ns2:loansout_lhmc/loanoutStatusLHMCGroupList/loanoutStatusLHMCGroup/loanoutStatusLHMC"
           },
           {
             "op": "range",
@@ -39442,7 +40676,8 @@
               "[config]": {
                 "view": {
                   "type": "CompoundInput"
-                }
+                },
+                "searchDisabled": true
               },
               "loanStatusGroup": {
                 "[config]": {
@@ -39599,6 +40834,107 @@
                 }
               }
             }
+          },
+          "ns2:loansout_lhmc": {
+            "loanoutStatusLHMCGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "loanoutStatusLHMCGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.loansout_lhmc.loanoutStatusLHMCGroup.name",
+                      "defaultMessage": "Loan status"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "loanoutStatusLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansout_lhmc.loanoutStatusLHMC.fullName",
+                        "defaultMessage": "Loan status"
+                      },
+                      "name": {
+                        "id": "field.loansout_lhmc.loanoutStatusLHMC.name",
+                        "defaultMessage": "Status"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "loanoutstatus"
+                      }
+                    }
+                  }
+                },
+                "loanoutStatusDateLHMC": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansout_lhmc.loanoutStatusDateLHMC.fullName",
+                        "defaultMessage": "Loan status date"
+                      },
+                      "name": {
+                        "id": "field.loansout_lhmc.loanoutStatusDateLHMC.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                },
+                "loanoutStatusNoteLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansout_lhmc.loanoutStatusNoteLHMC.fullName",
+                        "defaultMessage": "Loan status note"
+                      },
+                      "name": {
+                        "id": "field.loansout_lhmc.loanoutStatusNoteLHMC.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "loanoutStatusAuthorizerLHMC": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.loansout_lhmc.loanoutStatusAuthorizerLHMC.fullName",
+                        "defaultMessage": "Loan status authorizer"
+                      },
+                      "name": {
+                        "id": "field.loansout_lhmc.loanoutStatusAuthorizerLHMC.name",
+                        "defaultMessage": "Authorizer"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/shared,person/ulan,organization/local,organization/shared"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -39752,18 +41088,19 @@
                       "key": null,
                       "ref": null,
                       "props": {
-                        "name": "loanStatusGroupList",
+                        "name": "loanoutStatusLHMCGroupList",
+                        "subpath": "ns2:loansout_lhmc",
                         "children": {
                           "key": null,
                           "ref": null,
                           "props": {
-                            "name": "loanStatusGroup",
+                            "name": "loanoutStatusLHMCGroup",
                             "children": [
                               {
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanGroup"
+                                  "name": "loanoutStatusLHMC"
                                 },
                                 "_owner": null
                               },
@@ -39771,7 +41108,7 @@
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanIndividual"
+                                  "name": "loanoutStatusDateLHMC"
                                 },
                                 "_owner": null
                               },
@@ -39779,7 +41116,7 @@
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanStatus"
+                                  "name": "loanoutStatusNoteLHMC"
                                 },
                                 "_owner": null
                               },
@@ -39787,15 +41124,7 @@
                                 "key": null,
                                 "ref": null,
                                 "props": {
-                                  "name": "loanStatusDate"
-                                },
-                                "_owner": null
-                              },
-                              {
-                                "key": null,
-                                "ref": null,
-                                "props": {
-                                  "name": "loanStatusNote"
+                                  "name": "loanoutStatusAuthorizerLHMC"
                                 },
                                 "_owner": null
                               }
@@ -43439,6 +44768,24 @@
                 }
               }
             }
+          },
+          "ns2:movements_lhmc": {
+            "tempLocAuthorizedBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.movements_lhmc.tempLocAuthorizedBy.name",
+                    "defaultMessage": "Temp location authorized by"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,person/ulan"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -43620,6 +44967,15 @@
                                         "_owner": null
                                       }
                                     ]
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "tempLocAuthorizedBy",
+                                    "subpath": "ns2:movements_lhmc"
                                   },
                                   "_owner": null
                                 }
@@ -50196,6 +51552,14 @@
           "termSource": {
             "id": "inputTable.person.termSource",
             "defaultMessage": "Source"
+          },
+          "place": {
+            "id": "inputTable.person.place",
+            "defaultMessage": "Place and/or geographical area of residence"
+          },
+          "relatedPerson": {
+            "id": "inputTable.person.relatedPerson",
+            "defaultMessage": "Related person"
           }
         }
       },
@@ -51840,10 +53204,17 @@
                   "name": {
                     "id": "field.persons_common.birthPlace.name",
                     "defaultMessage": "Place of birth"
+                  },
+                  "fullName": {
+                    "id": "field.persons_common.birthPlace.fullName",
+                    "defaultMessage": "Where born"
                   }
                 },
                 "view": {
-                  "type": "TextInput"
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "place/local,place/tgn"
+                  }
                 }
               }
             },
@@ -52523,10 +53894,17 @@
                   "name": {
                     "id": "field.persons_common.deathPlace.name",
                     "defaultMessage": "Place of death"
+                  },
+                  "fullName": {
+                    "id": "field.persons_common.deathPlace.fullName",
+                    "defaultMessage": "Where died"
                   }
                 },
                 "view": {
-                  "type": "TextInput"
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "place/local,place/tgn"
+                  }
                 }
               }
             },
@@ -52550,6 +53928,163 @@
           "ns2:contacts_common": {
             "[config]": {
               "cloneable": false
+            }
+          },
+          "ns2:persons_lhmc": {
+            "relatedPerson": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.persons_lhmc.relatedPerson.fullName",
+                    "defaultMessage": "Related person name"
+                  },
+                  "name": {
+                    "id": "field.persons_lhmc.relatedPerson.name",
+                    "defaultMessage": "Name"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/ulan,person/shared"
+                  }
+                }
+              }
+            },
+            "relationshipType": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.persons_lhmc.relationshipType.fullName",
+                    "defaultMessage": "Related person type"
+                  },
+                  "name": {
+                    "id": "field.persons_lhmc.relationshipType.name",
+                    "defaultMessage": "Type"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "personrelationship"
+                  }
+                }
+              }
+            },
+            "relationshipNote": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.persons_lhmc.relationshipNote.fullName",
+                    "defaultMessage": "Related person note"
+                  },
+                  "name": {
+                    "id": "field.persons_lhmc.relationshipNote.name",
+                    "defaultMessage": "Note"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "placeOrResidence": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.persons_lhmc.placeOrResidence.fullName",
+                    "defaultMessage": "Place/geographical area of residence name"
+                  },
+                  "name": {
+                    "id": "field.persons_lhmc.placeOrResidence.name",
+                    "defaultMessage": "Name"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "place/local,place/tgn,place/shared"
+                  }
+                }
+              }
+            },
+            "placeNote": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.persons_lhmc.placeNote.fullName",
+                    "defaultMessage": "Place/geographical area of residence note"
+                  },
+                  "name": {
+                    "id": "field.persons_lhmc.placeNote.name",
+                    "defaultMessage": "Note"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "publicationsPersonGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "publicationsPersonGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.persons_lhmc.publicationsPersonGroup.name",
+                      "defaultMessage": "Publication"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "publicationsPerson": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.persons_lhmc.publicationsPerson.fullName",
+                        "defaultMessage": "Publication name"
+                      },
+                      "name": {
+                        "id": "field.persons_lhmc.publicationsPerson.name",
+                        "defaultMessage": "Name"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "citation/local,citation/worldcat,citation/shared"
+                      }
+                    }
+                  }
+                },
+                "publicationsPersonNote": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.persons_lhmc.publicationsPersonNote.fullName",
+                        "defaultMessage": "Publication note"
+                      },
+                      "name": {
+                        "id": "field.persons_lhmc.publicationsPersonNote.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -52871,6 +54406,41 @@
                                       }
                                     },
                                     "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "publicationsPersonGroupList",
+                                      "subpath": "ns2:persons_lhmc",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "publicationsPersonGroup",
+                                          "children": [
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "publicationsPerson"
+                                              },
+                                              "_owner": null
+                                            },
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "publicationsPersonNote"
+                                              },
+                                              "_owner": null
+                                            }
+                                          ]
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
                                   }
                                 ]
                               },
@@ -52886,6 +54456,71 @@
                                     "ref": null,
                                     "props": {
                                       "name": "nameNote"
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "relatedPerson",
+                                      "children": [
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "relatedPerson",
+                                            "subpath": "ns2:persons_lhmc"
+                                          },
+                                          "_owner": null
+                                        },
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "relationshipType",
+                                            "subpath": "ns2:persons_lhmc"
+                                          },
+                                          "_owner": null
+                                        },
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "relationshipNote",
+                                            "subpath": "ns2:persons_lhmc"
+                                          },
+                                          "_owner": null
+                                        }
+                                      ]
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "place",
+                                      "children": [
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "placeOrResidence",
+                                            "subpath": "ns2:persons_lhmc"
+                                          },
+                                          "_owner": null
+                                        },
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "placeNote",
+                                            "subpath": "ns2:persons_lhmc"
+                                          },
+                                          "_owner": null
+                                        }
+                                      ]
                                     },
                                     "_owner": null
                                   },
@@ -56882,6 +58517,34 @@
                 }
               }
             }
+          },
+          "ns2:places_lhmc": {
+            "placeWidth": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.places_lhmc.placeWidth.name",
+                    "defaultMessage": "Width"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "placeLength": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.places_lhmc.placeLength.name",
+                    "defaultMessage": "Length"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            }
           }
         }
       },
@@ -57105,7 +58768,43 @@
                               "key": null,
                               "ref": null,
                               "props": {
-                                "name": "placeType"
+                                "children": [
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "placeType"
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "children": [
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "placeWidth",
+                                            "subpath": "ns2:places_lhmc"
+                                          },
+                                          "_owner": null
+                                        },
+                                        {
+                                          "key": null,
+                                          "ref": null,
+                                          "props": {
+                                            "name": "placeLength",
+                                            "subpath": "ns2:places_lhmc"
+                                          },
+                                          "_owner": null
+                                        }
+                                      ]
+                                    },
+                                    "_owner": null
+                                  }
+                                ]
                               },
                               "_owner": null
                             },
@@ -63522,6 +65221,17 @@
       "serviceConfig": {
         "servicePath": "authorityrefs"
       }
+    }
+  },
+  "pluginInfo": {
+    "cspaceUIPluginProfileLHMC": {
+      "messages": {
+        "name": {
+          "id": "cspaceUIPluginProfileLHMC.name",
+          "defaultMessage": "Local History and Material Culture profile"
+        }
+      },
+      "version": "3.1.1"
     }
   }
 }

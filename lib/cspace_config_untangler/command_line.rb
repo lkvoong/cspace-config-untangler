@@ -165,18 +165,20 @@ module CspaceConfigUntangler
         }
       }
 
-      case options[:format]
-      when 'csv'
-        CSV.open(options[:output], 'wb'){ |csv|
-          csv << field_defs[0].csv_header
-          field_defs.each{ |fd| csv << fd.to_csv }
-        }
-      when 'json'
-        File.open(options[:output], 'w'){ |file|
-          file.write(JSON.pretty_generate(field_defs.map{ |fd| fd.to_h }))
-        }
-      else
-        puts 'Format must be csv or json'
+      unless field_defs.empty?
+        case options[:format]
+        when 'csv'
+          CSV.open(options[:output], 'wb'){ |csv|
+            csv << field_defs[0].csv_header
+            field_defs.each{ |fd| csv << fd.to_csv }
+          }
+        when 'json'
+          File.open(options[:output], 'w'){ |file|
+            file.write(JSON.pretty_generate(field_defs.map{ |fd| fd.to_h }))
+          }
+        else
+          puts 'Format must be csv or json'
+        end
       end
     end
 
@@ -196,18 +198,20 @@ module CspaceConfigUntangler
         p.form_fields.each{ |ff| form_fields << ff if rts.include?(ff.rectype) }
       }
 
-      case options[:format]
-      when 'csv'
-        CSV.open(options[:output], 'wb'){ |csv|
-          csv << form_fields[0].csv_header
-          form_fields.each{ |ff| csv << ff.to_csv }
-        }
-      when 'json'
-        File.open(options[:output], 'w'){ |file|
-          file.write(JSON.pretty_generate(form_fields.map{ |ff| ff.to_h }))
-        }
-      else
-        puts 'Format must be csv or json'
+      unless form_fields.empty?
+        case options[:format]
+        when 'csv'
+          CSV.open(options[:output], 'wb'){ |csv|
+            csv << form_fields[0].csv_header
+            form_fields.each{ |ff| csv << ff.to_csv }
+          }
+        when 'json'
+          File.open(options[:output], 'w'){ |file|
+            file.write(JSON.pretty_generate(form_fields.map{ |ff| ff.to_h }))
+          }
+        else
+          puts 'Format must be csv or json'
+        end
       end
     end
 
@@ -229,10 +233,12 @@ module CspaceConfigUntangler
         p = CCU::Profile.new(profile: profile, rectypes: rt, structured_date_treatment: options[:structured_date].to_sym)
         p.fields.each{ |f| fs << f }
       }
-      CSV.open(options[:output], 'wb'){ |csv|
-        csv << fs[0].csv_header
-        fs.each{ |f| csv << f.to_csv }
-      }
+      unless fs.empty?
+        CSV.open(options[:output], 'wb'){ |csv|
+          csv << fs[0].csv_header
+          fs.each{ |f| csv << f.to_csv }
+        }
+      end
     end
 
     desc 'report_nonunique_fields', 'Print list of non-unique fields per profile'
