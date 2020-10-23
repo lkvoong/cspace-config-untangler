@@ -51,7 +51,7 @@ module CspaceConfigUntangler
           @errors << 'No field mappings specified'
           return false
         end
-        not_ok = mappings.select{ |mapping| mapping['source_type'].start_with?('invalid source type:') }
+        not_ok = mappings.select{ |mapping| mapping['source_type'].start_with?('invalid source type') }
         if not_ok.empty?
           return true
         else
