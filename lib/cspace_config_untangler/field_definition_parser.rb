@@ -296,10 +296,12 @@ module CspaceConfigUntangler
           return 'boolean'
         when 'DATE'
           return 'date'
+        when 'STRING'
+          return 'string'
         when 'STRUCTURED_DATE'
           return 'structured date group'
         else
-          return "TODO: convert: #{val}"
+          return "TODO: handle unknown datatype: #{val}"
         end
       end
 
