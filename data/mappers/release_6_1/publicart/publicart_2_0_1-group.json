@@ -26,13 +26,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "title"
+      "datacolumn": "title",
+      "required": "y"
     },
     {
       "fieldname": "responsibleDepartment",
@@ -45,13 +45,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "responsibleDepartment"
+      "datacolumn": "responsibleDepartment",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -67,13 +67,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPersonLocal"
+      "datacolumn": "ownerPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -89,13 +89,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPersonShared"
+      "datacolumn": "ownerPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -111,13 +111,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganizationLocal"
+      "datacolumn": "ownerOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -133,13 +133,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganizationShared"
+      "datacolumn": "ownerOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "groupEarliestSingleDate",
@@ -151,13 +151,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupEarliestSingleDate"
+      "datacolumn": "groupEarliestSingleDate",
+      "required": "n"
     },
     {
       "fieldname": "groupLatestDate",
@@ -169,13 +169,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupLatestDate"
+      "datacolumn": "groupLatestDate",
+      "required": "n"
     },
     {
       "fieldname": "scopeNote",
@@ -187,13 +187,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "scopeNote"
+      "datacolumn": "scopeNote",
+      "required": "n"
     }
   ]
 }

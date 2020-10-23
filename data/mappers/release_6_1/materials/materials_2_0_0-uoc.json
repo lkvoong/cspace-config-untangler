@@ -56,13 +56,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceNumber"
+      "datacolumn": "referenceNumber",
+      "required": "y"
     },
     {
       "fieldname": "method",
@@ -75,13 +75,13 @@
         "methodList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "method"
+      "datacolumn": "method",
+      "required": "n"
     },
     {
       "fieldname": "collectionType",
@@ -94,13 +94,13 @@
         "collectionTypeList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "collectionType"
+      "datacolumn": "collectionType",
+      "required": "n"
     },
     {
       "fieldname": "projectId",
@@ -113,13 +113,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "projectId"
+      "datacolumn": "projectId",
+      "required": "n"
     },
     {
       "fieldname": "subcollection",
@@ -132,13 +132,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "subcollection"
+      "datacolumn": "subcollection",
+      "required": "n"
     },
     {
       "fieldname": "materialType",
@@ -151,13 +151,13 @@
         "materialTypeList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialType"
+      "datacolumn": "materialType",
+      "required": "n"
     },
     {
       "fieldname": "user",
@@ -174,13 +174,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userPersonLocal"
+      "datacolumn": "userPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "user",
@@ -197,13 +197,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userPersonShared"
+      "datacolumn": "userPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "user",
@@ -220,13 +220,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userOrganizationLocal"
+      "datacolumn": "userOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "user",
@@ -243,13 +243,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userOrganizationShared"
+      "datacolumn": "userOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "userUocRole",
@@ -263,13 +263,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userUocRole"
+      "datacolumn": "userUocRole",
+      "required": "n"
     },
     {
       "fieldname": "userInstitution",
@@ -286,13 +286,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userInstitutionLocal"
+      "datacolumn": "userInstitutionLocal",
+      "required": "n"
     },
     {
       "fieldname": "userInstitution",
@@ -309,13 +309,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userInstitutionShared"
+      "datacolumn": "userInstitutionShared",
+      "required": "n"
     },
     {
       "fieldname": "userInstitutionRole",
@@ -329,13 +329,13 @@
         "userGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "userInstitutionRole"
+      "datacolumn": "userInstitutionRole",
+      "required": "n"
     },
     {
       "fieldname": "title",
@@ -347,13 +347,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "title"
+      "datacolumn": "title",
+      "required": "n"
     },
     {
       "fieldname": "dateRequested",
@@ -365,13 +365,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "dateRequested"
+      "datacolumn": "dateRequested",
+      "required": "n"
     },
     {
       "fieldname": "dateCompleted",
@@ -383,13 +383,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "dateCompleted"
+      "datacolumn": "dateCompleted",
+      "required": "n"
     },
     {
       "fieldname": "occasion",
@@ -405,13 +405,13 @@
         "occasionList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "occasion"
+      "datacolumn": "occasion",
+      "required": "n"
     },
     {
       "fieldname": "projectDescription",
@@ -423,13 +423,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "projectDescription"
+      "datacolumn": "projectDescription",
+      "required": "n"
     },
     {
       "fieldname": "authorizedBy",
@@ -446,13 +446,13 @@
         "authorizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizedByPersonLocal"
+      "datacolumn": "authorizedByPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "authorizedBy",
@@ -469,13 +469,13 @@
         "authorizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizedByPersonShared"
+      "datacolumn": "authorizedByPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "authorizedBy",
@@ -492,13 +492,13 @@
         "authorizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizedByOrganizationLocal"
+      "datacolumn": "authorizedByOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "authorizedBy",
@@ -515,13 +515,13 @@
         "authorizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizedByOrganizationShared"
+      "datacolumn": "authorizedByOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "authorizationDate",
@@ -534,13 +534,13 @@
         "authorizationGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizationDate"
+      "datacolumn": "authorizationDate",
+      "required": "n"
     },
     {
       "fieldname": "authorizationStatus",
@@ -554,13 +554,13 @@
         "authorizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizationStatus"
+      "datacolumn": "authorizationStatus",
+      "required": "n"
     },
     {
       "fieldname": "authorizationNote",
@@ -573,13 +573,13 @@
         "authorizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizationNote"
+      "datacolumn": "authorizationNote",
+      "required": "n"
     },
     {
       "fieldname": "useDate",
@@ -592,13 +592,13 @@
         "useDateGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "useDate"
+      "datacolumn": "useDate",
+      "required": "n"
     },
     {
       "fieldname": "useDateTimeNote",
@@ -611,13 +611,13 @@
         "useDateGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "useDateTimeNote"
+      "datacolumn": "useDateTimeNote",
+      "required": "n"
     },
     {
       "fieldname": "useDateNumberOfVisitors",
@@ -630,13 +630,13 @@
         "useDateGroup"
       ],
       "data_type": "integer",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "useDateNumberOfVisitors"
+      "datacolumn": "useDateNumberOfVisitors",
+      "required": "n"
     },
     {
       "fieldname": "useDateHoursSpent",
@@ -649,13 +649,13 @@
         "useDateGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "useDateHoursSpent"
+      "datacolumn": "useDateHoursSpent",
+      "required": "n"
     },
     {
       "fieldname": "useDateVisitorNote",
@@ -668,13 +668,13 @@
         "useDateGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "useDateVisitorNote"
+      "datacolumn": "useDateVisitorNote",
+      "required": "n"
     },
     {
       "fieldname": "endDate",
@@ -686,13 +686,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "endDate"
+      "datacolumn": "endDate",
+      "required": "n"
     },
     {
       "fieldname": "staffName",
@@ -709,13 +709,13 @@
         "staffGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNamePersonLocal"
+      "datacolumn": "staffNamePersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "staffName",
@@ -732,13 +732,13 @@
         "staffGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNamePersonShared"
+      "datacolumn": "staffNamePersonShared",
+      "required": "n"
     },
     {
       "fieldname": "staffName",
@@ -755,13 +755,13 @@
         "staffGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNameOrganizationLocal"
+      "datacolumn": "staffNameOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "staffName",
@@ -778,13 +778,13 @@
         "staffGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNameOrganizationShared"
+      "datacolumn": "staffNameOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "staffRole",
@@ -798,13 +798,13 @@
         "staffGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffRole"
+      "datacolumn": "staffRole",
+      "required": "n"
     },
     {
       "fieldname": "staffHours",
@@ -817,13 +817,13 @@
         "staffGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffHours"
+      "datacolumn": "staffHours",
+      "required": "n"
     },
     {
       "fieldname": "staffNote",
@@ -836,13 +836,13 @@
         "staffGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNote"
+      "datacolumn": "staffNote",
+      "required": "n"
     },
     {
       "fieldname": "location",
@@ -858,13 +858,13 @@
         "locationList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationOrganizationLocal"
+      "datacolumn": "locationOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "location",
@@ -880,13 +880,13 @@
         "locationList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationOrganizationShared"
+      "datacolumn": "locationOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "location",
@@ -902,13 +902,13 @@
         "locationList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationPlaceLocal"
+      "datacolumn": "locationPlaceLocal",
+      "required": "n"
     },
     {
       "fieldname": "location",
@@ -924,13 +924,13 @@
         "locationList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationPlaceShared"
+      "datacolumn": "locationPlaceShared",
+      "required": "n"
     },
     {
       "fieldname": "location",
@@ -946,13 +946,13 @@
         "locationList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationLocation"
+      "datacolumn": "locationLocation",
+      "required": "n"
     },
     {
       "fieldname": "feeCurrency",
@@ -966,13 +966,13 @@
         "feeGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "feeCurrency"
+      "datacolumn": "feeCurrency",
+      "required": "n"
     },
     {
       "fieldname": "feeValue",
@@ -985,13 +985,13 @@
         "feeGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "feeValue"
+      "datacolumn": "feeValue",
+      "required": "n"
     },
     {
       "fieldname": "feePaid",
@@ -1007,13 +1007,13 @@
         "feeGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "feePaid"
+      "datacolumn": "feePaid",
+      "required": "n"
     },
     {
       "fieldname": "feeNote",
@@ -1026,13 +1026,13 @@
         "feeGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "feeNote"
+      "datacolumn": "feeNote",
+      "required": "n"
     },
     {
       "fieldname": "note",
@@ -1044,13 +1044,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "note"
+      "datacolumn": "note",
+      "required": "n"
     },
     {
       "fieldname": "provisos",
@@ -1062,13 +1062,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "provisos"
+      "datacolumn": "provisos",
+      "required": "n"
     },
     {
       "fieldname": "obligationsFulfilled",
@@ -1083,13 +1083,13 @@
 
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "obligationsFulfilled"
+      "datacolumn": "obligationsFulfilled",
+      "required": "n"
     },
     {
       "fieldname": "result",
@@ -1101,13 +1101,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "result"
+      "datacolumn": "result",
+      "required": "n"
     }
   ]
 }

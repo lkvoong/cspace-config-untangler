@@ -62,13 +62,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionNumber"
+      "datacolumn": "exhibitionNumber",
+      "required": "y"
     },
     {
       "fieldname": "type",
@@ -81,13 +81,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "type"
+      "datacolumn": "type",
+      "required": "n"
     },
     {
       "fieldname": "title",
@@ -99,13 +99,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "title"
+      "datacolumn": "title",
+      "required": "n"
     },
     {
       "fieldname": "sponsor",
@@ -121,13 +121,13 @@
         "sponsors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sponsorPersonLocal"
+      "datacolumn": "sponsorPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "sponsor",
@@ -143,13 +143,13 @@
         "sponsors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sponsorPersonUlan"
+      "datacolumn": "sponsorPersonUlan",
+      "required": "n"
     },
     {
       "fieldname": "sponsor",
@@ -165,13 +165,13 @@
         "sponsors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sponsorOrganizationLocal"
+      "datacolumn": "sponsorOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "sponsor",
@@ -187,13 +187,13 @@
         "sponsors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sponsorOrganizationUlan"
+      "datacolumn": "sponsorOrganizationUlan",
+      "required": "n"
     },
     {
       "fieldname": "organizer",
@@ -209,13 +209,13 @@
         "organizers"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "organizerPersonLocal"
+      "datacolumn": "organizerPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "organizer",
@@ -231,13 +231,13 @@
         "organizers"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "organizerPersonUlan"
+      "datacolumn": "organizerPersonUlan",
+      "required": "n"
     },
     {
       "fieldname": "organizer",
@@ -253,13 +253,13 @@
         "organizers"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "organizerOrganizationLocal"
+      "datacolumn": "organizerOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "organizer",
@@ -275,13 +275,13 @@
         "organizers"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "organizerOrganizationUlan"
+      "datacolumn": "organizerOrganizationUlan",
+      "required": "n"
     },
     {
       "fieldname": "venue",
@@ -298,13 +298,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueOrganizationLocal"
+      "datacolumn": "venueOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "venue",
@@ -321,13 +321,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueOrganizationUlan"
+      "datacolumn": "venueOrganizationUlan",
+      "required": "n"
     },
     {
       "fieldname": "venue",
@@ -344,13 +344,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueLocationLocal"
+      "datacolumn": "venueLocationLocal",
+      "required": "n"
     },
     {
       "fieldname": "venue",
@@ -367,13 +367,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueLocationOffsite"
+      "datacolumn": "venueLocationOffsite",
+      "required": "n"
     },
     {
       "fieldname": "venue",
@@ -390,13 +390,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venuePlaceLocal"
+      "datacolumn": "venuePlaceLocal",
+      "required": "n"
     },
     {
       "fieldname": "venue",
@@ -413,13 +413,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venuePlaceTgn"
+      "datacolumn": "venuePlaceTgn",
+      "required": "n"
     },
     {
       "fieldname": "venueOpeningDate",
@@ -432,13 +432,13 @@
         "venueGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueOpeningDate"
+      "datacolumn": "venueOpeningDate",
+      "required": "n"
     },
     {
       "fieldname": "venueClosingDate",
@@ -451,13 +451,13 @@
         "venueGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueClosingDate"
+      "datacolumn": "venueClosingDate",
+      "required": "n"
     },
     {
       "fieldname": "venueAttendance",
@@ -470,13 +470,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueAttendance"
+      "datacolumn": "venueAttendance",
+      "required": "n"
     },
     {
       "fieldname": "venueUrl",
@@ -489,13 +489,13 @@
         "venueGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "venueUrl"
+      "datacolumn": "venueUrl",
+      "required": "n"
     },
     {
       "fieldname": "workingGroupTitle",
@@ -508,13 +508,13 @@
         "workingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "workingGroupTitle"
+      "datacolumn": "workingGroupTitle",
+      "required": "n"
     },
     {
       "fieldname": "workingGroupNote",
@@ -527,13 +527,13 @@
         "workingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "workingGroupNote"
+      "datacolumn": "workingGroupNote",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionPerson",
@@ -552,13 +552,13 @@
         "exhibitionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionPersonPersonLocal"
+      "datacolumn": "exhibitionPersonPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionPerson",
@@ -577,13 +577,13 @@
         "exhibitionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionPersonPersonUlan"
+      "datacolumn": "exhibitionPersonPersonUlan",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionPerson",
@@ -602,13 +602,13 @@
         "exhibitionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionPersonOrganizationLocal"
+      "datacolumn": "exhibitionPersonOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionPerson",
@@ -627,13 +627,13 @@
         "exhibitionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionPersonOrganizationUlan"
+      "datacolumn": "exhibitionPersonOrganizationUlan",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionPersonRole",
@@ -649,13 +649,13 @@
         "exhibitionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionPersonRole"
+      "datacolumn": "exhibitionPersonRole",
+      "required": "n"
     },
     {
       "fieldname": "planningNote",
@@ -667,13 +667,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "planningNote"
+      "datacolumn": "planningNote",
+      "required": "n"
     },
     {
       "fieldname": "curatorialNote",
@@ -685,13 +685,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "curatorialNote"
+      "datacolumn": "curatorialNote",
+      "required": "n"
     },
     {
       "fieldname": "generalNote",
@@ -703,13 +703,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "generalNote"
+      "datacolumn": "generalNote",
+      "required": "n"
     },
     {
       "fieldname": "boilerplateText",
@@ -721,13 +721,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "boilerplateText"
+      "datacolumn": "boilerplateText",
+      "required": "n"
     },
     {
       "fieldname": "galleryRotationName",
@@ -740,13 +740,13 @@
         "galleryRotationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "galleryRotationName"
+      "datacolumn": "galleryRotationName",
+      "required": "n"
     },
     {
       "fieldname": "galleryRotationStartDateGroup",
@@ -759,13 +759,13 @@
         "galleryRotationGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "galleryRotationStartDateGroup"
+      "datacolumn": "galleryRotationStartDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "galleryRotationEndDateGroup",
@@ -778,13 +778,13 @@
         "galleryRotationGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "galleryRotationEndDateGroup"
+      "datacolumn": "galleryRotationEndDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "galleryRotationNote",
@@ -797,13 +797,13 @@
         "galleryRotationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "galleryRotationNote"
+      "datacolumn": "galleryRotationNote",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionReference",
@@ -820,13 +820,13 @@
         "exhibitionReferenceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionReferenceLocal"
+      "datacolumn": "exhibitionReferenceLocal",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionReference",
@@ -843,13 +843,13 @@
         "exhibitionReferenceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionReferenceWorldcat"
+      "datacolumn": "exhibitionReferenceWorldcat",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionReferenceType",
@@ -863,13 +863,13 @@
         "exhibitionReferenceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionReferenceType"
+      "datacolumn": "exhibitionReferenceType",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionReferenceNote",
@@ -882,13 +882,13 @@
         "exhibitionReferenceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionReferenceNote"
+      "datacolumn": "exhibitionReferenceNote",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionSectionName",
@@ -901,13 +901,13 @@
         "exhibitionSectionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionSectionName"
+      "datacolumn": "exhibitionSectionName",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionSectionLocation",
@@ -920,13 +920,13 @@
         "exhibitionSectionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionSectionLocation"
+      "datacolumn": "exhibitionSectionLocation",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionSectionObjects",
@@ -939,13 +939,13 @@
         "exhibitionSectionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionSectionObjects"
+      "datacolumn": "exhibitionSectionObjects",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionSectionNote",
@@ -958,13 +958,13 @@
         "exhibitionSectionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionSectionNote"
+      "datacolumn": "exhibitionSectionNote",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionStatus",
@@ -978,13 +978,13 @@
         "exhibitionStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionStatus"
+      "datacolumn": "exhibitionStatus",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionStatusDate",
@@ -997,13 +997,13 @@
         "exhibitionStatusGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionStatusDate"
+      "datacolumn": "exhibitionStatusDate",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionStatusNote",
@@ -1016,13 +1016,13 @@
         "exhibitionStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionStatusNote"
+      "datacolumn": "exhibitionStatusNote",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectNumber",
@@ -1035,13 +1035,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectNumber"
+      "datacolumn": "exhibitionObjectNumber",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectName",
@@ -1054,13 +1054,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectName"
+      "datacolumn": "exhibitionObjectName",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectConsCheckDate",
@@ -1073,13 +1073,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectConsCheckDate"
+      "datacolumn": "exhibitionObjectConsCheckDate",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectConsTreatment",
@@ -1092,7 +1092,6 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1100,7 +1099,8 @@
         "Needed",
         "Not needed"
       ],
-      "datacolumn": "exhibitionObjectConsTreatment"
+      "datacolumn": "exhibitionObjectConsTreatment",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectMount",
@@ -1113,7 +1113,6 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1121,7 +1120,8 @@
         "Needed",
         "Not needed"
       ],
-      "datacolumn": "exhibitionObjectMount"
+      "datacolumn": "exhibitionObjectMount",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectSection",
@@ -1134,13 +1134,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectSection"
+      "datacolumn": "exhibitionObjectSection",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectCase",
@@ -1153,13 +1153,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectCase"
+      "datacolumn": "exhibitionObjectCase",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectSeqNum",
@@ -1172,13 +1172,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectSeqNum"
+      "datacolumn": "exhibitionObjectSeqNum",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectRotation",
@@ -1191,13 +1191,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectRotation"
+      "datacolumn": "exhibitionObjectRotation",
+      "required": "n"
     },
     {
       "fieldname": "exhibitionObjectNote",
@@ -1210,13 +1210,13 @@
         "exhibitionObjectGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionObjectNote"
+      "datacolumn": "exhibitionObjectNote",
+      "required": "n"
     }
   ]
 }

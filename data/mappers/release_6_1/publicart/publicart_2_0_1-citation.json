@@ -57,13 +57,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termDisplayName"
+      "datacolumn": "termDisplayName",
+      "required": "y"
     },
     {
       "fieldname": "termStatus",
@@ -76,7 +76,6 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -85,7 +84,8 @@
         "rejected",
         "under review"
       ],
-      "datacolumn": "termStatus"
+      "datacolumn": "termStatus",
+      "required": "n"
     },
     {
       "fieldname": "termType",
@@ -99,13 +99,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termType"
+      "datacolumn": "termType",
+      "required": "n"
     },
     {
       "fieldname": "termFlag",
@@ -119,13 +119,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termFlag"
+      "datacolumn": "termFlag",
+      "required": "n"
     },
     {
       "fieldname": "termLanguage",
@@ -139,13 +139,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termLanguage"
+      "datacolumn": "termLanguage",
+      "required": "n"
     },
     {
       "fieldname": "termPrefForLang",
@@ -161,13 +161,13 @@
         "citationTermGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termPrefForLang"
+      "datacolumn": "termPrefForLang",
+      "required": "n"
     },
     {
       "fieldname": "termFullCitation",
@@ -180,13 +180,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termFullCitation"
+      "datacolumn": "termFullCitation",
+      "required": "n"
     },
     {
       "fieldname": "termTitle",
@@ -199,13 +199,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termTitle"
+      "datacolumn": "termTitle",
+      "required": "n"
     },
     {
       "fieldname": "termSubTitle",
@@ -218,13 +218,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSubTitle"
+      "datacolumn": "termSubTitle",
+      "required": "n"
     },
     {
       "fieldname": "termSectionTitle",
@@ -237,13 +237,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSectionTitle"
+      "datacolumn": "termSectionTitle",
+      "required": "n"
     },
     {
       "fieldname": "termVolume",
@@ -256,13 +256,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termVolume"
+      "datacolumn": "termVolume",
+      "required": "n"
     },
     {
       "fieldname": "termIssue",
@@ -275,13 +275,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termIssue"
+      "datacolumn": "termIssue",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -298,13 +298,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal"
+      "datacolumn": "termSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -321,13 +321,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceWorldcat"
+      "datacolumn": "termSourceWorldcat",
+      "required": "n"
     },
     {
       "fieldname": "termSourceDetail",
@@ -340,13 +340,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceDetail"
+      "datacolumn": "termSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "termSourceID",
@@ -359,13 +359,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceID"
+      "datacolumn": "termSourceID",
+      "required": "n"
     },
     {
       "fieldname": "termSourceNote",
@@ -378,13 +378,13 @@
         "citationTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceNote"
+      "datacolumn": "termSourceNote",
+      "required": "n"
     },
     {
       "fieldname": "publisher",
@@ -401,13 +401,13 @@
         "citationPublicationInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "publisher"
+      "datacolumn": "publisher",
+      "required": "n"
     },
     {
       "fieldname": "publicationPlace",
@@ -424,13 +424,13 @@
         "citationPublicationInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicationPlace"
+      "datacolumn": "publicationPlace",
+      "required": "n"
     },
     {
       "fieldname": "publicationDate",
@@ -443,13 +443,13 @@
         "citationPublicationInfoGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicationDate"
+      "datacolumn": "publicationDate",
+      "required": "n"
     },
     {
       "fieldname": "edition",
@@ -462,13 +462,13 @@
         "citationPublicationInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "edition"
+      "datacolumn": "edition",
+      "required": "n"
     },
     {
       "fieldname": "pages",
@@ -481,13 +481,13 @@
         "citationPublicationInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "pages"
+      "datacolumn": "pages",
+      "required": "n"
     },
     {
       "fieldname": "agent",
@@ -504,13 +504,13 @@
         "citationAgentInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "agentPerson"
+      "datacolumn": "agentPerson",
+      "required": "n"
     },
     {
       "fieldname": "agent",
@@ -527,13 +527,13 @@
         "citationAgentInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "agentOrganization"
+      "datacolumn": "agentOrganization",
+      "required": "n"
     },
     {
       "fieldname": "role",
@@ -547,13 +547,13 @@
         "citationAgentInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "role"
+      "datacolumn": "role",
+      "required": "n"
     },
     {
       "fieldname": "note",
@@ -566,13 +566,13 @@
         "citationAgentInfoGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "note"
+      "datacolumn": "note",
+      "required": "n"
     },
     {
       "fieldname": "citationNote",
@@ -584,13 +584,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "citationNote"
+      "datacolumn": "citationNote",
+      "required": "n"
     },
     {
       "fieldname": "resourceIdent",
@@ -603,13 +603,13 @@
         "citationResourceIdentGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "resourceIdent"
+      "datacolumn": "resourceIdent",
+      "required": "n"
     },
     {
       "fieldname": "type",
@@ -623,13 +623,13 @@
         "citationResourceIdentGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "type"
+      "datacolumn": "type",
+      "required": "n"
     },
     {
       "fieldname": "captureDate",
@@ -642,13 +642,13 @@
         "citationResourceIdentGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "captureDate"
+      "datacolumn": "captureDate",
+      "required": "n"
     },
     {
       "fieldname": "relatedTerm",
@@ -665,13 +665,13 @@
         "citationRelatedTermsGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedTerm"
+      "datacolumn": "relatedTerm",
+      "required": "n"
     },
     {
       "fieldname": "relationType",
@@ -685,13 +685,13 @@
         "citationRelatedTermsGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "relationType"
+      "datacolumn": "relationType",
+      "required": "n"
     }
   ]
 }

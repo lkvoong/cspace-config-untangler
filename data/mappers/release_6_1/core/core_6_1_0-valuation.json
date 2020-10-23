@@ -30,13 +30,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valuationcontrolRefNumber"
+      "datacolumn": "valuationcontrolRefNumber",
+      "required": "y"
     },
     {
       "fieldname": "valueCurrency",
@@ -50,13 +50,13 @@
         "valueAmounts"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueCurrency"
+      "datacolumn": "valueCurrency",
+      "required": "n"
     },
     {
       "fieldname": "valueAmount",
@@ -69,13 +69,13 @@
         "valueAmounts"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueAmount"
+      "datacolumn": "valueAmount",
+      "required": "n"
     },
     {
       "fieldname": "valueDate",
@@ -87,13 +87,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueDate"
+      "datacolumn": "valueDate",
+      "required": "n"
     },
     {
       "fieldname": "valueRenewalDate",
@@ -105,13 +105,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueRenewalDate"
+      "datacolumn": "valueRenewalDate",
+      "required": "n"
     },
     {
       "fieldname": "valueSource",
@@ -127,13 +127,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueSourcePerson"
+      "datacolumn": "valueSourcePerson",
+      "required": "n"
     },
     {
       "fieldname": "valueSource",
@@ -149,13 +149,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueSourceOrganization"
+      "datacolumn": "valueSourceOrganization",
+      "required": "n"
     },
     {
       "fieldname": "valueType",
@@ -167,7 +167,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -175,7 +174,8 @@
         "Original Value",
         "Replacement Value"
       ],
-      "datacolumn": "valueType"
+      "datacolumn": "valueType",
+      "required": "n"
     },
     {
       "fieldname": "valueNote",
@@ -187,13 +187,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueNote"
+      "datacolumn": "valueNote",
+      "required": "n"
     }
   ]
 }

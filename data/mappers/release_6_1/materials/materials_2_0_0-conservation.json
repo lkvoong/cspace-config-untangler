@@ -44,13 +44,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservationNumber"
+      "datacolumn": "conservationNumber",
+      "required": "y"
     },
     {
       "fieldname": "status",
@@ -64,13 +64,13 @@
         "conservationStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "status"
+      "datacolumn": "status",
+      "required": "n"
     },
     {
       "fieldname": "statusDate",
@@ -83,13 +83,13 @@
         "conservationStatusGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "statusDate"
+      "datacolumn": "statusDate",
+      "required": "n"
     },
     {
       "fieldname": "treatmentPurpose",
@@ -102,13 +102,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "treatmentPurpose"
+      "datacolumn": "treatmentPurpose",
+      "required": "n"
     },
     {
       "fieldname": "conservator",
@@ -124,13 +124,13 @@
         "conservators"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservatorPersonLocal"
+      "datacolumn": "conservatorPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "conservator",
@@ -146,13 +146,13 @@
         "conservators"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservatorPersonShared"
+      "datacolumn": "conservatorPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "conservator",
@@ -168,13 +168,13 @@
         "conservators"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservatorOrganizationLocal"
+      "datacolumn": "conservatorOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "conservator",
@@ -190,13 +190,13 @@
         "conservators"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservatorOrganizationShared"
+      "datacolumn": "conservatorOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "otherParty",
@@ -213,13 +213,13 @@
         "otherPartyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyPersonLocal"
+      "datacolumn": "otherPartyPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "otherParty",
@@ -236,13 +236,13 @@
         "otherPartyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyPersonShared"
+      "datacolumn": "otherPartyPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "otherParty",
@@ -259,13 +259,13 @@
         "otherPartyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyOrganizationLocal"
+      "datacolumn": "otherPartyOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "otherParty",
@@ -282,13 +282,13 @@
         "otherPartyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyOrganizationShared"
+      "datacolumn": "otherPartyOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "otherPartyRole",
@@ -302,13 +302,13 @@
         "otherPartyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyRole"
+      "datacolumn": "otherPartyRole",
+      "required": "n"
     },
     {
       "fieldname": "otherPartyNote",
@@ -321,13 +321,13 @@
         "otherPartyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyNote"
+      "datacolumn": "otherPartyNote",
+      "required": "n"
     },
     {
       "fieldname": "examinationStaff",
@@ -344,13 +344,13 @@
         "examinationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationStaffLocal"
+      "datacolumn": "examinationStaffLocal",
+      "required": "n"
     },
     {
       "fieldname": "examinationStaff",
@@ -367,13 +367,13 @@
         "examinationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationStaffShared"
+      "datacolumn": "examinationStaffShared",
+      "required": "n"
     },
     {
       "fieldname": "examinationPhase",
@@ -387,13 +387,13 @@
         "examinationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationPhase"
+      "datacolumn": "examinationPhase",
+      "required": "n"
     },
     {
       "fieldname": "examinationDate",
@@ -406,13 +406,13 @@
         "examinationGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationDate"
+      "datacolumn": "examinationDate",
+      "required": "n"
     },
     {
       "fieldname": "examinationNote",
@@ -425,13 +425,13 @@
         "examinationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationNote"
+      "datacolumn": "examinationNote",
+      "required": "n"
     },
     {
       "fieldname": "fabricationNote",
@@ -443,13 +443,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "fabricationNote"
+      "datacolumn": "fabricationNote",
+      "required": "n"
     },
     {
       "fieldname": "proposedTreatment",
@@ -461,13 +461,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "proposedTreatment"
+      "datacolumn": "proposedTreatment",
+      "required": "n"
     },
     {
       "fieldname": "approvedBy",
@@ -483,13 +483,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvedByLocal"
+      "datacolumn": "approvedByLocal",
+      "required": "n"
     },
     {
       "fieldname": "approvedBy",
@@ -505,13 +505,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvedByShared"
+      "datacolumn": "approvedByShared",
+      "required": "n"
     },
     {
       "fieldname": "approvedDate",
@@ -523,13 +523,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvedDate"
+      "datacolumn": "approvedDate",
+      "required": "n"
     },
     {
       "fieldname": "treatmentStartDate",
@@ -541,13 +541,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "treatmentStartDate"
+      "datacolumn": "treatmentStartDate",
+      "required": "n"
     },
     {
       "fieldname": "treatmentEndDate",
@@ -559,13 +559,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "treatmentEndDate"
+      "datacolumn": "treatmentEndDate",
+      "required": "n"
     },
     {
       "fieldname": "treatmentSummary",
@@ -577,13 +577,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "treatmentSummary"
+      "datacolumn": "treatmentSummary",
+      "required": "n"
     },
     {
       "fieldname": "proposedAnalysis",
@@ -595,13 +595,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "proposedAnalysis"
+      "datacolumn": "proposedAnalysis",
+      "required": "n"
     },
     {
       "fieldname": "researcher",
@@ -617,13 +617,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "researcherLocal"
+      "datacolumn": "researcherLocal",
+      "required": "n"
     },
     {
       "fieldname": "researcher",
@@ -639,13 +639,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "researcherShared"
+      "datacolumn": "researcherShared",
+      "required": "n"
     },
     {
       "fieldname": "proposedAnalysisDate",
@@ -657,13 +657,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "proposedAnalysisDate"
+      "datacolumn": "proposedAnalysisDate",
+      "required": "n"
     },
     {
       "fieldname": "destAnalysisApprovedDate",
@@ -676,13 +676,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "destAnalysisApprovedDate"
+      "datacolumn": "destAnalysisApprovedDate",
+      "required": "n"
     },
     {
       "fieldname": "destAnalysisApprovalNote",
@@ -695,13 +695,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "destAnalysisApprovalNote"
+      "datacolumn": "destAnalysisApprovalNote",
+      "required": "n"
     },
     {
       "fieldname": "sampleBy",
@@ -718,13 +718,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleByLocal"
+      "datacolumn": "sampleByLocal",
+      "required": "n"
     },
     {
       "fieldname": "sampleBy",
@@ -741,13 +741,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleByShared"
+      "datacolumn": "sampleByShared",
+      "required": "n"
     },
     {
       "fieldname": "sampleDate",
@@ -760,13 +760,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleDate"
+      "datacolumn": "sampleDate",
+      "required": "n"
     },
     {
       "fieldname": "sampleDescription",
@@ -779,13 +779,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleDescription"
+      "datacolumn": "sampleDescription",
+      "required": "n"
     },
     {
       "fieldname": "sampleReturned",
@@ -801,13 +801,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleReturned"
+      "datacolumn": "sampleReturned",
+      "required": "n"
     },
     {
       "fieldname": "sampleReturnedLocation",
@@ -820,13 +820,13 @@
         "destAnalysisGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleReturnedLocation"
+      "datacolumn": "sampleReturnedLocation",
+      "required": "n"
     },
     {
       "fieldname": "analysisMethod",
@@ -838,13 +838,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "analysisMethod"
+      "datacolumn": "analysisMethod",
+      "required": "n"
     },
     {
       "fieldname": "analysisResults",
@@ -856,13 +856,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "analysisResults"
+      "datacolumn": "analysisResults",
+      "required": "n"
     }
   ]
 }

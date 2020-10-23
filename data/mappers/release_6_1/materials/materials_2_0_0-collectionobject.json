@@ -64,6 +64,8 @@
       },
       "responsibleDepartments": {
       },
+      "namedCollections": {
+      },
       "technicalAttributeGroupList": {
         "technicalAttributeGroup": {
         }
@@ -1341,11 +1343,11 @@
       "source_type": "authority",
       "namespace": "collectionobjects_common",
       "xpath": [
-
+        "namedCollections"
       ],
       "data_type": "string",
-      "repeats": "n",
-      "in_repeating_group": "n/a",
+      "repeats": "y",
+      "in_repeating_group": "n",
       "opt_list_values": [
 
       ],

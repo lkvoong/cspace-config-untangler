@@ -68,13 +68,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termDisplayName"
+      "datacolumn": "termDisplayName",
+      "required": "y"
     },
     {
       "fieldname": "termName",
@@ -87,13 +87,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termName"
+      "datacolumn": "termName",
+      "required": "n"
     },
     {
       "fieldname": "termQualifier",
@@ -106,13 +106,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termQualifier"
+      "datacolumn": "termQualifier",
+      "required": "n"
     },
     {
       "fieldname": "termStatus",
@@ -125,7 +125,6 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -134,7 +133,8 @@
         "rejected",
         "under review"
       ],
-      "datacolumn": "termStatus"
+      "datacolumn": "termStatus",
+      "required": "n"
     },
     {
       "fieldname": "termType",
@@ -148,13 +148,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termType"
+      "datacolumn": "termType",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -171,13 +171,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal"
+      "datacolumn": "termSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -194,13 +194,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceShared"
+      "datacolumn": "termSourceShared",
+      "required": "n"
     },
     {
       "fieldname": "termSourceDetail",
@@ -213,13 +213,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceDetail"
+      "datacolumn": "termSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "termSourceID",
@@ -232,13 +232,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceID"
+      "datacolumn": "termSourceID",
+      "required": "n"
     },
     {
       "fieldname": "termSourceNote",
@@ -251,13 +251,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceNote"
+      "datacolumn": "termSourceNote",
+      "required": "n"
     },
     {
       "fieldname": "salutation",
@@ -270,7 +270,6 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -278,7 +277,8 @@
         "hello",
         "to"
       ],
-      "datacolumn": "salutation"
+      "datacolumn": "salutation",
+      "required": "n"
     },
     {
       "fieldname": "title",
@@ -291,7 +291,6 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -308,7 +307,8 @@
         "Professor",
         "Sir"
       ],
-      "datacolumn": "title"
+      "datacolumn": "title",
+      "required": "n"
     },
     {
       "fieldname": "foreName",
@@ -321,13 +321,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "foreName"
+      "datacolumn": "foreName",
+      "required": "n"
     },
     {
       "fieldname": "middleName",
@@ -340,13 +340,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "middleName"
+      "datacolumn": "middleName",
+      "required": "n"
     },
     {
       "fieldname": "surName",
@@ -359,13 +359,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "surName"
+      "datacolumn": "surName",
+      "required": "n"
     },
     {
       "fieldname": "nameAdditions",
@@ -378,13 +378,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nameAdditions"
+      "datacolumn": "nameAdditions",
+      "required": "n"
     },
     {
       "fieldname": "initials",
@@ -397,13 +397,13 @@
         "personTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "initials"
+      "datacolumn": "initials",
+      "required": "n"
     },
     {
       "fieldname": "occupation",
@@ -415,13 +415,13 @@
         "occupations"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "occupation"
+      "datacolumn": "occupation",
+      "required": "n"
     },
     {
       "fieldname": "group",
@@ -433,13 +433,13 @@
         "groups"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "group"
+      "datacolumn": "group",
+      "required": "n"
     },
     {
       "fieldname": "nameNote",
@@ -451,13 +451,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nameNote"
+      "datacolumn": "nameNote",
+      "required": "n"
     },
     {
       "fieldname": "email",
@@ -470,13 +470,13 @@
         "emailGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "email"
+      "datacolumn": "email",
+      "required": "n"
     },
     {
       "fieldname": "emailType",
@@ -489,7 +489,6 @@
         "emailGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -497,7 +496,8 @@
         "other",
         "personal"
       ],
-      "datacolumn": "emailType"
+      "datacolumn": "emailType",
+      "required": "n"
     },
     {
       "fieldname": "telephoneNumber",
@@ -510,13 +510,13 @@
         "telephoneNumberGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "telephoneNumber"
+      "datacolumn": "telephoneNumber",
+      "required": "n"
     },
     {
       "fieldname": "telephoneNumberType",
@@ -529,7 +529,6 @@
         "telephoneNumberGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -538,7 +537,8 @@
         "mobile",
         "other"
       ],
-      "datacolumn": "telephoneNumberType"
+      "datacolumn": "telephoneNumberType",
+      "required": "n"
     },
     {
       "fieldname": "faxNumber",
@@ -551,13 +551,13 @@
         "faxNumberGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "faxNumber"
+      "datacolumn": "faxNumber",
+      "required": "n"
     },
     {
       "fieldname": "faxNumberType",
@@ -570,7 +570,6 @@
         "faxNumberGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -578,7 +577,8 @@
         "home",
         "other"
       ],
-      "datacolumn": "faxNumberType"
+      "datacolumn": "faxNumberType",
+      "required": "n"
     },
     {
       "fieldname": "webAddress",
@@ -591,13 +591,13 @@
         "webAddressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "webAddress"
+      "datacolumn": "webAddress",
+      "required": "n"
     },
     {
       "fieldname": "webAddressType",
@@ -610,7 +610,6 @@
         "webAddressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -618,7 +617,8 @@
         "other",
         "personal"
       ],
-      "datacolumn": "webAddressType"
+      "datacolumn": "webAddressType",
+      "required": "n"
     },
     {
       "fieldname": "addressPlace1",
@@ -631,13 +631,13 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressPlace1"
+      "datacolumn": "addressPlace1",
+      "required": "n"
     },
     {
       "fieldname": "addressPlace2",
@@ -650,13 +650,13 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressPlace2"
+      "datacolumn": "addressPlace2",
+      "required": "n"
     },
     {
       "fieldname": "addressMunicipality",
@@ -669,13 +669,13 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressMunicipality"
+      "datacolumn": "addressMunicipality",
+      "required": "n"
     },
     {
       "fieldname": "addressStateOrProvince",
@@ -688,13 +688,13 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressStateOrProvince"
+      "datacolumn": "addressStateOrProvince",
+      "required": "n"
     },
     {
       "fieldname": "addressPostCode",
@@ -707,13 +707,13 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressPostCode"
+      "datacolumn": "addressPostCode",
+      "required": "n"
     },
     {
       "fieldname": "addressCountry",
@@ -726,7 +726,6 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -980,7 +979,8 @@
         "ZM",
         "ZW"
       ],
-      "datacolumn": "addressCountry"
+      "datacolumn": "addressCountry",
+      "required": "n"
     },
     {
       "fieldname": "addressType",
@@ -993,7 +993,6 @@
         "addressGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1001,7 +1000,8 @@
         "home",
         "other"
       ],
-      "datacolumn": "addressType"
+      "datacolumn": "addressType",
+      "required": "n"
     }
   ]
 }

@@ -30,13 +30,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanOutNumber"
+      "datacolumn": "loanOutNumber",
+      "required": "y"
     },
     {
       "fieldname": "lendersAuthorizer",
@@ -52,13 +52,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersAuthorizerLocal"
+      "datacolumn": "lendersAuthorizerLocal",
+      "required": "n"
     },
     {
       "fieldname": "lendersAuthorizer",
@@ -74,13 +74,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersAuthorizerShared"
+      "datacolumn": "lendersAuthorizerShared",
+      "required": "n"
     },
     {
       "fieldname": "specialConditionsOfLoan",
@@ -92,13 +92,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "specialConditionsOfLoan"
+      "datacolumn": "specialConditionsOfLoan",
+      "required": "n"
     },
     {
       "fieldname": "loanPurpose",
@@ -110,7 +110,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -122,7 +121,8 @@
         "research",
         "scientificorexhibitpreparation"
       ],
-      "datacolumn": "loanPurpose"
+      "datacolumn": "loanPurpose",
+      "required": "n"
     },
     {
       "fieldname": "borrower",
@@ -138,13 +138,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowerPersonLocal"
+      "datacolumn": "borrowerPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "borrower",
@@ -160,13 +160,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowerPersonShared"
+      "datacolumn": "borrowerPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "borrower",
@@ -182,13 +182,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowerOrganizationLocal"
+      "datacolumn": "borrowerOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "borrower",
@@ -204,13 +204,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowerOrganizationShared"
+      "datacolumn": "borrowerOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "loanOutNote",
@@ -222,13 +222,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanOutNote"
+      "datacolumn": "loanOutNote",
+      "required": "n"
     },
     {
       "fieldname": "loanGroup",
@@ -242,13 +242,13 @@
         "loanStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanGroup"
+      "datacolumn": "loanGroup",
+      "required": "n"
     },
     {
       "fieldname": "loanIndividual",
@@ -265,13 +265,13 @@
         "loanStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanIndividualLocal"
+      "datacolumn": "loanIndividualLocal",
+      "required": "n"
     },
     {
       "fieldname": "loanIndividual",
@@ -288,13 +288,13 @@
         "loanStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanIndividualShared"
+      "datacolumn": "loanIndividualShared",
+      "required": "n"
     },
     {
       "fieldname": "loanStatus",
@@ -308,13 +308,13 @@
         "loanStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanStatus"
+      "datacolumn": "loanStatus",
+      "required": "n"
     },
     {
       "fieldname": "loanStatusDate",
@@ -327,13 +327,13 @@
         "loanStatusGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanStatusDate"
+      "datacolumn": "loanStatusDate",
+      "required": "n"
     },
     {
       "fieldname": "loanStatusNote",
@@ -346,13 +346,13 @@
         "loanStatusGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanStatusNote"
+      "datacolumn": "loanStatusNote",
+      "required": "n"
     },
     {
       "fieldname": "loanOutDate",
@@ -364,13 +364,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanOutDate"
+      "datacolumn": "loanOutDate",
+      "required": "n"
     },
     {
       "fieldname": "loanReturnDate",
@@ -382,13 +382,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanReturnDate"
+      "datacolumn": "loanReturnDate",
+      "required": "n"
     },
     {
       "fieldname": "loanRenewalApplicationDate",
@@ -400,13 +400,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanRenewalApplicationDate"
+      "datacolumn": "loanRenewalApplicationDate",
+      "required": "n"
     }
   ]
 }

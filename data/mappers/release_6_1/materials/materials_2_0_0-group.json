@@ -26,13 +26,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "title"
+      "datacolumn": "title",
+      "required": "y"
     },
     {
       "fieldname": "responsibleDepartment",
@@ -44,7 +44,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -59,7 +58,8 @@
         "photographs",
         "prints-drawings"
       ],
-      "datacolumn": "responsibleDepartment"
+      "datacolumn": "responsibleDepartment",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -75,13 +75,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "owner"
+      "datacolumn": "owner",
+      "required": "n"
     },
     {
       "fieldname": "groupEarliestSingleDate",
@@ -93,13 +93,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupEarliestSingleDate"
+      "datacolumn": "groupEarliestSingleDate",
+      "required": "n"
     },
     {
       "fieldname": "groupLatestDate",
@@ -111,13 +111,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupLatestDate"
+      "datacolumn": "groupLatestDate",
+      "required": "n"
     },
     {
       "fieldname": "scopeNote",
@@ -129,13 +129,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "scopeNote"
+      "datacolumn": "scopeNote",
+      "required": "n"
     }
   ]
 }
