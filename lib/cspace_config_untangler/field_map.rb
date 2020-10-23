@@ -70,6 +70,8 @@ module CspaceConfigUntangler
             h[:source_type] = 'vocabulary'
           elsif source.start_with?('option list: ')
             h[:source_type] = 'optionlist'
+          elsif source.start_with?('other: ')
+            h[:source_type] = 'invalid source type'
           else
             h[:source_type] = 'na'
           end

@@ -26,7 +26,8 @@ module CspaceConfigUntangler
         main_keys_present,
         has_ns_uris,
         has_id_field,
-        has_field_mapping_namespaces
+        has_field_mapping_namespaces,
+        term_source_types_ok
       ]
 
         @valid = true if results.uniq == [true]
@@ -37,12 +38,27 @@ module CspaceConfigUntangler
         unless @valid
           puts ''
           puts "INVALID: #{@path}"
-          @errors.each{ |err| puts "  #{err}" }
+          @errors.uniq.each{ |err| puts "  #{err}" }
           puts ''
         end
       end
 
       private
+
+      def term_source_types_ok
+        mappings = @mapper.dig('mappings')
+        if mappings.blank?
+          @errors << 'No field mappings specified'
+          return false
+        end
+        not_ok = mappings.select{ |mapping| mapping['source_type'].start_with?('invalid source type:') }
+        if not_ok.empty?
+          return true
+        else
+          not_ok.each{ |mapping| @errors << "Source type for #{mapping['fieldname']} is not an option_list, vocabulary, or authority." }
+          return false
+        end
+      end
 
       def has_field_mapping_namespaces
         mappings = @mapper.dig('mappings')
