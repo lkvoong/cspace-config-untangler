@@ -41,13 +41,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termDisplayName"
+      "datacolumn": "termDisplayName",
+      "required": "y"
     },
     {
       "fieldname": "termName",
@@ -60,13 +60,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termName"
+      "datacolumn": "termName",
+      "required": "n"
     },
     {
       "fieldname": "termQualifier",
@@ -79,13 +79,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termQualifier"
+      "datacolumn": "termQualifier",
+      "required": "n"
     },
     {
       "fieldname": "termStatus",
@@ -98,7 +98,6 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -107,7 +106,8 @@
         "rejected",
         "under review"
       ],
-      "datacolumn": "termStatus"
+      "datacolumn": "termStatus",
+      "required": "n"
     },
     {
       "fieldname": "termType",
@@ -120,7 +120,6 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -128,7 +127,8 @@
         "descriptor",
         "used for term"
       ],
-      "datacolumn": "termType"
+      "datacolumn": "termType",
+      "required": "n"
     },
     {
       "fieldname": "termFlag",
@@ -142,13 +142,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termFlag"
+      "datacolumn": "termFlag",
+      "required": "n"
     },
     {
       "fieldname": "termLanguage",
@@ -162,13 +162,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termLanguage"
+      "datacolumn": "termLanguage",
+      "required": "n"
     },
     {
       "fieldname": "termPrefForLang",
@@ -184,13 +184,13 @@
         "locTermGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termPrefForLang"
+      "datacolumn": "termPrefForLang",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -207,13 +207,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal"
+      "datacolumn": "termSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -230,13 +230,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceShared"
+      "datacolumn": "termSourceShared",
+      "required": "n"
     },
     {
       "fieldname": "termSourceDetail",
@@ -249,13 +249,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceDetail"
+      "datacolumn": "termSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "termSourceID",
@@ -268,13 +268,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceID"
+      "datacolumn": "termSourceID",
+      "required": "n"
     },
     {
       "fieldname": "termSourceNote",
@@ -287,13 +287,13 @@
         "locTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceNote"
+      "datacolumn": "termSourceNote",
+      "required": "n"
     },
     {
       "fieldname": "locationType",
@@ -306,13 +306,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationType"
+      "datacolumn": "locationType",
+      "required": "n"
     },
     {
       "fieldname": "accessNote",
@@ -324,13 +324,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "accessNote"
+      "datacolumn": "accessNote",
+      "required": "n"
     }
   ]
 }

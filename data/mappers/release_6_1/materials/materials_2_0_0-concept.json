@@ -59,13 +59,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termDisplayName"
+      "datacolumn": "termDisplayName",
+      "required": "y"
     },
     {
       "fieldname": "termName",
@@ -78,13 +78,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termName"
+      "datacolumn": "termName",
+      "required": "n"
     },
     {
       "fieldname": "termQualifier",
@@ -97,13 +97,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termQualifier"
+      "datacolumn": "termQualifier",
+      "required": "n"
     },
     {
       "fieldname": "termStatus",
@@ -116,7 +116,6 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -125,7 +124,8 @@
         "rejected",
         "under review"
       ],
-      "datacolumn": "termStatus"
+      "datacolumn": "termStatus",
+      "required": "n"
     },
     {
       "fieldname": "termType",
@@ -138,7 +138,6 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -146,7 +145,8 @@
         "descriptor",
         "used for term"
       ],
-      "datacolumn": "termType"
+      "datacolumn": "termType",
+      "required": "n"
     },
     {
       "fieldname": "termFlag",
@@ -160,13 +160,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termFlag"
+      "datacolumn": "termFlag",
+      "required": "n"
     },
     {
       "fieldname": "historicalStatus",
@@ -179,7 +179,6 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -188,7 +187,8 @@
         "historical",
         "unknown"
       ],
-      "datacolumn": "historicalStatus"
+      "datacolumn": "historicalStatus",
+      "required": "n"
     },
     {
       "fieldname": "termLanguage",
@@ -202,13 +202,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termLanguage"
+      "datacolumn": "termLanguage",
+      "required": "n"
     },
     {
       "fieldname": "termPrefForLang",
@@ -224,13 +224,13 @@
         "conceptTermGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termPrefForLang"
+      "datacolumn": "termPrefForLang",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -247,13 +247,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal"
+      "datacolumn": "termSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -270,13 +270,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceShared"
+      "datacolumn": "termSourceShared",
+      "required": "n"
     },
     {
       "fieldname": "termSourceDetail",
@@ -289,13 +289,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceDetail"
+      "datacolumn": "termSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "termSourceID",
@@ -308,13 +308,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceID"
+      "datacolumn": "termSourceID",
+      "required": "n"
     },
     {
       "fieldname": "termSourceNote",
@@ -327,13 +327,13 @@
         "conceptTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceNote"
+      "datacolumn": "termSourceNote",
+      "required": "n"
     },
     {
       "fieldname": "conceptRecordType",
@@ -346,13 +346,13 @@
         "conceptRecordTypes"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conceptRecordType"
+      "datacolumn": "conceptRecordType",
+      "required": "n"
     },
     {
       "fieldname": "scopeNote",
@@ -364,13 +364,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "scopeNote"
+      "datacolumn": "scopeNote",
+      "required": "n"
     },
     {
       "fieldname": "scopeNoteSource",
@@ -382,13 +382,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "scopeNoteSource"
+      "datacolumn": "scopeNoteSource",
+      "required": "n"
     },
     {
       "fieldname": "scopeNoteSourceDetail",
@@ -400,13 +400,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "scopeNoteSourceDetail"
+      "datacolumn": "scopeNoteSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "citationSource",
@@ -419,13 +419,13 @@
         "citationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "citationSource"
+      "datacolumn": "citationSource",
+      "required": "n"
     },
     {
       "fieldname": "citationSourceDetail",
@@ -438,13 +438,13 @@
         "citationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "citationSourceDetail"
+      "datacolumn": "citationSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "additionalSource",
@@ -457,13 +457,13 @@
         "additionalSourceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalSource"
+      "datacolumn": "additionalSource",
+      "required": "n"
     },
     {
       "fieldname": "additionalSourceDetail",
@@ -476,13 +476,13 @@
         "additionalSourceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalSourceDetail"
+      "datacolumn": "additionalSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "additionalSourceID",
@@ -495,13 +495,13 @@
         "additionalSourceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalSourceID"
+      "datacolumn": "additionalSourceID",
+      "required": "n"
     },
     {
       "fieldname": "additionalSourceNote",
@@ -514,13 +514,13 @@
         "additionalSourceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalSourceNote"
+      "datacolumn": "additionalSourceNote",
+      "required": "n"
     }
   ]
 }

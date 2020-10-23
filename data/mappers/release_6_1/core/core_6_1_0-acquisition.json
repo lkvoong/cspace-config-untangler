@@ -42,13 +42,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionReferenceNumber"
+      "datacolumn": "acquisitionReferenceNumber",
+      "required": "y"
     },
     {
       "fieldname": "accessionDateGroup",
@@ -60,13 +60,13 @@
 
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "accessionDateGroup"
+      "datacolumn": "accessionDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionAuthorizer",
@@ -82,13 +82,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionAuthorizer"
+      "datacolumn": "acquisitionAuthorizer",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionAuthorizerDate",
@@ -100,13 +100,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionAuthorizerDate"
+      "datacolumn": "acquisitionAuthorizerDate",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionDateGroup",
@@ -118,13 +118,13 @@
         "acquisitionDateGroupList"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionDateGroup"
+      "datacolumn": "acquisitionDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionMethod",
@@ -136,7 +136,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -146,7 +145,8 @@
         "transfer",
         "treasure"
       ],
-      "datacolumn": "acquisitionMethod"
+      "datacolumn": "acquisitionMethod",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionSource",
@@ -162,13 +162,13 @@
         "acquisitionSources"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionSourcePerson"
+      "datacolumn": "acquisitionSourcePerson",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionSource",
@@ -184,13 +184,13 @@
         "acquisitionSources"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionSourceOrganization"
+      "datacolumn": "acquisitionSourceOrganization",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -206,13 +206,13 @@
         "owners"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPerson"
+      "datacolumn": "ownerPerson",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -228,13 +228,13 @@
         "owners"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganization"
+      "datacolumn": "ownerOrganization",
+      "required": "n"
     },
     {
       "fieldname": "transferOfTitleNumber",
@@ -246,13 +246,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "transferOfTitleNumber"
+      "datacolumn": "transferOfTitleNumber",
+      "required": "n"
     },
     {
       "fieldname": "groupPurchasePriceCurrency",
@@ -265,13 +265,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupPurchasePriceCurrency"
+      "datacolumn": "groupPurchasePriceCurrency",
+      "required": "n"
     },
     {
       "fieldname": "groupPurchasePriceValue",
@@ -283,13 +283,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupPurchasePriceValue"
+      "datacolumn": "groupPurchasePriceValue",
+      "required": "n"
     },
     {
       "fieldname": "objectOfferPriceCurrency",
@@ -302,13 +302,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectOfferPriceCurrency"
+      "datacolumn": "objectOfferPriceCurrency",
+      "required": "n"
     },
     {
       "fieldname": "objectOfferPriceValue",
@@ -320,13 +320,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectOfferPriceValue"
+      "datacolumn": "objectOfferPriceValue",
+      "required": "n"
     },
     {
       "fieldname": "objectPurchaseOfferPriceCurrency",
@@ -339,13 +339,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectPurchaseOfferPriceCurrency"
+      "datacolumn": "objectPurchaseOfferPriceCurrency",
+      "required": "n"
     },
     {
       "fieldname": "objectPurchaseOfferPriceValue",
@@ -357,13 +357,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectPurchaseOfferPriceValue"
+      "datacolumn": "objectPurchaseOfferPriceValue",
+      "required": "n"
     },
     {
       "fieldname": "objectPurchasePriceCurrency",
@@ -376,13 +376,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectPurchasePriceCurrency"
+      "datacolumn": "objectPurchasePriceCurrency",
+      "required": "n"
     },
     {
       "fieldname": "objectPurchasePriceValue",
@@ -394,13 +394,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectPurchasePriceValue"
+      "datacolumn": "objectPurchasePriceValue",
+      "required": "n"
     },
     {
       "fieldname": "originalObjectPurchasePriceCurrency",
@@ -413,13 +413,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "originalObjectPurchasePriceCurrency"
+      "datacolumn": "originalObjectPurchasePriceCurrency",
+      "required": "n"
     },
     {
       "fieldname": "originalObjectPurchasePriceValue",
@@ -431,13 +431,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "originalObjectPurchasePriceValue"
+      "datacolumn": "originalObjectPurchasePriceValue",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionReason",
@@ -449,13 +449,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionReason"
+      "datacolumn": "acquisitionReason",
+      "required": "n"
     },
     {
       "fieldname": "approvalGroup",
@@ -469,13 +469,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalGroup"
+      "datacolumn": "approvalGroup",
+      "required": "n"
     },
     {
       "fieldname": "approvalIndividual",
@@ -492,13 +492,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalIndividual"
+      "datacolumn": "approvalIndividual",
+      "required": "n"
     },
     {
       "fieldname": "approvalStatus",
@@ -512,13 +512,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalStatus"
+      "datacolumn": "approvalStatus",
+      "required": "n"
     },
     {
       "fieldname": "approvalDate",
@@ -531,13 +531,13 @@
         "approvalGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalDate"
+      "datacolumn": "approvalDate",
+      "required": "n"
     },
     {
       "fieldname": "approvalNote",
@@ -550,13 +550,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalNote"
+      "datacolumn": "approvalNote",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionNote",
@@ -568,13 +568,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionNote"
+      "datacolumn": "acquisitionNote",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionProvisos",
@@ -586,13 +586,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionProvisos"
+      "datacolumn": "acquisitionProvisos",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionFundingCurrency",
@@ -606,13 +606,13 @@
         "acquisitionFunding"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingCurrency"
+      "datacolumn": "acquisitionFundingCurrency",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionFundingValue",
@@ -625,13 +625,13 @@
         "acquisitionFunding"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingValue"
+      "datacolumn": "acquisitionFundingValue",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -648,13 +648,13 @@
         "acquisitionFunding"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingSourcePerson"
+      "datacolumn": "acquisitionFundingSourcePerson",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionFundingSource",
@@ -671,13 +671,13 @@
         "acquisitionFunding"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingSourceOrganization"
+      "datacolumn": "acquisitionFundingSourceOrganization",
+      "required": "n"
     },
     {
       "fieldname": "acquisitionFundingSourceProvisos",
@@ -690,13 +690,13 @@
         "acquisitionFunding"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingSourceProvisos"
+      "datacolumn": "acquisitionFundingSourceProvisos",
+      "required": "n"
     },
     {
       "fieldname": "creditLine",
@@ -708,13 +708,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "creditLine"
+      "datacolumn": "creditLine",
+      "required": "n"
     },
     {
       "fieldname": "fieldCollectionEventName",
@@ -726,13 +726,13 @@
         "fieldCollectionEventNames"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "fieldCollectionEventName"
+      "datacolumn": "fieldCollectionEventName",
+      "required": "n"
     }
   ]
 }

@@ -48,13 +48,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "entryNumber"
+      "datacolumn": "entryNumber",
+      "required": "y"
     },
     {
       "fieldname": "entryDate",
@@ -66,13 +66,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "entryDate"
+      "datacolumn": "entryDate",
+      "required": "n"
     },
     {
       "fieldname": "entryReason",
@@ -84,7 +84,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -93,7 +92,8 @@
         "enquiry",
         "loan"
       ],
-      "datacolumn": "entryReason"
+      "datacolumn": "entryReason",
+      "required": "n"
     },
     {
       "fieldname": "entryMethod",
@@ -106,13 +106,13 @@
         "entryMethods"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "entryMethod"
+      "datacolumn": "entryMethod",
+      "required": "n"
     },
     {
       "fieldname": "returnDate",
@@ -124,13 +124,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "returnDate"
+      "datacolumn": "returnDate",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -146,13 +146,13 @@
         "currentOwners"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerPersonLocal"
+      "datacolumn": "currentOwnerPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -168,13 +168,13 @@
         "currentOwners"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerPersonShared"
+      "datacolumn": "currentOwnerPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -190,13 +190,13 @@
         "currentOwners"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerOrganizationLocal"
+      "datacolumn": "currentOwnerOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -212,13 +212,13 @@
         "currentOwners"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerOrganizationShared"
+      "datacolumn": "currentOwnerOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -235,13 +235,13 @@
         "depositorGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorPersonLocal"
+      "datacolumn": "depositorPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -258,13 +258,13 @@
         "depositorGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorPersonShared"
+      "datacolumn": "depositorPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -281,13 +281,13 @@
         "depositorGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorOrganizationLocal"
+      "datacolumn": "depositorOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -304,13 +304,13 @@
         "depositorGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorOrganizationShared"
+      "datacolumn": "depositorOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "depositorsRequirements",
@@ -323,13 +323,13 @@
         "depositorGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorsRequirements"
+      "datacolumn": "depositorsRequirements",
+      "required": "n"
     },
     {
       "fieldname": "approvalGroup",
@@ -343,13 +343,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalGroup"
+      "datacolumn": "approvalGroup",
+      "required": "n"
     },
     {
       "fieldname": "approvalIndividual",
@@ -366,13 +366,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalIndividualLocal"
+      "datacolumn": "approvalIndividualLocal",
+      "required": "n"
     },
     {
       "fieldname": "approvalIndividual",
@@ -389,13 +389,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalIndividualShared"
+      "datacolumn": "approvalIndividualShared",
+      "required": "n"
     },
     {
       "fieldname": "approvalStatus",
@@ -409,13 +409,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalStatus"
+      "datacolumn": "approvalStatus",
+      "required": "n"
     },
     {
       "fieldname": "approvalDate",
@@ -428,13 +428,13 @@
         "approvalGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalDate"
+      "datacolumn": "approvalDate",
+      "required": "n"
     },
     {
       "fieldname": "approvalNote",
@@ -447,13 +447,13 @@
         "approvalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalNote"
+      "datacolumn": "approvalNote",
+      "required": "n"
     },
     {
       "fieldname": "entryNote",
@@ -465,13 +465,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "entryNote"
+      "datacolumn": "entryNote",
+      "required": "n"
     },
     {
       "fieldname": "packingNote",
@@ -483,13 +483,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "packingNote"
+      "datacolumn": "packingNote",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -506,13 +506,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationLocationLocal"
+      "datacolumn": "currentLocationLocationLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -529,13 +529,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationLocationOffsite"
+      "datacolumn": "currentLocationLocationOffsite",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -552,13 +552,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationOrganizationLocal"
+      "datacolumn": "currentLocationOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -575,13 +575,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationOrganizationShared"
+      "datacolumn": "currentLocationOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -598,13 +598,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationPlaceLocal"
+      "datacolumn": "currentLocationPlaceLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentLocation",
@@ -621,13 +621,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationPlaceShared"
+      "datacolumn": "currentLocationPlaceShared",
+      "required": "n"
     },
     {
       "fieldname": "currentLocationFitness",
@@ -641,13 +641,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationFitness"
+      "datacolumn": "currentLocationFitness",
+      "required": "n"
     },
     {
       "fieldname": "currentLocationNote",
@@ -660,13 +660,13 @@
         "currentLocationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationNote"
+      "datacolumn": "currentLocationNote",
+      "required": "n"
     },
     {
       "fieldname": "locationDate",
@@ -678,13 +678,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationDate"
+      "datacolumn": "locationDate",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -700,13 +700,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationLocationLocal"
+      "datacolumn": "normalLocationLocationLocal",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -722,13 +722,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationLocationOffsite"
+      "datacolumn": "normalLocationLocationOffsite",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -744,13 +744,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationOrganizationLocal"
+      "datacolumn": "normalLocationOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -766,13 +766,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationOrganizationShared"
+      "datacolumn": "normalLocationOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -788,13 +788,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationPlaceLocal"
+      "datacolumn": "normalLocationPlaceLocal",
+      "required": "n"
     },
     {
       "fieldname": "normalLocation",
@@ -810,13 +810,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationPlaceShared"
+      "datacolumn": "normalLocationPlaceShared",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckMethod",
@@ -829,13 +829,13 @@
         "conditionCheckMethods"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckMethod"
+      "datacolumn": "conditionCheckMethod",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckReason",
@@ -848,13 +848,13 @@
         "conditionCheckReasons"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckReason"
+      "datacolumn": "conditionCheckReason",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
@@ -870,13 +870,13 @@
         "conditionCheckersOrAssessors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrAssessorPersonLocal"
+      "datacolumn": "conditionCheckerOrAssessorPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
@@ -892,13 +892,13 @@
         "conditionCheckersOrAssessors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrAssessorPersonShared"
+      "datacolumn": "conditionCheckerOrAssessorPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
@@ -914,13 +914,13 @@
         "conditionCheckersOrAssessors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrAssessorOrganizationLocal"
+      "datacolumn": "conditionCheckerOrAssessorOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckerOrAssessor",
@@ -936,13 +936,13 @@
         "conditionCheckersOrAssessors"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrAssessorOrganizationShared"
+      "datacolumn": "conditionCheckerOrAssessorOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckDate",
@@ -954,13 +954,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckDate"
+      "datacolumn": "conditionCheckDate",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckReferenceNumber",
@@ -972,13 +972,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckReferenceNumber"
+      "datacolumn": "conditionCheckReferenceNumber",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckNote",
@@ -990,13 +990,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckNote"
+      "datacolumn": "conditionCheckNote",
+      "required": "n"
     }
   ]
 }

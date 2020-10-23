@@ -54,13 +54,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckRefNumber"
+      "datacolumn": "conditionCheckRefNumber",
+      "required": "y"
     },
     {
       "fieldname": "conditionCheckAssessmentDate",
@@ -72,13 +72,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckAssessmentDate"
+      "datacolumn": "conditionCheckAssessmentDate",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckMethod",
@@ -90,14 +90,14 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
         "observed",
         "xrayed"
       ],
-      "datacolumn": "conditionCheckMethod"
+      "datacolumn": "conditionCheckMethod",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckReason",
@@ -109,7 +109,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -119,7 +118,8 @@
         "loanin",
         "newacquisition"
       ],
-      "datacolumn": "conditionCheckReason"
+      "datacolumn": "conditionCheckReason",
+      "required": "n"
     },
     {
       "fieldname": "conditionChecker",
@@ -135,13 +135,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerPerson"
+      "datacolumn": "conditionCheckerPerson",
+      "required": "n"
     },
     {
       "fieldname": "conditionChecker",
@@ -157,13 +157,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrganization"
+      "datacolumn": "conditionCheckerOrganization",
+      "required": "n"
     },
     {
       "fieldname": "conditionCheckNote",
@@ -175,13 +175,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckNote"
+      "datacolumn": "conditionCheckNote",
+      "required": "n"
     },
     {
       "fieldname": "objectAuditCategory",
@@ -193,7 +193,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -201,7 +200,8 @@
         "low",
         "medium"
       ],
-      "datacolumn": "objectAuditCategory"
+      "datacolumn": "objectAuditCategory",
+      "required": "n"
     },
     {
       "fieldname": "conservationTreatmentPriority",
@@ -213,7 +213,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -221,7 +220,8 @@
         "low",
         "medium"
       ],
-      "datacolumn": "conservationTreatmentPriority"
+      "datacolumn": "conservationTreatmentPriority",
+      "required": "n"
     },
     {
       "fieldname": "nextConditionCheckDate",
@@ -233,13 +233,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nextConditionCheckDate"
+      "datacolumn": "nextConditionCheckDate",
+      "required": "n"
     },
     {
       "fieldname": "completeness",
@@ -252,7 +252,6 @@
         "completenessGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -260,7 +259,8 @@
         "fragmented",
         "incomplete"
       ],
-      "datacolumn": "completeness"
+      "datacolumn": "completeness",
+      "required": "n"
     },
     {
       "fieldname": "completenessDate",
@@ -273,13 +273,13 @@
         "completenessGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "completenessDate"
+      "datacolumn": "completenessDate",
+      "required": "n"
     },
     {
       "fieldname": "completenessNote",
@@ -292,13 +292,13 @@
         "completenessGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "completenessNote"
+      "datacolumn": "completenessNote",
+      "required": "n"
     },
     {
       "fieldname": "hazard",
@@ -311,14 +311,14 @@
         "hazardGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
         "poisonous",
         "radioactive"
       ],
-      "datacolumn": "hazard"
+      "datacolumn": "hazard",
+      "required": "n"
     },
     {
       "fieldname": "hazardDate",
@@ -331,13 +331,13 @@
         "hazardGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "hazardDate"
+      "datacolumn": "hazardDate",
+      "required": "n"
     },
     {
       "fieldname": "hazardNote",
@@ -350,13 +350,13 @@
         "hazardGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "hazardNote"
+      "datacolumn": "hazardNote",
+      "required": "n"
     },
     {
       "fieldname": "techAssessment",
@@ -369,13 +369,13 @@
         "techAssessmentGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "techAssessment"
+      "datacolumn": "techAssessment",
+      "required": "n"
     },
     {
       "fieldname": "techAssessmentDate",
@@ -388,13 +388,13 @@
         "techAssessmentGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "techAssessmentDate"
+      "datacolumn": "techAssessmentDate",
+      "required": "n"
     },
     {
       "fieldname": "condition",
@@ -407,7 +407,6 @@
         "conditionCheckGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -416,7 +415,8 @@
         "needsnowork",
         "notexhibitablestable"
       ],
-      "datacolumn": "condition"
+      "datacolumn": "condition",
+      "required": "n"
     },
     {
       "fieldname": "conditionDate",
@@ -429,13 +429,13 @@
         "conditionCheckGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionDate"
+      "datacolumn": "conditionDate",
+      "required": "n"
     },
     {
       "fieldname": "conditionNote",
@@ -448,13 +448,13 @@
         "conditionCheckGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionNote"
+      "datacolumn": "conditionNote",
+      "required": "n"
     },
     {
       "fieldname": "envConditionNote",
@@ -467,13 +467,13 @@
         "envConditionNoteGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "envConditionNote"
+      "datacolumn": "envConditionNote",
+      "required": "n"
     },
     {
       "fieldname": "envConditionNoteDate",
@@ -486,13 +486,13 @@
         "envConditionNoteGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "envConditionNoteDate"
+      "datacolumn": "envConditionNoteDate",
+      "required": "n"
     },
     {
       "fieldname": "displayRecommendations",
@@ -504,13 +504,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "displayRecommendations"
+      "datacolumn": "displayRecommendations",
+      "required": "n"
     },
     {
       "fieldname": "handlingRecommendations",
@@ -522,13 +522,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "handlingRecommendations"
+      "datacolumn": "handlingRecommendations",
+      "required": "n"
     },
     {
       "fieldname": "securityRecommendations",
@@ -540,13 +540,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "securityRecommendations"
+      "datacolumn": "securityRecommendations",
+      "required": "n"
     },
     {
       "fieldname": "storageRequirements",
@@ -558,13 +558,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "storageRequirements"
+      "datacolumn": "storageRequirements",
+      "required": "n"
     },
     {
       "fieldname": "envRecommendations",
@@ -576,13 +576,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "envRecommendations"
+      "datacolumn": "envRecommendations",
+      "required": "n"
     },
     {
       "fieldname": "packingRecommendations",
@@ -594,13 +594,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "packingRecommendations"
+      "datacolumn": "packingRecommendations",
+      "required": "n"
     },
     {
       "fieldname": "specialRequirements",
@@ -612,13 +612,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "specialRequirements"
+      "datacolumn": "specialRequirements",
+      "required": "n"
     },
     {
       "fieldname": "legalRequirements",
@@ -630,13 +630,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "legalRequirements"
+      "datacolumn": "legalRequirements",
+      "required": "n"
     },
     {
       "fieldname": "legalReqsHeld",
@@ -649,13 +649,13 @@
         "legalReqsHeldGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "legalReqsHeld"
+      "datacolumn": "legalReqsHeld",
+      "required": "n"
     },
     {
       "fieldname": "legalReqsHeldBeginDate",
@@ -668,13 +668,13 @@
         "legalReqsHeldGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "legalReqsHeldBeginDate"
+      "datacolumn": "legalReqsHeldBeginDate",
+      "required": "n"
     },
     {
       "fieldname": "legalReqsHeldEndDate",
@@ -687,13 +687,13 @@
         "legalReqsHeldGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "legalReqsHeldEndDate"
+      "datacolumn": "legalReqsHeldEndDate",
+      "required": "n"
     },
     {
       "fieldname": "legalReqsHeldNumber",
@@ -706,13 +706,13 @@
         "legalReqsHeldGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "legalReqsHeldNumber"
+      "datacolumn": "legalReqsHeldNumber",
+      "required": "n"
     },
     {
       "fieldname": "legalReqsHeldRenewDate",
@@ -725,13 +725,13 @@
         "legalReqsHeldGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "legalReqsHeldRenewDate"
+      "datacolumn": "legalReqsHeldRenewDate",
+      "required": "n"
     },
     {
       "fieldname": "salvagePriorityCode",
@@ -744,7 +744,6 @@
         "salvagePriorityCodeGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -752,7 +751,8 @@
         "low",
         "medium"
       ],
-      "datacolumn": "salvagePriorityCode"
+      "datacolumn": "salvagePriorityCode",
+      "required": "n"
     },
     {
       "fieldname": "salvagePriorityCodeDate",
@@ -765,13 +765,13 @@
         "salvagePriorityCodeGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "salvagePriorityCodeDate"
+      "datacolumn": "salvagePriorityCodeDate",
+      "required": "n"
     }
   ]
 }

@@ -1,0 +1,573 @@
+{
+  "config": {
+    "document_name": "propagation",
+    "service_name": "Propagation",
+    "service_path": "propagations",
+    "service_type": "procedure",
+    "object_name": "Propagation",
+    "profile_basename": "botgarden",
+    "ns_uri": {
+      "propagations_common": null
+    },
+    "identifier_field": "propNumber"
+  },
+  "docstructure": {
+    "propagation_common": {
+      "scarStratGroupList": {
+        "scarStratGroup": {
+        }
+      },
+      "propActivityGroupList": {
+        "propActivityGroup": {
+        }
+      }
+    }
+  },
+  "mappings": [
+    {
+      "fieldname": "propNumber",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "propNumber",
+      "required": "y"
+    },
+    {
+      "fieldname": "propType",
+      "transforms": {
+        "vocabulary": "proptype"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "propType",
+      "required": "n"
+    },
+    {
+      "fieldname": "numStarted",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "integer",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "numStarted",
+      "required": "n"
+    },
+    {
+      "fieldname": "propDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "structured date group",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "propDate",
+      "required": "n"
+    },
+    {
+      "fieldname": "propReason",
+      "transforms": {
+        "vocabulary": "propreason"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "propReason",
+      "required": "n"
+    },
+    {
+      "fieldname": "propComments",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "propComments",
+      "required": "n"
+    },
+    {
+      "fieldname": "scarStrat",
+      "transforms": {
+        "vocabulary": "scarstrat"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+        "scarStratGroupList",
+        "scarStratGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "scarStrat",
+      "required": "n"
+    },
+    {
+      "fieldname": "duration",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+        "scarStratGroupList",
+        "scarStratGroup"
+      ],
+      "data_type": "integer",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "duration",
+      "required": "n"
+    },
+    {
+      "fieldname": "durationUnit",
+      "transforms": {
+        "vocabulary": "durationunit"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+        "scarStratGroupList",
+        "scarStratGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "durationUnit",
+      "required": "n"
+    },
+    {
+      "fieldname": "extraSeeds",
+      "transforms": {
+        "special": [
+          "boolean"
+        ]
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "boolean",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "extraSeeds",
+      "required": "n"
+    },
+    {
+      "fieldname": "spores",
+      "transforms": {
+        "special": [
+          "boolean"
+        ]
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "boolean",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "spores",
+      "required": "n"
+    },
+    {
+      "fieldname": "cuttingType",
+      "transforms": {
+        "vocabulary": "cuttingtype"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "cuttingType",
+      "required": "n"
+    },
+    {
+      "fieldname": "hormone",
+      "transforms": {
+        "vocabulary": "propHormones"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "hormone",
+      "required": "n"
+    },
+    {
+      "fieldname": "concentration",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "concentration",
+      "required": "n"
+    },
+    {
+      "fieldname": "wounded",
+      "transforms": {
+        "special": [
+          "boolean"
+        ]
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "boolean",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "wounded",
+      "required": "n"
+    },
+    {
+      "fieldname": "plantType",
+      "transforms": {
+        "vocabulary": "propPlantType"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "plantType",
+      "required": "n"
+    },
+    {
+      "fieldname": "activityDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "structured date group",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "activityDate",
+      "required": "n"
+    },
+    {
+      "fieldname": "activityType",
+      "transforms": {
+        "vocabulary": "propActivityType"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "activityType",
+      "required": "n"
+    },
+    {
+      "fieldname": "propCount",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "integer",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "propCount",
+      "required": "n"
+    },
+    {
+      "fieldname": "medium",
+      "transforms": {
+        "authority": [
+          "conceptauthorities",
+          "concept"
+        ]
+      },
+      "source_type": "authority",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "medium",
+      "required": "n"
+    },
+    {
+      "fieldname": "potSize",
+      "transforms": {
+        "vocabulary": "potsize"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "potSize",
+      "required": "n"
+    },
+    {
+      "fieldname": "nurseryLocation",
+      "transforms": {
+        "authority": [
+          "locationauthorities",
+          "location"
+        ]
+      },
+      "source_type": "authority",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "nurseryLocation",
+      "required": "n"
+    },
+    {
+      "fieldname": "conditions",
+      "transforms": {
+        "vocabulary": "propConditions"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "conditions",
+      "required": "n"
+    },
+    {
+      "fieldname": "chemicalApplied",
+      "transforms": {
+        "vocabulary": "propChemicals"
+      },
+      "source_type": "vocabulary",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "chemicalApplied",
+      "required": "n"
+    },
+    {
+      "fieldname": "activityConcentration",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "activityConcentration",
+      "required": "n"
+    },
+    {
+      "fieldname": "activityComments",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+        "propActivityGroupList",
+        "propActivityGroup"
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "activityComments",
+      "required": "n"
+    },
+    {
+      "fieldname": "germinationDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "date",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "germinationDate",
+      "required": "n"
+    },
+    {
+      "fieldname": "successRate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "namespace": "propagation_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "successRate",
+      "required": "n"
+    }
+  ]
+}

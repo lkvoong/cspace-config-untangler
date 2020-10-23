@@ -32,13 +32,13 @@
 
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exitNumber"
+      "datacolumn": "exitNumber",
+      "required": "y"
     },
     {
       "fieldname": "exitDateGroup",
@@ -50,13 +50,13 @@
 
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exitDateGroup"
+      "datacolumn": "exitDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "exitReason",
@@ -68,7 +68,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -76,7 +75,8 @@
         "disposal",
         "returnofloan"
       ],
-      "datacolumn": "exitReason"
+      "datacolumn": "exitReason",
+      "required": "n"
     },
     {
       "fieldname": "exitMethod",
@@ -88,7 +88,6 @@
         "exitMethods"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
@@ -96,7 +95,8 @@
         "inperson",
         "post"
       ],
-      "datacolumn": "exitMethod"
+      "datacolumn": "exitMethod",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -112,13 +112,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerPersonLocal"
+      "datacolumn": "currentOwnerPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -134,13 +134,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerPersonShared"
+      "datacolumn": "currentOwnerPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -156,13 +156,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerOrganizationLocal"
+      "datacolumn": "currentOwnerOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "currentOwner",
@@ -178,13 +178,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerOrganizationShared"
+      "datacolumn": "currentOwnerOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -200,13 +200,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorPersonLocal"
+      "datacolumn": "depositorPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -222,13 +222,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorPersonShared"
+      "datacolumn": "depositorPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -244,13 +244,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorOrganizationLocal"
+      "datacolumn": "depositorOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "depositor",
@@ -266,13 +266,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorOrganizationShared"
+      "datacolumn": "depositorOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "exitNote",
@@ -284,13 +284,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "exitNote"
+      "datacolumn": "exitNote",
+      "required": "n"
     },
     {
       "fieldname": "packingNote",
@@ -302,13 +302,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "packingNote"
+      "datacolumn": "packingNote",
+      "required": "n"
     },
     {
       "fieldname": "displosalNewObjectNumber",
@@ -320,13 +320,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "displosalNewObjectNumber"
+      "datacolumn": "displosalNewObjectNumber",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionAuthorizer",
@@ -342,13 +342,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionAuthorizer"
+      "datacolumn": "deaccessionAuthorizer",
+      "required": "n"
     },
     {
       "fieldname": "authorizationDate",
@@ -360,13 +360,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizationDate"
+      "datacolumn": "authorizationDate",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionApprovalGroup",
@@ -380,13 +380,13 @@
         "deacApprovalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionApprovalGroup"
+      "datacolumn": "deaccessionApprovalGroup",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionApprovalIndividual",
@@ -403,13 +403,13 @@
         "deacApprovalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionApprovalIndividual"
+      "datacolumn": "deaccessionApprovalIndividual",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionApprovalStatus",
@@ -423,13 +423,13 @@
         "deacApprovalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionApprovalStatus"
+      "datacolumn": "deaccessionApprovalStatus",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionApprovalDate",
@@ -442,13 +442,13 @@
         "deacApprovalGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionApprovalDate"
+      "datacolumn": "deaccessionApprovalDate",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionApprovalNote",
@@ -461,13 +461,13 @@
         "deacApprovalGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionApprovalNote"
+      "datacolumn": "deaccessionApprovalNote",
+      "required": "n"
     },
     {
       "fieldname": "deaccessionDate",
@@ -479,13 +479,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deaccessionDate"
+      "datacolumn": "deaccessionDate",
+      "required": "n"
     },
     {
       "fieldname": "disposalDate",
@@ -497,13 +497,13 @@
 
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalDate"
+      "datacolumn": "disposalDate",
+      "required": "n"
     },
     {
       "fieldname": "disposalMethod",
@@ -516,13 +516,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalMethod"
+      "datacolumn": "disposalMethod",
+      "required": "n"
     },
     {
       "fieldname": "displosalReason",
@@ -534,13 +534,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "displosalReason"
+      "datacolumn": "displosalReason",
+      "required": "n"
     },
     {
       "fieldname": "disposalProposedRecipient",
@@ -556,13 +556,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalProposedRecipientPersonLocal"
+      "datacolumn": "disposalProposedRecipientPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "disposalProposedRecipient",
@@ -578,13 +578,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalProposedRecipientPersonShared"
+      "datacolumn": "disposalProposedRecipientPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "disposalProposedRecipient",
@@ -600,13 +600,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalProposedRecipientOrganizationLocal"
+      "datacolumn": "disposalProposedRecipientOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "disposalProposedRecipient",
@@ -622,13 +622,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalProposedRecipientOrganizationShared"
+      "datacolumn": "disposalProposedRecipientOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "disposalRecipient",
@@ -644,13 +644,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalRecipientPersonLocal"
+      "datacolumn": "disposalRecipientPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "disposalRecipient",
@@ -666,13 +666,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalRecipientPersonShared"
+      "datacolumn": "disposalRecipientPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "disposalRecipient",
@@ -688,13 +688,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalRecipientOrganizationLocal"
+      "datacolumn": "disposalRecipientOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "disposalRecipient",
@@ -710,13 +710,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalRecipientOrganizationShared"
+      "datacolumn": "disposalRecipientOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "groupDisposalCurrency",
@@ -729,13 +729,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupDisposalCurrency"
+      "datacolumn": "groupDisposalCurrency",
+      "required": "n"
     },
     {
       "fieldname": "groupDisplosalValue",
@@ -747,13 +747,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "groupDisplosalValue"
+      "datacolumn": "groupDisplosalValue",
+      "required": "n"
     },
     {
       "fieldname": "displosalProvisos",
@@ -765,13 +765,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "displosalProvisos"
+      "datacolumn": "displosalProvisos",
+      "required": "n"
     },
     {
       "fieldname": "displosalNote",
@@ -783,13 +783,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "displosalNote"
+      "datacolumn": "displosalNote",
+      "required": "n"
     }
   ]
 }

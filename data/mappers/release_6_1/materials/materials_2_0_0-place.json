@@ -53,13 +53,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termDisplayName"
+      "datacolumn": "termDisplayName",
+      "required": "y"
     },
     {
       "fieldname": "termName",
@@ -72,13 +72,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termName"
+      "datacolumn": "termName",
+      "required": "n"
     },
     {
       "fieldname": "termQualifier",
@@ -91,13 +91,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termQualifier"
+      "datacolumn": "termQualifier",
+      "required": "n"
     },
     {
       "fieldname": "termStatus",
@@ -110,7 +110,6 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -119,7 +118,8 @@
         "rejected",
         "under review"
       ],
-      "datacolumn": "termStatus"
+      "datacolumn": "termStatus",
+      "required": "n"
     },
     {
       "fieldname": "termType",
@@ -132,7 +132,6 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -144,7 +143,8 @@
         "spelling-variant",
         "technical-scientific"
       ],
-      "datacolumn": "termType"
+      "datacolumn": "termType",
+      "required": "n"
     },
     {
       "fieldname": "termFlag",
@@ -158,13 +158,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termFlag"
+      "datacolumn": "termFlag",
+      "required": "n"
     },
     {
       "fieldname": "historicalStatus",
@@ -177,7 +177,6 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -185,7 +184,8 @@
         "current",
         "historical"
       ],
-      "datacolumn": "historicalStatus"
+      "datacolumn": "historicalStatus",
+      "required": "n"
     },
     {
       "fieldname": "termLanguage",
@@ -199,13 +199,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termLanguage"
+      "datacolumn": "termLanguage",
+      "required": "n"
     },
     {
       "fieldname": "termPrefForLang",
@@ -221,13 +221,13 @@
         "placeTermGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termPrefForLang"
+      "datacolumn": "termPrefForLang",
+      "required": "n"
     },
     {
       "fieldname": "nameAbbrev",
@@ -240,13 +240,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nameAbbrev"
+      "datacolumn": "nameAbbrev",
+      "required": "n"
     },
     {
       "fieldname": "nameNote",
@@ -259,13 +259,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nameNote"
+      "datacolumn": "nameNote",
+      "required": "n"
     },
     {
       "fieldname": "nameDateGroup",
@@ -278,13 +278,13 @@
         "placeTermGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "nameDateGroup"
+      "datacolumn": "nameDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -301,13 +301,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal"
+      "datacolumn": "termSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -324,13 +324,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceShared"
+      "datacolumn": "termSourceShared",
+      "required": "n"
     },
     {
       "fieldname": "termSourceDetail",
@@ -343,13 +343,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceDetail"
+      "datacolumn": "termSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "termSourceID",
@@ -362,13 +362,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceID"
+      "datacolumn": "termSourceID",
+      "required": "n"
     },
     {
       "fieldname": "termSourceNote",
@@ -381,13 +381,13 @@
         "placeTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceNote"
+      "datacolumn": "termSourceNote",
+      "required": "n"
     },
     {
       "fieldname": "placeType",
@@ -399,7 +399,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -432,12 +431,14 @@
         "state",
         "state-province",
         "territory",
+        "township",
         "union-territory",
         "unitary-authority",
         "urban-prefecture",
         "water-body"
       ],
-      "datacolumn": "placeType"
+      "datacolumn": "placeType",
+      "required": "n"
     },
     {
       "fieldname": "placeSource",
@@ -449,13 +450,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "placeSource"
+      "datacolumn": "placeSource",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -472,13 +473,13 @@
         "placeOwnerGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPersonLocal"
+      "datacolumn": "ownerPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -495,13 +496,13 @@
         "placeOwnerGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPersonShared"
+      "datacolumn": "ownerPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -518,13 +519,13 @@
         "placeOwnerGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganizationLocal"
+      "datacolumn": "ownerOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "owner",
@@ -541,13 +542,13 @@
         "placeOwnerGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganizationShared"
+      "datacolumn": "ownerOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "ownershipDateGroup",
@@ -560,13 +561,13 @@
         "placeOwnerGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownershipDateGroup"
+      "datacolumn": "ownershipDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "ownershipNote",
@@ -579,13 +580,13 @@
         "placeOwnerGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownershipNote"
+      "datacolumn": "ownershipNote",
+      "required": "n"
     },
     {
       "fieldname": "placeNote",
@@ -597,13 +598,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "placeNote"
+      "datacolumn": "placeNote",
+      "required": "n"
     },
     {
       "fieldname": "addressPlace1",
@@ -616,13 +617,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressPlace1"
+      "datacolumn": "addressPlace1",
+      "required": "n"
     },
     {
       "fieldname": "addressPlace2",
@@ -635,13 +636,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressPlace2"
+      "datacolumn": "addressPlace2",
+      "required": "n"
     },
     {
       "fieldname": "addressMunicipality",
@@ -658,13 +659,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressMunicipality"
+      "datacolumn": "addressMunicipality",
+      "required": "n"
     },
     {
       "fieldname": "addressStateOrProvince",
@@ -681,13 +682,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressStateOrProvince"
+      "datacolumn": "addressStateOrProvince",
+      "required": "n"
     },
     {
       "fieldname": "addressPostCode",
@@ -700,13 +701,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressPostCode"
+      "datacolumn": "addressPostCode",
+      "required": "n"
     },
     {
       "fieldname": "addressCountry",
@@ -723,13 +724,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountry"
+      "datacolumn": "addressCountry",
+      "required": "n"
     },
     {
       "fieldname": "addressType",
@@ -743,13 +744,13 @@
         "addrGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressType"
+      "datacolumn": "addressType",
+      "required": "n"
     },
     {
       "fieldname": "vCoordinates",
@@ -761,13 +762,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vCoordinates"
+      "datacolumn": "vCoordinates",
+      "required": "n"
     },
     {
       "fieldname": "vLatitude",
@@ -779,13 +780,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vLatitude"
+      "datacolumn": "vLatitude",
+      "required": "n"
     },
     {
       "fieldname": "vLongitude",
@@ -797,13 +798,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vLongitude"
+      "datacolumn": "vLongitude",
+      "required": "n"
     },
     {
       "fieldname": "vCoordSys",
@@ -815,7 +816,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -824,7 +824,8 @@
         "national-grid-reference",
         "utm"
       ],
-      "datacolumn": "vCoordSys"
+      "datacolumn": "vCoordSys",
+      "required": "n"
     },
     {
       "fieldname": "vSpatialReferenceSystem",
@@ -836,7 +837,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -845,7 +845,8 @@
         "epsg4326-wgs84",
         "unknown"
       ],
-      "datacolumn": "vSpatialReferenceSystem"
+      "datacolumn": "vSpatialReferenceSystem",
+      "required": "n"
     },
     {
       "fieldname": "vElevation",
@@ -857,13 +858,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vElevation"
+      "datacolumn": "vElevation",
+      "required": "n"
     },
     {
       "fieldname": "vDepth",
@@ -875,13 +876,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vDepth"
+      "datacolumn": "vDepth",
+      "required": "n"
     },
     {
       "fieldname": "vDistanceAboveSurface",
@@ -893,13 +894,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vDistanceAboveSurface"
+      "datacolumn": "vDistanceAboveSurface",
+      "required": "n"
     },
     {
       "fieldname": "vUnitofMeasure",
@@ -911,7 +912,6 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
@@ -929,7 +929,8 @@
         "square-yards",
         "stories"
       ],
-      "datacolumn": "vUnitofMeasure"
+      "datacolumn": "vUnitofMeasure",
+      "required": "n"
     },
     {
       "fieldname": "minElevationInMeters",
@@ -941,13 +942,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "minElevationInMeters"
+      "datacolumn": "minElevationInMeters",
+      "required": "n"
     },
     {
       "fieldname": "maxElevationInMeters",
@@ -959,13 +960,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "maxElevationInMeters"
+      "datacolumn": "maxElevationInMeters",
+      "required": "n"
     },
     {
       "fieldname": "minDepthInMeters",
@@ -977,13 +978,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "minDepthInMeters"
+      "datacolumn": "minDepthInMeters",
+      "required": "n"
     },
     {
       "fieldname": "maxDepthInMeters",
@@ -995,13 +996,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "maxDepthInMeters"
+      "datacolumn": "maxDepthInMeters",
+      "required": "n"
     },
     {
       "fieldname": "minDistanceAboveSurfaceInMeters",
@@ -1013,13 +1014,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "minDistanceAboveSurfaceInMeters"
+      "datacolumn": "minDistanceAboveSurfaceInMeters",
+      "required": "n"
     },
     {
       "fieldname": "maxDistanceAboveSurfaceInMeters",
@@ -1031,13 +1032,13 @@
 
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "maxDistanceAboveSurfaceInMeters"
+      "datacolumn": "maxDistanceAboveSurfaceInMeters",
+      "required": "n"
     },
     {
       "fieldname": "vCoordSource",
@@ -1049,13 +1050,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vCoordSource"
+      "datacolumn": "vCoordSource",
+      "required": "n"
     },
     {
       "fieldname": "vCoordSourceRefId",
@@ -1067,13 +1068,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "vCoordSourceRefId"
+      "datacolumn": "vCoordSourceRefId",
+      "required": "n"
     },
     {
       "fieldname": "decimalLatitude",
@@ -1086,13 +1087,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "decimalLatitude"
+      "datacolumn": "decimalLatitude",
+      "required": "n"
     },
     {
       "fieldname": "decimalLongitude",
@@ -1105,13 +1106,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "decimalLongitude"
+      "datacolumn": "decimalLongitude",
+      "required": "n"
     },
     {
       "fieldname": "geodeticDatum",
@@ -1124,7 +1125,6 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1133,7 +1133,8 @@
         "epsg4326-wgs84",
         "unknown"
       ],
-      "datacolumn": "geodeticDatum"
+      "datacolumn": "geodeticDatum",
+      "required": "n"
     },
     {
       "fieldname": "coordUncertaintyInMeters",
@@ -1146,13 +1147,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "integer",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "coordUncertaintyInMeters"
+      "datacolumn": "coordUncertaintyInMeters",
+      "required": "n"
     },
     {
       "fieldname": "coordPrecision",
@@ -1165,13 +1166,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "coordPrecision"
+      "datacolumn": "coordPrecision",
+      "required": "n"
     },
     {
       "fieldname": "pointRadiusSpatialFit",
@@ -1184,13 +1185,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "pointRadiusSpatialFit"
+      "datacolumn": "pointRadiusSpatialFit",
+      "required": "n"
     },
     {
       "fieldname": "footprintWKT",
@@ -1203,13 +1204,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "footprintWKT"
+      "datacolumn": "footprintWKT",
+      "required": "n"
     },
     {
       "fieldname": "footprintSRS",
@@ -1222,13 +1223,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "footprintSRS"
+      "datacolumn": "footprintSRS",
+      "required": "n"
     },
     {
       "fieldname": "footprintSpatialFit",
@@ -1241,13 +1242,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "footprintSpatialFit"
+      "datacolumn": "footprintSpatialFit",
+      "required": "n"
     },
     {
       "fieldname": "geoReferencedBy",
@@ -1264,13 +1265,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoReferencedByPersonLocal"
+      "datacolumn": "geoReferencedByPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "geoReferencedBy",
@@ -1287,13 +1288,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoReferencedByPersonShared"
+      "datacolumn": "geoReferencedByPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "geoReferencedBy",
@@ -1310,13 +1311,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoReferencedByOrganizationLocal"
+      "datacolumn": "geoReferencedByOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "geoReferencedBy",
@@ -1333,13 +1334,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoReferencedByOrganizationShared"
+      "datacolumn": "geoReferencedByOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "geoRefDateGroup",
@@ -1352,13 +1353,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoRefDateGroup"
+      "datacolumn": "geoRefDateGroup",
+      "required": "n"
     },
     {
       "fieldname": "geoRefProtocol",
@@ -1371,7 +1372,6 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1380,7 +1380,8 @@
         "georeferencing-dummies",
         "manis-herpnet-ornis-georeferencing-guidelines"
       ],
-      "datacolumn": "geoRefProtocol"
+      "datacolumn": "geoRefProtocol",
+      "required": "n"
     },
     {
       "fieldname": "geoRefSource",
@@ -1393,13 +1394,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoRefSource"
+      "datacolumn": "geoRefSource",
+      "required": "n"
     },
     {
       "fieldname": "geoRefVerificationStatus",
@@ -1412,7 +1413,6 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1420,7 +1420,8 @@
         "verified-contributor",
         "verified-data-custodian"
       ],
-      "datacolumn": "geoRefVerificationStatus"
+      "datacolumn": "geoRefVerificationStatus",
+      "required": "n"
     },
     {
       "fieldname": "geoRefRemarks",
@@ -1433,13 +1434,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoRefRemarks"
+      "datacolumn": "geoRefRemarks",
+      "required": "n"
     },
     {
       "fieldname": "geoRefPlaceName",
@@ -1452,13 +1453,13 @@
         "placeGeoRefGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoRefPlaceName"
+      "datacolumn": "geoRefPlaceName",
+      "required": "n"
     }
   ]
 }

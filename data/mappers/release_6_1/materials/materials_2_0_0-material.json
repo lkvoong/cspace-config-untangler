@@ -167,13 +167,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "y",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termDisplayName"
+      "datacolumn": "termDisplayName",
+      "required": "y"
     },
     {
       "fieldname": "termName",
@@ -186,13 +186,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termName"
+      "datacolumn": "termName",
+      "required": "n"
     },
     {
       "fieldname": "termQualifier",
@@ -205,13 +205,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termQualifier"
+      "datacolumn": "termQualifier",
+      "required": "n"
     },
     {
       "fieldname": "termStatus",
@@ -224,7 +224,6 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -233,7 +232,8 @@
         "rejected",
         "under review"
       ],
-      "datacolumn": "termStatus"
+      "datacolumn": "termStatus",
+      "required": "n"
     },
     {
       "fieldname": "termType",
@@ -246,7 +246,6 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -254,7 +253,8 @@
         "descriptor",
         "used for term"
       ],
-      "datacolumn": "termType"
+      "datacolumn": "termType",
+      "required": "n"
     },
     {
       "fieldname": "termFlag",
@@ -268,13 +268,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termFlag"
+      "datacolumn": "termFlag",
+      "required": "n"
     },
     {
       "fieldname": "historicalStatus",
@@ -287,7 +287,6 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -296,7 +295,8 @@
         "historical",
         "unknown"
       ],
-      "datacolumn": "historicalStatus"
+      "datacolumn": "historicalStatus",
+      "required": "n"
     },
     {
       "fieldname": "termLanguage",
@@ -310,13 +310,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termLanguage"
+      "datacolumn": "termLanguage",
+      "required": "n"
     },
     {
       "fieldname": "termPrefForLang",
@@ -332,13 +332,13 @@
         "materialTermGroup"
       ],
       "data_type": "boolean",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termPrefForLang"
+      "datacolumn": "termPrefForLang",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -355,13 +355,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal"
+      "datacolumn": "termSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "termSource",
@@ -378,13 +378,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceShared"
+      "datacolumn": "termSourceShared",
+      "required": "n"
     },
     {
       "fieldname": "termSourceDetail",
@@ -397,13 +397,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceDetail"
+      "datacolumn": "termSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "termSourceID",
@@ -416,13 +416,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceID"
+      "datacolumn": "termSourceID",
+      "required": "n"
     },
     {
       "fieldname": "termSourceNote",
@@ -435,13 +435,13 @@
         "materialTermGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceNote"
+      "datacolumn": "termSourceNote",
+      "required": "n"
     },
     {
       "fieldname": "publishTo",
@@ -454,13 +454,13 @@
         "publishToList"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "publishTo"
+      "datacolumn": "publishTo",
+      "required": "n"
     },
     {
       "fieldname": "materialCompositionFamilyName",
@@ -477,13 +477,13 @@
         "materialCompositionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionFamilyNameMaterialclassification"
+      "datacolumn": "materialCompositionFamilyNameMaterialclassification",
+      "required": "n"
     },
     {
       "fieldname": "materialCompositionFamilyName",
@@ -500,13 +500,13 @@
         "materialCompositionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionFamilyNameSharedmaterialclassification"
+      "datacolumn": "materialCompositionFamilyNameSharedmaterialclassification",
+      "required": "n"
     },
     {
       "fieldname": "materialCompositionClassName",
@@ -523,13 +523,13 @@
         "materialCompositionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionClassNameMaterialclassification"
+      "datacolumn": "materialCompositionClassNameMaterialclassification",
+      "required": "n"
     },
     {
       "fieldname": "materialCompositionClassName",
@@ -546,13 +546,13 @@
         "materialCompositionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionClassNameSharedmaterialclassification"
+      "datacolumn": "materialCompositionClassNameSharedmaterialclassification",
+      "required": "n"
     },
     {
       "fieldname": "materialCompositionGenericName",
@@ -569,13 +569,13 @@
         "materialCompositionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionGenericNameMaterialclassification"
+      "datacolumn": "materialCompositionGenericNameMaterialclassification",
+      "required": "n"
     },
     {
       "fieldname": "materialCompositionGenericName",
@@ -592,13 +592,13 @@
         "materialCompositionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionGenericNameSharedmaterialclassification"
+      "datacolumn": "materialCompositionGenericNameSharedmaterialclassification",
+      "required": "n"
     },
     {
       "fieldname": "description",
@@ -610,13 +610,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "description"
+      "datacolumn": "description",
+      "required": "n"
     },
     {
       "fieldname": "typicalUse",
@@ -629,13 +629,13 @@
         "typicalUses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "typicalUse"
+      "datacolumn": "typicalUse",
+      "required": "n"
     },
     {
       "fieldname": "discontinued",
@@ -647,14 +647,14 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
         "no",
         "yes"
       ],
-      "datacolumn": "discontinued"
+      "datacolumn": "discontinued",
+      "required": "n"
     },
     {
       "fieldname": "discontinuedBy",
@@ -670,13 +670,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "discontinuedByLocal"
+      "datacolumn": "discontinuedByLocal",
+      "required": "n"
     },
     {
       "fieldname": "discontinuedBy",
@@ -692,13 +692,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "discontinuedByShared"
+      "datacolumn": "discontinuedByShared",
+      "required": "n"
     },
     {
       "fieldname": "discontinuedDate",
@@ -710,13 +710,13 @@
 
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "discontinuedDate"
+      "datacolumn": "discontinuedDate",
+      "required": "n"
     },
     {
       "fieldname": "productionDate",
@@ -728,13 +728,13 @@
 
       ],
       "data_type": "structured date group",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "productionDate"
+      "datacolumn": "productionDate",
+      "required": "n"
     },
     {
       "fieldname": "productionNote",
@@ -746,13 +746,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "productionNote"
+      "datacolumn": "productionNote",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionOrganization",
@@ -769,13 +769,13 @@
         "materialProductionOrganizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionOrganizationLocal"
+      "datacolumn": "materialProductionOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionOrganization",
@@ -792,13 +792,13 @@
         "materialProductionOrganizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionOrganizationShared"
+      "datacolumn": "materialProductionOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionOrganizationRole",
@@ -812,13 +812,13 @@
         "materialProductionOrganizationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionOrganizationRole"
+      "datacolumn": "materialProductionOrganizationRole",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionPerson",
@@ -835,13 +835,13 @@
         "materialProductionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPersonLocal"
+      "datacolumn": "materialProductionPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionPerson",
@@ -858,13 +858,13 @@
         "materialProductionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPersonShared"
+      "datacolumn": "materialProductionPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionPersonRole",
@@ -878,13 +878,13 @@
         "materialProductionPersonGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPersonRole"
+      "datacolumn": "materialProductionPersonRole",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionPlace",
@@ -901,13 +901,13 @@
         "materialProductionPlaceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPlaceLocal"
+      "datacolumn": "materialProductionPlaceLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionPlace",
@@ -924,13 +924,13 @@
         "materialProductionPlaceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPlaceShared"
+      "datacolumn": "materialProductionPlaceShared",
+      "required": "n"
     },
     {
       "fieldname": "materialProductionPlaceRole",
@@ -944,13 +944,13 @@
         "materialProductionPlaceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPlaceRole"
+      "datacolumn": "materialProductionPlaceRole",
+      "required": "n"
     },
     {
       "fieldname": "featuredApplication",
@@ -967,13 +967,13 @@
         "featuredApplicationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "featuredApplicationLocal"
+      "datacolumn": "featuredApplicationLocal",
+      "required": "n"
     },
     {
       "fieldname": "featuredApplication",
@@ -990,13 +990,13 @@
         "featuredApplicationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "featuredApplicationShared"
+      "datacolumn": "featuredApplicationShared",
+      "required": "n"
     },
     {
       "fieldname": "featuredApplicationNote",
@@ -1009,13 +1009,13 @@
         "featuredApplicationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "featuredApplicationNote"
+      "datacolumn": "featuredApplicationNote",
+      "required": "n"
     },
     {
       "fieldname": "materialCitationSource",
@@ -1032,13 +1032,13 @@
         "materialCitationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCitationSourceLocal"
+      "datacolumn": "materialCitationSourceLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialCitationSource",
@@ -1055,13 +1055,13 @@
         "materialCitationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCitationSourceShared"
+      "datacolumn": "materialCitationSourceShared",
+      "required": "n"
     },
     {
       "fieldname": "materialCitationSourceDetail",
@@ -1074,13 +1074,13 @@
         "materialCitationGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCitationSourceDetail"
+      "datacolumn": "materialCitationSourceDetail",
+      "required": "n"
     },
     {
       "fieldname": "externalUrl",
@@ -1093,13 +1093,13 @@
         "externalUrlGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "externalUrl"
+      "datacolumn": "externalUrl",
+      "required": "n"
     },
     {
       "fieldname": "externalUrlNote",
@@ -1112,13 +1112,13 @@
         "externalUrlGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "externalUrlNote"
+      "datacolumn": "externalUrlNote",
+      "required": "n"
     },
     {
       "fieldname": "additionalResource",
@@ -1132,13 +1132,13 @@
         "additionalResourceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalResource"
+      "datacolumn": "additionalResource",
+      "required": "n"
     },
     {
       "fieldname": "additionalResourceNote",
@@ -1151,13 +1151,13 @@
         "additionalResourceGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalResourceNote"
+      "datacolumn": "additionalResourceNote",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionContributingOrganization",
@@ -1174,13 +1174,13 @@
         "materialTermAttributionContributingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingOrganizationLocal"
+      "datacolumn": "materialTermAttributionContributingOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionContributingOrganization",
@@ -1197,13 +1197,13 @@
         "materialTermAttributionContributingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingOrganizationShared"
+      "datacolumn": "materialTermAttributionContributingOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionContributingPerson",
@@ -1220,13 +1220,13 @@
         "materialTermAttributionContributingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingPersonLocal"
+      "datacolumn": "materialTermAttributionContributingPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionContributingPerson",
@@ -1243,13 +1243,13 @@
         "materialTermAttributionContributingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingPersonShared"
+      "datacolumn": "materialTermAttributionContributingPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionContributingDate",
@@ -1262,13 +1262,13 @@
         "materialTermAttributionContributingGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingDate"
+      "datacolumn": "materialTermAttributionContributingDate",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionEditingOrganization",
@@ -1285,13 +1285,13 @@
         "materialTermAttributionEditingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingOrganizationLocal"
+      "datacolumn": "materialTermAttributionEditingOrganizationLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionEditingOrganization",
@@ -1308,13 +1308,13 @@
         "materialTermAttributionEditingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingOrganizationShared"
+      "datacolumn": "materialTermAttributionEditingOrganizationShared",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionEditingPerson",
@@ -1331,13 +1331,13 @@
         "materialTermAttributionEditingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingPersonLocal"
+      "datacolumn": "materialTermAttributionEditingPersonLocal",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionEditingPerson",
@@ -1354,13 +1354,13 @@
         "materialTermAttributionEditingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingPersonShared"
+      "datacolumn": "materialTermAttributionEditingPersonShared",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionEditingNote",
@@ -1373,13 +1373,13 @@
         "materialTermAttributionEditingGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingNote"
+      "datacolumn": "materialTermAttributionEditingNote",
+      "required": "n"
     },
     {
       "fieldname": "materialTermAttributionEditingDate",
@@ -1392,13 +1392,13 @@
         "materialTermAttributionEditingGroup"
       ],
       "data_type": "date",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingDate"
+      "datacolumn": "materialTermAttributionEditingDate",
+      "required": "n"
     },
     {
       "fieldname": "commonForm",
@@ -1411,13 +1411,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "commonForm"
+      "datacolumn": "commonForm",
+      "required": "n"
     },
     {
       "fieldname": "formType",
@@ -1431,13 +1431,13 @@
         "formTypeGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "formType"
+      "datacolumn": "formType",
+      "required": "n"
     },
     {
       "fieldname": "typicalSize",
@@ -1450,13 +1450,13 @@
         "typicalSizeGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "typicalSize"
+      "datacolumn": "typicalSize",
+      "required": "n"
     },
     {
       "fieldname": "dimension",
@@ -1471,7 +1471,6 @@
         "typicalSizeDimensionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1489,7 +1488,8 @@
         "weight",
         "width"
       ],
-      "datacolumn": "dimension"
+      "datacolumn": "dimension",
+      "required": "n"
     },
     {
       "fieldname": "measurementUnit",
@@ -1504,7 +1504,6 @@
         "typicalSizeDimensionGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
@@ -1525,7 +1524,8 @@
         "stories",
         "tons"
       ],
-      "datacolumn": "measurementUnit"
+      "datacolumn": "measurementUnit",
+      "required": "n"
     },
     {
       "fieldname": "value",
@@ -1540,13 +1540,13 @@
         "typicalSizeDimensionGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "value"
+      "datacolumn": "value",
+      "required": "n"
     },
     {
       "fieldname": "formNote",
@@ -1558,13 +1558,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "formNote"
+      "datacolumn": "formNote",
+      "required": "n"
     },
     {
       "fieldname": "acousticalPropertyType",
@@ -1578,13 +1578,13 @@
         "acousticalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acousticalPropertyType"
+      "datacolumn": "acousticalPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "acousticalPropertyNote",
@@ -1597,13 +1597,13 @@
         "acousticalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "acousticalPropertyNote"
+      "datacolumn": "acousticalPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "durabilityPropertyType",
@@ -1617,13 +1617,13 @@
         "durabilityPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "durabilityPropertyType"
+      "datacolumn": "durabilityPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "durabilityPropertyNote",
@@ -1636,13 +1636,13 @@
         "durabilityPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "durabilityPropertyNote"
+      "datacolumn": "durabilityPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "electricalPropertyType",
@@ -1656,13 +1656,13 @@
         "electricalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "electricalPropertyType"
+      "datacolumn": "electricalPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "electricalPropertyNote",
@@ -1675,13 +1675,13 @@
         "electricalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "electricalPropertyNote"
+      "datacolumn": "electricalPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "hygrothermalPropertyType",
@@ -1695,13 +1695,13 @@
         "hygrothermalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "hygrothermalPropertyType"
+      "datacolumn": "hygrothermalPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "hygrothermalPropertyNote",
@@ -1714,13 +1714,13 @@
         "hygrothermalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "hygrothermalPropertyNote"
+      "datacolumn": "hygrothermalPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "mechanicalPropertyType",
@@ -1734,13 +1734,13 @@
         "mechanicalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "mechanicalPropertyType"
+      "datacolumn": "mechanicalPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "mechanicalPropertyNote",
@@ -1753,13 +1753,13 @@
         "mechanicalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "mechanicalPropertyNote"
+      "datacolumn": "mechanicalPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "opticalPropertyType",
@@ -1773,13 +1773,13 @@
         "opticalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "opticalPropertyType"
+      "datacolumn": "opticalPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "opticalPropertyNote",
@@ -1792,13 +1792,13 @@
         "opticalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "opticalPropertyNote"
+      "datacolumn": "opticalPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "sensorialPropertyType",
@@ -1812,13 +1812,13 @@
         "sensorialPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sensorialPropertyType"
+      "datacolumn": "sensorialPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "sensorialPropertyNote",
@@ -1831,13 +1831,13 @@
         "sensorialPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "sensorialPropertyNote"
+      "datacolumn": "sensorialPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "smartMaterialPropertyType",
@@ -1851,13 +1851,13 @@
         "smartMaterialPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "smartMaterialPropertyType"
+      "datacolumn": "smartMaterialPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "smartMaterialPropertyNote",
@@ -1870,13 +1870,13 @@
         "smartMaterialPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "smartMaterialPropertyNote"
+      "datacolumn": "smartMaterialPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "additionalPropertyType",
@@ -1890,13 +1890,13 @@
         "additionalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalPropertyType"
+      "datacolumn": "additionalPropertyType",
+      "required": "n"
     },
     {
       "fieldname": "additionalPropertyNote",
@@ -1909,13 +1909,13 @@
         "additionalPropertyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalPropertyNote"
+      "datacolumn": "additionalPropertyNote",
+      "required": "n"
     },
     {
       "fieldname": "propertyNote",
@@ -1927,13 +1927,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "propertyNote"
+      "datacolumn": "propertyNote",
+      "required": "n"
     },
     {
       "fieldname": "recycledContent",
@@ -1946,13 +1946,13 @@
         "recycledContentGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "recycledContent"
+      "datacolumn": "recycledContent",
+      "required": "n"
     },
     {
       "fieldname": "recycledContentHigh",
@@ -1965,13 +1965,13 @@
         "recycledContentGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "recycledContentHigh"
+      "datacolumn": "recycledContentHigh",
+      "required": "n"
     },
     {
       "fieldname": "recycledContentQualifier",
@@ -1985,13 +1985,13 @@
         "recycledContentGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "recycledContentQualifier"
+      "datacolumn": "recycledContentQualifier",
+      "required": "n"
     },
     {
       "fieldname": "lifecycleComponent",
@@ -2005,13 +2005,13 @@
         "lifecycleComponentGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "lifecycleComponent"
+      "datacolumn": "lifecycleComponent",
+      "required": "n"
     },
     {
       "fieldname": "lifecycleComponentNote",
@@ -2024,13 +2024,13 @@
         "lifecycleComponentGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "lifecycleComponentNote"
+      "datacolumn": "lifecycleComponentNote",
+      "required": "n"
     },
     {
       "fieldname": "embodiedEnergyValue",
@@ -2043,13 +2043,13 @@
         "embodiedEnergyGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "embodiedEnergyValue"
+      "datacolumn": "embodiedEnergyValue",
+      "required": "n"
     },
     {
       "fieldname": "embodiedEnergyValueHigh",
@@ -2062,13 +2062,13 @@
         "embodiedEnergyGroup"
       ],
       "data_type": "float",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "embodiedEnergyValueHigh"
+      "datacolumn": "embodiedEnergyValueHigh",
+      "required": "n"
     },
     {
       "fieldname": "embodiedEnergyUnit",
@@ -2082,13 +2082,13 @@
         "embodiedEnergyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "embodiedEnergyUnit"
+      "datacolumn": "embodiedEnergyUnit",
+      "required": "n"
     },
     {
       "fieldname": "embodiedEnergyNote",
@@ -2101,13 +2101,13 @@
         "embodiedEnergyGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "embodiedEnergyNote"
+      "datacolumn": "embodiedEnergyNote",
+      "required": "n"
     },
     {
       "fieldname": "certificationProgram",
@@ -2121,13 +2121,13 @@
         "certificationCreditGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "certificationProgram"
+      "datacolumn": "certificationProgram",
+      "required": "n"
     },
     {
       "fieldname": "certificationCreditNote",
@@ -2140,13 +2140,13 @@
         "certificationCreditGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "certificationCreditNote"
+      "datacolumn": "certificationCreditNote",
+      "required": "n"
     },
     {
       "fieldname": "ecologyNote",
@@ -2158,13 +2158,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "ecologyNote"
+      "datacolumn": "ecologyNote",
+      "required": "n"
     },
     {
       "fieldname": "castingProcess",
@@ -2177,13 +2177,13 @@
         "castingProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "castingProcess"
+      "datacolumn": "castingProcess",
+      "required": "n"
     },
     {
       "fieldname": "joiningProcess",
@@ -2196,13 +2196,13 @@
         "joiningProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "joiningProcess"
+      "datacolumn": "joiningProcess",
+      "required": "n"
     },
     {
       "fieldname": "moldingProcess",
@@ -2215,13 +2215,13 @@
         "moldingProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "moldingProcess"
+      "datacolumn": "moldingProcess",
+      "required": "n"
     },
     {
       "fieldname": "surfacingProcess",
@@ -2234,13 +2234,13 @@
         "surfacingProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "surfacingProcess"
+      "datacolumn": "surfacingProcess",
+      "required": "n"
     },
     {
       "fieldname": "deformingProcess",
@@ -2253,13 +2253,13 @@
         "deformingProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "deformingProcess"
+      "datacolumn": "deformingProcess",
+      "required": "n"
     },
     {
       "fieldname": "machiningProcess",
@@ -2272,13 +2272,13 @@
         "machiningProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "machiningProcess"
+      "datacolumn": "machiningProcess",
+      "required": "n"
     },
     {
       "fieldname": "rapidPrototypingProcess",
@@ -2291,13 +2291,13 @@
         "rapidPrototypingProcesses"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "y",
       "in_repeating_group": "n",
       "opt_list_values": [
 
       ],
-      "datacolumn": "rapidPrototypingProcess"
+      "datacolumn": "rapidPrototypingProcess",
+      "required": "n"
     },
     {
       "fieldname": "additionalProcess",
@@ -2311,13 +2311,13 @@
         "additionalProcessGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalProcess"
+      "datacolumn": "additionalProcess",
+      "required": "n"
     },
     {
       "fieldname": "additionalProcessNote",
@@ -2330,13 +2330,13 @@
         "additionalProcessGroup"
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "y",
       "opt_list_values": [
 
       ],
-      "datacolumn": "additionalProcessNote"
+      "datacolumn": "additionalProcessNote",
+      "required": "n"
     },
     {
       "fieldname": "processNote",
@@ -2348,13 +2348,13 @@
 
       ],
       "data_type": "string",
-      "required": "n",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "processNote"
+      "datacolumn": "processNote",
+      "required": "n"
     }
   ]
 }
