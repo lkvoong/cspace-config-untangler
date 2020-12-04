@@ -23,11 +23,19 @@ module CspaceConfigUntangler
     end #def initialize
 
     def rest(path)
-      apiurl = "#{url_base}/cspace-services#{path}"
+      apiurl = "#{@url_base}/cspace-services#{path}"
+      begin
       response = HTTP.basic_auth(
         user: @user,
         pass: @pw
       ).get(apiurl)
+      rescue OpenSSL::SSL::SSLError
+        apiurl = apiurl.sub('https://', 'http://')
+        response = HTTP.basic_auth(
+          user: @user,
+          pass: @pw
+        ).get(apiurl)
+      end
       case response.status
       when 200
         body = response.body
