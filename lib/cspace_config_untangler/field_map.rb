@@ -5,21 +5,23 @@ module CspaceConfigUntangler
     class FieldMapping
       ::FieldMapping = CspaceConfigUntangler::FieldMap::FieldMapping
       include CCU::TrackAttributes
-      attr_reader :fieldname, :transforms, :source_type, :namespace, :xpath, :data_type,
+      attr_reader :fieldname, :transforms, :source_type, :source_name, :namespace, :xpath, :data_type,
         :repeats, :in_repeating_group, :opt_list_values
       attr_accessor :datacolumn, :required
-      def initialize(field:, datacolumn:, transforms: {}, source_type:)
+      def initialize(field:, datacolumn:, transforms: {}, source_type:, source_name:)
         @fieldname = field.name
         @namespace = field.ns.sub('ns2:', '')
         @xpath = field.schema_path
         @required = field.required
         @repeats = field.repeats
         @in_repeating_group = field.in_repeating_group
-        @data_type = field.data_type
         @datacolumn = datacolumn
         @source_type = source_type
+        @source_name = source_name
         @transforms = transforms
         @opt_list_values = field.value_list
+
+        @data_type = @datacolumn['Refname'] ? 'csrefname' : field.data_type
       end
 
       def to_h
@@ -64,28 +66,32 @@ module CspaceConfigUntangler
       def get_source_type
         types = []
         @hash.each do |source, h|
-          if source.start_with?('authority: ')
+          if source.start_with?('authority')
             h[:source_type] = 'authority'
-          elsif source.start_with?('vocabulary: ')
+          elsif source.start_with?('vocabulary')
             h[:source_type] = 'vocabulary'
-          elsif source.start_with?('option list: ')
+          elsif source.start_with?('option list')
             h[:source_type] = 'optionlist'
-          elsif source.start_with?('other: ')
+          elsif source.start_with?('other')
             h[:source_type] = 'invalid source type'
+          elsif source['refname']
+            h[:source_type] = source.delete('refname')
           else
             h[:source_type] = 'na'
           end
-        types << h[:source_type]
+          types << h[:source_type]
         end
         @source_type = types[0]
       end
-      
+
       def get_transforms
         @hash.each do |source, h|
           xform = { special: []}
-          if source.start_with?('authority: ')
+          if source['refname']
+            #do nothing
+          elsif source.start_with?('authority: ')
             xform[:authority] = AuthorityConfigLookup.new(profile: @field.profile,
-                                                           authority: source).result
+                                                          authority: source).result
           elsif source.start_with?('vocabulary: ')
             xform[:vocabulary] = source.sub('vocabulary: ', '')
             xform[:special] << 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
@@ -105,7 +111,8 @@ module CspaceConfigUntangler
           mappings << FieldMapping.new(field: @field,
                                        datacolumn: h[:column_name],
                                        transforms: h[:transforms],
-                                       source_type: h[:source_type])
+                                       source_type: h[:source_type],
+                                       source_name: h[:source_name])
         end
         mappings
       end
@@ -115,12 +122,28 @@ module CspaceConfigUntangler
         if value_source.empty?
           @hash['no source'] = { column_name: @field.name, transforms: {} }
         elsif value_source.size == 1
-          value_source.each{ |vs| @hash[vs] = { column_name: @field.name, transforms: {} } }
+          vs = value_source.first
+          source_name = get_source_name(vs)
+          @hash[vs] = { column_name: @field.name, transforms: {}, source_name: source_name }
+          unless vs['option list']
+            @hash["#{vs}refname"] = { column_name: "#{@field.name}Refname", transforms: {}, source_name: source_name }
+          end
         else #multiple sources
           DataColumnNamer.new(fieldname: @field.name, sources: value_source).result.each do |src, colname|
             @hash[src][:column_name] = colname
+            @hash[src][:transforms] = {}
+            @hash[src][:source_name] = get_source_name(src)
           end
+          @hash["#{value_source.first}refname"] = {
+            column_name: "#{@field.name}Refname",
+            transforms: {},
+            source_name: value_source.map{ |s| get_source_name(s) }.join('; ')
+          }
         end
+      end
+
+      def get_source_name(source)
+        source.sub(/^(option list|authority|vocabulary): /, '')
       end
     end #class FieldMapper
 

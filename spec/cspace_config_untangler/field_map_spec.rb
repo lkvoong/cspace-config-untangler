@@ -30,11 +30,11 @@ RSpec.describe CCU::FieldMap do
         let(:mappings) { FieldMapper.new(field: @contentConcept).mappings }
         it 'mappings have source_type = authority' do
           result = mappings.map{ |m| m.source_type }
-          expect(result).to eq(%w[authority authority])
+          expect(result).to eq(%w[authority authority authority])
         end
         it 'mappings datacolumns = contentConceptAssociated contentConceptMaterial' do
           result = mappings.map{ |m| m.datacolumn }.sort
-            expect(result).to eq(%w[contentConceptAssociated contentConceptMaterial])
+            expect(result).to eq(%w[contentConceptAssociated contentConceptMaterial contentConceptRefname])
         end
 
         describe '.to_h' do
@@ -49,11 +49,11 @@ RSpec.describe CCU::FieldMap do
         let(:mappings) { FieldMapper.new(field: @currentLocation).mappings }
         it 'mappings have source_type = authority' do
           result = mappings.map{ |m| m.source_type }
-          expect(result).to eq(%w[authority authority authority])
+          expect(result).to eq(%w[authority authority authority authority])
         end
-        it 'mappings datacolumns = currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization' do
+        it 'mappings datacolumns = currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization currentLocationRefname' do
           result = mappings.map{ |m| m.datacolumn }.sort
-          expect(result).to eq(%w[currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization])
+          expect(result).to eq(%w[currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization currentLocationRefname])
         end
 
         describe '.to_h' do
@@ -110,19 +110,20 @@ RSpec.describe CCU::FieldMap do
         let(:result) { FieldMapper.new(field: @ageQualifier) }
         describe '#get_data_columns' do
           it 'column is the same as field name' do
-            expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['ageQualifier'])
+            expect(result.hash.map{ |src, h| h[:column_name] }).to eq(['ageQualifier', 'ageQualifierRefname'])
           end
         end
         describe '#mappings' do
-          it 'returns 1 mapping' do
-            expect(result.mappings.size).to eq(1)
+          it 'returns 2 mappings' do
+            expect(result.mappings.size).to eq(2)
           end
         end
         describe '#get_transforms' do
           it 'creates transform hash as expected' do
             rh = result.hash.map{ |src, h| h[:transforms] }
             expected = [
-              { vocabulary: 'agequalifier' }
+              { vocabulary: 'agequalifier' },
+              {}
             ]
             expect(rh).to eq(expected)
           end
@@ -140,12 +141,12 @@ RSpec.describe CCU::FieldMap do
         let(:result) { FieldMapper.new(field: @contentConcept) }
         describe '#get_data_columns' do
           it 'merges in column name hash as expected' do
-            expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptAssociated contentConceptMaterial])
+            expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptAssociated contentConceptMaterial contentConceptRefname])
           end
         end
         describe '#mappings' do
-          it 'returns 2 mappings' do
-            expect(result.mappings.size).to eq(2)
+          it 'returns 3 mappings' do
+            expect(result.mappings.size).to eq(3)
           end
         end
         describe '#get_transforms' do
@@ -153,7 +154,8 @@ RSpec.describe CCU::FieldMap do
             rh = result.hash.map{ |src, h| h[:transforms] }
             expected = [
               { authority:  %w[conceptauthorities concept] },
-              { authority:  %w[conceptauthorities material_ca] }
+              { authority:  %w[conceptauthorities material_ca] },
+              {}
             ]
             expect(rh).to eq(expected)
           end
@@ -215,6 +217,7 @@ RSpec.describe CCU::FieldMap do
           expected = [
             { special: %w[behrensmeyer_translate],
              vocabulary: 'behrensmeyer' },
+            {}
           ]
           expect(rh).to eq(expected)
         end

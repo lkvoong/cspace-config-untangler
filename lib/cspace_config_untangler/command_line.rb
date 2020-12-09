@@ -91,12 +91,24 @@ module CspaceConfigUntangler
       end
     end
 
-    desc 'write_csv_templates', 'Write batch import CSV templates for given (or all) record types in the given profiles'
+    desc 'write_csv_templates', 'Write batch import CSV templates for given (or all) record types in the given profiles.'
+    long_desc <<-LONGDESC
+    Using type = displayname creates templates assuming users want to enter human-readable name strings in the CSV. For fields populated from more than one authority or vocabulary, the template contains a separate column per term source.
+
+    Using type = refname creates templates assuming users will enter CollectionSpace refnames in their CSV. One column is output per CollectionSpace field, regardless of how many authorities can be used to populate that field. 
+  LONGDESC
     option :rectypes, desc: 'Comma-delimited (no spaces) list of record types to create templates for; if blank, will process all record types in profile', default: '', aliases: '-r'
     option :outputdir, desc: 'Path to output directory. File name will be: profile-rectype_template.csv', default:'data/templates', aliases: '-o'
     option :subdirs, desc: 'y/n. Whether to organize into subdirectories within given output directory by normalized profile name. Normalized profile name is the profile with version info/underscores removed.', default: 'n', aliases: '-s'
+    option :type, desc: 'String. displayname, refname, or both.', default: 'displayname', aliases: '-t'
     def write_csv_templates
       rts = options[:rectypes].split(',').map(&:strip)
+      
+      unless %w[displayname refname both].include?(options[:type])
+        puts "--type (-t) value must be one of the following: displayname, refname, both"
+        exit
+      end
+      
       get_profiles.each do |profile|
         puts "Writing templates for #{profile}..."
         norm_name = profile.sub(/_.*/, '')
@@ -105,9 +117,12 @@ module CspaceConfigUntangler
         FileUtils.mkdir_p(dir_path)
         p.rectypes.each do |rt|
           puts "  ...#{rt.name}"
-          CsvTemplate.new(profile: p,
-                          rectype: rt
-                         ).write(dir_path)
+          types = options[:type] == 'both' ? %w[displayname refname] : [options[:type]]
+          types.each do |type|
+            path = type == 'refname' ? "#{dir_path}/refname" : dir_path
+            FileUtils.mkdir_p(path) if type == 'refname'
+            CsvTemplate.new(profile: p, rectype: rt, type: type).write(path)
+          end
         end
       end
     end

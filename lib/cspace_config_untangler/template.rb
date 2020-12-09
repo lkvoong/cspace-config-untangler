@@ -8,17 +8,25 @@ module CspaceConfigUntangler
 
       # profile = CCU::Profile 
       # rectype = CCU::RecordType
-      def initialize(profile:, rectype:)
+      def initialize(profile:, rectype:, type:)
         @profile = profile
         @rectype = rectype
+        @type = type
         @config = @profile.config
-        @mappings = @rectype.batch_mappings
+        if @type == 'displayname'
+          @mappings = @rectype.batch_mappings.reject{ |mapping| mapping.data_type == 'csrefname' }
+        elsif @type == 'refname'
+          @mappings = @rectype.batch_mappings.reject do |mapping|
+            mapping.source_type.match?(/authority|vocabulary/) && mapping.data_type == 'string'
+            end
+        end
         @csvdata = []
         build_template
       end
 
       def write(dir)
-        filename = "#{@profile.name}-#{@rectype.name}_template.csv"
+        stubname = "#{@profile.name}-#{@rectype.name}"
+        filename = @type == 'refname' ? "#{stubname}_refnames_template.csv" : "#{stubname}_template.csv"
         path = "#{File.expand_path(dir)}/#{filename}"
         CSV.open(path, 'wb') do |csv|
           @csvdata.each{ |r| csv << r }
@@ -35,6 +43,7 @@ module CspaceConfigUntangler
         datatype = ['DATA TYPE']
         repeats = ['REPEATABLE FIELD?']
         group = ['IN REPEATING FIELD GROUP?']
+        sourcetype = ['VALUE SOURCE TYPE']
         source = ['VALUE SOURCE']
         headers = ['CSVHEADER']
         
@@ -45,15 +54,19 @@ module CspaceConfigUntangler
             datatype << mapping.data_type
             repeats << mapping.repeats
             group << mapping.in_repeating_group
+            sourcetype << mapping.source_type
             if mapping.source_type == 'optionlist'
               source << mapping.opt_list_values.join(', ')
             elsif mapping.source_type == 'authority'
-              source << mapping.transforms[:authority].join('/')
+              source << mapping.source_name
             elsif mapping.source_type == 'vocabulary'
-              source << "vocabulary: #{mapping.transforms[:vocabulary]}"
+              source << mapping.source_name
+            elsif mapping.data_type == 'csrefname'
+              source << mapping.source_name
             else
               source << ''
             end
+            
             headers << mapping.datacolumn
           end
         end
@@ -63,6 +76,7 @@ module CspaceConfigUntangler
         @csvdata << datatype
         @csvdata << repeats
         @csvdata << group
+        @csvdata << sourcetype
         @csvdata << source
         @csvdata << headers
       end
