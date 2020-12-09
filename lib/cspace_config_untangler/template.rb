@@ -42,7 +42,7 @@ module CspaceConfigUntangler
         required = ['REQUIRED']
         datatype = ['DATA TYPE']
         repeats = ['REPEATABLE FIELD?']
-        group = ['IN REPEATING FIELD GROUP?']
+        group = ['REPEATING FIELD GROUP']
         sourcetype = ['VALUE SOURCE TYPE']
         source = ['VALUE SOURCE']
         headers = ['CSVHEADER']
@@ -53,7 +53,7 @@ module CspaceConfigUntangler
             required << mapping.required
             datatype << mapping.data_type
             repeats << mapping.repeats
-            group << mapping.in_repeating_group
+            mapping.in_repeating_group.start_with?('n') ? group << '' : group << mapping.xpath.join(' < ')
             sourcetype << mapping.source_type
             if mapping.source_type == 'optionlist'
               source << mapping.opt_list_values.join(', ')
