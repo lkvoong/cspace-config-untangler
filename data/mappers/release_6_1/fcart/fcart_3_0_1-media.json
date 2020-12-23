@@ -1,15 +1,16 @@
 {
   "config": {
+    "profile_basename": "fcart",
     "document_name": "media",
     "service_name": "Media",
     "service_path": "media",
     "service_type": "procedure",
     "object_name": "Media",
-    "profile_basename": "fcart",
     "ns_uri": {
       "media_common": "http://collectionspace.org/services/media"
     },
-    "identifier_field": "identificationNumber"
+    "identifier_field": "identificationNumber",
+    "search_field": "identificationNumber"
   },
   "docstructure": {
     "media_common": {
@@ -43,6 +44,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 
@@ -61,6 +63,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 
@@ -80,6 +83,7 @@
         "vocabulary": "publishto"
       },
       "source_type": "vocabulary",
+      "source_name": "publishto",
       "namespace": "media_common",
       "xpath": [
         "publishToList"
@@ -94,10 +98,30 @@
       "required": "n"
     },
     {
+      "fieldname": "publishTo",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "publishto",
+      "namespace": "media_common",
+      "xpath": [
+        "publishToList"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "publishToRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "name",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "blobs_common",
       "xpath": [
 
@@ -116,6 +140,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "blobs_common",
       "xpath": [
 
@@ -134,6 +159,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "blobs_common",
       "xpath": [
 
@@ -152,6 +178,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 
@@ -170,6 +197,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "measuredParts",
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -213,6 +241,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -232,6 +261,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "dimensions",
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -274,6 +304,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -299,6 +330,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -316,10 +348,33 @@
       "required": "n"
     },
     {
+      "fieldname": "measuredBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "media_common",
+      "xpath": [
+        "measuredPartGroupList",
+        "measuredPartGroup",
+        "dimensionSubGroupList",
+        "dimensionSubGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "measuredByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "measurementMethod",
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "measurementMethods",
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -360,6 +415,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -381,6 +437,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "measurementUnits",
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -417,6 +474,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -438,6 +496,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "measuredPartGroupList",
@@ -463,6 +522,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -485,6 +545,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -499,6 +560,25 @@
       "required": "n"
     },
     {
+      "fieldname": "contributor",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "media_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "contributorRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "creator",
       "transforms": {
         "authority": [
@@ -507,6 +587,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -529,6 +610,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -543,11 +625,31 @@
       "required": "n"
     },
     {
+      "fieldname": "creator",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "media_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "creatorRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "language",
       "transforms": {
         "vocabulary": "languages"
       },
       "source_type": "vocabulary",
+      "source_name": "languages",
       "namespace": "media_common",
       "xpath": [
         "languageList"
@@ -562,6 +664,25 @@
       "required": "n"
     },
     {
+      "fieldname": "language",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "languages",
+      "namespace": "media_common",
+      "xpath": [
+        "languageList"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "languageRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "publisher",
       "transforms": {
         "authority": [
@@ -570,6 +691,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -592,6 +714,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -606,10 +729,30 @@
       "required": "n"
     },
     {
+      "fieldname": "publisher",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "media_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "publisherRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "relation",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "relationList"
@@ -628,6 +771,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 
@@ -646,6 +790,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "mediaTypes",
       "namespace": "media_common",
       "xpath": [
         "typeList"
@@ -668,6 +813,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 
@@ -686,6 +832,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "dateGroupList"
@@ -704,6 +851,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 
@@ -722,6 +870,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
         "subjectList"
@@ -744,6 +893,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -766,6 +916,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "media_common",
       "xpath": [
 
@@ -780,10 +931,30 @@
       "required": "n"
     },
     {
+      "fieldname": "rightsHolder",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "media_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "rightsHolderRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "description",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "media_common",
       "xpath": [
 

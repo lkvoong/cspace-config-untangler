@@ -29,7 +29,7 @@ RSpec.describe CCU::Template::CsvTemplate do
       end
       describe '.csvdata' do
         it 'correctly reports faux-requiredness' do
-          headers = @anthro_movement_template.csvdata[6]
+          headers = @anthro_movement_template.csvdata[7]
           req = @anthro_movement_template.csvdata[1]
           field_index = headers.index('movementReferenceNumber')
           expect(req[field_index]).to eq('y')

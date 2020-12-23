@@ -1,16 +1,17 @@
 {
   "config": {
+    "profile_basename": "lhmc",
     "document_name": "loansin",
     "service_name": "Loanin",
     "service_path": "loansin",
     "service_type": "procedure",
     "object_name": "Loanin",
-    "profile_basename": "lhmc",
     "ns_uri": {
       "loansin_common": "http://collectionspace.org/services/loanin",
       "loansin_lhmc": "http://collectionspace.org/services/loanin/domain/lhmc"
     },
-    "identifier_field": "loanInNumber"
+    "identifier_field": "loanInNumber",
+    "search_field": "loanInNumber"
   },
   "docstructure": {
     "loansin_common": {
@@ -32,6 +33,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -50,6 +52,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "loanPurposes",
       "namespace": "loansin_common",
       "xpath": [
 
@@ -75,6 +78,7 @@
         "vocabulary": "loanoutstatus"
       },
       "source_type": "vocabulary",
+      "source_name": "loanoutstatus",
       "namespace": "loansin_lhmc",
       "xpath": [
         "loaninStatusLHMCGroupList",
@@ -90,10 +94,31 @@
       "required": "n"
     },
     {
+      "fieldname": "loaninStatusLHMC",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "loanoutstatus",
+      "namespace": "loansin_lhmc",
+      "xpath": [
+        "loaninStatusLHMCGroupList",
+        "loaninStatusLHMCGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "loaninStatusLHMCRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "loaninStatusDateLHMC",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_lhmc",
       "xpath": [
         "loaninStatusLHMCGroupList",
@@ -113,6 +138,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_lhmc",
       "xpath": [
         "loaninStatusLHMCGroupList",
@@ -136,6 +162,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_lhmc",
       "xpath": [
         "loaninStatusLHMCGroupList",
@@ -159,6 +186,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/ulan",
       "namespace": "loansin_lhmc",
       "xpath": [
         "loaninStatusLHMCGroupList",
@@ -174,6 +202,26 @@
       "required": "n"
     },
     {
+      "fieldname": "loaninStatusAuthorizerLHMC",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; person/ulan",
+      "namespace": "loansin_lhmc",
+      "xpath": [
+        "loaninStatusLHMCGroupList",
+        "loaninStatusLHMCGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "loaninStatusAuthorizerLHMCRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lender",
       "transforms": {
         "authority": [
@@ -182,6 +230,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -205,6 +254,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -220,6 +270,26 @@
       "required": "n"
     },
     {
+      "fieldname": "lender",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "lenderGroupList",
+        "lenderGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "lenderRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lendersContact",
       "transforms": {
         "authority": [
@@ -228,6 +298,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -243,6 +314,26 @@
       "required": "n"
     },
     {
+      "fieldname": "lendersContact",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "lenderGroupList",
+        "lenderGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "lendersContactRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lendersAuthorizer",
       "transforms": {
         "authority": [
@@ -251,6 +342,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -266,10 +358,31 @@
       "required": "n"
     },
     {
+      "fieldname": "lendersAuthorizer",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "lenderGroupList",
+        "lenderGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "lendersAuthorizerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lendersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -293,6 +406,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
 
@@ -307,6 +421,25 @@
       "required": "n"
     },
     {
+      "fieldname": "borrowersContact",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "borrowersContactRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "borrowersAuthorizer",
       "transforms": {
         "authority": [
@@ -315,6 +448,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
 
@@ -329,10 +463,30 @@
       "required": "n"
     },
     {
+      "fieldname": "borrowersAuthorizer",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "borrowersAuthorizerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "borrowersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -351,6 +505,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -369,6 +524,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -387,6 +543,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -405,6 +562,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -423,6 +581,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 

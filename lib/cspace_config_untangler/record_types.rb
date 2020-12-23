@@ -3,7 +3,8 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   class RecordType
     attr_reader :profile, :name, :id, :config, :ns, :panels, :input_tables,
-      :forms, :nonunique_fields, :structured_date_treatment
+      :forms, :nonunique_fields, :structured_date_treatment, :service_type,
+      :subtypes, :record_search_field
 
     def initialize(profileobj, rectypename)
       @profile = profileobj
@@ -15,6 +16,8 @@ module CspaceConfigUntangler
       @input_tables = get_input_tables
       @forms = get_forms
       @structured_date_treatment = @profile.structured_date_treatment
+      @service_type = @config.dig('serviceConfig', 'serviceType')
+      @subtypes = @service_type == 'authority' ? get_subtypes : []
     end
 
     def field_defs
@@ -81,35 +84,105 @@ module CspaceConfigUntangler
       mappings
     end
 
-    # sets up "faux-required" fields for record types that do not have any required fields
-    #   some unique ID field is required for batch import/processing
     def batch_mappings
-      mappings = self.mappings
-      if @name == 'collectionobject'
-        mappings = mappings.reject{ |m| m.fieldname == 'computedCurrentLocation' }
-      elsif @name == 'movement'
-        unless @profile.name.start_with?('botgarden')
-          mapping = mappings.select{ |m| m.fieldname == 'movementReferenceNumber' }.first
-          mapping.required = 'y'
-        end
-      elsif @name == 'media'
-        mappings = mappings.reject{ |m| m.fieldname == 'mediaFileURI' }
-      end
-      if @profile.name.start_with?('botgarden')
-        if @name == 'loanout'
-          mapping = mappings.select{ |m| m.fieldname == 'loanOutNumber' }.first
-          mapping.required = 'y'
-        end
-        if @name == 'objectexit'
-          mapping = mappings.select{ |m| m.fieldname == 'exitNumber' }.first
-          mapping.required = 'y'
-        end
-      end
+      mappings = remove_mappings(self.mappings)
+      mappings = faux_require_mappings(mappings)
+      mappings = faux_require_profile_specific_mappings(mappings)
       mappings
+    end
+
+    def id_field
+      case @service_type
+      when 'object'
+        id_field = 'objectNumber'
+      when 'authority'
+        id_field = 'shortIdentifier'
+      when 'procedure'
+        mapping = batch_mappings.select{ |m| m.required == 'y' }
+        if mapping.length == 1
+          id_field = mapping.first.fieldname
+        elsif mapping.length > 1
+          # osteology has 3 required fields, but only the ID is suitable for use here
+          id_field = 'InventoryID' if @name == 'osteology'
+        end
+      end
+      id_field
+    end
+
+    def search_field
+      case @service_type
+      when 'authority'
+        doc_name = @config.dig('serviceConfig', 'documentName').sub(/s$/, '')
+        field = "#{doc_name}TermGroupList/0/termDisplayName"
+      else
+        field = id_field
+      end
+      field
     end
     
     private
 
+
+    # sets up "faux-required" fields for record types that do not have any required fields
+    #   some unique ID field is required for batch import/processing
+    def faux_require_mappings(mappings)
+      instructions = {
+        'movement' => 'movementReferenceNumber'
+      }
+      return mappings unless instructions.key?(@name)
+
+      mapping = get_field_mapping(mappings, instructions[@name])
+      mapping.required = 'y' unless mapping.nil?
+      mappings
+    end
+    
+    def faux_require_profile_specific_mappings(mappings)
+      instructions = {
+        'botgarden' => {
+          'loanout' => 'loanOutNumber',
+          'objectexit' => 'exitNumber'
+        }
+      }
+      profile = @profile.versionless_name
+      return mappings unless instructions.key?(profile)
+      return mappings unless instructions[profile].key?(@name)
+
+      mapping = get_field_mapping(mappings, instructions[profile][@name])
+      mapping.required = 'y' unless mapping.nil?
+      mappings
+    end
+
+    def get_field_mapping(mappings, fieldname)
+      mappings.select{ |m| m.fieldname == fieldname }.first
+    end
+    
+    # get rid of mappings for fields we do not want to import via the batch import tool
+    def remove_mappings(mappings)
+      instructions = {
+        'collectionobject' => %w[computedCurrentLocation],
+        'media' => %w[mediaFileURI]
+      }
+      return mappings unless instructions.key?(@name)
+
+      instructions[@name].each do |fieldname|
+        mappings = mappings.reject{ |m| m.fieldname == fieldname }
+      end
+      mappings
+    end
+    
+    def get_subtypes
+      result = []
+      vocabs = @config.dig('vocabularies')
+      vocabs.each do |keyword, config|
+        next if keyword == 'all'
+        name = config.dig('messages', 'name', 'defaultMessage')
+        servicepath = config.dig('serviceConfig', 'servicePath')
+        servicepath_name = servicepath.match(/\((.*)\)/)[1]
+        result << { name: name, subtype: servicepath_name }
+      end
+      result
+    end
+    
     def media_uri_field
       field_hash = {
         name: 'mediaFileURI',

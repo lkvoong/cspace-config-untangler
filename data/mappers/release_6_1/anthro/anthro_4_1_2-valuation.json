@@ -1,15 +1,16 @@
 {
   "config": {
+    "profile_basename": "anthro",
     "document_name": "valuationcontrols",
     "service_name": "Valuationcontrols",
     "service_path": "valuationcontrols",
     "service_type": "procedure",
     "object_name": "Valuationcontrol",
-    "profile_basename": "anthro",
     "ns_uri": {
       "valuationcontrols_common": "http://collectionspace.org/services/valuationcontrol"
     },
-    "identifier_field": "valuationcontrolRefNumber"
+    "identifier_field": "valuationcontrolRefNumber",
+    "search_field": "valuationcontrolRefNumber"
   },
   "docstructure": {
     "valuationcontrols_common": {
@@ -25,6 +26,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "valuationcontrols_common",
       "xpath": [
 
@@ -44,6 +46,7 @@
         "vocabulary": "currency"
       },
       "source_type": "vocabulary",
+      "source_name": "currency",
       "namespace": "valuationcontrols_common",
       "xpath": [
         "valueAmountsList",
@@ -59,10 +62,31 @@
       "required": "n"
     },
     {
+      "fieldname": "valueCurrency",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "currency",
+      "namespace": "valuationcontrols_common",
+      "xpath": [
+        "valueAmountsList",
+        "valueAmounts"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "valueCurrencyRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "valueAmount",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "valuationcontrols_common",
       "xpath": [
         "valueAmountsList",
@@ -82,6 +106,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "valuationcontrols_common",
       "xpath": [
 
@@ -100,6 +125,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "valuationcontrols_common",
       "xpath": [
 
@@ -122,6 +148,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "valuationcontrols_common",
       "xpath": [
 
@@ -144,6 +171,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "valuationcontrols_common",
       "xpath": [
 
@@ -158,10 +186,30 @@
       "required": "n"
     },
     {
+      "fieldname": "valueSource",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "valuationcontrols_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "valueSourceRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "valueType",
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "valueTypes",
       "namespace": "valuationcontrols_common",
       "xpath": [
 
@@ -182,6 +230,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "valuationcontrols_common",
       "xpath": [
 

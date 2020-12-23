@@ -1,16 +1,17 @@
 {
   "config": {
+    "profile_basename": "botgarden",
     "document_name": "objectexit",
     "service_name": "ObjectExit",
     "service_path": "objectexit",
     "service_type": "procedure",
     "object_name": "ObjectExit",
-    "profile_basename": "botgarden",
     "ns_uri": {
       "objectexit_common": "http://collectionspace.org/services/objectexit",
       "objectexit_naturalhistory_extension": "http://collectionspace.org/objectexit/domain/naturalhistory_extension"
     },
-    "identifier_field": "exitNumber"
+    "identifier_field": "exitNumber",
+    "search_field": "exitNumber"
   },
   "docstructure": {
     "objectexit_common": {
@@ -26,6 +27,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -44,6 +46,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -66,6 +69,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -88,6 +92,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -102,10 +107,30 @@
       "required": "n"
     },
     {
+      "fieldname": "currentOwner",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "objectexit_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "currentOwnerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "exitMethod",
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "exitMethods",
       "namespace": "objectexit_common",
       "xpath": [
         "exitMethods"
@@ -130,6 +155,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -144,10 +170,30 @@
       "required": "n"
     },
     {
+      "fieldname": "depositor",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "organization/local",
+      "namespace": "objectexit_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "depositorRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "exitReason",
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "exitReasons",
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -168,6 +214,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "objectexit_naturalhistory_extension",
       "xpath": [
 
@@ -186,6 +233,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "objectexit_common",
       "xpath": [
 
@@ -204,6 +252,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "objectexit_common",
       "xpath": [
 

@@ -1,17 +1,18 @@
 {
   "config": {
+    "profile_basename": "bonsai",
     "document_name": "conservation",
     "service_name": "Conservation",
     "service_path": "conservation",
     "service_type": "procedure",
     "object_name": "Conservation",
-    "profile_basename": "bonsai",
     "ns_uri": {
       "conservation_common": "http://collectionspace.org/services/conservation",
       "conservation_bonsai": "http://collectionspace.org/services/conservation/domain/bonsai",
       "conservation_livingplant": "http://collectionspace.org/services/conservation/domain/livingplant"
     },
-    "identifier_field": "conservationNumber"
+    "identifier_field": "conservationNumber",
+    "search_field": "conservationNumber"
   },
   "docstructure": {
     "conservation_common": {
@@ -57,6 +58,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -76,6 +78,7 @@
         "vocabulary": "conservationstatus"
       },
       "source_type": "vocabulary",
+      "source_name": "conservationstatus",
       "namespace": "conservation_common",
       "xpath": [
         "conservationStatusGroupList",
@@ -91,10 +94,31 @@
       "required": "n"
     },
     {
+      "fieldname": "status",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "conservationstatus",
+      "namespace": "conservation_common",
+      "xpath": [
+        "conservationStatusGroupList",
+        "conservationStatusGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "statusRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "statusDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "conservationStatusGroupList",
@@ -115,6 +139,7 @@
         "vocabulary": "treatmentpurpose"
       },
       "source_type": "vocabulary",
+      "source_name": "treatmentpurpose",
       "namespace": "conservation_common",
       "xpath": [
 
@@ -129,11 +154,31 @@
       "required": "n"
     },
     {
+      "fieldname": "treatmentPurpose",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "treatmentpurpose",
+      "namespace": "conservation_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "treatmentPurposeRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "treatmentPerformed",
       "transforms": {
         "vocabulary": "treatmentperformed"
       },
       "source_type": "vocabulary",
+      "source_name": "treatmentperformed",
       "namespace": "conservation_bonsai",
       "xpath": [
         "treatmentsPerformed"
@@ -148,6 +193,25 @@
       "required": "n"
     },
     {
+      "fieldname": "treatmentPerformed",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "treatmentperformed",
+      "namespace": "conservation_bonsai",
+      "xpath": [
+        "treatmentsPerformed"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "treatmentPerformedRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "conservator",
       "transforms": {
         "authority": [
@@ -156,6 +220,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_common",
       "xpath": [
         "conservators"
@@ -178,6 +243,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "conservation_common",
       "xpath": [
         "conservators"
@@ -192,6 +258,25 @@
       "required": "n"
     },
     {
+      "fieldname": "conservator",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "conservation_common",
+      "xpath": [
+        "conservators"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "conservatorRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "otherParty",
       "transforms": {
         "authority": [
@@ -200,6 +285,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_common",
       "xpath": [
         "otherPartyGroupList",
@@ -223,6 +309,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "conservation_common",
       "xpath": [
         "otherPartyGroupList",
@@ -238,11 +325,32 @@
       "required": "n"
     },
     {
+      "fieldname": "otherParty",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "conservation_common",
+      "xpath": [
+        "otherPartyGroupList",
+        "otherPartyGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "otherPartyRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "otherPartyRole",
       "transforms": {
         "vocabulary": "otherpartyrole"
       },
       "source_type": "vocabulary",
+      "source_name": "otherpartyrole",
       "namespace": "conservation_common",
       "xpath": [
         "otherPartyGroupList",
@@ -258,10 +366,31 @@
       "required": "n"
     },
     {
+      "fieldname": "otherPartyRole",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "otherpartyrole",
+      "namespace": "conservation_common",
+      "xpath": [
+        "otherPartyGroupList",
+        "otherPartyGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "otherPartyRoleRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "otherPartyNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "otherPartyGroupList",
@@ -281,6 +410,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -303,6 +433,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_common",
       "xpath": [
 
@@ -317,10 +448,30 @@
       "required": "n"
     },
     {
+      "fieldname": "approvedBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "conservation_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "approvedByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "approvedDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -339,6 +490,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -357,6 +509,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -375,6 +528,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -394,6 +548,7 @@
         "vocabulary": "futuretreatment"
       },
       "source_type": "vocabulary",
+      "source_name": "futuretreatment",
       "namespace": "conservation_bonsai",
       "xpath": [
         "futureTreatmentGroupList",
@@ -409,10 +564,31 @@
       "required": "n"
     },
     {
+      "fieldname": "futureTreatment",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "futuretreatment",
+      "namespace": "conservation_bonsai",
+      "xpath": [
+        "futureTreatmentGroupList",
+        "futureTreatmentGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "futureTreatmentRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "futureTreatmentDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_bonsai",
       "xpath": [
         "futureTreatmentGroupList",
@@ -432,6 +608,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_bonsai",
       "xpath": [
         "futureTreatmentGroupList",
@@ -451,6 +628,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -470,6 +648,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -493,6 +672,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -508,10 +688,31 @@
       "required": "n"
     },
     {
+      "fieldname": "sampleBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "conservation_common",
+      "xpath": [
+        "destAnalysisGroupList",
+        "destAnalysisGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "sampleByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "sampleDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -531,6 +732,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -553,6 +755,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -572,6 +775,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
         "destAnalysisGroupList",
@@ -591,6 +795,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -609,6 +814,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_common",
       "xpath": [
 
@@ -628,6 +834,7 @@
         "vocabulary": "fertilizerused"
       },
       "source_type": "vocabulary",
+      "source_name": "fertilizerused",
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -643,6 +850,26 @@
       "required": "n"
     },
     {
+      "fieldname": "fertilizerUsed",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "fertilizerused",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+        "fertilizationGroupList",
+        "fertilizationGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "fertilizerUsedRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "appliedBy",
       "transforms": {
         "authority": [
@@ -651,6 +878,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -666,10 +894,31 @@
       "required": "n"
     },
     {
+      "fieldname": "appliedBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+        "fertilizationGroupList",
+        "fertilizationGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "appliedByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "nitrogenPercent",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -689,6 +938,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -708,6 +958,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -727,6 +978,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -746,6 +998,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -765,6 +1018,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -784,6 +1038,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -803,6 +1058,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "fertilizationGroupList",
@@ -824,6 +1080,7 @@
         "vocabulary": "pestordiseaseobserved"
       },
       "source_type": "vocabulary",
+      "source_name": "pestordiseaseobserved",
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -839,6 +1096,26 @@
       "required": "n"
     },
     {
+      "fieldname": "pestOrDiseaseObserved",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "pestordiseaseobserved",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+        "pestsAndDiseaseGroupList",
+        "pestsAndDiseaseGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "pestOrDiseaseObservedRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "identifiedBy",
       "transforms": {
         "authority": [
@@ -847,6 +1124,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -862,10 +1140,31 @@
       "required": "n"
     },
     {
+      "fieldname": "identifiedBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+        "pestsAndDiseaseGroupList",
+        "pestsAndDiseaseGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "identifiedByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "dateObserved",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -885,6 +1184,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -904,6 +1204,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -927,6 +1228,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -942,10 +1244,31 @@
       "required": "n"
     },
     {
+      "fieldname": "treatedBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+        "pestsAndDiseaseGroupList",
+        "pestsAndDiseaseGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "treatedByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "treatedWith",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -965,6 +1288,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -984,6 +1308,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
         "pestsAndDiseaseGroupList",
@@ -1003,6 +1328,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
 
@@ -1021,6 +1347,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
 
@@ -1040,6 +1367,7 @@
         "vocabulary": "soilmix"
       },
       "source_type": "vocabulary",
+      "source_name": "soilmix",
       "namespace": "conservation_livingplant",
       "xpath": [
 
@@ -1054,10 +1382,30 @@
       "required": "n"
     },
     {
+      "fieldname": "soilMix",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "soilmix",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "soilMixRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "description",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
 
@@ -1076,6 +1424,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
 
@@ -1098,6 +1447,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conservation_livingplant",
       "xpath": [
 
@@ -1112,10 +1462,30 @@
       "required": "n"
     },
     {
+      "fieldname": "performedBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "conservation_livingplant",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "performedByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "plannedTreatment",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conservation_livingplant",
       "xpath": [
 

@@ -1,17 +1,18 @@
 {
   "config": {
+    "profile_basename": "herbarium",
     "document_name": "loansin",
     "service_name": "Loanin",
     "service_path": "loansin",
     "service_type": "procedure",
     "object_name": "Loanin",
-    "profile_basename": "herbarium",
     "ns_uri": {
       "loansin_common": "http://collectionspace.org/services/loanin",
       "loansin_herbarium": "http://collectionspace.org/services/loanin/domain/herbarium",
       "loansin_naturalhistory_extension": "http://collectionspace.org/services/loanin/domain/naturalhistory_extension"
     },
-    "identifier_field": "loanInNumber"
+    "identifier_field": "loanInNumber",
+    "search_field": "loanInNumber"
   },
   "docstructure": {
     "loansin_common": {
@@ -49,6 +50,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -67,6 +69,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "loanPurposes",
       "namespace": "loansin_common",
       "xpath": [
 
@@ -95,6 +98,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -118,6 +122,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -133,6 +138,26 @@
       "required": "n"
     },
     {
+      "fieldname": "lender",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "lenderGroupList",
+        "lenderGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "lenderRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lendersContact",
       "transforms": {
         "authority": [
@@ -141,6 +166,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -156,6 +182,26 @@
       "required": "n"
     },
     {
+      "fieldname": "lendersContact",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "lenderGroupList",
+        "lenderGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "lendersContactRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lendersAuthorizer",
       "transforms": {
         "authority": [
@@ -164,6 +210,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -179,10 +226,31 @@
       "required": "n"
     },
     {
+      "fieldname": "lendersAuthorizer",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "lenderGroupList",
+        "lenderGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "lendersAuthorizerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "lendersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
         "lenderGroupList",
@@ -206,6 +274,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
 
@@ -220,6 +289,25 @@
       "required": "n"
     },
     {
+      "fieldname": "borrowersContact",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "borrowersContactRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "borrowersAuthorizer",
       "transforms": {
         "authority": [
@@ -228,6 +316,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
 
@@ -242,10 +331,30 @@
       "required": "n"
     },
     {
+      "fieldname": "borrowersAuthorizer",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "borrowersAuthorizerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "borrowersAuthorizationDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -264,6 +373,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -282,6 +392,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -301,6 +412,7 @@
         "vocabulary": "majortaxongroup"
       },
       "source_type": "vocabulary",
+      "source_name": "majortaxongroup",
       "namespace": "loansin_herbarium",
       "xpath": [
 
@@ -315,10 +427,30 @@
       "required": "n"
     },
     {
+      "fieldname": "majorGroup",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "majortaxongroup",
+      "namespace": "loansin_herbarium",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "majorGroupRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "geography",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_herbarium",
       "xpath": [
         "geographyList"
@@ -341,6 +473,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "taxon/local",
       "namespace": "loansin_herbarium",
       "xpath": [
         "taxonomyList"
@@ -363,6 +496,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "taxon/common",
       "namespace": "loansin_herbarium",
       "xpath": [
         "taxonomyList"
@@ -377,11 +511,31 @@
       "required": "n"
     },
     {
+      "fieldname": "taxonomy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "taxon/local; taxon/common",
+      "namespace": "loansin_herbarium",
+      "xpath": [
+        "taxonomyList"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "taxonomyRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "objKind",
       "transforms": {
         "vocabulary": "objectkind"
       },
       "source_type": "vocabulary",
+      "source_name": "objectkind",
       "namespace": "loansin_herbarium",
       "xpath": [
         "objKindList"
@@ -396,11 +550,31 @@
       "required": "n"
     },
     {
+      "fieldname": "objKind",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "objectkind",
+      "namespace": "loansin_herbarium",
+      "xpath": [
+        "objKindList"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "objKindRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "loanGroup",
       "transforms": {
         "vocabulary": "deaccessionapprovalgroup"
       },
       "source_type": "vocabulary",
+      "source_name": "deaccessionapprovalgroup",
       "namespace": "loansin_common",
       "xpath": [
         "loanStatusGroupList",
@@ -416,6 +590,26 @@
       "required": "n"
     },
     {
+      "fieldname": "loanGroup",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "deaccessionapprovalgroup",
+      "namespace": "loansin_common",
+      "xpath": [
+        "loanStatusGroupList",
+        "loanStatusGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "loanGroupRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "loanIndividual",
       "transforms": {
         "authority": [
@@ -424,6 +618,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_common",
       "xpath": [
         "loanStatusGroupList",
@@ -439,11 +634,32 @@
       "required": "n"
     },
     {
+      "fieldname": "loanIndividual",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_common",
+      "xpath": [
+        "loanStatusGroupList",
+        "loanStatusGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "loanIndividualRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "loanStatus",
       "transforms": {
         "vocabulary": "loanoutstatus"
       },
       "source_type": "vocabulary",
+      "source_name": "loanoutstatus",
       "namespace": "loansin_common",
       "xpath": [
         "loanStatusGroupList",
@@ -459,10 +675,31 @@
       "required": "n"
     },
     {
+      "fieldname": "loanStatus",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "loanoutstatus",
+      "namespace": "loansin_common",
+      "xpath": [
+        "loanStatusGroupList",
+        "loanStatusGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "loanStatusRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "loanStatusDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
         "loanStatusGroupList",
@@ -482,6 +719,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
         "loanStatusGroupList",
@@ -501,6 +739,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -519,6 +758,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_herbarium",
       "xpath": [
 
@@ -537,6 +777,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -555,6 +796,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_herbarium",
       "xpath": [
 
@@ -573,6 +815,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_common",
       "xpath": [
 
@@ -591,6 +834,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_herbarium",
       "xpath": [
 
@@ -613,6 +857,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "loansin_herbarium",
       "xpath": [
 
@@ -627,6 +872,25 @@
       "required": "n"
     },
     {
+      "fieldname": "transferInOrg",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "organization/local",
+      "namespace": "loansin_herbarium",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "transferInOrgRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "transferInPerson",
       "transforms": {
         "authority": [
@@ -635,6 +899,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_herbarium",
       "xpath": [
 
@@ -649,10 +914,30 @@
       "required": "n"
     },
     {
+      "fieldname": "transferInPerson",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_herbarium",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "transferInPersonRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "returnDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "returnGroupList",
@@ -672,6 +957,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "returnGroupList",
@@ -691,6 +977,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "returnGroupList",
@@ -710,6 +997,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -729,6 +1017,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -752,6 +1041,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -767,6 +1057,26 @@
       "required": "n"
     },
     {
+      "fieldname": "transferOutOrg",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "organization/local",
+      "namespace": "loansin_naturalhistory_extension",
+      "xpath": [
+        "transferOutGroupList",
+        "transferOutGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "transferOutOrgRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "transferOutPerson",
       "transforms": {
         "authority": [
@@ -775,6 +1085,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -790,6 +1101,26 @@
       "required": "n"
     },
     {
+      "fieldname": "transferOutPerson",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_naturalhistory_extension",
+      "xpath": [
+        "transferOutGroupList",
+        "transferOutGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "transferOutPersonRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "transferOutDirector",
       "transforms": {
         "authority": [
@@ -798,6 +1129,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -813,10 +1145,31 @@
       "required": "n"
     },
     {
+      "fieldname": "transferOutDirector",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local",
+      "namespace": "loansin_naturalhistory_extension",
+      "xpath": [
+        "transferOutGroupList",
+        "transferOutGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "transferOutDirectorRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "transferOutNotes",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -836,6 +1189,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -855,6 +1209,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
@@ -874,6 +1229,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "loansin_naturalhistory_extension",
       "xpath": [
         "transferOutGroupList",
