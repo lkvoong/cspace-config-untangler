@@ -47,14 +47,13 @@ module CspaceConfigUntangler
         get_source_type
         get_transforms
         @mappings = create_mappings
-        @field = @field.name
       end
 
       private
 
       def structure_hash
         h = {}
-        sources = @field.value_source.empty? ? ['no source'] : @field.value_source
+        sources = @field.value_source.blank? ? ['no source'] : @field.value_source
         sources.each do |vs|
           h[vs] = { column_name: '',
                    transforms: {},
@@ -119,7 +118,7 @@ module CspaceConfigUntangler
       
       def get_data_columns
         value_source = @field.value_source
-        if value_source.empty?
+        if value_source.blank?
           @hash['no source'] = { column_name: @field.name, transforms: {} }
         elsif value_source.size == 1
           vs = value_source.first

@@ -114,6 +114,43 @@ module CspaceConfigUntangler
         end
       end
     end
+
+    class RecordMapperWrapper
+      ::RecordMapperWrapper = CspaceConfigUntangler::RecordMapper::RecordMapperWrapper
+
+      attr_reader :mappers
+      def initialize(profile:, rectype:, base_path:)
+        @profile = profile
+        @rectype = rectype
+        @base_path = base_path
+        @service_type = @rectype.service_type
+        @mappers = []
+
+        if @service_type == 'authority'
+          @rectype.subtypes.each do |subtype|
+            @mappers << get_wrapped_mapper(subtype: subtype)
+          end
+        else
+          @mappers << get_wrapped_mapper
+        end
+      end
+
+      private
+
+      def get_wrapped_mapper(subtype: nil)
+        if subtype
+          {
+            mapper: RecordMapping.new(profile: @profile, rectype: @rectype, subtype: subtype),
+            path: "#{@base_path}/#{@profile.name}-#{@rectype.name}-#{subtype[:name].downcase.gsub(' ', '_')}.json"
+          }
+        else
+          {
+            mapper: RecordMapping.new(profile: @profile, rectype: @rectype),
+            path: "#{@base_path}/#{@profile.name}-#{@rectype.name}.json"
+          }
+        end
+      end
+    end
     
     class RecordMapping
       ::RecordMapping = CspaceConfigUntangler::RecordMapper::RecordMapping
@@ -121,13 +158,15 @@ module CspaceConfigUntangler
 
       # profile = CCU::Profile
       # rectype = CCU::RecordType
-      def initialize(profile:, rectype:)
+      def initialize(profile:, rectype:, subtype: nil)
         @profile = profile
         @rectype = rectype
+        @subtype = subtype
         @mappings = @rectype.batch_mappings
         @config = @profile.config
         @hash = {}
         build_hash
+        append_subtype if @subtype
       end
 
       # output = string = path to output json file
@@ -139,53 +178,29 @@ module CspaceConfigUntangler
       
       private
 
+      def append_subtype
+        @hash[:config][:authority_type] = @hash[:config][:service_path]
+        @hash[:config][:authority_subtype] = @subtype[:subtype]
+      end
+      
+
       def build_hash
         @hash[:config] = {}
+        @hash[:config][:profile_basename] = @config.dig('basename').sub('/cspace/', '')
         @hash[:config][:document_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'documentName')
         @hash[:config][:service_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'serviceName')
         @hash[:config][:service_path] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'servicePath')
-        @hash[:config][:service_type] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'serviceType')
+        @hash[:config][:service_type] = @rectype.service_type
         @hash[:config][:object_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'objectName')
-        @hash[:config][:profile_basename] = @config.dig('basename').sub('/cspace/', '')
         @hash[:config][:ns_uri] = NamespaceUris.new(profile_config: @config,
                                                     rectype: @rectype.name,
                                                     mapper_config: @hash[:config]).hash
-        @hash[:config][:identifier_field] = get_id_field
-        @hash[:config][:authority_subtypes] = get_subtypes if @hash[:config][:service_type] == 'authority'
+        @hash[:config][:identifier_field] = @rectype.id_field
+        @hash[:config][:search_field] = @rectype.search_field
+        @hash[:config][:authority_subtypes] = @rectype.subtypes if @rectype.service_type == 'authority'
         @hash[:docstructure] = {}
         create_hierarchy
         @hash[:mappings] = @mappings.map{ |m| m.to_h }
-      end
-
-      def get_subtypes
-        result = []
-        vocabs = @config.dig('recordTypes', @rectype.name, 'vocabularies')
-        vocabs.each do |keyword, config|
-          next if keyword == 'all'
-          name = config.dig('messages', 'name', 'defaultMessage')
-          servicepath_name = config.dig('serviceConfig', 'servicePath').match(/\((.*)\)/)[1]
-          result << { name: name, servicepath_name: servicepath_name }
-        end
-        result
-      end
-
-      def get_id_field
-        case @hash[:config][:service_type]
-        when 'object'
-          id_field = 'objectNumber'
-        when 'authority'
-          id_field = 'shortIdentifier'
-        when 'procedure'
-          mapping = @mappings.select{ |m| m.required == 'y' }
-          if mapping.length == 1
-            id_field = mapping.first.fieldname
-          elsif mapping.length > 1
-            # osteology has 3 required fields, but only the ID is suitable for use here
-            id_field = 'InventoryID' if @rectype.name == 'osteology'
-            id_field = 'movementReferenceNumber' if @rectype.name == 'movement' && !@profile.name.start_with?('botgarden')
-          end
-        end
-        id_field
       end
       
       def create_hierarchy
@@ -228,7 +243,9 @@ module CspaceConfigUntangler
           .reject{ |k| k == 'ns2:collectionspace_core' || k == 'ns2:account_permission' }
           .each do |ns|
             objname = @mconfig[:object_name].downcase unless @mconfig[:service_type] == 'authority'
-            if ns == "ns2:#{@mconfig[:document_name]}_common"
+            if ns == 'ns2:contacts_common'
+              uri = "http://collectionspace.org/services/contact"
+            elsif ns == "ns2:#{@mconfig[:document_name]}_common"
               if @mconfig[:service_type] == 'authority'
                 uri = @config.dig('recordTypes', @rectype, 'fields', 'document', ns, 'csid', '[config]',
                                   'extensionParentConfig', 'service', 'ns')

@@ -1,16 +1,17 @@
 {
   "config": {
+    "profile_basename": "anthro",
     "document_name": "claims",
     "service_name": "Claim",
     "service_path": "claims",
     "service_type": "procedure",
     "object_name": "Claim",
-    "profile_basename": "anthro",
     "ns_uri": {
       "claims_common": "http://collectionspace.org/services/claim",
       "claims_nagpra": "http://collectionspace.org/services/claim/domain/nagpra"
     },
-    "identifier_field": "claimNumber"
+    "identifier_field": "claimNumber",
+    "search_field": "claimNumber"
   },
   "docstructure": {
     "claims_common": {
@@ -84,6 +85,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_common",
       "xpath": [
 
@@ -102,6 +104,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -120,6 +123,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimAltNameGroupList",
@@ -139,6 +143,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimAltNameGroupList",
@@ -162,6 +167,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "claims_common",
       "xpath": [
         "claimantGroupList",
@@ -185,6 +191,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "claims_common",
       "xpath": [
         "claimantGroupList",
@@ -200,6 +207,26 @@
       "required": "n"
     },
     {
+      "fieldname": "claimFiledBy",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "claims_common",
+      "xpath": [
+        "claimantGroupList",
+        "claimantGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "claimFiledByRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "claimFiledOnBehalfOf",
       "transforms": {
         "authority": [
@@ -208,6 +235,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "claims_common",
       "xpath": [
         "claimantGroupList",
@@ -231,6 +259,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "claims_common",
       "xpath": [
         "claimantGroupList",
@@ -246,10 +275,31 @@
       "required": "n"
     },
     {
+      "fieldname": "claimFiledOnBehalfOf",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "claims_common",
+      "xpath": [
+        "claimantGroupList",
+        "claimantGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "claimFiledOnBehalfOfRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "claimantNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_common",
       "xpath": [
         "claimantGroupList",
@@ -270,6 +320,7 @@
         "vocabulary": "nagpraclaimtype"
       },
       "source_type": "vocabulary",
+      "source_name": "nagpraclaimtype",
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimTypes"
@@ -284,10 +335,30 @@
       "required": "n"
     },
     {
+      "fieldname": "nagpraClaimType",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "nagpraclaimtype",
+      "namespace": "claims_nagpra",
+      "xpath": [
+        "nagpraClaimTypes"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "nagpraClaimTypeRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "claimReceivedDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_common",
       "xpath": [
         "claimReceivedGroupList",
@@ -307,6 +378,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_common",
       "xpath": [
         "claimReceivedGroupList",
@@ -326,6 +398,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNotes"
@@ -348,6 +421,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "place/local",
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimSiteGroupList",
@@ -363,10 +437,31 @@
       "required": "n"
     },
     {
+      "fieldname": "nagpraClaimSiteName",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "place/local",
+      "namespace": "claims_nagpra",
+      "xpath": [
+        "nagpraClaimSiteGroupList",
+        "nagpraClaimSiteGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "nagpraClaimSiteNameRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "nagpraClaimSiteNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimSiteGroupList",
@@ -390,6 +485,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "concept/ethculture",
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimGroupGroupList",
@@ -405,10 +501,31 @@
       "required": "n"
     },
     {
+      "fieldname": "nagpraClaimGroupName",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "concept/ethculture",
+      "namespace": "claims_nagpra",
+      "xpath": [
+        "nagpraClaimGroupGroupList",
+        "nagpraClaimGroupGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "nagpraClaimGroupNameRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "nagpraClaimGroupNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimGroupGroupList",
@@ -428,6 +545,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimPeriodGroupList",
@@ -447,6 +565,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimPeriodGroupList",
@@ -466,6 +585,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimInitialResponseGroupList",
@@ -485,6 +605,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimInitialResponseGroupList",
@@ -504,6 +625,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimSentToLocalGroupList",
@@ -523,6 +645,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimSentToLocalGroupList",
@@ -542,6 +665,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimLocalRecGroupList",
@@ -561,6 +685,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimLocalRecGroupList",
@@ -580,6 +705,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimSentToNatlGroupList",
@@ -599,6 +725,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimSentToNatlGroupList",
@@ -618,6 +745,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNatlRespGroupList",
@@ -637,6 +765,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNatlRespGroupList",
@@ -656,6 +785,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNatlApprovalGroupList",
@@ -675,6 +805,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNatlApprovalGroupList",
@@ -694,6 +825,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNoticeGroupList",
@@ -713,6 +845,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "nagpraNoticeDateTypes",
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNoticeGroupList",
@@ -733,6 +866,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimNoticeGroupList",
@@ -752,6 +886,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimTransferGroupList",
@@ -771,6 +906,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
         "nagpraClaimTransferGroupList",
@@ -793,6 +929,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -811,6 +948,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -832,6 +970,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -850,6 +989,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -871,6 +1011,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -889,6 +1030,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -910,6 +1052,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -928,6 +1071,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -949,6 +1093,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -967,6 +1112,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -988,6 +1134,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1006,6 +1153,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1027,6 +1175,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1045,6 +1194,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1066,6 +1216,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1084,6 +1235,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1105,6 +1257,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1123,6 +1276,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1144,6 +1298,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1162,6 +1317,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1183,6 +1339,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1201,6 +1358,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1222,6 +1380,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1240,6 +1399,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1261,6 +1421,7 @@
         ]
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 
@@ -1279,6 +1440,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "claims_nagpra",
       "xpath": [
 

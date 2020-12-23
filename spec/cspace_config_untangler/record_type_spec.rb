@@ -4,11 +4,12 @@ RSpec.describe CCU::RecordType do
 
   before(:all) do
     CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
-    @core_profile = CCU::Profile.new(profile: 'core', rectypes: %w[collectionobject media])
+    @core_profile = CCU::Profile.new(profile: 'core', rectypes: %w[collectionobject media person])
     @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: %w[collectionobject movement media])
     @bg_profile = CCU::Profile.new(profile: 'botgarden', rectypes: %w[collectionobject])
     @core_co = @core_profile.rectypes[0]
     @core_media = @core_profile.rectypes[1]
+    @core_person = @core_profile.rectypes[2]
     @anthro_co = @anthro_profile.rectypes[0]
     @anthro_movement = @anthro_profile.rectypes[1]
     @anthro_media = @anthro_profile.rectypes[2]
@@ -18,6 +19,36 @@ RSpec.describe CCU::RecordType do
     it 'creates CCU::RecordType object' do
       expect(@core_co).to be_instance_of(CCU::RecordType)
     end
+
+    it 'sets service_type attribute as expected' do
+      result = [@core_co, @core_media, @core_person].map{ |rt| rt.service_type }
+      expect(result).to eq(['object', 'procedure', 'authority'])
+    end
+
+    context 'when service_type = authority' do
+      it 'sets subtypes attribute as expected' do
+        result = @core_person.subtypes
+        expected = [
+          {
+            name: 'Local',
+            subtype: 'person'
+          },
+          {
+            name: 'ULAN',
+            subtype: 'ulan_pa'
+          }
+        ]
+        expect(result).to eq(expected)
+      end
+    end
+
+    context 'when service_type = object or procedure' do
+      it 'subtypes attribute is empty array' do
+        result = [@core_co, @core_media].map{ |rt| rt.subtypes }
+        expect(result).to eq([[], []])
+      end
+    end
+
   end
 
   describe '.panels' do

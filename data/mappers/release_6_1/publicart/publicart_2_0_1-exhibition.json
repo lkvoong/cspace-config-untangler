@@ -1,16 +1,17 @@
 {
   "config": {
+    "profile_basename": "publicart",
     "document_name": "exhibitions",
     "service_name": "Exhibition",
     "service_path": "exhibitions",
     "service_type": "procedure",
     "object_name": "Exhibition",
-    "profile_basename": "publicart",
     "ns_uri": {
       "exhibitions_common": "http://collectionspace.org/services/exhibition",
       "exhibitions_publicart": "http://collectionspace.org/services/exhibition/domain/publicart"
     },
-    "identifier_field": "exhibitionNumber"
+    "identifier_field": "exhibitionNumber",
+    "search_field": "exhibitionNumber"
   },
   "docstructure": {
     "exhibitions_common": {
@@ -38,6 +39,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -57,6 +59,7 @@
         "vocabulary": "exhibitiontype"
       },
       "source_type": "vocabulary",
+      "source_name": "exhibitiontype",
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -71,10 +74,30 @@
       "required": "n"
     },
     {
+      "fieldname": "type",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "exhibitiontype",
+      "namespace": "exhibitions_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "typeRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "title",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -97,6 +120,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "exhibitions_publicart",
       "xpath": [
         "exhibitionSupportGroupList",
@@ -120,6 +144,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/shared",
       "namespace": "exhibitions_publicart",
       "xpath": [
         "exhibitionSupportGroupList",
@@ -143,6 +168,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "exhibitions_publicart",
       "xpath": [
         "exhibitionSupportGroupList",
@@ -166,6 +192,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/shared",
       "namespace": "exhibitions_publicart",
       "xpath": [
         "exhibitionSupportGroupList",
@@ -181,10 +208,31 @@
       "required": "n"
     },
     {
+      "fieldname": "exhibitionSupport",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; person/shared; organization/local; organization/shared",
+      "namespace": "exhibitions_publicart",
+      "xpath": [
+        "exhibitionSupportGroupList",
+        "exhibitionSupportGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "exhibitionSupportRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "exhibitionSupportNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_publicart",
       "xpath": [
         "exhibitionSupportGroupList",
@@ -208,6 +256,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "exhibitions_common",
       "xpath": [
         "organizers"
@@ -230,6 +279,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/shared",
       "namespace": "exhibitions_common",
       "xpath": [
         "organizers"
@@ -252,6 +302,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "exhibitions_common",
       "xpath": [
         "organizers"
@@ -274,6 +325,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/shared",
       "namespace": "exhibitions_common",
       "xpath": [
         "organizers"
@@ -288,6 +340,25 @@
       "required": "n"
     },
     {
+      "fieldname": "organizer",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; person/shared; organization/local; organization/shared",
+      "namespace": "exhibitions_common",
+      "xpath": [
+        "organizers"
+      ],
+      "data_type": "csrefname",
+      "repeats": "y",
+      "in_repeating_group": "n",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "organizerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "venue",
       "transforms": {
         "authority": [
@@ -296,6 +367,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -319,6 +391,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/shared",
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -342,6 +415,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "location/local",
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -365,6 +439,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "location/offsite",
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -388,6 +463,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "place/local",
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -411,6 +487,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "place/shared",
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -426,10 +503,31 @@
       "required": "n"
     },
     {
+      "fieldname": "venue",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "organization/local; organization/shared; location/local; location/offsite; place/local; place/shared",
+      "namespace": "exhibitions_common",
+      "xpath": [
+        "venueGroupList",
+        "venueGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "venueRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "venueOpeningDate",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -449,6 +547,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -468,6 +567,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -487,6 +587,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "venueGroupList",
@@ -506,6 +607,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -524,6 +626,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -542,6 +645,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -560,6 +664,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
 
@@ -578,6 +683,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "galleryRotationGroupList",
@@ -597,6 +703,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "galleryRotationGroupList",
@@ -616,6 +723,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "galleryRotationGroupList",
@@ -635,6 +743,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "exhibitions_common",
       "xpath": [
         "galleryRotationGroupList",

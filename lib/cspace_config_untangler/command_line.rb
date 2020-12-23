@@ -82,11 +82,12 @@ module CspaceConfigUntangler
         FileUtils.mkdir_p(dir_path)
         p.rectypes.each do |rt|
           puts "  ...#{rt.name}"
-          recmapper = RecordMapping.new(profile: p,
-                                        rectype: rt
-                                       )
-          path = "#{dir_path}/#{p.name}-#{rt.name}.json"
-          recmapper.to_json(output: path)
+          CspaceConfigUntangler::RecordMapper::RecordMapperWrapper.new(profile: p,
+                                            rectype: rt,
+                                            base_path: dir_path
+                                 ).mappers.each do |mapper|
+            mapper[:mapper].to_json(output: mapper[:path])
+          end
         end
       end
     end

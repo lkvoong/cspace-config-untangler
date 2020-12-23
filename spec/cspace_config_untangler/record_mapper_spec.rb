@@ -7,7 +7,7 @@ RSpec.describe CCU::RecordMapper do
 
   context 'botgarden' do
     before(:all) do
-      @profile = CCU::Profile.new(profile: 'botgarden_1_1_0',
+      @profile = CCU::Profile.new(profile: 'botgarden_2_0_1',
                                   rectypes: ['loanout'],
                                   structured_date_treatment: :collapse)
     end
@@ -163,8 +163,8 @@ RSpec.describe CCU::RecordMapper do
           it '[:authority_subtypes] returns array of hashes with keys: name, servicepathname' do
             subtypes = @taxon_config[:authority_subtypes]
             expected = [
-              { name: 'Local', servicepath_name: 'taxon' },
-              { name: 'Common', servicepath_name: 'common_ta' }
+              { name: 'Local', subtype: 'taxon' },
+              { name: 'Common', subtype: 'common_ta' }
             ]
             expect(subtypes).to eq(expected)
           end

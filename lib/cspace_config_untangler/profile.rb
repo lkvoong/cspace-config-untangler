@@ -59,6 +59,10 @@ module CspaceConfigUntangler
       }
       return h
     end
+
+    def versionless_name
+      @name.sub(/_.*$/, '')
+    end
     
     private
 

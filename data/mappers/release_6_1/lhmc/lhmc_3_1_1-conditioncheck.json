@@ -1,16 +1,17 @@
 {
   "config": {
+    "profile_basename": "lhmc",
     "document_name": "conditionchecks",
     "service_name": "Conditionchecks",
     "service_path": "conditionchecks",
     "service_type": "procedure",
     "object_name": "Conditioncheck",
-    "profile_basename": "lhmc",
     "ns_uri": {
       "conditionchecks_common": "http://collectionspace.org/services/conditioncheck",
       "conditionchecks_lhmc": "http://collectionspace.org/services/conditioncheck/domain/lhmc"
     },
-    "identifier_field": "conditionCheckRefNumber"
+    "identifier_field": "conditionCheckRefNumber",
+    "search_field": "conditionCheckRefNumber"
   },
   "docstructure": {
     "conditionchecks_common": {
@@ -52,6 +53,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -70,6 +72,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -88,6 +91,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "conditionCheckMethods",
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -107,6 +111,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "conditionCheckReasons",
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -133,6 +138,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "person/local",
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -155,6 +161,7 @@
         ]
       },
       "source_type": "authority",
+      "source_name": "organization/local",
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -169,10 +176,30 @@
       "required": "n"
     },
     {
+      "fieldname": "conditionChecker",
+      "transforms": {
+      },
+      "source_type": "authority",
+      "source_name": "person/local; organization/local",
+      "namespace": "conditionchecks_common",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "conditionCheckerRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "conditionCheckNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -191,6 +218,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "objectAuditCategories",
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -211,6 +239,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "conservationTreatmentPriorities",
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -231,6 +260,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -249,6 +279,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "completenessLevels",
       "namespace": "conditionchecks_common",
       "xpath": [
         "completenessGroupList",
@@ -270,6 +301,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "completenessGroupList",
@@ -289,6 +321,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "completenessGroupList",
@@ -308,6 +341,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "hazards",
       "namespace": "conditionchecks_common",
       "xpath": [
         "hazardGroupList",
@@ -328,6 +362,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "hazardGroupList",
@@ -347,6 +382,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "hazardGroupList",
@@ -366,6 +402,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "techAssessmentGroupList",
@@ -385,6 +422,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "techAssessmentGroupList",
@@ -405,6 +443,7 @@
         "vocabulary": "condition"
       },
       "source_type": "vocabulary",
+      "source_name": "condition",
       "namespace": "conditionchecks_lhmc",
       "xpath": [
         "conditionCheckLHMCGroupList",
@@ -420,11 +459,32 @@
       "required": "n"
     },
     {
+      "fieldname": "conditionLHMC",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "condition",
+      "namespace": "conditionchecks_lhmc",
+      "xpath": [
+        "conditionCheckLHMCGroupList",
+        "conditionCheckLHMCGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "conditionLHMCRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "conditionFacetLHMC",
       "transforms": {
         "vocabulary": "conditionfacet"
       },
       "source_type": "vocabulary",
+      "source_name": "conditionfacet",
       "namespace": "conditionchecks_lhmc",
       "xpath": [
         "conditionCheckLHMCGroupList",
@@ -440,10 +500,31 @@
       "required": "n"
     },
     {
+      "fieldname": "conditionFacetLHMC",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "conditionfacet",
+      "namespace": "conditionchecks_lhmc",
+      "xpath": [
+        "conditionCheckLHMCGroupList",
+        "conditionCheckLHMCGroup"
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "y",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "conditionFacetLHMCRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "conditionDateLHMC",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_lhmc",
       "xpath": [
         "conditionCheckLHMCGroupList",
@@ -463,6 +544,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_lhmc",
       "xpath": [
         "conditionCheckLHMCGroupList",
@@ -482,6 +564,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_lhmc",
       "xpath": [
 
@@ -501,6 +584,7 @@
         "vocabulary": "maintenancecycle"
       },
       "source_type": "vocabulary",
+      "source_name": "maintenancecycle",
       "namespace": "conditionchecks_lhmc",
       "xpath": [
 
@@ -515,10 +599,30 @@
       "required": "n"
     },
     {
+      "fieldname": "maintenanceCycle",
+      "transforms": {
+      },
+      "source_type": "vocabulary",
+      "source_name": "maintenancecycle",
+      "namespace": "conditionchecks_lhmc",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "maintenanceCycleRefname",
+      "required": "n"
+    },
+    {
       "fieldname": "maintenanceNote",
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_lhmc",
       "xpath": [
 
@@ -537,6 +641,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "envConditionNoteGroupList",
@@ -556,6 +661,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "envConditionNoteGroupList",
@@ -575,6 +681,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -593,6 +700,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -611,6 +719,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -629,6 +738,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -647,6 +757,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -665,6 +776,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -683,6 +795,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -701,6 +814,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
 
@@ -719,6 +833,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "legalReqsHeldGroupList",
@@ -738,6 +853,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "legalReqsHeldGroupList",
@@ -757,6 +873,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "legalReqsHeldGroupList",
@@ -776,6 +893,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "legalReqsHeldGroupList",
@@ -795,6 +913,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "legalReqsHeldGroupList",
@@ -814,6 +933,7 @@
       "transforms": {
       },
       "source_type": "optionlist",
+      "source_name": "salvagePriorityCodes",
       "namespace": "conditionchecks_common",
       "xpath": [
         "salvagePriorityCodeGroupList",
@@ -835,6 +955,7 @@
       "transforms": {
       },
       "source_type": "na",
+      "source_name": null,
       "namespace": "conditionchecks_common",
       "xpath": [
         "salvagePriorityCodeGroupList",
