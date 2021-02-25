@@ -16,6 +16,7 @@ module CspaceConfigUntangler
       @rectypes_all = [] #all rectype names for profile
       get_rectypes(rectypes)
       @authorities = get_authorities
+      @special_rectypes = []
       @panels = get_panels
       CCU::StructuredDateMessageGetter.new(self) if @structured_date_treatment == :explode
       get_field_defs
@@ -60,10 +61,47 @@ module CspaceConfigUntangler
       return h
     end
 
-    def versionless_name
-      @name.sub(/_.*$/, '')
+    def basename
+      @name.split('_')[0]
     end
-    
+
+    def version
+      @name.split('_')[1]      
+    end
+
+    def special_rectypes
+      arr = []
+      rtnames = @rectypes.map(&:name)
+      arr << 'objecthierarchy' if rtnames.include?('collectionobject')
+      arr << 'authorityhierarchy' if rectypes_include_authorities
+      arr << 'relationship' if rtnames.include?('collectionobject') || rectypes_include_procedures
+      arr
+    end
+
+    def authority_types
+      @rectypes_all.select{ |rt| @config['recordTypes'][rt]['serviceConfig']['serviceType'] == 'authority' }
+        .map{ |rt| @config['recordTypes'][rt]['serviceConfig']['servicePath'] }
+        .sort
+    end
+
+    def authority_subtypes
+      ast = @rectypes_all.select{ |rt| @config['recordTypes'][rt]['serviceConfig']['serviceType'] == 'authority' }
+        .map{ |rt| @config['recordTypes'][rt]['vocabularies'] }
+        .map{ |vocabhash| vocabhash.map{ |vocab, h| h['serviceConfig']['servicePath'] } }
+        .flatten      
+        .reject{ |e| e == '_ALL_' }
+        .map{ |refname| refname.match(/\((.*)\)/)[1] }
+        .uniq
+      ast.sort
+    end
+
+    def object_and_procedures
+      op = @rectypes_all.select{ |rt| @config['recordTypes'][rt]['serviceConfig']['serviceType'] == 'procedure' }
+        .map{ |rt| @config['recordTypes'][rt]['serviceConfig']['servicePath'] }
+      op << 'collectionobjects'
+      op.sort
+    end
+
     private
 
     def get_field_defs
@@ -152,7 +190,7 @@ module CspaceConfigUntangler
       @rectypes = @rectypes.select{ |rt| @rectypes_all.include?(rt) }
       @rectypes = @rectypes.map{ |rt| CCU::RecordType.new(self, rt) }
     end
-
+    
     def get_extensions
       remove = %w[core authItem]
       ext = @config['extensions'].keys - remove
@@ -173,6 +211,14 @@ module CspaceConfigUntangler
         end
       }
       return authorities.sort
+    end
+    
+    def rectypes_include_authorities
+      @rectypes.select{ |rt| rt.service_type == 'authority' }.empty? ? false : true
+    end
+
+    def rectypes_include_procedures
+      @rectypes.select{ |rt| rt.service_type == 'procedure' }.empty? ? false : true
     end
 
     def get_option_lists

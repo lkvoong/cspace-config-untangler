@@ -13,11 +13,13 @@ module CspaceConfigUntangler
         @rectype = rectype
         @type = type
         @config = @profile.config
+        @mappings = @rectype.batch_mappings.map(&:to_h)
         if @type == 'displayname'
-          @mappings = @rectype.batch_mappings.reject{ |mapping| mapping.data_type == 'csrefname' }
+          @mappings = @mappings.reject{ |mapping| mapping[:data_type] == 'csrefname' }
+            .reject{ |mapping| mapping.key?(:to_template) && mapping[:to_template] == false }
         elsif @type == 'refname'
-          @mappings = @rectype.batch_mappings.reject do |mapping|
-            mapping.source_type.match?(/authority|vocabulary/) && mapping.data_type == 'string'
+          @mappings = @mappings.reject do |mapping|
+            mapping[:source_type].match?(/authority|vocabulary/) && mapping[:data_type] == 'string'
             end
         end
         @csvdata = []
@@ -25,8 +27,8 @@ module CspaceConfigUntangler
       end
 
       def write(dir)
-        stubname = "#{@profile.name}-#{@rectype.name}"
-        filename = @type == 'refname' ? "#{stubname}_refnames_template.csv" : "#{stubname}_template.csv"
+        stubname = "#{@profile.name}_#{@rectype.name}"
+        filename = @type == 'refname' ? "#{stubname}-refnames-template.csv" : "#{stubname}-template.csv"
         path = "#{File.expand_path(dir)}/#{filename}"
         CSV.open(path, 'wb') do |csv|
           @csvdata.each{ |r| csv << r }
@@ -36,8 +38,8 @@ module CspaceConfigUntangler
       private
 
       def build_template
-        requiredfields = @mappings.select{ |m| m.required == 'y' }
-        otherfields = @mappings.select{ |m| m.required == 'n' }
+        requiredfields = @mappings.select{ |m| m[:required] == 'y' }
+        otherfields = @mappings.select{ |m| m[:required] == 'n' }
         instruct = ['Before importing CSV, delete initial column and rows above the CSVHEADER row']
         required = ['REQUIRED']
         datatype = ['DATA TYPE']
@@ -50,24 +52,25 @@ module CspaceConfigUntangler
         [requiredfields, otherfields].each do |fieldmappings|
           fieldmappings.each do |mapping|
             instruct << ''
-            required << mapping.required
-            datatype << mapping.data_type
-            repeats << mapping.repeats
-            mapping.in_repeating_group.start_with?('n') ? group << '' : group << mapping.xpath.join(' < ')
-            sourcetype << mapping.source_type
-            if mapping.source_type == 'optionlist'
-              source << mapping.opt_list_values.join(', ')
-            elsif mapping.source_type == 'authority'
-              source << mapping.source_name
-            elsif mapping.source_type == 'vocabulary'
-              source << mapping.source_name
-            elsif mapping.data_type == 'csrefname'
-              source << mapping.source_name
+            required << mapping[:required]
+            datatype << mapping[:data_type]
+            repeats << mapping[:repeats]
+            mapping[:in_repeating_group].start_with?('n') ? group << '' : group << mapping[:xpath].join(' < ')
+            sourcetype << mapping[:source_type]
+            case mapping[:source_type]
+            when 'optionlist'
+              source << mapping[:opt_list_values].join(', ')
+            when 'authority'
+              source << mapping[:source_name]
+            when 'vocabulary'
+              source << mapping[:source_name]
+            when 'csrefname'
+              source << mapping[:source_name]
             else
               source << ''
             end
             
-            headers << mapping.datacolumn
+            headers << mapping[:datacolumn]
           end
         end
 

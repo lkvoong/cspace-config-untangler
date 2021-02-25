@@ -16,7 +16,7 @@ require 'thor'
 
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
-  CCU.const_set('MAINPROFILE', 'core_6_1_0')
+  CCU.const_set('MAINPROFILE', 'core_6-1-0')
   CCU.const_set('DATADIR', '/Users/kristina/code/cspace-config-untangler/data')
   CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
   CCU.const_set('SITECONFIG', "#{CCU::DATADIR}/profile_config.yaml")
@@ -27,9 +27,21 @@ module CspaceConfigUntangler
   CCU.const_set('PROFILES', config_file_names)
   File.delete('log.log') if File::exist?('log.log')
   CCU.const_set('LOG', Logger.new('log.log'))
+  CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
+  CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/master/data/mappers')
+
 
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
+
+  # mixins
+  autoload :JsonWritable, 'cspace_config_untangler/json_writable'
+  autoload :SpecialRectype, 'cspace_config_untangler/special_rectype'
+
+  # canned mappers
+  autoload :ObjectHierarchy, 'cspace_config_untangler/object_hierarchy'
+  autoload :AuthorityHierarchy, 'cspace_config_untangler/authority_hierarchy'
+  autoload :NonHierarchicalRelationship, 'cspace_config_untangler/non_hierarchical_relationship'
 
   # extracting field data from JSON config
   autoload :Field, 'cspace_config_untangler/field'
@@ -42,6 +54,7 @@ module CspaceConfigUntangler
   autoload :ProfileComparison, 'cspace_config_untangler/profile_comparison'
   autoload :Extension, 'cspace_config_untangler/extensions'
   autoload :Extensions, 'cspace_config_untangler/extensions'
+  autoload :ManifestEntry, 'cspace_config_untangler/manifest_entry'
   autoload :RecordTypes, 'cspace_config_untangler/record_types'
   autoload :RecordType, 'cspace_config_untangler/record_types'
   autoload :SiteConfig, 'cspace_config_untangler/site_config'
@@ -51,6 +64,7 @@ module CspaceConfigUntangler
 
   autoload :Template, 'cspace_config_untangler/template'
   autoload :CsvTemplate, 'cspace_config_untangler/template'
+
   
   # mapping CSV data to CSpace XML
   autoload :FieldMap, 'cspace_config_untangler/field_map'

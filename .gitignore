@@ -8,14 +8,14 @@ Gemfile.lock
 /spec/reports/
 *.log
 /tmp/
+.byebug_history
 
 # rspec failure tracking
 .rspec_status
 
 # data to ignore
-*.csv
-*.xlsx
 /data/profile_config.yaml
 /data/comparisons/private
 /data/config_holder/private
 /data/mappers_holder/private
+/data/templates_holder/private

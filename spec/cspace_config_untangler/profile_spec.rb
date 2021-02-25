@@ -115,4 +115,47 @@ RSpec.describe CCU::Profile do
       expect(@core_profile.vocabularies.sort).to eq(@core_vocabs)
     end
   end
-end #RSpec
+
+  describe 'special_rectypes' do
+    context 'no rectypes given' do
+      it 'returns objecthierarchy, authorityhierarchy, relationship' do
+        expect(@core_profile.special_rectypes.sort).to eq(%w[authorityhierarchy objecthierarchy relationship])
+      end
+    end
+    context 'rectypes = collectionobject' do
+      it 'returns objecthierarchy, relationship' do
+        pro = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject'])
+        expect(pro.special_rectypes.sort).to eq(%w[objecthierarchy relationship])
+      end
+    end
+    context 'rectypes = work' do
+      it 'returns authorityhierarchy' do
+        pro = CCU::Profile.new(profile: 'core', rectypes: ['work'])
+        expect(pro.special_rectypes.sort).to eq(%w[authorityhierarchy])
+      end
+    end
+    context 'rectypes = acquisition' do
+      it 'returns authorityhierarchy' do
+        pro = CCU::Profile.new(profile: 'core', rectypes: ['acquisition'])
+        expect(pro.special_rectypes.sort).to eq(%w[relationship])
+      end
+    end
+  end
+
+  context 'filename dependent' do
+    before(:all) do
+      CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_1')
+      @profile = CCU::Profile.new(profile: 'anthro_4-1-0')
+    end
+    describe '#basename' do
+      it 'returns anthro' do
+        expect(@profile.basename).to eq('anthro')
+      end
+    end
+    describe '#version' do
+      it 'returns version' do
+        expect(@profile.version).to eq('4-1-0')
+      end
+    end
+  end
+end
