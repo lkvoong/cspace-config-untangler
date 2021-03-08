@@ -181,7 +181,7 @@ module CspaceConfigUntangler
     end
     
     def get_rectypes(rectypes)
-      remove = %w[account all authrole authority batch batchinvocation blob contact idgenerator object procedure relation report reportinvocation structureddates vocabulary]
+      remove = %w[account all authrole authority batch batchinvocation blob contact export idgenerator object procedure relation report reportinvocation structureddates vocabulary]
       @rectypes_all = @config['recordTypes'].keys - remove
 
       # if no rectypes are given, process all of them
