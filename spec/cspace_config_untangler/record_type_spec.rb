@@ -164,12 +164,19 @@ RSpec.describe CCU::RecordType do
         end
       end
       context 'media recordtype' do
-        before(:all) do
-          @mappings = @anthro_media.batch_mappings
+        context 'with context :mapper' do
+          it 'removes mediaFileURI mappings' do
+            mappings = @anthro_media.batch_mappings
+            result = mappings.select{ |m| m.fieldname == 'mediaFileURI' }
+            expect(result).to be_empty
+          end
         end
-        it 'removes mediaFileURI mappings' do
-          result = @mappings.select{ |m| m.fieldname == 'mediaFileURI' }
-          expect(result).to be_empty
+        context 'with context :template' do
+          it 'removes mediaFileURI mappings' do
+            mappings = @anthro_media.batch_mappings(:template)
+            result = mappings.select{ |m| m.fieldname == 'mediaFileURI' }
+            expect(result.length).to eq(1)
+          end
         end
       end
       context 'movement recordtype' do

@@ -84,8 +84,8 @@ module CspaceConfigUntangler
       mappings
     end
 
-    def batch_mappings
-      mappings = remove_unimportable_fields_from(self.mappings)
+    def batch_mappings(context = :mapper)
+      mappings = remove_unimportable_fields_from(self.mappings, context)
       mappings = faux_require_mappings(mappings)
       mappings = faux_require_profile_specific_mappings(mappings)
       mappings
@@ -161,16 +161,27 @@ module CspaceConfigUntangler
     end
     
     # get rid of mappings for fields we do not want to import via the batch import tool
-    def remove_unimportable_fields_from(mappings)
-      instructions = {
+    def remove_unimportable_fields_from(mappings, context)
+      constant_instructions = {
         'collectionobject' => %w[computedCurrentLocation],
+      }
+      mapper_instructions = {
         'media' => %w[mediaFileURI]
       }
-      return mappings unless instructions.key?(@name)
+      return mappings unless constant_instructions.key?(@name) || mapper_instructions.key?(@name)
 
-      instructions[@name].each do |fieldname|
-        mappings = mappings.reject{ |m| m.fieldname == fieldname }
+      if constant_instructions.key?(@name)
+        constant_instructions[@name].each do |fieldname|
+          mappings = mappings.reject{ |m| m.fieldname == fieldname }
+        end
       end
+
+      if context == :mapper && mapper_instructions.key?(@name)
+        mapper_instructions[@name].each do |fieldname|
+          mappings = mappings.reject{ |m| m.fieldname == fieldname }
+        end
+      end
+
       mappings
     end
     
