@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
-  class Profile
+  class Profile    
     attr_reader :name, :config, :authorities, :rectypes, :rectypes_all, :extensions, :option_lists, :vocabularies, :panels, :form_fields, :field_defs, :messages, :structured_date_treatment
     
     def initialize(profile:, rectypes: [], structured_date_treatment: :explode)
@@ -10,12 +12,12 @@ module CspaceConfigUntangler
       @messages = {}
       @extensions = get_extensions
       @option_lists = get_option_lists
-      @vocabularies = get_vocabularies
       @structured_date_treatment = structured_date_treatment
       @rectypes = [] #rectype objects to be processed/reported
       @rectypes_all = [] #all rectype names for profile
       get_rectypes(rectypes)
       @authorities = get_authorities
+      @vocabularies = get_vocabularies
       @special_rectypes = []
       @panels = get_panels
       CCU::StructuredDateMessageGetter.new(self) if @structured_date_treatment == :explode
@@ -138,13 +140,9 @@ module CspaceConfigUntangler
     end
     
     def get_vocabularies
-      config = CCU::SiteConfig.new(@name)
-      doc = Nokogiri::XML(config.rest('/vocabularies?pgSz=0'))
-      list = []
-      doc.xpath('//shortIdentifier').each{ |e| list << e.text }
-      return list.sort
+      @rectypes.map(&:vocabularies).flatten.uniq.sort
     end
-    
+
     def apply_overrides
       # This applies messages defined at the profile level
       o = @config.dig('messages')
@@ -181,7 +179,9 @@ module CspaceConfigUntangler
     end
     
     def get_rectypes(rectypes)
-      remove = %w[account all authrole authority batch batchinvocation blob contact export idgenerator object procedure relation report reportinvocation structureddates vocabulary]
+      remove = %w[account all authrole authority batch batchinvocation blob contact export
+                  idgenerator object procedure relation report reportinvocation
+                  structureddates vocabulary]
       @rectypes_all = @config['recordTypes'].keys - remove
 
       # if no rectypes are given, process all of them

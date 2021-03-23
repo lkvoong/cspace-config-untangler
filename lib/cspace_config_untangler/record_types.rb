@@ -2,9 +2,11 @@ require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
   class RecordType
+    include CCU::Iterable
+
     attr_reader :profile, :name, :id, :config, :ns, :panels, :input_tables,
       :forms, :nonunique_fields, :structured_date_treatment, :service_type,
-      :subtypes, :record_search_field
+      :subtypes, :record_search_field, :vocabularies
 
     def initialize(profileobj, rectypename)
       @profile = profileobj
@@ -18,6 +20,7 @@ module CspaceConfigUntangler
       @structured_date_treatment = @profile.structured_date_treatment
       @service_type = @config.dig('serviceConfig', 'serviceType')
       @subtypes = @service_type == 'authority' ? get_subtypes : []
+      @vocabularies = get_vocabularies
     end
 
     def field_defs
@@ -158,6 +161,17 @@ module CspaceConfigUntangler
 
     def get_field_mapping(mappings, fieldname)
       mappings.select{ |m| m.fieldname == fieldname }.first
+    end
+
+    def get_vocabularies
+      view = extract_by_key(@config['fields'], 'view')
+        .select{ |h| h['type'] == 'TermPickerInput' }
+        .select{ |h| h.key?('props') }
+        .select{ |h| h['props'].key?('source') }
+        .reject{ |h| h['props']['source'][','] }
+        .map{ |h| h['props']['source'] }
+        .uniq
+        .sort
     end
     
     # get rid of mappings for fields we do not want to import via the batch import tool
