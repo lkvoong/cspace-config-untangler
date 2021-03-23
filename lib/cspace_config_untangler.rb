@@ -19,7 +19,6 @@ module CspaceConfigUntangler
   CCU.const_set('MAINPROFILE', 'core_6-1-0')
   CCU.const_set('DATADIR', '/Users/kristina/code/cspace-config-untangler/data')
   CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
-  CCU.const_set('SITECONFIG', "#{CCU::DATADIR}/profile_config.yaml")
   config_file_names = Dir.new(CCU::CONFIGDIR).children
     .reject{ |e| e['readable'] }
     .reject{ |e| e == '.keep' }
@@ -35,6 +34,7 @@ module CspaceConfigUntangler
   autoload :CommandLine, 'cspace_config_untangler/command_line'
 
   # mixins
+  autoload :Iterable, 'cspace_config_untangler/iterable'
   autoload :JsonWritable, 'cspace_config_untangler/json_writable'
   autoload :SpecialRectype, 'cspace_config_untangler/special_rectype'
 
@@ -57,7 +57,6 @@ module CspaceConfigUntangler
   autoload :ManifestEntry, 'cspace_config_untangler/manifest_entry'
   autoload :RecordTypes, 'cspace_config_untangler/record_types'
   autoload :RecordType, 'cspace_config_untangler/record_types'
-  autoload :SiteConfig, 'cspace_config_untangler/site_config'
   autoload :StructuredDateMessageGetter, 'cspace_config_untangler/structured_date_message_getter'
   autoload :StructuredDateField, 'cspace_config_untangler/structured_date_field'
   autoload :StructuredDateFieldMaker, 'cspace_config_untangler/structured_date_field_maker'

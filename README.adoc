@@ -74,56 +74,6 @@ Output files follow the same convention, adding the recordtype section:
 * `bundle/install`
 * Download your configs into the appropriate `data/configs` directory or directories
 * Configure your constants https://github.com/collectionspace/cspace-config-untangler/blob/master/lib/cspace_config_untangler.rb[in `lib/cspace_config_untangler.rb`]
-* Rename `data/profile_config_example.yaml` to  `data/profile_config.yaml` and set up any custom configs you want to use following the pattern given. See sub-section below for details on this.
-
-=== `profile_config.yaml` setup
-
-This YAML config supports using the CSpace services REST API to get the vocabularies used by a profile.
-
-It is parsed and used by `/lib/cspace_config_untangler/site_config.rb`.
-
-Use the following format:
-
-[source, yaml]
-----
-profiles:
-  core:
-    setup: 'standard'
-  anthro:
-    setup: 'standard'
-  bonsai:
-   setup: 'standard'
-  noncommunity_profile_name:
-    prod:
-      base: 'cspace.clientdomain.org'
-      user: 'admin@cspace.clientdomain.org'
-      pw: 'passwordstring'
-    dev:
-      base: 'client.lyrtech.org'
-      user: 'admin@cspace.clientdomain.org'
-      pw: 'passwordstring'
-----
-
-==== To use community profiles
-
-The behavior of `setup: standard` for authenticating to demo or dev is hard-coded for LYRASIS-hosting assumptions in `site_config.rb`. (These authorization credentials are stated on the public landing pages for the demo and dev instances, so this is not secure info, but will eventually be refactored out.
-
-*All you need to do is add the community profile name you want to use, and `setup: 'standard'`.*
-
-==== To use custom profiles/configs
-
-For different authentication patterns, follow the pattern shown for the `noncommunity_profile_name` profile.
-
-The profile name must match a JSON config file name for a profile in your `CONFIGDIR` directory, without any version suffixing. For instance, you may have the following in `CONFIGDIR`:
-
-- noncommunity_profile_name_1_0_0
-- noncommunity_profile_name_1_0_1
-
-The name in your YAML config should be as shown above. The `lib/cspace_config_untangler/site_config.rb` code handles matching the specific profile version with the correct authentication.
-
-If you need to authenticate differently for different versions, control this by renaming the relevant JSON config file, and adding an entry for that name in the YAML.
-
-Setting up `prod` is required. Setting up `dev` is optional.
 
 == Usage
 
