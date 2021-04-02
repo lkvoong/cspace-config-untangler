@@ -80,6 +80,26 @@ module CspaceConfigUntangler
   class DebugCli < Thor
     include CliHelpers
 
+    desc 'check_xpath_depth', 'Reports fields with unusual xpath depth (i.e. not 0, 1, 2, 3, or 4)'
+    option :rectype, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
+    def check_xpath_depth
+      field_defs = []
+      get_profiles.each {|profile|
+        p = CCU::Profile.new(profile: profile)
+        if options[:rectype] == 'all'
+          rts = p.rectypes.map{ |rt| rt.name }
+        else
+          rts = options[:rectype].split(',').map{ |e| e.strip }  
+        end
+        p.field_defs.each{ |id, arr|
+          arr.each{ |fd| field_defs << fd if rts.include?(fd.rectype) }
+        }
+      }
+
+      odd_depths = field_defs.select{ |fd| fd.schema_path.length > 4 }
+      odd_depths.each{ |fd| pp(fd) }
+    end
+    
     desc 'write_field_defs', 'Write file containing field definition data'
     option :rectype, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
     option :format, desc: 'Output format: csv or json', default: 'csv', aliases: '-f'
