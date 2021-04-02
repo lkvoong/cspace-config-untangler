@@ -1,0 +1,25 @@
+= Managing profiles and configs
+
+In the context of the Untangler:
+
+profile:: Set of fields and field configurations. Community profiles include `core`, `anthro`, etc. If any fields have been custom configured, then this will be a new custom profile. Many LYRASIS CSpace clients have their own custom profiles, since even changing the values in a static option list is a field customization.
+config:: The JSON file available from a given CSpace application instance, at a URL simliar to: https://anthro.collectionspace.org/cspace/anthro/config. The *config* is the structured expression of a given *profile*
+
+
+Untangler commands can be run on one, multiple, or all profiles.
+
+(The exception is `exe/ccu profiles compare`, which takes exactly two profiles.)
+
+To make a profile accessible by the Untangler, put the JSON config file for the profile in `data/configs`.
+
+`exe/ccu profiles all` will list the profiles currently in `data/configs`.
+
+In the Github repo, `data/configs` contains the current versions of all community profiles and `data/config_holder` stores previous versions of the community profiles.
+
+In your local copy, you can move files around however necessary to support your work.
+
+Want a spreadsheet of all fields in all profiles except `materials`? Move the `materials` config JSON out of `data/configs`.
+
+Want record mappers for all past versions of all profiles? Put all those JSON files in `data/configs`.
+
+
