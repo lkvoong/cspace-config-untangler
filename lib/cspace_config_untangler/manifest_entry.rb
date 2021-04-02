@@ -1,9 +1,15 @@
 require 'cspace_config_untangler'
 
+require 'digest'
+
 module CspaceConfigUntangler
   class ManifestEntry
     def initialize(path:)
       @path = path.sub('//', '/')
+    end
+
+    def digest
+      Digest::SHA256.hexdigest(File.read(path))
     end
 
     def filename
@@ -37,6 +43,7 @@ module CspaceConfigUntangler
         'profile'=> profile,
         'version'=> version,
         'type'=> recordtype,
+        'digest'=> digest,
         'enabled'=> true,
         'url'=> "#{CCU::MAPPER_URI_BASE}/#{subpath}"
       }

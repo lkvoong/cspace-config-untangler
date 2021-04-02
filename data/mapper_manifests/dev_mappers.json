@@ -4,6 +4,7 @@
       "profile": "anthro",
       "version": "4-1-2",
       "type": "collectionobject",
+      "digest": "f02e3f028c833bdc2d6d2667f20d32a5c9e3f7b3321470a216fb8223663a681d",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/anthro/anthro_4-1-2_collectionobject.json"
     },
@@ -11,6 +12,7 @@
       "profile": "anthro",
       "version": "4-1-2",
       "type": "concept-associated",
+      "digest": "1cdb19c5eb333cb697f2dac23ce52eec9bae658ba210eeba43c725db31fd8f63",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/anthro/anthro_4-1-2_concept-associated.json"
     },
@@ -18,6 +20,7 @@
       "profile": "fcart",
       "version": "3-0-1",
       "type": "concept-associated",
+      "digest": "b52bd7eb39aa65c7cef3fd1b36aa8b1e48e412cfbf3138f5db8dba00d3f49311",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/fcart/fcart_3-0-1_concept-associated.json"
     },
@@ -25,6 +28,7 @@
       "profile": "fcart",
       "version": "3-0-1",
       "type": "collectionobject",
+      "digest": "d2624444f3924194c5a9cf793ab303f651a2fc7363453006092ce07511829934",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/fcart/fcart_3-0-1_collectionobject.json"
     },
@@ -32,12 +36,14 @@
       "profile": "core",
       "version": "6-1-0",
       "type": "concept-associated",
+      "digest": "d16d91833697a55ebc02d60854e5872c6758ca5a9bd1061b04f3f735036be799",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/core/core_6-1-0_concept-associated.json"
     },
     {
       "profile": "core",
       "version": "6-1-0",
+      "digest": "deb29866da7ba42a201d4d905517eeafe5c049b822d15f2a566b8aceeecf4cfa",
       "type": "collectionobject",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/core/core_6-1-0_collectionobject.json"
