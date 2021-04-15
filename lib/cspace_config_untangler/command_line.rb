@@ -99,6 +99,41 @@ module CspaceConfigUntangler
       odd_depths = field_defs.select{ |fd| fd.schema_path.length > 4 }
       odd_depths.each{ |fd| pp(fd) }
     end
+
+    desc 'check_transform_types', 'Reports transform types for each record type'
+    option :rectype, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
+    def check_transform_types
+      types = Hash.new{[]}
+      
+      get_profiles.each {|profile|
+        p = CCU::Profile.new(profile: profile)
+        if options[:rectype] == 'all'
+          rts = p.rectypes.map{ |rt| rt.name }
+        else
+          rts = options[:rectype].split(',').map{ |e| e.strip }  
+        end
+        
+        p.fields.each{ |field|
+          fm = CCU::FieldMap::FieldMapper.new(field: field).mappings
+          next if fm.map(&:transforms).uniq == [{}]
+
+          fm.reject!{ |mapping| mapping.transforms.empty? }
+
+          fm.each do |mapping|
+            xforms = mapping.transforms.keys.sort.join(', ')
+            pp(mapping) if mapping.transforms.keys.any?(:special)
+            sig = "#{field.profile.name} / #{field.rectype.name}"
+            types[xforms] = types[xforms] << sig
+          end
+        }
+      }
+
+      types.transform_values!(&:uniq)
+      
+      types.each{ |xtypes, h| puts "#{xtypes} - #{h.length}" }
+
+      types.each{ |xtypes, h| puts "#{xtypes} - #{h.join(', ')}" if h.length < 10 }
+    end
     
     desc 'write_field_defs', 'Write file containing field definition data'
     option :rectype, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
