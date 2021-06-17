@@ -260,6 +260,8 @@ module CspaceConfigUntangler
       ::NamespaceUris = CspaceConfigUntangler::RecordMapper::NamespaceUris
 
       WEIRD_NS_LOOKUP = {
+        'ns2:collectionobjects_annotation' => 'http://collectionspace.org/services/collectionobject/domain/annotation',
+        'ns2:groups_checklist'=> 'http://collectionspace.org/services/group/domain/checklist',
         'ns2:collectionobjects_variablemedia' => 'http://collectionspace.org/services/collectionobject/domain/collectionobject',
         'ns2:collectionobjects_fineart' => 'http://collectionspace.org/services/collectionobject/domain/collectionobject',
         'ns2:concepts_fineart' => 'http://collectionspace.org/services/concept/domain/fineart',
