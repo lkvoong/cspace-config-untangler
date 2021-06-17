@@ -11,7 +11,7 @@ CSV templates are useful in preparing data for ingest via CspaceBatchImport, by:
 
 This will create CSV templates for each profile in a separate subdirectory of `data/templates/release_#`:
 
-`exe/ccu mappers write -p all -o data/templates/release_# -s y`
+`exe/ccu templates write -p all -o data/templates/release_# -s y`
 
 For details on the options:
 
