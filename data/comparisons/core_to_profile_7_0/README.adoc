@@ -1,0 +1,99 @@
+= 7.0 Core to Other Profile Comparison Summaries
+
+== core to anthro
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,anthro_5-0-0
+not in core_7-0-0: 379
+not in anthro_5-0-0: 32
+source differences: 9
+ui path differences: 25
+same: 1314
+----
+
+== core to bonsai
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,bonsai_5-0-0
+not in core_7-0-0: 89
+not in bonsai_5-0-0: 34
+source differences: 2
+ui path differences: 0
+same: 1344
+----
+
+== core to botgarden
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,botgarden_3-0-0
+not in core_7-0-0: 286
+not in botgarden_3-0-0: 356
+source differences: 11
+ui path differences: 7
+same: 1006
+----
+
+== core to fcart
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,fcart_4-0-0
+not in core_7-0-0: 96
+not in fcart_4-0-0: 48
+source differences: 11
+ui path differences: 4
+same: 1317
+----
+
+== core to herbarium
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,herbarium_2-0-0
+not in core_7-0-0: 129
+not in herbarium_2-0-0: 246
+source differences: 2
+ui path differences: 0
+same: 1132
+----
+
+== core to lhmc
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,lhmc_4-0-0
+not in core_7-0-0: 44
+not in lhmc_4-0-0: 31
+source differences: 9
+ui path differences: 0
+same: 1340
+----
+
+== core to materials
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,materials_3-0-0
+not in core_7-0-0: 147
+not in materials_3-0-0: 496
+source differences: 69
+ui path differences: 1
+same: 814
+----
+
+== core to publicart
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/core_to_profile_7_0 -p core_7-0-0,publicart_3-0-0
+not in core_7-0-0: 133
+not in publicart_3-0-0: 464
+source differences: 79
+ui path differences: 50
+same: 787
+----
+
+
