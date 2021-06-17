@@ -134,7 +134,9 @@ module CspaceConfigUntangler
     #   some unique ID field is required for batch import/processing
     def faux_require_mappings(mappings)
       instructions = {
-        'movement' => 'movementReferenceNumber'
+        'movement' => 'movementReferenceNumber',
+        'insurance' => 'insuranceIndemnityReferenceNumber',
+        'transport' => 'transportReferenceNumber'
       }
       return mappings unless instructions.key?(@name)
 
