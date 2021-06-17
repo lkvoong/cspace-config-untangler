@@ -29,4 +29,4 @@ The following will recursively validate (in all the subdirectories) all the mapp
 
 The following will create a manifest listing all *valid* mappers created above:
 
-`exe/ccu mappers manifest -i release_# -o data/mappers/community_profile_mappers_release_#.json`
+`exe/ccu mappers manifest -i release_# -o data/mapper_manifests/community_profile_mappers_release_#.json`

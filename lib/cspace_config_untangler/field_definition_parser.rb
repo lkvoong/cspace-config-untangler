@@ -255,7 +255,9 @@ module CspaceConfigUntangler
 
         if data.has_key?('source')
 
-          number_types = %[accession archives claim conditioncheck conservation evaluation exhibition intake inventory library loanin loanout location media movement objectexit pottag propagation study uoc valuationcontrol voucher]
+          number_types = %w[accession archives claim conditioncheck conservation evaluation exhibition
+                            indemnity insurance intake inventory library loanin loanout location media
+                            movement objectexit pottag propagation study transport uoc valuationcontrol voucher]
           
           sources = data['source'].split(',')
           sources.each{ |source|

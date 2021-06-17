@@ -12,7 +12,7 @@ module CspaceConfigUntangler
       get_form_fields
       # This logic loop prevents failure for of publicart work due to an inconsistency in the config
       #  described at https://collectionspace.atlassian.net/browse/DRYD-882
-      if @rectype.profile.name == 'publicart_2-0-1' && @rectype.name == 'work'
+      if @rectype.profile.name.start_with?('publicart') && @rectype.name == 'work'
         @fields = @fields.reject{ |f| f.name == 'addressCounty' }
       end
     end

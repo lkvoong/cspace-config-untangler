@@ -1,0 +1,111 @@
+= 6.1 / 7.0 Comparison Summaries
+
+== anthro
+
+[source]
+----
+❯  exe/ccu profiles compare -p anthro_4-1-2,anthro_5-0-0 -o data/comparisons/6_1-to-7_0
+not in anthro_4-1-2: 86
+not in anthro_5-0-0: 25
+source differences: 0
+ui path differences: 0
+same: 1641
+----
+
+== bonsai
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p bonsai_4-1-1,bonsai_5-0-0
+not in bonsai_4-1-1: 62
+not in bonsai_5-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 1373
+----
+
+== botgarden
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p botgarden_2-0-1,botgarden_3-0-0
+not in botgarden_2-0-1: 57
+not in botgarden_3-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 1253
+----
+
+== core
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p core_6-1-0,core_7-0-0
+not in core_6-1-0: 62
+not in core_7-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 1318
+----
+
+== fcart
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p fcart_3-0-1,fcart_4-0-0
+not in fcart_3-0-1: 58
+not in fcart_4-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 1370
+----
+
+== herbarium
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p herbarium_1-1-1,herbarium_2-0-0
+not in herbarium_1-1-1: 62
+not in herbarium_2-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 1201
+----
+
+== lhmc
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p lhmc_3-1-1,lhmc_4-0-0
+not in lhmc_3-1-1: 62
+not in lhmc_4-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 1331
+----
+
+== materials
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p materials_2-0-0,materials_3-0-0
+not in materials_2-0-0: 61
+not in materials_3-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 970
+----
+
+== publicart
+
+[source]
+----
+❯  exe/ccu profiles compare -o data/comparisons/6_1-to-7_0 -p publicart_2-0-1,publicart_3-0-0
+not in publicart_2-0-1: 70
+not in publicart_3-0-0: 0
+source differences: 0
+ui path differences: 0
+same: 979
+----
+
+
