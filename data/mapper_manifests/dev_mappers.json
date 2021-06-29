@@ -43,6 +43,14 @@
     {
       "profile": "core",
       "version": "6-1-0",
+      "type": "nonhierarchicalrelationship",
+      "digest": "b611a4e571095c486c8421b062f51d4bbb7a8ba912324c0add94b25e9f628348",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/core/core_6-1-0_nonhierarchicalrelationship.json"
+    },
+    {
+      "profile": "core",
+      "version": "6-1-0",
       "digest": "deb29866da7ba42a201d4d905517eeafe5c049b822d15f2a566b8aceeecf4cfa",
       "type": "collectionobject",
       "enabled": true,
