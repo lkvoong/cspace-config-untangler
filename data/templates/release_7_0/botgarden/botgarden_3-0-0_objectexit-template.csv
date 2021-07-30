@@ -5,4 +5,4 @@ REPEATABLE FIELD?,n,n,n,n,y,n,n,n,n,n
 REPEATING FIELD GROUP,"","","","","","","","","",""
 VALUE SOURCE TYPE,na,na,authority,authority,optionlist,authority,optionlist,na,na,na
 VALUE SOURCE,"","",person/local,organization/local,"courier, inperson, post",organization/local,"deaccession, disposal, returnofloan","","",""
-CSVHEADER,exitNumber,exitDateGroup,currentOwnerPerson,currentOwnerOrganization,exitMethod,depositor,exitReason,count,exitNote,packingNote
+CSVHEADER,exitNumber,exitDateGroup,currentOwnerPersonLocal,currentOwnerOrganizationLocal,exitMethod,depositor,exitReason,count,exitNote,packingNote

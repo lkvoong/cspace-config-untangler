@@ -5,4 +5,4 @@ REPEATABLE FIELD?,n,n,n,n,n,n,n,n,n,n,n
 REPEATING FIELD GROUP,"","","","","","","","","","",""
 VALUE SOURCE TYPE,na,na,vocabulary,authority,authority,authority,na,optionlist,vocabulary,vocabulary,na
 VALUE SOURCE,"","",reasonformove,location/local,organization/local,person/local,"","No, Yes",labelsize,labelstandtype,""
-CSVHEADER,movementReferenceNumber,locationDate,reasonForMove,currentLocationLocation,currentLocationOrganization,movementContact,movementNote,labelRequested,labelSize,labelStandType,labelCount
+CSVHEADER,movementReferenceNumber,locationDate,reasonForMove,currentLocationLocationLocal,currentLocationOrganizationLocal,movementContact,movementNote,labelRequested,labelSize,labelStandType,labelCount
