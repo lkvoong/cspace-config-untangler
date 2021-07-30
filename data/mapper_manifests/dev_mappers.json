@@ -6,7 +6,7 @@
       "type": "collectionobject",
       "digest": "8218fbc77b98064b8696b5e9b816bbfcc583ba2fe196087bc10db9c0c3247f4d",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/anthro/anthro_4-1-2_collectionobject.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/anthro/anthro_4-1-2_collectionobject.json"
     },
     {
       "profile": "anthro",
@@ -14,7 +14,7 @@
       "type": "concept-associated",
       "digest": "103ecf5a3fd49c81e0c5c51dcb83b8815cf6f459f13ef0c7025f19543e7ef1f0",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/anthro/anthro_4-1-2_concept-associated.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/anthro/anthro_4-1-2_concept-associated.json"
     },
     {
       "profile": "fcart",
@@ -22,7 +22,7 @@
       "type": "concept-associated",
       "digest": "eed1fb6c7aef4d5f145537d384df73e6b709810091109eed42c6d627416e25d8",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/fcart/fcart_3-0-1_concept-associated.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/fcart/fcart_3-0-1_concept-associated.json"
     },
     {
       "profile": "fcart",
@@ -30,7 +30,7 @@
       "type": "collectionobject",
       "digest": "71e92834f5d635f1119d45c5ecdbe87212c97687632a78e9cf61d0a633a5b70b",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/fcart/fcart_3-0-1_collectionobject.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/fcart/fcart_3-0-1_collectionobject.json"
     },
     {
       "profile": "core",
@@ -38,7 +38,7 @@
       "type": "concept-associated",
       "digest": "f56e5b760584bc8d70a94db5f032111f3603735ae325806832c2939959b9d2da",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/core/core_6-1-0_concept-associated.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/core/core_6-1-0_concept-associated.json"
     },
     {
       "profile": "core",
@@ -46,7 +46,7 @@
       "type": "collectionobject",
       "digest": "fd172e403a4409454ed4fc25a21a22f2f5c48a61d9a129e1909d94c3d31446f6",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/core/core_6-1-0_collectionobject.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/core/core_6-1-0_collectionobject.json"
     },
     {
       "profile": "core",
@@ -54,7 +54,7 @@
       "type": "nonhierarchicalrelationship",
       "digest": "b611a4e571095c486c8421b062f51d4bbb7a8ba912324c0add94b25e9f628348",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers/release_6_1/core/core_6-1-0_nonhierarchicalrelationship.json"
+      "url": "https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/data-column-namer/data/mappers/release_6_1/core/core_6-1-0_nonhierarchicalrelationship.json"
     }
   ]
 }
