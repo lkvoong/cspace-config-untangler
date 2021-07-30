@@ -32,9 +32,9 @@ RSpec.describe CCU::FieldMap do
           result = mappings.map{ |m| m.source_type }
           expect(result).to eq(%w[authority authority authority])
         end
-        it 'mappings datacolumns = contentConceptAssociated contentConceptMaterial' do
+        it 'mappings datacolumns = contentConceptConceptAssociated contentConceptConceptMaterial' do
           result = mappings.map{ |m| m.datacolumn }.sort
-            expect(result).to eq(%w[contentConceptAssociated contentConceptMaterial contentConceptRefname])
+            expect(result).to eq(%w[contentConceptConceptAssociated contentConceptConceptMaterial contentConceptRefname])
         end
 
         describe '.to_h' do
@@ -51,9 +51,9 @@ RSpec.describe CCU::FieldMap do
           result = mappings.map{ |m| m.source_type }
           expect(result).to eq(%w[authority authority authority authority])
         end
-        it 'mappings datacolumns = currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization currentLocationRefname' do
+        it 'mappings datacolumns = currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganizationLocal currentLocationRefname' do
           result = mappings.map{ |m| m.datacolumn }.sort
-          expect(result).to eq(%w[currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganization currentLocationRefname])
+          expect(result).to eq(%w[currentLocationLocationLocal currentLocationLocationOffsite currentLocationOrganizationLocal currentLocationRefname])
         end
 
         describe '.to_h' do
@@ -141,7 +141,7 @@ RSpec.describe CCU::FieldMap do
         let(:result) { FieldMapper.new(field: @contentConcept) }
         describe '#get_data_columns' do
           it 'merges in column name hash as expected' do
-            expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptAssociated contentConceptMaterial contentConceptRefname])
+            expect(result.hash.map{ |src, h| h[:column_name] }).to eq(%w[contentConceptConceptAssociated contentConceptConceptMaterial contentConceptRefname])
           end
         end
         describe '#mappings' do
@@ -243,49 +243,43 @@ RSpec.describe CCU::FieldMap do
   end
 
   describe DataColumnNamer do
+    let(:fieldname){ 'name' }
+    let(:xform_sources){ sources.map{ |source| AuthoritySource.new(source) } }
+    let(:result){ DataColumnNamer.new(fieldname: fieldname, sources: xform_sources).result.values }
+    
     context 'when source is authority' do
       context 'and two authorities may be used' do
         context 'and both are concept authorities' do
+          let(:sources){ ['authority: concept/one', 'authority: concept/two'] }
           it 'names columns using authority subtypes' do
-            fieldname = 'name'
-            sources = ['authority: concept/one', 'authority: concept/two']
-            result = DataColumnNamer.new(fieldname: fieldname, sources: sources).result
-              .map{ |k, v| v }
-            expect(result).to eq(%w[nameOne nameTwo])
+            expect(result).to eq(%w[nameConceptOne nameConceptTwo])
           end
         end
+        
         context 'and one is person and one is organization' do
+          let(:sources){ ['authority: person/local', 'authority: organization/local'] }
           it 'names columns using authority types' do
-            fieldname = 'name'
-            sources = ['authority: person/local', 'authority: organization/local']
-            result = DataColumnNamer.new(fieldname: fieldname, sources: sources).result
-              .map{ |k, v| v }
-            expect(result).to eq(%w[namePerson nameOrganization])
+            expect(result).to eq(%w[namePersonLocal nameOrganizationLocal])
           end
         end
       end
+      
       context 'and person/ulan, person/local, org/ulan, and org/local may be used' do
+        let(:sources) do
+          ['authority: person/local', 'authority: organization/local',
+           'authority: person/ulan', 'authority: organization/ulan']
+        end
         it 'names all columns using authority types and subtypes' do
-          fieldname = 'name'
-          sources = ['authority: person/local', 'authority: organization/local',
-                     'authority: person/ulan', 'authority: organization/ulan']
-          result = DataColumnNamer.new(fieldname: fieldname, sources: sources).result
-            .map{ |k, v| v }
           expect(result).to eq(%w[namePersonLocal nameOrganizationLocal namePersonUlan nameOrganizationUlan])
         end
       end
+      
       context 'and person/ulan, person/local, and org/local may be used' do
-          it 'names columns using authority types and subtypes for person, type only for org' do
-            fieldname = 'name'
-            sources = ['authority: person/local', 'authority: organization/local',
-                       'authority: person/ulan']
-            result = DataColumnNamer.new(fieldname: fieldname, sources: sources).result
-              .map{ |k, v| v }
-            expect(result).to eq(%w[namePersonLocal nameOrganization namePersonUlan])
-          end
+        let(:sources){ ['authority: person/local', 'authority: organization/local', 'authority: person/ulan'] }
+        it 'names columns using authority types and subtypes for person, type only for org' do
+          expect(result).to eq(%w[namePersonLocal nameOrganizationLocal namePersonUlan])
+        end
       end
     end
-  end
-  
-  
+  end  
 end #RSpec
