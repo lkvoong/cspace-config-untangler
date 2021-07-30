@@ -486,7 +486,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal",
+      "datacolumn": "termSourceCitationLocal",
       "required": "n"
     },
     {
@@ -510,7 +510,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceWorldcat",
+      "datacolumn": "termSourceCitationWorldcat",
       "required": "n"
     },
     {
@@ -689,7 +689,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "organizationLocal",
+      "datacolumn": "organizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -712,7 +712,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "organizationShared",
+      "datacolumn": "organizationOrganizationShared",
       "required": "n"
     },
     {

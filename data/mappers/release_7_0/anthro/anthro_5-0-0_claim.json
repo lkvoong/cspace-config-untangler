@@ -181,7 +181,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "claimFiledByPerson",
+      "datacolumn": "claimFiledByPersonLocal",
       "required": "n"
     },
     {
@@ -205,7 +205,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "claimFiledByOrganization",
+      "datacolumn": "claimFiledByOrganizationLocal",
       "required": "n"
     },
     {
@@ -249,7 +249,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "claimFiledOnBehalfOfPerson",
+      "datacolumn": "claimFiledOnBehalfOfPersonLocal",
       "required": "n"
     },
     {
@@ -273,7 +273,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "claimFiledOnBehalfOfOrganization",
+      "datacolumn": "claimFiledOnBehalfOfOrganizationLocal",
       "required": "n"
     },
     {

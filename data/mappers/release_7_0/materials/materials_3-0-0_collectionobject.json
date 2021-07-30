@@ -392,7 +392,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialLocal",
+      "datacolumn": "materialMaterialLocal",
       "required": "n"
     },
     {
@@ -416,7 +416,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialShared",
+      "datacolumn": "materialMaterialShared",
       "required": "n"
     },
     {
@@ -724,7 +724,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "annotationAuthorLocal",
+      "datacolumn": "annotationAuthorPersonLocal",
       "required": "n"
     },
     {
@@ -748,7 +748,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "annotationAuthorShared",
+      "datacolumn": "annotationAuthorPersonShared",
       "required": "n"
     },
     {
@@ -1644,7 +1644,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionPersonLocal",
+      "datacolumn": "objectProductionPersonPersonLocal",
       "required": "n"
     },
     {
@@ -1668,7 +1668,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionPersonShared",
+      "datacolumn": "objectProductionPersonPersonShared",
       "required": "n"
     },
     {
@@ -1732,7 +1732,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionOrganizationLocal",
+      "datacolumn": "objectProductionOrganizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -1756,7 +1756,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionOrganizationShared",
+      "datacolumn": "objectProductionOrganizationOrganizationShared",
       "required": "n"
     },
     {
@@ -2312,7 +2312,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonLocal",
+      "datacolumn": "contentPersonPersonLocal",
       "required": "n"
     },
     {
@@ -2335,7 +2335,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonShared",
+      "datacolumn": "contentPersonPersonShared",
       "required": "n"
     },
     {
@@ -2421,7 +2421,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationLocal",
+      "datacolumn": "contentOrganizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -2444,7 +2444,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationShared",
+      "datacolumn": "contentOrganizationOrganizationShared",
       "required": "n"
     },
     {
@@ -2685,7 +2685,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceLocal",
+      "datacolumn": "referenceCitationLocal",
       "required": "n"
     },
     {
@@ -2709,7 +2709,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceShared",
+      "datacolumn": "referenceCitationShared",
       "required": "n"
     },
     {

@@ -233,7 +233,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "transporterContactLocal",
+      "datacolumn": "transporterContactPersonLocal",
       "required": "n"
     },
     {
@@ -256,7 +256,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "transporterContactShared",
+      "datacolumn": "transporterContactPersonShared",
       "required": "n"
     },
     {
@@ -317,7 +317,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "transportAuthorizerLocal",
+      "datacolumn": "transportAuthorizerPersonLocal",
       "required": "n"
     },
     {
@@ -340,7 +340,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "transportAuthorizerShared",
+      "datacolumn": "transportAuthorizerPersonShared",
       "required": "n"
     },
     {
@@ -487,7 +487,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "departurePointPlace",
+      "datacolumn": "departurePointPlaceLocal",
       "required": "n"
     },
     {
@@ -1157,7 +1157,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "customsBrokerContactLocal",
+      "datacolumn": "customsBrokerContactPersonLocal",
       "required": "n"
     },
     {
@@ -1180,7 +1180,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "customsBrokerContactShared",
+      "datacolumn": "customsBrokerContactPersonShared",
       "required": "n"
     },
     {

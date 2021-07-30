@@ -402,7 +402,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "checklistAssigneeLocal",
+      "datacolumn": "checklistAssigneePersonLocal",
       "required": "n"
     },
     {
@@ -428,7 +428,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "checklistAssigneeShared",
+      "datacolumn": "checklistAssigneePersonShared",
       "required": "n"
     },
     {
