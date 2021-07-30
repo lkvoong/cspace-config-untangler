@@ -21,7 +21,7 @@
   "logo": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNzIuODYgNDQiIHdpZHRoPSIyNzIuODZweCIgaGVpZ2h0PSI0NHB4Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2JlYzBjMjt9LmNscy0ye2ZpbGw6IzczOWRkMjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmNvbGxlY3Rpb25zcGFjZTI8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTIzLjYzLDI2LjA1YTgsOCwwLDAsMSw4LjExLTguMjVBNy44OSw3Ljg5LDAsMCwxLDM4LDIwLjMzbC0yLDEuNzZhNS41OCw1LjU4LDAsMCwwLTQuMjUtMS43NmMtMy4wNSwwLTUuMDYsMi40OC01LjA2LDUuNzJzMiw1LjY4LDUuMDYsNS42OGE2LDYsMCwwLDAsNC42My0xLjk1bDEuOTUsMS43MmE4LjEsOC4xLDAsMCwxLTYuNTksMi43N0E4LDgsMCwwLDEsMjMuNjMsMjYuMDVaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDEuNTgsMjYuMDVhOC4zOCw4LjM4LDAsMSwxLDguNyw4LjIxaC0uMzZBOC4xNCw4LjE0LDAsMCwxLDQxLjU4LDI2LjA1Wm0xMy42NCwwYzAtMy4yOS0yLjE1LTUuNzctNS4zLTUuNzdzLTUuMjksMi41LTUuMjksNS43NywyLjE1LDUuNzMsNS4yOSw1LjczLDUuMy0yLjQ4LDUuMy01LjczWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYzLjE5LDBoM1YzMy44OGgtM1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi4yNiwwaDNWMzMuODhoLTNaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNODguNzIsMzEuNzhhNiw2LDAsMCwwLDQuOTEtMi4wNWwxLjgyLDEuNzZhOC4yLDguMiwwLDAsMS02LjY5LDIuNzdjLTUuMSwwLTguNTctMy41My04LjU3LTguMjFhOC4xMyw4LjEzLDAsMCwxLDgtOC4yNWguMjNjNSwwLDguMDcsMy45LDgsOS4zSDgzLjIzQTUuMTYsNS4xNiwwLDAsMCw4OC43MiwzMS43OFptNC42Mi03LjExYy0uMzktMi40OS0xLjk0LTQuMzktNC45MS00LjM5YTUsNSwwLDAsMC01LjExLDQuMzlaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTAwLjIyLDI2LjA1YTgsOCwwLDAsMSw4LjExLTguMjUsNy44Niw3Ljg2LDAsMCwxLDYuMiwyLjUzbC0yLDEuNzZhNS41Niw1LjU2LDAsMCwwLTQuMjQtMS43NmMtMy4wNiwwLTUuMDcsMi40OC01LjA3LDUuNzJzMiw1LjY4LDUuMDcsNS42OEE2LDYsMCwwLDAsMTEzLDI5Ljc4bDIsMS43MmE4LjQ0LDguNDQsMCwwLDEtMTQuNjktNS40NVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMTguMiwyMC42NlYxOC4xOGgyVjguNGgyLjkydjkuNzhoMy45djIuNDhoLTMuOXY5YzAsMS40My41MywyLjExLDEuNjcsMi4xMWEyLjg2LDIuODYsMCwwLDAsMS43Mi0uNjdsMS4yNCwyLjA1YTQuODQsNC44NCwwLDAsMS0zLjMsMS4xNWMtMi41NywwLTQuMjQtMS4zOS00LjI0LTQuNDlWMjAuNjZaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMxLjcxLDEwLjQ1YTIsMiwwLDEsMSwyLDJBMiwyLDAsMCwxLDEzMS43MSwxMC40NVptLjUyLDcuNzNoM3YxNS43aC0zWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE0MC4xLDI2LjA1YTguMzgsOC4zOCwwLDEsMSw4LjcxLDguMjFoLS4zNkE4LjE1LDguMTUsMCwwLDEsMTQwLjEsMjYuMDVabTEzLjY1LDBjMC0zLjI5LTIuMTUtNS43Ny01LjMtNS43N3MtNS4zLDIuNDgtNS4zLDUuNzcsMi4xNSw1LjczLDUuMyw1LjczLDUuMy0yLjQ4LDUuMy01LjczWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE2MS41OCwxOC4xOGgyLjkxdjIuNTNhNS43Nyw1Ljc3LDAsMCwxLDUuMzktMi45MWMzLjQzLDAsNiwyLjE5LDYsNi40NHY5LjY0SDE3M1YyNC41M2MwLTIuNzctMS4zNC00LjExLTMuODItNC4xMWE0LjM5LDQuMzksMCwwLDAtNC42Nyw0Ljc3djguNjloLTIuOTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTgwLjA4LDMwLjczbDIuMS0xLjQ4YTUuMTUsNS4xNSwwLDAsMCw0LjYzLDIuNTNjMiwwLDMuMTQtLjgxLDMuMTQtMi4xcy0xLjA5LTEuOTUtMy44MS0yLjczYy0zLjEyLS44Ni01LTIuMDUtNS00LjgyLDAtMi41NywyLTQuMzQsNS4xNS00LjM0YTYuMjksNi4yOSwwLDAsMSw1LjM5LDIuNTNsLTEuOTUsMS42MmEzLjkzLDMuOTMsMCwwLDAtMy4zOS0xLjY3Yy0xLjU1LDAtMi40OC43OC0yLjQ4LDEuNzcsMCwxLjM4LDEsMS43NiwzLjQ0LDIuMzgsMy4zNC44Niw1LjQ1LDIuMjQsNS40NSw1LjExcy0yLjI0LDQuNzItNiw0LjcyQTcuNzIsNy43MiwwLDAsMSwxODAuMDgsMzAuNzNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTk3LjY1LDE4LjE4aDIuOTF2Mi42N2E2LjE0LDYuMTQsMCwwLDEsNS42OC0zLjA1YzQuMzksMCw3LjczLDMuNTMsNy43Myw4LjI2cy0zLjM0LDguMi03LjczLDguMmE2LjEzLDYuMTMsMCwwLDEtNS42OC0zVjQ0aC0yLjkxWk0yMTEsMjYuMDVjMC0zLjM0LTIuMTUtNS42OC01LjMtNS42OHMtNS4yLDIuMzQtNS4yLDUuNjgsMi4xLDUuNjMsNS4yLDUuNjMsNS4zLTIuMzQsNS4zLTUuNjNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjE3Ljc4LDI2LjA1YzAtNC43MiwzLjMtOC4yNSw3LjY0LTguMjVBNS45NCw1Ljk0LDAsMCwxLDIzMSwyMC44NVYxOC4xOGgyLjkyVjMzLjg3SDIzMVYzMS4yYTUuOTQsNS45NCwwLDAsMS01LjUzLDMuMDVDMjIxLjA4LDM0LjI2LDIxNy43OCwzMC43MywyMTcuNzgsMjYuMDVabTEzLjI2LDBjMC0zLjM0LTItNS42OC01LjA3LTUuNjhzLTUuMTYsMi4zNC01LjE2LDUuNjgsMi4wNiw1LjYzLDUuMTYsNS42Myw1LjA4LTIuMzQsNS4wOC01LjYzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTIzOC42OCwyNi4wNWE4LDgsMCwwLDEsOC4xMS04LjI1QTcuODksNy44OSwwLDAsMSwyNTMsMjAuMzNsLTEuOTUsMS43NmE1LjU4LDUuNTgsMCwwLDAtNC4yNS0xLjc2Yy0zLjA1LDAtNS4wNywyLjQ4LTUuMDcsNS43MnMyLDUuNjgsNS4wNyw1LjY4YTYsNiwwLDAsMCw0LjYxLTEuOTRsMiwxLjcyYTguNDMsOC40MywwLDAsMS0xNC42OC01LjQ2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI2NS4xNywzMS43OGE2LDYsMCwwLDAsNC45MS0yLjA1bDEuODEsMS43NmE4LjE3LDguMTcsMCwwLDEtNi42OCwyLjc3Yy01LjEsMC04LjU3LTMuNTMtOC41Ny04LjIxYTguMTMsOC4xMywwLDAsMSw4LTguMjVoLjIzYzUsMCw4LjA3LDMuOSw4LDkuM0gyNTkuNjhBNS4xNiw1LjE2LDAsMCwwLDI2NS4xNywzMS43OFptNC42Mi03LjExYy0uMzktMi40OS0yLTQuMzktNC45MS00LjM5YTUsNSwwLDAsMC01LjExLDQuMzlaIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI2LjM5IiB5PSIxNy41MyIgd2lkdGg9IjQuMDEiIGhlaWdodD0iNC4wMSIgcng9IjAuNTciLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYuMzkiIHk9IjIzLjk5IiB3aWR0aD0iNC4wMSIgaGVpZ2h0PSI0LjAxIiByeD0iMC41NyIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTIuNzEiIHk9IjIzLjk5IiB3aWR0aD0iNC4wMSIgaGVpZ2h0PSI0LjAxIiByeD0iMC41NyIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeT0iMjMuOTkiIHdpZHRoPSI0LjAxIiBoZWlnaHQ9IjQuMDEiIHJ4PSIwLjU3Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI2LjM5IiB5PSIzMC4yNCIgd2lkdGg9IjQuMDEiIGhlaWdodD0iNC4wMSIgcng9IjAuNTciLz48L3N2Zz4=",
   "mediaSnapshotSort": "identificationNumber",
   "messages": {
-    "about.title": "Welcome to the CollectionSpace Materials Authority Demo",
+    "about.title": "Materials Profile",
     "field.ext.dimension.dimensionSummary.fullName": "Sample size",
     "field.ext.dimension.dimensionSummary.name": "Sample size",
     "column.collectionobject.default.objectNumber": "Accession number",
@@ -33,7 +33,7 @@
     "field.loansout_common.lendersAuthorizer.name": "Lender authorizer",
     "field.loansout_common.borrower.fullName": "Borrower",
     "field.loansout_common.borrower.name": "Borrower",
-    "about.contentHTML": "<p> CollectionSpace is a community-supported collections management application for museums, historical societies, natural science collections, and more. </p> <p> This demo site is running the current version of the Materials Authority profile of CollectionSpace. If you’re interested in a version of CollectionSpace configured to meet the needs of a different domain, please visit our <a href=\"https://www.collectionspace.org/demo/\">demo landing page</a> to view all available options. Examples include Anthropology, Botanical Garden, Fine Art, Herbarium, Local History &amp; Material Culture, and Public Art. </p> <p> To log in, use the email <strong>admin@materials.collectionspace.org</strong>, with the case-sensitive password <strong>Administrator</strong>. To view in read-only mode, use the email <strong>reader@materials.collectionspace.org</strong> with the password <strong>reader</strong>. </p>"
+    "about.contentHTML": "<div><p>CollectionSpace is a free, open-source collections management application for museums, historical societies, natural science collections, and more.</p><p>This is a demo site.</p><ul><li><b>Username:</b> admin@materials.collectionspace.org</li><li><b>Password:</b> Administrator</li></ul></div>"
   },
   "prettyUrls": true,
   "relationMemberPerm": "U",
@@ -1713,16 +1713,23 @@
     "inscriptionTypes": {
       "values": [
         "brand",
+        "credits",
         "decoration",
         "estate-stamp",
         "graffiti",
         "label",
-        "maker's-mark"
+        "maker's-mark",
+        "plaque",
+        "signage"
       ],
       "messages": {
         "brand": {
           "id": "option.inscriptionTypes.brand",
           "defaultMessage": "brand"
+        },
+        "credits": {
+          "id": "option.inscriptionTypes.credits",
+          "defaultMessage": "credits"
         },
         "decoration": {
           "id": "option.inscriptionTypes.decoration",
@@ -1743,6 +1750,14 @@
         "maker's-mark": {
           "id": "option.inscriptionTypes.maker's-mark",
           "defaultMessage": "maker's mark"
+        },
+        "plaque": {
+          "id": "option.inscriptionTypes.plaque",
+          "defaultMessage": "plaque"
+        },
+        "signage": {
+          "id": "option.inscriptionTypes.signage",
+          "defaultMessage": "signage"
         }
       }
     },
@@ -4538,20 +4553,108 @@
     },
     "personTitles": {
       "values": [
+        "Admiral",
+        "Baron",
+        "Baroness",
+        "Captain",
+        "Commander",
+        "Commodore",
+        "Count",
+        "Countess",
+        "Dame",
+        "Dr",
+        "General",
+        "Governor",
+        "Honorable",
+        "Judge",
+        "King",
+        "Lady",
+        "Lord",
+        "Miss",
         "Mr",
         "Mrs",
         "Ms",
-        "Miss",
-        "Dr",
+        "Prince",
+        "Princess",
         "Professor",
-        "Sir",
-        "Dame",
-        "Baron",
-        "Baroness",
-        "Lord",
-        "Lady"
+        "Queen",
+        "Reverend",
+        "Saint",
+        "Sir"
       ],
       "messages": {
+        "Admiral": {
+          "id": "option.personTitles.Admiral",
+          "defaultMessage": "Admiral"
+        },
+        "Baron": {
+          "id": "option.personTitles.Baron",
+          "defaultMessage": "Baron"
+        },
+        "Baroness": {
+          "id": "option.personTitles.Baroness",
+          "defaultMessage": "Baroness"
+        },
+        "Captain": {
+          "id": "option.personTitles.Captain",
+          "defaultMessage": "Captain"
+        },
+        "Commander": {
+          "id": "option.personTitles.Commander",
+          "defaultMessage": "Commander"
+        },
+        "Commodore": {
+          "id": "option.personTitles.Commodore",
+          "defaultMessage": "Commodore"
+        },
+        "Count": {
+          "id": "option.personTitles.Count",
+          "defaultMessage": "Count"
+        },
+        "Countess": {
+          "id": "option.personTitles.Countess",
+          "defaultMessage": "Countess"
+        },
+        "Dame": {
+          "id": "option.personTitles.Dame",
+          "defaultMessage": "Dame"
+        },
+        "Dr": {
+          "id": "option.personTitles.Dr",
+          "defaultMessage": "Dr"
+        },
+        "General": {
+          "id": "option.personTitles.General",
+          "defaultMessage": "General"
+        },
+        "Governor": {
+          "id": "option.personTitles.Governor",
+          "defaultMessage": "Governor"
+        },
+        "Honorable": {
+          "id": "option.personTitles.Honorable",
+          "defaultMessage": "Honorable"
+        },
+        "Judge": {
+          "id": "option.personTitles.Judge",
+          "defaultMessage": "Judge"
+        },
+        "King": {
+          "id": "option.personTitles.King",
+          "defaultMessage": "King"
+        },
+        "Lady": {
+          "id": "option.personTitles.Lady",
+          "defaultMessage": "Lady"
+        },
+        "Lord": {
+          "id": "option.personTitles.Lord",
+          "defaultMessage": "Lord"
+        },
+        "Miss": {
+          "id": "option.personTitles.Miss",
+          "defaultMessage": "Miss"
+        },
         "Mr": {
           "id": "option.personTitles.Mr",
           "defaultMessage": "Mr"
@@ -4564,57 +4667,129 @@
           "id": "option.personTitles.Ms",
           "defaultMessage": "Ms"
         },
-        "Miss": {
-          "id": "option.personTitles.Miss",
-          "defaultMessage": "Miss"
+        "Prince": {
+          "id": "option.personTitles.Prince",
+          "defaultMessage": "Prince"
         },
-        "Dr": {
-          "id": "option.personTitles.Dr",
-          "defaultMessage": "Dr"
+        "Princess": {
+          "id": "option.personTitles.Princess",
+          "defaultMessage": "Princess"
         },
         "Professor": {
           "id": "option.personTitles.Professor",
           "defaultMessage": "Professor"
         },
+        "Queen": {
+          "id": "option.personTitles.Queen",
+          "defaultMessage": "Queen"
+        },
+        "Reverend": {
+          "id": "option.personTitles.Reverend",
+          "defaultMessage": "Reverend"
+        },
+        "Saint": {
+          "id": "option.personTitles.Saint",
+          "defaultMessage": "Saint"
+        },
         "Sir": {
           "id": "option.personTitles.Sir",
           "defaultMessage": "Sir"
-        },
-        "Dame": {
-          "id": "option.personTitles.Dame",
-          "defaultMessage": "Dame"
-        },
-        "Baron": {
-          "id": "option.personTitles.Baron",
-          "defaultMessage": "Baron"
-        },
-        "Baroness": {
-          "id": "option.personTitles.Baroness",
-          "defaultMessage": "Baroness"
-        },
-        "Lord": {
-          "id": "option.personTitles.Lord",
-          "defaultMessage": "Lord"
-        },
-        "Lady": {
-          "id": "option.personTitles.Lady",
-          "defaultMessage": "Lady"
         }
       }
     },
     "genders": {
       "values": [
+        "agender",
+        "bigender",
+        "dyadic",
         "female",
-        "male"
+        "feminine",
+        "gender-fluid",
+        "gender-neutral",
+        "gender-non-binary",
+        "genderqueer",
+        "intersex",
+        "male",
+        "masculine",
+        "pansexual",
+        "polygender",
+        "questioning",
+        "transgender",
+        "transsexual",
+        "two-spirit"
       ],
       "messages": {
+        "agender": {
+          "id": "option.genders.agender",
+          "defaultMessage": "agender"
+        },
+        "bigender": {
+          "id": "option.genders.bigender",
+          "defaultMessage": "bigender"
+        },
+        "dyadic": {
+          "id": "option.genders.dyadic",
+          "defaultMessage": "dyadic"
+        },
         "female": {
           "id": "option.genders.female",
           "defaultMessage": "female"
         },
+        "feminine": {
+          "id": "option.genders.feminine",
+          "defaultMessage": "feminine"
+        },
+        "gender-fluid": {
+          "id": "option.genders.gender-fluid",
+          "defaultMessage": "gender-fluid"
+        },
+        "gender-neutral": {
+          "id": "option.genders.gender-neutral",
+          "defaultMessage": "gender-neutral"
+        },
+        "gender-non-binary": {
+          "id": "option.genders.gender-non-binary",
+          "defaultMessage": "gender non-binary"
+        },
+        "genderqueer": {
+          "id": "option.genders.genderqueer",
+          "defaultMessage": "genderqueer"
+        },
+        "intersex": {
+          "id": "option.genders.intersex",
+          "defaultMessage": "intersex"
+        },
         "male": {
           "id": "option.genders.male",
           "defaultMessage": "male"
+        },
+        "masculine": {
+          "id": "option.genders.masculine",
+          "defaultMessage": "masculine"
+        },
+        "pansexual": {
+          "id": "option.genders.pansexual",
+          "defaultMessage": "pansexual"
+        },
+        "polygender": {
+          "id": "option.genders.polygender",
+          "defaultMessage": "polygender"
+        },
+        "questioning": {
+          "id": "option.genders.questioning",
+          "defaultMessage": "questioning"
+        },
+        "transgender": {
+          "id": "option.genders.transgender",
+          "defaultMessage": "transgender"
+        },
+        "transsexual": {
+          "id": "option.genders.transsexual",
+          "defaultMessage": "transsexual"
+        },
+        "two-spirit": {
+          "id": "option.genders.two-spirit",
+          "defaultMessage": "two-spirit"
         }
       }
     },
@@ -5075,6 +5250,67 @@
         "verified-contributor": {
           "id": "option.geoRefVerificationStatuses.verified-contributor",
           "defaultMessage": "verified by contributor"
+        }
+      }
+    },
+    "transportMethodTypes": {
+      "values": [
+        "cargo aircraft",
+        "combi aircraft",
+        "common carrier",
+        "exclusive-use truck",
+        "expedited use freight",
+        "LOFO freight",
+        "mail",
+        "non-commercial carrier",
+        "ocean freight",
+        "passenger aircraft",
+        "shuttle service"
+      ],
+      "messages": {
+        "cargo aircraft": {
+          "id": "option.transportMethodTypes.cargo aircraft",
+          "defaultMessage": "cargo aircraft"
+        },
+        "combi aircraft": {
+          "id": "option.transportMethodTypes.combi aircraft",
+          "defaultMessage": "combi aircraft"
+        },
+        "common carrier": {
+          "id": "option.transportMethodTypes.common carrier",
+          "defaultMessage": "common carrier"
+        },
+        "exclusive-use truck": {
+          "id": "option.transportMethodTypes.exclusive-use truck",
+          "defaultMessage": "exclusive-use truck"
+        },
+        "expedited use freight": {
+          "id": "option.transportMethodTypes.expedited use freight",
+          "defaultMessage": "expedited use freight"
+        },
+        "LOFO freight": {
+          "id": "option.transportMethodTypes.LOFO freight",
+          "defaultMessage": "LOFO freight"
+        },
+        "mail": {
+          "id": "option.transportMethodTypes.mail",
+          "defaultMessage": "mail"
+        },
+        "non-commercial carrier": {
+          "id": "option.transportMethodTypes.non-commercial carrier",
+          "defaultMessage": "non-commercial carrier"
+        },
+        "ocean freight": {
+          "id": "option.transportMethodTypes.ocean freight",
+          "defaultMessage": "ocean freight"
+        },
+        "passenger aircraft": {
+          "id": "option.transportMethodTypes.passenger aircraft",
+          "defaultMessage": "passenger aircraft"
+        },
+        "shuttle service": {
+          "id": "option.transportMethodTypes.shuttle service",
+          "defaultMessage": "shuttle service"
         }
       }
     },
@@ -6124,6 +6360,10 @@
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.acquisitions_common.acquisitionReferenceNumber.inUse",
+                    "defaultMessage": "The reference number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.acquisitions_common.acquisitionReferenceNumber.name",
                     "defaultMessage": "Reference number"
@@ -13045,11 +13285,116 @@
               }
             }
           },
+          "ns2:collectionobjects_annotation": {
+            "annotationGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "annotationGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.collectionobjects_annotation.annotationGroup.name",
+                      "defaultMessage": "Annotation"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "annotationType": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_annotation.annotationType.fullName",
+                        "defaultMessage": "Annotation type"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_annotation.annotationType.name",
+                        "defaultMessage": "Type"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "annotationtype"
+                      }
+                    }
+                  }
+                },
+                "annotationNote": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_annotation.annotationNote.fullName",
+                        "defaultMessage": "Annotation note"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_annotation.annotationNote.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "annotationDate": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_annotation.annotationDate.fullName",
+                        "defaultMessage": "Annotation date"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_annotation.annotationDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                },
+                "annotationAuthor": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.collectionobjects_annotation.annotationAuthor.fullName",
+                        "defaultMessage": "Annotation author"
+                      },
+                      "name": {
+                        "id": "field.collectionobjects_annotation.annotationAuthor.name",
+                        "defaultMessage": "Author"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/shared"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "ns2:collectionobjects_common": {
             "objectNumber": {
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.collectionobjects_common.objectNumber.inUse",
+                    "defaultMessage": "The identification number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.collectionobjects_common.objectNumber.name",
                     "defaultMessage": "Identification number"
@@ -22872,163 +23217,305 @@
                   "props": {
                     "name": "id",
                     "collapsible": true,
-                    "children": {
-                      "key": null,
-                      "ref": null,
-                      "props": {
-                        "children": [
-                          {
-                            "key": null,
-                            "ref": null,
-                            "props": {
-                              "children": [
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "objectNumber"
+                    "children": [
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "children": [
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "objectNumber"
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "numberOfObjects"
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "numberOfObjects"
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "otherNumberList",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "otherNumber",
-                                        "children": [
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "numberValue"
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "otherNumberList",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "otherNumber",
+                                          "children": [
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "numberValue"
+                                              },
+                                              "_owner": null
                                             },
-                                            "_owner": null
-                                          },
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "numberType"
-                                            },
-                                            "_owner": null
-                                          }
-                                        ]
-                                      },
-                                      "_owner": null
-                                    }
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "numberType"
+                                              },
+                                              "_owner": null
+                                            }
+                                          ]
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "collection"
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "collection"
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "recordStatus"
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "recordStatus"
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "publishToList",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "publishTo"
-                                      },
-                                      "_owner": null
-                                    }
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "publishToList",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "publishTo"
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "inventoryStatusList",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "inventoryStatus"
-                                      },
-                                      "_owner": null
-                                    }
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "inventoryStatusList",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "inventoryStatus"
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
                                   },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "briefDescriptions",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "briefDescription"
-                                      },
-                                      "_owner": null
-                                    }
-                                  },
-                                  "_owner": null
-                                }
-                              ]
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "briefDescriptions",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "briefDescription"
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
+                                  }
+                                ]
+                              },
+                              "_owner": null
                             },
-                            "_owner": null
-                          },
-                          {
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "children": [
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "materialGroupList",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "materialGroup",
+                                          "tabular": false,
+                                          "children": {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "material",
+                                              "label": "",
+                                              "embedded": true
+                                            },
+                                            "_owner": null
+                                          }
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "materialHandlingGroupList",
+                                      "subpath": "ns2:collectionobjects_materials",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "materialHandlingGroup",
+                                          "children": [
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "handling"
+                                              },
+                                              "_owner": null
+                                            },
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "handlingNote"
+                                              },
+                                              "_owner": null
+                                            }
+                                          ]
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "materialContainerGroupList",
+                                      "subpath": "ns2:collectionobjects_materials",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "materialContainerGroup",
+                                          "children": [
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "container"
+                                              },
+                                              "_owner": null
+                                            },
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "containerNote"
+                                              },
+                                              "_owner": null
+                                            }
+                                          ]
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "materialConditionGroupList",
+                                      "subpath": "ns2:collectionobjects_materials",
+                                      "children": {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "materialConditionGroup",
+                                          "children": [
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "condition"
+                                              },
+                                              "_owner": null
+                                            },
+                                            {
+                                              "key": null,
+                                              "ref": null,
+                                              "props": {
+                                                "name": "conditionNote"
+                                              },
+                                              "_owner": null
+                                            }
+                                          ]
+                                        },
+                                        "_owner": null
+                                      }
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "computedCurrentLocation"
+                                    },
+                                    "_owner": null
+                                  }
+                                ]
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "annotationGroupList",
+                          "subpath": "ns2:collectionobjects_annotation",
+                          "children": {
                             "key": null,
                             "ref": null,
                             "props": {
+                              "name": "annotationGroup",
                               "children": [
                                 {
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "materialGroupList",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "materialGroup",
-                                        "tabular": false,
-                                        "children": {
-                                          "key": null,
-                                          "ref": null,
-                                          "props": {
-                                            "name": "material",
-                                            "label": "",
-                                            "embedded": true
-                                          },
-                                          "_owner": null
-                                        }
-                                      },
-                                      "_owner": null
-                                    }
+                                    "name": "annotationType"
                                   },
                                   "_owner": null
                                 },
@@ -23036,34 +23523,7 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "materialHandlingGroupList",
-                                    "subpath": "ns2:collectionobjects_materials",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "materialHandlingGroup",
-                                        "children": [
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "handling"
-                                            },
-                                            "_owner": null
-                                          },
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "handlingNote"
-                                            },
-                                            "_owner": null
-                                          }
-                                        ]
-                                      },
-                                      "_owner": null
-                                    }
+                                    "name": "annotationNote"
                                   },
                                   "_owner": null
                                 },
@@ -23071,34 +23531,7 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "materialContainerGroupList",
-                                    "subpath": "ns2:collectionobjects_materials",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "materialContainerGroup",
-                                        "children": [
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "container"
-                                            },
-                                            "_owner": null
-                                          },
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "containerNote"
-                                            },
-                                            "_owner": null
-                                          }
-                                        ]
-                                      },
-                                      "_owner": null
-                                    }
+                                    "name": "annotationDate"
                                   },
                                   "_owner": null
                                 },
@@ -23106,42 +23539,7 @@
                                   "key": null,
                                   "ref": null,
                                   "props": {
-                                    "name": "materialConditionGroupList",
-                                    "subpath": "ns2:collectionobjects_materials",
-                                    "children": {
-                                      "key": null,
-                                      "ref": null,
-                                      "props": {
-                                        "name": "materialConditionGroup",
-                                        "children": [
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "condition"
-                                            },
-                                            "_owner": null
-                                          },
-                                          {
-                                            "key": null,
-                                            "ref": null,
-                                            "props": {
-                                              "name": "conditionNote"
-                                            },
-                                            "_owner": null
-                                          }
-                                        ]
-                                      },
-                                      "_owner": null
-                                    }
-                                  },
-                                  "_owner": null
-                                },
-                                {
-                                  "key": null,
-                                  "ref": null,
-                                  "props": {
-                                    "name": "computedCurrentLocation"
+                                    "name": "annotationAuthor"
                                   },
                                   "_owner": null
                                 }
@@ -23149,10 +23547,10 @@
                             },
                             "_owner": null
                           }
-                        ]
-                      },
-                      "_owner": null
-                    }
+                        },
+                        "_owner": null
+                      }
+                    ]
                   },
                   "_owner": null
                 },
@@ -26866,6 +27264,10 @@
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.conservation_common.conservationNumber.inUse",
+                    "defaultMessage": "The reference number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.conservation_common.conservationNumber.name",
                     "defaultMessage": "Reference number"
@@ -28678,6 +29080,26 @@
       },
       "name": "contact"
     },
+    "export": {
+      "messages": {
+        "record": {
+          "name": {
+            "id": "record.export.name",
+            "defaultMessage": "Export"
+          },
+          "collectionName": {
+            "id": "record.export.collectionName",
+            "defaultMessage": "Exports"
+          }
+        }
+      },
+      "serviceConfig": {
+        "servicePath": "exports",
+        "serviceType": "utility"
+      },
+      "deletePermType": "hard",
+      "name": "export"
+    },
     "group": {
       "messages": {
         "record": {
@@ -29087,6 +29509,869 @@
       "deletePermType": "hard",
       "name": "idgenerator"
     },
+    "insurance": {
+      "messages": {
+        "record": {
+          "name": {
+            "id": "record.insurance.name",
+            "defaultMessage": "Insurance/Indemnity"
+          },
+          "collectionName": {
+            "id": "record.insurance.collectionName",
+            "defaultMessage": "Insurance/Indemnities"
+          }
+        },
+        "inputTable": {
+          "insurancePurchasePrice": {
+            "id": "inputTable.insurance.insurancePurchasePrice",
+            "defaultMessage": "Insurance/indemnity price"
+          },
+          "minimumLiabilityPrice": {
+            "id": "inputTable.insurance.minimumLiabilityPrice",
+            "defaultMessage": "Minimum liability price"
+          },
+          "authorization": {
+            "id": "inputTable.insurance.authorization",
+            "defaultMessage": "Authorization"
+          }
+        },
+        "panel": {
+          "info": {
+            "id": "panel.insurance.info",
+            "defaultMessage": "Insurance and Indemnity Information"
+          }
+        }
+      },
+      "serviceConfig": {
+        "serviceName": "Insurance",
+        "servicePath": "insurances",
+        "serviceType": "procedure",
+        "objectName": "Insurance",
+        "documentName": "insurances"
+      },
+      "advancedSearch": {
+        "op": "or",
+        "value": [
+          {
+            "op": "cont",
+            "path": "ns2:insurances_common/insuranceIndemnityReferenceNumber"
+          },
+          {
+            "op": "eq",
+            "path": "ns2:insurances_common/insuranceIndemnityType"
+          },
+          {
+            "op": "eq",
+            "path": "ns2:insurances_common/insurerIndemnifier"
+          },
+          {
+            "op": "cont",
+            "path": "ns2:insurances_common/insuranceIndemnityPolicyNumber"
+          },
+          {
+            "op": "eq",
+            "path": "ns2:insurances_common/insuranceIndemnityAuthorizer"
+          },
+          {
+            "op": "eq",
+            "path": "ns2:insurances_common/insuranceIndemnityStatusGroupList/insuranceIndemnityStatusGroup/insuranceIndemnityStatus"
+          },
+          {
+            "op": "range",
+            "path": "ns2:insurances_common/insuranceIndemnityStatusGroupList/insuranceIndemnityStatusGroup/insuranceIndemnityStatusDate"
+          },
+          {
+            "op": "eq",
+            "path": "ns2:insurances_common/quoteProviderGroupList/quoteProviderGroup/insuranceIndemnityQuoteProvider"
+          },
+          {
+            "op": "cont",
+            "path": "ns2:collectionspace_core/updatedBy"
+          },
+          {
+            "op": "range",
+            "path": "ns2:collectionspace_core/updatedAt"
+          }
+        ]
+      },
+      "columns": {
+        "default": {
+          "insuranceIndemnityReferenceNumber": {
+            "messages": {
+              "label": {
+                "id": "column.insurance.default.insuranceIndemnityReferenceNumber",
+                "defaultMessage": "Reference number"
+              }
+            },
+            "order": 10,
+            "sortBy": "insurances_common:insuranceIndemnityReferenceNumber",
+            "width": 200
+          },
+          "insurerIndemnifier": {
+            "messages": {
+              "label": {
+                "id": "column.insurance.default.insurerIndemnifier",
+                "defaultMessage": "Insurer/indemnifier"
+              }
+            },
+            "order": 20,
+            "sortBy": "insurances_common:insurerIndemnifier",
+            "width": 400
+          },
+          "updatedAt": {
+            "messages": {
+              "label": {
+                "id": "column.insurance.default.updatedAt",
+                "defaultMessage": "Updated"
+              }
+            },
+            "order": 30,
+            "sortBy": "collectionspace_core:updatedAt",
+            "width": 150
+          }
+        }
+      },
+      "fields": {
+        "document": {
+          "[config]": {
+            "view": {
+              "type": "CompoundInput",
+              "props": {
+                "defaultChildSubpath": "ns2:insurances_common"
+              }
+            }
+          },
+          "ns2:collectionspace_core": {
+            "[config]": {
+              "searchDisabled": false,
+              "extensionName": "core",
+              "extensionParentConfig": {
+                "view": {
+                  "type": "CompoundInput",
+                  "props": {
+                    "defaultChildSubpath": "ns2:insurances_common"
+                  }
+                }
+              }
+            },
+            "createdAt": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATETIME",
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.createdAt.name",
+                    "defaultMessage": "Created time"
+                  }
+                },
+                "searchDisabled": false,
+                "searchView": {
+                  "type": "DateInput"
+                },
+                "view": {
+                  "type": "DateTimeInput",
+                  "props": {
+                    "readOnly": true
+                  }
+                }
+              }
+            },
+            "createdBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.createdBy.name",
+                    "defaultMessage": "Created by"
+                  }
+                },
+                "searchDisabled": false,
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "updatedAt": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATETIME",
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.updatedAt.name",
+                    "defaultMessage": "Last updated time"
+                  }
+                },
+                "searchDisabled": false,
+                "searchView": {
+                  "type": "DateInput"
+                },
+                "view": {
+                  "type": "DateTimeInput",
+                  "props": {
+                    "readOnly": true
+                  }
+                }
+              }
+            },
+            "updatedBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.updatedBy.name",
+                    "defaultMessage": "Last updated by"
+                  }
+                },
+                "searchDisabled": false,
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            }
+          },
+          "ns2:insurances_common": {
+            "insuranceIndemnityReferenceNumber": {
+              "[config]": {
+                "cloneable": false,
+                "messages": {
+                  "inUse": {
+                    "id": "field.insurances_common.insuranceIndemnityReferenceNumber.inUse",
+                    "defaultMessage": "The reference number {value} is in use by another record."
+                  },
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityReferenceNumber.name",
+                    "defaultMessage": "Reference number"
+                  }
+                },
+                "required": true,
+                "searchView": {
+                  "type": "TextInput"
+                },
+                "view": {
+                  "type": "IDGeneratorInput",
+                  "props": {
+                    "source": "insurance,indemnity"
+                  }
+                }
+              }
+            },
+            "insuranceIndemnityType": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityType.name",
+                    "defaultMessage": "Type"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "insurancetype"
+                  }
+                }
+              }
+            },
+            "insurerIndemnifier": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.insurances_common.insurerIndemnifier.name",
+                    "defaultMessage": "Insurer/indemnifier"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,person/ulan,organization/local,organization/shared,organization/ulan"
+                  }
+                }
+              }
+            },
+            "insuranceIndemnityPolicyNumber": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityPolicyNumber.name",
+                    "defaultMessage": "Policy number"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "insuranceIndemnityCurrency": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.insurances_common.insuranceIndemnityCurrency.fullName",
+                    "defaultMessage": "Insurance/indemnity price currency"
+                  },
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityCurrency.name",
+                    "defaultMessage": "Currency"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "currency"
+                  }
+                }
+              }
+            },
+            "insuranceIndemnityValue": {
+              "[config]": {
+                "dataType": "DATA_TYPE_FLOAT",
+                "messages": {
+                  "fullName": {
+                    "id": "field.insurances_common.insuranceIndemnityValue.fullName",
+                    "defaultMessage": "Insurance/indemnity price value"
+                  },
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityValue.name",
+                    "defaultMessage": "Value"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "minimumLiabilityCurrency": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.insurances_common.minimumLiabilityCurrency.fullName",
+                    "defaultMessage": "Minimum liability price currency"
+                  },
+                  "name": {
+                    "id": "field.insurances_common.minimumLiabilityCurrency.name",
+                    "defaultMessage": "Currency"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "currency"
+                  }
+                }
+              }
+            },
+            "minimumLiabilityValue": {
+              "[config]": {
+                "dataType": "DATA_TYPE_FLOAT",
+                "messages": {
+                  "fullName": {
+                    "id": "field.insurances_common.minimumLiabilityValue.fullName",
+                    "defaultMessage": "Minimum liability price value"
+                  },
+                  "name": {
+                    "id": "field.insurances_common.minimumLiabilityValue.name",
+                    "defaultMessage": "Value"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "insuranceIndemnityAuthorizer": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityAuthorizer.name",
+                    "defaultMessage": "Authorizer"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared/person/ulan"
+                  }
+                }
+              }
+            },
+            "insuranceIndemnityAuthorizationDate": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATE",
+                "messages": {
+                  "fullName": {
+                    "id": "field.insurances_common.insuranceIndemnityAuthorizationDate.fullName",
+                    "defaultMessage": "Authorization date"
+                  },
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityAuthorizationDate.name",
+                    "defaultMessage": "Date"
+                  }
+                },
+                "view": {
+                  "type": "DateInput"
+                }
+              }
+            },
+            "insuranceIndemnityStatusGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "insuranceIndemnityStatusGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.insurances_common.insuranceIndemnityStatusGroup.name",
+                      "defaultMessage": "Status"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "insuranceIndemnityStatus": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityStatus.fullName",
+                        "defaultMessage": "Status type"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityStatus.name",
+                        "defaultMessage": "Type"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "insurancestatus"
+                      }
+                    }
+                  }
+                },
+                "insuranceIndemnityStatusDate": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityStatusDate.fullName",
+                        "defaultMessage": "Status date"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityStatusDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "dataType": "DATA_TYPE_DATE",
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                },
+                "insuranceIndemnityStatusNote": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityStatusNote.fullName",
+                        "defaultMessage": "Status note"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityStatusNote.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "insuranceIndemnityNote": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.insurances_common.insuranceIndemnityNote.name",
+                    "defaultMessage": "Note"
+                  }
+                },
+                "view": {
+                  "type": "TextInput",
+                  "props": {
+                    "multiline": true
+                  }
+                }
+              }
+            },
+            "quoteProviderGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "quoteProviderGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.insurances_common.quoteProviderGroup.name",
+                      "defaultMessage": "Quote"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "insuranceIndemnityQuoteProvider": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteProvider.fullName",
+                        "defaultMessage": "Quote provider"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteProvider.name",
+                        "defaultMessage": "Provider"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/shared,person/ulan,organization/local,organization/shared,organization/ulan"
+                      }
+                    }
+                  }
+                },
+                "insuranceIndemnityQuoteCurrency": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteCurrency.fullName",
+                        "defaultMessage": "Quote currency"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteCurrency.name",
+                        "defaultMessage": "Currency"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "currency"
+                      }
+                    }
+                  }
+                },
+                "insuranceIndemnityQuoteValue": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_FLOAT",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteValue.fullName",
+                        "defaultMessage": "Quote value"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteValue.name",
+                        "defaultMessage": "Value"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "insuranceIndemnityQuoteDate": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteDate.fullName",
+                        "defaultMessage": "Quote date"
+                      },
+                      "name": {
+                        "id": "field.insurances_common.insuranceIndemnityQuoteDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "forms": {
+        "default": {
+          "messages": {
+            "name": {
+              "id": "form.insurance.default.name",
+              "defaultMessage": "Standard Template"
+            }
+          },
+          "template": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "name": "document",
+              "children": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "name": "info",
+                  "collapsible": true,
+                  "children": [
+                    {
+                      "key": null,
+                      "ref": null,
+                      "props": {
+                        "children": [
+                          {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "children": [
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "insuranceIndemnityReferenceNumber"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "insuranceIndemnityType"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "insurerIndemnifier"
+                                  },
+                                  "_owner": null
+                                }
+                              ]
+                            },
+                            "_owner": null
+                          },
+                          {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "children": [
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "insuranceIndemnityPolicyNumber"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "insurancePurchasePrice",
+                                    "children": [
+                                      {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "insuranceIndemnityCurrency"
+                                        },
+                                        "_owner": null
+                                      },
+                                      {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "insuranceIndemnityValue"
+                                        },
+                                        "_owner": null
+                                      }
+                                    ]
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "minimumLiabilityPrice",
+                                    "children": [
+                                      {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "minimumLiabilityCurrency"
+                                        },
+                                        "_owner": null
+                                      },
+                                      {
+                                        "key": null,
+                                        "ref": null,
+                                        "props": {
+                                          "name": "minimumLiabilityValue"
+                                        },
+                                        "_owner": null
+                                      }
+                                    ]
+                                  },
+                                  "_owner": null
+                                }
+                              ]
+                            },
+                            "_owner": null
+                          }
+                        ]
+                      },
+                      "_owner": null
+                    },
+                    {
+                      "key": null,
+                      "ref": null,
+                      "props": {
+                        "name": "authorization",
+                        "children": [
+                          {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "name": "insuranceIndemnityAuthorizer"
+                            },
+                            "_owner": null
+                          },
+                          {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "name": "insuranceIndemnityAuthorizationDate"
+                            },
+                            "_owner": null
+                          }
+                        ]
+                      },
+                      "_owner": null
+                    },
+                    {
+                      "key": null,
+                      "ref": null,
+                      "props": {
+                        "name": "insuranceIndemnityStatusGroupList",
+                        "children": {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "insuranceIndemnityStatusGroup",
+                            "children": [
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityStatus"
+                                },
+                                "_owner": null
+                              },
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityStatusDate"
+                                },
+                                "_owner": null
+                              },
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityStatusNote"
+                                },
+                                "_owner": null
+                              }
+                            ]
+                          },
+                          "_owner": null
+                        }
+                      },
+                      "_owner": null
+                    },
+                    {
+                      "key": null,
+                      "ref": null,
+                      "props": {
+                        "name": "insuranceIndemnityNote"
+                      },
+                      "_owner": null
+                    },
+                    {
+                      "key": null,
+                      "ref": null,
+                      "props": {
+                        "name": "quoteProviderGroupList",
+                        "children": {
+                          "key": null,
+                          "ref": null,
+                          "props": {
+                            "name": "quoteProviderGroup",
+                            "children": [
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityQuoteProvider"
+                                },
+                                "_owner": null
+                              },
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityQuoteCurrency"
+                                },
+                                "_owner": null
+                              },
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityQuoteValue"
+                                },
+                                "_owner": null
+                              },
+                              {
+                                "key": null,
+                                "ref": null,
+                                "props": {
+                                  "name": "insuranceIndemnityQuoteDate"
+                                },
+                                "_owner": null
+                              }
+                            ]
+                          },
+                          "_owner": null
+                        }
+                      },
+                      "_owner": null
+                    }
+                  ]
+                },
+                "_owner": null
+              }
+            },
+            "_owner": null
+          }
+        }
+      },
+      "name": "insurance"
+    },
     "loanout": {
       "messages": {
         "record": {
@@ -29304,6 +30589,10 @@
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.loansout_common.loanOutNumber.inUse",
+                    "defaultMessage": "The loan out number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.loansout_common.loanOutNumber.name",
                     "defaultMessage": "Loan out number"
@@ -31142,6 +32431,10 @@
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.media_common.identificationNumber.inUse",
+                    "defaultMessage": "The identification number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.media_common.identificationNumber.name",
                     "defaultMessage": "Identification number"
@@ -32355,6 +33648,22 @@
                   }
                 }
               }
+            },
+            "altText": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.media_common.altText.name",
+                    "defaultMessage": "Alt text"
+                  }
+                },
+                "view": {
+                  "type": "TextInput",
+                  "props": {
+                    "multiline": true
+                  }
+                }
+              }
             }
           },
           "ns2:media_materials": {
@@ -32633,6 +33942,14 @@
                       "ref": null,
                       "props": {
                         "name": "description"
+                      },
+                      "_owner": null
+                    },
+                    {
+                      "key": null,
+                      "ref": null,
+                      "props": {
+                        "name": "altText"
                       },
                       "_owner": null
                     }
@@ -32919,6 +34236,10 @@
             "movementReferenceNumber": {
               "[config]": {
                 "messages": {
+                  "inUse": {
+                    "id": "field.movements_common.movementReferenceNumber.inUse",
+                    "defaultMessage": "The reference number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.movements_common.movementReferenceNumber.name",
                     "defaultMessage": "Reference number"
@@ -33897,6 +35218,10 @@
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.objectexit_common.exitNumber.inUse",
+                    "defaultMessage": "The exit number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.objectexit_common.exitNumber.name",
                     "defaultMessage": "Exit number"
@@ -47381,6 +48706,1582 @@
       },
       "name": "place"
     },
+    "transport": {
+      "messages": {
+        "record": {
+          "name": {
+            "id": "record.transport.name",
+            "defaultMessage": "Transport"
+          },
+          "collectionName": {
+            "id": "record.transport.collectionName",
+            "defaultMessage": "Transports"
+          }
+        },
+        "inputTable": {
+          "transporter": {
+            "id": "inputTable.transport.transporter",
+            "defaultMessage": "Transporter"
+          },
+          "authorization": {
+            "id": "inputTable.transport.authorization",
+            "defaultMessage": "Authorization"
+          },
+          "departure": {
+            "id": "inputTable.transport.departure",
+            "defaultMessage": "Departure"
+          },
+          "arrival": {
+            "id": "inputTable.transport.arrival",
+            "defaultMessage": "Arrival"
+          },
+          "finalShippingCost": {
+            "id": "inputTable.transport.finalShippingCost",
+            "defaultMessage": "Final shipping cost"
+          },
+          "customsBroker": {
+            "id": "inputTable.transport.customsBroker",
+            "defaultMessage": "Customs broker"
+          },
+          "customsDeclaredValue": {
+            "id": "inputTable.transport.customsDeclaredValue",
+            "defaultMessage": "Declared value for customs"
+          },
+          "customsFee": {
+            "id": "inputTable.transport.customsFee",
+            "defaultMessage": "Customs fee"
+          }
+        },
+        "panel": {
+          "info": {
+            "id": "panel.transport.info",
+            "defaultMessage": "Transport Information"
+          },
+          "cost": {
+            "id": "panel.transport.cost",
+            "defaultMessage": "Cost Information"
+          }
+        }
+      },
+      "serviceConfig": {
+        "serviceName": "Transport",
+        "servicePath": "transports",
+        "serviceType": "procedure",
+        "objectName": "Transport",
+        "documentName": "transports"
+      },
+      "advancedSearch": {
+        "op": "or",
+        "value": [
+          {
+            "op": "cont",
+            "path": "ns2:transports_common/transportReferenceNumber"
+          },
+          {
+            "op": "eq",
+            "path": "ns2:transports_common/courierGroupList/courierGroup/courier"
+          },
+          {
+            "op": "cont",
+            "path": "ns2:collectionspace_core/updatedBy"
+          },
+          {
+            "op": "range",
+            "path": "ns2:collectionspace_core/updatedAt"
+          }
+        ]
+      },
+      "columns": {
+        "default": {
+          "transportReferenceNumber": {
+            "messages": {
+              "label": {
+                "id": "column.transport.default.transportReferenceNumber",
+                "defaultMessage": "Transport reference number"
+              }
+            },
+            "order": 10,
+            "sortBy": "transports_common:transportReferenceNumber",
+            "width": 200
+          },
+          "transporter": {
+            "messages": {
+              "label": {
+                "id": "column.transport.default.transporter",
+                "defaultMessage": "Transporter"
+              }
+            },
+            "order": 20,
+            "sortBy": "transports_common:transporter",
+            "width": 400
+          },
+          "updatedAt": {
+            "messages": {
+              "label": {
+                "id": "column.transport.default.updatedAt",
+                "defaultMessage": "Updated"
+              }
+            },
+            "order": 30,
+            "sortBy": "transports_core:updatedAt",
+            "width": 150
+          }
+        }
+      },
+      "fields": {
+        "document": {
+          "[config]": {
+            "view": {
+              "type": "CompoundInput",
+              "props": {
+                "defaultChildSubpath": "ns2:transports_common"
+              }
+            }
+          },
+          "ns2:collectionspace_core": {
+            "[config]": {
+              "searchDisabled": false,
+              "extensionName": "core",
+              "extensionParentConfig": {
+                "view": {
+                  "type": "CompoundInput",
+                  "props": {
+                    "defaultChildSubpath": "ns2:transports_common"
+                  }
+                }
+              }
+            },
+            "createdAt": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATETIME",
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.createdAt.name",
+                    "defaultMessage": "Created time"
+                  }
+                },
+                "searchDisabled": false,
+                "searchView": {
+                  "type": "DateInput"
+                },
+                "view": {
+                  "type": "DateTimeInput",
+                  "props": {
+                    "readOnly": true
+                  }
+                }
+              }
+            },
+            "createdBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.createdBy.name",
+                    "defaultMessage": "Created by"
+                  }
+                },
+                "searchDisabled": false,
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "updatedAt": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATETIME",
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.updatedAt.name",
+                    "defaultMessage": "Last updated time"
+                  }
+                },
+                "searchDisabled": false,
+                "searchView": {
+                  "type": "DateInput"
+                },
+                "view": {
+                  "type": "DateTimeInput",
+                  "props": {
+                    "readOnly": true
+                  }
+                }
+              }
+            },
+            "updatedBy": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.ext.core.updatedBy.name",
+                    "defaultMessage": "Last updated by"
+                  }
+                },
+                "searchDisabled": false,
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            }
+          },
+          "ns2:transports_common": {
+            "transportReferenceNumber": {
+              "[config]": {
+                "cloneable": false,
+                "messages": {
+                  "inUse": {
+                    "id": "field.transports_common.transportReferenceNumber.inUse",
+                    "defaultMessage": "The reference number {value} is in use by another record."
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportReferenceNumber.name",
+                    "defaultMessage": "Transport reference number"
+                  }
+                },
+                "required": true,
+                "searchView": {
+                  "type": "TextInput"
+                },
+                "view": {
+                  "type": "IDGeneratorInput",
+                  "props": {
+                    "source": "transport"
+                  }
+                }
+              }
+            },
+            "transporter": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transporter.fullName",
+                    "defaultMessage": "Transporter name"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transporter.name",
+                    "defaultMessage": "Name"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,organization/local,organization/shared"
+                  }
+                }
+              }
+            },
+            "transporterContact": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transporterContact.fullName",
+                    "defaultMessage": "Transporter contact"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transporterContact.name",
+                    "defaultMessage": "Contact"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared"
+                  }
+                }
+              }
+            },
+            "transporterContactNumber": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transporterContactNumber.fullName",
+                    "defaultMessage": "Transporter contact number"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transporterContactNumber.name",
+                    "defaultMessage": "Contact number"
+                  }
+                },
+                "view": {
+                  "type": "TextInput",
+                  "props": {
+                    "autoComplete": "cspace-number"
+                  }
+                }
+              }
+            },
+            "transportAuthorizer": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transportAuthorizer.fullName",
+                    "defaultMessage": "Transport authorizer"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportAuthorizer.name",
+                    "defaultMessage": "Authorizer"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared"
+                  }
+                }
+              }
+            },
+            "transportAuthorizationDate": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATE",
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transportAuthorizationDate.fullName",
+                    "defaultMessage": "Authorization date"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportAuthorizationDate.name",
+                    "defaultMessage": "Date"
+                  }
+                },
+                "view": {
+                  "type": "DateInput"
+                }
+              }
+            },
+            "departurePoint": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.departurePoint.fullName",
+                    "defaultMessage": "Departure point"
+                  },
+                  "name": {
+                    "id": "field.transports_common.departurePoint.name",
+                    "defaultMessage": "Point"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "organization/local,organization/shared,place/local"
+                  }
+                }
+              }
+            },
+            "transportDepartureDate": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATE",
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transportDepartureDate.fullName",
+                    "defaultMessage": "Departure date"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportDepartureDate.name",
+                    "defaultMessage": "Date"
+                  }
+                },
+                "view": {
+                  "type": "DateInput"
+                }
+              }
+            },
+            "transportDepartureTime": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transportDepartureTime.fullName",
+                    "defaultMessage": "Departure time"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportDepartureTime.name",
+                    "defaultMessage": "Time"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "destination": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.destination.fullName",
+                    "defaultMessage": "Arrival point"
+                  },
+                  "name": {
+                    "id": "field.transports_common.destination.name",
+                    "defaultMessage": "Point"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,organization/local,organization/shared"
+                  }
+                }
+              }
+            },
+            "transportArrivalDate": {
+              "[config]": {
+                "dataType": "DATA_TYPE_DATE",
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transportArrivalDate.fullName",
+                    "defaultMessage": "Arrival date"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportArrivalDate.name",
+                    "defaultMessage": "Date"
+                  }
+                },
+                "view": {
+                  "type": "DateInput"
+                }
+              }
+            },
+            "transportArrivalTime": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.transportArrivalTime.fullName",
+                    "defaultMessage": "Arrival time"
+                  },
+                  "name": {
+                    "id": "field.transports_common.transportArrivalTime.name",
+                    "defaultMessage": "Time"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "numberOfCrates": {
+              "[config]": {
+                "dataType": "DATA_TYPE_INT",
+                "messages": {
+                  "name": {
+                    "id": "field.transports_common.numberOfCrates.name",
+                    "defaultMessage": "Number of crates/objects"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "transportMethod": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.transports_common.transportMethod.name",
+                    "defaultMessage": "Transport method"
+                  }
+                },
+                "view": {
+                  "type": "OptionPickerInput",
+                  "props": {
+                    "source": "transportMethodTypes"
+                  }
+                }
+              }
+            },
+            "courierGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "courierGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "fields.transports_common.courierGroup.name",
+                      "defaultMessage": "Courier"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "courier": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.courier.fullName",
+                        "defaultMessage": "Courier name"
+                      },
+                      "name": {
+                        "id": "field.transports_common.courier.name",
+                        "defaultMessage": "Name"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/shared,organization/local,organization/shared"
+                      }
+                    }
+                  }
+                },
+                "courierContactNumber": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.courierContactNumber.fullName",
+                        "defaultMessage": "Courier contact number"
+                      },
+                      "name": {
+                        "id": "field.transports_common.courierContactNumber.name",
+                        "defaultMessage": "Contact number"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "transportTrackingNumberGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "transportTrackingNumberGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.transports_common.transportTrackingNumberGroup.name",
+                      "defaultMessage": "Tracking number"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "transportTrackingNumber": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.transportTrackingNumber.fullName",
+                        "defaultMessage": "Tracking number"
+                      },
+                      "name": {
+                        "id": "field.transports_common.transportTrackingNumber.name",
+                        "defaultMessage": "Number"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "transportTrackingNumberNote": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.transportTrackingNumberNote.fullName",
+                        "defaultMessage": "Tracking number note"
+                      },
+                      "name": {
+                        "id": "field.transports_common.transportTrackingNumberNote.name",
+                        "defaultMessage": "Note"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "transportRemarks": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.transports_common.transportRemarks.name",
+                    "defaultMessage": "Note"
+                  }
+                },
+                "view": {
+                  "type": "TextInput",
+                  "props": {
+                    "multiline": true
+                  }
+                }
+              }
+            },
+            "transportCostType": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.transports_common.transportCostType.name",
+                    "defaultMessage": "Transport cost type"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "transportcosttype"
+                  }
+                }
+              }
+            },
+            "finalShippingCostCurrency": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.finalShippingCostCurrency.fullName",
+                    "defaultMessage": "Final shipping cost currency"
+                  },
+                  "name": {
+                    "id": "field.transports_common.finalShippingCostCurrency.name",
+                    "defaultMessage": "Currency"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "currency"
+                  }
+                }
+              }
+            },
+            "finalShippingCostValue": {
+              "[config]": {
+                "dataType": "DATA_TYPE_FLOAT",
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.finalShippingCostValue.fullName",
+                    "defaultMessage": "Final shipping cost value"
+                  },
+                  "name": {
+                    "id": "field.transports_common.finalShippingCostValue.name",
+                    "defaultMessage": "Value"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "transportCostResponsibleParty": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.transports_common.transportCostResponsibleParty.name",
+                    "defaultMessage": "Transport cost responsible party"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "transportresponsibleparty"
+                  }
+                }
+              }
+            },
+            "insuranceCostResponsibleParty": {
+              "[config]": {
+                "messages": {
+                  "name": {
+                    "id": "field.transports_common.insuranceCostResponsibleParty.name",
+                    "defaultMessage": "Insurance/indemnity cost responsible party"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "transportresponsibleparty"
+                  }
+                }
+              }
+            },
+            "additionalCostsGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "additionalCostsGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.transports_common.additionalCostsGroup.name",
+                      "defaultMessage": "Additional cost"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "additionalCostsType": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.additionalCostsType.fullName",
+                        "defaultMessage": "Additional cost type"
+                      },
+                      "name": {
+                        "id": "field.transports_common.additionalCostsType.name",
+                        "defaultMessage": "Type"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "transportadditionalcosttype"
+                      }
+                    }
+                  }
+                },
+                "additionalCostsCurrency": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.additionalCostsCurrency.fullName",
+                        "defaultMessage": "Additional cost currency"
+                      },
+                      "name": {
+                        "id": "field.transports_common.additionalCostsCurrency.name",
+                        "defaultMessage": "Currency"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "currency"
+                      }
+                    }
+                  }
+                },
+                "additionalCostsValue": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_FLOAT",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.additionalCostsValue.fullName",
+                        "defaultMessage": "Additional cost value"
+                      },
+                      "name": {
+                        "id": "field.transports_common.additionalCostsValue.name",
+                        "defaultMessage": "Value"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                }
+              }
+            },
+            "customsBroker": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsBroker.fullName",
+                    "defaultMessage": "Customs broker name"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsBroker.name",
+                    "defaultMessage": "Name"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared,organization/local,organization/shared"
+                  }
+                }
+              }
+            },
+            "customsBrokerContact": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsBrokerContact.fullName",
+                    "defaultMessage": "Customs broker contact"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsBrokerContact.name",
+                    "defaultMessage": "Contact"
+                  }
+                },
+                "view": {
+                  "type": "AutocompleteInput",
+                  "props": {
+                    "source": "person/local,person/shared"
+                  }
+                }
+              }
+            },
+            "customsDeclaredValueCurrency": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsDeclaredValueCurrency.fullName",
+                    "defaultMessage": "Declared value for customs currency"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsDeclaredValueCurrency.name",
+                    "defaultMessage": "Currency"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "currency"
+                  }
+                }
+              }
+            },
+            "customsDeclaredValueAmount": {
+              "[config]": {
+                "dataType": "DATA_TYPE_FLOAT",
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsDeclaredValueAmount.fullName",
+                    "defaultMessage": "Declared value for customs amount"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsDeclaredValueAmount.name",
+                    "defaultMessage": "Amount"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "customsFeeCurrency": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsFeeCurrency.fullName",
+                    "defaultMessage": "Customs fee currency"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsFeeCurrency.name",
+                    "defaultMessage": "Currency"
+                  }
+                },
+                "view": {
+                  "type": "TermPickerInput",
+                  "props": {
+                    "source": "currency"
+                  }
+                }
+              }
+            },
+            "customsFeeValue": {
+              "[config]": {
+                "dataType": "DATA_TYPE_FLOAT",
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsFeeValue.fullName",
+                    "defaultMessage": "Customs fee value"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsFeeValue.name",
+                    "defaultMessage": "Value"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "customsFeeNote": {
+              "[config]": {
+                "messages": {
+                  "fullName": {
+                    "id": "field.transports_common.customsFeeNote.fullName",
+                    "defaultMessage": "Customs fee note"
+                  },
+                  "name": {
+                    "id": "field.transports_common.customsFeeNote.name",
+                    "defaultMessage": "Note"
+                  }
+                },
+                "view": {
+                  "type": "TextInput"
+                }
+              }
+            },
+            "shippingQuoteGroupList": {
+              "[config]": {
+                "view": {
+                  "type": "CompoundInput"
+                }
+              },
+              "shippingQuoteGroup": {
+                "[config]": {
+                  "messages": {
+                    "name": {
+                      "id": "field.transports_common.shippingQuotesGroup.name",
+                      "defaultMessage": "Shipping quote"
+                    }
+                  },
+                  "repeating": true,
+                  "view": {
+                    "type": "CompoundInput",
+                    "props": {
+                      "tabular": true
+                    }
+                  }
+                },
+                "shippingQuoteProvider": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.shippingQuoteProvider.fullName",
+                        "defaultMessage": "Shipping quote provider"
+                      },
+                      "name": {
+                        "id": "field.transports_common.shippingQuoteProvider.name",
+                        "defaultMessage": "Provider"
+                      }
+                    },
+                    "view": {
+                      "type": "AutocompleteInput",
+                      "props": {
+                        "source": "person/local,person/shared,organization/local,organization/shared"
+                      }
+                    }
+                  }
+                },
+                "shippingQuoteCurrency": {
+                  "[config]": {
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.shippingQuoteCurrency.fullName",
+                        "defaultMessage": "Shipping quote currency"
+                      },
+                      "name": {
+                        "id": "field.transports_common.shippingQuoteCurrency.name",
+                        "defaultMessage": "Currency"
+                      }
+                    },
+                    "view": {
+                      "type": "TermPickerInput",
+                      "props": {
+                        "source": "currency"
+                      }
+                    }
+                  }
+                },
+                "shippingQuoteValue": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_FLOAT",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.shippingQuoteValue.fullName",
+                        "defaultMessage": "Shipping quote value"
+                      },
+                      "name": {
+                        "id": "field.transports_common.shippingQuoteValue.name",
+                        "defaultMessage": "Value"
+                      }
+                    },
+                    "view": {
+                      "type": "TextInput"
+                    }
+                  }
+                },
+                "shippingQuoteDate": {
+                  "[config]": {
+                    "dataType": "DATA_TYPE_DATE",
+                    "messages": {
+                      "fullName": {
+                        "id": "field.transports_common.shippingQuoteDate.fullName",
+                        "defaultMessage": "Shipping quote date"
+                      },
+                      "name": {
+                        "id": "field.transports_common.shippingQuoteDate.name",
+                        "defaultMessage": "Date"
+                      }
+                    },
+                    "view": {
+                      "type": "DateInput"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "forms": {
+        "default": {
+          "messages": {
+            "name": {
+              "id": "form.transport.default.name",
+              "defaultMessage": "Standard Template"
+            }
+          },
+          "template": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "name": "document",
+              "children": [
+                {
+                  "key": null,
+                  "ref": null,
+                  "props": {
+                    "name": "info",
+                    "collapsible": true,
+                    "children": [
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportReferenceNumber"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportMethod"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "numberOfCrates"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "transporter",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transporter"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transporterContact"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transporterContactNumber"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "authorization",
+                                "children": [
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "transportAuthorizer"
+                                    },
+                                    "_owner": null
+                                  },
+                                  {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                      "name": "transportAuthorizationDate"
+                                    },
+                                    "_owner": null
+                                  }
+                                ]
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "children": {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "transportTrackingNumberGroupList",
+                                    "children": {
+                                      "key": null,
+                                      "ref": null,
+                                      "props": {
+                                        "name": "transportTrackingNumberGroup",
+                                        "children": [
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "transportTrackingNumber"
+                                            },
+                                            "_owner": null
+                                          },
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "transportTrackingNumberNote"
+                                            },
+                                            "_owner": null
+                                          }
+                                        ]
+                                      },
+                                      "_owner": null
+                                    }
+                                  },
+                                  "_owner": null
+                                }
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "departure",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "departurePoint"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportDepartureDate"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportDepartureTime"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "arrival",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "destination"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportArrivalDate"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportArrivalTime"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "children": {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "courierGroupList",
+                                    "children": {
+                                      "key": null,
+                                      "ref": null,
+                                      "props": {
+                                        "name": "courierGroup",
+                                        "children": [
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "courier"
+                                            },
+                                            "_owner": null
+                                          },
+                                          {
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                              "name": "courierContactNumber"
+                                            },
+                                            "_owner": null
+                                          }
+                                        ]
+                                      },
+                                      "_owner": null
+                                    }
+                                  },
+                                  "_owner": null
+                                }
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "children": {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "transportRemarks"
+                                  },
+                                  "_owner": null
+                                }
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      }
+                    ]
+                  },
+                  "_owner": null
+                },
+                {
+                  "key": null,
+                  "ref": null,
+                  "props": {
+                    "name": "cost",
+                    "collapsible": true,
+                    "children": [
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportCostType"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "transportCostResponsibleParty"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "insuranceCostResponsibleParty"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "finalShippingCost",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "finalShippingCostCurrency"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "finalShippingCostValue"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "customsBroker",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsBroker"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsBrokerContact"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "customsDeclaredValue",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsDeclaredValueCurrency"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsDeclaredValueAmount"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "customsFee",
+                          "children": [
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsFeeCurrency"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsFeeValue"
+                              },
+                              "_owner": null
+                            },
+                            {
+                              "key": null,
+                              "ref": null,
+                              "props": {
+                                "name": "customsFeeNote"
+                              },
+                              "_owner": null
+                            }
+                          ]
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "additionalCostsGroupList",
+                          "children": {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "name": "additionalCostsGroup",
+                              "children": [
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "additionalCostsType"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "additionalCostsCurrency"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "additionalCostsValue"
+                                  },
+                                  "_owner": null
+                                }
+                              ]
+                            },
+                            "_owner": null
+                          }
+                        },
+                        "_owner": null
+                      },
+                      {
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                          "name": "shippingQuoteGroupList",
+                          "children": {
+                            "key": null,
+                            "ref": null,
+                            "props": {
+                              "name": "shippingQuoteGroup",
+                              "children": [
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "shippingQuoteProvider"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "shippingQuoteCurrency"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "shippingQuoteValue"
+                                  },
+                                  "_owner": null
+                                },
+                                {
+                                  "key": null,
+                                  "ref": null,
+                                  "props": {
+                                    "name": "shippingQuoteDate"
+                                  },
+                                  "_owner": null
+                                }
+                              ]
+                            },
+                            "_owner": null
+                          }
+                        },
+                        "_owner": null
+                      }
+                    ]
+                  },
+                  "_owner": null
+                }
+              ]
+            },
+            "_owner": null
+          }
+        }
+      },
+      "name": "transport"
+    },
     "uoc": {
       "messages": {
         "record": {
@@ -47482,7 +50383,7 @@
               }
             },
             "order": 30,
-            "sortBy": "uoc_common:authorizedBy",
+            "sortBy": "uoc_common:authorizationGroupList/0/authorizedBy",
             "width": 300
           },
           "updatedAt": {
@@ -47597,6 +50498,10 @@
               "[config]": {
                 "cloneable": false,
                 "messages": {
+                  "inUse": {
+                    "id": "field.uoc_common.referenceNumber.inUse",
+                    "defaultMessage": "The reference number {value} is in use by another record."
+                  },
                   "name": {
                     "id": "field.uoc_common.referenceNumber.name",
                     "defaultMessage": "Reference number"
@@ -58444,6 +61349,24 @@
         }
       }
     },
+    "insurance": {
+      "csid": "e6f52346-0d2c-4b68-8a35-0a27dad2f3f4",
+      "messages": {
+        "type": {
+          "id": "idGenerator.insurance.type",
+          "defaultMessage": "Insurance"
+        }
+      }
+    },
+    "indemnity": {
+      "csid": "26583488-7cb4-42b5-a8e2-4db005c8f5ef",
+      "messages": {
+        "type": {
+          "id": "idGenerator.indemnity.type",
+          "defaultMessage": "Indemnity"
+        }
+      }
+    },
     "intake": {
       "csid": "8088cfa5-c743-4824-bb4d-fb11b12847f7",
       "messages": {
@@ -58531,6 +61454,15 @@
         "type": {
           "id": "idGenerator.objectexit.type",
           "defaultMessage": "Object Exit"
+        }
+      }
+    },
+    "transport": {
+      "csid": "cc92bbc1-014a-4673-a81d-0c14375375d0",
+      "messages": {
+        "type": {
+          "id": "idGenerator.transport.type",
+          "defaultMessage": "Transport"
         }
       }
     },
@@ -58790,7 +61722,7 @@
           "defaultMessage": "Materials Authority profile"
         }
       },
-      "version": "2.0.0"
+      "version": "3.0.0-rc.1"
     }
   }
 }
