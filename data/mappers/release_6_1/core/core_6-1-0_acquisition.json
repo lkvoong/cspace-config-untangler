@@ -196,7 +196,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionSourcePerson",
+      "datacolumn": "acquisitionSourcePersonLocal",
       "required": "n"
     },
     {
@@ -219,7 +219,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionSourceOrganization",
+      "datacolumn": "acquisitionSourceOrganizationLocal",
       "required": "n"
     },
     {
@@ -261,7 +261,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPerson",
+      "datacolumn": "ownerPersonLocal",
       "required": "n"
     },
     {
@@ -284,7 +284,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganization",
+      "datacolumn": "ownerOrganizationLocal",
       "required": "n"
     },
     {
@@ -920,7 +920,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingSourcePerson",
+      "datacolumn": "acquisitionFundingSourcePersonLocal",
       "required": "n"
     },
     {
@@ -944,7 +944,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "acquisitionFundingSourceOrganization",
+      "datacolumn": "acquisitionFundingSourceOrganizationLocal",
       "required": "n"
     },
     {

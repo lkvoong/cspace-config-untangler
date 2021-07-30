@@ -111,7 +111,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationOrganization",
+      "datacolumn": "normalLocationOrganizationLocal",
       "required": "n"
     },
     {
@@ -199,7 +199,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationOrganization",
+      "datacolumn": "currentLocationOrganizationLocal",
       "required": "y"
     },
     {
@@ -385,7 +385,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "tempLocAuthorizedByLocal",
+      "datacolumn": "tempLocAuthorizedByPersonLocal",
       "required": "n"
     },
     {
@@ -408,7 +408,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "tempLocAuthorizedByUlan",
+      "datacolumn": "tempLocAuthorizedByPersonUlan",
       "required": "n"
     },
     {

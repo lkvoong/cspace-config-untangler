@@ -190,7 +190,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowerPerson",
+      "datacolumn": "borrowerPersonLocal",
       "required": "n"
     },
     {
@@ -213,7 +213,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowerOrganization",
+      "datacolumn": "borrowerOrganizationLocal",
       "required": "n"
     },
     {

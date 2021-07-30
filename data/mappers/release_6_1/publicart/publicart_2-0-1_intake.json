@@ -468,7 +468,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalIndividualLocal",
+      "datacolumn": "approvalIndividualPersonLocal",
       "required": "n"
     },
     {
@@ -492,7 +492,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvalIndividualShared",
+      "datacolumn": "approvalIndividualPersonShared",
       "required": "n"
     },
     {

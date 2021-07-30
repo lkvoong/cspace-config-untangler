@@ -381,7 +381,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal",
+      "datacolumn": "termSourceCitationLocal",
       "required": "n"
     },
     {
@@ -405,7 +405,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceWorldcat",
+      "datacolumn": "termSourceCitationWorldcat",
       "required": "n"
     },
     {
@@ -657,7 +657,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "agentPerson",
+      "datacolumn": "agentPersonLocal",
       "required": "n"
     },
     {
@@ -681,7 +681,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "agentOrganization",
+      "datacolumn": "agentOrganizationLocal",
       "required": "n"
     },
     {

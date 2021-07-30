@@ -233,7 +233,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicartCollectionLocal",
+      "datacolumn": "publicartCollectionOrganizationLocal",
       "required": "n"
     },
     {
@@ -256,7 +256,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicartCollectionShared",
+      "datacolumn": "publicartCollectionOrganizationShared",
       "required": "n"
     },
     {
@@ -1009,7 +1009,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "inscriptionContentInscriberPerson",
+      "datacolumn": "inscriptionContentInscriberPersonLocal",
       "required": "n"
     },
     {
@@ -1818,7 +1818,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionPersonLocal",
+      "datacolumn": "objectProductionPersonPersonLocal",
       "required": "n"
     },
     {
@@ -1842,7 +1842,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionPersonShared",
+      "datacolumn": "objectProductionPersonPersonShared",
       "required": "n"
     },
     {
@@ -1906,7 +1906,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionOrganizationLocal",
+      "datacolumn": "objectProductionOrganizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -1930,7 +1930,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "objectProductionOrganizationShared",
+      "datacolumn": "objectProductionOrganizationOrganizationShared",
       "required": "n"
     },
     {
@@ -2483,7 +2483,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonLocal",
+      "datacolumn": "contentPersonPersonLocal",
       "required": "n"
     },
     {
@@ -2506,7 +2506,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonShared",
+      "datacolumn": "contentPersonPersonShared",
       "required": "n"
     },
     {
@@ -2592,7 +2592,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationLocal",
+      "datacolumn": "contentOrganizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -2615,7 +2615,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationShared",
+      "datacolumn": "contentOrganizationOrganizationShared",
       "required": "n"
     },
     {
@@ -2837,7 +2837,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceLocal",
+      "datacolumn": "referenceCitationLocal",
       "required": "n"
     },
     {
@@ -2861,7 +2861,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceWorldcat",
+      "datacolumn": "referenceCitationWorldcat",
       "required": "n"
     },
     {

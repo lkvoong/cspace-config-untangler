@@ -258,7 +258,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lenderPerson",
+      "datacolumn": "lenderPersonLocal",
       "required": "n"
     },
     {
@@ -282,7 +282,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lenderOrganization",
+      "datacolumn": "lenderOrganizationLocal",
       "required": "n"
     },
     {

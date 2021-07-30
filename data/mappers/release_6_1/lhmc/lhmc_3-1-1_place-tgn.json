@@ -367,7 +367,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal",
+      "datacolumn": "termSourceCitationLocal",
       "required": "n"
     },
     {
@@ -391,7 +391,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceWorldcat",
+      "datacolumn": "termSourceCitationWorldcat",
       "required": "n"
     },
     {
@@ -604,7 +604,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPerson",
+      "datacolumn": "ownerPersonLocal",
       "required": "n"
     },
     {
@@ -628,7 +628,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganization",
+      "datacolumn": "ownerOrganizationLocal",
       "required": "n"
     },
     {
@@ -771,7 +771,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressMunicipalityLocal",
+      "datacolumn": "addressMunicipalityPlaceLocal",
       "required": "n"
     },
     {
@@ -795,7 +795,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressMunicipalityTgn",
+      "datacolumn": "addressMunicipalityPlaceTgn",
       "required": "n"
     },
     {
@@ -839,7 +839,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressStateOrProvinceLocal",
+      "datacolumn": "addressStateOrProvincePlaceLocal",
       "required": "n"
     },
     {
@@ -863,7 +863,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressStateOrProvinceTgn",
+      "datacolumn": "addressStateOrProvincePlaceTgn",
       "required": "n"
     },
     {
@@ -927,7 +927,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountryLocal",
+      "datacolumn": "addressCountryPlaceLocal",
       "required": "n"
     },
     {
@@ -951,7 +951,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountryTgn",
+      "datacolumn": "addressCountryPlaceTgn",
       "required": "n"
     },
     {
@@ -1560,7 +1560,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoReferencedByPerson",
+      "datacolumn": "geoReferencedByPersonLocal",
       "required": "n"
     },
     {
@@ -1584,7 +1584,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "geoReferencedByOrganization",
+      "datacolumn": "geoReferencedByOrganizationLocal",
       "required": "n"
     },
     {

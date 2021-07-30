@@ -666,7 +666,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "herbHybridParentLocal",
+      "datacolumn": "herbHybridParentTaxonLocal",
       "required": "n"
     },
     {
@@ -690,7 +690,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "herbHybridParentCommon",
+      "datacolumn": "herbHybridParentTaxonCommon",
       "required": "n"
     },
     {
@@ -1201,7 +1201,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "herbTypeSpecimenBasionymLocal",
+      "datacolumn": "herbTypeSpecimenBasionymTaxonLocal",
       "required": "n"
     },
     {
@@ -1225,7 +1225,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "herbTypeSpecimenBasionymCommon",
+      "datacolumn": "herbTypeSpecimenBasionymTaxonCommon",
       "required": "n"
     },
     {
@@ -2275,7 +2275,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPerson",
+      "datacolumn": "ownerPersonLocal",
       "required": "n"
     },
     {
@@ -2298,7 +2298,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganization",
+      "datacolumn": "ownerOrganizationLocal",
       "required": "n"
     },
     {
@@ -2522,7 +2522,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceLocal",
+      "datacolumn": "referenceCitationLocal",
       "required": "n"
     },
     {
@@ -2546,7 +2546,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceWorldcat",
+      "datacolumn": "referenceCitationWorldcat",
       "required": "n"
     },
     {
@@ -2628,7 +2628,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "fieldCollectorPerson",
+      "datacolumn": "fieldCollectorPersonLocal",
       "required": "n"
     },
     {
@@ -2651,7 +2651,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "fieldCollectorOrganization",
+      "datacolumn": "fieldCollectorOrganizationLocal",
       "required": "n"
     },
     {
@@ -2771,7 +2771,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "herbAssocTaxonLocal",
+      "datacolumn": "herbAssocTaxonTaxonLocal",
       "required": "n"
     },
     {
@@ -2795,7 +2795,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "herbAssocTaxonCommon",
+      "datacolumn": "herbAssocTaxonTaxonCommon",
       "required": "n"
     },
     {
@@ -3368,7 +3368,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByPerson",
+      "datacolumn": "measuredByPersonLocal",
       "required": "n"
     },
     {
@@ -3394,7 +3394,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByOrganization",
+      "datacolumn": "measuredByOrganizationLocal",
       "required": "n"
     },
     {
@@ -4111,7 +4111,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentConceptAssociated",
+      "datacolumn": "contentConceptConceptAssociated",
       "required": "n"
     },
     {
@@ -4134,7 +4134,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentConceptMaterial",
+      "datacolumn": "contentConceptConceptMaterial",
       "required": "n"
     },
     {
@@ -4285,7 +4285,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonLocal",
+      "datacolumn": "contentPersonPersonLocal",
       "required": "n"
     },
     {
@@ -4308,7 +4308,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonUlan",
+      "datacolumn": "contentPersonPersonUlan",
       "required": "n"
     },
     {
@@ -4394,7 +4394,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationLocal",
+      "datacolumn": "contentOrganizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -4417,7 +4417,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationUlan",
+      "datacolumn": "contentOrganizationOrganizationUlan",
       "required": "n"
     },
     {

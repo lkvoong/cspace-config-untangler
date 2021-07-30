@@ -660,7 +660,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "identByPerson",
+      "datacolumn": "identByPersonLocal",
       "required": "n"
     },
     {
@@ -684,7 +684,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "identByOrganization",
+      "datacolumn": "identByOrganizationLocal",
       "required": "n"
     },
     {
@@ -2286,7 +2286,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "fieldCollectorPerson",
+      "datacolumn": "fieldCollectorPersonLocal",
       "required": "n"
     },
     {
@@ -2309,7 +2309,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "fieldCollectorOrganization",
+      "datacolumn": "fieldCollectorOrganizationLocal",
       "required": "n"
     },
     {
@@ -3851,7 +3851,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "accessionUsedInClass",
+      "datacolumn": "accessionUsedInConceptClass",
       "required": "n"
     },
     {
@@ -3875,7 +3875,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "accessionUsedInResearch",
+      "datacolumn": "accessionUsedInConceptResearch",
       "required": "n"
     },
     {
@@ -4869,7 +4869,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerPerson",
+      "datacolumn": "ownerPersonLocal",
       "required": "n"
     },
     {
@@ -4892,7 +4892,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "ownerOrganization",
+      "datacolumn": "ownerOrganizationLocal",
       "required": "n"
     },
     {
@@ -5116,7 +5116,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceLocal",
+      "datacolumn": "referenceCitationLocal",
       "required": "n"
     },
     {
@@ -5140,7 +5140,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "referenceWorldcat",
+      "datacolumn": "referenceCitationWorldcat",
       "required": "n"
     },
     {
@@ -5691,7 +5691,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByPerson",
+      "datacolumn": "measuredByPersonLocal",
       "required": "n"
     },
     {
@@ -5717,7 +5717,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByOrganization",
+      "datacolumn": "measuredByOrganizationLocal",
       "required": "n"
     },
     {
@@ -6607,7 +6607,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonLocal",
+      "datacolumn": "contentPersonPersonLocal",
       "required": "n"
     },
     {
@@ -6630,7 +6630,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentPersonUlan",
+      "datacolumn": "contentPersonPersonUlan",
       "required": "n"
     },
     {
@@ -6716,7 +6716,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationLocal",
+      "datacolumn": "contentOrganizationOrganizationLocal",
       "required": "n"
     },
     {
@@ -6739,7 +6739,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contentOrganizationUlan",
+      "datacolumn": "contentOrganizationOrganizationUlan",
       "required": "n"
     },
     {
