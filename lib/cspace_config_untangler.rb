@@ -17,7 +17,7 @@ require 'thor'
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
   CCU.const_set('MAINPROFILE', 'core_7-0-0')
-  CCU.const_set('DATADIR', '/Users/kristina/code/cspace-config-untangler/data')
+  CCU.const_set('DATADIR', '/Users/kristina/code/untangler-cspace-config/data')
   CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
   config_file_names = Dir.new(CCU::CONFIGDIR).children
     .reject{ |e| e['readable'] }
@@ -27,8 +27,7 @@ module CspaceConfigUntangler
   File.delete('log.log') if File::exist?('log.log')
   CCU.const_set('LOG', Logger.new('log.log'))
   CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
-  CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers')
-
+  CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/untangler-cspace-config/main/data/mappers')
 
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
