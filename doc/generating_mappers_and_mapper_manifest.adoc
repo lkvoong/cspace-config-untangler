@@ -30,3 +30,9 @@ The following will recursively validate (in all the subdirectories) all the mapp
 The following will create a manifest listing all *valid* mappers created above:
 
 `exe/ccu mappers manifest -i release_# -o data/mapper_manifests/community_profile_mappers_release_#.json`
+
+To create a dev manifest:
+
+ `exe/ccu mappers manifest -i release_{release#} -o data/mapper_manifests/dev_mappers_{release#}.json -d true`
+
+The dev manifest is a subset of the full manifest, containing only a few mappers for use in dev/testing. To change which profile/record types are included in a dev manifest, edit the `DEV_MAPPERS` constant in `lib/cspace-config-untangler/manifest_dev.rb`
