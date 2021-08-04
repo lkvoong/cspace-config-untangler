@@ -299,7 +299,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal",
+      "datacolumn": "termSourceCitationLocal",
       "required": "n"
     },
     {
@@ -323,7 +323,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceWorldcat",
+      "datacolumn": "termSourceCitationWorldcat",
       "required": "n"
     },
     {
@@ -475,7 +475,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonAuthorPerson",
+      "datacolumn": "taxonAuthorPersonLocal",
       "required": "n"
     },
     {
@@ -499,7 +499,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonAuthorOrganization",
+      "datacolumn": "taxonAuthorOrganizationLocal",
       "required": "n"
     },
     {
@@ -604,7 +604,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonCitationLocal",
+      "datacolumn": "taxonCitationCitationLocal",
       "required": "n"
     },
     {
@@ -627,7 +627,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonCitationWorldcat",
+      "datacolumn": "taxonCitationCitationWorldcat",
       "required": "n"
     },
     {

@@ -17,7 +17,7 @@ require 'thor'
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
   CCU.const_set('MAINPROFILE', 'core_7-0-0')
-  CCU.const_set('DATADIR', '/Users/kristina/code/cspace-config-untangler/data')
+  CCU.const_set('DATADIR', '/Users/kristina/code/untangler-cspace-config/data')
   CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
   config_file_names = Dir.new(CCU::CONFIGDIR).children
     .reject{ |e| e['readable'] }
@@ -29,7 +29,6 @@ module CspaceConfigUntangler
   CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
   CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers')
 
-
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
 
@@ -38,6 +37,10 @@ module CspaceConfigUntangler
   autoload :JsonWritable, 'cspace_config_untangler/json_writable'
   autoload :SpecialRectype, 'cspace_config_untangler/special_rectype'
 
+  # command handlers
+  autoload :Manifest, 'cspace_config_untangler/manifest'
+  autoload :ManifestDev, 'cspace_config_untangler/manifest_dev'
+  
   # canned mappers
   autoload :ObjectHierarchy, 'cspace_config_untangler/object_hierarchy'
   autoload :AuthorityHierarchy, 'cspace_config_untangler/authority_hierarchy'

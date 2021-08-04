@@ -207,7 +207,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal",
+      "datacolumn": "termSourceCitationLocal",
       "required": "n"
     },
     {
@@ -231,7 +231,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceShared",
+      "datacolumn": "termSourceCitationShared",
       "required": "n"
     },
     {

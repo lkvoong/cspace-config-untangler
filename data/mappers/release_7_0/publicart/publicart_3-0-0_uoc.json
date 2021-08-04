@@ -441,7 +441,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "userInstitutionLocal",
+      "datacolumn": "userInstitutionOrganizationLocal",
       "required": "n"
     },
     {
@@ -465,7 +465,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "userInstitutionShared",
+      "datacolumn": "userInstitutionOrganizationShared",
       "required": "n"
     },
     {
@@ -1272,7 +1272,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationLocation",
+      "datacolumn": "locationLocationLocal",
       "required": "n"
     },
     {

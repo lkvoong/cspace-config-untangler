@@ -112,7 +112,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lenderPerson",
+      "datacolumn": "lenderPersonLocal",
       "required": "n"
     },
     {
@@ -136,7 +136,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lenderOrganization",
+      "datacolumn": "lenderOrganizationLocal",
       "required": "n"
     },
     {
@@ -486,7 +486,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonomyLocal",
+      "datacolumn": "taxonomyTaxonLocal",
       "required": "n"
     },
     {
@@ -509,7 +509,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonomyCommon",
+      "datacolumn": "taxonomyTaxonCommon",
       "required": "n"
     },
     {

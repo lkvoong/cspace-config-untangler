@@ -340,7 +340,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceLocal",
+      "datacolumn": "termSourceCitationLocal",
       "required": "n"
     },
     {
@@ -364,7 +364,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceWorldcat",
+      "datacolumn": "termSourceCitationWorldcat",
       "required": "n"
     },
     {
@@ -564,7 +564,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "foundingPlaceLocal",
+      "datacolumn": "foundingPlacePlaceLocal",
       "required": "n"
     },
     {
@@ -587,7 +587,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "foundingPlaceShared",
+      "datacolumn": "foundingPlacePlaceShared",
       "required": "n"
     },
     {
@@ -648,7 +648,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentPlaceLocal",
+      "datacolumn": "currentPlacePlaceLocal",
       "required": "n"
     },
     {
@@ -671,7 +671,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentPlaceShared",
+      "datacolumn": "currentPlacePlaceShared",
       "required": "n"
     },
     {

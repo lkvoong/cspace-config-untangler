@@ -172,21 +172,39 @@ Assumes that all mappers will be found in `#{CCU::MAPPER_DIR}` (CCU::MAPPER_DIR)
 
 These constants can be changed in `lib/cspace_config_untangler.rb` if necessary.
 LONGDESC
-    option :inputdir, desc: "Path to directory containing RecordMapper JSON files. Specify the path relative to #{CCU::MAPPER_DIR}", default: '', aliases: '-i' 
-    option :output, desc: 'Path to output file', default: "#{CCU::DATADIR}/mappers.json", aliases: '-o'
-    option :recursive, desc: 'y/n. Whether to traverse the inputdir recursively', default: 'y', aliases: '-r'
+    option(:inputdir,
+           type: :string,
+           desc: "Path to directory containing RecordMapper JSON files. Specify the path relative to #{CCU::MAPPER_DIR}",
+           default: '',
+           aliases: '-i')
+    option(:output,
+           type: :string,
+           desc: 'Path to output file',
+           default: "#{CCU::DATADIR}/mappers.json",
+           aliases: '-o')
+    option(:recursive,
+           type: :boolean,
+           desc: 'Whether to traverse the inputdir recursively',
+           default: true,
+           aliases: '-r')
+    option(:dev,
+           type: :boolean,
+           desc: 'Whether to output a dev manifest',
+           default: false,
+           aliases: '-d')
+    
     def manifest
-      indir = "#{CCU::MAPPER_DIR}/#{options[:inputdir]}"
-      unless Dir.exist?(indir)
+      indir = Pathname.new("#{CCU::MAPPER_DIR}/#{options[:inputdir]}")
+      unless indir.exist?
         puts "Directory does not exist: #{indir}"
         exit
       end
-      mapper_paths = Dir.glob("#{indir}/**/*.json")
-      h = { 'mappers' => mapper_paths.map{ |path| CCU::ManifestEntry.new(path: path) }.map(&:to_h).compact }
-
-      File.open(options[:output], "w") do |f|
-        f.write(JSON.pretty_generate(h))
-      end
+      puts "Building manifest with options:"
+      opts = {inputdir: indir, output: options[:output], recursive: options[:recursive]}
+      opts.each{ |key, val| puts "  #{key}: #{val}" }
+      puts "  dev: #{options[:dev]}"
+      builder = options[:dev] ? CCU::ManifestDev.new(**opts) : CCU::Manifest.new(**opts)
+      builder.build      
     end
 
     desc 'write', 'Writes JSON serializations of RecordMappers for the given rectype(s) for the given profiles.'

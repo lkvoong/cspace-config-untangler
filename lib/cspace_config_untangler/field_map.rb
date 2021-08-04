@@ -128,7 +128,8 @@ module CspaceConfigUntangler
             @hash["#{vs}refname"] = { column_name: "#{@field.name}Refname", transforms: {}, source_name: source_name }
           end
         else #multiple sources
-          DataColumnNamer.new(fieldname: @field.name, sources: value_source).result.each do |src, colname|
+          namer = DataColumnNamer.new(fieldname: @field.name, sources: transform_sources(value_source))
+          namer.result.each do |src, colname|
             @hash[src][:column_name] = colname
             @hash[src][:transforms] = {}
             @hash[src][:source_name] = get_source_name(src)
@@ -141,11 +142,31 @@ module CspaceConfigUntangler
         end
       end
 
+      def transform_sources(sources)
+        sources.map{|source| AuthoritySource.new(source) }
+      end
+
       def get_source_name(source)
-        source.sub(/^(option list|authority|vocabulary): /, '')
+        if source.is_a?(AuthoritySource)
+          source.string
+        else
+          source.sub(/^(option list|authority|vocabulary): /, '')
+        end
       end
     end #class FieldMapper
 
+    class AuthoritySource
+      ::AuthoritySource = CspaceConfigUntangler::FieldMap::AuthoritySource
+      attr_reader :type, :subtype, :string
+
+      def initialize(value_source)
+        @string = value_source
+        split = value_source.sub('authority: ', '').split('/')
+        @type = split[0]
+        @subtype = split[1]
+      end
+    end
+    
     class AuthorityConfigLookup
       ::AuthorityConfigLookup = CspaceConfigUntangler::FieldMap::AuthorityConfigLookup
       attr_reader :result
@@ -155,7 +176,7 @@ module CspaceConfigUntangler
         authsubtype = source[1]
         path = profile.config.dig('recordTypes', authtype, 'serviceConfig', 'servicePath')
         subpath = profile.config.dig('recordTypes', authtype, 'vocabularies', authsubtype,
-                                    'serviceConfig', 'servicePath')
+                                     'serviceConfig', 'servicePath')
         subpath = subpath.match(/\((.*)\)$/)[1]
         @result = [path, subpath]
       end
@@ -169,23 +190,27 @@ module CspaceConfigUntangler
         @sources = sources
         @result = {}
 
-        # build hash used to check whether to name using authority type, subtype, or both
-        srcs = @sources.map{ |s| s.sub('authority: ', '') }
-          .map{ |s| s.split('/') }
-        h = {}
-        srcs.each{ |s| h[s[0]] = [] }
-        srcs.each{ |s| h[s[0]] << s[1]}
         
-        @sources.each do |s|
-          name = @fieldname.clone
-          ssplit = s.sub('authority: ', '').split('/')
-          use_type = h.keys.size > 1 ? true : false
-          use_subtype = h[ssplit[0]].size > 1 ? true : false
-          name = use_type ? name << ssplit[0].capitalize : name
-          name = use_subtype ? name << ssplit[1].capitalize : name
-          @result[s] = name
+        # build hash used to check whether to name using authority type, subtype, or both
+        # h = {}
+        # srcs.each{ |s| h[s[0]] = [] }
+        # srcs.each{ |s| h[s[0]] << s[1]}
+        
+        @sources.each do |source|
+          # name = @fieldname.clone
+          # ssplit = s.sub('authority: ', '').split('/')
+          # use_type = h.keys.size > 1 ? true : false
+          # use_subtype = h[ssplit[0]].size > 1 ? true : false
+          # name = use_type ? name << ssplit[0].capitalize : name
+          # name = use_subtype ? name << ssplit[1].capitalize : name
+          name = "#{@fieldname}#{source.type.capitalize}#{source.subtype.capitalize}"
+          @result[source.string] = name
         end
       end
+
+      private
+
+
     end
   end
 end

@@ -233,7 +233,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservatorPerson",
+      "datacolumn": "conservatorPersonLocal",
       "required": "n"
     },
     {
@@ -256,7 +256,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "conservatorOrganization",
+      "datacolumn": "conservatorOrganizationLocal",
       "required": "n"
     },
     {
@@ -299,7 +299,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyPerson",
+      "datacolumn": "otherPartyPersonLocal",
       "required": "n"
     },
     {
@@ -323,7 +323,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "otherPartyOrganization",
+      "datacolumn": "otherPartyOrganizationLocal",
       "required": "n"
     },
     {

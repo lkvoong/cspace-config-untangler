@@ -112,9 +112,9 @@ RSpec.describe CCU::RecordType do
         context 'fieldname = reference' do
           # does NOT change datacolumn values, as one field's use of multiple authorities
           #  has already caused all datacolumn values to be different
-          it 'columnnames: reference referenceLocal referenceWorldcat' do
+          it 'columnnames: reference referenceCitationLocal referenceCitationWorldcat' do
             result = @mappings.select{ |m| m.fieldname == 'reference' }.map{ |m| m.datacolumn }.sort
-            expect(result).to eq(%w[reference referenceLocal referenceRefname referenceWorldcat])
+            expect(result).to eq(%w[reference referenceCitationLocal referenceCitationWorldcat referenceRefname])
           end
         end
         context 'fieldname = fieldLocVerbatim' do

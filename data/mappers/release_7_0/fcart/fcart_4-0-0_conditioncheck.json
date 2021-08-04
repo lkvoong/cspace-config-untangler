@@ -155,7 +155,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerPerson",
+      "datacolumn": "conditionCheckerPersonLocal",
       "required": "n"
     },
     {
@@ -178,7 +178,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrganization",
+      "datacolumn": "conditionCheckerOrganizationLocal",
       "required": "n"
     },
     {
