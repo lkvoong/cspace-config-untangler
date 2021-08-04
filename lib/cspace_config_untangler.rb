@@ -27,7 +27,7 @@ module CspaceConfigUntangler
   File.delete('log.log') if File::exist?('log.log')
   CCU.const_set('LOG', Logger.new('log.log'))
   CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
-  CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/untangler-cspace-config/main/data/mappers')
+  CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers')
 
   autoload :VERSION, 'cspace_config_untangler/version'
   autoload :CommandLine, 'cspace_config_untangler/command_line'
