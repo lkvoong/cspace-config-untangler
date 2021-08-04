@@ -38,6 +38,10 @@ module CspaceConfigUntangler
   autoload :JsonWritable, 'cspace_config_untangler/json_writable'
   autoload :SpecialRectype, 'cspace_config_untangler/special_rectype'
 
+  # command handlers
+  autoload :Manifest, 'cspace_config_untangler/manifest'
+  autoload :ManifestDev, 'cspace_config_untangler/manifest_dev'
+  
   # canned mappers
   autoload :ObjectHierarchy, 'cspace_config_untangler/object_hierarchy'
   autoload :AuthorityHierarchy, 'cspace_config_untangler/authority_hierarchy'
