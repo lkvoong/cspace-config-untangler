@@ -298,7 +298,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByPersonLocal",
+      "datacolumn": "measuredByPerson",
       "required": "n"
     },
     {
@@ -324,7 +324,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByOrganizationLocal",
+      "datacolumn": "measuredByOrganization",
       "required": "n"
     },
     {
@@ -513,7 +513,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contributorPersonLocal",
+      "datacolumn": "contributorPerson",
       "required": "n"
     },
     {
@@ -536,7 +536,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contributorOrganizationLocal",
+      "datacolumn": "contributorOrganization",
       "required": "n"
     },
     {
@@ -578,7 +578,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "creatorPersonLocal",
+      "datacolumn": "creatorPerson",
       "required": "n"
     },
     {
@@ -601,7 +601,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "creatorOrganizationLocal",
+      "datacolumn": "creatorOrganization",
       "required": "n"
     },
     {
@@ -682,7 +682,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publisherPersonLocal",
+      "datacolumn": "publisherPerson",
       "required": "n"
     },
     {
@@ -705,7 +705,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publisherOrganizationLocal",
+      "datacolumn": "publisherOrganization",
       "required": "n"
     },
     {
@@ -884,7 +884,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "rightsHolderPersonLocal",
+      "datacolumn": "rightsHolderPerson",
       "required": "n"
     },
     {
@@ -907,7 +907,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "rightsHolderOrganizationLocal",
+      "datacolumn": "rightsHolderOrganization",
       "required": "n"
     },
     {

@@ -133,7 +133,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanIndividualPersonLocal",
+      "datacolumn": "loanIndividualLocal",
       "required": "n"
     },
     {
@@ -157,7 +157,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanIndividualPersonShared",
+      "datacolumn": "loanIndividualShared",
       "required": "n"
     },
     {
@@ -398,7 +398,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersContactPersonLocal",
+      "datacolumn": "lendersContactLocal",
       "required": "n"
     },
     {
@@ -422,7 +422,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersContactPersonShared",
+      "datacolumn": "lendersContactShared",
       "required": "n"
     },
     {

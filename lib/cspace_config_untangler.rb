@@ -16,7 +16,7 @@ require 'thor'
 
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
-  CCU.const_set('MAINPROFILE', 'core_7-0-0')
+  CCU.const_set('MAINPROFILE', 'core_6-1-0')
   CCU.const_set('DATADIR', '/Users/kristina/code/untangler-cspace-config/data')
   CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
   config_file_names = Dir.new(CCU::CONFIGDIR).children
@@ -36,7 +36,8 @@ module CspaceConfigUntangler
   autoload :Iterable, 'cspace_config_untangler/iterable'
   autoload :JsonWritable, 'cspace_config_untangler/json_writable'
   autoload :SpecialRectype, 'cspace_config_untangler/special_rectype'
-
+  autoload :ColumnNameStylable, 'cspace_config_untangler/column_name_stylable'
+  
   # command handlers
   autoload :Manifest, 'cspace_config_untangler/manifest'
   autoload :ManifestDev, 'cspace_config_untangler/manifest_dev'
@@ -69,6 +70,8 @@ module CspaceConfigUntangler
 
   
   # mapping CSV data to CSpace XML
+  autoload :DataColumnNamerConsistent, 'cspace_config_untangler/field_map/data_column_namer_consistent'
+  autoload :DataColumnNamerFancy, 'cspace_config_untangler/field_map/data_column_namer_fancy'
   autoload :FieldMap, 'cspace_config_untangler/field_map'
   autoload :FieldMapper, 'cspace_config_untangler/field_map'
   autoload :FieldMapping, 'cspace_config_untangler/field_map'
@@ -83,6 +86,7 @@ module CspaceConfigUntangler
     Marshal.load(Marshal.dump(hash))
   end
 
+  # todo move to its own file
   module TrackAttributes
     def attr_readers
       self.class.instance_variable_get('@attr_readers')

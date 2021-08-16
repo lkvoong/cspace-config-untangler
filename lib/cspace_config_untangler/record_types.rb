@@ -73,7 +73,7 @@ module CspaceConfigUntangler
 
     def mappings
       checkhash = {}
-      mappings = fields.map{ |f| FieldMapper.new(field: f).mappings}.flatten
+      mappings = fields.map{ |f| FieldMapper.new(field: f, column_style: profile.column_style).mappings}.flatten
       # ensure unique datacolumn values for templates and mapper
       mappings.each do |mapping|
         if checkhash.key?(mapping.datacolumn)

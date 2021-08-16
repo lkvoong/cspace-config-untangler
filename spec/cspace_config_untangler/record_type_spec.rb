@@ -3,10 +3,10 @@ require 'spec_helper'
 RSpec.describe CCU::RecordType do
 
   before(:all) do
-    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
-    @core_profile = CCU::Profile.new(profile: 'core', rectypes: %w[collectionobject media person])
-    @anthro_profile = CCU::Profile.new(profile: 'anthro', rectypes: %w[collectionobject movement media])
-    @bg_profile = CCU::Profile.new(profile: 'botgarden', rectypes: %w[collectionobject])
+    CCU.const_set('CONFIGDIR', File.join('spec', 'fixtures', 'files', '7_0'))
+    @core_profile = CCU::Profile.new(profile: 'core_7-0-0', rectypes: %w[collectionobject media person])
+    @anthro_profile = CCU::Profile.new(profile: 'anthro_5-0-0', rectypes: %w[collectionobject movement media])
+    @bg_profile = CCU::Profile.new(profile: 'botgarden_3-0-0', rectypes: %w[collectionobject])
     @core_co = @core_profile.rectypes[0]
     @core_media = @core_profile.rectypes[1]
     @core_person = @core_profile.rectypes[2]

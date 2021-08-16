@@ -277,7 +277,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationLocal",
+      "datacolumn": "termSourceLocal",
       "required": "n"
     },
     {
@@ -301,7 +301,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationWorldcat",
+      "datacolumn": "termSourceWorldcat",
       "required": "n"
     },
     {
@@ -562,7 +562,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressMunicipalityPlaceLocal",
+      "datacolumn": "addressMunicipalityLocal",
       "required": "n"
     },
     {
@@ -586,7 +586,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressMunicipalityPlaceShared",
+      "datacolumn": "addressMunicipalityShared",
       "required": "n"
     },
     {
@@ -630,7 +630,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountyPlaceLocal",
+      "datacolumn": "addressCountyLocal",
       "required": "n"
     },
     {
@@ -654,7 +654,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountyPlaceShared",
+      "datacolumn": "addressCountyShared",
       "required": "n"
     },
     {
@@ -698,7 +698,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressStateOrProvincePlaceLocal",
+      "datacolumn": "addressStateOrProvinceLocal",
       "required": "n"
     },
     {
@@ -722,7 +722,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressStateOrProvincePlaceShared",
+      "datacolumn": "addressStateOrProvinceShared",
       "required": "n"
     },
     {
@@ -786,7 +786,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountryPlaceLocal",
+      "datacolumn": "addressCountryLocal",
       "required": "n"
     },
     {
@@ -810,7 +810,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "addressCountryPlaceShared",
+      "datacolumn": "addressCountryShared",
       "required": "n"
     },
     {

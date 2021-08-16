@@ -361,7 +361,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementContactPersonLocal",
+      "datacolumn": "movementContactLocal",
       "required": "n"
     },
     {
@@ -384,7 +384,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementContactPersonShared",
+      "datacolumn": "movementContactShared",
       "required": "n"
     },
     {

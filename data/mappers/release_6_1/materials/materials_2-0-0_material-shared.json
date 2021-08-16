@@ -415,7 +415,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationLocal",
+      "datacolumn": "termSourceLocal",
       "required": "n"
     },
     {
@@ -439,7 +439,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationShared",
+      "datacolumn": "termSourceShared",
       "required": "n"
     },
     {
@@ -582,7 +582,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionFamilyNameConceptMaterialclassification",
+      "datacolumn": "materialCompositionFamilyNameMaterialclassification",
       "required": "n"
     },
     {
@@ -606,7 +606,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionFamilyNameConceptSharedmaterialclassification",
+      "datacolumn": "materialCompositionFamilyNameSharedmaterialclassification",
       "required": "n"
     },
     {
@@ -650,7 +650,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionClassNameConceptMaterialclassification",
+      "datacolumn": "materialCompositionClassNameMaterialclassification",
       "required": "n"
     },
     {
@@ -674,7 +674,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionClassNameConceptSharedmaterialclassification",
+      "datacolumn": "materialCompositionClassNameSharedmaterialclassification",
       "required": "n"
     },
     {
@@ -718,7 +718,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionGenericNameConceptMaterialclassification",
+      "datacolumn": "materialCompositionGenericNameMaterialclassification",
       "required": "n"
     },
     {
@@ -742,7 +742,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCompositionGenericNameConceptSharedmaterialclassification",
+      "datacolumn": "materialCompositionGenericNameSharedmaterialclassification",
       "required": "n"
     },
     {
@@ -863,7 +863,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "discontinuedByOrganizationLocal",
+      "datacolumn": "discontinuedByLocal",
       "required": "n"
     },
     {
@@ -886,7 +886,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "discontinuedByOrganizationShared",
+      "datacolumn": "discontinuedByShared",
       "required": "n"
     },
     {
@@ -986,7 +986,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionOrganizationOrganizationLocal",
+      "datacolumn": "materialProductionOrganizationLocal",
       "required": "n"
     },
     {
@@ -1010,7 +1010,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionOrganizationOrganizationShared",
+      "datacolumn": "materialProductionOrganizationShared",
       "required": "n"
     },
     {
@@ -1095,7 +1095,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPersonPersonLocal",
+      "datacolumn": "materialProductionPersonLocal",
       "required": "n"
     },
     {
@@ -1119,7 +1119,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPersonPersonShared",
+      "datacolumn": "materialProductionPersonShared",
       "required": "n"
     },
     {
@@ -1204,7 +1204,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPlacePlaceLocal",
+      "datacolumn": "materialProductionPlaceLocal",
       "required": "n"
     },
     {
@@ -1228,7 +1228,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialProductionPlacePlaceShared",
+      "datacolumn": "materialProductionPlaceShared",
       "required": "n"
     },
     {
@@ -1313,7 +1313,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "featuredApplicationWorkLocal",
+      "datacolumn": "featuredApplicationLocal",
       "required": "n"
     },
     {
@@ -1337,7 +1337,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "featuredApplicationWorkShared",
+      "datacolumn": "featuredApplicationShared",
       "required": "n"
     },
     {
@@ -1401,7 +1401,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCitationSourceCitationLocal",
+      "datacolumn": "materialCitationSourceLocal",
       "required": "n"
     },
     {
@@ -1425,7 +1425,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialCitationSourceCitationShared",
+      "datacolumn": "materialCitationSourceShared",
       "required": "n"
     },
     {
@@ -1590,7 +1590,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingOrganizationOrganizationLocal",
+      "datacolumn": "materialTermAttributionContributingOrganizationLocal",
       "required": "n"
     },
     {
@@ -1614,7 +1614,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingOrganizationOrganizationShared",
+      "datacolumn": "materialTermAttributionContributingOrganizationShared",
       "required": "n"
     },
     {
@@ -1658,7 +1658,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingPersonPersonLocal",
+      "datacolumn": "materialTermAttributionContributingPersonLocal",
       "required": "n"
     },
     {
@@ -1682,7 +1682,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionContributingPersonPersonShared",
+      "datacolumn": "materialTermAttributionContributingPersonShared",
       "required": "n"
     },
     {
@@ -1746,7 +1746,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingOrganizationOrganizationLocal",
+      "datacolumn": "materialTermAttributionEditingOrganizationLocal",
       "required": "n"
     },
     {
@@ -1770,7 +1770,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingOrganizationOrganizationShared",
+      "datacolumn": "materialTermAttributionEditingOrganizationShared",
       "required": "n"
     },
     {
@@ -1814,7 +1814,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingPersonPersonLocal",
+      "datacolumn": "materialTermAttributionEditingPersonLocal",
       "required": "n"
     },
     {
@@ -1838,7 +1838,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "materialTermAttributionEditingPersonPersonShared",
+      "datacolumn": "materialTermAttributionEditingPersonShared",
       "required": "n"
     },
     {

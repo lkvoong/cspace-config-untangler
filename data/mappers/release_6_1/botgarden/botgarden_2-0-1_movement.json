@@ -100,7 +100,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationLocationLocal",
+      "datacolumn": "currentLocationLocation",
       "required": "n"
     },
     {
@@ -123,7 +123,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationOrganizationLocal",
+      "datacolumn": "currentLocationOrganization",
       "required": "n"
     },
     {

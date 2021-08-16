@@ -517,7 +517,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "coveragePlaceLocal",
+      "datacolumn": "coveragePlace",
       "required": "n"
     },
     {

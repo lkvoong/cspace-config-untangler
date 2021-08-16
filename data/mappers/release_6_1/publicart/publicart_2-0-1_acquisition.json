@@ -694,7 +694,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "commissioningBodyPersonLocal",
+      "datacolumn": "commissioningBodyPerson",
       "required": "n"
     },
     {
@@ -717,7 +717,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "commissioningBodyOrganizationLocal",
+      "datacolumn": "commissioningBodyOrganization",
       "required": "n"
     },
     {

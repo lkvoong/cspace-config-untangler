@@ -465,7 +465,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationStaffPersonLocal",
+      "datacolumn": "examinationStaffLocal",
       "required": "n"
     },
     {
@@ -489,7 +489,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "examinationStaffPersonShared",
+      "datacolumn": "examinationStaffShared",
       "required": "n"
     },
     {
@@ -651,7 +651,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvedByPersonLocal",
+      "datacolumn": "approvedByLocal",
       "required": "n"
     },
     {
@@ -674,7 +674,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "approvedByPersonShared",
+      "datacolumn": "approvedByShared",
       "required": "n"
     },
     {
@@ -811,7 +811,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "researcherPersonLocal",
+      "datacolumn": "researcherLocal",
       "required": "n"
     },
     {
@@ -834,7 +834,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "researcherPersonShared",
+      "datacolumn": "researcherShared",
       "required": "n"
     },
     {
@@ -936,7 +936,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleByPersonLocal",
+      "datacolumn": "sampleByLocal",
       "required": "n"
     },
     {
@@ -960,7 +960,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "sampleByPersonShared",
+      "datacolumn": "sampleByShared",
       "required": "n"
     },
     {

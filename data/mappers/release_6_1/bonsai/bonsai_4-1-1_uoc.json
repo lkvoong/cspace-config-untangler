@@ -284,7 +284,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "userPersonLocal",
+      "datacolumn": "userPerson",
       "required": "n"
     },
     {
@@ -308,7 +308,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "userOrganizationLocal",
+      "datacolumn": "userOrganization",
       "required": "n"
     },
     {
@@ -596,7 +596,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizedByPersonLocal",
+      "datacolumn": "authorizedByPerson",
       "required": "n"
     },
     {
@@ -620,7 +620,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "authorizedByOrganizationLocal",
+      "datacolumn": "authorizedByOrganization",
       "required": "n"
     },
     {
@@ -864,7 +864,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNamePersonLocal",
+      "datacolumn": "staffNamePerson",
       "required": "n"
     },
     {
@@ -888,7 +888,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "staffNameOrganizationLocal",
+      "datacolumn": "staffNameOrganization",
       "required": "n"
     },
     {
@@ -1012,7 +1012,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationOrganizationLocal",
+      "datacolumn": "locationOrganization",
       "required": "n"
     },
     {
@@ -1035,7 +1035,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationPlaceLocal",
+      "datacolumn": "locationPlace",
       "required": "n"
     },
     {
@@ -1058,7 +1058,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "locationLocationLocal",
+      "datacolumn": "locationLocation",
       "required": "n"
     },
     {

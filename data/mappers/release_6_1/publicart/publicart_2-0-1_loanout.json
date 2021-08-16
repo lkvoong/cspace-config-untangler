@@ -87,7 +87,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersAuthorizerPersonLocal",
+      "datacolumn": "lendersAuthorizerLocal",
       "required": "n"
     },
     {
@@ -110,7 +110,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersAuthorizerPersonShared",
+      "datacolumn": "lendersAuthorizerShared",
       "required": "n"
     },
     {
@@ -152,7 +152,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersContactPersonLocal",
+      "datacolumn": "lendersContactLocal",
       "required": "n"
     },
     {
@@ -175,7 +175,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lendersContactPersonShared",
+      "datacolumn": "lendersContactShared",
       "required": "n"
     },
     {
@@ -347,7 +347,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowersContactPersonLocal",
+      "datacolumn": "borrowersContactLocal",
       "required": "n"
     },
     {
@@ -370,7 +370,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowersContactPersonShared",
+      "datacolumn": "borrowersContactShared",
       "required": "n"
     },
     {
@@ -412,7 +412,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowersAuthorizerPersonLocal",
+      "datacolumn": "borrowersAuthorizerLocal",
       "required": "n"
     },
     {
@@ -435,7 +435,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "borrowersAuthorizerPersonShared",
+      "datacolumn": "borrowersAuthorizerShared",
       "required": "n"
     },
     {
@@ -576,7 +576,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanIndividualPersonLocal",
+      "datacolumn": "loanIndividualLocal",
       "required": "n"
     },
     {
@@ -600,7 +600,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "loanIndividualPersonShared",
+      "datacolumn": "loanIndividualShared",
       "required": "n"
     },
     {
