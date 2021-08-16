@@ -381,7 +381,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationLocal",
+      "datacolumn": "termSourceLocal",
       "required": "n"
     },
     {
@@ -405,7 +405,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationWorldcat",
+      "datacolumn": "termSourceWorldcat",
       "required": "n"
     },
     {
@@ -553,7 +553,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicationPlacePlaceLocal",
+      "datacolumn": "publicationPlaceLocal",
       "required": "n"
     },
     {
@@ -577,7 +577,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicationPlacePlaceTgn",
+      "datacolumn": "publicationPlaceTgn",
       "required": "n"
     },
     {
@@ -729,7 +729,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "agentOrganizationLocal",
+      "datacolumn": "agentOrganization",
       "required": "n"
     },
     {
@@ -934,7 +934,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedTermConceptAssociated",
+      "datacolumn": "relatedTermAssociated",
       "required": "n"
     },
     {
@@ -958,7 +958,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedTermConceptActivity",
+      "datacolumn": "relatedTermActivity",
       "required": "n"
     },
     {
@@ -982,7 +982,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedTermConceptMaterial",
+      "datacolumn": "relatedTermMaterial",
       "required": "n"
     },
     {

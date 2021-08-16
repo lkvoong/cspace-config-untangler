@@ -176,7 +176,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "loaninStatusAuthorizerLHMCPersonLocal",
+      "datacolumn": "loaninStatusAuthorizerLHMCLocal",
       "required": "n"
     },
     {
@@ -200,7 +200,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "loaninStatusAuthorizerLHMCPersonUlan",
+      "datacolumn": "loaninStatusAuthorizerLHMCUlan",
       "required": "n"
     },
     {
@@ -244,7 +244,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lenderPersonLocal",
+      "datacolumn": "lenderPerson",
       "required": "n"
     },
     {
@@ -268,7 +268,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "lenderOrganizationLocal",
+      "datacolumn": "lenderOrganization",
       "required": "n"
     },
     {

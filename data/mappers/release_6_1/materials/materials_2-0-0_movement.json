@@ -364,7 +364,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementContactPersonLocal",
+      "datacolumn": "movementContactLocal",
       "required": "n"
     },
     {
@@ -387,7 +387,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "movementContactPersonShared",
+      "datacolumn": "movementContactShared",
       "required": "n"
     },
     {
@@ -530,7 +530,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "inventoryContactPersonLocal",
+      "datacolumn": "inventoryContactLocal",
       "required": "n"
     },
     {
@@ -553,7 +553,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "inventoryContactPersonShared",
+      "datacolumn": "inventoryContactShared",
       "required": "n"
     },
     {

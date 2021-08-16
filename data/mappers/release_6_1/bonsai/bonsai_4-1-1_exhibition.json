@@ -986,7 +986,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionReferenceCitationLocal",
+      "datacolumn": "exhibitionReferenceLocal",
       "required": "n"
     },
     {
@@ -1010,7 +1010,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "exhibitionReferenceCitationWorldcat",
+      "datacolumn": "exhibitionReferenceWorldcat",
       "required": "n"
     },
     {

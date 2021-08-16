@@ -306,7 +306,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationLocal",
+      "datacolumn": "termSourceLocal",
       "required": "n"
     },
     {
@@ -330,7 +330,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationWorldcat",
+      "datacolumn": "termSourceWorldcat",
       "required": "n"
     },
     {
@@ -499,7 +499,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonFamilyTaxonLocal",
+      "datacolumn": "taxonFamilyLocal",
       "required": "n"
     },
     {
@@ -522,7 +522,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonFamilyTaxonCommon",
+      "datacolumn": "taxonFamilyCommon",
       "required": "n"
     },
     {
@@ -565,7 +565,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonAuthorPersonLocal",
+      "datacolumn": "taxonAuthorPerson",
       "required": "n"
     },
     {
@@ -589,7 +589,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonAuthorOrganizationLocal",
+      "datacolumn": "taxonAuthorOrganization",
       "required": "n"
     },
     {
@@ -694,7 +694,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonCitationCitationLocal",
+      "datacolumn": "taxonCitationLocal",
       "required": "n"
     },
     {
@@ -717,7 +717,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonCitationCitationWorldcat",
+      "datacolumn": "taxonCitationWorldcat",
       "required": "n"
     },
     {
@@ -759,7 +759,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonBasionymTaxonLocal",
+      "datacolumn": "taxonBasionymLocal",
       "required": "n"
     },
     {
@@ -782,7 +782,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "taxonBasionymTaxonCommon",
+      "datacolumn": "taxonBasionymCommon",
       "required": "n"
     },
     {
@@ -969,7 +969,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedTermTaxonLocal",
+      "datacolumn": "relatedTermLocal",
       "required": "n"
     },
     {
@@ -993,7 +993,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedTermTaxonCommon",
+      "datacolumn": "relatedTermCommon",
       "required": "n"
     },
     {

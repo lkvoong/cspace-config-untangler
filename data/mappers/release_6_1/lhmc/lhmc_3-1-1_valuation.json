@@ -161,7 +161,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueSourcePersonLocal",
+      "datacolumn": "valueSourcePerson",
       "required": "n"
     },
     {
@@ -184,7 +184,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "valueSourceOrganizationLocal",
+      "datacolumn": "valueSourceOrganization",
       "required": "n"
     },
     {

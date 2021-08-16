@@ -151,7 +151,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerPersonLocal",
+      "datacolumn": "currentOwnerPerson",
       "required": "n"
     },
     {
@@ -174,7 +174,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerOrganizationLocal",
+      "datacolumn": "currentOwnerOrganization",
       "required": "n"
     },
     {
@@ -216,7 +216,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorPersonLocal",
+      "datacolumn": "depositorPerson",
       "required": "n"
     },
     {
@@ -239,7 +239,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorOrganizationLocal",
+      "datacolumn": "depositorOrganization",
       "required": "n"
     },
     {
@@ -661,7 +661,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalProposedRecipientPersonLocal",
+      "datacolumn": "disposalProposedRecipientPerson",
       "required": "n"
     },
     {
@@ -684,7 +684,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalProposedRecipientOrganizationLocal",
+      "datacolumn": "disposalProposedRecipientOrganization",
       "required": "n"
     },
     {
@@ -726,7 +726,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalRecipientPersonLocal",
+      "datacolumn": "disposalRecipientPerson",
       "required": "n"
     },
     {
@@ -749,7 +749,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "disposalRecipientOrganizationLocal",
+      "datacolumn": "disposalRecipientOrganization",
       "required": "n"
     },
     {

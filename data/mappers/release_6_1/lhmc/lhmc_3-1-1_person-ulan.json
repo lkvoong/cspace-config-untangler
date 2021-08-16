@@ -476,7 +476,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationLocal",
+      "datacolumn": "termSourceLocal",
       "required": "n"
     },
     {
@@ -500,7 +500,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "termSourceCitationWorldcat",
+      "datacolumn": "termSourceWorldcat",
       "required": "n"
     },
     {
@@ -700,7 +700,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicationsPersonCitationLocal",
+      "datacolumn": "publicationsPersonLocal",
       "required": "n"
     },
     {
@@ -724,7 +724,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publicationsPersonCitationWorldcat",
+      "datacolumn": "publicationsPersonWorldcat",
       "required": "n"
     },
     {
@@ -806,7 +806,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedPersonPersonLocal",
+      "datacolumn": "relatedPersonLocal",
       "required": "n"
     },
     {
@@ -829,7 +829,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "relatedPersonPersonUlan",
+      "datacolumn": "relatedPersonUlan",
       "required": "n"
     },
     {
@@ -929,7 +929,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "placeOrResidencePlaceLocal",
+      "datacolumn": "placeOrResidenceLocal",
       "required": "n"
     },
     {
@@ -952,7 +952,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "placeOrResidencePlaceTgn",
+      "datacolumn": "placeOrResidenceTgn",
       "required": "n"
     },
     {
@@ -1032,7 +1032,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "birthPlacePlaceLocal",
+      "datacolumn": "birthPlaceLocal",
       "required": "n"
     },
     {
@@ -1055,7 +1055,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "birthPlacePlaceTgn",
+      "datacolumn": "birthPlaceTgn",
       "required": "n"
     },
     {
@@ -1116,7 +1116,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "deathPlacePlaceLocal",
+      "datacolumn": "deathPlaceLocal",
       "required": "n"
     },
     {
@@ -1139,7 +1139,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "deathPlacePlaceTgn",
+      "datacolumn": "deathPlaceTgn",
       "required": "n"
     },
     {

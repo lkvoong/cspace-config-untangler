@@ -181,7 +181,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerPersonLocal",
+      "datacolumn": "currentOwnerPerson",
       "required": "n"
     },
     {
@@ -204,7 +204,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentOwnerOrganizationLocal",
+      "datacolumn": "currentOwnerOrganization",
       "required": "n"
     },
     {
@@ -247,7 +247,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorPersonLocal",
+      "datacolumn": "depositorPerson",
       "required": "n"
     },
     {
@@ -271,7 +271,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "depositorOrganizationLocal",
+      "datacolumn": "depositorOrganization",
       "required": "n"
     },
     {
@@ -538,7 +538,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "valuerPersonLocal",
+      "datacolumn": "valuerPerson",
       "required": "n"
     },
     {
@@ -561,7 +561,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "valuerOrganizationLocal",
+      "datacolumn": "valuerOrganization",
       "required": "n"
     },
     {
@@ -622,7 +622,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "insurerPersonLocal",
+      "datacolumn": "insurerPerson",
       "required": "n"
     },
     {
@@ -645,7 +645,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "insurerOrganizationLocal",
+      "datacolumn": "insurerOrganization",
       "required": "n"
     },
     {
@@ -812,7 +812,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationOrganizationLocal",
+      "datacolumn": "currentLocationOrganization",
       "required": "n"
     },
     {
@@ -836,7 +836,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "currentLocationPlaceLocal",
+      "datacolumn": "currentLocationPlace",
       "required": "n"
     },
     {
@@ -1005,7 +1005,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationOrganizationLocal",
+      "datacolumn": "normalLocationOrganization",
       "required": "n"
     },
     {
@@ -1028,7 +1028,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "normalLocationPlaceLocal",
+      "datacolumn": "normalLocationPlace",
       "required": "n"
     },
     {
@@ -1148,7 +1148,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrAssessorPersonLocal",
+      "datacolumn": "conditionCheckerOrAssessorPerson",
       "required": "n"
     },
     {
@@ -1171,7 +1171,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "conditionCheckerOrAssessorOrganizationLocal",
+      "datacolumn": "conditionCheckerOrAssessorOrganization",
       "required": "n"
     },
     {
