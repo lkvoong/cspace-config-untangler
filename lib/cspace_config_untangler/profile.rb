@@ -3,7 +3,8 @@
 require 'cspace_config_untangler'
 
 module CspaceConfigUntangler
-  class Profile    
+  class Profile
+    include CCU::ColumnNameStylable
     attr_reader :name, :config, :authorities, :rectypes, :rectypes_all, :extensions, :option_lists, :vocabularies, :panels, :form_fields, :field_defs, :messages, :structured_date_treatment
     
     def initialize(profile:, rectypes: [], structured_date_treatment: :explode)
@@ -26,6 +27,10 @@ module CspaceConfigUntangler
       get_form_fields
     end
 
+    def column_style
+      column_name_style(basename, version)
+    end
+    
     def extensions_for(rectype)
       exts = {}
       @extensions.map{ |e| CCU::Extension.new(self, e) }.each{ |ext|

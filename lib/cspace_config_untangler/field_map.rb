@@ -20,7 +20,6 @@ module CspaceConfigUntangler
         @source_name = source_name
         @transforms = transforms
         @opt_list_values = field.value_list
-
         @data_type = @datacolumn['Refname'] ? 'csrefname' : field.data_type
       end
 
@@ -40,8 +39,9 @@ module CspaceConfigUntangler
     class FieldMapper
       ::FieldMapper = CspaceConfigUntangler::FieldMap::FieldMapper
       attr_reader :mappings, :hash, :source_type
-      def initialize(field:)
+      def initialize(field:, column_style: :consistent)
         @field = field
+        @column_style = column_style
         @hash = structure_hash
         get_data_columns
         get_source_type
@@ -128,7 +128,8 @@ module CspaceConfigUntangler
             @hash["#{vs}refname"] = { column_name: "#{@field.name}Refname", transforms: {}, source_name: source_name }
           end
         else #multiple sources
-          namer = DataColumnNamer.new(fieldname: @field.name, sources: transform_sources(value_source))
+          namer_opts = {fieldname: @field.name, sources: transform_sources(value_source)}
+          namer = @column_style == :fancy ? DataColumnNamerFancy.new(**namer_opts) : DataColumnNamerConsistent.new(**namer_opts)
           namer.result.each do |src, colname|
             @hash[src][:column_name] = colname
             @hash[src][:transforms] = {}
@@ -180,37 +181,6 @@ module CspaceConfigUntangler
         subpath = subpath.match(/\((.*)\)$/)[1]
         @result = [path, subpath]
       end
-    end
-
-    class DataColumnNamer
-      ::DataColumnNamer = CspaceConfigUntangler::FieldMap::DataColumnNamer
-      attr_reader :result
-      def initialize(fieldname:, sources:)
-        @fieldname = fieldname
-        @sources = sources
-        @result = {}
-
-        
-        # build hash used to check whether to name using authority type, subtype, or both
-        # h = {}
-        # srcs.each{ |s| h[s[0]] = [] }
-        # srcs.each{ |s| h[s[0]] << s[1]}
-        
-        @sources.each do |source|
-          # name = @fieldname.clone
-          # ssplit = s.sub('authority: ', '').split('/')
-          # use_type = h.keys.size > 1 ? true : false
-          # use_subtype = h[ssplit[0]].size > 1 ? true : false
-          # name = use_type ? name << ssplit[0].capitalize : name
-          # name = use_subtype ? name << ssplit[1].capitalize : name
-          name = "#{@fieldname}#{source.type.capitalize}#{source.subtype.capitalize}"
-          @result[source.string] = name
-        end
-      end
-
-      private
-
-
     end
   end
 end
