@@ -47,9 +47,9 @@ Set `CCU.const_set('MAINPROFILE')` value in `lib/cspace_config_untangler.rb`.
 
 Config file name must contain the profile name and profile version.
 
-Use `_` to separate sections of the name. I.e. profile name and version should be separated by `_`
+Use `_` (underscore) to separate the profile name and profile version sections of the name.
 
-Use `-` to separate words/numbers within a section.
+Use `-` (hyphen) to separate words/numbers within a section.
 
 Examples:
 
@@ -81,6 +81,8 @@ Once the setup is done, from the cloned directory, you should be able to type `e
 
 *The best source of info on what each function does and how to use it is the `exe/ccu` command (overview) and `exe/ccu help {function_name}` (for details on options and implementation).*
 
+There are some instructions for common tasks in the `doc` directory.
+
 `main_profile`, `all_profiles`, and `check_profiles` help you verify your config and use of the --profiles option are ok.
 
 `readable_profiles` saves the specified JSON config(s) to new files as pretty-printed JSON you can meaningfully grep or deal with in Oxygen or other editors.
@@ -95,14 +97,21 @@ Once the setup is done, from the cloned directory, you should be able to type `e
 
 === General
 
+IMPORTANT: This tool can only be used confidently with configs from CollectionSpace 6.1 and newer
+
 - For 5.2 configs, data source values are not consistently supplied for structured date fields. This is because configuration of the structured date fields was not written out to the JSON config in a standard way until 6.0.
-- RecordMappers and CSV templates stored in this repo for releases before 6.1 may not handle multiple fields with the same name in the same record type correctly. The code handles this properly as of 0.3.4, but mappers and templates for older releases were not generated
+- The 6.1 release further refined the JSON config output allowing the full functionality of this tool
 - Does not currently report on fields in the `ns2:collectionspace_core` namespace 
 - Does not currently report on fields in the `rel:relations-common-list` namespace because the way this data is defined in the config is very different from the rest
 - `contact` and `blob` get reported/treated as extensions within the tool, rather than sub-records
 
 === Working with non-community profiles
 
-- Do `exe/ccu write_fields_csv -p all` and check whether the `data_type` column has any blank values. If so, probably your profile has configured some fields from extensions in an unexpected manner. This can cause `forms/default/props/subpath` values (used to create form_field ids) to not match the `fields/document/.../{fieldname}/[config]/messages/name/id` values (used to create field_def ids) for some fields. The Untangler is then unable to match up form_field info with field_def info to generate the necessary combined field info required for fully-populated fields CSV, CSV template, and RecordMapper output. You'll need to do some hard-coding somewhere in the code to get a match
-- If you have record types with (a) *no* required field; or (b) multiple required fields, you will need to hard-code `identifier_field` values in `record_mapper.rb`'s `get_id_field` method.
-- If you have created any form templates that include fields that are *not* included in your `default` template, your Untangler output will not include those fields. The assumption is that the `default` form contains all possible fields for a record type. 
+* Do `exe/ccu write_fields_csv -p all` and check whether the `data_type` column has any blank values. If so, probably your profile has configured some fields from extensions in an unexpected manner. This can cause `forms/default/props/subpath` values (used to create form_field ids) to not match the `fields/document/.../{fieldname}/[config]/messages/name/id` values (used to create field_def ids) for some fields. The Untangler is then unable to match up form_field info with field_def info to generate the necessary combined field info required for fully-populated fields CSV, CSV template, and RecordMapper output. You'll need to do some hard-coding somewhere in the code to get a match
+* Do you have fields with the same name in different namespaces in the same record type? Use `exe/ccu fields nonunique` to generate a listing of any such fields.
+** The code tries to automatically fix this https://github.com/collectionspace/cspace-config-untangler/blob/16a3da1dec21a80e7658d065d85a3cc548c72292/lib/cspace_config_untangler/record_types.rb#L77-L81[here] but if any non-unique field names are sneaking through, you may need to hard-code something to fix this. Otherwise, you will get two columns in your CSV template with the same header and it won't be clear which field that data should be imported into.
+* If you have record types with (a) *no* required field; or (b) multiple required fields, you will need to hard-code `identifier_field` values in `record_mapper.rb`'s `get_id_field` method.
+* If you have created any form templates that include fields that are *not* included in your `default` template, your Untangler output will not include those fields. The assumption is that the `default` form contains all possible fields for a record type. 
+* If you are using CollectionSpace 6.1 and are round-tripping exported data back in using the CollectionSpace CSV Importer, you will need to add your profile name(s) and version(s) to the LAST_FANCY_VERSION constant of the ColumnNameStylable mixin module.
+** This will ensure you get CSV template column headers (and column names in your record mappers) that are closer to what your CollectionSpace application outputs when search results are exported. There were some bugs in how column headers were exported in 6.1 and some mismatches between what 6.1 produced and what the Untangler produced.
+** Starting with CS 7.0, the export and import columns should be consistent going forward.
