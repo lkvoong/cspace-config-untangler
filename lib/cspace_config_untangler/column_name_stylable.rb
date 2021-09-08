@@ -19,6 +19,7 @@ module CspaceConfigUntangler
       'herbarium' => '1-1-1',
       'lhmc' => '3-1-1',
       'materials' => '2-0-0',
+      'ocma' => '6-1-0',
       'publicart' => '2-0-1'
     }
 

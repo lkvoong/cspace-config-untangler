@@ -7,9 +7,11 @@ module CspaceConfigUntangler
       ::FieldDefinitionParser = CspaceConfigUntangler::FieldParsing::FieldDefinitionParser
       attr_reader :rectype, :config, :field_defs
 
-      def initialize(rectypeobj, hash)
+      # @param rectypeobj [CspaceConfigUntangler::RecordType]
+      # @param fields_config [Hash] from JSON config: record type/fields/document/config
+      def initialize(rectypeobj, fields_config)
         @rectype = rectypeobj
-        @config = hash
+        @config = fields_config
         @ns = @config['[config]']['view']['props']['defaultChildSubpath']
         @field_defs = []
         get_field_defs

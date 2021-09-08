@@ -12,9 +12,9 @@ module CspaceConfigUntangler
         @fieldname = field.name
         @namespace = field.ns.sub('ns2:', '')
         @xpath = field.schema_path
-        @required = field.required
+        @required = field.required ? field.required : 'n'
         @repeats = field.repeats
-        @in_repeating_group = field.in_repeating_group
+        @in_repeating_group = field.in_repeating_group ? field.in_repeating_group : 'n'
         @datacolumn = datacolumn
         @source_type = source_type
         @source_name = source_name
