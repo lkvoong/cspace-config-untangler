@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe CCU::FieldMap do
-  before(:all) do
-    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
+  before(:context) do
+    CCU.config.configdir = File.join(fixtures, 'files', '6_0')
   @core_profile = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject', 'concept', 'movement'], structured_date_treatment: :collapse)
   @fields = @core_profile.fields
   @currentLocation = @fields.select{ |f| f.rectype.name == 'movement' && f.name == 'currentLocation' }[0]

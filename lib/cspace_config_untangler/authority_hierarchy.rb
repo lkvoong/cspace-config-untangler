@@ -1,4 +1,5 @@
-require 'cspace_config_untangler'
+require_relative 'json_writable'
+require_relative 'special_rectype'
 
 module CspaceConfigUntangler
   class AuthorityHierarchy

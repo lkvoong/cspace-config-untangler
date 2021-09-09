@@ -1,7 +1,7 @@
-require 'cspace_config_untangler'
+require_relative 'form'
 
 module CspaceConfigUntangler
-  class Form
+  class Panel < CCU::Form
     attr_reader :rectype, :name, :fields
 
     def initialize(rectypeobj, formname)

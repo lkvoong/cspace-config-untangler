@@ -1,4 +1,4 @@
-require 'cspace_config_untangler'
+require_relative 'track_attributes'
 
 module CspaceConfigUntangler
   module FieldMap

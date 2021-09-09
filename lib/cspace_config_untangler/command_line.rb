@@ -3,9 +3,9 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   module CliHelpers
     def get_profiles
-      all_profiles = [CCU::MAINPROFILE, CCU::PROFILES].flatten.uniq
+      all_profiles = [CCU.main_profile, CCU.profiles].flatten.uniq
       if options[:profiles].empty?
-        return [CCU::MAINPROFILE]
+        return [CCU.main_profile]
       elsif options[:profiles] == 'all'
         return all_profiles
       else
@@ -383,7 +383,7 @@ LONGDESC
 
     desc 'main', 'Print the name of the main profile'
     def main
-      puts CCU::MAINPROFILE
+      puts CCU.main_profile
     end
 
     desc 'readable', 'Reformats (in place) JSON profile configs so that they are not one very long line. Non-destructive if run over JSON multiple times.'

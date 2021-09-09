@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe CCU::Field do
+RSpec.describe CCU::Fields::Field do
   before do
     stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/6_0')
   end
@@ -12,7 +12,7 @@ RSpec.describe CCU::Field do
   #  let(:anthro_co) { CCU::RecordType.new(anthro_profile, 'collectionobject') }
   #  let(:anthro_default) { anthro_co.forms['default'] }
 
-  describe CCU::Field do
+  describe CCU::Fields::Field do
     describe '#value_source' do
       # tested in field_definition_spec
       # this just copies from the field_definition

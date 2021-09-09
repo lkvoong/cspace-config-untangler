@@ -5,14 +5,13 @@ require 'cspace_config_untangler'
 module CspaceConfigUntangler
   class Profile
     include CCU::ColumnNameStylable
-    attr_reader :name, :config, :authorities, :rectypes, :rectypes_all, :extensions, :option_lists, :vocabularies, :panels, :form_fields, :field_defs, :messages, :structured_date_treatment
+    attr_reader :name, :config, :authorities, :rectypes, :rectypes_all, :extensions, :vocabularies, :panels, :form_fields, :field_defs, :messages, :structured_date_treatment
     
     def initialize(profile:, rectypes: [], structured_date_treatment: :explode)
       @name = profile
-      @config = JSON.parse(File.read("#{CCU::CONFIGDIR}/#{@name}.json"))
+      @config = JSON.parse(File.read("#{CCU.configdir}/#{@name}.json"))
       @messages = {}
       @extensions = get_extensions
-      @option_lists = get_option_lists
       @structured_date_treatment = structured_date_treatment
       @rectypes = [] #rectype objects to be processed/reported
       @rectypes_all = [] #all rectype names for profile
@@ -109,6 +108,10 @@ module CspaceConfigUntangler
       op.sort
     end
 
+    def option_lists
+      @option_lists ||= get_option_lists
+    end
+    
     private
 
     def get_field_defs
@@ -227,12 +230,10 @@ module CspaceConfigUntangler
     end
 
     def get_option_lists
-      if @config.dig('optionLists')
-        return @config['optionLists'].keys.sort
-      else
-        return []
-      end
+      list_config = @config.dig('optionLists')
+      return [] unless list_config
+      
+      CCU::OptionLists.new(@config['optionLists'])
     end
-    
   end
 end

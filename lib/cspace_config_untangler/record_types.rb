@@ -1,4 +1,4 @@
-require 'cspace_config_untangler'
+require_relative 'fields/definition/parser'
 
 module CspaceConfigUntangler
   class RecordType
@@ -25,7 +25,7 @@ module CspaceConfigUntangler
 
     def field_defs
       if @config.dig('fields', 'document')
-        defs = FieldDefinitionParser.new(self, @config['fields']['document'])
+        defs = CCU::Fields::Def::Parser.new(self, @config['fields']['document'])
         return defs.field_defs
       else
         CCU::LOG.warn("#{profile.name} - #{name} has no field def hash")
@@ -42,7 +42,7 @@ module CspaceConfigUntangler
     end
 
     def fields
-      fields = form_fields.map{ |ff| CCU::Field.new(self, ff) }
+      fields = form_fields.map{ |ff| CCU::Fields::Field.new(self, ff) }
       fields = explode_structured_date_fields(fields) if @structured_date_treatment == :explode
       fields = fields.flatten
       fields << media_uri_field if @name == 'media'
@@ -225,7 +225,7 @@ module CspaceConfigUntangler
         value_list: [],
         required: 'n'
       }
-      CCU::ForcedField.new(self, field_hash)
+      CCU::Fields::ForcedField.new(self, field_hash)
     end
 
     def get_forms
