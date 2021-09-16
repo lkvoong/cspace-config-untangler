@@ -13,6 +13,7 @@ require 'facets/kernel/blank'
 require 'http'
 require 'nokogiri'
 require 'pry'
+require 'ruby_jard'
 require 'thor'
 
 
@@ -50,6 +51,7 @@ module CspaceConfigUntangler
   setting :test, reader: true
   setting :datadir, reader: true
   setting :configdir, reader: true
+  setting :templatedir, reader: true
   setting :mapperdir, reader: true
   setting :profiles, reader: true
   setting :main_profile_name, reader: true
@@ -59,6 +61,7 @@ module CspaceConfigUntangler
   CCU.config.test = 'blah'
   CCU.config.datadir = File.join(app_dir, 'data')
   CCU.config.configdir = File.join(CCU.datadir, 'configs')
+  CCU.config.templatedir = File.join(CCU.datadir, 'templates')
   CCU.config.mapperdir = File.join(CCU.datadir, 'mappers')
   
   config_file_names = Dir.new(CCU.configdir).children

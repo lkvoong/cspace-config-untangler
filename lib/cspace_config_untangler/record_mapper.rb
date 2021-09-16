@@ -181,76 +181,7 @@ module CspaceConfigUntangler
       end
     end
     
-    class RecordMapping
-      ::RecordMapping = CspaceConfigUntangler::RecordMapper::RecordMapping
-      include JsonWritable
-      attr_reader :hash, :mappings
 
-      # profile = CCU::Profile
-      # rectype = CCU::RecordType
-      def initialize(profile:, rectype:, subtype: nil)
-        @profile = profile
-        @rectype = rectype
-        @subtype = subtype
-        @mappings = @rectype.batch_mappings
-        @config = @profile.config
-        @hash = {}
-        build_hash
-        append_subtype if @subtype
-      end
-
-      
-      private
-
-      def append_subtype
-        @hash[:config][:authority_type] = @hash[:config][:service_path]
-        @hash[:config][:authority_subtype] = @subtype[:subtype]
-      end
-      
-
-      def build_hash
-        @hash[:config] = {}
-        @hash[:config][:profile_basename] = @profile.basename
-        @hash[:config][:version] = @profile.version
-        @hash[:config][:recordtype] = @rectype.name
-        @hash[:config][:document_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'documentName')
-        @hash[:config][:service_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'serviceName')
-        @hash[:config][:service_path] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'servicePath')
-        @hash[:config][:service_type] = @rectype.service_type
-        @hash[:config][:object_name] = @config.dig('recordTypes', @rectype.name, 'serviceConfig', 'objectName')
-        @hash[:config][:ns_uri] = NamespaceUris.new(profile_config: @config,
-                                                    rectype: @rectype.name,
-                                                    mapper_config: @hash[:config]).hash
-        @hash[:config][:identifier_field] = @rectype.id_field
-        @hash[:config][:search_field] = @rectype.search_field
-        @hash[:config][:authority_subtypes] = @rectype.subtypes if @rectype.service_type == 'authority'
-        @hash[:docstructure] = {}
-        create_hierarchy
-        @hash[:mappings] = @mappings.map{ |m| m.to_h }
-      end
-      
-      def create_hierarchy
-        # top level keys are the namespaces
-        @mappings.each do |m|
-          @hash[:docstructure][m.namespace] = {}
-        end
-
-        @mappings.each do |m|
-          levels = m.xpath.clone
-          done = []
-          while levels.size > 0 do
-            thislevel = levels.shift
-            path = done.clone << thislevel
-            add_key = @hash[:docstructure][m.namespace].dig(*path) ? false : true
-            if add_key
-              add_path = done.empty? ? @hash[:docstructure][m.namespace] : @hash[:docstructure][m.namespace].dig(*done)
-              add_path[thislevel] = {}
-            end
-            done << thislevel
-          end
-        end
-      end
-    end #class RecordMapper
 
     # returns hash of namespaces in a document, and their namespace URIs
     # profile_config = Hash from CCU::Profile.config

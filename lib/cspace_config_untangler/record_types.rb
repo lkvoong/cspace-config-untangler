@@ -221,7 +221,7 @@ module CspaceConfigUntangler
         repeats: 'n',
         in_repeating_group: 'n/a',
         data_type: 'string',
-        value_source: [],
+        value_source: [CCU::ValueSources::NoSource.new],
         value_list: [],
         required: 'n'
       }

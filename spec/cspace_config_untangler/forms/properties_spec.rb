@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 RSpec.describe CCU::Forms::Properties do
-  before(:context){ CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0') }
-  
-  let(:profile){ CCU::Profile.new(profile: 'anthro', rectypes: ['collectionobject']) }
-  let(:object){ profile.rectypes[0] }
-  let(:form){ object.forms['default'] }
+  let(:release){ '6_0' }
+  let(:profilename){ 'anthro' }
+  let(:rectypes){ ['collectionobject'] } 
+  let(:generator){ Helpers::SetupGenerator.new(profile: profilename, rectypes: rectypes, release: release) }
+  let(:form){ generator.form }
   let(:props){ CCU::Forms::Properties.new(form, fieldhash) }
   
   describe '.is_panel' do

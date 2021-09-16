@@ -44,7 +44,7 @@ module CspaceConfigUntangler
         @column_style = column_style
         @hash = structure_hash
         get_data_columns
-        get_source_type
+        get_source_types
         get_transforms
         @mappings = create_mappings
       end
@@ -52,52 +52,53 @@ module CspaceConfigUntangler
       private
 
       def structure_hash
-        h = {}
+        result = {}
         sources = @field.value_source.blank? ? ['no source'] : @field.value_source
-        sources.each do |vs|
-          h[vs] = { column_name: '',
+        sources.each do |source|
+          result[source] = { column_name: '',
                    transforms: {},
                    source_type: ''}
         end
-        h
+        result
       end
       
-      def get_source_type
+      def get_source_types
         types = []
         @hash.each do |source, h|
-          if source.start_with?('authority')
-            h[:source_type] = 'authority'
-          elsif source.start_with?('vocabulary')
-            h[:source_type] = 'vocabulary'
-          elsif source.start_with?('option list')
-            h[:source_type] = 'optionlist'
-          elsif source.start_with?('other')
-            h[:source_type] = 'invalid source type'
-          elsif source['refname']
-            h[:source_type] = source.delete('refname')
-          else
-            h[:source_type] = 'na'
-          end
-          types << h[:source_type]
+          type = get_source_type(source)
+          types << type
+          h[:source_type] = type
         end
         @source_type = types[0]
       end
 
+      def get_source_type(source)
+        binding.pry if source.is_a?(String)
+        source.source_type
+      end
+
+      def get_source_type_transforms(source, xform)
+        return xform if source == 'no source'
+        
+        case source.source_type
+        when 'authority'
+          xform[:authority] = AuthorityConfigLookup.new(profile: @field.profile,
+                                                        authority: source).result
+        when 'vocabulary'
+          xform[:vocabulary] = source.subtype
+        end
+      end
+      
       def get_transforms
         @hash.each do |source, h|
+          next if source.source_type == 'refname'
+          
           xform = { special: []}
-          if source['refname']
-            #do nothing
-          elsif source.start_with?('authority: ')
-            xform[:authority] = AuthorityConfigLookup.new(profile: @field.profile,
-                                                          authority: source).result
-          elsif source.start_with?('vocabulary: ')
-            xform[:vocabulary] = source.sub('vocabulary: ', '')
-            xform[:special] << 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
-          elsif @field.data_type == 'boolean'
-            xform[:special] << 'boolean'
-          end
 
+          get_source_type_transforms(source, xform)
+          
+          xform[:special] << 'behrensmeyer_translate' if @field.name.downcase['behrensmeyer']
+          xform[:special] << 'boolean' if @field.data_type == 'boolean'
           xform.delete(:special) if xform[:special].empty?
           
           h[:transforms] = h[:transforms].merge(xform)
@@ -118,15 +119,17 @@ module CspaceConfigUntangler
       
       def get_data_columns
         value_source = @field.value_source
+        
         if value_source.blank?
           @hash['no source'] = { column_name: @field.name, transforms: {} }
-        elsif value_source.size == 1
+          return
+        end
+        
+        if value_source.size == 1
           vs = value_source.first
           source_name = get_source_name(vs)
           @hash[vs] = { column_name: @field.name, transforms: {}, source_name: source_name }
-          unless vs['option list']
-            @hash["#{vs}refname"] = { column_name: "#{@field.name}Refname", transforms: {}, source_name: source_name }
-          end
+
         else #multiple sources
           namer_opts = {fieldname: @field.name, sources: transform_sources(value_source)}
           namer = @column_style == :fancy ? DataColumnNamerFancy.new(**namer_opts) : DataColumnNamerConsistent.new(**namer_opts)
@@ -135,24 +138,34 @@ module CspaceConfigUntangler
             @hash[src][:transforms] = {}
             @hash[src][:source_name] = get_source_name(src)
           end
-          @hash["#{value_source.first}refname"] = {
-            column_name: "#{@field.name}Refname",
-            transforms: {},
-            source_name: value_source.map{ |s| get_source_name(s) }.join('; ')
-          }
         end
+
+        add_refname_source_column(value_source.first) if needs_refname_source?(value_source.first)
       end
 
+      def add_refname_source_column(source)
+        refname_src = CCU::ValueSources::Refname.new(source)
+        col = { column_name: "#{@field.name}Refname", transforms: {}, source_name: source.name }
+        @hash[refname_src] = col
+      end
+
+      # @param source [#source_type]
+      def needs_refname_source?(source)
+        refname_req = %w[authority vocabulary]
+        refname_req.any?(source.source_type)
+      end
+      
       def transform_sources(sources)
-        sources.map{|source| AuthoritySource.new(source) }
+        sources
       end
 
       def get_source_name(source)
-        if source.is_a?(AuthoritySource)
-          source.string
-        else
-          source.sub(/^(option list|authority|vocabulary): /, '')
-        end
+        source.name
+        # if source.is_a?(AuthoritySource)
+        #   source.string
+        # else
+        #   source.sub(/^(option list|authority|vocabulary): /, '')
+        # end
       end
     end #class FieldMapper
 
@@ -172,9 +185,8 @@ module CspaceConfigUntangler
       ::AuthorityConfigLookup = CspaceConfigUntangler::FieldMap::AuthorityConfigLookup
       attr_reader :result
       def initialize(profile:, authority:)
-        source = authority.sub('authority: ', '').split('/')
-        authtype = source[0]
-        authsubtype = source[1]
+        authtype = authority.type
+        authsubtype = authority.subtype
         path = profile.config.dig('recordTypes', authtype, 'serviceConfig', 'servicePath')
         subpath = profile.config.dig('recordTypes', authtype, 'vocabularies', authsubtype,
                                      'serviceConfig', 'servicePath')

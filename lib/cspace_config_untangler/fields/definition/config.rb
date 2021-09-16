@@ -7,7 +7,7 @@ module CspaceConfigUntangler
     module Definition
       # passes around all the stuff needed to create a field definition
       class Config
-        attr_reader :namespace, :hash, :parent
+        attr_reader :name, :namespace, :hash, :parser, :parent
         def initialize(rectype:, namespace:, field_hash:, parser:, name: nil, parent: nil)
           @rectype = rectype
           @namespace = Namespace.new(namespace)
@@ -16,12 +16,12 @@ module CspaceConfigUntangler
           @name = name
           @parent = parent
         end
-
+        
         # returns a copy of itself that can be safely passed on and modified
         def derive_child(field_hash:, name:, parent:)
           self.class.new(
             rectype: @rectype,
-            namespace: @namespace,
+            namespace: @namespace.literal,
             field_hash: field_hash,
             parser: @parser,
             name: name,
@@ -46,6 +46,15 @@ module CspaceConfigUntangler
         def profile_config
           @rectype.profile.config
         end
+
+        def messages
+          @rectype.profile.messages
+        end
+
+        def option_lists
+          @rectype.profile.option_lists
+        end
+        
 
         def rectype
           @rectype.name

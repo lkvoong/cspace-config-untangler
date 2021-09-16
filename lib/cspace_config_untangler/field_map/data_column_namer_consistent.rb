@@ -11,7 +11,7 @@ module CspaceConfigUntangler
         @result = {}
         @sources.each do |source|
           name = "#{@fieldname}#{source.type.capitalize}#{source.subtype.capitalize}"
-          @result[source.string] = name
+          @result[source] = name
         end
       end
     end

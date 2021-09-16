@@ -20,15 +20,18 @@ module CspaceConfigUntangler
         elsif @type == 'refname'
           @mappings = @mappings.reject do |mapping|
             mapping[:source_type].match?(/authority|vocabulary/) && mapping[:data_type] == 'string'
-            end
+          end
         end
         @csvdata = []
         build_template
       end
 
-      def write(dir)
+      def filename
         stubname = "#{@profile.name}_#{@rectype.name}"
-        filename = @type == 'refname' ? "#{stubname}-refnames-template.csv" : "#{stubname}-template.csv"
+        @type == 'refname' ? "#{stubname}-refnames-template.csv" : "#{stubname}-template.csv"
+      end
+
+      def write(dir)
         path = "#{File.expand_path(dir)}/#{filename}"
         CSV.open(path, 'wb') do |csv|
           @csvdata.each{ |r| csv << r }

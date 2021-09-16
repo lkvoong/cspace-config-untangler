@@ -13,11 +13,11 @@ module CspaceConfigUntangler
         def initialize(config)
           @config = config
           @hash = config.hash
-          @parent = parent
+          @parent = config.parent
           
-          @name = name
-          @ns = parent.ns
-          @ns_for_id = parent.ns_for_id
+          @name = config.name
+          @ns = @parent.config.namespace.literal
+          @ns_for_id = @parent.config.namespace.for_id
           update_id_ns
           #      binding.pry if @name == 'visualPreferencesList'
           @id = get_id
@@ -42,7 +42,7 @@ module CspaceConfigUntangler
         end
         
         def set_schema_path
-          if @parent.is_a?(CCU::Fields::Def::Namespace)
+          if @parent.is_a?(CCU::Fields::Def::NamespaceFieldParser)
             return []
           else
             return @parent.schema_path.clone
@@ -50,7 +50,7 @@ module CspaceConfigUntangler
         end
 
         def get_message(key)
-          messages = @fdp.rectype.profile.messages
+          messages = @config.messages
           id = "field." + @id
 
           messages[id] = {} unless messages.has_key?(id)
@@ -87,7 +87,7 @@ module CspaceConfigUntangler
         end
 
         def set_group_repeats
-          if @parent.is_a?(CCU::Fields::Def::Namespace)
+          if @parent.is_a?(CCU::Fields::Def::NamespaceFieldParser)
             return 'n/a'
           elsif @parent.repeats == 'y'
             return 'y'

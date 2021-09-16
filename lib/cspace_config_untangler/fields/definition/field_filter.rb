@@ -10,11 +10,15 @@ module CspaceConfigUntangler
         # list of fields to omit from resulting field definitions
         OmittedFields = %w[csid inAuthority refName shortIdentifier]
 
-        # @param config [CCU::Fields::Definition::Config]
         def self.call(config)
+          self.new.call(config)
+        end
+
+        # @param config [CCU::Fields::Definition::Config]
+        def call(config)
           return if OmittedFields.any?(config.name)
 
-          field_def = FieldDefintion.new(config)
+          field_def = FieldDefinition.new(config)
           return unless field_def
           
           update_field_defs(config, field_def)

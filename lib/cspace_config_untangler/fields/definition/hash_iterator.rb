@@ -12,6 +12,7 @@ module CspaceConfigUntangler
         # @param config [CCU::Fields::Definition::Config]
         def initialize(config, called_from)
           @config = config
+          clean_config_hash
           @caller = called_from
           @typer = HashEntryTyper.new(@config)
           parse_fields
@@ -19,6 +20,14 @@ module CspaceConfigUntangler
 
         private
 
+        def clean_config_hash
+          old_hash = @config.hash.dup
+          return if old_hash.length == 1
+          
+          cleaned_hash = old_hash.reject{ |key, _| key == '[config]' }
+          @config.update_field_hash(cleaned_hash)
+        end
+        
         def namespace
           @config.namespace.literal
         end

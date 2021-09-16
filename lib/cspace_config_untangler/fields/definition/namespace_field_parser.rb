@@ -11,21 +11,20 @@ module CspaceConfigUntangler
         def initialize(config)
           @config = config
           update_subrecord_field_hash
-          HashIterator.new(@config, self.class)
-
-          binding.pry
+          HashIterator.new(@config, self)
         end
 
 #        private
 
         
-        def subrecord_config_hash(subrec_type)
-          @config.profile_config['recordTypes'][subrec_type]['fields']['document'][namespace]
+        def subrecord_config_hash(subrec_type, ns)
+          @config.profile_config['recordTypes'][subrec_type]['fields']['document'][ns]
         end
         
         def update_subrecord_field_hash
-          @config.update_field_hash(subrecord_config_hash('contact')) if namespace.start_with?('ns2:contacts_')
-          @config.update_field_hash(subrecord_config_hash('blob')) if namespace == ('ns2:blobs_common')
+          ns = @config.namespace.literal
+          @config.update_field_hash(subrecord_config_hash('contact', ns)) if ns.start_with?('ns2:contacts_')
+          @config.update_field_hash(subrecord_config_hash('blob', ns)) if ns == ('ns2:blobs_common')
         end
         
         # # fdp = FieldDefinitionParser

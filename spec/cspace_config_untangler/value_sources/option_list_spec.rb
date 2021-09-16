@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-RSpec.describe CCU::OptionList do
+RSpec.describe CCU::ValueSources::OptionList do
   let(:name){ 'loanPurposes' }
   let(:config) do
     JSON.parse(File.read(File.join(fixtures, 'config_snippets', 'option_list.json')))[name]
   end
-  let(:list){ CCU::OptionList.new(name, config) }
+  let(:list){ CCU::ValueSources::OptionList.new(name, config) }
   
   describe '#name' do
     let(:result){ list.name }

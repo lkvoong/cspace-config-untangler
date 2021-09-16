@@ -20,7 +20,7 @@ module CspaceConfigUntangler
           use_subtype = h[type].size > 1 ? true : false
           name = use_type ? name << type.capitalize : name
           name = use_subtype ? name << source.subtype.capitalize : name
-          @result[source.string] = name
+          @result[source] = name
         end
       end
     end

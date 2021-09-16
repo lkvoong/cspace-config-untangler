@@ -1,106 +1,171 @@
 require 'spec_helper'
 
 RSpec.describe CCU::Profile do
-  before(:all) do
-    CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_0')
-    @core_profile = CCU::Profile.new(profile: 'core')
-    @anthro_profile = CCU::Profile.new(profile: 'anthro')
-    @bonsai_profile = CCU::Profile.new(profile: 'bonsai')
-    @core_rectypes = ['acquisition', 'citation', 'collectionobject', 'concept', 'conditioncheck', 'conservation', 'exhibition', 'group', 'intake', 'loanin', 'loanout', 'location', 'media', 'movement', 'objectexit', 'organization', 'person', 'place', 'uoc', 'valuation', 'work']
-    @core_authorities = %w[citation/local citation/worldcat concept/activity concept/associated concept/material concept/nomenclature concept/occasion location/local location/offsite organization/local organization/ulan person/local person/ulan place/local place/tgn work/cona work/local]
-    @core_option_lists = ['dimensions', 'measurementUnits', 'searchResultPagePageSizes', 'searchPanelPageSizes', 'booleans', 'yesNoValues', 'dateQualifiers', 'departments', 'loanPurposes', 'accountStatuses', 'acquisitionMethods', 'citationTermStatuses', 'ageUnits', 'collections', 'contentObjectTypes', 'forms', 'inscriptionTypes', 'measuredParts', 'measurementMethods', 'nameCurrencies', 'nameLevels', 'nameSystems', 'nameTypes', 'numberTypes', 'objectComponentNames', 'objectStatuses', 'ownershipAccessLevels', 'ownershipCategories', 'ownershipExchangeMethods', 'phases', 'positions', 'recordStatuses', 'scripts', 'sexes', 'technicalAttributes', 'technicalAttributeMeasurements', 'technicalAttributeMeasurementUnits', 'titleTypes', 'objectParentTypes', 'objectChildTypes', 'conceptTermStatuses', 'conceptTermTypes', 'conceptHistoricalStatuses', 'objectAuditCategories', 'completenessLevels', 'conditions', 'conservationTreatmentPriorities', 'hazards', 'conditionCheckMethods', 'conditionCheckReasons', 'salvagePriorityCodes', 'emailTypes', 'telephoneNumberTypes', 'faxNumberTypes', 'webAddressTypes', 'addressTypes', 'addressCountries', 'exhibitionConsTreatmentStatuses', 'exhibitionMountStatuses', 'entryReasons', 'locationTermTypes', 'locationTermStatuses', 'mediaTypes', 'locationFitnesses', 'moveReasons', 'moveMethods', 'invActions', 'invFreqs', 'exitReasons', 'exitMethods', 'orgTermTypes', 'orgTermStatuses', 'personTermStatuses', 'personTermTypes', 'salutations', 'personTitles', 'genders', 'placeTermTypes', 'placeTermStatuses', 'placeHistoricalStatuses', 'placeTypes', 'coordinateSystems', 'spatialRefSystems', 'localityUnits', 'geodeticDatums', 'geoRefProtocols', 'geoRefVerificationStatuses', 'reportMimeTypes', 'valueTypes', 'vocabTermStatuses', 'workTermStatuses'].sort
-    @core_vocabs = %w[acousticalproperties additionalprocesses additionalproperties addresstype agentinfotype agequalifier castingprocesses citationtermflag citationtermtype collectionmethod concepttermflag concepttype conditioncheckmethod conditioncheckreason conditionfitness conservationstatus contactrole contactstatus currency datecertainty dateera datequalifier deaccessionapprovalgroup deaccessionapprovalstatus deformingprocesses disposalmethod dtstest dtstest1 dtstest2 durabilityproperties ecologicalcertifications electricalproperties energyunits entrymethod examinationphase exhibitionpersonrole exhibitionreferencetype exhibitionstatus exhibitiontype hygrothermalproperties hygrothermalpropertyunits inventorystatus joiningprocesses languages lifecyclecomponents loanoutstatus locationtermflag locationtype machiningprocesses materialform materialformtype materialproductionrole materialresource materialtermflag materialtype materialuse mechanicalproperties mechanicalpropertyunits moldingprocesses opticalproperties organizationtype orgtermflag otherpartyrole persontermflag persontermtype placetermflag publishto rapidprototypingprocesses recycledcontentqualifiers relationtypetype resourceidtype sensorialproperties smartmaterialproperties surfacingprocesses taxontermflag taxontype treatmentpurpose uocauthorizationstatuses uoccollectiontypes uocmaterialtypes uocmethods uocprojectid uocstaffroles uocsubcollections uocuserroles uocusertypes workcreatortype workpublishertype worktermflag worktype].sort 
+  let(:release){ '6_1' }
+  let(:rectypes){ ['person'] } 
+  let(:generator){ Helpers::SetupGenerator.new(profile: profilename, rectypes: rectypes, release: release) }
+  let(:profile){ generator.profile }
+
+  let(:core_rectypes) do
+    [
+      'acquisition', 'citation', 'collectionobject', 'concept', 'conditioncheck', 'conservation', 'exhibition',
+      'group', 'intake', 'loanin', 'loanout', 'location', 'media', 'movement', 'objectexit', 'organization',
+      'person', 'place', 'uoc', 'valuation', 'work'
+    ]
   end
   
-  describe '.new' do
-    it 'creates CCU::Profile object' do
-      expect(@core_profile).to be_instance_of(CCU::Profile)
-    end
-  end
-
-  describe '.config' do
-    it 'returns hash' do
-      expect(@core_profile.config).to be_instance_of(Hash)
-    end
-
-    it 'hash for core 5.2 has 28 keys' do
-      expect(@core_profile.config.keys.length).to eq(28)
-    end
-  end
-
-  describe '.rectypes' do
-    it 'returns array' do
-      expect(@core_profile.rectypes).to be_instance_of(Array)
-    end
-
-    it 'cleans rectype list' do
-      expect(@core_profile.rectypes.map{ |rt| rt.name }.sort).to eq(@core_rectypes)
-    end
-  end
-
-  describe '.extensions' do
-    it 'returns array' do
-      expect(@core_profile.extensions).to be_instance_of(Array)
-    end
-
-    it 'cleans extension list' do
-      expect(@core_profile.extensions.sort).to eq(%w[address blob contact dimension structuredDate])
-    end
-  end
-
-  describe 'apply_panel_override' do
-    it 'gets panel message overrides from profile level' do
-      msg = @anthro_profile.messages['panel.collectionobject.reference']['fullName']
-      expect(msg).to eq('Bibliographic Reference Information')
-    end
+  let(:core_authorities) do
+    %w[
+       citation/local citation/worldcat concept/activity concept/associated concept/material
+       concept/nomenclature concept/occasion location/local location/offsite organization/local
+       organization/ulan person/local person/ulan place/local place/tgn work/cona work/local
+      ]
   end
   
-  describe 'apply_overrides' do
-    it 'gives living plant extension messages ext prefix instead of conservation_livingplant' do
-      expect(@bonsai_profile.messages.has_key?('field.ext.livingplant.pestOrDiseaseObserved')).to be true
-    end
+  let(:core_option_lists) do
+    %w[
+       dimensions measurementUnits searchResultPagePageSizes searchPanelPageSizes booleans
+       yesNoValues dateQualifiers departments loanPurposes accountStatuses acquisitionMethods
+       citationTermStatuses ageUnits collections contentObjectTypes forms inscriptionTypes measuredParts
+       measurementMethods nameCurrencies nameLevels nameSystems nameTypes numberTypes objectComponentNames
+       objectStatuses ownershipAccessLevels ownershipCategories ownershipExchangeMethods phases positions
+       recordStatuses scripts sexes technicalAttributes technicalAttributeMeasurements
+       technicalAttributeMeasurementUnits titleTypes objectParentTypes objectChildTypes conceptTermStatuses
+       conceptTermTypes conceptHistoricalStatuses objectAuditCategories completenessLevels conditions
+       conservationTreatmentPriorities hazards conditionCheckMethods conditionCheckReasons salvagePriorityCodes
+       emailTypes telephoneNumberTypes faxNumberTypes webAddressTypes addressTypes addressCountries
+       exhibitionConsTreatmentStatuses exhibitionMountStatuses entryReasons locationTermTypes
+       locationTermStatuses mediaTypes locationFitnesses moveReasons moveMethods invActions invFreqs exitReasons
+       exitMethods orgTermTypes orgTermStatuses personTermStatuses personTermTypes salutations personTitles
+       genders placeTermTypes placeTermStatuses placeHistoricalStatuses placeTypes coordinateSystems
+       spatialRefSystems localityUnits geodeticDatums geoRefProtocols geoRefVerificationStatuses
+       reportMimeTypes valueTypes vocabTermStatuses workTermStatuses
+      ].sort
+  end
+  
+  let(:core_vocabs) do
+    %w[
+       addresstype agentinfotype agequalifier citationtermflag citationtermtype collectionmethod
+       concepttermflag concepttype conditioncheckmethod conditioncheckreason conditionfitness
+       conservationstatus contactrole contactstatus currency datecertainty dateera datequalifier
+       deaccessionapprovalgroup deaccessionapprovalstatus disposalmethod entrymethod examinationphase
+       exhibitionpersonrole exhibitionreferencetype exhibitionstatus exhibitiontype inventorystatus
+       languages loanoutstatus locationtermflag locationtype organizationtype orgtermflag otherpartyrole
+       persontermflag persontermtype placetermflag publishto relationtypetype resourceidtype treatmentpurpose
+       uocauthorizationstatuses uoccollectiontypes uocmaterialtypes uocmethods uocprojectid uocstaffroles
+       uocsubcollections uocuserroles uocusertypes workcreatortype workpublishertype worktermflag worktype
+      ].sort
   end
 
-  describe 'apply_field_override' do
-    it 'gets field message overrides from profile level' do
-      msg = @bonsai_profile.messages['field.conservation_common.conservator']['name']
-      expect(msg).to eq('Performed by')
+  context 'when core' do
+    let(:profilename){ 'core' }
+
+    describe '.new' do
+      it 'creates CCU::Profile object' do
+        expect(profile).to be_instance_of(CCU::Profile)
+      end
     end
-  end
 
+    describe '.config' do
+      context 'when 5_2' do
+        let(:release){ '5_2' }
+      it 'returns hash' do
+        expect(profile.config).to be_instance_of(Hash)
+      end
 
-  describe '.authorities' do
-    context 'when all rectypes requested' do
-      let(:result) { @core_profile.authorities }
+      it 'hash for core 5.2 has 28 keys' do
+        expect(profile.config.keys.length).to eq(28)
+      end
+      end
+    end
+
+    describe '.rectypes' do
+      let(:rectypes){ [] }
       it 'returns array' do
-        expect(result).to be_instance_of(Array)
+        expect(profile.rectypes).to be_instance_of(Array)
       end
 
-      it 'returns expected authorities' do
-        expect(result.sort).to eq(@core_authorities.sort)
+      it 'cleans rectype list' do
+        expect(profile.rectypes.map{ |rt| rt.name }.sort).to eq(core_rectypes)
       end
     end
+
+    describe '.extensions' do
+      it 'returns array' do
+        expect(profile.extensions).to be_instance_of(Array)
+      end
+
+      it 'cleans extension list' do
+        expect(profile.extensions.sort).to eq(%w[address blob contact dimension structuredDate])
+      end
+    end
+
+    describe '.authorities' do
+      let(:result) { profile.authorities }
+      
+      context 'when all rectypes requested' do
+        let(:rectype){ [] }
+        it 'returns array' do
+          expect(result).to be_instance_of(Array)
+        end
+
+        it 'returns expected authorities' do
+          expect(result.sort).to eq(core_authorities.sort)
+        end
+      end
+      
+      context 'when only collectionobject requested' do
+        let(:rectype){ ['collectionobject'] }
+        it 'returns expected authorities' do
+          expect(result.sort).to eq(core_authorities.sort)
+        end
+      end
+    end
+  end
+
+  context 'when anthro' do
+    let(:profilename){ 'anthro' }
     
-    context 'when only collectionobject requested' do
-      it 'returns expected authorities' do
-        p = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject'])
-        expect(p.authorities.sort).to eq(@core_authorities.sort)
+    describe 'apply_panel_override' do
+      it 'gets panel message overrides from profile level' do
+        msg = profile.messages['panel.collectionobject.reference']['fullName']
+        expect(msg).to eq('Bibliographic Reference Information')
+      end
+    end
+  end
+
+  context 'when bonsai' do
+    let(:profilename){ 'bonsai' }
+    let(:rectypes){ ['conservation'] }
+    
+    describe 'apply_overrides' do
+      it 'gives living plant extension messages ext prefix instead of conservation_livingplant' do
+        expect(profile.messages.has_key?('field.ext.livingplant.pestOrDiseaseObserved')).to be true
+      end
+    end
+
+    describe 'apply_field_override' do
+      it 'gets field message overrides from profile level' do
+        msg = profile.messages['field.conservation_common.conservator']['name']
+        expect(msg).to eq('Performed by')
       end
     end
   end
 
   describe '.option_lists' do
+    let(:profilename){ 'core' }
     it 'returns array' do
-      expect(@core_profile.option_lists).to be_instance_of(Array)
+      expect(profile.option_lists).to be_a(CCU::OptionLists)
     end
 
     it 'returns expected option_lists' do
-      expect(@core_profile.option_lists.sort).to eq(@core_option_lists.sort)
+      expect(profile.option_lists.names.sort).to eq(core_option_lists.sort)
     end
   end
 
   describe '#extensions_for' do
-    let (:result) { @anthro_profile.extensions_for('collectionobject') }
+    let(:profilename){ 'anthro' }
+    let (:result) { profile.extensions_for('collectionobject') }
     it 'returns hash' do
       expect(result).to be_instance_of(Hash)
     end
@@ -111,55 +176,62 @@ RSpec.describe CCU::Profile do
   end
 
   describe 'vocabularies' do
-    xit 'returns array of vocabularies' do
-      result = @core_profile.vocabularies.sort
+    let(:profilename){ 'core' }
+    it 'returns array of vocabularies', skip: 'unnecessary if mapper and template output is as expected' do
+      result = profile.vocabularies.sort
       puts 'In actual result, not in expected'
-      puts result - @core_vocabs
+      puts result - core_vocabs
       puts 'In expected, not in actual result'
-      puts @core_vocabs - result
-      expect(result).to eq(@core_vocabs)
+      puts core_vocabs - result
+      expect(result).to eq(core_vocabs)
     end
   end
 
   describe 'special_rectypes' do
+    let(:profilename){ 'core' }
+    
     context 'no rectypes given' do
+      let(:rectypes){ [] }
       it 'returns objecthierarchy, authorityhierarchy, relationship' do
-        expect(@core_profile.special_rectypes.sort).to eq(%w[authorityhierarchy objecthierarchy relationship])
+        expect(profile.special_rectypes.sort).to eq(%w[authorityhierarchy objecthierarchy relationship])
       end
     end
+    
     context 'rectypes = collectionobject' do
+      let(:rectypes){ ['collectionobject'] }
       it 'returns objecthierarchy, relationship' do
-        pro = CCU::Profile.new(profile: 'core', rectypes: ['collectionobject'])
-        expect(pro.special_rectypes.sort).to eq(%w[objecthierarchy relationship])
+        expect(profile.special_rectypes.sort).to eq(%w[objecthierarchy relationship])
       end
     end
+    
     context 'rectypes = work' do
+      let(:rectypes){ ['work'] }
       it 'returns authorityhierarchy' do
-        pro = CCU::Profile.new(profile: 'core', rectypes: ['work'])
-        expect(pro.special_rectypes.sort).to eq(%w[authorityhierarchy])
+        expect(profile.special_rectypes.sort).to eq(%w[authorityhierarchy])
       end
     end
+    
     context 'rectypes = acquisition' do
-      it 'returns authorityhierarchy' do
-        pro = CCU::Profile.new(profile: 'core', rectypes: ['acquisition'])
-        expect(pro.special_rectypes.sort).to eq(%w[relationship])
+      let(:rectypes){ ['acquisition'] }
+      it 'returns relationship' do
+        expect(profile.special_rectypes.sort).to eq(%w[relationship])
       end
     end
   end
 
   context 'filename dependent' do
-    before(:all) do
-      CCU.const_set('CONFIGDIR', 'spec/fixtures/files/6_1')
-      @profile = CCU::Profile.new(profile: 'anthro_4-1-0')
-    end
+    before(:context){ Helpers.set_profile_release('6_1') }
+
+    let(:profile){ CCU::Profile.new(profile: 'anthro_4-1-2') }
+
     describe '#basename' do
       it 'returns anthro' do
-        expect(@profile.basename).to eq('anthro')
+        expect(profile.basename).to eq('anthro')
       end
     end
     describe '#version' do
       it 'returns version' do
-        expect(@profile.version).to eq('4-1-0')
+        expect(profile.version).to eq('4-1-2')
       end
     end
   end

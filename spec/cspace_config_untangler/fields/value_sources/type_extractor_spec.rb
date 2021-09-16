@@ -61,16 +61,15 @@ RSpec.describe CCU::Fields::ValueSources::TypeExtractor do
          "view"=>{"type"=>"IDGeneratorInput", "props"=>{"source"=>"accession,intake,loanin"}}}
       end
       it 'returns nil' do
-        expect(result).to be_nil
+        expect(result).to eq('no source')
       end
     end
 
     context 'with no view data' do
       let(:hash){ {} }
       it 'returns nil' do
-        expect(result).to be_nil
+        expect(result).to eq('no source')
       end
     end
   end
 end
-

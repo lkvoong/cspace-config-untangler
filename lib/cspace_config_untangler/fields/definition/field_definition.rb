@@ -16,17 +16,16 @@ module CspaceConfigUntangler
           :required,
           :profile, :rectype
 
-        def initialize(fdp, name, config, parent)
-          super(fdp, name, config, parent)
-          @config = @config['[config]']
+        #def initialize(fdp, name, config, parent)
+        def initialize(config)
+          super(config)
+          @datahash = config.hash['[config]']
           set_id
           @data_type = set_datatype
           @value_source = []
           @value_list = []
           set_value_sources
           @required = set_required
-          clean_up
-          
         end
 
         def to_h
@@ -54,17 +53,9 @@ module CspaceConfigUntangler
         end
         
         private
-
-        def clean_up
-          @profile = @fdp.rectype.profile.name
-          @rectype = @fdp.rectype.name
-          @fdp = nil
-          @config = nil
-          @parent = nil
-        end
         
         def set_required
-          if @config.dig('required') && @config['required'] == true
+          if @datahash.dig('required') && @datahash['required'] == true
             return 'y'
           else
             return 'n'
@@ -72,51 +63,25 @@ module CspaceConfigUntangler
         end
 
         def set_value_sources
-          type = CCU::Fields::ValueSources::TypeExtractor.call(@config)
+          type = CCU::Fields::ValueSources::TypeExtractor.call(@datahash)
           return unless type
 
+          @value_source = CCU::Fields::ValueSources::SourceExtractor.call(type, @datahash, @config.option_lists)
+          if type == 'option list'
+            @value_list = @value_source.first.options
+            return
+          end
           
-          sources = CCU::Fields::ValueSources::SourceExtractor.call(type, @config)
-          data = @config.dig('view', 'props')
-          return [] if data.nil?
+          return unless @value_source.empty?
 
-          if data.has_key?('autoComplete') && !data.has_key?('source')
-            CCU::LOG.warn("DATA SOURCES: #{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - #{@id} - Autocomplete defined with no source")
-            return []
-          end
-
-          if data.has_key?('source')
-
-            number_types = %w[accession archives claim conditioncheck conservation evaluation exhibition
-                              indemnity insurance intake inventory library loanin loanout location media
-                              movement objectexit pottag propagation study transport uoc valuationcontrol voucher]
-            
-            sources = data['source'].split(',')
-            sources.each{ |source|
-              if @fdp.rectype.profile.option_lists.include?(source)
-                @value_source << "option list: #{source}"
-                list = @fdp.rectype.profile.config.dig('optionLists', source, 'values')
-                @value_list = list.sort if list
-              elsif @fdp.rectype.profile.authorities.include?(source)
-                @value_source << "authority: #{source}"
-              elsif @fdp.rectype.profile.vocabularies.include?(source)
-                @value_source << "vocabulary: #{source}"
-              elsif source['/']
-                # do nothing; authority not included in this profile is specified in field definition
-                #  reused by multiple profiles
-              elsif @name.end_with?('Number') && number_types.include?(source)
-                # do nothing; defines number pattern or object/procedure linkage
-              else
-                CCU::LOG.warn("DATA SOURCES: #{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - #{@id} - Source value '#{source}' is not an option list, authority, or vocabulary")
-                @value_source << "other: #{source}"
-              end
-            }
-          end
-
+          if type == 'authority'
+            CCU::LOG.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no source")
+            return
+          end          
         end
 
         def set_datatype
-          val = @config.dig('dataType')
+          val = @datahash.dig('dataType')
           val = val.sub('DATA_TYPE_', '') if val
           case val
           when nil
@@ -144,11 +109,11 @@ module CspaceConfigUntangler
             @id = "ext.structuredDate.#{@name}"
           elsif @parent.is_a?(CCU::Fields::Def::Grouping) && @parent.schema_path.include?('localityGroupList')
             @id = "ext.locality.#{@name}"
-          elsif @config.dig('extensionName')
-            @id = "ext.structuredDate.#{@name}" if @config['extensionName'] == 'structuredDate'
-            @id = "ext.dimension.#{@name}" if @config['extensionName'] == 'dimension'
-            @id = "ext.address.#{@name}" if @config['extensionName'] == 'address'
-            @id = "ext.locality.#{@name}" if @config['extensionName'] == 'locality'
+          elsif @datahash.dig('extensionName')
+            @id = "ext.structuredDate.#{@name}" if @datahash['extensionName'] == 'structuredDate'
+            @id = "ext.dimension.#{@name}" if @datahash['extensionName'] == 'dimension'
+            @id = "ext.address.#{@name}" if @datahash['extensionName'] == 'address'
+            @id = "ext.locality.#{@name}" if @datahash['extensionName'] == 'locality'
             # handles weirdness described at:
             #  https://collectionspace.atlassian.net/browse/DRYD-863
           elsif @id == 'approvalGroupField.approvalGroup'

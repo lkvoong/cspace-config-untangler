@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.describe CCU::Vocabulary do
-  let(:vocabulary){ CCU::Vocabulary.new(str) }
+RSpec.describe CCU::ValueSources::Vocabulary do
+  let(:vocabulary){ CCU::ValueSources::Vocabulary.new(str) }
   let(:str){ 'relationtypetype' }
 
   describe '#name' do

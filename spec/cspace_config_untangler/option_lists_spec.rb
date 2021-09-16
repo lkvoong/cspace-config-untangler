@@ -18,8 +18,8 @@ RSpec.describe CCU::OptionLists do
 
   describe '#get_option_list' do
     let(:result){ lists.get_option_list(name) }
-    it 'returns a CCU::OptionList' do
-      expect(result).to be_a(CCU::OptionList)
+    it 'returns a CCU::ValueSources::OptionList' do
+      expect(result).to be_a(CCU::ValueSources::OptionList)
     end
   end
 end

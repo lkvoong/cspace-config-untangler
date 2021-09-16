@@ -8,14 +8,14 @@ module CspaceConfigUntangler
   module Fields
     module Definition
       class Grouping < FieldConfigChild
-        attr_reader :repeats
+        attr_reader :config, :repeats
         
         # @param config [CCU::Fields::Definition::Config]
         def initialize(config)
           super(config)
           @schema_path << config.name
 
-          HashIterator.new(config, self.class)
+          HashIterator.new(config, self)
         end
       end
     end

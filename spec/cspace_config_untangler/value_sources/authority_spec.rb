@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.describe CCU::Authority do
-  let(:authority){ CCU::Authority.new(str) }
+RSpec.describe CCU::ValueSources::Authority do
+  let(:authority){ CCU::ValueSources::Authority.new(str) }
   let(:str){ 'concept/associated' }
 
   describe '#name' do

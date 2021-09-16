@@ -12,6 +12,8 @@ module CspaceConfigUntangler
             'option list'
           when 'TermPickerInput'
             'vocabulary'
+          else
+            'no source'
           end
         end
       end
