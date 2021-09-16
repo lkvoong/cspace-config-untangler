@@ -286,15 +286,15 @@ LONGDESC
         exit
       end
       rt = options[:rectypes] == 'all' ? [] : options[:rectypes].split(',')
-      fs = []
+      fields = []
       get_profiles.each {|profile|
         p = CCU::Profile.new(profile: profile, rectypes: rt, structured_date_treatment: options[:structured_date].to_sym)
-        p.fields.each{ |f| fs << f }
+        p.fields.each{ |f| fields << f }
       }
-      unless fs.empty?
+      unless fields.empty?
         CSV.open(options[:output], 'wb'){ |csv|
-          csv << fs[0].csv_header
-          fs.each{ |f| csv << f.to_csv }
+          csv << fields[0].csv_header
+          fields.each{ |f| csv << f.to_csv }
         }
       end
     end

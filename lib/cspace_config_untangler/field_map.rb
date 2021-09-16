@@ -53,7 +53,7 @@ module CspaceConfigUntangler
 
       def structure_hash
         result = {}
-        sources = @field.value_source.blank? ? ['no source'] : @field.value_source
+        sources = @field.value_source.blank? ? [CCU::ValueSources::NoSource.new] : @field.value_source
         sources.each do |source|
           result[source] = { column_name: '',
                    transforms: {},
@@ -82,8 +82,7 @@ module CspaceConfigUntangler
         
         case source.source_type
         when 'authority'
-          xform[:authority] = AuthorityConfigLookup.new(profile: @field.profile,
-                                                        authority: source).result
+          xform[:authority] = source.service_paths
         when 'vocabulary'
           xform[:vocabulary] = source.subtype
         end
@@ -108,6 +107,8 @@ module CspaceConfigUntangler
       def create_mappings
         mappings = []
         @hash.each do |source, h|
+          next if source.source_type == 'authority' && !source.configured?
+          
           mappings << FieldMapping.new(field: @field,
                                        datacolumn: h[:column_name],
                                        transforms: h[:transforms],
@@ -178,20 +179,6 @@ module CspaceConfigUntangler
         split = value_source.sub('authority: ', '').split('/')
         @type = split[0]
         @subtype = split[1]
-      end
-    end
-    
-    class AuthorityConfigLookup
-      ::AuthorityConfigLookup = CspaceConfigUntangler::FieldMap::AuthorityConfigLookup
-      attr_reader :result
-      def initialize(profile:, authority:)
-        authtype = authority.type
-        authsubtype = authority.subtype
-        path = profile.config.dig('recordTypes', authtype, 'serviceConfig', 'servicePath')
-        subpath = profile.config.dig('recordTypes', authtype, 'vocabularies', authsubtype,
-                                     'serviceConfig', 'servicePath')
-        subpath = subpath.match(/\((.*)\)$/)[1]
-        @result = [path, subpath]
       end
     end
   end

@@ -6,26 +6,26 @@ module CspaceConfigUntangler
       class SourceExtractor
         # Authority sources where there is no config to inform mappings
         IgnoredAuthorities = [
-          'citation/shared',
-          'concept/material_shared',
-          'organization/shared',
-          'person/shared',
-          'place/shared'
+#          'citation/shared',
+          # 'concept/material_shared',
+          # 'organization/shared',
+          # 'person/shared',
+          # 'place/shared'
           ]
-        def self.call(type, field_hash, option_lists)
+        def self.call(type, field_hash, profile)
           return [CCU::ValueSources::NoSource.new] if type == 'no source'
           
           sources = field_hash.dig('view', 'props', 'source')
 
           case type
           when 'option list'
-            [option_lists.get_option_list(sources)]
+            [profile.option_lists.get_option_list(sources)]
           when 'vocabulary'
             [CCU::ValueSources::Vocabulary.new(sources)]
           when 'authority'
             sources.split(',')
               .reject{ |source| IgnoredAuthorities.any?(source) }
-              .map{ |source| CCU::ValueSources::Authority.new(source) }
+              .map{ |source| CCU::ValueSources::Authority.new(source, profile) }
           end
         end
       end

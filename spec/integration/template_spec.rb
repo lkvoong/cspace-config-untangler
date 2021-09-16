@@ -14,7 +14,6 @@ RSpec.describe CCU::Template::CsvTemplate do
   context 'anthro profile' do
     context 'object record type' do
       it 'generates expected csvdata' do
-        
         expect(template_o.length).to eq(template_f.length)
         template_o.each_with_index do |fielddata, i|
           expect(fielddata).to eq(template_f[i])

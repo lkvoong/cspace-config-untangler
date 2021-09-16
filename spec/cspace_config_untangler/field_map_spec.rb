@@ -252,23 +252,4 @@ RSpec.describe CCU::FieldMap do
     end
   end
 
-  describe AuthorityConfigLookup do
-    let(:result) { AuthorityConfigLookup.new(profile: profile, authority: authority_obj).result }
-
-    context 'when given profile=core and authority=concept/material' do
-      let(:auth_str){ 'concept/material' }
-      it 'returns [conceptauthorities, material_ca]' do
-        expect(result).to eq(%w[conceptauthorities material_ca])
-      end
-    end
-    
-    context 'when given profile=core and authority=person/ulan' do
-      let(:auth_str){ 'person/ulan' }
-      it 'returns [personauthorities, ulan_pa]' do
-        expect(result).to eq(%w[personauthorities ulan_pa])
-      end
-    end
-  end
-
-  
 end #RSpec

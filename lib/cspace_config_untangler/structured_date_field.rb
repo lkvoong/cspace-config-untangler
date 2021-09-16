@@ -41,7 +41,7 @@ module CspaceConfigUntangler
       return unless type
 
       
-      @value_source = CCU::Fields::ValueSources::SourceExtractor.call(type, datahash, @profile.option_lists)
+      @value_source = CCU::Fields::ValueSources::SourceExtractor.call(type, datahash, @profile)
       
       if  @value_source.empty? && type == 'authority'
         CCU::LOG.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no source")

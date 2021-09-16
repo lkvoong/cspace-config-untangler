@@ -25,7 +25,7 @@ module CspaceConfigUntangler
       end
 
       def csv_header
-        return %w[profile record_type namespace namespace_for_id field_id ui_info_group ui_path ui_field_label xml_path xml_field_name data_type required repeats group_repeats data_source option_list_values]
+        return %w[fid profile record_type namespace namespace_for_id field_id ui_info_group ui_path ui_field_label xml_path xml_field_name data_type required repeats group_repeats data_source option_list_values]
       end
 
       def structured_date?
@@ -47,7 +47,7 @@ module CspaceConfigUntangler
       private
       
       def format_csv
-        arr = [@profile.name]
+        arr = ["#{@profile.name} #{@ns} #{@name}", @profile.name]
         @rectype.is_a?(CCU::RecordType) ? arr << @rectype.name : arr << @rectype
         @ns ? arr << @ns : arr << ''
         @ns_for_id ? arr << @ns_for_id : arr << ''
@@ -68,7 +68,7 @@ module CspaceConfigUntangler
         @required ? arr << @required : arr << ''
         @repeats ? arr << @repeats : arr << ''
         @in_repeating_group ? arr << @in_repeating_group : arr << ''
-        @value_source ? arr << @value_source.join('; ') : arr << ''
+        @value_source ? arr << @value_source.map(&:fields_csv_label).compact.join('; ') : arr << ''
         @value_list ? arr << @value_list.join(', ') : arr << ''
         return arr
       end

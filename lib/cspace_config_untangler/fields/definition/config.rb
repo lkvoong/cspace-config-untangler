@@ -47,14 +47,13 @@ module CspaceConfigUntangler
           @rectype.profile.config
         end
 
+        def profile_object
+          @rectype.profile
+        end
+
         def messages
           @rectype.profile.messages
         end
-
-        def option_lists
-          @rectype.profile.option_lists
-        end
-        
 
         def rectype
           @rectype.name
