@@ -8,19 +8,6 @@ RSpec.describe CCU::RecordType do
   let(:profile){ generator.profile }
   let(:rectype){ generator.rectype }
 
-  # before(:all) do
-  #   CCU.const_set('CONFIGDIR', File.join('spec', 'fixtures', 'files', '7_0'))
-  #   @core_profile = CCU::Profile.new(profile: 'core_7-0-0', rectypes: %w[collectionobject media person])
-  #   @anthro_profile = CCU::Profile.new(profile: 'anthro_5-0-0', rectypes: %w[collectionobject movement media])
-  #   @bg_profile = CCU::Profile.new(profile: 'botgarden_3-0-0', rectypes: %w[collectionobject])
-  #   @core_co = @core_profile.rectypes[0]
-  #   @core_media = @core_profile.rectypes[1]
-  #   @core_person = @core_profile.rectypes[2]
-  #   @anthro_co = @anthro_profile.rectypes[0]
-  #   @anthro_movement = @anthro_profile.rectypes[1]
-  #   @anthro_media = @anthro_profile.rectypes[2]
-  #   @bg_co = @bg_profile.rectypes[0]
-  # end
   it 'creates CCU::RecordType object' do
     expect(rectype).to be_instance_of(CCU::RecordType)
   end
