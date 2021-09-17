@@ -1,10 +1,10 @@
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
   module FieldMap
     class DataColumnNamerConsistent
       ::DataColumnNamerConsistent = CspaceConfigUntangler::FieldMap::DataColumnNamerConsistent
       attr_reader :result
+      # @param fieldname [String] base field name from which to generate column names
+      # @param sources [Array<CCU::ValueSources::Authority>] sources for the columns to be generated
       def initialize(fieldname:, sources:)
         @fieldname = fieldname
         @sources = sources

@@ -14,7 +14,7 @@ module CspaceConfigUntangler
           :repeats, :in_repeating_group,
           :data_type, :value_source, :value_list,
           :required,
-          :profile, :rectype
+          :profile
 
         #def initialize(fdp, name, config, parent)
         def initialize(config)
@@ -38,16 +38,20 @@ module CspaceConfigUntangler
         def csv_header
           return %w[profile record_type namespace field_id field_name schema_path required repeats group_repeats data_type data_source option_list_values]
         end
+
+        def rectype
+          @config.rectype
+        end
         
         def to_csv
-          arr = [@profile, @rectype, @ns, @id]
+          arr = [@config.profile, @config.rectype, @config.namespace.literal, @id]
           @name ? arr << @name : arr << ''
           @schema_path ? arr << @schema_path.join(' > ') : arr << ''
           @required ? arr << @required : arr << ''
           @repeats ? arr << @repeats : arr << ''
           @in_repeating_group ? arr << @in_repeating_group : arr << ''
           @data_type ? arr << @data_type : arr << ''
-          @value_source ? arr << @value_source.join(', ') : arr << ''
+          @value_source ? arr << @value_source.map(&:fields_csv_label).compact.join(', ') : arr << ''
           @value_list ? arr << @value_list.join(', ') : arr << ''
           return arr
         end

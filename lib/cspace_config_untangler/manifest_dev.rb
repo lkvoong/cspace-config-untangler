@@ -9,7 +9,7 @@ module CspaceConfigUntangler
     DEV_MAPPERS = {
         'anthro' => %w[collectionobject concept-associated],
         'fcart' => %w[collectionobject concept-associated],
-        'core' => %w[collectionobject concept-associated nonhierarchicalrelationship]
+        'core' => %w[collectionobject concept-associated nonhierarchicalrelationship objecthierarchy]
       }
     
     private

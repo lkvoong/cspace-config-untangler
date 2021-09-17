@@ -78,9 +78,11 @@ module CspaceConfigUntangler
     def special_rectypes
       arr = []
       rtnames = @rectypes.map(&:name)
-      arr << 'objecthierarchy' if rtnames.include?('collectionobject')
-      arr << 'authorityhierarchy' if rectypes_include_authorities
-      arr << 'relationship' if rtnames.include?('collectionobject') || rectypes_include_procedures
+      arr << CCU::ObjectHierarchy.new(profile: self) if rtnames.include?('collectionobject')
+      arr << CCU::AuthorityHierarchy.new(profile: self) if rectypes_include_authorities
+      if rtnames.include?('collectionobject') || rectypes_include_procedures
+        arr << CCU::NonHierarchicalRelationship.new(profile: self)
+      end
       arr
     end
 

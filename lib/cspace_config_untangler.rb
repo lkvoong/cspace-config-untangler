@@ -22,7 +22,12 @@ module CspaceConfigUntangler
   module_function
   extend Dry::Configurable
 
+
   File.delete('log.log') if File::exist?('log.log')
+
+  def logger
+    @logger ||= Logger.new('log.log')
+  end
   
   def app_dir
     File.realpath(File.join(File.dirname(__FILE__), '..'))
@@ -43,36 +48,28 @@ module CspaceConfigUntangler
   CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
   CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers')
 
-  # Require all application files
-  Dir.glob("#{__dir__}/cspace_config_untangler/**/*").sort.select{ |path| path.match?(/\.rb$/) }.each do |rbfile|
-    require_relative rbfile.delete_prefix("#{File.expand_path(__dir__)}/").delete_suffix('.rb')
-  end
+  default_datadir = File.join(app_dir, 'data')
+  default_configdir = File.join(default_datadir, 'configs')
+  default_templatedir = File.join(default_datadir, 'templates')
+  default_mapperdir = File.join(default_datadir, 'mappers')
+  
 
-  setting :test, reader: true
-  setting :datadir, reader: true
-  setting :configdir, reader: true
-  setting :templatedir, reader: true
-  setting :mapperdir, reader: true
-  setting :profiles, reader: true
-  setting :main_profile_name, reader: true
-  setting :log, reader: true
-  setting :mapper_uri_base, reader: true
-  
-  CCU.config.test = 'blah'
-  CCU.config.datadir = File.join(app_dir, 'data')
-  CCU.config.configdir = File.join(CCU.datadir, 'configs')
-  CCU.config.templatedir = File.join(CCU.datadir, 'templates')
-  CCU.config.mapperdir = File.join(CCU.datadir, 'mappers')
-  
-  config_file_names = Dir.new(CCU.configdir).children
+
+  setting :test, 'blah', reader: true
+  setting :datadir, default_datadir, reader: true
+  setting :configdir, default_configdir, reader: true
+  setting :templatedir, default_templatedir, reader: true
+  setting :mapperdir, default_mapperdir, reader: true
+
+  config_file_names = Dir.new(default_configdir).children
     .reject{ |e| e['readable'] }
     .reject{ |e| e == '.keep' }
     .map{ |fn| File.basename(fn).sub('.json', '') }
-
-  CCU.config.profiles = config_file_names
-  CCU.config.main_profile_name = 'core'
-  CCU.config.log = Logger.new('log.log')
-  CCU.config.mapper_uri_base = 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers'
+  
+  setting :profiles, config_file_names, reader: true
+  setting :main_profile_name, 'core', reader: true
+  setting :log, logger, reader: true
+  setting :mapper_uri_base, 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers', reader: true
 
   def main_profile
     Pathname.new(CCU.configdir)
@@ -84,5 +81,10 @@ module CspaceConfigUntangler
   
   def safe_copy(hash)
     Marshal.load(Marshal.dump(hash))
+  end
+
+  # Require all application files
+  Dir.glob("#{__dir__}/cspace_config_untangler/**/*").sort.select{ |path| path.match?(/\.rb$/) }.each do |rbfile|
+    require_relative rbfile.delete_prefix("#{File.expand_path(__dir__)}/").delete_suffix('.rb')
   end
 end

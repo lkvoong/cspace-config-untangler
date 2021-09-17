@@ -5,11 +5,12 @@ require_relative 'field_definition'
 module CspaceConfigUntangler
   module Fields
     module Definition
-      # ensures some fields do not get included in the resulting field definitions
+      # Ensures some fields do not get included in the resulting field definitions
       class FieldFilter
-        # list of fields to omit from resulting field definitions
+        # List of fields to omit from resulting field definitions
         OmittedFields = %w[csid inAuthority refName shortIdentifier]
 
+        # This allows us to to skip manually doing `new.call` every time
         def self.call(config)
           self.new.call(config)
         end
