@@ -125,12 +125,10 @@ module CspaceConfigUntangler
       end
 
       def get_source_name(source)
-        source.name
-        # if source.is_a?(AuthoritySource)
-        #   source.string
-        # else
-        #   source.sub(/^(option list|authority|vocabulary): /, '')
-        # end
+        name = source.name
+        return nil if name == 'na'
+        
+        name
       end
     end
   end
