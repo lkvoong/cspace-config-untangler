@@ -193,28 +193,29 @@ RSpec.describe CCU::Profile do
     context 'no rectypes given' do
       let(:rectypes){ [] }
       it 'returns objecthierarchy, authorityhierarchy, relationship' do
-        expect(profile.special_rectypes.sort).to eq(%w[authorityhierarchy objecthierarchy relationship])
+        expected = %w[authorityhierarchy nonhierarchicalrelationship objecthierarchy]
+        expect(profile.special_rectypes.map(&:name).sort).to eq(expected)
       end
     end
     
     context 'rectypes = collectionobject' do
       let(:rectypes){ ['collectionobject'] }
       it 'returns objecthierarchy, relationship' do
-        expect(profile.special_rectypes.sort).to eq(%w[objecthierarchy relationship])
+        expect(profile.special_rectypes.map(&:name).sort).to eq(%w[nonhierarchicalrelationship objecthierarchy])
       end
     end
     
     context 'rectypes = work' do
       let(:rectypes){ ['work'] }
       it 'returns authorityhierarchy' do
-        expect(profile.special_rectypes.sort).to eq(%w[authorityhierarchy])
+        expect(profile.special_rectypes.map(&:name).sort).to eq(%w[authorityhierarchy])
       end
     end
     
     context 'rectypes = acquisition' do
       let(:rectypes){ ['acquisition'] }
       it 'returns relationship' do
-        expect(profile.special_rectypes.sort).to eq(%w[relationship])
+        expect(profile.special_rectypes.map(&:name).sort).to eq(%w[nonhierarchicalrelationship])
       end
     end
   end
