@@ -80,24 +80,12 @@ LONGDESC
               mapper[:mapper].to_json(data: mapper[:mapper].hash, output: mapper[:path])
             end
           end
+
           p.special_rectypes.each do |rt|
-            case rt
-            when 'objecthierarchy'
-              puts '  ...objecthierarchy'
-              path = "#{dir_path}/#{p.name}_objecthierarchy.json"
-              oh = CCU::ObjectHierarchy.new(profile: p)
-              oh.to_json(data: oh.mapper, output: path)
-            when 'authorityhierarchy'
-              puts '  ...authorityhierarchy'
-              path = "#{dir_path}/#{p.name}_authorityhierarchy.json"
-              ah = CCU::AuthorityHierarchy.new(profile: p)
-              ah.to_json(data: ah.mapper, output: path)
-            when 'relationship'
-              puts '  ...nonhierarchicalrelationship'
-              path = "#{dir_path}/#{p.name}_nonhierarchicalrelationship.json"
-              nhr = CCU::NonHierarchicalRelationship.new(profile: p)
-              nhr.to_json(data: nhr.mapper, output: path)
-            end
+            name = rt.name
+            puts "  ...#{name}"
+            path = "#{dir_path}/#{p.name}_#{name}.json"
+            rt.to_json(data: rt.mapper, output: path)
           end
         end
       end

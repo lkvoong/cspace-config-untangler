@@ -18,7 +18,6 @@ module CspaceConfigUntangler
       get_rectypes(rectypes)
       @authorities = get_authorities
       @vocabularies = get_vocabularies
-      @special_rectypes = []
       @panels = get_panels
       CCU::StructuredDateMessageGetter.new(self) if @structured_date_treatment == :explode
       get_field_defs
