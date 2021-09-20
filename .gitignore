@@ -9,6 +9,7 @@ Gemfile.lock
 *.log
 /tmp/
 .byebug_history
+jard_errors.txt
 
 # rspec failure tracking
 .rspec_status
