@@ -129,6 +129,15 @@ module CspaceConfigUntangler
       end
       field
     end
+
+    def unmappable_fields
+      unmappable = mappings.select{ |mapping| mapping.xpath.nil? && mapping.data_type.nil? }
+      return if unmappable.empty?
+
+      unmappable.each do |mapping|
+        puts "#{profile.name} - #{name} - #{mapping.fieldname}"
+      end
+    end
     
     private
 

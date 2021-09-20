@@ -11,7 +11,7 @@ module CspaceConfigUntangler
       option :structured_date,
         desc: 'explode: report all individual structured date fields; collapse: report the parent of individual structured date fields as the field',
         default: 'explode',
-        aliases: '-sd'
+        aliases: '-d'
       def csv
         unless %w[explode collapse].include?(options[:structured_date])
           puts '--structured_date parameter must be either "explode" or "collapse"'
@@ -44,6 +44,29 @@ The full schema_path should be unique within a record type. Non-unique fields ar
           p.nonunique_fields.each{ |rt, fields| h[rt] = fields if fields.length > 0 }
           h.each{ |rt, fields| fields.each{ |f| puts "#{@name} - #{rt} - #{f}" } }
         }
+      end
+
+      desc 'unmappable', 'Prints list of fields per profile that are omitted from templates/mappers due to being unmappable'
+      long_desc <<~DESC
+This is introduced because some fields are being omitted from OMCA's templates/mappers because they have custom namespaces in their 'contact' subrecord. The Untangler assumes only the common namespace is used in subrecords, so these fields cannot be extracted/mapped at this point. 
+
+An unmappable field is identified by its field_mapping object having nil data_type and xpath attributes.
+      DESC
+      option :rectypes, desc: 'Comma separated list (no spaces) of record types to include. Defaults to all.', default: 'all', aliases: '-r'
+      option :structured_date,
+        desc: 'explode: report all individual structured date fields; collapse: report the parent of individual structured date fields as the field',
+        default: 'explode',
+        aliases: '-d'
+      def unmappable
+        rt = options[:rectypes] == 'all' ? [] : options[:rectypes].split(',')
+        get_profiles.each do |profile|
+          profile_obj = CCU::Profile.new(
+            profile: profile,
+            rectypes: rt,
+            structured_date_treatment: options[:structured_date].to_sym
+          )
+          profile_obj.rectypes.each{ |rt| rt.unmappable_fields }
+        end
       end
     end
   end
