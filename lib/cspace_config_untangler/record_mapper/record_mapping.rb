@@ -55,6 +55,8 @@ module CspaceConfigUntangler
         end
 
         @mappings.each do |m|
+          next if m.data_type.nil? && m.xpath.nil? 
+          
           levels = m.xpath.clone
           done = []
           while levels.size > 0 do
