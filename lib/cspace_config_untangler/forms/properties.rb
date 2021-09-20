@@ -70,6 +70,8 @@ module CspaceConfigUntangler
       end
       
       def process_subrecord(subrec, formname)
+        return if @ns == 'ns2:acquisitions_omca' # this is a plain field, not a call to contacts subrecord
+        
         @hash = @form.rectype.profile.config['recordTypes'][subrec]['forms'][formname]['template']['props']['children']['props']
         @is_panel = true
         @is_ext = true
