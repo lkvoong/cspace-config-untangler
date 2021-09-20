@@ -73,7 +73,14 @@ module CspaceConfigUntangler
 
     def mappings
       checkhash = {}
-      mappings = fields.map{ |f| FieldMapper.new(field: f, column_style: profile.column_style).mappings}.flatten
+      # omits any fields for which workable mapping cannot be extracted
+      # this is introduced in order to output any workable template/mappers for OMCA, because
+      #   they have custom namespace inside the contact subrecord which the Untangler can't
+      #   deal with at present
+      mappings = fields.map{ |f| FieldMapper.new(field: f, column_style: profile.column_style).mappings}
+        .flatten
+        .reject{ |mapping| mapping.data_type.nil? && mapping.datacolumn.empty? && mapping.xpath.nil? }
+
       # ensure unique datacolumn values for templates and mapper
       mappings.each do |mapping|
         if checkhash.key?(mapping.datacolumn)
