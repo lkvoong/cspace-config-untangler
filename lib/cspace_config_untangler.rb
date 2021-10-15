@@ -8,106 +8,85 @@ require 'yaml'
 
 # external gems
 require 'bundler/setup'
+require 'dry-configurable'
 require 'facets/kernel/blank'
 require 'http'
 require 'nokogiri'
 require 'pry'
+require 'ruby_jard'
 require 'thor'
+
 
 module CspaceConfigUntangler
   ::CCU = CspaceConfigUntangler
+  module_function
+  extend Dry::Configurable
+
+
+  File.delete('log.log') if File::exist?('log.log')
+
+  def logger
+    @logger ||= Logger.new('log.log')
+  end
+  
+  def app_dir
+    File.realpath(File.join(File.dirname(__FILE__), '..'))
+  end
+
+
+  CCU.const_set('DATADIR', File.join(app_dir, 'data'))
   CCU.const_set('MAINPROFILE', 'core_6-1-0')
-  CCU.const_set('DATADIR', '/Users/kristina/code/untangler-cspace-config/data')
   CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
-  config_file_names = Dir.new(CCU::CONFIGDIR).children
+  config_file_names_deprecating = Dir.new(CCU::CONFIGDIR).children
     .reject{ |e| e['readable'] }
     .reject{ |e| e == '.keep' }
     .map{ |fn| File.basename(fn).sub('.json', '') }
-  CCU.const_set('PROFILES', config_file_names)
-  File.delete('log.log') if File::exist?('log.log')
+
+  CCU.const_set('PROFILES', config_file_names_deprecating)
+
   CCU.const_set('LOG', Logger.new('log.log'))
   CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
   CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers')
 
-  autoload :VERSION, 'cspace_config_untangler/version'
-  autoload :CommandLine, 'cspace_config_untangler/command_line'
-
-  # mixins
-  autoload :Iterable, 'cspace_config_untangler/iterable'
-  autoload :JsonWritable, 'cspace_config_untangler/json_writable'
-  autoload :SpecialRectype, 'cspace_config_untangler/special_rectype'
-  autoload :ColumnNameStylable, 'cspace_config_untangler/column_name_stylable'
+  default_datadir = File.join(app_dir, 'data')
+  default_configdir = File.join(default_datadir, 'configs')
+  default_templatedir = File.join(default_datadir, 'templates')
+  default_mapperdir = File.join(default_datadir, 'mappers')
   
-  # command handlers
-  autoload :Manifest, 'cspace_config_untangler/manifest'
-  autoload :ManifestDev, 'cspace_config_untangler/manifest_dev'
-  
-  # canned mappers
-  autoload :ObjectHierarchy, 'cspace_config_untangler/object_hierarchy'
-  autoload :AuthorityHierarchy, 'cspace_config_untangler/authority_hierarchy'
-  autoload :NonHierarchicalRelationship, 'cspace_config_untangler/non_hierarchical_relationship'
 
-  # extracting field data from JSON config
-  autoload :Field, 'cspace_config_untangler/field'
-  autoload :FieldDefinitionParser, 'cspace_config_untangler/field_definition_parser'
-  autoload :FieldDefinition, 'cspace_config_untangler/field_definition_parser'
-  autoload :FieldVerifier, 'cspace_config_untangler/field_definition_parser'
-  autoload :Form, 'cspace_config_untangler/form'
-  autoload :FormProps, 'cspace_config_untangler/form'
-  autoload :Profile, 'cspace_config_untangler/profile'
-  autoload :ProfileComparison, 'cspace_config_untangler/profile_comparison'
-  autoload :Extension, 'cspace_config_untangler/extensions'
-  autoload :Extensions, 'cspace_config_untangler/extensions'
-  autoload :ManifestEntry, 'cspace_config_untangler/manifest_entry'
-  autoload :RecordTypes, 'cspace_config_untangler/record_types'
-  autoload :RecordType, 'cspace_config_untangler/record_types'
-  autoload :StructuredDateMessageGetter, 'cspace_config_untangler/structured_date_message_getter'
-  autoload :StructuredDateField, 'cspace_config_untangler/structured_date_field'
-  autoload :StructuredDateFieldMaker, 'cspace_config_untangler/structured_date_field_maker'
 
-  autoload :Template, 'cspace_config_untangler/template'
-  autoload :CsvTemplate, 'cspace_config_untangler/template'
+  setting :test, default: 'blah', reader: true
+  setting :datadir, default: default_datadir, reader: true
+  setting :configdir, default: default_configdir, reader: true
+  setting :templatedir, default: default_templatedir, reader: true
+  setting :mapperdir, default: default_mapperdir, reader: true
 
+  config_file_names = Dir.new(default_configdir).children
+    .reject{ |e| e['readable'] }
+    .reject{ |e| e == '.keep' }
+    .map{ |fn| File.basename(fn).sub('.json', '') }
   
-  # mapping CSV data to CSpace XML
-  autoload :DataColumnNamerConsistent, 'cspace_config_untangler/field_map/data_column_namer_consistent'
-  autoload :DataColumnNamerFancy, 'cspace_config_untangler/field_map/data_column_namer_fancy'
-  autoload :FieldMap, 'cspace_config_untangler/field_map'
-  autoload :FieldMapper, 'cspace_config_untangler/field_map'
-  autoload :FieldMapping, 'cspace_config_untangler/field_map'
-  autoload :AuthorityConfigLookup, 'cspace_config_untangler/field_map'
-  autoload :CsvMapper, 'cspace_config_untangler/csv_mapper'
-  autoload :RecordMapper, 'cspace_config_untangler/record_mapper'
-  autoload :RecordMapping, 'cspace_config_untangler/record_mapper'
-  autoload :NamespaceUris, 'cspace_config_untangler/record_mapper'
-  autoload :RowMapper, 'cspace_config_untangler/row_mapper'
+  setting :profiles, default: config_file_names, reader: true
+  setting :main_profile_name, default: 'core', reader: true
+  setting :log, default: logger, reader: true
+  setting :mapper_uri_base,
+    default: 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers',
+    reader: true
+
+  def main_profile
+    Pathname.new(CCU.configdir)
+      .children(false)
+      .select{ |filename| filename.to_s.start_with?(CCU.main_profile_name) }
+      .map{ |filename| filename.to_s.delete_suffix(filename.extname) }
+      .first
+  end
   
-  def self.safe_copy(hash)
+  def safe_copy(hash)
     Marshal.load(Marshal.dump(hash))
   end
 
-  # todo move to its own file
-  module TrackAttributes
-    def attr_readers
-      self.class.instance_variable_get('@attr_readers')
-    end
-
-    def attr_accessors
-      self.class.instance_variable_get('@attr_accessors')
-    end
-
-    def self.included(klass)
-      klass.send :define_singleton_method, :attr_reader, ->(*params) do
-        @attr_readers ||= []
-        @attr_readers.concat params
-        super(*params)
-      end
-      klass.send :define_singleton_method, :attr_accessor, ->(*params) do
-        @attr_accessors ||= []
-        @attr_accessors.concat params
-        super(*params)
-      end
-    end
+  # Require all application files
+  Dir.glob("#{__dir__}/cspace_config_untangler/**/*").sort.select{ |path| path.match?(/\.rb$/) }.each do |rbfile|
+    require_relative rbfile.delete_prefix("#{File.expand_path(__dir__)}/").delete_suffix('.rb')
   end
-
 end

@@ -1,4 +1,4 @@
-require 'cspace_config_untangler'
+require_relative 'fields/definition/parser'
 
 module CspaceConfigUntangler
   class RecordType
@@ -25,7 +25,7 @@ module CspaceConfigUntangler
 
     def field_defs
       if @config.dig('fields', 'document')
-        defs = FieldDefinitionParser.new(self, @config['fields']['document'])
+        defs = CCU::Fields::Def::Parser.new(self, @config['fields']['document'])
         return defs.field_defs
       else
         CCU::LOG.warn("#{profile.name} - #{name} has no field def hash")
@@ -42,7 +42,7 @@ module CspaceConfigUntangler
     end
 
     def fields
-      fields = form_fields.map{ |ff| CCU::Field.new(self, ff) }
+      fields = form_fields.map{ |ff| CCU::Fields::Field.new(self, ff) }
       fields = explode_structured_date_fields(fields) if @structured_date_treatment == :explode
       fields = fields.flatten
       fields << media_uri_field if @name == 'media'
@@ -74,8 +74,11 @@ module CspaceConfigUntangler
     def mappings
       checkhash = {}
       mappings = fields.map{ |f| FieldMapper.new(field: f, column_style: profile.column_style).mappings}.flatten
+
       # ensure unique datacolumn values for templates and mapper
       mappings.each do |mapping|
+        next if mapping.xpath.nil?
+        
         if checkhash.key?(mapping.datacolumn)
           add = mapping.xpath.empty? ? mapping.namespace.split('_').last : mapping.xpath.last
           mapping.datacolumn = "#{add}_#{mapping.datacolumn}"
@@ -125,6 +128,15 @@ module CspaceConfigUntangler
         field = id_field
       end
       field
+    end
+
+    def unmappable_fields
+      unmappable = mappings.select{ |mapping| mapping.xpath.nil? && mapping.data_type.nil? }
+      return if unmappable.empty?
+
+      unmappable.each do |mapping|
+        puts "#{profile.name} - #{name} - #{mapping.fieldname}"
+      end
     end
     
     private
@@ -198,7 +210,11 @@ module CspaceConfigUntangler
         end
       end
 
-      mappings
+      # omits any fields for which workable mapping cannot be extracted
+      # this is introduced in order to output any workable template/mappers for OMCA, because
+      #   they have custom namespace inside the contact subrecord which the Untangler can't
+      #   deal with at present
+      mappings.reject{ |mapping| mapping.data_type.nil? && mapping.xpath.nil? }
     end
     
     def get_subtypes
@@ -221,11 +237,11 @@ module CspaceConfigUntangler
         repeats: 'n',
         in_repeating_group: 'n/a',
         data_type: 'string',
-        value_source: [],
+        value_source: [CCU::ValueSources::NoSource.new],
         value_list: [],
         required: 'n'
       }
-      CCU::ForcedField.new(self, field_hash)
+      CCU::Fields::ForcedField.new(self, field_hash)
     end
 
     def get_forms
