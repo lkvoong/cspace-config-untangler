@@ -27,13 +27,13 @@ Gem::Specification.new do |spec|
   spec.executables   << 'ccu'
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.1.2"
+  spec.add_development_dependency "bundler", "~> 2.2.29"
   spec.add_development_dependency "pry", ">= 0.13.0"
   spec.add_development_dependency 'ruby_jard'
 #  spec.add_development_dependency "byebug"
 #  spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "rake", ">= 13.0.1"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec", "~> 3.10"
 
   spec.add_runtime_dependency "dry-configurable", "~> 0.12"
   spec.add_runtime_dependency "facets", ">= 3.1.0"
