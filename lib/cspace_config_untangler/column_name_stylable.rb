@@ -19,8 +19,9 @@ module CspaceConfigUntangler
       'herbarium' => '1-1-1',
       'lhmc' => '3-1-1',
       'materials' => '2-0-0',
+      'ohc' => '1-0-4',
       'omca' => '6-1-0',
-      'publicart' => '2-0-1'
+      'publicart' => '2-0-1',
     }
 
     def column_name_style(profile_name, profile_version)

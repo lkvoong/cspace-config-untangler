@@ -10,6 +10,8 @@ module CspaceConfigUntangler
       WEIRD_NS_LOOKUP = {
         'ns2:collectionobjects_annotation' => 'http://collectionspace.org/services/collectionobject/domain/annotation',
         'ns2:groups_checklist'=> 'http://collectionspace.org/services/group/domain/checklist',
+        # OHC custom namespace
+        'ns2:collectionobjects_anthro' => 'http://collectionspace.org/services/collectionobject/domain/anthro',
         # OMCA custom namespace
         'ns2:collectionobjects_anthropology' => 'http://collectionspace.org/services/collectionobject/domain/anthropology',
         'ns2:collectionobjects_variablemedia' => 'http://collectionspace.org/services/collectionobject/domain/collectionobject',

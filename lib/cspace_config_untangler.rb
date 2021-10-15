@@ -55,21 +55,23 @@ module CspaceConfigUntangler
   
 
 
-  setting :test, 'blah', reader: true
-  setting :datadir, default_datadir, reader: true
-  setting :configdir, default_configdir, reader: true
-  setting :templatedir, default_templatedir, reader: true
-  setting :mapperdir, default_mapperdir, reader: true
+  setting :test, default: 'blah', reader: true
+  setting :datadir, default: default_datadir, reader: true
+  setting :configdir, default: default_configdir, reader: true
+  setting :templatedir, default: default_templatedir, reader: true
+  setting :mapperdir, default: default_mapperdir, reader: true
 
   config_file_names = Dir.new(default_configdir).children
     .reject{ |e| e['readable'] }
     .reject{ |e| e == '.keep' }
     .map{ |fn| File.basename(fn).sub('.json', '') }
   
-  setting :profiles, config_file_names, reader: true
-  setting :main_profile_name, 'core', reader: true
-  setting :log, logger, reader: true
-  setting :mapper_uri_base, 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers', reader: true
+  setting :profiles, default: config_file_names, reader: true
+  setting :main_profile_name, default: 'core', reader: true
+  setting :log, default: logger, reader: true
+  setting :mapper_uri_base,
+    default: 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers',
+    reader: true
 
   def main_profile
     Pathname.new(CCU.configdir)
