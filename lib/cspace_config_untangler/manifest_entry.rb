@@ -1,5 +1,3 @@
-require 'cspace_config_untangler'
-
 require 'digest'
 
 module CspaceConfigUntangler
@@ -33,7 +31,7 @@ module CspaceConfigUntangler
     end
 
     def subpath
-      @path.delete_prefix(CCU::MAPPER_DIR)
+      @path.delete_prefix(CCU.mapperdir)
         .sub(/^\/+/, '')
     end
 
@@ -45,7 +43,7 @@ module CspaceConfigUntangler
         'type'=> recordtype,
         'digest'=> digest,
         'enabled'=> true,
-        'url'=> "#{CCU::MAPPER_URI_BASE}/#{subpath}"
+        'url'=> "#{CCU.mapper_uri_base}/#{subpath}"
       }
     end
 

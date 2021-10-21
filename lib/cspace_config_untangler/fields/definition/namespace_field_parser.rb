@@ -40,7 +40,7 @@ module CspaceConfigUntangler
         #     elsif h.keys.length > 1
         #       Grouping.new(@fdp, k, h, self)
         #     else
-        #       CCU::LOG.warn("FIELD DEFINITION STRUCTURE: #{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - has unexpected keys")
+        #       CCU.log.warn("FIELD DEFINITION STRUCTURE: #{@fdp.rectype.profile.name} - #{@fdp.rectype.name} - #{@ns} - has unexpected keys")
         #     end
         #   }
         # end

@@ -1,5 +1,3 @@
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
   class Manifest
     def initialize(inputdir:, output:, recursive:)

@@ -44,7 +44,7 @@ module CspaceConfigUntangler
       @value_source = CCU::Fields::ValueSources::SourceExtractor.call(type, datahash, @profile)
       
       if  @value_source.empty? && type == 'authority'
-        CCU::LOG.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no source")
+        CCU.log.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no source")
         return
       end
 
@@ -71,7 +71,7 @@ module CspaceConfigUntangler
       #     elsif @name.end_with?('Number') && number_types.include?(source)
       #       # do nothing; defines number pattern or object/procedure linkage
       #     else
-      #       CCU::LOG.warn("DATA SOURCES: #{@profile.name} - #{@rectype.name} - #{@ns} - #{@id} - Source value '#{source}' is not an option list, authority, or vocabulary")
+      #       CCU.log.warn("DATA SOURCES: #{@profile.name} - #{@rectype.name} - #{@ns} - #{@id} - Source value '#{source}' is not an option list, authority, or vocabulary")
       #       @value_source << "other: #{source}"
       #     end
       #   }

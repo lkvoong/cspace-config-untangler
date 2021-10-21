@@ -13,7 +13,6 @@ require 'facets/kernel/blank'
 require 'http'
 require 'nokogiri'
 require 'pry'
-require 'ruby_jard'
 require 'thor'
 
 
@@ -22,6 +21,11 @@ module CspaceConfigUntangler
   module_function
   extend Dry::Configurable
 
+  default_datadir = '/Users/kristina/code/untangler-cspace-config/data'
+  default_configdir = File.join(default_datadir, 'configs')
+  default_templatedir = File.join(default_datadir, 'templates')
+  default_mapperdir = File.join(default_datadir, 'mappers')
+  default_main_profile_name = 'core'
 
   File.delete('log.log') if File::exist?('log.log')
 
@@ -33,29 +37,6 @@ module CspaceConfigUntangler
     File.realpath(File.join(File.dirname(__FILE__), '..'))
   end
 
-
-  CCU.const_set('DATADIR', File.join(app_dir, 'data'))
-  CCU.const_set('MAINPROFILE', 'core_6-1-0')
-  CCU.const_set('CONFIGDIR', "#{CCU::DATADIR}/configs")
-  config_file_names_deprecating = Dir.new(CCU::CONFIGDIR).children
-    .reject{ |e| e['readable'] }
-    .reject{ |e| e == '.keep' }
-    .map{ |fn| File.basename(fn).sub('.json', '') }
-
-  CCU.const_set('PROFILES', config_file_names_deprecating)
-
-  CCU.const_set('LOG', Logger.new('log.log'))
-  CCU.const_set('MAPPER_DIR', "#{CCU::DATADIR}/mappers")
-  CCU.const_set('MAPPER_URI_BASE', 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers')
-
-  default_datadir = File.join(app_dir, 'data')
-  default_configdir = File.join(default_datadir, 'configs')
-  default_templatedir = File.join(default_datadir, 'templates')
-  default_mapperdir = File.join(default_datadir, 'mappers')
-  
-
-
-  setting :test, default: 'blah', reader: true
   setting :datadir, default: default_datadir, reader: true
   setting :configdir, default: default_configdir, reader: true
   setting :templatedir, default: default_templatedir, reader: true
@@ -67,7 +48,7 @@ module CspaceConfigUntangler
     .map{ |fn| File.basename(fn).sub('.json', '') }
   
   setting :profiles, default: config_file_names, reader: true
-  setting :main_profile_name, default: 'core', reader: true
+  setting :main_profile_name, default: default_main_profile_name, reader: true
   setting :log, default: logger, reader: true
   setting :mapper_uri_base,
     default: 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers',
@@ -85,8 +66,11 @@ module CspaceConfigUntangler
     Marshal.load(Marshal.dump(hash))
   end
 
+  gem_agnostic_dir = $LOAD_PATH.select{ |dir| dir['untangler'] }.reject{ |dir| dir.end_with?('/spec') }.first
+
   # Require all application files
-  Dir.glob("#{__dir__}/cspace_config_untangler/**/*").sort.select{ |path| path.match?(/\.rb$/) }.each do |rbfile|
-    require_relative rbfile.delete_prefix("#{File.expand_path(__dir__)}/").delete_suffix('.rb')
+  Dir.glob("#{gem_agnostic_dir}/cspace_config_untangler/**/*").sort.select{ |path| path.match?(/\.rb$/) }.each do |rbfile|
+    req_file = rbfile.delete_prefix("#{gem_agnostic_dir}/").delete_suffix('.rb')
+    require req_file
   end
 end

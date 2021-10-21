@@ -1,5 +1,3 @@
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
   class Extension
     attr_reader :name

@@ -1,13 +1,13 @@
 module Helpers
   extend self
-  
+
   def fixtures
     File.join(CCU.app_dir, 'spec', 'fixtures')
   end
 
   def set_profile_release(version = '7_0')
-    CCU.config.configdir = File.join(CCU.app_dir, 'data', 'config_holder', 'community_profiles', "release_#{version}")
-    CCU.config.mapperdir = File.join(CCU.app_dir, 'data', 'mappers', 'community_profiles', "release_#{version}")
+    CCU.config.configdir = File.join(CCU.datadir, 'config_holder', 'community_profiles', "release_#{version}")
+    CCU.config.mapperdir = File.join(CCU.mapperdir, 'community_profiles', "release_#{version}")
     CCU.config.templatedir = File.join(fixtures, 'files', version, 'templates')
   end
 
@@ -37,7 +37,6 @@ module Helpers
         field_hash: parser.config[namespace],
         parser: parser
       )
-
     end
     
     def field_def_hash

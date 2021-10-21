@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
   # Mixin module to determine the column naming style to use in CSV templates and JSON record mappers.
   #

@@ -1,4 +1,3 @@
-require 'cspace_config_untangler'
 require 'cspace_config_untangler/manifest'
 
 module CspaceConfigUntangler

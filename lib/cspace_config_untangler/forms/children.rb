@@ -35,9 +35,9 @@ module CspaceConfigUntangler
 
       def check_key(hash, key)
         if hash.has_key?(key)
-          CCU::LOG.warn("FORM STRUCTURE: NON-NIL HASH KEY: #{profile} - #{rectype} - #{@form.name} #{@parent.ui_path.join(' / ')} #{key} has value: #{hash[key]}") unless hash[key].nil?
+          CCU.log.warn("FORM STRUCTURE: NON-NIL HASH KEY: #{profile} - #{rectype} - #{@form.name} #{@parent.ui_path.join(' / ')} #{key} has value: #{hash[key]}") unless hash[key].nil?
         else
-          CCU::LOG.warn("FORM STRUCTURE: MISSING HASH KEY: #{profile} - #{rectype} - #{@form.name} #{@parent.ui_path.join(' / ')} missing #{key} key")
+          CCU.log.warn("FORM STRUCTURE: MISSING HASH KEY: #{profile} - #{rectype} - #{@form.name} #{@parent.ui_path.join(' / ')} missing #{key} key")
         end
       end
     end
