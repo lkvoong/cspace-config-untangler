@@ -21,11 +21,28 @@ module CspaceConfigUntangler
   module_function
   extend Dry::Configurable
 
+  # Change these variables to reflect your desired directory structure and main profile
   default_datadir = '/Users/kristina/code/untangler-cspace-config/data'
   default_configdir = File.join(default_datadir, 'configs')
   default_templatedir = File.join(default_datadir, 'templates')
   default_mapperdir = File.join(default_datadir, 'mappers')
   default_main_profile_name = 'core'
+  default_mapper_uri_base = 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers'
+  # The last version of each profile that should get fancy column names created.
+  default_last_fancy_column_versions = {
+    'anthro' => '4-1-2',
+    'bonsai' => '4-1-1',
+    'botgarden' => '2-0-1',
+    'core' => '6-1-0',
+    'fcart' => '3-0-1',
+    'herbarium' => '1-1-1',
+    'lhmc' => '3-1-1',
+    'materials' => '2-0-0',
+    'ohc' => '1-0-4',
+    'omca' => '6-1-0',
+    'publicart' => '2-0-1',
+  }
+  # Don't change stuff after this
 
   File.delete('log.log') if File::exist?('log.log')
 
@@ -37,6 +54,7 @@ module CspaceConfigUntangler
     File.realpath(File.join(File.dirname(__FILE__), '..'))
   end
 
+  setting :last_fancy_column_versions, default: default_last_fancy_column_versions, reader: true
   setting :datadir, default: default_datadir, reader: true
   setting :configdir, default: default_configdir, reader: true
   setting :templatedir, default: default_templatedir, reader: true
@@ -51,7 +69,7 @@ module CspaceConfigUntangler
   setting :main_profile_name, default: default_main_profile_name, reader: true
   setting :log, default: logger, reader: true
   setting :mapper_uri_base,
-    default: 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers',
+    default: default_mapper_uri_base,
     reader: true
 
   def main_profile

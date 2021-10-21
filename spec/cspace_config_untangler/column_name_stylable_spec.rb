@@ -31,5 +31,13 @@ RSpec.describe CCU::ColumnNameStylable do
         expect(result).to eq(:consistent)
       end
     end
+
+    context 'with unconfigured profile' do
+      let(:profile_name) { 'noprofile' }
+      let(:profile_version) { '1-1-1' }
+      it 'returns consistent' do
+        expect(result).to eq(:consistent)
+      end
+    end
   end
 end
