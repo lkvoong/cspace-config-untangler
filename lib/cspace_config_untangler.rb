@@ -60,17 +60,18 @@ module CspaceConfigUntangler
   setting :templatedir, default: default_templatedir, reader: true
   setting :mapperdir, default: default_mapperdir, reader: true
 
-  config_file_names = Dir.new(default_configdir).children
-    .reject{ |e| e['readable'] }
-    .reject{ |e| e == '.keep' }
-    .map{ |fn| File.basename(fn).sub('.json', '') }
-  
-  setting :profiles, default: config_file_names, reader: true
   setting :main_profile_name, default: default_main_profile_name, reader: true
   setting :log, default: logger, reader: true
   setting :mapper_uri_base,
     default: default_mapper_uri_base,
     reader: true
+
+  def profiles
+    Dir.new(CCU.configdir).children
+    .reject{ |e| e['readable'] }
+    .reject{ |e| e == '.keep' }
+    .map{ |fn| File.basename(fn).sub('.json', '') }
+  end
 
   def main_profile
     Pathname.new(CCU.configdir)
