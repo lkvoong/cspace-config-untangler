@@ -47,7 +47,7 @@ module CspaceConfigUntangler
         elsif @name.empty?
           profile = @form.rectype.profile.name
           rectype = @form.rectype.name
-          CCU::LOG.warn("FORM STRUCTURE: EMPTY HASH: #{profile} - #{rectype} - #{@form.name} contains empty hash under #{@parent.ui_path}")
+          CCU.log.warn("FORM STRUCTURE: EMPTY HASH: #{profile} - #{rectype} - #{@form.name} contains empty hash under #{@parent.ui_path}")
         elsif @name == 'relation-list-item'
           #skip for now
         else

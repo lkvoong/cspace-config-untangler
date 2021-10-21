@@ -1,9 +1,5 @@
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
-  
   class StructuredDateMessageGetter
-
     def initialize(profileobj)
       @profile = profileobj
       @config = @profile.config['extensions']['structuredDate']['fields']
@@ -60,10 +56,6 @@ module CspaceConfigUntangler
       when 'scalarValuesComputed'
         return 'Scalar values computed?'        
       end
-    end
-
-    
-  end #class
-
-  
+    end    
+  end #class  
 end #module

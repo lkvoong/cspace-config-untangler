@@ -82,7 +82,7 @@ module CspaceConfigUntangler
           return unless @value_source.empty?
 
           if type == 'authority'
-            CCU::LOG.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no configured source")
+            CCU.log.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no configured source")
             return
           end          
         end

@@ -11,7 +11,7 @@ Usage:
 \x5  ccu mappers manifest
 
 Options:
-\x5  -i, [--inputdir=INPUTDIR]    # Path to directory containing RecordMapper JSON files. Specify the path relative to #{CCU::MAPPER_DIR}
+\x5  -i, [--inputdir=INPUTDIR]    # Path to directory containing RecordMapper JSON files. Specify the path relative to #{CCU.mapperdir}
 \x5  -o, [--output=OUTPUT]        # Path to output file
 \x5                               # Default: /Users/kristina/code/cspace-config-untangler/data/mappers.json
 \x5  -r, [--recursive=RECURSIVE]  # y/n. Whether to traverse the inputdir recursively
@@ -21,19 +21,19 @@ Includes valid mappers in the given directory (recursively, as an option). Inval
 
 The manifest is used by cspace-batch-import.
 
-Assumes that all mappers will be found in `#{CCU::MAPPER_DIR}` (CCU::MAPPER_DIR) or subdirectories thereof. Base URI for raw files in this directory on Github in CCU::MAPPER_URI_BASE.
+Assumes that all mappers will be found in `#{CCU.mapperdir}` (CCU.mapperdir) or subdirectories thereof. Base URI for raw files in this directory on Github in CCU.mapper_uri_base: #{CCU.mapper_uri_base}
 
 These constants can be changed in `lib/cspace_config_untangler.rb` if necessary.
 LONGDESC
       option(:inputdir,
              type: :string,
-             desc: "Path to directory containing RecordMapper JSON files. Specify the path relative to #{CCU::MAPPER_DIR}",
+             desc: "Path to directory containing RecordMapper JSON files. Specify the path relative to #{CCU.mapperdir}",
              default: '',
              aliases: '-i')
       option(:output,
              type: :string,
              desc: 'Path to output file',
-             default: "#{CCU::DATADIR}/mappers.json",
+             default: "#{CCU.datadir}/mappers.json",
              aliases: '-o')
       option(:recursive,
              type: :boolean,
@@ -47,7 +47,7 @@ LONGDESC
              aliases: '-d')
 
       def manifest
-        indir = Pathname.new("#{CCU::MAPPER_DIR}/#{options[:inputdir]}")
+        indir = Pathname.new("#{CCU.mapperdir}/#{options[:inputdir]}")
         unless indir.exist?
           puts "Directory does not exist: #{indir}"
           exit

@@ -1,7 +1,4 @@
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
-  
   class StructuredDateFieldMaker
     attr_reader :profile, :rectype, :ns, :ns_for_id, :panel, :ui_path,
       :schema_path,

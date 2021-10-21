@@ -1,9 +1,10 @@
-require 'cspace_config_untangler'
+require 'cspace_config_untangler/json_writable'
+require 'cspace_config_untangler/special_rectype'
 
 module CspaceConfigUntangler
   class ObjectHierarchy
-    include JsonWritable
-    include SpecialRectype
+    include CCU::JsonWritable
+    include CCU::SpecialRectype
     def initialize(profile: )
       @profile = profile
     end

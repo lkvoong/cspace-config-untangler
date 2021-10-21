@@ -1,5 +1,3 @@
-require 'cspace_config_untangler'
-
 module CspaceConfigUntangler
   module Template
     class CsvTemplate

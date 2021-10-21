@@ -28,7 +28,7 @@ module CspaceConfigUntangler
         defs = CCU::Fields::Def::Parser.new(self, @config['fields']['document'])
         return defs.field_defs
       else
-        CCU::LOG.warn("#{profile.name} - #{name} has no field def hash")
+        CCU.log.warn("#{profile.name} - #{name} has no field def hash")
       end
     end
 

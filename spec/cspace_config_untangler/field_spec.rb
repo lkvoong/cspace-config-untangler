@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe CCU::Fields::Field do
   before do
-    stub_const('CCU::CONFIGDIR', 'spec/fixtures/files/6_0')
+    CCU.config.configdir = 'spec/fixtures/files/6_0'
   end
 
   let(:core_profile) { CCU::Profile.new('core', rectypes: ['collectionobject']) }
@@ -16,6 +16,9 @@ RSpec.describe CCU::Fields::Field do
     describe '#value_source' do
       # tested in field_definition_spec
       # this just copies from the field_definition
+      it 'blah' do
+        puts CCU.configdir
+      end
     end
   end
   

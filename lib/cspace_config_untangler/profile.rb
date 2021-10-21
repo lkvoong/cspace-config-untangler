@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'cspace_config_untangler'
+require 'cspace_config_untangler/column_name_stylable'
 
 module CspaceConfigUntangler
   class Profile
