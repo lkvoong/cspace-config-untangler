@@ -23,10 +23,8 @@ module CspaceConfigUntangler
 
   # Change these variables to reflect your desired directory structure and main profile
   default_datadir = '/Users/kristina/code/untangler-cspace-config/data'
-  default_configdir = File.join(default_datadir, 'configs')
-  default_templatedir = File.join(default_datadir, 'templates')
-  default_mapperdir = File.join(default_datadir, 'mappers')
   default_main_profile_name = 'core'
+  # The publicly available web directory from which the CSV Importer will request mappers
   default_mapper_uri_base = 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers'
   # The last version of each profile that should get fancy column names created.
   default_last_fancy_column_versions = {
@@ -53,6 +51,12 @@ module CspaceConfigUntangler
   def app_dir
     File.realpath(File.join(File.dirname(__FILE__), '..'))
   end
+
+  # Do not mess with these. Control subdirectories within them by passing in command output parameters as
+  #   shown in the docs
+  default_configdir = File.join(default_datadir, 'configs')
+  default_templatedir = File.join(default_datadir, 'templates')
+  default_mapperdir = File.join(default_datadir, 'mappers')
 
   setting :last_fancy_column_versions, default: default_last_fancy_column_versions, reader: true
   setting :datadir, default: default_datadir, reader: true
