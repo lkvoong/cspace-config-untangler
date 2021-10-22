@@ -4,15 +4,15 @@ module CspaceConfigUntangler
   module Cli
     class ProfilesCli < Thor
       include CCU::Cli::Helpers
-      desc 'all', 'Print the names of all known profiles'
+      desc 'all', 'Print the names of all known profiles to screen'
       def all
-        puts [CCU.main_profile, CCU.profiles].flatten.uniq.sort
+        say([CCU.main_profile, CCU.profiles].flatten.uniq.sort.join("\n"))
       end
 
-      desc 'check', 'Print the names of profiles that will be processed'
+      desc 'check', 'Prints to screen the names of profiles that will be processed'
       def check
         profiles = get_profiles
-        puts profiles
+        say(profiles.join("\n"))
       end
 
       desc 'compare', 'Outputs a comparison of two profiles in CSV format'
@@ -33,20 +33,17 @@ You will find the csv file in the output directory you specified, or in the defa
 LONGDESC
       option :output, desc: 'Path to directory in which to output file. Name of the file is hardcoded, using the names of the profiles.', default: CCU::datadir, aliases: '-o'
       def compare
-        if options[:profiles] == 'all'
-          profiles = get_profiles
-        else
-          profiles = options[:profiles].split(',').map{ |p| p.strip }
-        end
+        profiles = get_profiles
         
         if profiles.length > 2
-          puts "Can only compare two profiles at a time"
-          exit
+          say('Can only compare two profiles at a time')
         elsif profiles.length == 1
-          puts "Needs two profiles to compare"
-          exit
+          say('Needs two profiles to compare')
         else
-          CCU::ProfileComparison.new(profiles, options[:output]).write_csv
+          comparer = CCU::ProfileComparison.new(profiles, options[:output])
+          comparer.write_csv
+          message = "#{comparer.summary}\n\nWrote detailed report to: #{comparer.output}"
+          say(message)
         end
       end
 
@@ -70,18 +67,20 @@ LONGDESC
 
       desc 'main', 'Print the name of the main profile'
       def main
-        puts CCU.main_profile
+        say(CCU.main_profile)
       end
 
       desc 'readable', 'Reformats (in place) JSON profile configs so that they are not one very long line. Non-destructive if run over JSON multiple times.'
       def readable
+        message = []
         get_profiles.each{ |p|
-          puts "Reformatting #{p} config"
-          profile = CCU::Profile.new(profile: p).config
+          message << "Reformatting #{p} config"
+          oldprofile = JSON.parse(File.read("#{CCU.configdir}/#{p}.json"))
           File.open("#{CCU.configdir}/#{p}.json", 'w'){ |f|
-            f.puts JSON.pretty_generate(profile)
+            f.puts JSON.pretty_generate(oldprofile)
           }
         }
+        say(message.join("\n"))
       end
     end
   end

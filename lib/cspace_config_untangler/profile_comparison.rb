@@ -1,5 +1,6 @@
 module CspaceConfigUntangler
   class ProfileComparison
+    attr_reader :output
     def initialize(profilearray, outputdir)
       profiles = profilearray.map{ |p| CCU::Profile.new(profile: p) }
       @profiles = profiles.map{ |p| p.name }
@@ -7,7 +8,6 @@ module CspaceConfigUntangler
       @fields = profiles.map{ |p| p.fields.map{ |f| f.clean} }.map{ |p| by_path(p) }
       @combined = combined_fields
       @diff = diff_combined
-      @diff.each{ |k, arr| puts "#{k}: #{arr.size}" }
     end
 
     def write_csv
@@ -18,6 +18,10 @@ module CspaceConfigUntangler
       CSV.open(@output, 'w', write_headers: true, headers: headers){ |csv|
         fields.each{ |f| csv << f.to_csv }
       }
+    end
+
+    def summary
+      @diff.map{ |k, arr| "#{k}: #{arr.size}" }.join("\n")
     end
     
     private

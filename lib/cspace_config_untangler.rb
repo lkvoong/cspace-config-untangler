@@ -23,10 +23,8 @@ module CspaceConfigUntangler
 
   # Change these variables to reflect your desired directory structure and main profile
   default_datadir = '/Users/kristina/code/untangler-cspace-config/data'
-  default_configdir = File.join(default_datadir, 'configs')
-  default_templatedir = File.join(default_datadir, 'templates')
-  default_mapperdir = File.join(default_datadir, 'mappers')
   default_main_profile_name = 'core'
+  # The publicly available web directory from which the CSV Importer will request mappers
   default_mapper_uri_base = 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers'
   # The last version of each profile that should get fancy column names created.
   default_last_fancy_column_versions = {
@@ -54,23 +52,30 @@ module CspaceConfigUntangler
     File.realpath(File.join(File.dirname(__FILE__), '..'))
   end
 
+  # Do not mess with these. Control subdirectories within them by passing in command output parameters as
+  #   shown in the docs
+  default_configdir = File.join(default_datadir, 'configs')
+  default_templatedir = File.join(default_datadir, 'templates')
+  default_mapperdir = File.join(default_datadir, 'mappers')
+
   setting :last_fancy_column_versions, default: default_last_fancy_column_versions, reader: true
   setting :datadir, default: default_datadir, reader: true
   setting :configdir, default: default_configdir, reader: true
   setting :templatedir, default: default_templatedir, reader: true
   setting :mapperdir, default: default_mapperdir, reader: true
 
-  config_file_names = Dir.new(default_configdir).children
-    .reject{ |e| e['readable'] }
-    .reject{ |e| e == '.keep' }
-    .map{ |fn| File.basename(fn).sub('.json', '') }
-  
-  setting :profiles, default: config_file_names, reader: true
   setting :main_profile_name, default: default_main_profile_name, reader: true
   setting :log, default: logger, reader: true
   setting :mapper_uri_base,
     default: default_mapper_uri_base,
     reader: true
+
+  def profiles
+    Dir.new(CCU.configdir).children
+    .reject{ |e| e['readable'] }
+    .reject{ |e| e == '.keep' }
+    .map{ |fn| File.basename(fn).sub('.json', '') }
+  end
 
   def main_profile
     Pathname.new(CCU.configdir)

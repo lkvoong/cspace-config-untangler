@@ -3,6 +3,7 @@ module CspaceConfigUntangler
     module Helpers
       class ProfileGetter
         def self.call(opt_profiles)
+          return [CCU.main_profile] unless opt_profiles
           return [CCU.main_profile] if opt_profiles.empty?
           
           return self.all_profiles if opt_profiles == 'all'
