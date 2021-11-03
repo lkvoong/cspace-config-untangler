@@ -4,5 +4,5 @@ DATA TYPE,string,string,string,date,date,string
 REPEATABLE FIELD?,n,n,n,n,n,n
 REPEATING FIELD GROUP,"","","","","",""
 VALUE SOURCE TYPE,na,optionlist,authority,na,na,na
-VALUE SOURCE,"","archaeology, archaeology-nagpra, collection-management, design, education, history, natural-history, registrar, sites",person/local,"","",""
+VALUE SOURCE,"","archaeology, archaeology-nagpra, collection-management, design, education, history, naamcc, natural-history, poindexter-village, registrar, sites",person/local,"","",""
 CSVHEADER,title,responsibleDepartment,owner,groupEarliestSingleDate,groupLatestDate,scopeNote
