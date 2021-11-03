@@ -29,7 +29,7 @@ module CspaceConfigUntangler
         get_profiles.each do |profile|
           puts "Writing templates for #{profile}..."
           profile = CCU::Profile.new(profile: profile, rectypes: @rectypes, structured_date_treatment: :collapse)
-          dir_path = options[:subdirs] == 'y' ? "#{@outdir}/#{p.basename}" : @outdir
+          dir_path = options[:subdirs] == 'y' ? "#{@outdir}/#{profile.basename}" : @outdir
           FileUtils.mkdir_p(dir_path)
 
           write_templates(profile, dir_path)
