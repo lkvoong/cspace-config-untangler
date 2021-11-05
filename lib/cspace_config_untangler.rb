@@ -21,11 +21,13 @@ module CspaceConfigUntangler
   module_function
   extend Dry::Configurable
 
+  # Added logic to find the data directory in any env
+  default_datadir = File.join(File.dirname(__FILE__), '../data')
+  
   # Change these variables to reflect your desired directory structure and main profile
-  default_datadir = '/Users/kristina/code/untangler-cspace-config/data'
   default_main_profile_name = 'core'
   # The publicly available web directory from which the CSV Importer will request mappers
-  default_mapper_uri_base = 'https://raw.githubusercontent.com/collectionspace/cspace-config-untangler/main/data/mappers'
+  default_mapper_uri_base = 'https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers'
   # The last version of each profile that should get fancy column names created.
   default_last_fancy_column_versions = {
     'anthro' => '4-1-2',

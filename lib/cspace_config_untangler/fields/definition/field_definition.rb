@@ -70,21 +70,28 @@ module CspaceConfigUntangler
           type = CCU::Fields::ValueSources::TypeExtractor.call(@datahash)
           return unless type
 
-          sources = CCU::Fields::ValueSources::SourceExtractor.call(type, @datahash, @config.profile_object)
-            .reject{ |source| source.source_type == 'authority' && !source.configured? }
-          
-          @value_source = sources
-          if type == 'option list'
-            @value_list = @value_source.first.options
-            return
-          end
-          
-          return unless @value_source.empty?
+          begin
+            sources = CCU::Fields::ValueSources::SourceExtractor.call(type, @datahash, @config.profile_object)
+              .reject{ |source| source.source_type == 'authority' && !source.configured? }
 
-          if type == 'authority'
-            CCU.log.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no configured source")
+            @value_source = sources
+            if type == 'option list'
+              @value_list = @value_source.first.options
+              return
+            end
+
+            return unless @value_source.empty?
+
+            if type == 'authority'
+              CCU::LOG.warn("DATA SOURCES: #{@config.namespace_signature} - #{@id} - Autocomplete defined with no configured source")
+              return
+            end
+          rescue
+            print('saved')
+            print(@datahash)
             return
           end          
+
         end
 
         def set_datatype
