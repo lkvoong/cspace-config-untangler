@@ -1,7 +1,7 @@
 {
   "config": {
-    "profile_basename": "cinefiles",
-    "version": "1-0-14",
+    "profile_basename": "ucbg",
+    "version": "2-0-3",
     "recordtype": "media",
     "document_name": "media",
     "service_name": "Media",
@@ -10,17 +10,12 @@
     "object_name": "Media",
     "ns_uri": {
       "media_common": "http://collectionspace.org/services/media",
-      "media_cinefiles": "http://collectionspace.org/services/media/domain/cinefiles",
-      "media_piction": "http://collectionspace.org/services/media"
+      "media_botgarden": "http://collectionspace.org/services/media/local/botgarden"
     },
-    "identifier_field": "page",
-    "search_field": "page"
+    "identifier_field": "identificationNumber",
+    "search_field": "identificationNumber"
   },
   "docstructure": {
-    "media_cinefiles": {
-    },
-    "media_piction": {
-    },
     "media_common": {
       "publishToList": {
       },
@@ -43,28 +38,130 @@
       "subjectList": {
       }
     },
+    "media_botgarden": {
+    },
     "blobs_common": {
     }
   },
   "mappings": [
     {
-      "fieldname": "page",
+      "fieldname": "identificationNumber",
       "transforms": {
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "media_cinefiles",
+      "namespace": "media_common",
       "xpath": [
 
       ],
-      "data_type": "integer",
+      "data_type": "string",
       "repeats": "n",
       "in_repeating_group": "n/a",
       "opt_list_values": [
 
       ],
-      "datacolumn": "page",
+      "datacolumn": "identificationNumber",
       "required": "y"
+    },
+    {
+      "fieldname": "scientificTaxonomy",
+      "transforms": {
+        "authority": [
+          "taxonomyauthority",
+          "taxon"
+        ]
+      },
+      "source_type": "authority",
+      "source_name": "taxon/local",
+      "namespace": "media_botgarden",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "scientificTaxonomy",
+      "required": "n"
+    },
+    {
+      "fieldname": "scientificTaxonomy",
+      "transforms": {
+      },
+      "source_type": "refname",
+      "source_name": "taxon/local",
+      "namespace": "media_botgarden",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "scientificTaxonomyRefname",
+      "required": "n"
+    },
+    {
+      "fieldname": "plantMorphology",
+      "transforms": {
+        "vocabulary": "plantmorphology"
+      },
+      "source_type": "vocabulary",
+      "source_name": "plantmorphology",
+      "namespace": "media_botgarden",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "plantMorphology",
+      "required": "n"
+    },
+    {
+      "fieldname": "plantMorphology",
+      "transforms": {
+      },
+      "source_type": "refname",
+      "source_name": "plantmorphology",
+      "namespace": "media_botgarden",
+      "xpath": [
+
+      ],
+      "data_type": "csrefname",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "plantMorphologyRefname",
+      "required": "n"
+    },
+    {
+      "fieldname": "title",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "media_common",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+
+      ],
+      "datacolumn": "title",
+      "required": "n"
     },
     {
       "fieldname": "imageNumber",
@@ -72,7 +169,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "media_piction",
+      "namespace": "media_botgarden",
       "xpath": [
 
       ],
@@ -83,7 +180,48 @@
 
       ],
       "datacolumn": "imageNumber",
-      "required": "y"
+      "required": "n"
+    },
+    {
+      "fieldname": "handwritten",
+      "transforms": {
+      },
+      "source_type": "optionlist",
+      "source_name": "trivalentValues",
+      "namespace": "media_botgarden",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "Unknown",
+        "no",
+        "yes"
+      ],
+      "datacolumn": "handwritten",
+      "required": "n"
+    },
+    {
+      "fieldname": "postToPublic",
+      "transforms": {
+      },
+      "source_type": "optionlist",
+      "source_name": "yesNoValues",
+      "namespace": "media_botgarden",
+      "xpath": [
+
+      ],
+      "data_type": "string",
+      "repeats": "n",
+      "in_repeating_group": "n/a",
+      "opt_list_values": [
+        "no",
+        "yes"
+      ],
+      "datacolumn": "postToPublic",
+      "required": "n"
     },
     {
       "fieldname": "publishTo",
@@ -304,7 +442,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByPerson",
+      "datacolumn": "measuredByPersonLocal",
       "required": "n"
     },
     {
@@ -330,7 +468,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "measuredByOrganization",
+      "datacolumn": "measuredByOrganizationLocal",
       "required": "n"
     },
     {
@@ -539,7 +677,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contributorPerson",
+      "datacolumn": "contributorPersonLocal",
       "required": "n"
     },
     {
@@ -562,7 +700,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "contributorOrganization",
+      "datacolumn": "contributorOrganizationLocal",
       "required": "n"
     },
     {
@@ -604,7 +742,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "creatorPerson",
+      "datacolumn": "creatorPersonLocal",
       "required": "n"
     },
     {
@@ -627,7 +765,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "creatorOrganization",
+      "datacolumn": "creatorOrganizationLocal",
       "required": "n"
     },
     {
@@ -647,28 +785,6 @@
 
       ],
       "datacolumn": "creatorRefname",
-      "required": "n"
-    },
-    {
-      "fieldname": "primaryDisplay",
-      "transforms": {
-        "special": [
-          "boolean"
-        ]
-      },
-      "source_type": "na",
-      "source_name": null,
-      "namespace": "media_piction",
-      "xpath": [
-
-      ],
-      "data_type": "boolean",
-      "repeats": "n",
-      "in_repeating_group": "n/a",
-      "opt_list_values": [
-
-      ],
-      "datacolumn": "primaryDisplay",
       "required": "n"
     },
     {
@@ -730,7 +846,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publisherPerson",
+      "datacolumn": "publisherPersonLocal",
       "required": "n"
     },
     {
@@ -753,7 +869,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "publisherOrganization",
+      "datacolumn": "publisherOrganizationLocal",
       "required": "n"
     },
     {
@@ -932,7 +1048,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "rightsHolderPerson",
+      "datacolumn": "rightsHolderPersonLocal",
       "required": "n"
     },
     {
@@ -955,7 +1071,7 @@
       "opt_list_values": [
 
       ],
-      "datacolumn": "rightsHolderOrganization",
+      "datacolumn": "rightsHolderOrganizationLocal",
       "required": "n"
     },
     {
