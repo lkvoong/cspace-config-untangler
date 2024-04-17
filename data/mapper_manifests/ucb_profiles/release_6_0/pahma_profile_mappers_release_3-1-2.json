@@ -204,7 +204,7 @@
       "profile": "pahma",
       "version": "3-1-2",
       "type": "collectionobject",
-      "digest": "4079180771afe86ccca315a4429a76556c983cccdf60c9d48751801d75874812",
+      "digest": "0c19eeaea20a2303317eb1f6b3ce8af5a210bcb5a8580678219ff8a61e11f91f",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_6_0/pahma/pahma_3-1-2_collectionobject.json"
     },
