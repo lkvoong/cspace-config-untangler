@@ -6816,6 +6816,20 @@
       ],
       "datacolumn": "technicalAttributeMeasurementUnit",
       "required": "n"
+    },
+    {
+    "fieldname": "sortableObjectNumber",
+    "transforms": {},
+    "source_type": "na",
+    "source_name": null,
+    "namespace": "collectionobjects_pahma",
+    "xpath": [],
+    "data_type": "string",
+    "repeats": "n",
+    "in_repeating_group": "n/a",
+    "opt_list_values": [],
+    "datacolumn": "sortableObjectNumber",
+    "required": "n"
     }
   ]
 }
