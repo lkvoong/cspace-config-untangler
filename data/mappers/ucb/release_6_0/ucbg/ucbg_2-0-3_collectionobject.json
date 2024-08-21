@@ -182,6 +182,10 @@
           }
         }
       },
+      "localityGroupList": {
+        "localityGroup": {
+        }
+      },
       "typeSpecimenGroupList": {
         "typeSpecimenGroup": {
         }
@@ -192,12 +196,6 @@
       }
     },
     "collectionobjects_botgarden": {
-    },
-    "": {
-      "localityGroupList": {
-        "localityGroup": {
-        }
-      }
     },
     "collectionobjects_annotation": {
       "annotationGroupList": {
@@ -1160,7 +1158,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1184,7 +1182,7 @@
       },
       "source_type": "authority",
       "source_name": "place/local",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1204,7 +1202,7 @@
       },
       "source_type": "refname",
       "source_name": "place/local",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1224,7 +1222,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1245,7 +1243,7 @@
       },
       "source_type": "vocabulary",
       "source_name": "county",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1265,7 +1263,7 @@
       },
       "source_type": "refname",
       "source_name": "county",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1286,7 +1284,7 @@
       },
       "source_type": "vocabulary",
       "source_name": "state",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1306,7 +1304,7 @@
       },
       "source_type": "refname",
       "source_name": "state",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1327,7 +1325,7 @@
       },
       "source_type": "vocabulary",
       "source_name": "country",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1347,7 +1345,7 @@
       },
       "source_type": "refname",
       "source_name": "country",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1368,7 +1366,7 @@
       },
       "source_type": "vocabulary",
       "source_name": "HigherGeography",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1388,7 +1386,7 @@
       },
       "source_type": "refname",
       "source_name": "HigherGeography",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1408,7 +1406,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1428,7 +1426,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1448,7 +1446,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1468,7 +1466,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1489,7 +1487,7 @@
       },
       "source_type": "vocabulary",
       "source_name": "vcoordsys",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1509,7 +1507,7 @@
       },
       "source_type": "refname",
       "source_name": "vcoordsys",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1529,7 +1527,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1549,7 +1547,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1569,7 +1567,7 @@
       },
       "source_type": "optionlist",
       "source_name": "geodeticDatums",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1594,7 +1592,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1614,7 +1612,7 @@
       },
       "source_type": "optionlist",
       "source_name": "coordUncertaintyUnits",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1638,7 +1636,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1658,7 +1656,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1678,7 +1676,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1698,7 +1696,7 @@
       },
       "source_type": "optionlist",
       "source_name": "depthUnits",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1727,7 +1725,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1747,7 +1745,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1767,7 +1765,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1787,7 +1785,7 @@
       },
       "source_type": "optionlist",
       "source_name": "elevationUnits",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1809,7 +1807,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1829,7 +1827,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1849,7 +1847,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1869,7 +1867,7 @@
       },
       "source_type": "optionlist",
       "source_name": "distanceAboveSurfaceUnits",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1898,7 +1896,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1918,7 +1916,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1938,7 +1936,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1958,7 +1956,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1978,7 +1976,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -1998,7 +1996,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2018,7 +2016,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2038,7 +2036,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2058,7 +2056,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2078,7 +2076,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2098,7 +2096,7 @@
       },
       "source_type": "optionlist",
       "source_name": "georefProtocols",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2121,7 +2119,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2141,7 +2139,7 @@
       },
       "source_type": "optionlist",
       "source_name": "georefVerificationStatuses",
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2163,7 +2161,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
@@ -2183,7 +2181,7 @@
       },
       "source_type": "na",
       "source_name": null,
-      "namespace": "collectionobjects_common",
+      "namespace": "collectionobjects_naturalhistory",
       "xpath": [
         "localityGroupList",
         "localityGroup"
