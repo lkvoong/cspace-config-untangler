@@ -92,7 +92,7 @@
       "profile": "ucbg",
       "version": "2-0-3",
       "type": "collectionobject",
-      "digest": "4b08aa79cbd786e3644bab8fdd48663026ceefe74be45ad7bf8ebad8476bb37b",
+      "digest": "b5f69b0f2cfac419c995845a84bc28f88d67e6f12d3be8728f48a6abddc83e99",
       "enabled": true,
       "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_6_0/ucbg/ucbg_2-0-3_collectionobject.json"
     },
