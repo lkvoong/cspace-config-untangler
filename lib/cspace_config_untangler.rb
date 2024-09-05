@@ -33,7 +33,7 @@ module CspaceConfigUntangler
     'anthro' => '4-1-2',
     'bonsai' => '4-1-1',
     'botgarden' => '2-0-1',
-    'core' => '6-1-0',
+    'core' => '9-0-1',
     'fcart' => '3-0-1',
     'herbarium' => '1-1-1',
     'lhmc' => '3-1-1',
@@ -41,11 +41,11 @@ module CspaceConfigUntangler
     'ohc' => '1-0-4',
     'omca' => '6-1-0',
     'publicart' => '2-0-1',
-    'bampfa' => '2-0-1',
+    'bampfa' => '2-0-5',
     'cinefiles' => '1-0-14',
-    'pahma' => '3-1-1',
-    'ucbg' => '2-0-2',
-    'ucjeps' => '2-0-1',
+    'pahma' => '4-0-0',
+    'ucbg' => '2-0-4',
+    'ucjeps' => '2-0-2',
   }
   # Don't change stuff after this
 
