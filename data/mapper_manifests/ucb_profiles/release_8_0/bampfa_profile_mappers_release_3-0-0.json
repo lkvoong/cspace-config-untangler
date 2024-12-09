@@ -1,0 +1,332 @@
+{
+  "mappers": [
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "organization-ulan",
+      "digest": "ebf5e3059b431c598d19b05f94ee90f5486d828d4e83de3372b5313f36b80d6e",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_organization-ulan.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "iterationreport",
+      "digest": "ed587a8f2e3d52f0cb117c57c2bb7f9bd14d56bb92d2157c06035c64d46e7a87",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_iterationreport.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "collectionobject",
+      "digest": "c77dccb1729248f63e700b88c87167a01bf4aa7168b412231572210ec7f2c5a1",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_collectionobject.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "exhibition",
+      "digest": "495c9380f26d4f45e822cde8a9ad46aaec0222ae100c05d2e27b0d093ba2b44e",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_exhibition.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "organization-artists-collective",
+      "digest": "474098e0f8a46395e43c3271ed75769b174e87da41b51a78fea10cb961f3347f",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_organization-artists-collective.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "person-ulan",
+      "digest": "349d3e544b3900ee41767097ada7425e0de4d6cc2923d5e971fd35d7ffc23332",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_person-ulan.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "insurance",
+      "digest": "2befe0e97c4af5b5570641330fe9baf05a6e3efc966943b2889de5bb145ff116",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_insurance.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "chronology-event",
+      "digest": "fe0f701aa283703655b2e67c2161600678cbb0c79eb2c5bb2a1f3b72466a1573",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_chronology-event.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "loanout",
+      "digest": "724754704f3fb59684bea688f579d16d5e53425831830d2782804e452520531c",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_loanout.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "movement",
+      "digest": "cdd3fa057ed685747a1e5bc2557f780a36d79fa50664ca8a2d525272aef3d809",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_movement.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "concept-nomenclature",
+      "digest": "0a63c228973752690e11f503c5d12deeb3b62e1d72294f7e14aeb20d0249bc7a",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_concept-nomenclature.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "chronology-era",
+      "digest": "9c29e5e14538a43f9dd390fa58e2908e544117b4c61327ba9d59f3d868f1431a",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_chronology-era.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "concept-activity",
+      "digest": "4e1227114649a4752fe2f45af463c8786c6461126af8b47d9539ec420905b1c8",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_concept-activity.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "citation-worldcat",
+      "digest": "b398d827f226455526934be48efbe94abb5dc0577a454856696e8d4c7b3068bd",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_citation-worldcat.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "location-local",
+      "digest": "233c6a6e6c6a90710b922b60c44d6514f58168feb1440763f3b81019506bf921",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_location-local.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "objecthierarchy",
+      "digest": "d68fb88c3e07bc65d55fcf7dd3ffe01ddc0f5b8b0d4886745152aa4adf6423d0",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_objecthierarchy.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "place-tgn",
+      "digest": "343286ea4889d307085917938a85e03cbdc17034fa2cd5af7e6fe13048233349",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_place-tgn.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "concept-material",
+      "digest": "708d236fd4a280e1a5356064539089486a519399865069c59c5b995ceca10f06",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_concept-material.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "authorityhierarchy",
+      "digest": "3c11af60120a1d79847805334a7c4dacd4ab95414e55e493309a65f3c9483eee",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_authorityhierarchy.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "nonhierarchicalrelationship",
+      "digest": "d4d3a904600b1011b724ec3b52563fce4bb96646832637c0300281e89e0328ce",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_nonhierarchicalrelationship.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "organization-local",
+      "digest": "92dcb92033086c443b2c348d65dbe40a53763f2153dec9edb17f2f510f5b8e0f",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_organization-local.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "loanin",
+      "digest": "83b838876ff6fece0a448d96820536f9257bd9c4d243ec0a7a810cf03c3c01f1",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_loanin.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "place-local",
+      "digest": "7a87f5b00cc1d49c3b7cab7a44d00257cff01b1b6aa55be2b8aa6381fb9455cb",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_place-local.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "uoc",
+      "digest": "a3e9057f82c1ac401c07548d87ba6ae06ec0d78d7e3e8fb89465f523e27736cd",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_uoc.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "location-offsite",
+      "digest": "afabfb41f870eb89d90934c1fe02f7b4485d25c88ac0f84c8d36b160b9444ae3",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_location-offsite.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "hit",
+      "digest": "3be00a904974922cbffd080aee50fcf357cfbe0b763e59704e75462896f693c4",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_hit.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "intake",
+      "digest": "26a0233b56f6e9c162762beab15335a27a7265cda1f0fc1393b90efff53f3ba4",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_intake.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "concept-occasion",
+      "digest": "7725c1f18e86ad86bc1d7f6ff771468ae2d93455b4825696f978c936bb5af13f",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_concept-occasion.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "concept-associated",
+      "digest": "90a74fc6dff57cc88ce98e0a6541f971631e64302794b99b7a2e4a36ede8b33e",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_concept-associated.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "citation-local",
+      "digest": "abb78b6c202a8a41f790f8adec0bd8cea259aebb36013f70109ed212762060f1",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_citation-local.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "media",
+      "digest": "71d9b2c979f408c05c36799bb0e1a8f51ed79f46d6aec02f8063e1c34d50d604",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_media.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "conditioncheck",
+      "digest": "a987c1c44ba55f7d64a812d4ce66a58ebeddd5c2ea6218d171c9b3989137fd4a",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_conditioncheck.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "work-local",
+      "digest": "cc9d67a9a4742c70cffc52b8d729a27c987e3f6ac6055d5652f2c879f45de406",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_work-local.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "valuation",
+      "digest": "ab55e2288884bfc8db67e9f1547c3e69e0097eb4ec5d7696be72ae44e0d5262d",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_valuation.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "transport",
+      "digest": "929091033445d0f01943a0b1901f4d704bd83df1b5a7bcaee0bf2eb2d5e8c43b",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_transport.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "place-archaeological",
+      "digest": "34af44c91d3db357e73c3529a8ea3f5f02e04c2c60ef503e6f8b6721016a7893",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_place-archaeological.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "concept-ethnographic-culture",
+      "digest": "494f612b638405784ca243c638a3138ad76b7f17c40b68736938c73bcce3e837",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_concept-ethnographic-culture.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "location-crate",
+      "digest": "0779d57ef9ffe8de5530972b417439126aa7b80d17ad28c97593e55ca52d4ea5",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_location-crate.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "person-local",
+      "digest": "817ec1372e9ea8cf3a9e3960341b0d45f54eb3ea51a2ae8762eab47900dee415",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_person-local.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "work-cona",
+      "digest": "db4ae43ba51cd047dcb3e3f1110d1a76d7a908aba01cccaf78e4872cabed2e5b",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_work-cona.json"
+    },
+    {
+      "profile": "bampfa",
+      "version": "3-0-0",
+      "type": "group",
+      "digest": "ba95b4ae491b1ea36823cad5f9ec5512ad41db10239a2aa37961bd1e55c02081",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_0/bampfa/bampfa_3-0-0_group.json"
+    }
+  ]
+}
