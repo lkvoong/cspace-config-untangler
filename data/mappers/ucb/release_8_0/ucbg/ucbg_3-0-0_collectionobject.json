@@ -298,6 +298,10 @@
           }
         }
       },
+      "localityGroupList": {
+        "localityGroup": {
+        } 
+      },
       "typeSpecimenGroupList": {
         "typeSpecimenGroup": {
         }
@@ -308,12 +312,6 @@
       }
     },
     "collectionobjects_botgarden": {
-    },
-    "": {
-      "localityGroupList": {
-        "localityGroup": {
-        }
-      }
     },
     "collectionobjects_annotation": {
       "annotationGroupList": {
