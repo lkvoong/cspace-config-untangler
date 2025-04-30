@@ -1,0 +1,383 @@
+{
+  "config": {
+    "profile_basename": "pahma",
+    "version": "5-0-0",
+    "recordtype": "dutyofcare",
+    "document_name": "dutyofcares",
+    "service_name": "Dutyofcare",
+    "service_path": "dutiesofcare",
+    "service_type": "procedure",
+    "object_name": "Dutyofcare",
+    "ns_uri": {
+      "dutiesofcare_common": "http://collectionspace.org/services/dutyofcare"
+    },
+    "identifier_field": "dutyOfCareNumber",
+    "search_field": "dutyOfCareNumber"
+  },
+  "docstructure": {
+    "dutiesofcare_common": {
+    }
+  },
+  "mappings": [
+    {
+      "fieldname": "dutyOfCareNumber",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "dutyOfCareNumber",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "dutyOfCareNumber",
+      "required": "n"
+    },
+    {
+      "fieldname": "dutyOfCareTitle",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "dutyOfCareTitle",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "dutyOfCareTitle",
+      "required": "n"
+    },
+    {
+      "fieldname": "originationDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "originationDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "originationDate",
+      "required": "n"
+    },
+    {
+      "fieldname": "note",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "note",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "note",
+      "required": "n"
+    },
+    {
+      "fieldname": "involvedParty",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "involvedParty",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "involvedParty",
+      "required": "n"
+    },
+    {
+      "fieldname": "involvedOnBehalfOf",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "involvedOnBehalfOf",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "involvedOnBehalfOf",
+      "required": "n"
+    },
+    {
+      "fieldname": "involvedRole",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "involvedRole",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "involvedRole",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailType",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailType",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "detailType",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailLevel",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailLevel",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "detailLevel",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailDeterminedBy",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailDeterminedBy",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "detailDeterminedBy",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailDeterminationDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailDeterminationDate",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "detailDeterminationDate",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailNote",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "",
+      "required": "n"
+    },
+    {
+      "fieldname": "detailNote",
+      "transforms": {
+      },
+      "source_type": "na",
+      "source_name": null,
+      "namespace": "dutiesofcare_common",
+      "xpath": null,
+      "data_type": null,
+      "repeats": null,
+      "in_repeating_group": "n",
+      "opt_list_values": null,
+      "datacolumn": "detailNote",
+      "required": "n"
+    }
+  ]
+}

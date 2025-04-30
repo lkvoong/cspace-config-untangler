@@ -43,7 +43,7 @@ module CspaceConfigUntangler
     'publicart' => '2-0-1',
     'bampfa' => '3-0-0',
     'cinefiles' => '2-0-0',
-    'pahma' => '4-0-0',
+    'pahma' => '5-0-0',
     'ucbg' => '3-0-0',
     'ucjeps' => '3-0-0',
   }
