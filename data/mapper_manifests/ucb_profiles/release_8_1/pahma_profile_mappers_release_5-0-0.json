@@ -1,0 +1,428 @@
+{
+  "mappers": [
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "acquisition",
+      "digest": "c00a9742bcab7523e4bf9dcab793d3d70810d9242651b561d89271c9b5181b18",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_acquisition.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "work-local",
+      "digest": "cf9bf99e8ec0a6469a028b59f8a40562d962b978adef2fe98ad7fcdfccbe1852",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_work-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "authorityhierarchy",
+      "digest": "4525a49194814d5f3019b0c6345b66e7b9b9c246c5a6c4f26390a2d9664ea653",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_authorityhierarchy.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "consultation",
+      "digest": "48785eb56962f3d8a7443a8db76b53eb37ce661b0e595e06e8341f098a273eaa",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_consultation.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "organization-local",
+      "digest": "f039c188bc698059b67f78b93685cc5431ae3c33ed969b4edef932d9660b5785",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_organization-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "iterationreport",
+      "digest": "77018b7f2f98f8a2db6fd07a2ba78461bd7dd7fff922b1ae416e833bbee3183d",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_iterationreport.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "objectexit",
+      "digest": "d25d8e671244f54080c21abcf545feb1d86eb0dac2cfec2297d7c709f126e3b8",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_objectexit.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-occasion",
+      "digest": "1ecf7c93cbf91a7c39c3704c5be089b97c14e7cf3160530d04da874a27c1916c",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-occasion.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "location-local",
+      "digest": "59a679dbe3da18f89cdd9361e24c4f7021caffc8cba4fbf57508b174c79bbf52",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_location-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-object-name",
+      "digest": "37548984bb5d7eeb1cc28593c32d751d07c073381357fb36378fe28a441e72e5",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-object-name.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "objecthierarchy",
+      "digest": "fd9144909a3628785a787c5d759b2883e6354d011550ffd82b2845c5ea5dbdc6",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_objecthierarchy.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "dutyofcare",
+      "digest": "32539466004f5284ee8bff6780f284347f5a19a447f290314636a007cebd4594",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_dutyofcare.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "taxon-local",
+      "digest": "5ec6ed0cbb179480c89cff1dd05b33a185a8a2a2bf5af29a9ce1b4518c35ea75",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_taxon-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "chronology-era",
+      "digest": "f38af31c8c26ab2467bf4181d1fbeac42726f8265d524e42a533d564894b0844",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_chronology-era.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-ethnographic-file-code",
+      "digest": "c98f5d908cf801a86826940ebfc397a686562a5566d99b0d7c7498d8cd7cb6cd",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-ethnographic-file-code.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "nonhierarchicalrelationship",
+      "digest": "29e4ba706ce27debc0bb1f80296bfd2c0811cbeb9bba09f23d7b8b872c858894",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_nonhierarchicalrelationship.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "transport",
+      "digest": "c0dc72bad53400fcbc71d77bb2e592f58c78920c0661ff5d5924ae9db11e14ec",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_transport.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-nomenclature",
+      "digest": "fb886f7b21094c2937bec61c12156184af9853fc9a513ccc7aff16060a255924",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-nomenclature.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "exit",
+      "digest": "96c1dbb4d458431d8d526c39b0f0037d98217e676124eb3b5e2f83e7651c5fe4",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_exit.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "restrictedmedia",
+      "digest": "36a3760a5e53c5d1590a8a353106d3405f961bb128473d8a35a703157cbaccbb",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_restrictedmedia.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-object-class",
+      "digest": "663f11d5a21843b3ca7cadc7b6056afeaa57859d7f16d6e5e416ef4f627103de",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-object-class.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-archaeological-culture",
+      "digest": "2bd5263203d44f915d505d84b8f8639a9b6654a1c31090663d534d376096380b",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-archaeological-culture.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "person-local",
+      "digest": "0863727bfa36e33f02ec850cfbb5374364ed2c2d63775851214228c5ddfb10f4",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_person-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "valuation",
+      "digest": "2e82f586d125ebb74d126d301a274add9ebc99fab8d0bac5d47571dd1a979f6f",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_valuation.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "chronology-field-collection",
+      "digest": "ca230150d101e9b50c1dde5898427af0a661afa76d513b47accc81bd82a2afe3",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_chronology-field-collection.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "place-local",
+      "digest": "95c59d1004629995865975266123a918331e2a2ea4b45fe652457344e8957a80",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_place-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "nagprainventory",
+      "digest": "9f82d30136a7e6a91c6fa2c958f4c1108ff0e27bb1588c92a7ccc3589dd19050",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_nagprainventory.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "group",
+      "digest": "9d4dea796bac0832b61e435850909e1b3938546e1b2b0bad8689ea472a0abe7e",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_group.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "uoc",
+      "digest": "8ab9522765c2bb0e1262aa848a37490e37960511fa4a7ab8b1d0e9da7e768645",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_uoc.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "insurance",
+      "digest": "34bf9650c448dd2332598a5953e632f861c17a6d1ce9cec3c84bebcd9ff7c2af",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_insurance.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "summarydocumentation",
+      "digest": "349e93d86bf19903b18bbc42c75310872df37cca332a0b35b6077185ca723dd6",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_summarydocumentation.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "hit",
+      "digest": "df398197031a7a7e25a04d0f64c2d5e79ebe3ff7ee932b4ccd9b5ba2a42b7c75",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_hit.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "collectionobject",
+      "digest": "8db120f11b512fdc6d3ec63cf97ac3711a1d22708d34381a7f7932c67970bf31",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_collectionobject.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "place-archaeological",
+      "digest": "791857bc2cbd6907e09a6e357ca85687776b9250cf3db56d17ed4700fadd4071",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_place-archaeological.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "conditioncheck",
+      "digest": "9e0e79e690562e8cc857f7a6d284dc7a37f880c31f6eee9b1b9a432ade8fec87",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_conditioncheck.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "osteology",
+      "digest": "a763d4f48f1c12fd132c6f00f68d1943a05fda6052c17c136551a2e943b6a5c8",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_osteology.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "location-crate",
+      "digest": "20fa9e3dcfca2617b2c892dd0c2327228cd6c14572cb3c5f61759af05167125c",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_location-crate.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "loanout",
+      "digest": "f58c8a1fabfd98344c7d2eadec856f49ceb7f8568602e8200811f74fe85d823d",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_loanout.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "chronology-event",
+      "digest": "114c68df386f4425c38510fcc4a5c2fe00f389efd73bd0f759dc7ec6ee5e1d9d",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_chronology-event.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "movement",
+      "digest": "2004d215158660fe540131633d118bf24bb21cb184ce8347f55e4ab47602834b",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_movement.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "conservation",
+      "digest": "31ecf8f7a74ad716bb2638eb3a6f8077bf38f5994d5050357d15ae5394b600a6",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_conservation.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-activity",
+      "digest": "94a707ff12eee98ff0ea840e651e33665484e536da5c1ea19616894ca475fbd0",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-activity.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "citation-local",
+      "digest": "4de2a8d2335ccf0c46688332aa00b229f27f6f154a009575ebc41b60cdecbdcd",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_citation-local.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "media",
+      "digest": "1bbf3aa0cd563a6bcbe03289f2cb81592d3481cf10e7da000d8aa6394ccba31d",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_media.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "loanin",
+      "digest": "28c91178cebea256dcee4032c565d4f37d2d0724a7565a77c8f11bdeba753714",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_loanin.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "exhibition",
+      "digest": "cfc2dcc1a23781c65c359833a81237452f5c10d30671563279932b7ec218e95a",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_exhibition.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "heldintrust",
+      "digest": "31082c30930788904e949c2471d57eeff56baa1f0b047ef883f9851300838838",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_heldintrust.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-ethnographic-culture",
+      "digest": "ef007b055e086d10be33aeade86beff283830f6550ae9a7ae4a21f85d2e8dcec",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-ethnographic-culture.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "claim",
+      "digest": "757c44f1693fae5b6fbdc19a339306b147ba2b7ac0296ebd4015af2aa9e671ff",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_claim.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "concept-material",
+      "digest": "5ba60e083559ce54fc6a0b0b1640b4d499abeff54771e80062538c98e6c224ca",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_concept-material.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "repatriationrequest",
+      "digest": "b796823564ea6005b17cfca1b1c57d855e0cdf757143fd3cbaf3daa9f4a5f9ca",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_repatriationrequest.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "deaccession",
+      "digest": "4a1c871ec20a634039f22feeab7eeb702c1c286c300aed87446dbc7df7e4056c",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_deaccession.json"
+    },
+    {
+      "profile": "pahma",
+      "version": "5-0-0",
+      "type": "intake",
+      "digest": "79cb8c3306c24e789d09f362ffc0aceb4e54c8f86b2e0527c6be578a11ea29a7",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/cspace-deployment/cspace-config-untangler/main/data/mappers/ucb/release_8_1/pahma/pahma_5-0-0_intake.json"
+    }
+  ]
+}
