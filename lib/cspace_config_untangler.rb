@@ -45,7 +45,7 @@ module CspaceConfigUntangler
     'cinefiles' => '2-0-0',
     'pahma' => '5-0-0',
     'ucbg' => '3-0-0',
-    'ucjeps' => '3-0-0',
+    'ucjeps' => '4-0-0',
   }
   # Don't change stuff after this
 
